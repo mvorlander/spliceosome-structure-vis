@@ -1,0 +1,63 @@
+# Lightweight ChimeraX script for 5GAP
+# Models are downloaded directly by ChimeraX from the PDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #307; target model: #307.1.
+
+open 8h6l id 307.9 name 8H6L_anchor
+open 5gap id 307.1 name 5GAP
+rename #307 tri_snRNP_5gap_structure
+
+# Align on PRPF8.
+matchmaker #307.1/A to #307.9/5B
+close #307.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+nucleotides stubs
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+nucleotides fill
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# U4 snRNA
+color #307.1/V #E6D900
+# U6 snRNA
+color #307.1/W #DC143C
+# U5 snRNA
+color #307.1/U #0000CD
+# PRPF8
+color #307.1/A #BFC3E8
+# PRPF4
+color #307.1/H #E2C496
+# PRPF6
+color #307.1/J #CFA785
+# TXNL4A
+color #307.1/D #C3BA7A
+# PRPF31
+color #307.1/F #DFD570
+# PRPF3
+color #307.1/G #E1DD1B
+# NHP2L1
+color #307.1/K #A89264
+# SNRNP200
+color #307.1/B #AFEEEE
+view

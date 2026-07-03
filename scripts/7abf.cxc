@@ -1,0 +1,65 @@
+# Lightweight ChimeraX script for 7ABF
+# Models are downloaded directly by ChimeraX from the PDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #352; target model: #352.1.
+
+open 8h6l id 352.9 name 8H6L_anchor
+open 7abf id 352.1 name 7ABF
+rename #352 pre_Bact_7abf_structure
+
+# Align on PRPF8.
+matchmaker #352.1/A to #352.9/5B
+close #352.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+nucleotides stubs
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+nucleotides fill
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# BUD31
+color #352.1/Q #FFF584
+# PRPF38A
+color #352.1/I #F88379
+# PRPF8
+color #352.1/A #BFC3E8
+# EFTUD2
+color #352.1/r #6495ED
+# ZMAT2
+color #352.1/N #FFB6C1
+# UBL5
+color #352.1/q #DB7093
+# CWC15
+color #352.1/R #FFDEAD
+# NPWBP
+color #352.1/X #D8944F
+# SNW1
+color #352.1/v #D49F96
+# PLRG1
+color #352.1/G #F4A460
+# MFAP1
+color #352.1/K #CD5C5C
+# CA150
+color #352.1/A4 #A2B8CD
+view

@@ -1,0 +1,69 @@
+# Lightweight ChimeraX script for 8Q91
+# Models are downloaded directly by ChimeraX from the PDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #393; target model: #393.1.
+
+open 8h6l id 393.9 name 8H6L_anchor
+open 8q91 id 393.1 name 8Q91
+rename #393 tri_snRNP_8q91_structure
+
+# Align on PRPF8.
+matchmaker #393.1/A to #393.9/5B
+close #393.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+nucleotides stubs
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+nucleotides fill
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# CD2BP2
+color #393.1/F #FF4500
+# PRPF8
+color #393.1/A #BFC3E8
+# U5 snRNA
+color #393.1/5 #0000CD
+# PRPF6
+color #393.1/E #CFA785
+# DDX23
+color #393.1/D #CA9982
+# EFTUD2
+color #393.1/C #6495ED
+# SNRNP200
+color #393.1/B #AFEEEE
+# U5-Sm SNRPF
+color #393.1/m #B0C4DE
+# U5-Sm SNRPG
+color #393.1/n #B0C4DE
+# U5-Sm SNRPD1
+color #393.1/i #B0C4DE
+# U5-Sm SNRPD2
+color #393.1/j #B0C4DE
+# U5-Sm SNRPD3
+color #393.1/k #B0C4DE
+# U5-Sm SNRPB
+color #393.1/h #B0C4DE
+# U5-Sm SNRPE
+color #393.1/l #B0C4DE
+view

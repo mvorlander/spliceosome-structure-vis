@@ -1,0 +1,113 @@
+# Lightweight ChimeraX script for 6G90
+# Models are downloaded directly by ChimeraX from the PDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #335; target model: #335.1.
+
+open 8h6l id 335.9 name 8H6L_anchor
+open 6g90 id 335.1 name 6G90
+rename #335 U2_pre_A_A_6g90_structure
+
+# Align on SF3B1.
+matchmaker #335.1/O to #335.9/2G
+close #335.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+nucleotides stubs
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+nucleotides fill
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# U1 snRNA
+color #335.1/1 #B66AAE
+# U2 snRNA
+color #335.1/2 #006400
+# SNRPA
+color #335.1/A #C07AB6
+# SNRNP70
+color #335.1/B #8C3D78
+# SNRPC
+color #335.1/C #D7A3CF
+# PRPF39
+color #335.1/D #E1B8D9
+# PRP42
+color #335.1/E #7F5BA6
+# NAM8
+color #335.1/F #C7A6BE
+# SNU56
+color #335.1/G #D65B96
+# LUC7L
+color #335.1/H #B03372
+# pre-mRNA
+color #335.1/I #303030
+# SNU71
+color #335.1/J #A95A9B
+# SF3B1
+color #335.1/O #487957
+# SF3B3
+color #335.1/P #6A9064
+# SF3B2
+color #335.1/Q #49926C
+# SF3B4
+color #335.1/R #77B088
+# PHF5A
+color #335.1/S #375A40
+# SF3A3
+color #335.1/T #9BCF91
+# SF3B1
+color #335.1/U #487957
+# SF3A1
+color #335.1/V #55947F
+# SNRPB2
+color #335.1/Y #DAF7A6
+# SF3B5
+color #335.1/Z #92BB8F
+# U1-Sm SNRPB
+color #335.1/b #EAD7E8
+# U2-Sm SNRPB
+color #335.1/s #D5F5E3
+# U1-Sm SNRPD3
+color #335.1/d #EAD7E8
+# U2-Sm SNRPD3
+color #335.1/v #D5F5E3
+# U1-Sm SNRPE
+color #335.1/e #EAD7E8
+# U2-Sm SNRPE
+color #335.1/w #D5F5E3
+# U1-Sm SNRPF
+color #335.1/f #EAD7E8
+# U2-Sm SNRPF
+color #335.1/x #D5F5E3
+# U1-Sm SNRPG
+color #335.1/g #EAD7E8
+# U2-Sm SNRPG
+color #335.1/y #D5F5E3
+# U1-Sm SNRPD1
+color #335.1/h #EAD7E8
+# U2-Sm SNRPD1
+color #335.1/t #D5F5E3
+# U1-Sm SNRPD2
+color #335.1/i #EAD7E8
+# U2-Sm SNRPD2
+color #335.1/u #D5F5E3
+view

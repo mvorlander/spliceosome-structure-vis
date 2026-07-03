@@ -1,0 +1,115 @@
+# Lightweight ChimeraX script for 5GM6
+# Models are downloaded directly by ChimeraX from the PDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #308; target model: #308.1.
+
+open 8h6l id 308.9 name 8H6L_anchor
+open 5gm6 id 308.1 name 5GM6
+rename #308 Bact_5gm6_structure
+
+# Align on PRPF8.
+matchmaker #308.1/A to #308.9/5B
+close #308.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+nucleotides stubs
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+nucleotides fill
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# PRPF8
+color #308.1/A #BFC3E8
+# SNRNP200
+color #308.1/B #AFEEEE
+# EFTUD2
+color #308.1/C #6495ED
+# SF3B3
+color #308.1/F #6A9064
+# SF3B2
+color #308.1/H #49926C
+# SF3B1
+color #308.1/I #487957
+# PHF5A
+color #308.1/J #375A40
+# SF3B5
+color #308.1/K #92BB8F
+# U2 snRNA
+color #308.1/L #006400
+# pre-mRNA
+color #308.1/N #303030
+# pre-mRNA
+color #308.1/M #303030
+# PLRG1
+color #308.1/O #F4A460
+# SNW1
+color #308.1/P #D49F96
+# CWC15
+color #308.1/S #FFDEAD
+# BUD31
+color #308.1/T #FFF584
+# BUD13
+color #308.1/W #459285
+# DBP2
+color #308.1/Y #E3B296
+# CWC22
+color #308.1/Z #2C54DD
+# CWC27
+color #308.1/b #806ED8
+# CDC5L
+color #308.1/c #DAA520
+# SF3B1
+color #308.1/G #487957
+# CRNKL1
+color #308.1/d #FFC388
+# SYF1
+color #308.1/v #FF957B
+# SF3B4
+color #308.1/e #77B088
+# SYF2
+color #308.1/f #FF8C00
+# PRPF19
+color #308.1/o #FFFFAB
+# PRPF19
+color #308.1/p #FFFFAB
+# PRPF19
+color #308.1/q #FFFFAB
+# PRPF19
+color #308.1/r #FFFFAB
+# PRPF17
+color #308.1/n #FFF7C9
+# SNRPB
+color #308.1/k #B0C4DE
+# SNRPE
+color #308.1/i #B0C4DE
+# SNRPF
+color #308.1/h #B0C4DE
+# SNRPG
+color #308.1/j #B0C4DE
+# SNRPD3
+color #308.1/l #B0C4DE
+# SNRPD1
+color #308.1/m #B0C4DE
+# SNRPD2
+color #308.1/g #B0C4DE
+view

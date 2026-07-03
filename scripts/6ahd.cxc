@@ -1,0 +1,167 @@
+# Lightweight ChimeraX script for 6AHD
+# Models are downloaded directly by ChimeraX from the PDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #330; target model: #330.1.
+
+open 8h6l id 330.9 name 8H6L_anchor
+open 6ahd id 330.1 name 6AHD
+rename #330 pre_B_6ahd_structure
+
+# Align on PRPF8.
+matchmaker #330.1/A to #330.9/5B
+close #330.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+nucleotides stubs
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+nucleotides fill
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# PRPF8
+color #330.1/A #BFC3E8
+# U4 snRNA
+color #330.1/I #E6D900
+# U5 snRNA
+color #330.1/B #0000CD
+# U6 snRNA
+color #330.1/F #DC143C
+# pre-mRNA
+color #330.1/G #303030
+# TXNL4A
+color #330.1/O #C3BA7A
+# EFTUD2
+color #330.1/C #6495ED
+# PRPF6
+color #330.1/N #CFA785
+# NHP2L1
+color #330.1/M #A89264
+# PRPF31
+color #330.1/L #DFD570
+# SART1
+color #330.1/9 #D6937B
+# PRPF3
+color #330.1/J #E1DD1B
+# SNRPB
+color #330.1/U #B0C4DE
+# SNRPB
+color #330.1/a #B0C4DE
+# SNRPB
+color #330.1/i #B0C4DE
+# U4-Sm SNRPD1
+color #330.1/V #F7F0A6
+# U5-Sm SNRPD1
+color #330.1/b #B0C4DE
+# U2-Sm SNRPD1
+color #330.1/j #D5F5E3
+# U4-Sm SNRPD2
+color #330.1/P #F7F0A6
+# U5-Sm SNRPD2
+color #330.1/c #B0C4DE
+# U2-Sm SNRPD2
+color #330.1/k #D5F5E3
+# SNRPE
+color #330.1/Q #B0C4DE
+# SNRPE
+color #330.1/d #B0C4DE
+# SNRPE
+color #330.1/l #B0C4DE
+# SNRPF
+color #330.1/R #B0C4DE
+# SNRPF
+color #330.1/e #B0C4DE
+# SNRPF
+color #330.1/m #B0C4DE
+# U4-Sm SNRPG
+color #330.1/S #F7F0A6
+# U5-Sm SNRPG
+color #330.1/f #B0C4DE
+# U2-Sm SNRPG
+color #330.1/n #D5F5E3
+# U4-Sm SNRPD3
+color #330.1/T #F7F0A6
+# U5-Sm SNRPD3
+color #330.1/g #B0C4DE
+# U2-Sm SNRPD3
+color #330.1/h #D5F5E3
+# PRP8BP
+color #330.1/E #E2F3F4
+# FBP21
+color #330.1/X #B03B66
+# CYP20
+color #330.1/W #C9AC36
+# UBL5
+color #330.1/A0 #DB7093
+# MFAP1
+color #330.1/0 #CD5C5C
+# PRPF38A
+color #330.1/Z #F88379
+# ZMAT2
+color #330.1/8 #FFB6C1
+# SMU1
+color #330.1/Y #E0A3D2
+# U2 snRNA
+color #330.1/H #006400
+# SNRPA1
+color #330.1/o #58D68D
+# SNRPB2
+color #330.1/p #DAF7A6
+# SF3A1
+color #330.1/u #55947F
+# SF3A2
+color #330.1/v #75A074
+# SF3A3
+color #330.1/w #9BCF91
+# LSM2
+color #330.1/q #F4A3A8
+# LSM3
+color #330.1/r #F4A3A8
+# LSM4
+color #330.1/s #F4A3A8
+# LSM5
+color #330.1/t #F4A3A8
+# LSM6
+color #330.1/x #F4A3A8
+# LSM7
+color #330.1/y #F4A3A8
+# LSM8
+color #330.1/z #F4A3A8
+# PRPF4
+color #330.1/K #E2C496
+# SF3B1
+color #330.1/1 #487957
+# SF3B3
+color #330.1/3 #6A9064
+# SF3B6
+color #330.1/5 #ADCEA0
+# PHF5A
+color #330.1/6 #375A40
+# SF3B5
+color #330.1/7 #92BB8F
+# SF3B2
+color #330.1/2 #49926C
+# SF3B4
+color #330.1/4 #77B088
+# SNRNP200
+color #330.1/D #AFEEEE
+view

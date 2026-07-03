@@ -1,0 +1,85 @@
+# Lightweight ChimeraX script for 6Y5Q
+# Models are downloaded directly by ChimeraX from the PDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #348; target model: #348.1.
+
+open 8h6l id 348.9 name 8H6L_anchor
+open 6y5q id 348.1 name 6Y5Q
+rename #348 SF3B_U2_6y5q_structure
+
+# Align on SF3B1.
+matchmaker #348.1/u to #348.9/2G
+close #348.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+nucleotides stubs
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+nucleotides fill
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# PHF5A
+color #348.1/y #375A40
+# SF3B5
+color #348.1/x #92BB8F
+# SF3B2
+color #348.1/8 #49926C
+# SF3B3
+color #348.1/v #6A9064
+# SF3B1
+color #348.1/u #487957
+# DDX46
+color #348.1/p #5BAE8A
+# SNRPA1
+color #348.1/a #58D68D
+# SNRPB2
+color #348.1/b #DAF7A6
+# SF3B6
+color #348.1/z #ADCEA0
+# SF3A1
+color #348.1/6 #55947F
+# SF3A2
+color #348.1/7 #75A074
+# SF3A3
+color #348.1/9 #9BCF91
+# SF3B4
+color #348.1/o #77B088
+# U2-Sm SNRPB
+color #348.1/m #D5F5E3
+# U2-Sm SNRPG
+color #348.1/k #D5F5E3
+# U2-Sm SNRPD1
+color #348.1/n #D5F5E3
+# U2-Sm SNRPD2
+color #348.1/h #D5F5E3
+# U2-Sm SNRPD3
+color #348.1/l #D5F5E3
+# U2-Sm SNRPE
+color #348.1/j #D5F5E3
+# U2-Sm SNRPF
+color #348.1/i #D5F5E3
+# HTATSF1
+color #348.1/q #7DBF82
+# U2 snRNA
+color #348.1/2 #006400
+view

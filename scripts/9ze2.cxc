@@ -1,0 +1,65 @@
+# Lightweight ChimeraX script for 9ZE2
+# Models are downloaded directly by ChimeraX from the PDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #428; target model: #428.1.
+
+open 8h6l id 428.9 name 8H6L_anchor
+open 9ze2 id 428.1 name 9ZE2
+rename #428 U2_pre_A_A_9ze2_structure
+
+# Align on SF3B1.
+matchmaker #428.1/B1 to #428.9/2G
+close #428.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+nucleotides stubs
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+nucleotides fill
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# U2 snRNA
+color #428.1/2 #006400
+# PHF5A
+color #428.1/H #375A40
+# pre-mRNA
+color #428.1/R #303030
+# NAM8
+color #428.1/A #C7A6BE
+# SF3B1
+color #428.1/B1 #487957
+# SF3B2
+color #428.1/B2 #49926C
+# SF3B3
+color #428.1/B3 #6A9064
+# SF3B4
+color #428.1/B4 #77B088
+# SF3B5
+color #428.1/B5 #92BB8F
+# SF3B6
+color #428.1/B6 #ADCEA0
+# SF3A2
+color #428.1/A2 #75A074
+# SF3A3
+color #428.1/A3 #9BCF91
+view

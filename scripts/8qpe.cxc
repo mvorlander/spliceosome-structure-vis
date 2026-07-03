@@ -1,0 +1,77 @@
+# Lightweight ChimeraX script for 8QPE
+# Models are downloaded directly by ChimeraX from the PDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #400; target model: #400.1.
+
+open 8h6l id 400.9 name 8H6L_anchor
+open 8qpe id 400.1 name 8QPE
+rename #400 pre_B_8qpe_structure
+
+# Align on PRPF8.
+matchmaker #400.1/A to #400.9/5B
+close #400.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+nucleotides stubs
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+nucleotides fill
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# U4 snRNA
+color #400.1/4 #E6D900
+# U5 snRNA
+color #400.1/5 #0000CD
+# U6 snRNA
+color #400.1/6 #DC143C
+# SF3A1
+color #400.1/7 #55947F
+# EFTUD2
+color #400.1/C #6495ED
+# TXNL4A
+color #400.1/D #C3BA7A
+# PRPF38A
+color #400.1/I #F88379
+# MFAP1
+color #400.1/K #CD5C5C
+# NHP2L1
+color #400.1/M #A89264
+# USP39
+color #400.1/U #B37E6A
+# FBP21
+color #400.1/X #B03B66
+# ZMAT2
+color #400.1/r #FFB6C1
+# PRPF3
+color #400.1/J #E1DD1B
+# PRPF31
+color #400.1/L #DFD570
+# PRPF4
+color #400.1/F #E2C496
+# PRPF6
+color #400.1/N #CFA785
+# PRPF8
+color #400.1/A #BFC3E8
+# SART1
+color #400.1/S #D6937B
+view

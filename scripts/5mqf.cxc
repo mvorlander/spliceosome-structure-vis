@@ -1,0 +1,129 @@
+# Lightweight ChimeraX script for 5MQF
+# Models are downloaded directly by ChimeraX from the PDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #315; target model: #315.1.
+
+open 8h6l id 315.9 name 8H6L_anchor
+open 5mqf id 315.1 name 5MQF
+rename #315 Cstar_5mqf_structure
+
+# Align on PRPF8.
+matchmaker #315.1/A to #315.9/5B
+close #315.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+nucleotides stubs
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+nucleotides fill
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# PRPF8
+color #315.1/A #BFC3E8
+# EFTUD2
+color #315.1/B #6495ED
+# SNW1
+color #315.1/C #D49F96
+# PLRG1
+color #315.1/D #F4A460
+# PRPF17
+color #315.1/E #FFF7C9
+# PRP8BP
+color #315.1/F #E2F3F4
+# PRPF19
+color #315.1/G #FFFFAB
+# PRPF19
+color #315.1/H #FFFFAB
+# PRPF19
+color #315.1/I #FFFFAB
+# PRPF19
+color #315.1/J #FFFFAB
+# BCAS2
+color #315.1/K #FFDAB9
+# CDC5L
+color #315.1/L #DAA520
+# SYF1
+color #315.1/M #FF957B
+# SYF2
+color #315.1/N #FF8C00
+# CRNKL1
+color #315.1/O #FFC388
+# RBM22
+color #315.1/P #DE9A52
+# BUD31
+color #315.1/Q #FFF584
+# CWC15
+color #315.1/R #FFDEAD
+# SRRM2
+color #315.1/S #BDD6F0
+# CWC22
+color #315.1/T #2C54DD
+# AQR
+color #315.1/U #FFDAB9
+# PPIL1
+color #315.1/V #EEE8AA
+# SNRPA1
+color #315.1/W #58D68D
+# SNRPB2
+color #315.1/X #DAF7A6
+# SNRPD2
+color #315.1/a #B0C4DE
+# U2-Sm SNRPD2
+color #315.1/h #D5F5E3
+# SNRPF
+color #315.1/b #B0C4DE
+# U2-Sm SNRPF
+color #315.1/i #D5F5E3
+# SNRPE
+color #315.1/c #B0C4DE
+# U2-Sm SNRPE
+color #315.1/j #D5F5E3
+# SNRPG
+color #315.1/d #B0C4DE
+# U2-Sm SNRPG
+color #315.1/k #D5F5E3
+# SNRPD3
+color #315.1/e #B0C4DE
+# U2-Sm SNRPD3
+color #315.1/l #D5F5E3
+# SNRPB
+color #315.1/f #B0C4DE
+# U2-Sm SNRPB
+color #315.1/m #D5F5E3
+# SNRPD1
+color #315.1/g #B0C4DE
+# U2-Sm SNRPD1
+color #315.1/n #D5F5E3
+# PPIE
+color #315.1/o #FFFFE0
+# EIF4A3
+color #315.1/p #F1D8BC
+# DHX8
+color #315.1/q #900C3F
+# INTRON
+color #315.1/Y #303030
+# INTRON
+color #315.1/Z #303030
+# U2 snRNA
+color #315.1/2 #006400
+view

@@ -1,0 +1,47 @@
+# Lightweight ChimeraX script for 7OS2
+# Models are downloaded directly by ChimeraX from the PDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #364; target model: #364.1.
+
+open 8h6l id 364.9 name 8H6L_anchor
+open 7os2 id 364.1 name 7OS2
+rename #364 U5_recycling_7os2_structure
+
+# Align on PRPF8.
+matchmaker #364.1/J to #364.9/5B
+close #364.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+nucleotides stubs
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+nucleotides fill
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# SNRNP200
+color #364.1/B #AFEEEE
+# C9orf78
+color #364.1/C #D9CCFF
+# PRPF8
+color #364.1/J #BFC3E8
+view

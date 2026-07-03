@@ -1,0 +1,83 @@
+# Lightweight ChimeraX script for 7EVO
+# Models are downloaded directly by ChimeraX from the PDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #360; target model: #360.1.
+
+open 8h6l id 360.9 name 8H6L_anchor
+open 7evo id 360.1 name 7EVO
+rename #360 SF3B_U2_7evo_structure
+
+# Align on SF3B1.
+matchmaker #360.1/1 to #360.9/2G
+close #360.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+nucleotides stubs
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+nucleotides fill
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# U2 snRNA
+color #360.1/H #006400
+# SF3B1
+color #360.1/1 #487957
+# SF3B2
+color #360.1/2 #49926C
+# SF3B3
+color #360.1/3 #6A9064
+# SF3B4
+color #360.1/4 #77B088
+# SF3B5
+color #360.1/5 #92BB8F
+# PHF5A
+color #360.1/6 #375A40
+# SF3A1
+color #360.1/A #55947F
+# SF3A2
+color #360.1/B #75A074
+# SF3A3
+color #360.1/C #9BCF91
+# HTATSF1
+color #360.1/D #7DBF82
+# DDX46
+color #360.1/E #5BAE8A
+# SNRPA1
+color #360.1/F #58D68D
+# SNRPB2
+color #360.1/G #DAF7A6
+# U2-Sm SNRPD2
+color #360.1/a #D5F5E3
+# U2-Sm SNRPF
+color #360.1/b #D5F5E3
+# U2-Sm SNRPE
+color #360.1/c #D5F5E3
+# U2-Sm SNRPG
+color #360.1/d #D5F5E3
+# U2-Sm SNRPD3
+color #360.1/e #D5F5E3
+# U2-Sm SNRPB
+color #360.1/f #D5F5E3
+# U2-Sm SNRPD1
+color #360.1/g #D5F5E3
+view

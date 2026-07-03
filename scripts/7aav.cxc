@@ -1,0 +1,75 @@
+# Lightweight ChimeraX script for 7AAV
+# Models are downloaded directly by ChimeraX from the PDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #351; target model: #351.1.
+
+open 8h6l id 351.9 name 8H6L_anchor
+open 7aav id 351.1 name 7AAV
+rename #351 pre_Bact_7aav_structure
+
+# Align on PRPF8.
+matchmaker #351.1/A to #351.9/5B
+close #351.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+nucleotides stubs
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+nucleotides fill
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# EFTUD2
+color #351.1/r #6495ED
+# BUD31
+color #351.1/Q #FFF584
+# CDC5L
+color #351.1/L #DAA520
+# CWC15
+color #351.1/R #FFDEAD
+# MFAP1
+color #351.1/K #CD5C5C
+# PLRG1
+color #351.1/G #F4A460
+# pre-mRNA
+color #351.1/Z #303030
+# PRPF17
+color #351.1/8 #FFF7C9
+# PRPF38A
+color #351.1/I #F88379
+# PRPF8
+color #351.1/A #BFC3E8
+# RBM22
+color #351.1/P #DE9A52
+# SNW1
+color #351.1/v #D49F96
+# ZMAT2
+color #351.1/N #FFB6C1
+# U2 snRNA
+color #351.1/2 #006400
+# U5 snRNA
+color #351.1/5 #0000CD
+# U6 snRNA
+color #351.1/6 #DC143C
+# UBL5
+color #351.1/q #DB7093
+view

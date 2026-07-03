@@ -1,0 +1,103 @@
+# Lightweight ChimeraX script for 3JCM
+# Models are downloaded directly by ChimeraX from the PDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #302; target model: #302.1.
+
+open 8h6l id 302.9 name 8H6L_anchor
+open 3jcm id 302.1 name 3JCM
+rename #302 tri_snRNP_3jcm_structure
+
+# Align on PRPF8.
+matchmaker #302.1/A to #302.9/5B
+close #302.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+nucleotides stubs
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+nucleotides fill
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# PRPF8
+color #302.1/A #BFC3E8
+# PRPF4
+color #302.1/B #E2C496
+# PRPF31
+color #302.1/I #DFD570
+# PRPF6
+color #302.1/G #CFA785
+# PRPF3
+color #302.1/K #E1DD1B
+# TXNL4A
+color #302.1/L #C3BA7A
+# NHP2L1
+color #302.1/M #A89264
+# EFTUD2
+color #302.1/H #6495ED
+# SNRNP200
+color #302.1/N #AFEEEE
+# SNRPD3
+color #302.1/J #B0C4DE
+# SNRPD3
+color #302.1/R #B0C4DE
+# SNRPB
+color #302.1/O #B0C4DE
+# SNRPB
+color #302.1/S #B0C4DE
+# SNRPD1
+color #302.1/P #B0C4DE
+# SNRPD1
+color #302.1/T #B0C4DE
+# SNRPD2
+color #302.1/Q #B0C4DE
+# SNRPD2
+color #302.1/U #B0C4DE
+# SNRPE
+color #302.1/V #B0C4DE
+# SNRPE
+color #302.1/Y #B0C4DE
+# SNRPF
+color #302.1/W #B0C4DE
+# SNRPF
+color #302.1/Z #B0C4DE
+# SNRPG
+color #302.1/X #B0C4DE
+# SNRPG
+color #302.1/a #B0C4DE
+# LSM8
+color #302.1/b #F4A3A8
+# LSM2
+color #302.1/c #F4A3A8
+# LSM3
+color #302.1/d #F4A3A8
+# LSM6
+color #302.1/e #F4A3A8
+# LSM5
+color #302.1/f #F4A3A8
+# LSM7
+color #302.1/g #F4A3A8
+# LSM4
+color #302.1/h #F4A3A8
+# pre-mRNA
+color #302.1/C #303030
+view

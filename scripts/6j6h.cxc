@@ -1,0 +1,113 @@
+# Lightweight ChimeraX script for 6J6H
+# Models are downloaded directly by ChimeraX from the PDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #340; target model: #340.1.
+
+open 8h6l id 340.9 name 8H6L_anchor
+open 6j6h id 340.1 name 6J6H
+rename #340 Bstar_6j6h_structure
+
+# Align on PRPF8.
+matchmaker #340.1/A to #340.9/5B
+close #340.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+nucleotides stubs
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+nucleotides fill
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# PRPF8
+color #340.1/A #BFC3E8
+# EFTUD2
+color #340.1/C #6495ED
+# PLRG1
+color #340.1/O #F4A460
+# SNW1
+color #340.1/P #D49F96
+# CWC15
+color #340.1/S #FFDEAD
+# BUD31
+color #340.1/T #FFF584
+# CWC22
+color #340.1/Z #2C54DD
+# CDC5L
+color #340.1/c #DAA520
+# CRNKL1
+color #340.1/d #FFC388
+# SYF2
+color #340.1/I #FF8C00
+# PRPF17
+color #340.1/n #FFF7C9
+# ISY1
+color #340.1/H #FFEF8C
+# pre-mRNA
+color #340.1/B #303030
+# U5 snRNA
+color #340.1/D #0000CD
+# U6 snRNA
+color #340.1/E #DC143C
+# U2 snRNA
+color #340.1/L #006400
+# SYF1
+color #340.1/v #FF957B
+# SNRPB2
+color #340.1/a #DAF7A6
+# U5-Sm SNRPE
+color #340.1/i #B0C4DE
+# U2-Sm SNRPE
+color #340.1/u #D5F5E3
+# U5-Sm SNRPD1
+color #340.1/m #B0C4DE
+# U2-Sm SNRPD1
+color #340.1/z #D5F5E3
+# U5-Sm SNRPG
+color #340.1/j #B0C4DE
+# U2-Sm SNRPG
+color #340.1/x #D5F5E3
+# U5-Sm SNRPF
+color #340.1/h #B0C4DE
+# U2-Sm SNRPF
+color #340.1/w #D5F5E3
+# U2-Sm SNRPD2
+color #340.1/e #D5F5E3
+# U5-Sm SNRPD2
+color #340.1/g #B0C4DE
+# U5-Sm SNRPB
+color #340.1/k #B0C4DE
+# U2-Sm SNRPB
+color #340.1/s #D5F5E3
+# U5-Sm SNRPD3
+color #340.1/l #B0C4DE
+# U2-Sm SNRPD3
+color #340.1/y #D5F5E3
+# PRPF19
+color #340.1/o #FFFFAB
+# PRPF19
+color #340.1/p #FFFFAB
+# PRPF19
+color #340.1/q #FFFFAB
+# PRPF19
+color #340.1/r #FFFFAB
+view

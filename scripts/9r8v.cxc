@@ -1,0 +1,165 @@
+# Lightweight ChimeraX script for 9R8V
+# Models are downloaded directly by ChimeraX from the PDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #426; target model: #426.1.
+
+open 8h6l id 426.9 name 8H6L_anchor
+open 9r8v id 426.1 name 9R8V
+rename #426 pre_Bact_9r8v_structure
+
+# Align on SF3B1.
+matchmaker #426.1/B1 to #426.9/2G
+close #426.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+nucleotides stubs
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+nucleotides fill
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# SNRNP200
+color #426.1/B #AFEEEE
+# U2 snRNA
+color #426.1/2 #006400
+# U6 snRNA
+color #426.1/6 #DC143C
+# SF3A1
+color #426.1/7 #55947F
+# U5 snRNA
+color #426.1/5 #0000CD
+# CDC5L
+color #426.1/L #DAA520
+# EFTUD2
+color #426.1/C #6495ED
+# PRP8BP
+color #426.1/E #E2F3F4
+# PLRG1
+color #426.1/G #F4A460
+# PRPF38A
+color #426.1/I #F88379
+# BUD31
+color #426.1/Q #FFF584
+# CWC15
+color #426.1/R #FFDEAD
+# NPWBP
+color #426.1/X #D8944F
+# UBL5
+color #426.1/q #DB7093
+# ZMAT2
+color #426.1/r #FFB6C1
+# U2-Sm SNRPD2
+color #426.1/22 #D5F5E3
+# U5-Sm SNRPD2
+color #426.1/52 #B0C4DE
+# SNRPB2
+color #426.1/2B #DAF7A6
+# U2-Sm SNRPF
+color #426.1/2f #D5F5E3
+# U5-Sm SNRPF
+color #426.1/5f #B0C4DE
+# U2-Sm SNRPB
+color #426.1/2b #D5F5E3
+# U5-Sm SNRPB
+color #426.1/5b #B0C4DE
+# U2-Sm SNRPD3
+color #426.1/23 #D5F5E3
+# U5-Sm SNRPD3
+color #426.1/53 #B0C4DE
+# U2-Sm SNRPG
+color #426.1/2g #D5F5E3
+# U5-Sm SNRPG
+color #426.1/5g #B0C4DE
+# U2-Sm SNRPE
+color #426.1/2e #D5F5E3
+# U5-Sm SNRPE
+color #426.1/5e #B0C4DE
+# U2-Sm SNRPD1
+color #426.1/21 #D5F5E3
+# U5-Sm SNRPD1
+color #426.1/51 #B0C4DE
+# SNRPA1
+color #426.1/2A #58D68D
+# SF3B4
+color #426.1/B4 #77B088
+# SF3A3
+color #426.1/9 #9BCF91
+# SF3A2
+color #426.1/8 #75A074
+# SF3B2
+color #426.1/B2 #49926C
+# SF3B5
+color #426.1/B5 #92BB8F
+# SF3B3
+color #426.1/B3 #6A9064
+# SF3B1
+color #426.1/B1 #487957
+# SF3B6
+color #426.1/B6 #ADCEA0
+# C20ORF33
+color #426.1/BL #C99A2C
+# KIAA0332
+color #426.1/SR #9FD0B7
+# DHX15
+color #426.1/DH #663399
+# pre-mRNA
+color #426.1/Z #303030
+# IK
+color #426.1/x #C75769
+# IK
+color #426.1/y #C75769
+# SMU1
+color #426.1/v #E0A3D2
+# SMU1
+color #426.1/w #E0A3D2
+# RBM22
+color #426.1/P #DE9A52
+# PPIL2
+color #426.1/t #B12F50
+# LSM2
+color #426.1/62 #F4A3A8
+# LSM3
+color #426.1/63 #F4A3A8
+# LSM4
+color #426.1/64 #F4A3A8
+# LSM5
+color #426.1/65 #F4A3A8
+# LSM6
+color #426.1/66 #F4A3A8
+# LSM7
+color #426.1/67 #F4A3A8
+# LSM8
+color #426.1/68 #F4A3A8
+# SNW1
+color #426.1/S1 #D49F96
+# ASF
+color #426.1/A6 #CC3E8E
+# CA150
+color #426.1/T #A2B8CD
+# MFAP1
+color #426.1/K #CD5C5C
+# PRPF17
+color #426.1/P7 #FFF7C9
+# PHF5A
+color #426.1/5A #375A40
+view

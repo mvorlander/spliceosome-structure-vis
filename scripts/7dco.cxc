@@ -1,0 +1,115 @@
+# Lightweight ChimeraX script for 7DCO
+# Models are downloaded directly by ChimeraX from the PDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #357; target model: #357.1.
+
+open 8h6l id 357.9 name 8H6L_anchor
+open 7dco id 357.1 name 7DCO
+rename #357 Bact_7dco_structure
+
+# Align on PRPF8.
+matchmaker #357.1/A to #357.9/5B
+close #357.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+nucleotides stubs
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+nucleotides fill
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# PRPF8
+color #357.1/A #BFC3E8
+# U5 snRNA
+color #357.1/B #0000CD
+# EFTUD2
+color #357.1/C #6495ED
+# SNRNP200
+color #357.1/D #AFEEEE
+# U5-Sm SNRPD3
+color #357.1/d #B0C4DE
+# U5-Sm SNRPD1
+color #357.1/b #B0C4DE
+# U2-Sm SNRPD1
+color #357.1/m #D5F5E3
+# U5-Sm SNRPE
+color #357.1/e #B0C4DE
+# U2-Sm SNRPE
+color #357.1/i #D5F5E3
+# SNRPF
+color #357.1/f #B0C4DE
+# SNRPF
+color #357.1/j #B0C4DE
+# U5-Sm SNRPG
+color #357.1/g #B0C4DE
+# U2-Sm SNRPG
+color #357.1/k #D5F5E3
+# U6 snRNA
+color #357.1/F #DC143C
+# pre-mRNA
+color #357.1/G #303030
+# U2 snRNA
+color #357.1/H #006400
+# U2-Sm SNRPD3
+color #357.1/l #D5F5E3
+# SF3A3
+color #357.1/u #9BCF91
+# SF3A1
+color #357.1/w #55947F
+# SF3A2
+color #357.1/v #75A074
+# SF3B1
+color #357.1/1 #487957
+# SF3B3
+color #357.1/3 #6A9064
+# SF3B4
+color #357.1/4 #77B088
+# SF3B5
+color #357.1/6 #92BB8F
+# CDC5L
+color #357.1/L #DAA520
+# PRPF19
+color #357.1/q #FFFFAB
+# PRPF19
+color #357.1/r #FFFFAB
+# PRPF19
+color #357.1/s #FFFFAB
+# PRPF19
+color #357.1/t #FFFFAB
+# BUD31
+color #357.1/N #FFF584
+# CWC15
+color #357.1/S #FFDEAD
+# PRPF17
+color #357.1/W #FFF7C9
+# CWC22
+color #357.1/V #2C54DD
+# CWC27
+color #357.1/z #806ED8
+# CRNKL1
+color #357.1/J #FFC388
+# SYF1
+color #357.1/I #FF957B
+# DBP2
+color #357.1/x #E3B296
+view

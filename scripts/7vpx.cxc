@@ -1,0 +1,109 @@
+# Lightweight ChimeraX script for 7VPX
+# Models are downloaded directly by ChimeraX from the PDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #370; target model: #370.1.
+
+open 8h6l id 370.9 name 8H6L_anchor
+open 7vpx id 370.1 name 7VPX
+rename #370 U2_pre_A_A_7vpx_structure
+
+# Align on SF3B1.
+matchmaker #370.1/1 to #370.9/2G
+close #370.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+nucleotides stubs
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+nucleotides fill
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# SF3A2
+color #370.1/B #75A074
+# SF1
+color #370.1/D #BA4F9A
+# DNAJC8
+color #370.1/J #6E86A6
+# U2 snRNA
+color #370.1/H #006400
+# SF3B1
+color #370.1/1 #487957
+# SF3B2
+color #370.1/2 #49926C
+# SF3B3
+color #370.1/3 #6A9064
+# SF3B4
+color #370.1/4 #77B088
+# SF3B5
+color #370.1/5 #92BB8F
+# SF3A1
+color #370.1/A #55947F
+# SF3A3
+color #370.1/C #9BCF91
+# DDX46
+color #370.1/E #5BAE8A
+# SNRPA1
+color #370.1/F #58D68D
+# SNRPB2
+color #370.1/G #DAF7A6
+# U2-Sm SNRPD2
+color #370.1/a #D5F5E3
+# U1-Sm SNRPD2
+color #370.1/i #EAD7E8
+# U2-Sm SNRPF
+color #370.1/b #D5F5E3
+# U1-Sm SNRPF
+color #370.1/m #EAD7E8
+# U2-Sm SNRPE
+color #370.1/c #D5F5E3
+# U1-Sm SNRPE
+color #370.1/l #EAD7E8
+# U2-Sm SNRPG
+color #370.1/d #D5F5E3
+# U1-Sm SNRPG
+color #370.1/n #EAD7E8
+# U2-Sm SNRPD3
+color #370.1/e #D5F5E3
+# U1-Sm SNRPD3
+color #370.1/j #EAD7E8
+# U2-Sm SNRPB
+color #370.1/f #D5F5E3
+# U1-Sm SNRPB
+color #370.1/k #EAD7E8
+# U2-Sm SNRPD1
+color #370.1/g #D5F5E3
+# U1-Sm SNRPD1
+color #370.1/h #EAD7E8
+# pre-mRNA
+color #370.1/I #303030
+# U1 snRNA
+color #370.1/L #B66AAE
+# SNRNP70
+color #370.1/O #8C3D78
+# SNRPA
+color #370.1/M #C07AB6
+# SNRPC
+color #370.1/N #D7A3CF
+# PHF5A
+color #370.1/6 #375A40
+view

@@ -1,0 +1,71 @@
+# Lightweight ChimeraX script for 8QPK
+# Models are downloaded directly by ChimeraX from the PDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #401; target model: #401.1.
+
+open 8h6l id 401.9 name 8H6L_anchor
+open 8qpk id 401.1 name 8QPK
+rename #401 pre_B_8qpk_structure
+
+# Align on PRPF8.
+matchmaker #401.1/A to #401.9/5B
+close #401.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+nucleotides stubs
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+nucleotides fill
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# DDX23
+color #401.1/G #CA9982
+# TXNL4A
+color #401.1/D #C3BA7A
+# PRPF31
+color #401.1/L #DFD570
+# PRPF8
+color #401.1/A #BFC3E8
+# RBM42
+color #401.1/R #44A0A7
+# USP39
+color #401.1/U #B37E6A
+# SART1
+color #401.1/S #D6937B
+# EFTUD2
+color #401.1/C #6495ED
+# U5 snRNA
+color #401.1/5 #0000CD
+# U4 snRNA
+color #401.1/4 #E6D900
+# SNRNP27
+color #401.1/X #F4E7D2
+# U6 snRNA
+color #401.1/6 #DC143C
+# PRPF6
+color #401.1/N #CFA785
+# SNRNP200
+color #401.1/B #AFEEEE
+# SF3A1
+color #401.1/7 #55947F
+view
