@@ -1,16 +1,16 @@
 cff-version: 1.2.0
 message: "If you use this dashboard or the generated ChimeraX scripts, please cite it as below."
 type: software
-title: "Spliceosome Structure Visualization Dashboard"
+title: "Spliceosome Vis: Exploration and standardised visualization of spliceosome structures"
 authors:
   - family-names: "Vorlaender"
     given-names: "Matthias"
-    affiliation: "Vienna BioCenter"
-    # orcid: "https://orcid.org/0000-0000-0000-0000"
+    affiliation: "Research Institute of Molecular Pathology (IMP), Plaschka lab"
+    # orcid: "https://orcid.org/0000-0001-5975-5609"
 repository-code: "https://github.com/mvorlander/spliceosome-structure-vis"
 url: "https://mvorlander.github.io/spliceosome-structure-vis/"
 # doi: "10.0000/zenodo.0000000"
-abstract: "A lightweight static dashboard for copying ChimeraX scripts to visualize spliceosome cryo-EM structures from deposited PDB entries."
+abstract: "A tool for exploring and visualizing spliceosome structures using pre-computed ChimeraX scripts with standardised color codes across different species."
 keywords:
   - spliceosome
   - cryo-EM
