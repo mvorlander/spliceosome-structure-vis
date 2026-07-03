@@ -1,54 +1,6 @@
 {
   "records": [
     {
-      "pdb_id": "5zya",
-      "title": "SF3b spliceosomal complex bound to E7107",
-      "state": "A complex",
-      "species": "Human",
-      "species_code": "HUMAN",
-      "resolution": "3.95",
-      "year": "2018",
-      "paper_title": "The cryo-EM structure of the SF3b spliceosome complex bound to a splicing modulator reveals a pre-mRNA substrate competitive mechanism of action.",
-      "doi": "10.1101/gad.311043.117",
-      "pubmed_id": "29491137",
-      "journal": "Genes Dev",
-      "authors": "Finci LI; Zhang X; Huang X; Zhou Q; Tsai J; Teng T; Agrawal A; Chan B; Irwin S; Karr C; Cook A; Zhu P; Reynolds D; Smith PG; Fekkes P; Buonamici S; Larsen NA",
-      "authors_short": "Finci LI; Zhang X; Huang X; et al. (17 authors)",
-      "proteins": [
-        {
-          "name": "Splicing factor 3B subunit 3",
-          "gene": "KIAA0017; SAP130; SF3B3",
-          "chains": "A",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "PHD finger-like domain-containing protein 5A",
-          "gene": "PHF5A",
-          "chains": "D",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 1",
-          "gene": "SAP155; SF3B1",
-          "chains": "C",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 5",
-          "gene": "SF3B10; SF3B5",
-          "chains": "B",
-          "organisms": "Homo sapiens"
-        }
-      ],
-      "rnas": [],
-      "protein_count": 4,
-      "rna_count": 0,
-      "chain_count": 7,
-      "has_prpf8": false,
-      "has_sf3b1": true,
-      "script_path": "scripts/5zya.cxc"
-    },
-    {
       "pdb_id": "6g90",
       "title": "Prespliceosome structure provides insight into spliceosome assembly and regulation (map A2)",
       "state": "A complex",
@@ -258,1897 +210,6 @@
       "has_prpf8": false,
       "has_sf3b1": true,
       "script_path": "scripts/6g90.cxc"
-    },
-    {
-      "pdb_id": "6y50",
-      "title": "5'domain of human 17S U2 snRNP",
-      "state": "A complex",
-      "species": "Human",
-      "species_code": "HUMAN",
-      "resolution": "4.1",
-      "year": "2020",
-      "paper_title": "Molecular architecture of the human 17S U2 snRNP.",
-      "doi": "10.1038/s41586-020-2344-3",
-      "pubmed_id": "32494006",
-      "journal": "Nature",
-      "authors": "Zhang Z; Will CL; Bertram K; Dybkov O; Hartmuth K; Agafonov DE; Hofele R; Urlaub H; Kastner B; Lührmann R; Stark H",
-      "authors_short": "Zhang Z; Will CL; Bertram K; et al. (11 authors)",
-      "proteins": [
-        {
-          "name": "Probable ATP-dependent RNA helicase DDX46",
-          "gene": "DDX46; KIAA0801",
-          "chains": "p",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "17S U2 SnRNP complex component HTATSF1",
-          "gene": "HTATSF1",
-          "chains": "q",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 3",
-          "gene": "KIAA0017; SAP130; SF3B3",
-          "chains": "v",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "PHD finger-like domain-containing protein 5A",
-          "gene": "PHF5A",
-          "chains": "y",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 2",
-          "gene": "SAP145; SF3B2",
-          "chains": "8",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 1",
-          "gene": "SAP155; SF3B1",
-          "chains": "u",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 3",
-          "gene": "SAP61; SF3A3",
-          "chains": "9",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 5",
-          "gene": "SF3B10; SF3B5",
-          "chains": "x",
-          "organisms": "Homo sapiens"
-        }
-      ],
-      "rnas": [
-        {
-          "name": "U2 snRNA",
-          "gene": "",
-          "chains": "2",
-          "organisms": ""
-        }
-      ],
-      "protein_count": 8,
-      "rna_count": 1,
-      "chain_count": 10,
-      "has_prpf8": false,
-      "has_sf3b1": true,
-      "script_path": "scripts/6y50.cxc"
-    },
-    {
-      "pdb_id": "6y53",
-      "title": "human 17S U2 snRNP low resolution part",
-      "state": "A complex",
-      "species": "Human",
-      "species_code": "HUMAN",
-      "resolution": "7.1",
-      "year": "2020",
-      "paper_title": "Molecular architecture of the human 17S U2 snRNP.",
-      "doi": "10.1038/s41586-020-2344-3",
-      "pubmed_id": "32494006",
-      "journal": "Nature",
-      "authors": "Zhang Z; Will CL; Bertram K; Dybkov O; Hartmuth K; Agafonov DE; Hofele R; Urlaub H; Kastner B; Lührmann R; Stark H",
-      "authors_short": "Zhang Z; Will CL; Bertram K; et al. (11 authors)",
-      "proteins": [
-        {
-          "name": "Splicing factor 3B subunit 6",
-          "gene": "CGI-110; HSPC175; HT006; SAP14; SF3B14; SF3B14A; SF3B6",
-          "chains": "z",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein-associated proteins B and B'",
-          "gene": "COD; SNRPB; SNRPB1",
-          "chains": "m",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Probable ATP-dependent RNA helicase DDX46",
-          "gene": "DDX46; KIAA0801",
-          "chains": "p",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "17S U2 SnRNP complex component HTATSF1",
-          "gene": "HTATSF1",
-          "chains": "q",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein F",
-          "gene": "PBSCF; SNRPF",
-          "chains": "i",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein G",
-          "gene": "PBSCG; SNRPG",
-          "chains": "k",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 1",
-          "gene": "SAP114; SF3A1",
-          "chains": "6",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 2",
-          "gene": "SAP145; SF3B2",
-          "chains": "8",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 1",
-          "gene": "SAP155; SF3B1",
-          "chains": "u",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 4",
-          "gene": "SAP49; SF3B4",
-          "chains": "o",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 3",
-          "gene": "SAP61; SF3A3",
-          "chains": "9",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 2",
-          "gene": "SAP62; SF3A2",
-          "chains": "7",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U2 small nuclear ribonucleoprotein A'",
-          "gene": "SNRPA1",
-          "chains": "a",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U2 small nuclear ribonucleoprotein B''",
-          "gene": "SNRPB2",
-          "chains": "b",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D1",
-          "gene": "SNRPD1",
-          "chains": "n",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D2",
-          "gene": "SNRPD1; SNRPD2",
-          "chains": "h",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D3",
-          "gene": "SNRPD3",
-          "chains": "l",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein E",
-          "gene": "SNRPE",
-          "chains": "j",
-          "organisms": "Homo sapiens"
-        }
-      ],
-      "rnas": [
-        {
-          "name": "U2 snRNA",
-          "gene": "",
-          "chains": "2",
-          "organisms": ""
-        }
-      ],
-      "protein_count": 18,
-      "rna_count": 1,
-      "chain_count": 19,
-      "has_prpf8": false,
-      "has_sf3b1": true,
-      "script_path": "scripts/6y53.cxc"
-    },
-    {
-      "pdb_id": "6y5q",
-      "title": "human 17S U2 snRNP",
-      "state": "A complex",
-      "species": "Human",
-      "species_code": "HUMAN",
-      "resolution": "7.1",
-      "year": "2020",
-      "paper_title": "Molecular architecture of the human 17S U2 snRNP.",
-      "doi": "10.1038/s41586-020-2344-3",
-      "pubmed_id": "32494006",
-      "journal": "Nature",
-      "authors": "Zhang Z; Will CL; Bertram K; Dybkov O; Hartmuth K; Agafonov DE; Hofele R; Urlaub H; Kastner B; Lührmann R; Stark H",
-      "authors_short": "Zhang Z; Will CL; Bertram K; et al. (11 authors)",
-      "proteins": [
-        {
-          "name": "Splicing factor 3B subunit 6",
-          "gene": "CGI-110; HSPC175; HT006; SAP14; SF3B14; SF3B14A; SF3B6",
-          "chains": "z",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein-associated proteins B and B'",
-          "gene": "COD; SNRPB; SNRPB1",
-          "chains": "m",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Probable ATP-dependent RNA helicase DDX46",
-          "gene": "DDX46; KIAA0801",
-          "chains": "p",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "17S U2 SnRNP complex component HTATSF1",
-          "gene": "HTATSF1",
-          "chains": "q",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 3",
-          "gene": "KIAA0017; SAP130; SF3B3",
-          "chains": "v",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein F",
-          "gene": "PBSCF; SNRPF",
-          "chains": "i",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein G",
-          "gene": "PBSCG; SNRPG",
-          "chains": "k",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "PHD finger-like domain-containing protein 5A",
-          "gene": "PHF5A",
-          "chains": "y",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 1",
-          "gene": "SAP114; SF3A1",
-          "chains": "6",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 2",
-          "gene": "SAP145; SF3B2",
-          "chains": "8",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 1",
-          "gene": "SAP155; SF3B1",
-          "chains": "u",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 4",
-          "gene": "SAP49; SF3B4",
-          "chains": "o",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 3",
-          "gene": "SAP61; SF3A3",
-          "chains": "9",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 2",
-          "gene": "SAP62; SF3A2",
-          "chains": "7",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 5",
-          "gene": "SF3B10; SF3B5",
-          "chains": "x",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U2 small nuclear ribonucleoprotein A'",
-          "gene": "SNRPA1",
-          "chains": "a",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U2 small nuclear ribonucleoprotein B''",
-          "gene": "SNRPB2",
-          "chains": "b",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D1",
-          "gene": "SNRPD1",
-          "chains": "n",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D2",
-          "gene": "SNRPD1; SNRPD2",
-          "chains": "h",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D3",
-          "gene": "SNRPD3",
-          "chains": "l",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein E",
-          "gene": "SNRPE",
-          "chains": "j",
-          "organisms": "Homo sapiens"
-        }
-      ],
-      "rnas": [
-        {
-          "name": "U2snRNA",
-          "gene": "",
-          "chains": "2",
-          "organisms": ""
-        }
-      ],
-      "protein_count": 21,
-      "rna_count": 1,
-      "chain_count": 22,
-      "has_prpf8": false,
-      "has_sf3b1": true,
-      "script_path": "scripts/6y5q.cxc"
-    },
-    {
-      "pdb_id": "7evn",
-      "title": "The cryo-EM structure of the DDX42-SF3b complex",
-      "state": "A complex",
-      "species": "Human",
-      "species_code": "HUMAN",
-      "resolution": "2.6",
-      "year": "2024",
-      "paper_title": "Structural insights into branch site proofreading by human spliceosome",
-      "doi": "10.1038/s41594-023-01188-0",
-      "pubmed_id": "",
-      "journal": "Nat. Struct. Mol. Biol.",
-      "authors": "Zhang, X.; Zhan, X.; Bian, T.; Yang, F.; Li, P.; Lu, Y.; Xing, Z.; Fan, R.; Zhang, Q.C.; Shi, Y.",
-      "authors_short": "Zhang, X.; Zhan, X.; Bian, T.; et al. (10 authors)",
-      "proteins": [
-        {
-          "name": "ATP-dependent RNA helicase DDX42",
-          "gene": "DDX42",
-          "chains": "E",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 3",
-          "gene": "KIAA0017; SAP130; SF3B3",
-          "chains": "A",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "PHD finger-like domain-containing protein 5A",
-          "gene": "PHF5A",
-          "chains": "D",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 1",
-          "gene": "SAP155; SF3B1",
-          "chains": "C",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 5",
-          "gene": "SF3B10; SF3B5",
-          "chains": "B",
-          "organisms": "Homo sapiens"
-        }
-      ],
-      "rnas": [],
-      "protein_count": 5,
-      "rna_count": 0,
-      "chain_count": 6,
-      "has_prpf8": false,
-      "has_sf3b1": true,
-      "script_path": "scripts/7evn.cxc"
-    },
-    {
-      "pdb_id": "7evo",
-      "title": "The cryo-EM structure of the human 17S U2 snRNP",
-      "state": "A complex",
-      "species": "Human",
-      "species_code": "HUMAN",
-      "resolution": "2.5",
-      "year": "2024",
-      "paper_title": "Structural insights into branch site proofreading by human spliceosome.",
-      "doi": "10.1038/s41594-023-01188-0",
-      "pubmed_id": "38196034",
-      "journal": "Nat Struct Mol Biol",
-      "authors": "Zhang X; Zhan X; Bian T; Yang F; Li P; Lu Y; Xing Z; Fan R; Zhang QC; Shi Y",
-      "authors_short": "Zhang X; Zhan X; Bian T; et al. (10 authors)",
-      "proteins": [
-        {
-          "name": "Small nuclear ribonucleoprotein-associated proteins B and B'",
-          "gene": "COD; SNRPB; SNRPB1",
-          "chains": "f",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Probable ATP-dependent RNA helicase DDX46",
-          "gene": "DDX46; KIAA0801",
-          "chains": "E",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "17S U2 SnRNP complex component HTATSF1",
-          "gene": "HTATSF1",
-          "chains": "D",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 3",
-          "gene": "KIAA0017; SAP130; SF3B3",
-          "chains": "3",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein F",
-          "gene": "PBSCF; SNRPF",
-          "chains": "b",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein G",
-          "gene": "PBSCG; SNRPG",
-          "chains": "d",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "PHD finger-like domain-containing protein 5A",
-          "gene": "PHF5A",
-          "chains": "6",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 1",
-          "gene": "SAP114; SF3A1",
-          "chains": "A",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 2",
-          "gene": "SAP145; SF3B2",
-          "chains": "2",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 1",
-          "gene": "SAP155; SF3B1",
-          "chains": "1",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 4",
-          "gene": "SAP49; SF3B4",
-          "chains": "4",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 3",
-          "gene": "SAP61; SF3A3",
-          "chains": "C",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 2",
-          "gene": "SAP62; SF3A2",
-          "chains": "B",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 5",
-          "gene": "SF3B10; SF3B5",
-          "chains": "5",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U2 small nuclear ribonucleoprotein A'",
-          "gene": "SNRPA1",
-          "chains": "F",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U2 small nuclear ribonucleoprotein B''",
-          "gene": "SNRPB2",
-          "chains": "G",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D1",
-          "gene": "SNRPD1",
-          "chains": "g",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D2",
-          "gene": "SNRPD1; SNRPD2",
-          "chains": "a",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D3",
-          "gene": "SNRPD3",
-          "chains": "e",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein E",
-          "gene": "SNRPE",
-          "chains": "c",
-          "organisms": "Homo sapiens"
-        }
-      ],
-      "rnas": [
-        {
-          "name": "U2 snRNA",
-          "gene": "",
-          "chains": "H",
-          "organisms": ""
-        }
-      ],
-      "protein_count": 20,
-      "rna_count": 1,
-      "chain_count": 24,
-      "has_prpf8": false,
-      "has_sf3b1": true,
-      "script_path": "scripts/7evo.cxc"
-    },
-    {
-      "pdb_id": "7onb",
-      "title": "Structure of the U2 5' module of the A3'-SSA complex",
-      "state": "A complex",
-      "species": "Human",
-      "species_code": "HUMAN",
-      "resolution": "3.1",
-      "year": "2021",
-      "paper_title": "Structural basis of intron selection by U2 snRNP in the presence of covalent inhibitors.",
-      "doi": "10.1038/s41467-021-24741-1",
-      "pubmed_id": "34301950",
-      "journal": "Nat Commun",
-      "authors": "Cretu C; Gee P; Liu X; Agrawal A; Nguyen TV; Ghosh AK; Cook A; Jurica M; Larsen NA; Pena V",
-      "authors_short": "Cretu C; Gee P; Liu X; et al. (10 authors)",
-      "proteins": [
-        {
-          "name": "Splicing factor 3B subunit 3",
-          "gene": "KIAA0017; SAP130; SF3B3",
-          "chains": "A",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "PHD finger-like domain-containing protein 5A",
-          "gene": "PHF5A",
-          "chains": "D",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 2",
-          "gene": "SAP145; SF3B2",
-          "chains": "I",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 1",
-          "gene": "SAP155; SF3B1",
-          "chains": "C",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 4",
-          "gene": "SAP49; SF3B4",
-          "chains": "K",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 3",
-          "gene": "SAP61; SF3A3",
-          "chains": "N",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 2",
-          "gene": "SAP62; SF3A2",
-          "chains": "M",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 5",
-          "gene": "SF3B10; SF3B5",
-          "chains": "B",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "UNK",
-          "gene": "",
-          "chains": "F",
-          "organisms": "Homo sapiens"
-        }
-      ],
-      "rnas": [
-        {
-          "name": "MINX",
-          "gene": "",
-          "chains": "G",
-          "organisms": ""
-        },
-        {
-          "name": "RNU2",
-          "gene": "",
-          "chains": "H",
-          "organisms": ""
-        }
-      ],
-      "protein_count": 9,
-      "rna_count": 2,
-      "chain_count": 15,
-      "has_prpf8": false,
-      "has_sf3b1": true,
-      "script_path": "scripts/7onb.cxc"
-    },
-    {
-      "pdb_id": "7q3l",
-      "title": "Human 17S U2 snRNP 5' domain",
-      "state": "A complex",
-      "species": "Human",
-      "species_code": "HUMAN",
-      "resolution": "2.21",
-      "year": "2022",
-      "paper_title": "Structural basis of branch site recognition by the human spliceosome.",
-      "doi": "10.1126/science.abm4245",
-      "pubmed_id": "34822310",
-      "journal": "Science",
-      "authors": "Tholen J; Razew M; Weis F; Galej WP",
-      "authors_short": "Tholen J; Razew M; Weis F; Galej WP",
-      "proteins": [
-        {
-          "name": "Probable ATP-dependent RNA helicase DDX46",
-          "gene": "DDX46; KIAA0801",
-          "chains": "p",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "17S U2 SnRNP complex component HTATSF1",
-          "gene": "HTATSF1",
-          "chains": "q",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 3",
-          "gene": "KIAA0017; SAP130; SF3B3",
-          "chains": "C",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "PHD finger-like domain-containing protein 5A",
-          "gene": "PHF5A",
-          "chains": "G",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 2",
-          "gene": "SAP145; SF3B2",
-          "chains": "B",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 1",
-          "gene": "SAP155; SF3B1",
-          "chains": "A",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 3",
-          "gene": "SAP61; SF3A3",
-          "chains": "9",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 5",
-          "gene": "SF3B10; SF3B5",
-          "chains": "E",
-          "organisms": "Homo sapiens"
-        }
-      ],
-      "rnas": [
-        {
-          "name": "U2 snRNA",
-          "gene": "",
-          "chains": "2",
-          "organisms": ""
-        }
-      ],
-      "protein_count": 8,
-      "rna_count": 1,
-      "chain_count": 16,
-      "has_prpf8": false,
-      "has_sf3b1": true,
-      "script_path": "scripts/7q3l.cxc"
-    },
-    {
-      "pdb_id": "7q4o",
-      "title": "Substrate-bound A-like U2 snRNP",
-      "state": "A complex",
-      "species": "Human",
-      "species_code": "HUMAN",
-      "resolution": "2.1",
-      "year": "2022",
-      "paper_title": "Structural basis of branch site recognition by the human spliceosome.",
-      "doi": "10.1126/science.abm4245",
-      "pubmed_id": "34822310",
-      "journal": "Science",
-      "authors": "Tholen J; Razew M; Weis F; Galej WP",
-      "authors_short": "Tholen J; Razew M; Weis F; Galej WP",
-      "proteins": [
-        {
-          "name": "Splicing factor 3B subunit 6",
-          "gene": "CGI-110; HSPC175; HT006; SAP14; SF3B14; SF3B14A; SF3B6",
-          "chains": "F",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 3",
-          "gene": "KIAA0017; SAP130; SF3B3",
-          "chains": "C",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "PHD finger-like domain-containing protein 5A",
-          "gene": "PHF5A",
-          "chains": "G",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 2",
-          "gene": "SAP145; SF3B2",
-          "chains": "B",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 1",
-          "gene": "SAP155; SF3B1",
-          "chains": "A",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 3",
-          "gene": "SAP61; SF3A3",
-          "chains": "9",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 2",
-          "gene": "SAP62; SF3A2",
-          "chains": "1",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 5",
-          "gene": "SF3B10; SF3B5",
-          "chains": "E",
-          "organisms": "Homo sapiens"
-        }
-      ],
-      "rnas": [
-        {
-          "name": "BPS oligo",
-          "gene": "",
-          "chains": "h",
-          "organisms": ""
-        },
-        {
-          "name": "U2 snRNA",
-          "gene": "",
-          "chains": "2",
-          "organisms": ""
-        }
-      ],
-      "protein_count": 8,
-      "rna_count": 2,
-      "chain_count": 20,
-      "has_prpf8": false,
-      "has_sf3b1": true,
-      "script_path": "scripts/7q4o.cxc"
-    },
-    {
-      "pdb_id": "7q4p",
-      "title": "U2 snRNP after ATP-dependent remodelling",
-      "state": "A complex",
-      "species": "Human",
-      "species_code": "HUMAN",
-      "resolution": "2.15",
-      "year": "2022",
-      "paper_title": "Structural basis of branch site recognition by the human spliceosome.",
-      "doi": "10.1126/science.abm4245",
-      "pubmed_id": "34822310",
-      "journal": "Science",
-      "authors": "Tholen J; Razew M; Weis F; Galej WP",
-      "authors_short": "Tholen J; Razew M; Weis F; Galej WP",
-      "proteins": [
-        {
-          "name": "Splicing factor 3B subunit 3",
-          "gene": "KIAA0017; SAP130; SF3B3",
-          "chains": "C",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "PHD finger-like domain-containing protein 5A",
-          "gene": "PHF5A",
-          "chains": "G",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 2",
-          "gene": "SAP145; SF3B2",
-          "chains": "B",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 1",
-          "gene": "SAP155; SF3B1",
-          "chains": "A",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 3",
-          "gene": "SAP61; SF3A3",
-          "chains": "9",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 2",
-          "gene": "SAP62; SF3A2",
-          "chains": "1",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 5",
-          "gene": "SF3B10; SF3B5",
-          "chains": "E",
-          "organisms": "Homo sapiens"
-        }
-      ],
-      "rnas": [
-        {
-          "name": "U2 snRNA",
-          "gene": "",
-          "chains": "2",
-          "organisms": ""
-        }
-      ],
-      "protein_count": 7,
-      "rna_count": 1,
-      "chain_count": 17,
-      "has_prpf8": false,
-      "has_sf3b1": true,
-      "script_path": "scripts/7q4p.cxc"
-    },
-    {
-      "pdb_id": "8hk1",
-      "title": "The cryo-EM structure of human pre-17S U2 snRNP",
-      "state": "A complex",
-      "species": "Human",
-      "species_code": "HUMAN",
-      "resolution": "2.7",
-      "year": "2023",
-      "paper_title": "Mechanisms of the RNA helicases DDX42 and DDX46 in human U2 snRNP assembly.",
-      "doi": "10.1038/s41467-023-36489-x",
-      "pubmed_id": "36797247",
-      "journal": "Nat Commun",
-      "authors": "Yang F; Bian T; Zhan X; Chen Z; Xing Z; Larsen NA; Zhang X; Shi Y",
-      "authors_short": "Yang F; Bian T; Zhan X; et al. (8 authors)",
-      "proteins": [
-        {
-          "name": "Small nuclear ribonucleoprotein-associated proteins B and B'",
-          "gene": "COD; SNRPB; SNRPB1",
-          "chains": "f",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "ATP-dependent RNA helicase DDX42",
-          "gene": "DDX42",
-          "chains": "E",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "17S U2 SnRNP complex component HTATSF1",
-          "gene": "HTATSF1",
-          "chains": "D",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 3",
-          "gene": "KIAA0017; SAP130; SF3B3",
-          "chains": "3",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein F",
-          "gene": "PBSCF; SNRPF",
-          "chains": "b",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein G",
-          "gene": "PBSCG; SNRPG",
-          "chains": "d",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "PHD finger-like domain-containing protein 5A",
-          "gene": "PHF5A",
-          "chains": "6",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 1",
-          "gene": "SAP114; SF3A1",
-          "chains": "A",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 2",
-          "gene": "SAP145; SF3B2",
-          "chains": "2",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 1",
-          "gene": "SAP155; SF3B1",
-          "chains": "1",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 4",
-          "gene": "SAP49; SF3B4",
-          "chains": "4",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 3",
-          "gene": "SAP61; SF3A3",
-          "chains": "C",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 2",
-          "gene": "SAP62; SF3A2",
-          "chains": "B",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 5",
-          "gene": "SF3B10; SF3B5",
-          "chains": "5",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U2 small nuclear ribonucleoprotein A'",
-          "gene": "SNRPA1",
-          "chains": "F",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U2 small nuclear ribonucleoprotein B''",
-          "gene": "SNRPB2",
-          "chains": "G",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D1",
-          "gene": "SNRPD1",
-          "chains": "g",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D2",
-          "gene": "SNRPD1; SNRPD2",
-          "chains": "a",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D3",
-          "gene": "SNRPD3",
-          "chains": "e",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein E",
-          "gene": "SNRPE",
-          "chains": "c",
-          "organisms": "Homo sapiens"
-        }
-      ],
-      "rnas": [
-        {
-          "name": "U2 snRNA",
-          "gene": "",
-          "chains": "H",
-          "organisms": ""
-        }
-      ],
-      "protein_count": 20,
-      "rna_count": 1,
-      "chain_count": 24,
-      "has_prpf8": false,
-      "has_sf3b1": true,
-      "script_path": "scripts/8hk1.cxc"
-    },
-    {
-      "pdb_id": "9k1o",
-      "title": "Structure of SF3B core in complex with the 22-nt histone mRNA(SF3B-22-nt histone mRNA)",
-      "state": "A complex",
-      "species": "Human",
-      "species_code": "HUMAN",
-      "resolution": "3.3",
-      "year": "2025",
-      "paper_title": "A common structural mechanism for RNA recognition by the SF3B complex in mRNA splicing and export.",
-      "doi": "10.1093/nar/gkaf759",
-      "pubmed_id": "40795960",
-      "journal": "Nucleic Acids Res",
-      "authors": "Zhang Y; Yin C; Wang Y; Yan K; Zhao B; Hu X; Wan Y; Cheng H; Huang J",
-      "authors_short": "Zhang Y; Yin C; Wang Y; et al. (9 authors)",
-      "proteins": [
-        {
-          "name": "Splicing factor 3B subunit 3",
-          "gene": "KIAA0017; SAP130; SF3B3",
-          "chains": "A",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "PHD finger-like domain-containing protein 5A",
-          "gene": "PHF5A",
-          "chains": "D",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 1",
-          "gene": "SAP155; SF3B1",
-          "chains": "C",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 5",
-          "gene": "SF3B10; SF3B5",
-          "chains": "B",
-          "organisms": "Homo sapiens"
-        }
-      ],
-      "rnas": [
-        {
-          "name": "22-nt histone H2a mRNA element",
-          "gene": "",
-          "chains": "H",
-          "organisms": ""
-        },
-        {
-          "name": "23-nt histone H2a mRNA element",
-          "gene": "",
-          "chains": "G",
-          "organisms": ""
-        }
-      ],
-      "protein_count": 4,
-      "rna_count": 2,
-      "chain_count": 7,
-      "has_prpf8": false,
-      "has_sf3b1": true,
-      "script_path": "scripts/9k1o.cxc"
-    },
-    {
-      "pdb_id": "9k1q",
-      "title": "Structure of SF3B core in complex with the 101-nt histone mRNA(SF3B-101-nt histone mRNA)",
-      "state": "A complex",
-      "species": "Human",
-      "species_code": "HUMAN",
-      "resolution": "3.6",
-      "year": "2025",
-      "paper_title": "A common structural mechanism for RNA recognition by the SF3B complex in mRNA splicing and export.",
-      "doi": "10.1093/nar/gkaf759",
-      "pubmed_id": "40795960",
-      "journal": "Nucleic Acids Res",
-      "authors": "Zhang Y; Yin C; Wang Y; Yan K; Zhao B; Hu X; Wan Y; Cheng H; Huang J",
-      "authors_short": "Zhang Y; Yin C; Wang Y; et al. (9 authors)",
-      "proteins": [
-        {
-          "name": "Splicing factor 3B subunit 3",
-          "gene": "KIAA0017; SAP130; SF3B3",
-          "chains": "A",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "PHD finger-like domain-containing protein 5A",
-          "gene": "PHF5A",
-          "chains": "D",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 1",
-          "gene": "SAP155; SF3B1",
-          "chains": "C",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 5",
-          "gene": "SF3B10; SF3B5",
-          "chains": "B",
-          "organisms": "Homo sapiens"
-        }
-      ],
-      "rnas": [
-        {
-          "name": "101-nt histone H2a mRNA element",
-          "gene": "",
-          "chains": "G; H",
-          "organisms": ""
-        }
-      ],
-      "protein_count": 4,
-      "rna_count": 1,
-      "chain_count": 7,
-      "has_prpf8": false,
-      "has_sf3b1": true,
-      "script_path": "scripts/9k1q.cxc"
-    },
-    {
-      "pdb_id": "9k1r",
-      "title": "Structure of SF3B core in complex with the intron-U2 snRNA (SF3B-intron-U2 snRNA)",
-      "state": "A complex",
-      "species": "Human",
-      "species_code": "HUMAN",
-      "resolution": "3.8",
-      "year": "2025",
-      "paper_title": "A common structural mechanism for RNA recognition by the SF3B complex in mRNA splicing and export.",
-      "doi": "10.1093/nar/gkaf759",
-      "pubmed_id": "40795960",
-      "journal": "Nucleic Acids Res",
-      "authors": "Zhang Y; Yin C; Wang Y; Yan K; Zhao B; Hu X; Wan Y; Cheng H; Huang J",
-      "authors_short": "Zhang Y; Yin C; Wang Y; et al. (9 authors)",
-      "proteins": [
-        {
-          "name": "Splicing factor 3B subunit 3",
-          "gene": "KIAA0017; SAP130; SF3B3",
-          "chains": "A",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "PHD finger-like domain-containing protein 5A",
-          "gene": "PHF5A",
-          "chains": "D",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 1",
-          "gene": "SAP155; SF3B1",
-          "chains": "C",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 5",
-          "gene": "SF3B10; SF3B5",
-          "chains": "B",
-          "organisms": "Homo sapiens"
-        }
-      ],
-      "rnas": [
-        {
-          "name": "pre-mRNA intron",
-          "gene": "",
-          "chains": "G",
-          "organisms": ""
-        },
-        {
-          "name": "U2 snRNA",
-          "gene": "",
-          "chains": "H",
-          "organisms": ""
-        }
-      ],
-      "protein_count": 4,
-      "rna_count": 2,
-      "chain_count": 7,
-      "has_prpf8": false,
-      "has_sf3b1": true,
-      "script_path": "scripts/9k1r.cxc"
-    },
-    {
-      "pdb_id": "9k1w",
-      "title": "Structure of the SF3B core, harboring the K700E mutation in SF3B1, in complex with intron-U2 snRNA",
-      "state": "A complex",
-      "species": "Human",
-      "species_code": "HUMAN",
-      "resolution": "3.5",
-      "year": "2025",
-      "paper_title": "A common structural mechanism for RNA recognition by the SF3B complex in mRNA splicing and export.",
-      "doi": "10.1093/nar/gkaf759",
-      "pubmed_id": "40795960",
-      "journal": "Nucleic Acids Res",
-      "authors": "Zhang Y; Yin C; Wang Y; Yan K; Zhao B; Hu X; Wan Y; Cheng H; Huang J",
-      "authors_short": "Zhang Y; Yin C; Wang Y; et al. (9 authors)",
-      "proteins": [
-        {
-          "name": "Splicing factor 3B subunit 3",
-          "gene": "KIAA0017; SAP130; SF3B3",
-          "chains": "A",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "PHD finger-like domain-containing protein 5A",
-          "gene": "PHF5A",
-          "chains": "D",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 1",
-          "gene": "SAP155; SF3B1",
-          "chains": "C",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 5",
-          "gene": "SF3B10; SF3B5",
-          "chains": "B",
-          "organisms": "Homo sapiens"
-        }
-      ],
-      "rnas": [
-        {
-          "name": "pre-mRNA intron",
-          "gene": "",
-          "chains": "G",
-          "organisms": ""
-        },
-        {
-          "name": "U2 snRNA",
-          "gene": "",
-          "chains": "H",
-          "organisms": ""
-        }
-      ],
-      "protein_count": 4,
-      "rna_count": 2,
-      "chain_count": 7,
-      "has_prpf8": false,
-      "has_sf3b1": true,
-      "script_path": "scripts/9k1w.cxc"
-    },
-    {
-      "pdb_id": "9k1y",
-      "title": "Structure of the SF3B core, harboring the R625H mutation in SF3B1, in complex with intron-U2 snRNA",
-      "state": "A complex",
-      "species": "Human",
-      "species_code": "HUMAN",
-      "resolution": "3.1",
-      "year": "2025",
-      "paper_title": "A common structural mechanism for RNA recognition by the SF3B complex in mRNA splicing and export.",
-      "doi": "10.1093/nar/gkaf759",
-      "pubmed_id": "40795960",
-      "journal": "Nucleic Acids Res",
-      "authors": "Zhang Y; Yin C; Wang Y; Yan K; Zhao B; Hu X; Wan Y; Cheng H; Huang J",
-      "authors_short": "Zhang Y; Yin C; Wang Y; et al. (9 authors)",
-      "proteins": [
-        {
-          "name": "Splicing factor 3B subunit 3",
-          "gene": "KIAA0017; SAP130; SF3B3",
-          "chains": "A",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "PHD finger-like domain-containing protein 5A",
-          "gene": "PHF5A",
-          "chains": "D",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 1",
-          "gene": "SAP155; SF3B1",
-          "chains": "C",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 5",
-          "gene": "SF3B10; SF3B5",
-          "chains": "B",
-          "organisms": "Homo sapiens"
-        }
-      ],
-      "rnas": [
-        {
-          "name": "pre-mRNA intron",
-          "gene": "",
-          "chains": "G",
-          "organisms": ""
-        },
-        {
-          "name": "U2 snRNA",
-          "gene": "",
-          "chains": "H",
-          "organisms": ""
-        }
-      ],
-      "protein_count": 4,
-      "rna_count": 2,
-      "chain_count": 7,
-      "has_prpf8": false,
-      "has_sf3b1": true,
-      "script_path": "scripts/9k1y.cxc"
-    },
-    {
-      "pdb_id": "9ze0",
-      "title": "Cryo-EM structure of the endogenous U2/branchpoint spliceosomal complex (Proximal DHX15 state)",
-      "state": "A complex",
-      "species": "Human",
-      "species_code": "HUMAN",
-      "resolution": "3.43",
-      "year": "2026",
-      "paper_title": "The tumour suppressor RBM5 activates the helicase DHX15 to regulate splicing.",
-      "doi": "10.64898/2026.03.26.714623",
-      "pubmed_id": "41929118",
-      "journal": "bioRxiv",
-      "authors": "Liu S; Su T; Huang J; Lin CH; Black DL; Damianov A; Zhou ZH",
-      "authors_short": "Liu S; Su T; Huang J; et al. (7 authors)",
-      "proteins": [
-        {
-          "name": "Splicing factor 3B subunit 6",
-          "gene": "CGI-110; HSPC175; HT006; SAP14; SF3B14; SF3B14A; SF3B6",
-          "chains": "B6",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "ATP-dependent RNA helicase DHX15",
-          "gene": "DBP1; DDX15; DHX15",
-          "chains": "B",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "RNA-binding protein 5",
-          "gene": "H37; LUCA15; RBM5",
-          "chains": "A",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 3",
-          "gene": "KIAA0017; SAP130; SF3B3",
-          "chains": "B3",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U2 snRNP-associated SURP motif-containing protein",
-          "gene": "KIAA0332; SR140; U2SURP",
-          "chains": "C",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "PHD finger-like domain-containing protein 5A",
-          "gene": "PHF5A",
-          "chains": "H",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 1",
-          "gene": "SAP114; SF3A1",
-          "chains": "A1",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 2",
-          "gene": "SAP145; SF3B2",
-          "chains": "B2",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 1",
-          "gene": "SAP155; SF3B1",
-          "chains": "B1",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 4",
-          "gene": "SAP49; SF3B4",
-          "chains": "B4",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 3",
-          "gene": "SAP61; SF3A3",
-          "chains": "A3",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 2",
-          "gene": "SAP62; SF3A2",
-          "chains": "A2",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 5",
-          "gene": "SF3B10; SF3B5",
-          "chains": "B5",
-          "organisms": "Homo sapiens"
-        }
-      ],
-      "rnas": [
-        {
-          "name": "pre-mRNA",
-          "gene": "",
-          "chains": "R",
-          "organisms": ""
-        },
-        {
-          "name": "U2 snRNA",
-          "gene": "",
-          "chains": "2",
-          "organisms": ""
-        }
-      ],
-      "protein_count": 13,
-      "rna_count": 2,
-      "chain_count": 16,
-      "has_prpf8": false,
-      "has_sf3b1": true,
-      "script_path": "scripts/9ze0.cxc"
-    },
-    {
-      "pdb_id": "9ze2",
-      "title": "Cryo-EM structure of the endogenous U2/branchpoint spliceosomal complex (core)",
-      "state": "A complex",
-      "species": "Human",
-      "species_code": "HUMAN",
-      "resolution": "3.26",
-      "year": "2026",
-      "paper_title": "The tumour suppressor RBM5 activates the helicase DHX15 to regulate splicing.",
-      "doi": "10.64898/2026.03.26.714623",
-      "pubmed_id": "41929118",
-      "journal": "bioRxiv",
-      "authors": "Liu S; Su T; Huang J; Lin CH; Black DL; Damianov A; Zhou ZH",
-      "authors_short": "Liu S; Su T; Huang J; et al. (7 authors)",
-      "proteins": [
-        {
-          "name": "Splicing factor 3B subunit 6",
-          "gene": "CGI-110; HSPC175; HT006; SAP14; SF3B14; SF3B14A; SF3B6",
-          "chains": "B6",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "RNA-binding protein 5",
-          "gene": "H37; LUCA15; RBM5",
-          "chains": "A",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 3",
-          "gene": "KIAA0017; SAP130; SF3B3",
-          "chains": "B3",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "PHD finger-like domain-containing protein 5A",
-          "gene": "PHF5A",
-          "chains": "H",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 2",
-          "gene": "SAP145; SF3B2",
-          "chains": "B2",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 1",
-          "gene": "SAP155; SF3B1",
-          "chains": "B1",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 4",
-          "gene": "SAP49; SF3B4",
-          "chains": "B4",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 3",
-          "gene": "SAP61; SF3A3",
-          "chains": "A3",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 2",
-          "gene": "SAP62; SF3A2",
-          "chains": "A2",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 5",
-          "gene": "SF3B10; SF3B5",
-          "chains": "B5",
-          "organisms": "Homo sapiens"
-        }
-      ],
-      "rnas": [
-        {
-          "name": "pre-mRNA",
-          "gene": "",
-          "chains": "R",
-          "organisms": ""
-        },
-        {
-          "name": "U2 snRNA",
-          "gene": "",
-          "chains": "2",
-          "organisms": ""
-        }
-      ],
-      "protein_count": 10,
-      "rna_count": 2,
-      "chain_count": 13,
-      "has_prpf8": false,
-      "has_sf3b1": true,
-      "script_path": "scripts/9ze2.cxc"
-    },
-    {
-      "pdb_id": "9ze3",
-      "title": "Cryo-EM structure of the endogenous U2/branchpoint spliceosomal complex (Distal DHX15 state)",
-      "state": "A complex",
-      "species": "Human",
-      "species_code": "HUMAN",
-      "resolution": "3.93",
-      "year": "2026",
-      "paper_title": "The tumour suppressor RBM5 activates the helicase DHX15 to regulate splicing.",
-      "doi": "10.64898/2026.03.26.714623",
-      "pubmed_id": "41929118",
-      "journal": "bioRxiv",
-      "authors": "Liu S; Su T; Huang J; Lin CH; Black DL; Damianov A; Zhou ZH",
-      "authors_short": "Liu S; Su T; Huang J; et al. (7 authors)",
-      "proteins": [
-        {
-          "name": "Splicing factor 3B subunit 6",
-          "gene": "CGI-110; HSPC175; HT006; SAP14; SF3B14; SF3B14A; SF3B6",
-          "chains": "B6",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "ATP-dependent RNA helicase DHX15",
-          "gene": "DBP1; DDX15; DHX15",
-          "chains": "B",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "RNA-binding protein 5",
-          "gene": "H37; LUCA15; RBM5",
-          "chains": "A",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 3",
-          "gene": "KIAA0017; SAP130; SF3B3",
-          "chains": "B3",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U2 snRNP-associated SURP motif-containing protein",
-          "gene": "KIAA0332; SR140; U2SURP",
-          "chains": "C",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "PHD finger-like domain-containing protein 5A",
-          "gene": "PHF5A",
-          "chains": "H",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 1",
-          "gene": "SAP114; SF3A1",
-          "chains": "A1",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 2",
-          "gene": "SAP145; SF3B2",
-          "chains": "B2",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 1",
-          "gene": "SAP155; SF3B1",
-          "chains": "B1",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 4",
-          "gene": "SAP49; SF3B4",
-          "chains": "B4",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 3",
-          "gene": "SAP61; SF3A3",
-          "chains": "A3",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 2",
-          "gene": "SAP62; SF3A2",
-          "chains": "A2",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 5",
-          "gene": "SF3B10; SF3B5",
-          "chains": "B5",
-          "organisms": "Homo sapiens"
-        }
-      ],
-      "rnas": [
-        {
-          "name": "Pre-mRNA",
-          "gene": "",
-          "chains": "R",
-          "organisms": ""
-        },
-        {
-          "name": "U2 snRNA",
-          "gene": "",
-          "chains": "2",
-          "organisms": ""
-        }
-      ],
-      "protein_count": 13,
-      "rna_count": 2,
-      "chain_count": 16,
-      "has_prpf8": false,
-      "has_sf3b1": true,
-      "script_path": "scripts/9ze3.cxc"
-    },
-    {
-      "pdb_id": "9zec",
-      "title": "Cryo-EM structure of the endogenous U2/branchpoint spliceosomal complex (SF3A state 1)",
-      "state": "A complex",
-      "species": "Human",
-      "species_code": "HUMAN",
-      "resolution": "3.61",
-      "year": "2026",
-      "paper_title": "The tumour suppressor RBM5 activates the helicase DHX15 to regulate splicing.",
-      "doi": "10.64898/2026.03.26.714623",
-      "pubmed_id": "41929118",
-      "journal": "bioRxiv",
-      "authors": "Liu S; Su T; Huang J; Lin CH; Black DL; Damianov A; Zhou ZH",
-      "authors_short": "Liu S; Su T; Huang J; et al. (7 authors)",
-      "proteins": [
-        {
-          "name": "Splicing factor 3B subunit 6",
-          "gene": "CGI-110; HSPC175; HT006; SAP14; SF3B14; SF3B14A; SF3B6",
-          "chains": "B6",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "RNA-binding protein 5",
-          "gene": "H37; LUCA15; RBM5",
-          "chains": "A",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 3",
-          "gene": "KIAA0017; SAP130; SF3B3",
-          "chains": "B3",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "PHD finger-like domain-containing protein 5A",
-          "gene": "PHF5A",
-          "chains": "H",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 1",
-          "gene": "SAP114; SF3A1",
-          "chains": "A1",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 2",
-          "gene": "SAP145; SF3B2",
-          "chains": "B2",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 1",
-          "gene": "SAP155; SF3B1",
-          "chains": "B1",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 4",
-          "gene": "SAP49; SF3B4",
-          "chains": "B4",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 3",
-          "gene": "SAP61; SF3A3",
-          "chains": "A3",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 2",
-          "gene": "SAP62; SF3A2",
-          "chains": "A2",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 5",
-          "gene": "SF3B10; SF3B5",
-          "chains": "B5",
-          "organisms": "Homo sapiens"
-        }
-      ],
-      "rnas": [
-        {
-          "name": "Pre-mRNA",
-          "gene": "",
-          "chains": "R",
-          "organisms": ""
-        },
-        {
-          "name": "U2 snRNA",
-          "gene": "",
-          "chains": "2",
-          "organisms": ""
-        }
-      ],
-      "protein_count": 11,
-      "rna_count": 2,
-      "chain_count": 14,
-      "has_prpf8": false,
-      "has_sf3b1": true,
-      "script_path": "scripts/9zec.cxc"
-    },
-    {
-      "pdb_id": "9zed",
-      "title": "Cryo-EM structure of the endogenous U2/branchpoint spliceosomal complex (SF3A state 2)",
-      "state": "A complex",
-      "species": "Human",
-      "species_code": "HUMAN",
-      "resolution": "3.94",
-      "year": "2026",
-      "paper_title": "The tumour suppressor RBM5 activates the helicase DHX15 to regulate splicing.",
-      "doi": "10.64898/2026.03.26.714623",
-      "pubmed_id": "41929118",
-      "journal": "bioRxiv",
-      "authors": "Liu S; Su T; Huang J; Lin CH; Black DL; Damianov A; Zhou ZH",
-      "authors_short": "Liu S; Su T; Huang J; et al. (7 authors)",
-      "proteins": [
-        {
-          "name": "Splicing factor 3B subunit 6",
-          "gene": "CGI-110; HSPC175; HT006; SAP14; SF3B14; SF3B14A; SF3B6",
-          "chains": "B6",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "RNA-binding protein 5",
-          "gene": "H37; LUCA15; RBM5",
-          "chains": "A",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 3",
-          "gene": "KIAA0017; SAP130; SF3B3",
-          "chains": "B3",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "PHD finger-like domain-containing protein 5A",
-          "gene": "PHF5A",
-          "chains": "H",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 1",
-          "gene": "SAP114; SF3A1",
-          "chains": "A1",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 2",
-          "gene": "SAP145; SF3B2",
-          "chains": "B2",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 1",
-          "gene": "SAP155; SF3B1",
-          "chains": "B1",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 4",
-          "gene": "SAP49; SF3B4",
-          "chains": "B4",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 3",
-          "gene": "SAP61; SF3A3",
-          "chains": "A3",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 2",
-          "gene": "SAP62; SF3A2",
-          "chains": "A2",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 5",
-          "gene": "SF3B10; SF3B5",
-          "chains": "B5",
-          "organisms": "Homo sapiens"
-        }
-      ],
-      "rnas": [
-        {
-          "name": "pre-mRNA",
-          "gene": "",
-          "chains": "R",
-          "organisms": ""
-        },
-        {
-          "name": "U2 snRNA",
-          "gene": "",
-          "chains": "2",
-          "organisms": ""
-        }
-      ],
-      "protein_count": 11,
-      "rna_count": 2,
-      "chain_count": 14,
-      "has_prpf8": false,
-      "has_sf3b1": true,
-      "script_path": "scripts/9zed.cxc"
     },
     {
       "pdb_id": "5zwo",
@@ -14112,157 +12173,6 @@
       "script_path": "scripts/8c6j.cxc"
     },
     {
-      "pdb_id": "7oqb",
-      "title": "The U2 part of Saccharomyces cerevisiae spliceosomal pre-A complex (delta BS-A ACT1)",
-      "state": "E complex",
-      "species": "S. cerevisiae",
-      "species_code": "YEAST",
-      "resolution": "9.0",
-      "year": "2021",
-      "paper_title": "Structural insights into how Prp5 proofreads the pre-mRNA branch site.",
-      "doi": "10.1038/s41586-021-03789-5",
-      "pubmed_id": "34349264",
-      "journal": "Nature",
-      "authors": "Zhang Z; Rigo N; Dybkov O; Fourmann JB; Will CL; Kumar V; Urlaub H; Stark H; Lührmann R",
-      "authors_short": "Zhang Z; Rigo N; Dybkov O; et al. (9 authors)",
-      "proteins": [
-        {
-          "name": "Cold sensitive U2 snRNA suppressor 1",
-          "gene": "CUS1; YM9408.02C; YMR240C",
-          "chains": "Q",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Pre-mRNA-splicing factor PRP11",
-          "gene": "D2711; PRP10; PRP11; RNA11; YDL043C",
-          "chains": "U",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Pre-mRNA-splicing factor PRP9",
-          "gene": "D2773; PRP9; YDL030W",
-          "chains": "T",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "U2 snRNP component HSH155",
-          "gene": "HSH155; YM8021.14; YMR288W",
-          "chains": "O",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Protein HSH49",
-          "gene": "HSH49; O6142; YOR319W",
-          "chains": "R",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Pre-mRNA-splicing factor PRP21",
-          "gene": "J0322; PRP21; SPP91; YJL203W",
-          "chains": "V",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D2",
-          "gene": "L9328.5; SMD2; YLR275W",
-          "chains": "u",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D3",
-          "gene": "L9634.6; SMD3; YLR147C",
-          "chains": "v",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "U2 small nuclear ribonucleoprotein A'",
-          "gene": "LEA1; YPL213W",
-          "chains": "W",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "U2 small nuclear ribonucleoprotein B''",
-          "gene": "MSL1; YIB9W; YIR009W",
-          "chains": "Y",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Pre-mRNA-splicing factor RDS3",
-          "gene": "P9513.2; RDS3; YPR094W",
-          "chains": "S",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein F",
-          "gene": "P9705.4; SMX3; YPR182W",
-          "chains": "x",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Pre-mRNA-processing ATP-dependent RNA helicase PRP5",
-          "gene": "PRP5; RNA5; YBR1603; YBR237W",
-          "chains": "p",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "RDS3 complex subunit 10",
-          "gene": "RCP10; YNL138W-A; YSF3",
-          "chains": "Z",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Pre-mRNA-splicing factor RSE1",
-          "gene": "RSE1; SAP130; YM9827.03C; YML049C",
-          "chains": "P",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein-associated protein B",
-          "gene": "SMB1; YER029C",
-          "chains": "s",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D1",
-          "gene": "SMD1; YGR074W",
-          "chains": "t",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein E",
-          "gene": "SME1; YOR159C",
-          "chains": "w",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein G",
-          "gene": "SMX2; SNP2; YFL017BW; YFL017W-A",
-          "chains": "y",
-          "organisms": "Saccharomyces cerevisiae"
-        }
-      ],
-      "rnas": [
-        {
-          "name": "ACT1 pre-mRNA (delta-BS-A)",
-          "gene": "",
-          "chains": "I",
-          "organisms": ""
-        },
-        {
-          "name": "U2 snRNA",
-          "gene": "",
-          "chains": "2",
-          "organisms": ""
-        }
-      ],
-      "protein_count": 19,
-      "rna_count": 2,
-      "chain_count": 21,
-      "has_prpf8": false,
-      "has_sf3b1": true,
-      "script_path": "scripts/7oqb.cxc"
-    },
-    {
       "pdb_id": "7oqe",
       "title": "Saccharomyces cerevisiae spliceosomal pre-A complex (delta BS-A ACT1)",
       "state": "E complex",
@@ -18418,6 +16328,2096 @@
       "has_prpf8": true,
       "has_sf3b1": false,
       "script_path": "scripts/9fmd.cxc"
+    },
+    {
+      "pdb_id": "5zya",
+      "title": "SF3b spliceosomal complex bound to E7107",
+      "state": "U2 snRNP",
+      "species": "Human",
+      "species_code": "HUMAN",
+      "resolution": "3.95",
+      "year": "2018",
+      "paper_title": "The cryo-EM structure of the SF3b spliceosome complex bound to a splicing modulator reveals a pre-mRNA substrate competitive mechanism of action.",
+      "doi": "10.1101/gad.311043.117",
+      "pubmed_id": "29491137",
+      "journal": "Genes Dev",
+      "authors": "Finci LI; Zhang X; Huang X; Zhou Q; Tsai J; Teng T; Agrawal A; Chan B; Irwin S; Karr C; Cook A; Zhu P; Reynolds D; Smith PG; Fekkes P; Buonamici S; Larsen NA",
+      "authors_short": "Finci LI; Zhang X; Huang X; et al. (17 authors)",
+      "proteins": [
+        {
+          "name": "Splicing factor 3B subunit 3",
+          "gene": "KIAA0017; SAP130; SF3B3",
+          "chains": "A",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "PHD finger-like domain-containing protein 5A",
+          "gene": "PHF5A",
+          "chains": "D",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 1",
+          "gene": "SAP155; SF3B1",
+          "chains": "C",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 5",
+          "gene": "SF3B10; SF3B5",
+          "chains": "B",
+          "organisms": "Homo sapiens"
+        }
+      ],
+      "rnas": [],
+      "protein_count": 4,
+      "rna_count": 0,
+      "chain_count": 7,
+      "has_prpf8": false,
+      "has_sf3b1": true,
+      "script_path": "scripts/5zya.cxc"
+    },
+    {
+      "pdb_id": "6y50",
+      "title": "5'domain of human 17S U2 snRNP",
+      "state": "U2 snRNP",
+      "species": "Human",
+      "species_code": "HUMAN",
+      "resolution": "4.1",
+      "year": "2020",
+      "paper_title": "Molecular architecture of the human 17S U2 snRNP.",
+      "doi": "10.1038/s41586-020-2344-3",
+      "pubmed_id": "32494006",
+      "journal": "Nature",
+      "authors": "Zhang Z; Will CL; Bertram K; Dybkov O; Hartmuth K; Agafonov DE; Hofele R; Urlaub H; Kastner B; Lührmann R; Stark H",
+      "authors_short": "Zhang Z; Will CL; Bertram K; et al. (11 authors)",
+      "proteins": [
+        {
+          "name": "Probable ATP-dependent RNA helicase DDX46",
+          "gene": "DDX46; KIAA0801",
+          "chains": "p",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "17S U2 SnRNP complex component HTATSF1",
+          "gene": "HTATSF1",
+          "chains": "q",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 3",
+          "gene": "KIAA0017; SAP130; SF3B3",
+          "chains": "v",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "PHD finger-like domain-containing protein 5A",
+          "gene": "PHF5A",
+          "chains": "y",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 2",
+          "gene": "SAP145; SF3B2",
+          "chains": "8",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 1",
+          "gene": "SAP155; SF3B1",
+          "chains": "u",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 3",
+          "gene": "SAP61; SF3A3",
+          "chains": "9",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 5",
+          "gene": "SF3B10; SF3B5",
+          "chains": "x",
+          "organisms": "Homo sapiens"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "U2 snRNA",
+          "gene": "",
+          "chains": "2",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 8,
+      "rna_count": 1,
+      "chain_count": 10,
+      "has_prpf8": false,
+      "has_sf3b1": true,
+      "script_path": "scripts/6y50.cxc"
+    },
+    {
+      "pdb_id": "6y53",
+      "title": "human 17S U2 snRNP low resolution part",
+      "state": "U2 snRNP",
+      "species": "Human",
+      "species_code": "HUMAN",
+      "resolution": "7.1",
+      "year": "2020",
+      "paper_title": "Molecular architecture of the human 17S U2 snRNP.",
+      "doi": "10.1038/s41586-020-2344-3",
+      "pubmed_id": "32494006",
+      "journal": "Nature",
+      "authors": "Zhang Z; Will CL; Bertram K; Dybkov O; Hartmuth K; Agafonov DE; Hofele R; Urlaub H; Kastner B; Lührmann R; Stark H",
+      "authors_short": "Zhang Z; Will CL; Bertram K; et al. (11 authors)",
+      "proteins": [
+        {
+          "name": "Splicing factor 3B subunit 6",
+          "gene": "CGI-110; HSPC175; HT006; SAP14; SF3B14; SF3B14A; SF3B6",
+          "chains": "z",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein-associated proteins B and B'",
+          "gene": "COD; SNRPB; SNRPB1",
+          "chains": "m",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Probable ATP-dependent RNA helicase DDX46",
+          "gene": "DDX46; KIAA0801",
+          "chains": "p",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "17S U2 SnRNP complex component HTATSF1",
+          "gene": "HTATSF1",
+          "chains": "q",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein F",
+          "gene": "PBSCF; SNRPF",
+          "chains": "i",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein G",
+          "gene": "PBSCG; SNRPG",
+          "chains": "k",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 1",
+          "gene": "SAP114; SF3A1",
+          "chains": "6",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 2",
+          "gene": "SAP145; SF3B2",
+          "chains": "8",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 1",
+          "gene": "SAP155; SF3B1",
+          "chains": "u",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 4",
+          "gene": "SAP49; SF3B4",
+          "chains": "o",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 3",
+          "gene": "SAP61; SF3A3",
+          "chains": "9",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 2",
+          "gene": "SAP62; SF3A2",
+          "chains": "7",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U2 small nuclear ribonucleoprotein A'",
+          "gene": "SNRPA1",
+          "chains": "a",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U2 small nuclear ribonucleoprotein B''",
+          "gene": "SNRPB2",
+          "chains": "b",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D1",
+          "gene": "SNRPD1",
+          "chains": "n",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D2",
+          "gene": "SNRPD1; SNRPD2",
+          "chains": "h",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D3",
+          "gene": "SNRPD3",
+          "chains": "l",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein E",
+          "gene": "SNRPE",
+          "chains": "j",
+          "organisms": "Homo sapiens"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "U2 snRNA",
+          "gene": "",
+          "chains": "2",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 18,
+      "rna_count": 1,
+      "chain_count": 19,
+      "has_prpf8": false,
+      "has_sf3b1": true,
+      "script_path": "scripts/6y53.cxc"
+    },
+    {
+      "pdb_id": "6y5q",
+      "title": "human 17S U2 snRNP",
+      "state": "U2 snRNP",
+      "species": "Human",
+      "species_code": "HUMAN",
+      "resolution": "7.1",
+      "year": "2020",
+      "paper_title": "Molecular architecture of the human 17S U2 snRNP.",
+      "doi": "10.1038/s41586-020-2344-3",
+      "pubmed_id": "32494006",
+      "journal": "Nature",
+      "authors": "Zhang Z; Will CL; Bertram K; Dybkov O; Hartmuth K; Agafonov DE; Hofele R; Urlaub H; Kastner B; Lührmann R; Stark H",
+      "authors_short": "Zhang Z; Will CL; Bertram K; et al. (11 authors)",
+      "proteins": [
+        {
+          "name": "Splicing factor 3B subunit 6",
+          "gene": "CGI-110; HSPC175; HT006; SAP14; SF3B14; SF3B14A; SF3B6",
+          "chains": "z",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein-associated proteins B and B'",
+          "gene": "COD; SNRPB; SNRPB1",
+          "chains": "m",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Probable ATP-dependent RNA helicase DDX46",
+          "gene": "DDX46; KIAA0801",
+          "chains": "p",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "17S U2 SnRNP complex component HTATSF1",
+          "gene": "HTATSF1",
+          "chains": "q",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 3",
+          "gene": "KIAA0017; SAP130; SF3B3",
+          "chains": "v",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein F",
+          "gene": "PBSCF; SNRPF",
+          "chains": "i",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein G",
+          "gene": "PBSCG; SNRPG",
+          "chains": "k",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "PHD finger-like domain-containing protein 5A",
+          "gene": "PHF5A",
+          "chains": "y",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 1",
+          "gene": "SAP114; SF3A1",
+          "chains": "6",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 2",
+          "gene": "SAP145; SF3B2",
+          "chains": "8",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 1",
+          "gene": "SAP155; SF3B1",
+          "chains": "u",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 4",
+          "gene": "SAP49; SF3B4",
+          "chains": "o",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 3",
+          "gene": "SAP61; SF3A3",
+          "chains": "9",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 2",
+          "gene": "SAP62; SF3A2",
+          "chains": "7",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 5",
+          "gene": "SF3B10; SF3B5",
+          "chains": "x",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U2 small nuclear ribonucleoprotein A'",
+          "gene": "SNRPA1",
+          "chains": "a",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U2 small nuclear ribonucleoprotein B''",
+          "gene": "SNRPB2",
+          "chains": "b",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D1",
+          "gene": "SNRPD1",
+          "chains": "n",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D2",
+          "gene": "SNRPD1; SNRPD2",
+          "chains": "h",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D3",
+          "gene": "SNRPD3",
+          "chains": "l",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein E",
+          "gene": "SNRPE",
+          "chains": "j",
+          "organisms": "Homo sapiens"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "U2snRNA",
+          "gene": "",
+          "chains": "2",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 21,
+      "rna_count": 1,
+      "chain_count": 22,
+      "has_prpf8": false,
+      "has_sf3b1": true,
+      "script_path": "scripts/6y5q.cxc"
+    },
+    {
+      "pdb_id": "7evn",
+      "title": "The cryo-EM structure of the DDX42-SF3b complex",
+      "state": "U2 snRNP",
+      "species": "Human",
+      "species_code": "HUMAN",
+      "resolution": "2.6",
+      "year": "2024",
+      "paper_title": "Structural insights into branch site proofreading by human spliceosome",
+      "doi": "10.1038/s41594-023-01188-0",
+      "pubmed_id": "",
+      "journal": "Nat. Struct. Mol. Biol.",
+      "authors": "Zhang, X.; Zhan, X.; Bian, T.; Yang, F.; Li, P.; Lu, Y.; Xing, Z.; Fan, R.; Zhang, Q.C.; Shi, Y.",
+      "authors_short": "Zhang, X.; Zhan, X.; Bian, T.; et al. (10 authors)",
+      "proteins": [
+        {
+          "name": "ATP-dependent RNA helicase DDX42",
+          "gene": "DDX42",
+          "chains": "E",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 3",
+          "gene": "KIAA0017; SAP130; SF3B3",
+          "chains": "A",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "PHD finger-like domain-containing protein 5A",
+          "gene": "PHF5A",
+          "chains": "D",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 1",
+          "gene": "SAP155; SF3B1",
+          "chains": "C",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 5",
+          "gene": "SF3B10; SF3B5",
+          "chains": "B",
+          "organisms": "Homo sapiens"
+        }
+      ],
+      "rnas": [],
+      "protein_count": 5,
+      "rna_count": 0,
+      "chain_count": 6,
+      "has_prpf8": false,
+      "has_sf3b1": true,
+      "script_path": "scripts/7evn.cxc"
+    },
+    {
+      "pdb_id": "7evo",
+      "title": "The cryo-EM structure of the human 17S U2 snRNP",
+      "state": "U2 snRNP",
+      "species": "Human",
+      "species_code": "HUMAN",
+      "resolution": "2.5",
+      "year": "2024",
+      "paper_title": "Structural insights into branch site proofreading by human spliceosome.",
+      "doi": "10.1038/s41594-023-01188-0",
+      "pubmed_id": "38196034",
+      "journal": "Nat Struct Mol Biol",
+      "authors": "Zhang X; Zhan X; Bian T; Yang F; Li P; Lu Y; Xing Z; Fan R; Zhang QC; Shi Y",
+      "authors_short": "Zhang X; Zhan X; Bian T; et al. (10 authors)",
+      "proteins": [
+        {
+          "name": "Small nuclear ribonucleoprotein-associated proteins B and B'",
+          "gene": "COD; SNRPB; SNRPB1",
+          "chains": "f",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Probable ATP-dependent RNA helicase DDX46",
+          "gene": "DDX46; KIAA0801",
+          "chains": "E",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "17S U2 SnRNP complex component HTATSF1",
+          "gene": "HTATSF1",
+          "chains": "D",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 3",
+          "gene": "KIAA0017; SAP130; SF3B3",
+          "chains": "3",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein F",
+          "gene": "PBSCF; SNRPF",
+          "chains": "b",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein G",
+          "gene": "PBSCG; SNRPG",
+          "chains": "d",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "PHD finger-like domain-containing protein 5A",
+          "gene": "PHF5A",
+          "chains": "6",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 1",
+          "gene": "SAP114; SF3A1",
+          "chains": "A",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 2",
+          "gene": "SAP145; SF3B2",
+          "chains": "2",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 1",
+          "gene": "SAP155; SF3B1",
+          "chains": "1",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 4",
+          "gene": "SAP49; SF3B4",
+          "chains": "4",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 3",
+          "gene": "SAP61; SF3A3",
+          "chains": "C",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 2",
+          "gene": "SAP62; SF3A2",
+          "chains": "B",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 5",
+          "gene": "SF3B10; SF3B5",
+          "chains": "5",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U2 small nuclear ribonucleoprotein A'",
+          "gene": "SNRPA1",
+          "chains": "F",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U2 small nuclear ribonucleoprotein B''",
+          "gene": "SNRPB2",
+          "chains": "G",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D1",
+          "gene": "SNRPD1",
+          "chains": "g",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D2",
+          "gene": "SNRPD1; SNRPD2",
+          "chains": "a",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D3",
+          "gene": "SNRPD3",
+          "chains": "e",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein E",
+          "gene": "SNRPE",
+          "chains": "c",
+          "organisms": "Homo sapiens"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "U2 snRNA",
+          "gene": "",
+          "chains": "H",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 20,
+      "rna_count": 1,
+      "chain_count": 24,
+      "has_prpf8": false,
+      "has_sf3b1": true,
+      "script_path": "scripts/7evo.cxc"
+    },
+    {
+      "pdb_id": "7onb",
+      "title": "Structure of the U2 5' module of the A3'-SSA complex",
+      "state": "U2 snRNP",
+      "species": "Human",
+      "species_code": "HUMAN",
+      "resolution": "3.1",
+      "year": "2021",
+      "paper_title": "Structural basis of intron selection by U2 snRNP in the presence of covalent inhibitors.",
+      "doi": "10.1038/s41467-021-24741-1",
+      "pubmed_id": "34301950",
+      "journal": "Nat Commun",
+      "authors": "Cretu C; Gee P; Liu X; Agrawal A; Nguyen TV; Ghosh AK; Cook A; Jurica M; Larsen NA; Pena V",
+      "authors_short": "Cretu C; Gee P; Liu X; et al. (10 authors)",
+      "proteins": [
+        {
+          "name": "Splicing factor 3B subunit 3",
+          "gene": "KIAA0017; SAP130; SF3B3",
+          "chains": "A",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "PHD finger-like domain-containing protein 5A",
+          "gene": "PHF5A",
+          "chains": "D",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 2",
+          "gene": "SAP145; SF3B2",
+          "chains": "I",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 1",
+          "gene": "SAP155; SF3B1",
+          "chains": "C",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 4",
+          "gene": "SAP49; SF3B4",
+          "chains": "K",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 3",
+          "gene": "SAP61; SF3A3",
+          "chains": "N",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 2",
+          "gene": "SAP62; SF3A2",
+          "chains": "M",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 5",
+          "gene": "SF3B10; SF3B5",
+          "chains": "B",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "UNK",
+          "gene": "",
+          "chains": "F",
+          "organisms": "Homo sapiens"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "MINX",
+          "gene": "",
+          "chains": "G",
+          "organisms": ""
+        },
+        {
+          "name": "RNU2",
+          "gene": "",
+          "chains": "H",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 9,
+      "rna_count": 2,
+      "chain_count": 15,
+      "has_prpf8": false,
+      "has_sf3b1": true,
+      "script_path": "scripts/7onb.cxc"
+    },
+    {
+      "pdb_id": "7oqb",
+      "title": "The U2 part of Saccharomyces cerevisiae spliceosomal pre-A complex (delta BS-A ACT1)",
+      "state": "U2 snRNP",
+      "species": "S. cerevisiae",
+      "species_code": "YEAST",
+      "resolution": "9.0",
+      "year": "2021",
+      "paper_title": "Structural insights into how Prp5 proofreads the pre-mRNA branch site.",
+      "doi": "10.1038/s41586-021-03789-5",
+      "pubmed_id": "34349264",
+      "journal": "Nature",
+      "authors": "Zhang Z; Rigo N; Dybkov O; Fourmann JB; Will CL; Kumar V; Urlaub H; Stark H; Lührmann R",
+      "authors_short": "Zhang Z; Rigo N; Dybkov O; et al. (9 authors)",
+      "proteins": [
+        {
+          "name": "Cold sensitive U2 snRNA suppressor 1",
+          "gene": "CUS1; YM9408.02C; YMR240C",
+          "chains": "Q",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Pre-mRNA-splicing factor PRP11",
+          "gene": "D2711; PRP10; PRP11; RNA11; YDL043C",
+          "chains": "U",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Pre-mRNA-splicing factor PRP9",
+          "gene": "D2773; PRP9; YDL030W",
+          "chains": "T",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "U2 snRNP component HSH155",
+          "gene": "HSH155; YM8021.14; YMR288W",
+          "chains": "O",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Protein HSH49",
+          "gene": "HSH49; O6142; YOR319W",
+          "chains": "R",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Pre-mRNA-splicing factor PRP21",
+          "gene": "J0322; PRP21; SPP91; YJL203W",
+          "chains": "V",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D2",
+          "gene": "L9328.5; SMD2; YLR275W",
+          "chains": "u",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D3",
+          "gene": "L9634.6; SMD3; YLR147C",
+          "chains": "v",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "U2 small nuclear ribonucleoprotein A'",
+          "gene": "LEA1; YPL213W",
+          "chains": "W",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "U2 small nuclear ribonucleoprotein B''",
+          "gene": "MSL1; YIB9W; YIR009W",
+          "chains": "Y",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Pre-mRNA-splicing factor RDS3",
+          "gene": "P9513.2; RDS3; YPR094W",
+          "chains": "S",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein F",
+          "gene": "P9705.4; SMX3; YPR182W",
+          "chains": "x",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Pre-mRNA-processing ATP-dependent RNA helicase PRP5",
+          "gene": "PRP5; RNA5; YBR1603; YBR237W",
+          "chains": "p",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "RDS3 complex subunit 10",
+          "gene": "RCP10; YNL138W-A; YSF3",
+          "chains": "Z",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Pre-mRNA-splicing factor RSE1",
+          "gene": "RSE1; SAP130; YM9827.03C; YML049C",
+          "chains": "P",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein-associated protein B",
+          "gene": "SMB1; YER029C",
+          "chains": "s",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D1",
+          "gene": "SMD1; YGR074W",
+          "chains": "t",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein E",
+          "gene": "SME1; YOR159C",
+          "chains": "w",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein G",
+          "gene": "SMX2; SNP2; YFL017BW; YFL017W-A",
+          "chains": "y",
+          "organisms": "Saccharomyces cerevisiae"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "ACT1 pre-mRNA (delta-BS-A)",
+          "gene": "",
+          "chains": "I",
+          "organisms": ""
+        },
+        {
+          "name": "U2 snRNA",
+          "gene": "",
+          "chains": "2",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 19,
+      "rna_count": 2,
+      "chain_count": 21,
+      "has_prpf8": false,
+      "has_sf3b1": true,
+      "script_path": "scripts/7oqb.cxc"
+    },
+    {
+      "pdb_id": "7q3l",
+      "title": "Human 17S U2 snRNP 5' domain",
+      "state": "U2 snRNP",
+      "species": "Human",
+      "species_code": "HUMAN",
+      "resolution": "2.21",
+      "year": "2022",
+      "paper_title": "Structural basis of branch site recognition by the human spliceosome.",
+      "doi": "10.1126/science.abm4245",
+      "pubmed_id": "34822310",
+      "journal": "Science",
+      "authors": "Tholen J; Razew M; Weis F; Galej WP",
+      "authors_short": "Tholen J; Razew M; Weis F; Galej WP",
+      "proteins": [
+        {
+          "name": "Probable ATP-dependent RNA helicase DDX46",
+          "gene": "DDX46; KIAA0801",
+          "chains": "p",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "17S U2 SnRNP complex component HTATSF1",
+          "gene": "HTATSF1",
+          "chains": "q",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 3",
+          "gene": "KIAA0017; SAP130; SF3B3",
+          "chains": "C",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "PHD finger-like domain-containing protein 5A",
+          "gene": "PHF5A",
+          "chains": "G",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 2",
+          "gene": "SAP145; SF3B2",
+          "chains": "B",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 1",
+          "gene": "SAP155; SF3B1",
+          "chains": "A",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 3",
+          "gene": "SAP61; SF3A3",
+          "chains": "9",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 5",
+          "gene": "SF3B10; SF3B5",
+          "chains": "E",
+          "organisms": "Homo sapiens"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "U2 snRNA",
+          "gene": "",
+          "chains": "2",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 8,
+      "rna_count": 1,
+      "chain_count": 16,
+      "has_prpf8": false,
+      "has_sf3b1": true,
+      "script_path": "scripts/7q3l.cxc"
+    },
+    {
+      "pdb_id": "7q4o",
+      "title": "Substrate-bound A-like U2 snRNP",
+      "state": "U2 snRNP",
+      "species": "Human",
+      "species_code": "HUMAN",
+      "resolution": "2.1",
+      "year": "2022",
+      "paper_title": "Structural basis of branch site recognition by the human spliceosome.",
+      "doi": "10.1126/science.abm4245",
+      "pubmed_id": "34822310",
+      "journal": "Science",
+      "authors": "Tholen J; Razew M; Weis F; Galej WP",
+      "authors_short": "Tholen J; Razew M; Weis F; Galej WP",
+      "proteins": [
+        {
+          "name": "Splicing factor 3B subunit 6",
+          "gene": "CGI-110; HSPC175; HT006; SAP14; SF3B14; SF3B14A; SF3B6",
+          "chains": "F",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 3",
+          "gene": "KIAA0017; SAP130; SF3B3",
+          "chains": "C",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "PHD finger-like domain-containing protein 5A",
+          "gene": "PHF5A",
+          "chains": "G",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 2",
+          "gene": "SAP145; SF3B2",
+          "chains": "B",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 1",
+          "gene": "SAP155; SF3B1",
+          "chains": "A",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 3",
+          "gene": "SAP61; SF3A3",
+          "chains": "9",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 2",
+          "gene": "SAP62; SF3A2",
+          "chains": "1",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 5",
+          "gene": "SF3B10; SF3B5",
+          "chains": "E",
+          "organisms": "Homo sapiens"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "BPS oligo",
+          "gene": "",
+          "chains": "h",
+          "organisms": ""
+        },
+        {
+          "name": "U2 snRNA",
+          "gene": "",
+          "chains": "2",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 8,
+      "rna_count": 2,
+      "chain_count": 20,
+      "has_prpf8": false,
+      "has_sf3b1": true,
+      "script_path": "scripts/7q4o.cxc"
+    },
+    {
+      "pdb_id": "7q4p",
+      "title": "U2 snRNP after ATP-dependent remodelling",
+      "state": "U2 snRNP",
+      "species": "Human",
+      "species_code": "HUMAN",
+      "resolution": "2.15",
+      "year": "2022",
+      "paper_title": "Structural basis of branch site recognition by the human spliceosome.",
+      "doi": "10.1126/science.abm4245",
+      "pubmed_id": "34822310",
+      "journal": "Science",
+      "authors": "Tholen J; Razew M; Weis F; Galej WP",
+      "authors_short": "Tholen J; Razew M; Weis F; Galej WP",
+      "proteins": [
+        {
+          "name": "Splicing factor 3B subunit 3",
+          "gene": "KIAA0017; SAP130; SF3B3",
+          "chains": "C",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "PHD finger-like domain-containing protein 5A",
+          "gene": "PHF5A",
+          "chains": "G",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 2",
+          "gene": "SAP145; SF3B2",
+          "chains": "B",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 1",
+          "gene": "SAP155; SF3B1",
+          "chains": "A",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 3",
+          "gene": "SAP61; SF3A3",
+          "chains": "9",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 2",
+          "gene": "SAP62; SF3A2",
+          "chains": "1",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 5",
+          "gene": "SF3B10; SF3B5",
+          "chains": "E",
+          "organisms": "Homo sapiens"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "U2 snRNA",
+          "gene": "",
+          "chains": "2",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 7,
+      "rna_count": 1,
+      "chain_count": 17,
+      "has_prpf8": false,
+      "has_sf3b1": true,
+      "script_path": "scripts/7q4p.cxc"
+    },
+    {
+      "pdb_id": "8hk1",
+      "title": "The cryo-EM structure of human pre-17S U2 snRNP",
+      "state": "U2 snRNP",
+      "species": "Human",
+      "species_code": "HUMAN",
+      "resolution": "2.7",
+      "year": "2023",
+      "paper_title": "Mechanisms of the RNA helicases DDX42 and DDX46 in human U2 snRNP assembly.",
+      "doi": "10.1038/s41467-023-36489-x",
+      "pubmed_id": "36797247",
+      "journal": "Nat Commun",
+      "authors": "Yang F; Bian T; Zhan X; Chen Z; Xing Z; Larsen NA; Zhang X; Shi Y",
+      "authors_short": "Yang F; Bian T; Zhan X; et al. (8 authors)",
+      "proteins": [
+        {
+          "name": "Small nuclear ribonucleoprotein-associated proteins B and B'",
+          "gene": "COD; SNRPB; SNRPB1",
+          "chains": "f",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "ATP-dependent RNA helicase DDX42",
+          "gene": "DDX42",
+          "chains": "E",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "17S U2 SnRNP complex component HTATSF1",
+          "gene": "HTATSF1",
+          "chains": "D",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 3",
+          "gene": "KIAA0017; SAP130; SF3B3",
+          "chains": "3",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein F",
+          "gene": "PBSCF; SNRPF",
+          "chains": "b",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein G",
+          "gene": "PBSCG; SNRPG",
+          "chains": "d",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "PHD finger-like domain-containing protein 5A",
+          "gene": "PHF5A",
+          "chains": "6",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 1",
+          "gene": "SAP114; SF3A1",
+          "chains": "A",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 2",
+          "gene": "SAP145; SF3B2",
+          "chains": "2",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 1",
+          "gene": "SAP155; SF3B1",
+          "chains": "1",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 4",
+          "gene": "SAP49; SF3B4",
+          "chains": "4",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 3",
+          "gene": "SAP61; SF3A3",
+          "chains": "C",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 2",
+          "gene": "SAP62; SF3A2",
+          "chains": "B",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 5",
+          "gene": "SF3B10; SF3B5",
+          "chains": "5",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U2 small nuclear ribonucleoprotein A'",
+          "gene": "SNRPA1",
+          "chains": "F",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U2 small nuclear ribonucleoprotein B''",
+          "gene": "SNRPB2",
+          "chains": "G",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D1",
+          "gene": "SNRPD1",
+          "chains": "g",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D2",
+          "gene": "SNRPD1; SNRPD2",
+          "chains": "a",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D3",
+          "gene": "SNRPD3",
+          "chains": "e",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein E",
+          "gene": "SNRPE",
+          "chains": "c",
+          "organisms": "Homo sapiens"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "U2 snRNA",
+          "gene": "",
+          "chains": "H",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 20,
+      "rna_count": 1,
+      "chain_count": 24,
+      "has_prpf8": false,
+      "has_sf3b1": true,
+      "script_path": "scripts/8hk1.cxc"
+    },
+    {
+      "pdb_id": "9k1o",
+      "title": "Structure of SF3B core in complex with the 22-nt histone mRNA(SF3B-22-nt histone mRNA)",
+      "state": "U2 snRNP",
+      "species": "Human",
+      "species_code": "HUMAN",
+      "resolution": "3.3",
+      "year": "2025",
+      "paper_title": "A common structural mechanism for RNA recognition by the SF3B complex in mRNA splicing and export.",
+      "doi": "10.1093/nar/gkaf759",
+      "pubmed_id": "40795960",
+      "journal": "Nucleic Acids Res",
+      "authors": "Zhang Y; Yin C; Wang Y; Yan K; Zhao B; Hu X; Wan Y; Cheng H; Huang J",
+      "authors_short": "Zhang Y; Yin C; Wang Y; et al. (9 authors)",
+      "proteins": [
+        {
+          "name": "Splicing factor 3B subunit 3",
+          "gene": "KIAA0017; SAP130; SF3B3",
+          "chains": "A",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "PHD finger-like domain-containing protein 5A",
+          "gene": "PHF5A",
+          "chains": "D",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 1",
+          "gene": "SAP155; SF3B1",
+          "chains": "C",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 5",
+          "gene": "SF3B10; SF3B5",
+          "chains": "B",
+          "organisms": "Homo sapiens"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "22-nt histone H2a mRNA element",
+          "gene": "",
+          "chains": "H",
+          "organisms": ""
+        },
+        {
+          "name": "23-nt histone H2a mRNA element",
+          "gene": "",
+          "chains": "G",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 4,
+      "rna_count": 2,
+      "chain_count": 7,
+      "has_prpf8": false,
+      "has_sf3b1": true,
+      "script_path": "scripts/9k1o.cxc"
+    },
+    {
+      "pdb_id": "9k1q",
+      "title": "Structure of SF3B core in complex with the 101-nt histone mRNA(SF3B-101-nt histone mRNA)",
+      "state": "U2 snRNP",
+      "species": "Human",
+      "species_code": "HUMAN",
+      "resolution": "3.6",
+      "year": "2025",
+      "paper_title": "A common structural mechanism for RNA recognition by the SF3B complex in mRNA splicing and export.",
+      "doi": "10.1093/nar/gkaf759",
+      "pubmed_id": "40795960",
+      "journal": "Nucleic Acids Res",
+      "authors": "Zhang Y; Yin C; Wang Y; Yan K; Zhao B; Hu X; Wan Y; Cheng H; Huang J",
+      "authors_short": "Zhang Y; Yin C; Wang Y; et al. (9 authors)",
+      "proteins": [
+        {
+          "name": "Splicing factor 3B subunit 3",
+          "gene": "KIAA0017; SAP130; SF3B3",
+          "chains": "A",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "PHD finger-like domain-containing protein 5A",
+          "gene": "PHF5A",
+          "chains": "D",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 1",
+          "gene": "SAP155; SF3B1",
+          "chains": "C",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 5",
+          "gene": "SF3B10; SF3B5",
+          "chains": "B",
+          "organisms": "Homo sapiens"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "101-nt histone H2a mRNA element",
+          "gene": "",
+          "chains": "G; H",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 4,
+      "rna_count": 1,
+      "chain_count": 7,
+      "has_prpf8": false,
+      "has_sf3b1": true,
+      "script_path": "scripts/9k1q.cxc"
+    },
+    {
+      "pdb_id": "9k1r",
+      "title": "Structure of SF3B core in complex with the intron-U2 snRNA (SF3B-intron-U2 snRNA)",
+      "state": "U2 snRNP",
+      "species": "Human",
+      "species_code": "HUMAN",
+      "resolution": "3.8",
+      "year": "2025",
+      "paper_title": "A common structural mechanism for RNA recognition by the SF3B complex in mRNA splicing and export.",
+      "doi": "10.1093/nar/gkaf759",
+      "pubmed_id": "40795960",
+      "journal": "Nucleic Acids Res",
+      "authors": "Zhang Y; Yin C; Wang Y; Yan K; Zhao B; Hu X; Wan Y; Cheng H; Huang J",
+      "authors_short": "Zhang Y; Yin C; Wang Y; et al. (9 authors)",
+      "proteins": [
+        {
+          "name": "Splicing factor 3B subunit 3",
+          "gene": "KIAA0017; SAP130; SF3B3",
+          "chains": "A",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "PHD finger-like domain-containing protein 5A",
+          "gene": "PHF5A",
+          "chains": "D",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 1",
+          "gene": "SAP155; SF3B1",
+          "chains": "C",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 5",
+          "gene": "SF3B10; SF3B5",
+          "chains": "B",
+          "organisms": "Homo sapiens"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "pre-mRNA intron",
+          "gene": "",
+          "chains": "G",
+          "organisms": ""
+        },
+        {
+          "name": "U2 snRNA",
+          "gene": "",
+          "chains": "H",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 4,
+      "rna_count": 2,
+      "chain_count": 7,
+      "has_prpf8": false,
+      "has_sf3b1": true,
+      "script_path": "scripts/9k1r.cxc"
+    },
+    {
+      "pdb_id": "9k1w",
+      "title": "Structure of the SF3B core, harboring the K700E mutation in SF3B1, in complex with intron-U2 snRNA",
+      "state": "U2 snRNP",
+      "species": "Human",
+      "species_code": "HUMAN",
+      "resolution": "3.5",
+      "year": "2025",
+      "paper_title": "A common structural mechanism for RNA recognition by the SF3B complex in mRNA splicing and export.",
+      "doi": "10.1093/nar/gkaf759",
+      "pubmed_id": "40795960",
+      "journal": "Nucleic Acids Res",
+      "authors": "Zhang Y; Yin C; Wang Y; Yan K; Zhao B; Hu X; Wan Y; Cheng H; Huang J",
+      "authors_short": "Zhang Y; Yin C; Wang Y; et al. (9 authors)",
+      "proteins": [
+        {
+          "name": "Splicing factor 3B subunit 3",
+          "gene": "KIAA0017; SAP130; SF3B3",
+          "chains": "A",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "PHD finger-like domain-containing protein 5A",
+          "gene": "PHF5A",
+          "chains": "D",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 1",
+          "gene": "SAP155; SF3B1",
+          "chains": "C",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 5",
+          "gene": "SF3B10; SF3B5",
+          "chains": "B",
+          "organisms": "Homo sapiens"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "pre-mRNA intron",
+          "gene": "",
+          "chains": "G",
+          "organisms": ""
+        },
+        {
+          "name": "U2 snRNA",
+          "gene": "",
+          "chains": "H",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 4,
+      "rna_count": 2,
+      "chain_count": 7,
+      "has_prpf8": false,
+      "has_sf3b1": true,
+      "script_path": "scripts/9k1w.cxc"
+    },
+    {
+      "pdb_id": "9k1y",
+      "title": "Structure of the SF3B core, harboring the R625H mutation in SF3B1, in complex with intron-U2 snRNA",
+      "state": "U2 snRNP",
+      "species": "Human",
+      "species_code": "HUMAN",
+      "resolution": "3.1",
+      "year": "2025",
+      "paper_title": "A common structural mechanism for RNA recognition by the SF3B complex in mRNA splicing and export.",
+      "doi": "10.1093/nar/gkaf759",
+      "pubmed_id": "40795960",
+      "journal": "Nucleic Acids Res",
+      "authors": "Zhang Y; Yin C; Wang Y; Yan K; Zhao B; Hu X; Wan Y; Cheng H; Huang J",
+      "authors_short": "Zhang Y; Yin C; Wang Y; et al. (9 authors)",
+      "proteins": [
+        {
+          "name": "Splicing factor 3B subunit 3",
+          "gene": "KIAA0017; SAP130; SF3B3",
+          "chains": "A",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "PHD finger-like domain-containing protein 5A",
+          "gene": "PHF5A",
+          "chains": "D",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 1",
+          "gene": "SAP155; SF3B1",
+          "chains": "C",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 5",
+          "gene": "SF3B10; SF3B5",
+          "chains": "B",
+          "organisms": "Homo sapiens"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "pre-mRNA intron",
+          "gene": "",
+          "chains": "G",
+          "organisms": ""
+        },
+        {
+          "name": "U2 snRNA",
+          "gene": "",
+          "chains": "H",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 4,
+      "rna_count": 2,
+      "chain_count": 7,
+      "has_prpf8": false,
+      "has_sf3b1": true,
+      "script_path": "scripts/9k1y.cxc"
+    },
+    {
+      "pdb_id": "9ze0",
+      "title": "Cryo-EM structure of the endogenous U2/branchpoint spliceosomal complex (Proximal DHX15 state)",
+      "state": "U2 snRNP",
+      "species": "Human",
+      "species_code": "HUMAN",
+      "resolution": "3.43",
+      "year": "2026",
+      "paper_title": "The tumour suppressor RBM5 activates the helicase DHX15 to regulate splicing.",
+      "doi": "10.64898/2026.03.26.714623",
+      "pubmed_id": "41929118",
+      "journal": "bioRxiv",
+      "authors": "Liu S; Su T; Huang J; Lin CH; Black DL; Damianov A; Zhou ZH",
+      "authors_short": "Liu S; Su T; Huang J; et al. (7 authors)",
+      "proteins": [
+        {
+          "name": "Splicing factor 3B subunit 6",
+          "gene": "CGI-110; HSPC175; HT006; SAP14; SF3B14; SF3B14A; SF3B6",
+          "chains": "B6",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "ATP-dependent RNA helicase DHX15",
+          "gene": "DBP1; DDX15; DHX15",
+          "chains": "B",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "RNA-binding protein 5",
+          "gene": "H37; LUCA15; RBM5",
+          "chains": "A",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 3",
+          "gene": "KIAA0017; SAP130; SF3B3",
+          "chains": "B3",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U2 snRNP-associated SURP motif-containing protein",
+          "gene": "KIAA0332; SR140; U2SURP",
+          "chains": "C",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "PHD finger-like domain-containing protein 5A",
+          "gene": "PHF5A",
+          "chains": "H",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 1",
+          "gene": "SAP114; SF3A1",
+          "chains": "A1",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 2",
+          "gene": "SAP145; SF3B2",
+          "chains": "B2",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 1",
+          "gene": "SAP155; SF3B1",
+          "chains": "B1",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 4",
+          "gene": "SAP49; SF3B4",
+          "chains": "B4",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 3",
+          "gene": "SAP61; SF3A3",
+          "chains": "A3",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 2",
+          "gene": "SAP62; SF3A2",
+          "chains": "A2",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 5",
+          "gene": "SF3B10; SF3B5",
+          "chains": "B5",
+          "organisms": "Homo sapiens"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "pre-mRNA",
+          "gene": "",
+          "chains": "R",
+          "organisms": ""
+        },
+        {
+          "name": "U2 snRNA",
+          "gene": "",
+          "chains": "2",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 13,
+      "rna_count": 2,
+      "chain_count": 16,
+      "has_prpf8": false,
+      "has_sf3b1": true,
+      "script_path": "scripts/9ze0.cxc"
+    },
+    {
+      "pdb_id": "9ze2",
+      "title": "Cryo-EM structure of the endogenous U2/branchpoint spliceosomal complex (core)",
+      "state": "U2 snRNP",
+      "species": "Human",
+      "species_code": "HUMAN",
+      "resolution": "3.26",
+      "year": "2026",
+      "paper_title": "The tumour suppressor RBM5 activates the helicase DHX15 to regulate splicing.",
+      "doi": "10.64898/2026.03.26.714623",
+      "pubmed_id": "41929118",
+      "journal": "bioRxiv",
+      "authors": "Liu S; Su T; Huang J; Lin CH; Black DL; Damianov A; Zhou ZH",
+      "authors_short": "Liu S; Su T; Huang J; et al. (7 authors)",
+      "proteins": [
+        {
+          "name": "Splicing factor 3B subunit 6",
+          "gene": "CGI-110; HSPC175; HT006; SAP14; SF3B14; SF3B14A; SF3B6",
+          "chains": "B6",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "RNA-binding protein 5",
+          "gene": "H37; LUCA15; RBM5",
+          "chains": "A",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 3",
+          "gene": "KIAA0017; SAP130; SF3B3",
+          "chains": "B3",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "PHD finger-like domain-containing protein 5A",
+          "gene": "PHF5A",
+          "chains": "H",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 2",
+          "gene": "SAP145; SF3B2",
+          "chains": "B2",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 1",
+          "gene": "SAP155; SF3B1",
+          "chains": "B1",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 4",
+          "gene": "SAP49; SF3B4",
+          "chains": "B4",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 3",
+          "gene": "SAP61; SF3A3",
+          "chains": "A3",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 2",
+          "gene": "SAP62; SF3A2",
+          "chains": "A2",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 5",
+          "gene": "SF3B10; SF3B5",
+          "chains": "B5",
+          "organisms": "Homo sapiens"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "pre-mRNA",
+          "gene": "",
+          "chains": "R",
+          "organisms": ""
+        },
+        {
+          "name": "U2 snRNA",
+          "gene": "",
+          "chains": "2",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 10,
+      "rna_count": 2,
+      "chain_count": 13,
+      "has_prpf8": false,
+      "has_sf3b1": true,
+      "script_path": "scripts/9ze2.cxc"
+    },
+    {
+      "pdb_id": "9ze3",
+      "title": "Cryo-EM structure of the endogenous U2/branchpoint spliceosomal complex (Distal DHX15 state)",
+      "state": "U2 snRNP",
+      "species": "Human",
+      "species_code": "HUMAN",
+      "resolution": "3.93",
+      "year": "2026",
+      "paper_title": "The tumour suppressor RBM5 activates the helicase DHX15 to regulate splicing.",
+      "doi": "10.64898/2026.03.26.714623",
+      "pubmed_id": "41929118",
+      "journal": "bioRxiv",
+      "authors": "Liu S; Su T; Huang J; Lin CH; Black DL; Damianov A; Zhou ZH",
+      "authors_short": "Liu S; Su T; Huang J; et al. (7 authors)",
+      "proteins": [
+        {
+          "name": "Splicing factor 3B subunit 6",
+          "gene": "CGI-110; HSPC175; HT006; SAP14; SF3B14; SF3B14A; SF3B6",
+          "chains": "B6",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "ATP-dependent RNA helicase DHX15",
+          "gene": "DBP1; DDX15; DHX15",
+          "chains": "B",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "RNA-binding protein 5",
+          "gene": "H37; LUCA15; RBM5",
+          "chains": "A",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 3",
+          "gene": "KIAA0017; SAP130; SF3B3",
+          "chains": "B3",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U2 snRNP-associated SURP motif-containing protein",
+          "gene": "KIAA0332; SR140; U2SURP",
+          "chains": "C",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "PHD finger-like domain-containing protein 5A",
+          "gene": "PHF5A",
+          "chains": "H",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 1",
+          "gene": "SAP114; SF3A1",
+          "chains": "A1",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 2",
+          "gene": "SAP145; SF3B2",
+          "chains": "B2",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 1",
+          "gene": "SAP155; SF3B1",
+          "chains": "B1",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 4",
+          "gene": "SAP49; SF3B4",
+          "chains": "B4",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 3",
+          "gene": "SAP61; SF3A3",
+          "chains": "A3",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 2",
+          "gene": "SAP62; SF3A2",
+          "chains": "A2",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 5",
+          "gene": "SF3B10; SF3B5",
+          "chains": "B5",
+          "organisms": "Homo sapiens"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "Pre-mRNA",
+          "gene": "",
+          "chains": "R",
+          "organisms": ""
+        },
+        {
+          "name": "U2 snRNA",
+          "gene": "",
+          "chains": "2",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 13,
+      "rna_count": 2,
+      "chain_count": 16,
+      "has_prpf8": false,
+      "has_sf3b1": true,
+      "script_path": "scripts/9ze3.cxc"
+    },
+    {
+      "pdb_id": "9zec",
+      "title": "Cryo-EM structure of the endogenous U2/branchpoint spliceosomal complex (SF3A state 1)",
+      "state": "U2 snRNP",
+      "species": "Human",
+      "species_code": "HUMAN",
+      "resolution": "3.61",
+      "year": "2026",
+      "paper_title": "The tumour suppressor RBM5 activates the helicase DHX15 to regulate splicing.",
+      "doi": "10.64898/2026.03.26.714623",
+      "pubmed_id": "41929118",
+      "journal": "bioRxiv",
+      "authors": "Liu S; Su T; Huang J; Lin CH; Black DL; Damianov A; Zhou ZH",
+      "authors_short": "Liu S; Su T; Huang J; et al. (7 authors)",
+      "proteins": [
+        {
+          "name": "Splicing factor 3B subunit 6",
+          "gene": "CGI-110; HSPC175; HT006; SAP14; SF3B14; SF3B14A; SF3B6",
+          "chains": "B6",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "RNA-binding protein 5",
+          "gene": "H37; LUCA15; RBM5",
+          "chains": "A",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 3",
+          "gene": "KIAA0017; SAP130; SF3B3",
+          "chains": "B3",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "PHD finger-like domain-containing protein 5A",
+          "gene": "PHF5A",
+          "chains": "H",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 1",
+          "gene": "SAP114; SF3A1",
+          "chains": "A1",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 2",
+          "gene": "SAP145; SF3B2",
+          "chains": "B2",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 1",
+          "gene": "SAP155; SF3B1",
+          "chains": "B1",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 4",
+          "gene": "SAP49; SF3B4",
+          "chains": "B4",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 3",
+          "gene": "SAP61; SF3A3",
+          "chains": "A3",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 2",
+          "gene": "SAP62; SF3A2",
+          "chains": "A2",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 5",
+          "gene": "SF3B10; SF3B5",
+          "chains": "B5",
+          "organisms": "Homo sapiens"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "Pre-mRNA",
+          "gene": "",
+          "chains": "R",
+          "organisms": ""
+        },
+        {
+          "name": "U2 snRNA",
+          "gene": "",
+          "chains": "2",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 11,
+      "rna_count": 2,
+      "chain_count": 14,
+      "has_prpf8": false,
+      "has_sf3b1": true,
+      "script_path": "scripts/9zec.cxc"
+    },
+    {
+      "pdb_id": "9zed",
+      "title": "Cryo-EM structure of the endogenous U2/branchpoint spliceosomal complex (SF3A state 2)",
+      "state": "U2 snRNP",
+      "species": "Human",
+      "species_code": "HUMAN",
+      "resolution": "3.94",
+      "year": "2026",
+      "paper_title": "The tumour suppressor RBM5 activates the helicase DHX15 to regulate splicing.",
+      "doi": "10.64898/2026.03.26.714623",
+      "pubmed_id": "41929118",
+      "journal": "bioRxiv",
+      "authors": "Liu S; Su T; Huang J; Lin CH; Black DL; Damianov A; Zhou ZH",
+      "authors_short": "Liu S; Su T; Huang J; et al. (7 authors)",
+      "proteins": [
+        {
+          "name": "Splicing factor 3B subunit 6",
+          "gene": "CGI-110; HSPC175; HT006; SAP14; SF3B14; SF3B14A; SF3B6",
+          "chains": "B6",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "RNA-binding protein 5",
+          "gene": "H37; LUCA15; RBM5",
+          "chains": "A",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 3",
+          "gene": "KIAA0017; SAP130; SF3B3",
+          "chains": "B3",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "PHD finger-like domain-containing protein 5A",
+          "gene": "PHF5A",
+          "chains": "H",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 1",
+          "gene": "SAP114; SF3A1",
+          "chains": "A1",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 2",
+          "gene": "SAP145; SF3B2",
+          "chains": "B2",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 1",
+          "gene": "SAP155; SF3B1",
+          "chains": "B1",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 4",
+          "gene": "SAP49; SF3B4",
+          "chains": "B4",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 3",
+          "gene": "SAP61; SF3A3",
+          "chains": "A3",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 2",
+          "gene": "SAP62; SF3A2",
+          "chains": "A2",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 5",
+          "gene": "SF3B10; SF3B5",
+          "chains": "B5",
+          "organisms": "Homo sapiens"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "pre-mRNA",
+          "gene": "",
+          "chains": "R",
+          "organisms": ""
+        },
+        {
+          "name": "U2 snRNA",
+          "gene": "",
+          "chains": "2",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 11,
+      "rna_count": 2,
+      "chain_count": 14,
+      "has_prpf8": false,
+      "has_sf3b1": true,
+      "script_path": "scripts/9zed.cxc"
     },
     {
       "pdb_id": "7os2",

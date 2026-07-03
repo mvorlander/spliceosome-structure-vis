@@ -118,9 +118,9 @@
     const state = { activeTab:"structures", query:"", mode:"all", family:"all", species:"all", components:"all", sortBy:"pathway", selected: records[0]?.pdb_id || "" };
     const els = {};
     for (const id of ["search","searchMode","family","species","componentFilter","sortBy","reset","tabs","structuresView","proteinsView","stats","cycle","rows","detail","tableCount","resultSubtitle","selectedId","proteinRows","proteinCount"]) els[id] = document.getElementById(id);
-    const STAGES = ["E complex","A complex","U5/tri-snRNP","pre-B","B","pre-Bact","Bact","B*","C","C*","P","ILS/disassembly","U5 recycling"];
+    const STAGES = ["U2 snRNP","E complex","A complex","U5/tri-snRNP","pre-B","B","pre-Bact","Bact","B*","C","C*","P","ILS/disassembly","U5 recycling"];
     const ORDER = Object.fromEntries(STAGES.map((s,i)=>[s,i]));
-    const NODE_POS = [[150,250],[205,158],[300,245],[405,315],[520,338],[635,345],[750,332],[865,285],[995,220],[1100,150],[995,90],[760,105],[520,150]];
+    const NODE_POS = [[95,70],[150,250],[205,158],[300,245],[405,315],[520,338],[635,345],[750,332],[865,285],[995,220],[1100,150],[995,90],[760,105],[520,150]];
     const U = {u1:"#d8a3cf", u2:"#78c96b", u4:"#f2dc4e", u5:"#5da8d7", u6:"#ee5960", ntc:"#f2bd5c", mrna:"#22272d"};
     function esc(v){return String(v ?? "").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
     function attr(v){return esc(v);}
@@ -200,6 +200,10 @@
       const active = state.family===stage ? " active" : "";
       const empty = count ? "" : " empty-stage";
       const particlesByStage = {
+        "U2 snRNP": [
+          {dx:-17, dy:-3, r:18, fill:U.u2, text:"U2"},
+          {dx:18, dy:-3, r:16, fill:"#5dbb67", text:"SF3"}
+        ],
         "E complex": [
           {dx:-22, dy:-8, r:17, fill:U.u1, text:"U1"},
           {dx:16, dy:-8, r:17, fill:U.u2, text:"U2"},
