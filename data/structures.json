@@ -12173,6 +12173,290 @@
       "script_path": "scripts/8c6j.cxc"
     },
     {
+      "pdb_id": "6n7p",
+      "title": "S. cerevisiae spliceosomal E complex (UBC4)",
+      "state": "E complex",
+      "species": "S. cerevisiae",
+      "species_code": "YEAST",
+      "resolution": "3.6",
+      "year": "2019",
+      "paper_title": "A unified mechanism for intron and exon definition and back-splicing.",
+      "doi": "10.1038/s41586-019-1523-6",
+      "pubmed_id": "31485080",
+      "journal": "Nature",
+      "authors": "Li X; Liu S; Zhang L; Issaian A; Hill RC; Espinosa S; Shi S; Cui Y; Kappel K; Das R; Hansen KC; Zhou ZH; Zhao R",
+      "authors_short": "Li X; Liu S; Zhang L; et al. (13 authors)",
+      "proteins": [
+        {
+          "name": "Nuclear cap-binding protein complex subunit 1",
+          "gene": "CBC1; CBP80; GCR3; STO1; SUT1; YM8564.07; YM9553.01; YMR125W",
+          "chains": "X",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Nuclear cap-binding protein subunit 2",
+          "gene": "CBC2; CBP20; MUD13; SAE1; YPL178W",
+          "chains": "Y",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Protein LUC7",
+          "gene": "EPE1; EXM2; LUC7; YDL087C",
+          "chains": "I",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "U1 small nuclear ribonucleoprotein C",
+          "gene": "L8003.21; YHC1; YLR298C",
+          "chains": "B",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D2",
+          "gene": "L9328.5; SMD2; YLR275W",
+          "chains": "M",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D3",
+          "gene": "L9634.6; SMD3; YLR147C",
+          "chains": "N",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Protein NAM8",
+          "gene": "MRE2; MUD15; NAM8; YHR086W",
+          "chains": "F",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "56 kDa U1 small nuclear ribonucleoprotein component",
+          "gene": "MUD10; SNU56; YDR240C",
+          "chains": "G",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "U1 small nuclear ribonucleoprotein component PRP42",
+          "gene": "MUD16; PRP42; SNU65; YD8419.02; YDR235W",
+          "chains": "D",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "U1 small nuclear ribonucleoprotein A",
+          "gene": "MUD1; YBR0915; YBR119W",
+          "chains": "C",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein F",
+          "gene": "P9705.4; SMX3; YPR182W",
+          "chains": "P",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Pre-mRNA-processing factor 39",
+          "gene": "PRP39; YM9827.06; YML046W",
+          "chains": "E",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Pre-mRNA-processing protein PRP40",
+          "gene": "PRP40; YKL012W; YKL165",
+          "chains": "J",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein-associated protein B",
+          "gene": "SMB1; YER029C",
+          "chains": "K",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D1",
+          "gene": "SMD1; YGR074W",
+          "chains": "L",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein E",
+          "gene": "SME1; YOR159C",
+          "chains": "O",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein G",
+          "gene": "SMX2; SNP2; YFL017BW; YFL017W-A",
+          "chains": "Q",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "U1 small nuclear ribonucleoprotein 70 kDa homolog",
+          "gene": "SNP1; YIL061C",
+          "chains": "A",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "U1 small nuclear ribonucleoprotein component SNU71",
+          "gene": "SNU71; YGR013W",
+          "chains": "H",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "U1 snRNA",
+          "gene": "",
+          "chains": "R",
+          "organisms": ""
+        },
+        {
+          "name": "UBC4 pre-mRNA",
+          "gene": "",
+          "chains": "r",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 19,
+      "rna_count": 2,
+      "chain_count": 23,
+      "has_prpf8": false,
+      "has_sf3b1": false,
+      "script_path": "scripts/6n7p.cxc"
+    },
+    {
+      "pdb_id": "6n7r",
+      "title": "Saccharomyces cerevisiae spliceosomal E complex (ACT1)",
+      "state": "E complex",
+      "species": "S. cerevisiae",
+      "species_code": "YEAST",
+      "resolution": "3.2",
+      "year": "2019",
+      "paper_title": "A unified mechanism for intron and exon definition and back-splicing.",
+      "doi": "10.1038/s41586-019-1523-6",
+      "pubmed_id": "31485080",
+      "journal": "Nature",
+      "authors": "Li X; Liu S; Zhang L; Issaian A; Hill RC; Espinosa S; Shi S; Cui Y; Kappel K; Das R; Hansen KC; Zhou ZH; Zhao R",
+      "authors_short": "Li X; Liu S; Zhang L; et al. (13 authors)",
+      "proteins": [
+        {
+          "name": "Protein LUC7",
+          "gene": "EPE1; EXM2; LUC7; YDL087C",
+          "chains": "I",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "U1 small nuclear ribonucleoprotein C",
+          "gene": "L8003.21; YHC1; YLR298C",
+          "chains": "B",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D2",
+          "gene": "L9328.5; SMD2; YLR275W",
+          "chains": "M",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D3",
+          "gene": "L9634.6; SMD3; YLR147C",
+          "chains": "N",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Protein NAM8",
+          "gene": "MRE2; MUD15; NAM8; YHR086W",
+          "chains": "F",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "56 kDa U1 small nuclear ribonucleoprotein component",
+          "gene": "MUD10; SNU56; YDR240C",
+          "chains": "G",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "U1 small nuclear ribonucleoprotein component PRP42",
+          "gene": "MUD16; PRP42; SNU65; YD8419.02; YDR235W",
+          "chains": "D",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "U1 small nuclear ribonucleoprotein A",
+          "gene": "MUD1; YBR0915; YBR119W",
+          "chains": "C",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein F",
+          "gene": "P9705.4; SMX3; YPR182W",
+          "chains": "P",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Pre-mRNA-processing factor 39",
+          "gene": "PRP39; YM9827.06; YML046W",
+          "chains": "E",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein-associated protein B",
+          "gene": "SMB1; YER029C",
+          "chains": "K",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D1",
+          "gene": "SMD1; YGR074W",
+          "chains": "L",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein E",
+          "gene": "SME1; YOR159C",
+          "chains": "O",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein G",
+          "gene": "SMX2; SNP2; YFL017BW; YFL017W-A",
+          "chains": "Q",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "U1 small nuclear ribonucleoprotein 70 kDa homolog",
+          "gene": "SNP1; YIL061C",
+          "chains": "A",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "U1 small nuclear ribonucleoprotein component SNU71",
+          "gene": "SNU71; YGR013W",
+          "chains": "H",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "ACT1 pre-mRNA",
+          "gene": "",
+          "chains": "r",
+          "organisms": ""
+        },
+        {
+          "name": "U1 snRNA",
+          "gene": "",
+          "chains": "R",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 16,
+      "rna_count": 2,
+      "chain_count": 19,
+      "has_prpf8": false,
+      "has_sf3b1": false,
+      "script_path": "scripts/6n7r.cxc"
+    },
+    {
       "pdb_id": "7oqe",
       "title": "Saccharomyces cerevisiae spliceosomal pre-A complex (delta BS-A ACT1)",
       "state": "E complex",
@@ -28831,8 +29115,8 @@
       "canonical_chain_ids": [
         {
           "canonical_identity": "SNU56",
-          "canonical_base_id": "5J",
-          "subcomplex": "U5 snRNP",
+          "canonical_base_id": "1K",
+          "subcomplex": "U1 snRNP",
           "id_source": "manual_protein"
         }
       ]

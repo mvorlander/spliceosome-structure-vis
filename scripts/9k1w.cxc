@@ -3,15 +3,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #420; target model: #420.1.
+# Structure group: #422; target model: #422.1.
 
-open 8h6l id 420.9 name 8H6L_anchor
-open 9k1w id 420.1 name 9K1W
-rename #420 SF3B_U2_9k1w_structure
+open 8h6l id 422.9 name 8H6L_anchor
+open 9k1w id 422.1 name 9K1W
+rename #422 SF3B_U2_9k1w_structure
 
 # Align on SF3B1.
-matchmaker #420.1/C to #420.9/2G
-close #420.9
+matchmaker #422.1/C to #422.9/2G
+close #422.9
 
 hide atoms
 cartoon
@@ -37,17 +37,17 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # SF3B1
-color #420.1/C #487957
+color #422.1/C #487957
 # PHF5A
-color #420.1/D #375A40
+color #422.1/D #375A40
 # SF3B3
-color #420.1/A #6A9064
+color #422.1/A #6A9064
 # SF3B5
-color #420.1/B #92BB8F
+color #422.1/B #92BB8F
 # INTRON
-color #420.1/G #303030
+color #422.1/G #303030
 # U2 snRNA
-color #420.1/H #006400
+color #422.1/H #006400
 show nucleic
 view
 show nucleic

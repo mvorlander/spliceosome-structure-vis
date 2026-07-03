@@ -3,15 +3,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #352; target model: #352.1.
+# Structure group: #354; target model: #354.1.
 
-open 8h6l id 352.9 name 8H6L_anchor
-open 7abf id 352.1 name 7ABF
-rename #352 pre_Bact_7abf_structure
+open 8h6l id 354.9 name 8H6L_anchor
+open 7abf id 354.1 name 7ABF
+rename #354 pre_Bact_7abf_structure
 
 # Align on PRPF8.
-matchmaker #352.1/A to #352.9/5B
-close #352.9
+matchmaker #354.1/A to #354.9/5B
+close #354.9
 
 hide atoms
 cartoon
@@ -37,35 +37,35 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # BUD31
-color #352.1/Q #FFF584
+color #354.1/Q #FFF584
 # PRPF38A
-color #352.1/I #F88379
+color #354.1/I #F88379
 # PRPF8
-color #352.1/A #BFC3E8
+color #354.1/A #BFC3E8
 # EFTUD2
-color #352.1/r #6495ED
+color #354.1/r #6495ED
 # ZMAT2
-color #352.1/N #FFB6C1
+color #354.1/N #FFB6C1
 # UBL5
-color #352.1/q #DB7093
+color #354.1/q #DB7093
 # CWC15
-color #352.1/R #FFDEAD
+color #354.1/R #FFDEAD
 # U5 snRNA
-color #352.1/5 #0000CD
+color #354.1/5 #0000CD
 # U6 snRNA
-color #352.1/6 #DC143C
+color #354.1/6 #DC143C
 # NPWBP
-color #352.1/X #D8944F
+color #354.1/X #D8944F
 # SNW1
-color #352.1/v #D49F96
+color #354.1/v #D49F96
 # PLRG1
-color #352.1/G #F4A460
+color #354.1/G #F4A460
 # pre-mRNA
-color #352.1/Z #303030
+color #354.1/Z #303030
 # MFAP1
-color #352.1/K #CD5C5C
+color #354.1/K #CD5C5C
 # CA150
-color #352.1/A4 #A2B8CD
+color #354.1/A4 #A2B8CD
 show nucleic
 view
 show nucleic

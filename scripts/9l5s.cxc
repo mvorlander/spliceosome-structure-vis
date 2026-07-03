@@ -3,15 +3,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #423; target model: #423.1.
+# Structure group: #425; target model: #425.1.
 
-open 8h6l id 423.9 name 8H6L_anchor
-open 9l5s id 423.1 name 9L5S
-rename #423 Bstar_9l5s_structure
+open 8h6l id 425.9 name 8H6L_anchor
+open 9l5s id 425.1 name 9L5S
+rename #425 Bstar_9l5s_structure
 
 # Align on PRPF8.
-matchmaker #423.1/A to #423.9/5B
-close #423.9
+matchmaker #425.1/A to #425.9/5B
+close #425.9
 
 hide atoms
 cartoon
@@ -37,81 +37,81 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # U2 snRNA
-color #423.1/2 #006400
+color #425.1/2 #006400
 # U5 snRNA
-color #423.1/5 #0000CD
+color #425.1/5 #0000CD
 # U6 snRNA
-color #423.1/6 #DC143C
+color #425.1/6 #DC143C
 # PRPF8
-color #423.1/A #BFC3E8
+color #425.1/A #BFC3E8
 # SYF2
-color #423.1/B #FF8C00
+color #425.1/B #FF8C00
 # EFTUD2
-color #423.1/C #6495ED
+color #425.1/C #6495ED
 # PRP8BP
-color #423.1/E #E2F3F4
+color #425.1/E #E2F3F4
 # CCDC12
-color #423.1/F #FAEBD7
+color #425.1/F #FAEBD7
 # SYF1
-color #423.1/I #FF957B
+color #425.1/I #FF957B
 # CRNKL1
-color #423.1/J #FFC388
+color #425.1/J #FFC388
 # CDC5L
-color #423.1/L #DAA520
+color #425.1/L #DAA520
 # BCAS2
-color #423.1/K #FFDAB9
+color #425.1/K #FFDAB9
 # PRPF19
-color #423.1/q #FFFFAB
+color #425.1/q #FFFFAB
 # PRPF19
-color #423.1/r #FFFFAB
+color #425.1/r #FFFFAB
 # PRPF19
-color #423.1/s #FFFFAB
+color #425.1/s #FFFFAB
 # PRPF19
-color #423.1/t #FFFFAB
+color #425.1/t #FFFFAB
 # BUD31
-color #423.1/N #FFF584
+color #425.1/N #FFF584
 # PPIL1
-color #423.1/S #EEE8AA
+color #425.1/S #EEE8AA
 # PLRG1
-color #423.1/T #F4A460
+color #425.1/T #F4A460
 # RBM22
-color #423.1/M #DE9A52
+color #425.1/M #DE9A52
 # CWC2
-color #423.1/0 #E6B566
+color #425.1/0 #E6B566
 # SNW1
-color #423.1/R #D49F96
+color #425.1/R #D49F96
 # PRPF17
-color #423.1/W #FFF7C9
+color #425.1/W #FFF7C9
 # CWC15
-color #423.1/P #FFDEAD
+color #425.1/P #FFDEAD
 # AQR
-color #423.1/Y #FFDAB9
+color #425.1/Y #FFDAB9
 # GPATCH1
-color #423.1/1 #E52B75
+color #425.1/1 #E52B75
 # DHX35
-color #423.1/z #78184A
+color #425.1/z #78184A
 # U5-Sm SNRPE
-color #423.1/j #B0C4DE
+color #425.1/j #B0C4DE
 # U5-Sm SNRPG
-color #423.1/k #B0C4DE
+color #425.1/k #B0C4DE
 # U5-Sm SNRPF
-color #423.1/l #B0C4DE
+color #425.1/l #B0C4DE
 # U5-Sm SNRPD2
-color #423.1/m #B0C4DE
+color #425.1/m #B0C4DE
 # U5-Sm SNRPD1
-color #423.1/o #B0C4DE
+color #425.1/o #B0C4DE
 # U5-Sm SNRPB
-color #423.1/p #B0C4DE
+color #425.1/p #B0C4DE
 # U5-Sm SNRPD3
-color #423.1/u #B0C4DE
+color #425.1/u #B0C4DE
 # CWC22
-color #423.1/Z #2C54DD
+color #425.1/Z #2C54DD
 # PAXBP1
-color #423.1/Ck #FFC0CB
+color #425.1/Ck #FFC0CB
 # TFIP11
-color #423.1/Cb #FF69B4
+color #425.1/Cb #FF69B4
 # pre-mRNA
-color #423.1/8 #303030
+color #425.1/8 #303030
 show nucleic
 view
 show nucleic

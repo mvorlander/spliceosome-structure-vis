@@ -3,15 +3,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #396; target model: #396.1.
+# Structure group: #398; target model: #398.1.
 
-open 8h6l id 396.9 name 8H6L_anchor
-open 8qp8 id 396.1 name 8QP8
-rename #396 pre_B_8qp8_structure
+open 8h6l id 398.9 name 8H6L_anchor
+open 8qp8 id 398.1 name 8QP8
+rename #398 pre_B_8qp8_structure
 
 # Align on PRPF8.
-matchmaker #396.1/A to #396.9/5B
-close #396.9
+matchmaker #398.1/A to #398.9/5B
+close #398.9
 
 hide atoms
 cartoon
@@ -37,35 +37,35 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # SF3A1
-color #396.1/7 #55947F
+color #398.1/7 #55947F
 # DDX23
-color #396.1/G #CA9982
+color #398.1/G #CA9982
 # U6 snRNA
-color #396.1/6 #DC143C
+color #398.1/6 #DC143C
 # U5 snRNA
-color #396.1/5 #0000CD
+color #398.1/5 #0000CD
 # U4 snRNA
-color #396.1/4 #E6D900
+color #398.1/4 #E6D900
 # SART1
-color #396.1/S #D6937B
+color #398.1/S #D6937B
 # EFTUD2
-color #396.1/C #6495ED
+color #398.1/C #6495ED
 # USP39
-color #396.1/U #B37E6A
+color #398.1/U #B37E6A
 # PRPF8
-color #396.1/A #BFC3E8
+color #398.1/A #BFC3E8
 # RBM42
-color #396.1/R #44A0A7
+color #398.1/R #44A0A7
 # PRPF6
-color #396.1/N #CFA785
+color #398.1/N #CFA785
 # PRPF31
-color #396.1/L #DFD570
+color #398.1/L #DFD570
 # PRPF3
-color #396.1/J #E1DD1B
+color #398.1/J #E1DD1B
 # TXNL4A
-color #396.1/D #C3BA7A
+color #398.1/D #C3BA7A
 # SNRNP27
-color #396.1/X #F4E7D2
+color #398.1/X #F4E7D2
 show nucleic
 view
 show nucleic

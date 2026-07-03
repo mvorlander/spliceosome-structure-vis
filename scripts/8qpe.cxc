@@ -3,15 +3,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #400; target model: #400.1.
+# Structure group: #402; target model: #402.1.
 
-open 8h6l id 400.9 name 8H6L_anchor
-open 8qpe id 400.1 name 8QPE
-rename #400 pre_B_8qpe_structure
+open 8h6l id 402.9 name 8H6L_anchor
+open 8qpe id 402.1 name 8QPE
+rename #402 pre_B_8qpe_structure
 
 # Align on PRPF8.
-matchmaker #400.1/A to #400.9/5B
-close #400.9
+matchmaker #402.1/A to #402.9/5B
+close #402.9
 
 hide atoms
 cartoon
@@ -37,45 +37,45 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # U4 snRNA
-color #400.1/4 #E6D900
+color #402.1/4 #E6D900
 # U5 snRNA
-color #400.1/5 #0000CD
+color #402.1/5 #0000CD
 # U6 snRNA
-color #400.1/6 #DC143C
+color #402.1/6 #DC143C
 # SF3A1
-color #400.1/7 #55947F
+color #402.1/7 #55947F
 # EFTUD2
-color #400.1/C #6495ED
+color #402.1/C #6495ED
 # TXNL4A
-color #400.1/D #C3BA7A
+color #402.1/D #C3BA7A
 # PRPF38A
-color #400.1/I #F88379
+color #402.1/I #F88379
 # MFAP1
-color #400.1/K #CD5C5C
+color #402.1/K #CD5C5C
 # NHP2L1
-color #400.1/M #A89264
+color #402.1/M #A89264
 # USP39
-color #400.1/U #B37E6A
+color #402.1/U #B37E6A
 # FBP21
-color #400.1/X #B03B66
+color #402.1/X #B03B66
 # ZMAT2
-color #400.1/r #FFB6C1
+color #402.1/r #FFB6C1
 # pre-mRNA
-color #400.1/z1 #303030
+color #402.1/z1 #303030
 # pre-mRNA
-color #400.1/z2 #303030
+color #402.1/z2 #303030
 # PRPF3
-color #400.1/J #E1DD1B
+color #402.1/J #E1DD1B
 # PRPF31
-color #400.1/L #DFD570
+color #402.1/L #DFD570
 # PRPF4
-color #400.1/F #E2C496
+color #402.1/F #E2C496
 # PRPF6
-color #400.1/N #CFA785
+color #402.1/N #CFA785
 # PRPF8
-color #400.1/A #BFC3E8
+color #402.1/A #BFC3E8
 # SART1
-color #400.1/S #D6937B
+color #402.1/S #D6937B
 show nucleic
 view
 show nucleic
