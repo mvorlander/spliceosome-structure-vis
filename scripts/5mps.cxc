@@ -36,8 +36,14 @@ graphics silhouettes true
 cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
+# pre-mRNA
+color #313.1/I #303030
+# pre-mRNA
+color #313.1/E #303030
 # U2 snRNA
 color #313.1/2 #006400
+# pre-mRNA
+color #313.1/6 #303030
 # U5 snRNA
 color #313.1/5 #0000CD
 # PRPF8
