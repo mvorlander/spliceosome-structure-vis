@@ -4,6 +4,7 @@
     "title": "Cryo-EM structure of the yeast B complex at average resolution of 3.9 angstrom",
     "state": "B",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "3.9",
     "year": "2018",
     "paper_title": "Structures of the fully assembled <i>Saccharomyces cerevisiae</i> spliceosome before activation.",
@@ -294,6 +295,9 @@
     ],
     "protein_count": 41,
     "rna_count": 5,
+    "chain_count": 62,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/5zwo.cxc"
   },
   {
@@ -301,6 +305,7 @@
     "title": "Cryo-EM structure of human exon-defined spliceosome in the mature B state.",
     "state": "B",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "2.7",
     "year": "2024",
     "paper_title": "Structural insights into human exon-defined spliceosome prior to activation.",
@@ -609,6 +614,9 @@
     ],
     "protein_count": 44,
     "rna_count": 5,
+    "chain_count": 68,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/8h6k.cxc"
   },
   {
@@ -616,6 +624,7 @@
     "title": "Cryo-EM structure of human exon-defined spliceosome in the early B state.",
     "state": "B",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "2.6",
     "year": "2024",
     "paper_title": "Structural insights into human exon-defined spliceosome prior to activation.",
@@ -900,6 +909,9 @@
     ],
     "protein_count": 40,
     "rna_count": 5,
+    "chain_count": 63,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/8h6l.cxc"
   },
   {
@@ -907,6 +919,7 @@
     "title": "cryo-EM structure of the human spliceosomal B complex protomer (tri-snRNP core region)",
     "state": "B",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.1",
     "year": "2024",
     "paper_title": "Cryo-EM analyses of dimerized spliceosomes provide new insights into the functions of B complex proteins.",
@@ -1047,6 +1060,9 @@
     ],
     "protein_count": 17,
     "rna_count": 4,
+    "chain_count": 21,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/8q7n.cxc"
   },
   {
@@ -1054,6 +1070,7 @@
     "title": "Cryo-EM structure of a human spliceosomal B complex protomer",
     "state": "B",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "5.29",
     "year": "2024",
     "paper_title": "Cryo-EM analyses of dimerized spliceosomes provide new insights into the functions of B complex proteins.",
@@ -1386,6 +1403,9 @@
     ],
     "protein_count": 48,
     "rna_count": 5,
+    "chain_count": 71,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/8qo9.cxc"
   },
   {
@@ -1393,6 +1413,7 @@
     "title": "Cryo-EM structure of the cross-exon B-like complex",
     "state": "B",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "4.1",
     "year": "2024",
     "paper_title": "Structural insights into the cross-exon to cross-intron spliceosome switch.",
@@ -1719,6 +1740,9 @@
     ],
     "protein_count": 45,
     "rna_count": 7,
+    "chain_count": 68,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/8qzs.cxc"
   },
   {
@@ -1726,6 +1750,7 @@
     "title": "Cryo-EM structure of the yeast B*-a2 complex at an average resolution of 3.2 angstrom",
     "state": "B*",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "3.2",
     "year": "2019",
     "paper_title": "Structures of the Catalytically Activated Yeast Spliceosome Reveal the Mechanism of Branching.",
@@ -1926,6 +1951,9 @@
     ],
     "protein_count": 27,
     "rna_count": 4,
+    "chain_count": 48,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/6j6g.cxc"
   },
   {
@@ -1933,6 +1961,7 @@
     "title": "Cryo-EM structure of the yeast B*-a1 complex at an average resolution of 3.6 angstrom",
     "state": "B*",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "3.6",
     "year": "2019",
     "paper_title": "Structures of the Catalytically Activated Yeast Spliceosome Reveal the Mechanism of Branching.",
@@ -2133,6 +2162,9 @@
     ],
     "protein_count": 27,
     "rna_count": 4,
+    "chain_count": 48,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/6j6h.cxc"
   },
   {
@@ -2140,6 +2172,7 @@
     "title": "Cryo-EM structure of the yeast B*-b1 complex at an average resolution of 3.86 angstrom",
     "state": "B*",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "3.86",
     "year": "2019",
     "paper_title": "Structures of the Catalytically Activated Yeast Spliceosome Reveal the Mechanism of Branching.",
@@ -2340,6 +2373,9 @@
     ],
     "protein_count": 27,
     "rna_count": 4,
+    "chain_count": 48,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/6j6n.cxc"
   },
   {
@@ -2347,6 +2383,7 @@
     "title": "Cryo-EM structure of the yeast B*-b2 complex at an average resolution of 3.7 angstrom",
     "state": "B*",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "3.7",
     "year": "2019",
     "paper_title": "Structures of the Catalytically Activated Yeast Spliceosome Reveal the Mechanism of Branching.",
@@ -2553,6 +2590,9 @@
     ],
     "protein_count": 28,
     "rna_count": 4,
+    "chain_count": 51,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/6j6q.cxc"
   },
   {
@@ -2560,6 +2600,7 @@
     "title": "Cryo-EM structure of the thermophile spliceosome (state B*Q1)",
     "state": "B*",
     "species": "Chaetomium thermophilum",
+    "species_code": "CHATD",
     "resolution": "2.9",
     "year": "2025",
     "paper_title": "Structural insights into spliceosome fidelity: DHX35-GPATCH1- mediated rejection of aberrant splicing substrates.",
@@ -2802,6 +2843,9 @@
     ],
     "protein_count": 34,
     "rna_count": 4,
+    "chain_count": 46,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/9l5s.cxc"
   },
   {
@@ -2809,6 +2853,7 @@
     "title": "Cryo-EM structure of the thermophile spliceosome (state B*Q2)",
     "state": "B*",
     "species": "Chaetomium thermophilum",
+    "species_code": "CHATD",
     "resolution": "3.5",
     "year": "2025",
     "paper_title": "Structural insights into spliceosome fidelity: DHX35-GPATCH1- mediated rejection of aberrant splicing substrates.",
@@ -3057,6 +3102,9 @@
     ],
     "protein_count": 35,
     "rna_count": 4,
+    "chain_count": 46,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/9l5t.cxc"
   },
   {
@@ -3064,6 +3112,7 @@
     "title": "Cryo-EM structure of the activated spliceosome (Bact complex) at 3.5 angstrom resolution",
     "state": "Bact",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "3.5",
     "year": "2016",
     "paper_title": "Structure of a yeast activated spliceosome at 3.5 Å resolution.",
@@ -3336,6 +3385,9 @@
     ],
     "protein_count": 38,
     "rna_count": 5,
+    "chain_count": 56,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/5gm6.cxc"
   },
   {
@@ -3343,6 +3395,7 @@
     "title": "yeast activated spliceosome",
     "state": "Bact",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "5.8",
     "year": "2016",
     "paper_title": "Molecular architecture of the Saccharomyces cerevisiae activated spliceosome.",
@@ -3543,6 +3596,9 @@
     ],
     "protein_count": 27,
     "rna_count": 4,
+    "chain_count": 31,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/5lqw.cxc"
   },
   {
@@ -3550,6 +3606,7 @@
     "title": "cryo-EM structure of a human activated spliceosome (mature Bact) at 5.1 angstrom.",
     "state": "Bact",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "5.1",
     "year": "2018",
     "paper_title": "Structure of the human activated spliceosome in three conformational states.",
@@ -3858,6 +3915,9 @@
     ],
     "protein_count": 45,
     "rna_count": 4,
+    "chain_count": 69,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/5z56.cxc"
   },
   {
@@ -3865,6 +3925,7 @@
     "title": "Cryo-EM structure of the human activated spliceosome (late Bact) at 6.5 angstrom",
     "state": "Bact",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "6.5",
     "year": "2018",
     "paper_title": "Structure of the human activated spliceosome in three conformational states.",
@@ -4161,6 +4222,9 @@
     ],
     "protein_count": 43,
     "rna_count": 4,
+    "chain_count": 66,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/5z57.cxc"
   },
   {
@@ -4168,6 +4232,7 @@
     "title": "Cryo-EM structure of a human activated spliceosome (early Bact) at 4.9 angstrom.",
     "state": "Bact",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "4.9",
     "year": "2018",
     "paper_title": "Structure of the human activated spliceosome in three conformational states.",
@@ -4416,6 +4481,9 @@
     ],
     "protein_count": 35,
     "rna_count": 4,
+    "chain_count": 52,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/5z58.cxc"
   },
   {
@@ -4423,6 +4491,7 @@
     "title": "human Bact spliceosome core structure",
     "state": "Bact",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.4",
     "year": "2018",
     "paper_title": "Structure and Conformational Dynamics of the Human Spliceosomal B<sub>act</sub> Complex.",
@@ -4605,6 +4674,9 @@
     ],
     "protein_count": 24,
     "rna_count": 4,
+    "chain_count": 35,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/6ff4.cxc"
   },
   {
@@ -4612,6 +4684,7 @@
     "title": "human Bact spliceosome core structure",
     "state": "Bact",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "4.5",
     "year": "2018",
     "paper_title": "Structure and Conformational Dynamics of the Human Spliceosomal B<sub>act</sub> Complex.",
@@ -4926,6 +4999,9 @@
     ],
     "protein_count": 46,
     "rna_count": 4,
+    "chain_count": 71,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/6ff7.cxc"
   },
   {
@@ -4933,6 +5009,7 @@
     "title": "Cryo-EM structure of the activated spliceosome (Bact complex) at an atomic resolution of 2.5 angstrom",
     "state": "Bact",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "2.5",
     "year": "2021",
     "paper_title": "Mechanism of spliceosome remodeling by the ATPase/helicase Prp2 and its coactivator Spp2.",
@@ -5229,6 +5306,9 @@
     ],
     "protein_count": 43,
     "rna_count": 4,
+    "chain_count": 93,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/7dco.cxc"
   },
   {
@@ -5236,6 +5316,7 @@
     "title": "Cryo-EM Structure of the Activated Human Minor Spliceosome (minor Bact Complex)",
     "state": "Bact",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "2.89",
     "year": "2021",
     "paper_title": "Structure of the activated human minor spliceosome.",
@@ -5502,6 +5583,9 @@
     ],
     "protein_count": 38,
     "rna_count": 4,
+    "chain_count": 60,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/7dvq.cxc"
   },
   {
@@ -5509,6 +5593,7 @@
     "title": "Structural organization of a late activated human spliceosome (Baqr, core region)",
     "state": "Bact",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.1",
     "year": "2023",
     "paper_title": "Structural basis of catalytic activation in human splicing.",
@@ -5745,6 +5830,9 @@
     ],
     "protein_count": 33,
     "rna_count": 4,
+    "chain_count": 47,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/7qtt.cxc"
   },
   {
@@ -5752,6 +5840,7 @@
     "title": "Structure of a late-stage activated spliceosome (BAqr) arrested with a dominant-negative Aquarius mutant (state B complex).",
     "state": "Bact",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "5.9",
     "year": "2023",
     "paper_title": "Structural basis of catalytic activation in human splicing.",
@@ -6060,6 +6149,9 @@
     ],
     "protein_count": 45,
     "rna_count": 4,
+    "chain_count": 69,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/8ch6.cxc"
   },
   {
@@ -6067,6 +6159,7 @@
     "title": "The cryo-EM structure of human Bact-I complex",
     "state": "Bact",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.0",
     "year": "2024",
     "paper_title": "Molecular basis for the activation of human spliceosome.",
@@ -6369,6 +6462,9 @@
     ],
     "protein_count": 44,
     "rna_count": 4,
+    "chain_count": 62,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/8i0r.cxc"
   },
   {
@@ -6376,6 +6472,7 @@
     "title": "The cryo-EM structure of human Bact-II complex",
     "state": "Bact",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "4.2",
     "year": "2024",
     "paper_title": "Molecular basis for the activation of human spliceosome.",
@@ -6648,6 +6745,9 @@
     ],
     "protein_count": 39,
     "rna_count": 4,
+    "chain_count": 57,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/8i0s.cxc"
   },
   {
@@ -6655,6 +6755,7 @@
     "title": "The cryo-EM structure of human Bact-III complex",
     "state": "Bact",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.0",
     "year": "2024",
     "paper_title": "Molecular basis for the activation of human spliceosome.",
@@ -6945,6 +7046,9 @@
     ],
     "protein_count": 42,
     "rna_count": 4,
+    "chain_count": 63,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/8i0t.cxc"
   },
   {
@@ -6952,6 +7056,7 @@
     "title": "The cryo-EM structure of human Bact-IV complex",
     "state": "Bact",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.3",
     "year": "2024",
     "paper_title": "Molecular basis for the activation of human spliceosome.",
@@ -7224,6 +7329,9 @@
     ],
     "protein_count": 39,
     "rna_count": 4,
+    "chain_count": 60,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/8i0u.cxc"
   },
   {
@@ -7231,6 +7339,7 @@
     "title": "Cryo-EM structure of the Catalytic Step I spliceosome (C complex) at 3.4 angstrom resolution",
     "state": "C",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "3.4",
     "year": "2016",
     "paper_title": "Structure of a yeast catalytic step I spliceosome at 3.4 Å resolution.",
@@ -7455,6 +7564,9 @@
     ],
     "protein_count": 29,
     "rna_count": 6,
+    "chain_count": 52,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/5gmk.cxc"
   },
   {
@@ -7462,6 +7574,7 @@
     "title": "Structure of the core of the yeast spliceosome immediately after branching",
     "state": "C",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "3.8",
     "year": "2016",
     "paper_title": "Cryo-EM structure of the spliceosome immediately after branching.",
@@ -7662,6 +7775,9 @@
     ],
     "protein_count": 26,
     "rna_count": 5,
+    "chain_count": 45,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/5lj3.cxc"
   },
   {
@@ -7669,6 +7785,7 @@
     "title": "Overall structure of the yeast spliceosome immediately after branching.",
     "state": "C",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "10.0",
     "year": "2016",
     "paper_title": "Cryo-EM structure of the spliceosome immediately after branching.",
@@ -7893,6 +8010,9 @@
     ],
     "protein_count": 30,
     "rna_count": 5,
+    "chain_count": 52,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/5lj5.cxc"
   },
   {
@@ -7900,6 +8020,7 @@
     "title": "The Cryo-EM Structure of Human Catalytic Step I Spliceosome (C complex) at 4.1 angstrom resolution",
     "state": "C",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "4.1",
     "year": "2018",
     "paper_title": "Structure of a human catalytic step I spliceosome.",
@@ -8184,6 +8305,9 @@
     ],
     "protein_count": 41,
     "rna_count": 4,
+    "chain_count": 65,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/5yzg.cxc"
   },
   {
@@ -8191,6 +8315,7 @@
     "title": "Human C Complex Spliceosome - High-resolution CORE",
     "state": "C",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.4",
     "year": "2020",
     "paper_title": "Structural Insights into the Roles of Metazoan-Specific Splicing Factors in the Human Step 1 Spliceosome.",
@@ -8355,6 +8480,9 @@
     ],
     "protein_count": 21,
     "rna_count": 4,
+    "chain_count": 32,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/6zym.cxc"
   },
   {
@@ -8362,6 +8490,7 @@
     "title": "Human C Complex Spliceosome - Medium-resolution PERIPHERY",
     "state": "C",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "5.0",
     "year": "2020",
     "paper_title": "Structural Insights into the Roles of Metazoan-Specific Splicing Factors in the Human Step 1 Spliceosome.",
@@ -8604,6 +8733,9 @@
     ],
     "protein_count": 34,
     "rna_count": 4,
+    "chain_count": 48,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/7a5p.cxc"
   },
   {
@@ -8611,6 +8743,7 @@
     "title": "Yeast C complex spliceosome at 2.8 Angstrom resolution with Prp18/Slu7 bound",
     "state": "C",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "2.8",
     "year": "2021",
     "paper_title": "Structural basis for conformational equilibrium of the catalytic spliceosome.",
@@ -8865,6 +8998,9 @@
     ],
     "protein_count": 35,
     "rna_count": 5,
+    "chain_count": 60,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/7b9v.cxc"
   },
   {
@@ -8872,6 +9008,7 @@
     "title": "The cryo-EM structure of human post-Bact complex",
     "state": "C",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.0",
     "year": "2024",
     "paper_title": "Molecular basis for the activation of human spliceosome.",
@@ -9132,6 +9269,9 @@
     ],
     "protein_count": 37,
     "rna_count": 4,
+    "chain_count": 58,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/8i0v.cxc"
   },
   {
@@ -9139,6 +9279,7 @@
     "title": "The cryo-EM structure of human C complex",
     "state": "C",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.4",
     "year": "2024",
     "paper_title": "Molecular basis for the activation of human spliceosome.",
@@ -9441,6 +9582,9 @@
     ],
     "protein_count": 43,
     "rna_count": 5,
+    "chain_count": 65,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/8i0w.cxc"
   },
   {
@@ -9448,6 +9592,7 @@
     "title": "Structure of a spliceosome remodeled for exon ligation",
     "state": "C*",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "3.85",
     "year": "2017",
     "paper_title": "Structure of a spliceosome remodelled for exon ligation.",
@@ -9642,6 +9787,9 @@
     ],
     "protein_count": 25,
     "rna_count": 5,
+    "chain_count": 37,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/5mps.cxc"
   },
   {
@@ -9649,6 +9797,7 @@
     "title": "Structure of a spliceosome remodeled for exon ligation",
     "state": "C*",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "4.17",
     "year": "2017",
     "paper_title": "Structure of a spliceosome remodelled for exon ligation.",
@@ -9879,6 +10028,9 @@
     ],
     "protein_count": 30,
     "rna_count": 6,
+    "chain_count": 53,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/5mq0.cxc"
   },
   {
@@ -9886,6 +10038,7 @@
     "title": "Cryo-EM structure of a human spliceosome activated for step 2 of splicing (C* complex)",
     "state": "C*",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "5.9",
     "year": "2017",
     "paper_title": "Cryo-EM structure of a human spliceosome activated for step 2 of splicing.",
@@ -10110,6 +10263,9 @@
     ],
     "protein_count": 31,
     "rna_count": 4,
+    "chain_count": 46,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/5mqf.cxc"
   },
   {
@@ -10117,6 +10273,7 @@
     "title": "Cryo-EM structure of the Catalytic Step II spliceosome (C* complex) at 4.0 angstrom resolution",
     "state": "C*",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "4.0",
     "year": "2017",
     "paper_title": "Structure of a yeast step II catalytically activated spliceosome.",
@@ -10341,6 +10498,9 @@
     ],
     "protein_count": 28,
     "rna_count": 7,
+    "chain_count": 52,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/5wsg.cxc"
   },
   {
@@ -10348,6 +10508,7 @@
     "title": "Cryo-EM structure of the human spliceosome just prior to exon ligation at 3.6 angstrom",
     "state": "C*",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.6",
     "year": "2017",
     "paper_title": "An Atomic Structure of the Human Spliceosome.",
@@ -10602,6 +10763,9 @@
     ],
     "protein_count": 36,
     "rna_count": 4,
+    "chain_count": 63,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/5xjc.cxc"
   },
   {
@@ -10609,6 +10773,7 @@
     "title": "The cryo-EM structure of human pre-C*-I complex",
     "state": "C*",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.6",
     "year": "2022",
     "paper_title": "Mechanism of exon ligation by human spliceosome.",
@@ -10863,6 +11028,9 @@
     ],
     "protein_count": 35,
     "rna_count": 5,
+    "chain_count": 58,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/7w59.cxc"
   },
   {
@@ -10870,6 +11038,7 @@
     "title": "The cryo-EM structure of human pre-C*-II complex",
     "state": "C*",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.6",
     "year": "2022",
     "paper_title": "Mechanism of exon ligation by human spliceosome.",
@@ -11148,6 +11317,9 @@
     ],
     "protein_count": 39,
     "rna_count": 5,
+    "chain_count": 63,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/7w5a.cxc"
   },
   {
@@ -11155,6 +11327,7 @@
     "title": "The cryo-EM structure of human C* complex",
     "state": "C*",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "4.3",
     "year": "2022",
     "paper_title": "Mechanism of exon ligation by human spliceosome.",
@@ -11439,6 +11612,9 @@
     ],
     "protein_count": 40,
     "rna_count": 5,
+    "chain_count": 64,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/7w5b.cxc"
   },
   {
@@ -11446,6 +11622,7 @@
     "title": "Human spliceosomal PM5 C* complex",
     "state": "C*",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "2.8",
     "year": "2023",
     "paper_title": "Regulation of 3' splice site selection after step 1 of splicing by spliceosomal C* proteins.",
@@ -11778,6 +11955,9 @@
     ],
     "protein_count": 48,
     "rna_count": 5,
+    "chain_count": 72,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/8c6j.cxc"
   },
   {
@@ -11785,6 +11965,7 @@
     "title": "Cryo-EM structure of the yeast spliceosome at 3.6 angstrom resolution",
     "state": "ILS/disassembly",
     "species": "S. pombe",
+    "species_code": "SCHPO",
     "resolution": "3.6",
     "year": "2015",
     "paper_title": "Structure of a yeast spliceosome at 3.6-angstrom resolution.",
@@ -11997,6 +12178,9 @@
     ],
     "protein_count": 28,
     "rna_count": 5,
+    "chain_count": 50,
+    "has_prpf8": false,
+    "has_sf3b1": false,
     "script_path": "scripts/3jb9.cxc"
   },
   {
@@ -12004,6 +12188,7 @@
     "title": "Cryo-EM structure of the intron-lariat spliceosome ready for disassembly from S.cerevisiae at 3.5 angstrom",
     "state": "ILS/disassembly",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "3.46",
     "year": "2017",
     "paper_title": "Structure of an Intron Lariat Spliceosome from Saccharomyces cerevisiae.",
@@ -12222,6 +12407,9 @@
     ],
     "protein_count": 29,
     "rna_count": 5,
+    "chain_count": 51,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/5y88.cxc"
   },
   {
@@ -12229,6 +12417,7 @@
     "title": "Cryo-EM structure of a human intron lariat spliceosome prior to Prp43 loaded (ILS1 complex) at 2.9 angstrom resolution",
     "state": "ILS/disassembly",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "2.9",
     "year": "2019",
     "paper_title": "Structures of the human spliceosomes before and after release of the ligated exon.",
@@ -12435,6 +12624,9 @@
     ],
     "protein_count": 28,
     "rna_count": 4,
+    "chain_count": 49,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/6id0.cxc"
   },
   {
@@ -12442,6 +12634,7 @@
     "title": "Cryo-EM structure of a human intron lariat spliceosome after Prp43 loaded (ILS2 complex) at 2.9 angstrom resolution",
     "state": "ILS/disassembly",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "2.86",
     "year": "2019",
     "paper_title": "Structures of the human spliceosomes before and after release of the ligated exon.",
@@ -12654,6 +12847,9 @@
     ],
     "protein_count": 29,
     "rna_count": 4,
+    "chain_count": 50,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/6id1.cxc"
   },
   {
@@ -12661,6 +12857,7 @@
     "title": "Structure of the C. elegans Intron Lariat Spliceosome primed for disassembly (ILS')",
     "state": "ILS/disassembly",
     "species": "C. elegans",
+    "species_code": "CAEEL",
     "resolution": "2.9",
     "year": "2024",
     "paper_title": "Mechanism for the initiation of spliceosome disassembly.",
@@ -12885,6 +13082,9 @@
     ],
     "protein_count": 32,
     "rna_count": 3,
+    "chain_count": 53,
+    "has_prpf8": false,
+    "has_sf3b1": false,
     "script_path": "scripts/8ro0.cxc"
   },
   {
@@ -12892,6 +13092,7 @@
     "title": "Structure of the C. elegans Intron Lariat Spliceosome double-primed for disassembly (ILS'')",
     "state": "ILS/disassembly",
     "species": "C. elegans",
+    "species_code": "CAEEL",
     "resolution": "3.0",
     "year": "2024",
     "paper_title": "Mechanism for the initiation of spliceosome disassembly.",
@@ -13140,6 +13341,9 @@
     ],
     "protein_count": 35,
     "rna_count": 4,
+    "chain_count": 57,
+    "has_prpf8": false,
+    "has_sf3b1": false,
     "script_path": "scripts/8ro1.cxc"
   },
   {
@@ -13147,6 +13351,7 @@
     "title": "Integrative Structure of the human intron lariat Spliceosome (ILS'')",
     "state": "ILS/disassembly",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.5",
     "year": "2024",
     "paper_title": "Mechanism for the initiation of spliceosome disassembly.",
@@ -13383,6 +13588,9 @@
     ],
     "protein_count": 33,
     "rna_count": 4,
+    "chain_count": 43,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/8ro2.cxc"
   },
   {
@@ -13390,6 +13598,7 @@
     "title": "Cryo-EM structure of the thermophile spliceosome (state ILS)",
     "state": "ILS/disassembly",
     "species": "Chaetomium thermophilum",
+    "species_code": "CHATD",
     "resolution": "2.8",
     "year": "2025",
     "paper_title": "Structural insights into spliceosome fidelity: DHX35-GPATCH1- mediated rejection of aberrant splicing substrates.",
@@ -13638,6 +13847,9 @@
     ],
     "protein_count": 35,
     "rna_count": 4,
+    "chain_count": 56,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/9l5r.cxc"
   },
   {
@@ -13645,6 +13857,7 @@
     "title": "3D structure determination of the human*U4/U6.U5* tri-snRNP complex",
     "state": "P",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "7.0",
     "year": "2016",
     "paper_title": "Molecular architecture of the human U4/U6.U5 tri-snRNP.",
@@ -13833,6 +14046,9 @@
     ],
     "protein_count": 26,
     "rna_count": 3,
+    "chain_count": 36,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/3jcr.cxc"
   },
   {
@@ -13840,6 +14056,7 @@
     "title": "Cryo-EM Structure of the Post-catalytic Spliceosome from Saccharomyces cerevisiae at 3.6 angstrom",
     "state": "P",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "3.6",
     "year": "2017",
     "paper_title": "Structure of the Post-catalytic Spliceosome from Saccharomyces cerevisiae.",
@@ -14052,6 +14269,9 @@
     ],
     "protein_count": 29,
     "rna_count": 4,
+    "chain_count": 50,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/5ylz.cxc"
   },
   {
@@ -14059,6 +14279,7 @@
     "title": "S. cerevisiae spliceosomal post-catalytic P complex",
     "state": "P",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "3.3",
     "year": "2017",
     "paper_title": "Structure of the yeast spliceosomal postcatalytic P complex.",
@@ -14289,6 +14510,9 @@
     ],
     "protein_count": 31,
     "rna_count": 5,
+    "chain_count": 54,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/6bk8.cxc"
   },
   {
@@ -14296,6 +14520,7 @@
     "title": "Post-catalytic P complex spliceosome with 3' splice site docked",
     "state": "P",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "3.7",
     "year": "2017",
     "paper_title": "Postcatalytic spliceosome structure reveals mechanism of 3'-splice site selection.",
@@ -14526,6 +14751,9 @@
     ],
     "protein_count": 31,
     "rna_count": 5,
+    "chain_count": 53,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/6exn.cxc"
   },
   {
@@ -14533,6 +14761,7 @@
     "title": "Cryo-EM structure of a human post-catalytic spliceosome (P complex) at 3.0 angstrom",
     "state": "P",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.0",
     "year": "2019",
     "paper_title": "Structures of the human spliceosomes before and after release of the ligated exon.",
@@ -14793,6 +15022,9 @@
     ],
     "protein_count": 37,
     "rna_count": 4,
+    "chain_count": 60,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/6icz.cxc"
   },
   {
@@ -14800,6 +15032,7 @@
     "title": "Human post-catalytic P complex spliceosome",
     "state": "P",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.3",
     "year": "2019",
     "paper_title": "A human postcatalytic spliceosome structure reveals essential roles of metazoan factors for exon ligation.",
@@ -15078,6 +15311,9 @@
     ],
     "protein_count": 39,
     "rna_count": 5,
+    "chain_count": 64,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/6qdv.cxc"
   },
   {
@@ -15085,6 +15321,7 @@
     "title": "Cryo-EM Structure of Pre-B+AMPPNP Complex (core part)",
     "state": "P",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "4.1",
     "year": "2024",
     "paper_title": "Structural insights into the cross-exon to cross-intron spliceosome switch.",
@@ -15195,6 +15432,9 @@
     ],
     "protein_count": 13,
     "rna_count": 3,
+    "chain_count": 17,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/8qp9.cxc"
   },
   {
@@ -15202,6 +15442,7 @@
     "title": "Cryo-EM Structure of Pre-B+ATP Complex (core part)",
     "state": "P",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.7",
     "year": "2024",
     "paper_title": "Structural insights into the cross-exon to cross-intron spliceosome switch.",
@@ -15318,6 +15559,9 @@
     ],
     "protein_count": 13,
     "rna_count": 4,
+    "chain_count": 18,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/8qpb.cxc"
   },
   {
@@ -15325,6 +15569,7 @@
     "title": "Cryo-EM structure of the cross-exon pre-B+AMPPNP complex",
     "state": "P",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "6.1",
     "year": "2024",
     "paper_title": "Structural insights into the cross-exon to cross-intron spliceosome switch.",
@@ -15639,6 +15884,9 @@
     ],
     "protein_count": 43,
     "rna_count": 7,
+    "chain_count": 71,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/8r08.cxc"
   },
   {
@@ -15646,6 +15894,7 @@
     "title": "Cryo-EM structure of the cross-exon pre-B+ATP complex",
     "state": "P",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "4.4",
     "year": "2024",
     "paper_title": "Structural insights into the cross-exon to cross-intron spliceosome switch.",
@@ -15936,6 +16185,9 @@
     ],
     "protein_count": 40,
     "rna_count": 6,
+    "chain_count": 60,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/8r0b.cxc"
   },
   {
@@ -15943,6 +16195,7 @@
     "title": "Structure of the yeast post-catalytic P complex spliceosome at 2.3 Angstrom resolution",
     "state": "P",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "2.31",
     "year": "2024",
     "paper_title": "Control of 3' splice site selection by the yeast splicing factor Fyv6.",
@@ -16179,6 +16432,9 @@
     ],
     "protein_count": 32,
     "rna_count": 5,
+    "chain_count": 59,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/9dtr.cxc"
   },
   {
@@ -16186,6 +16442,7 @@
     "title": "Integrative model of the human post-catalytic spliceosome (P-complex)",
     "state": "P",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.3",
     "year": "2024",
     "paper_title": "Mechanism for the initiation of spliceosome disassembly.",
@@ -16518,6 +16775,9 @@
     ],
     "protein_count": 48,
     "rna_count": 5,
+    "chain_count": 71,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/9fmd.cxc"
   },
   {
@@ -16525,6 +16785,7 @@
     "title": "SF3b spliceosomal complex bound to E7107",
     "state": "SF3B/U2 snRNP",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.95",
     "year": "2018",
     "paper_title": "The cryo-EM structure of the SF3b spliceosome complex bound to a splicing modulator reveals a pre-mRNA substrate competitive mechanism of action.",
@@ -16562,6 +16823,9 @@
     "rnas": [],
     "protein_count": 4,
     "rna_count": 0,
+    "chain_count": 7,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/5zya.cxc"
   },
   {
@@ -16569,6 +16833,7 @@
     "title": "5'domain of human 17S U2 snRNP",
     "state": "SF3B/U2 snRNP",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "4.1",
     "year": "2020",
     "paper_title": "Molecular architecture of the human 17S U2 snRNP.",
@@ -16637,6 +16902,9 @@
     ],
     "protein_count": 8,
     "rna_count": 1,
+    "chain_count": 10,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/6y50.cxc"
   },
   {
@@ -16644,6 +16912,7 @@
     "title": "human 17S U2 snRNP low resolution part",
     "state": "SF3B/U2 snRNP",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "7.1",
     "year": "2020",
     "paper_title": "Molecular architecture of the human 17S U2 snRNP.",
@@ -16772,6 +17041,9 @@
     ],
     "protein_count": 18,
     "rna_count": 1,
+    "chain_count": 19,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/6y53.cxc"
   },
   {
@@ -16779,6 +17051,7 @@
     "title": "human 17S U2 snRNP",
     "state": "SF3B/U2 snRNP",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "7.1",
     "year": "2020",
     "paper_title": "Molecular architecture of the human 17S U2 snRNP.",
@@ -16925,6 +17198,9 @@
     ],
     "protein_count": 21,
     "rna_count": 1,
+    "chain_count": 22,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/6y5q.cxc"
   },
   {
@@ -16932,6 +17208,7 @@
     "title": "The cryo-EM structure of the DDX42-SF3b complex",
     "state": "SF3B/U2 snRNP",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "2.6",
     "year": "2024",
     "paper_title": "Structural insights into branch site proofreading by human spliceosome",
@@ -16975,6 +17252,9 @@
     "rnas": [],
     "protein_count": 5,
     "rna_count": 0,
+    "chain_count": 6,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/7evn.cxc"
   },
   {
@@ -16982,6 +17262,7 @@
     "title": "The cryo-EM structure of the human 17S U2 snRNP",
     "state": "SF3B/U2 snRNP",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "2.5",
     "year": "2024",
     "paper_title": "Structural insights into branch site proofreading by human spliceosome.",
@@ -17122,6 +17403,9 @@
     ],
     "protein_count": 20,
     "rna_count": 1,
+    "chain_count": 24,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/7evo.cxc"
   },
   {
@@ -17129,6 +17413,7 @@
     "title": "Human 17S U2 snRNP 5' domain",
     "state": "SF3B/U2 snRNP",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "2.21",
     "year": "2022",
     "paper_title": "Structural basis of branch site recognition by the human spliceosome.",
@@ -17197,6 +17482,9 @@
     ],
     "protein_count": 8,
     "rna_count": 1,
+    "chain_count": 16,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/7q3l.cxc"
   },
   {
@@ -17204,6 +17492,7 @@
     "title": "U2 snRNP after ATP-dependent remodelling",
     "state": "SF3B/U2 snRNP",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "2.15",
     "year": "2022",
     "paper_title": "Structural basis of branch site recognition by the human spliceosome.",
@@ -17266,6 +17555,9 @@
     ],
     "protein_count": 7,
     "rna_count": 1,
+    "chain_count": 17,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/7q4p.cxc"
   },
   {
@@ -17273,6 +17565,7 @@
     "title": "The cryo-EM structure of human pre-17S U2 snRNP",
     "state": "SF3B/U2 snRNP",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "2.7",
     "year": "2023",
     "paper_title": "Mechanisms of the RNA helicases DDX42 and DDX46 in human U2 snRNP assembly.",
@@ -17413,6 +17706,9 @@
     ],
     "protein_count": 20,
     "rna_count": 1,
+    "chain_count": 24,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/8hk1.cxc"
   },
   {
@@ -17420,6 +17716,7 @@
     "title": "Structure of SF3B core in complex with the 22-nt histone mRNA(SF3B-22-nt histone mRNA)",
     "state": "SF3B/U2 snRNP",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.3",
     "year": "2025",
     "paper_title": "A common structural mechanism for RNA recognition by the SF3B complex in mRNA splicing and export.",
@@ -17470,6 +17767,9 @@
     ],
     "protein_count": 4,
     "rna_count": 2,
+    "chain_count": 7,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/9k1o.cxc"
   },
   {
@@ -17477,6 +17777,7 @@
     "title": "Structure of SF3B core in complex with the 101-nt histone mRNA(SF3B-101-nt histone mRNA)",
     "state": "SF3B/U2 snRNP",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.6",
     "year": "2025",
     "paper_title": "A common structural mechanism for RNA recognition by the SF3B complex in mRNA splicing and export.",
@@ -17521,6 +17822,9 @@
     ],
     "protein_count": 4,
     "rna_count": 1,
+    "chain_count": 7,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/9k1q.cxc"
   },
   {
@@ -17528,6 +17832,7 @@
     "title": "Structure of SF3B core in complex with the intron-U2 snRNA (SF3B-intron-U2 snRNA)",
     "state": "SF3B/U2 snRNP",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.8",
     "year": "2025",
     "paper_title": "A common structural mechanism for RNA recognition by the SF3B complex in mRNA splicing and export.",
@@ -17578,6 +17883,9 @@
     ],
     "protein_count": 4,
     "rna_count": 2,
+    "chain_count": 7,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/9k1r.cxc"
   },
   {
@@ -17585,6 +17893,7 @@
     "title": "Structure of the SF3B core, harboring the K700E mutation in SF3B1, in complex with intron-U2 snRNA",
     "state": "SF3B/U2 snRNP",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.5",
     "year": "2025",
     "paper_title": "A common structural mechanism for RNA recognition by the SF3B complex in mRNA splicing and export.",
@@ -17635,6 +17944,9 @@
     ],
     "protein_count": 4,
     "rna_count": 2,
+    "chain_count": 7,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/9k1w.cxc"
   },
   {
@@ -17642,6 +17954,7 @@
     "title": "Structure of the SF3B core, harboring the R625H mutation in SF3B1, in complex with intron-U2 snRNA",
     "state": "SF3B/U2 snRNP",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.1",
     "year": "2025",
     "paper_title": "A common structural mechanism for RNA recognition by the SF3B complex in mRNA splicing and export.",
@@ -17692,6 +18005,9 @@
     ],
     "protein_count": 4,
     "rna_count": 2,
+    "chain_count": 7,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/9k1y.cxc"
   },
   {
@@ -17699,6 +18015,7 @@
     "title": "Prespliceosome structure provides insight into spliceosome assembly and regulation (map A2)",
     "state": "U2/pre-A/A",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "4.0",
     "year": "2018",
     "paper_title": "Prespliceosome structure provides insights into spliceosome assembly and regulation.",
@@ -17899,6 +18216,9 @@
     ],
     "protein_count": 28,
     "rna_count": 3,
+    "chain_count": 43,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/6g90.cxc"
   },
   {
@@ -17906,6 +18226,7 @@
     "title": "Structure of the U2 5' module of the A3'-SSA complex",
     "state": "U2/pre-A/A",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.1",
     "year": "2021",
     "paper_title": "Structural basis of intron selection by U2 snRNP in the presence of covalent inhibitors.",
@@ -17986,6 +18307,9 @@
     ],
     "protein_count": 9,
     "rna_count": 2,
+    "chain_count": 15,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/7onb.cxc"
   },
   {
@@ -17993,6 +18317,7 @@
     "title": "The U2 part of Saccharomyces cerevisiae spliceosomal pre-A complex (delta BS-A ACT1)",
     "state": "U2/pre-A/A",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "9.0",
     "year": "2021",
     "paper_title": "Structural insights into how Prp5 proofreads the pre-mRNA branch site.",
@@ -18133,6 +18458,9 @@
     ],
     "protein_count": 19,
     "rna_count": 2,
+    "chain_count": 21,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/7oqb.cxc"
   },
   {
@@ -18140,6 +18468,7 @@
     "title": "Saccharomyces cerevisiae spliceosomal pre-A complex (delta BS-A ACT1)",
     "state": "U2/pre-A/A",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "5.9",
     "year": "2021",
     "paper_title": "Structural insights into how Prp5 proofreads the pre-mRNA branch site.",
@@ -18346,6 +18675,9 @@
     ],
     "protein_count": 29,
     "rna_count": 3,
+    "chain_count": 39,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/7oqe.cxc"
   },
   {
@@ -18353,6 +18685,7 @@
     "title": "Substrate-bound A-like U2 snRNP",
     "state": "U2/pre-A/A",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "2.1",
     "year": "2022",
     "paper_title": "Structural basis of branch site recognition by the human spliceosome.",
@@ -18427,6 +18760,9 @@
     ],
     "protein_count": 8,
     "rna_count": 2,
+    "chain_count": 20,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/7q4o.cxc"
   },
   {
@@ -18434,6 +18770,7 @@
     "title": "The cryo-EM structure of the human pre-A complex",
     "state": "U2/pre-A/A",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.0",
     "year": "2024",
     "paper_title": "Structural insights into branch site proofreading by human spliceosome.",
@@ -18616,6 +18953,9 @@
     ],
     "protein_count": 24,
     "rna_count": 4,
+    "chain_count": 40,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/7vpx.cxc"
   },
   {
@@ -18623,6 +18963,7 @@
     "title": "Cryo-EM structure of the endogenous U2/branchpoint spliceosomal complex (Proximal DHX15 state)",
     "state": "U2/pre-A/A",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.43",
     "year": "2026",
     "paper_title": "The tumour suppressor RBM5 activates the helicase DHX15 to regulate splicing.",
@@ -18727,6 +19068,9 @@
     ],
     "protein_count": 13,
     "rna_count": 2,
+    "chain_count": 16,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/9ze0.cxc"
   },
   {
@@ -18734,6 +19078,7 @@
     "title": "Cryo-EM structure of the endogenous U2/branchpoint spliceosomal complex (core)",
     "state": "U2/pre-A/A",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.26",
     "year": "2026",
     "paper_title": "The tumour suppressor RBM5 activates the helicase DHX15 to regulate splicing.",
@@ -18820,6 +19165,9 @@
     ],
     "protein_count": 10,
     "rna_count": 2,
+    "chain_count": 13,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/9ze2.cxc"
   },
   {
@@ -18827,6 +19175,7 @@
     "title": "Cryo-EM structure of the endogenous U2/branchpoint spliceosomal complex (Distal DHX15 state)",
     "state": "U2/pre-A/A",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.93",
     "year": "2026",
     "paper_title": "The tumour suppressor RBM5 activates the helicase DHX15 to regulate splicing.",
@@ -18931,6 +19280,9 @@
     ],
     "protein_count": 13,
     "rna_count": 2,
+    "chain_count": 16,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/9ze3.cxc"
   },
   {
@@ -18938,6 +19290,7 @@
     "title": "Cryo-EM structure of the endogenous U2/branchpoint spliceosomal complex (SF3A state 1)",
     "state": "U2/pre-A/A",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.61",
     "year": "2026",
     "paper_title": "The tumour suppressor RBM5 activates the helicase DHX15 to regulate splicing.",
@@ -19030,6 +19383,9 @@
     ],
     "protein_count": 11,
     "rna_count": 2,
+    "chain_count": 14,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/9zec.cxc"
   },
   {
@@ -19037,6 +19393,7 @@
     "title": "Cryo-EM structure of the endogenous U2/branchpoint spliceosomal complex (SF3A state 2)",
     "state": "U2/pre-A/A",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.94",
     "year": "2026",
     "paper_title": "The tumour suppressor RBM5 activates the helicase DHX15 to regulate splicing.",
@@ -19129,6 +19486,9 @@
     ],
     "protein_count": 11,
     "rna_count": 2,
+    "chain_count": 14,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/9zed.cxc"
   },
   {
@@ -19136,6 +19496,7 @@
     "title": "Cryo-EM structure of Brr2 in complex with Jab1/MPN and C9ORF78",
     "state": "U5 recycling",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "2.76",
     "year": "2022",
     "paper_title": "The intrinsically disordered TSSC4 protein acts as a helicase inhibitor, placeholder and multi-interaction coordinator during snRNP assembly and recycling.",
@@ -19167,6 +19528,9 @@
     "rnas": [],
     "protein_count": 3,
     "rna_count": 0,
+    "chain_count": 3,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/7os2.cxc"
   },
   {
@@ -19174,6 +19538,7 @@
     "title": "Structure of U5 snRNP assembly and recycling factor TSSC4 in complex with BRR2 and Jab1 domain of PRPF8",
     "state": "U5 recycling",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.05",
     "year": "2022",
     "paper_title": "The intrinsically disordered TSSC4 protein acts as a helicase inhibitor, placeholder and multi-interaction coordinator during snRNP assembly and recycling.",
@@ -19205,6 +19570,9 @@
     "rnas": [],
     "protein_count": 3,
     "rna_count": 0,
+    "chain_count": 3,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/7px3.cxc"
   },
   {
@@ -19212,6 +19580,7 @@
     "title": "Structure of the recycling U5 snRNP bound to chaperones CD2BP2 and TSSC4 (State 2)",
     "state": "U5 recycling",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.2",
     "year": "2024",
     "paper_title": "Structural basis of human U5 snRNP late biogenesis and recycling.",
@@ -19316,6 +19685,9 @@
     ],
     "protein_count": 14,
     "rna_count": 1,
+    "chain_count": 17,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/8q7q.cxc"
   },
   {
@@ -19323,6 +19695,7 @@
     "title": "Structure of the recycling U5 snRNP bound to chaperones CD2BP2 and TSSC4 (State 1)",
     "state": "U5 recycling",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.8",
     "year": "2024",
     "paper_title": "Structural basis of human U5 snRNP late biogenesis and recycling.",
@@ -19427,6 +19800,9 @@
     ],
     "protein_count": 14,
     "rna_count": 1,
+    "chain_count": 17,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/8q7v.cxc"
   },
   {
@@ -19434,6 +19810,7 @@
     "title": "Structure of the recycling U5 snRNP bound to chaperone CD2BP2 (State 3)",
     "state": "U5 recycling",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.9",
     "year": "2024",
     "paper_title": "Structural basis of human U5 snRNP late biogenesis and recycling.",
@@ -19538,6 +19915,9 @@
     ],
     "protein_count": 14,
     "rna_count": 1,
+    "chain_count": 17,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/8q7w.cxc"
   },
   {
@@ -19545,6 +19925,7 @@
     "title": "Structure of the recycling U5 snRNP bound to chaperone CD2BP2 (State 4)",
     "state": "U5 recycling",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "4.6",
     "year": "2024",
     "paper_title": "Structural basis of human U5 snRNP late biogenesis and recycling.",
@@ -19649,6 +20030,9 @@
     ],
     "protein_count": 14,
     "rna_count": 1,
+    "chain_count": 17,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/8q7x.cxc"
   },
   {
@@ -19656,6 +20040,7 @@
     "title": "Cryo-EM structure of the spliceosomal U4/U6.U5 tri-snRNP",
     "state": "U5/tri-snRNP",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "3.8",
     "year": "2016",
     "paper_title": "The 3.8 Å structure of the U4/U6.U5 tri-snRNP: Insights into spliceosome assembly and catalysis.",
@@ -19832,6 +20217,9 @@
     ],
     "protein_count": 23,
     "rna_count": 4,
+    "chain_count": 36,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/3jcm.cxc"
   },
   {
@@ -19839,6 +20227,7 @@
     "title": "Foot region of the yeast spliceosomal U4/U6.U5 tri-snRNP",
     "state": "U5/tri-snRNP",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "3.7",
     "year": "2016",
     "paper_title": "Cryo-EM structure of the yeast U4/U6.U5 tri-snRNP at 3.7 Å resolution.",
@@ -19925,6 +20314,9 @@
     ],
     "protein_count": 10,
     "rna_count": 2,
+    "chain_count": 13,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/5gam.cxc"
   },
   {
@@ -19932,6 +20324,7 @@
     "title": "The overall structure of the yeast spliceosomal U4/U6.U5 tri-snRNP at 3.7 Angstrom",
     "state": "U5/tri-snRNP",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "3.7",
     "year": "2016",
     "paper_title": "Cryo-EM structure of the yeast U4/U6.U5 tri-snRNP at 3.7 Å resolution.",
@@ -20114,6 +20507,9 @@
     ],
     "protein_count": 25,
     "rna_count": 3,
+    "chain_count": 36,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/5gan.cxc"
   },
   {
@@ -20121,6 +20517,7 @@
     "title": "Head region of the yeast spliceosomal U4/U6.U5 tri-snRNP",
     "state": "U5/tri-snRNP",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "4.2",
     "year": "2016",
     "paper_title": "Cryo-EM structure of the yeast U4/U6.U5 tri-snRNP at 3.7 Å resolution.",
@@ -20201,6 +20598,9 @@
     ],
     "protein_count": 10,
     "rna_count": 1,
+    "chain_count": 11,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/5gao.cxc"
   },
   {
@@ -20208,6 +20608,7 @@
     "title": "Body region of the U4/U6.U5 tri-snRNP",
     "state": "U5/tri-snRNP",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "3.6",
     "year": "2016",
     "paper_title": "Cryo-EM structure of the yeast U4/U6.U5 tri-snRNP at 3.7 Å resolution.",
@@ -20294,6 +20695,9 @@
     ],
     "protein_count": 9,
     "rna_count": 3,
+    "chain_count": 12,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/5gap.cxc"
   },
   {
@@ -20301,6 +20705,7 @@
     "title": "Structure of the human U5.U4/U6 tri-snRNP at 2.9A resolution.",
     "state": "U5/tri-snRNP",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "2.92",
     "year": "2019",
     "paper_title": "Mechanism of 5' splice site transfer for human spliceosome activation.",
@@ -20507,6 +20912,9 @@
     ],
     "protein_count": 29,
     "rna_count": 3,
+    "chain_count": 43,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/6qw6.cxc"
   },
   {
@@ -20514,6 +20922,7 @@
     "title": "Structure of the human 20S U5 snRNP core",
     "state": "U5/tri-snRNP",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.1",
     "year": "2024",
     "paper_title": "Structure of the human 20S U5 snRNP.",
@@ -20612,6 +21021,9 @@
     ],
     "protein_count": 13,
     "rna_count": 1,
+    "chain_count": 15,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/8q91.cxc"
   },
   {
@@ -20619,6 +21031,7 @@
     "title": "Structure of the human 20S U5 snRNP",
     "state": "U5/tri-snRNP",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.2",
     "year": "2024",
     "paper_title": "Structure of the human 20S U5 snRNP.",
@@ -20723,6 +21136,9 @@
     ],
     "protein_count": 14,
     "rna_count": 1,
+    "chain_count": 16,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/8rc0.cxc"
   },
   {
@@ -20730,6 +21146,7 @@
     "title": "Structure of a pre-catalytic spliceosome",
     "state": "pre-B",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "7.2",
     "year": "2017",
     "paper_title": "Structure of a pre-catalytic spliceosome.",
@@ -21008,6 +21425,9 @@
     ],
     "protein_count": 39,
     "rna_count": 5,
+    "chain_count": 63,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/5nrl.cxc"
   },
   {
@@ -21015,6 +21435,7 @@
     "title": "Cryo-EM structure of a pre-catalytic human spliceosome primed for activation (B complex)",
     "state": "pre-B",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "4.5",
     "year": "2017",
     "paper_title": "Cryo-EM Structure of a Pre-catalytic Human Spliceosome Primed for Activation.",
@@ -21287,6 +21708,9 @@
     ],
     "protein_count": 38,
     "rna_count": 5,
+    "chain_count": 57,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/5o9z.cxc"
   },
   {
@@ -21294,6 +21718,7 @@
     "title": "Cryo-EM structure of the yeast pre-B complex at an average resolution of 3.4~4.6 angstrom (tri-snRNP and U2 snRNP Part)",
     "state": "pre-B",
     "species": "S. cerevisiae",
+    "species_code": "YEAST",
     "resolution": "3.4",
     "year": "2018",
     "paper_title": "Structures of the fully assembled <i>Saccharomyces cerevisiae</i> spliceosome before activation.",
@@ -21566,6 +21991,9 @@
     ],
     "protein_count": 38,
     "rna_count": 5,
+    "chain_count": 62,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/5zwm.cxc"
   },
   {
@@ -21573,6 +22001,7 @@
     "title": "The Cryo-EM Structure of the Precusor of Human Pre-catalytic Spliceosome (pre-B complex)",
     "state": "pre-B",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "5.7",
     "year": "2018",
     "paper_title": "Structures of the human pre-catalytic spliceosome and its precursor spliceosome.",
@@ -21845,6 +22274,9 @@
     ],
     "protein_count": 38,
     "rna_count": 5,
+    "chain_count": 60,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/6ah0.cxc"
   },
   {
@@ -21852,6 +22284,7 @@
     "title": "The Cryo-EM Structure of Human Pre-catalytic Spliceosome (B complex) at 3.8 angstrom resolution",
     "state": "pre-B",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.8",
     "year": "2018",
     "paper_title": "Structures of the human pre-catalytic spliceosome and its precursor spliceosome.",
@@ -22160,6 +22593,9 @@
     ],
     "protein_count": 44,
     "rna_count": 5,
+    "chain_count": 66,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/6ahd.cxc"
   },
   {
@@ -22167,6 +22603,7 @@
     "title": "Structure of a human fully-assembled precatalytic spliceosome (pre-B complex).",
     "state": "pre-B",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.28",
     "year": "2019",
     "paper_title": "Mechanism of 5' splice site transfer for human spliceosome activation.",
@@ -22481,6 +22918,9 @@
     ],
     "protein_count": 44,
     "rna_count": 6,
+    "chain_count": 78,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/6qx9.cxc"
   },
   {
@@ -22488,6 +22928,7 @@
     "title": "Cryo-EM structure of human exon-defined spliceosome in the late pre-B state.",
     "state": "pre-B",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.2",
     "year": "2024",
     "paper_title": "Structural insights into human exon-defined spliceosome prior to activation.",
@@ -22784,6 +23225,9 @@
     ],
     "protein_count": 42,
     "rna_count": 5,
+    "chain_count": 65,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/8h6e.cxc"
   },
   {
@@ -22791,6 +23235,7 @@
     "title": "Cryo-EM structure of human exon-defined spliceosome in the mature pre-B state.",
     "state": "pre-B",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.25",
     "year": "2024",
     "paper_title": "Structural insights into human exon-defined spliceosome prior to activation.",
@@ -23087,6 +23532,9 @@
     ],
     "protein_count": 42,
     "rna_count": 5,
+    "chain_count": 65,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/8h6j.cxc"
   },
   {
@@ -23094,6 +23542,7 @@
     "title": "Cryo-EM Structure of Pre-B+5'ss+ATPgammaS Complex (core part)",
     "state": "pre-B",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.1",
     "year": "2024",
     "paper_title": "Structural insights into the cross-exon to cross-intron spliceosome switch.",
@@ -23210,6 +23659,9 @@
     ],
     "protein_count": 13,
     "rna_count": 4,
+    "chain_count": 18,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/8qoz.cxc"
   },
   {
@@ -23217,6 +23669,7 @@
     "title": "Cryo-EM Structure of Pre-B Complex (core part)",
     "state": "pre-B",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.5",
     "year": "2024",
     "paper_title": "Structural insights into the cross-exon to cross-intron spliceosome switch.",
@@ -23321,6 +23774,9 @@
     ],
     "protein_count": 12,
     "rna_count": 3,
+    "chain_count": 16,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/8qp8.cxc"
   },
   {
@@ -23328,6 +23784,7 @@
     "title": "Cryo-EM Structure of Pre-B+5'ssLNG Complex (core part)",
     "state": "pre-B",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.7",
     "year": "2024",
     "paper_title": "Structural insights into the cross-exon to cross-intron spliceosome switch.",
@@ -23444,6 +23901,9 @@
     ],
     "protein_count": 13,
     "rna_count": 4,
+    "chain_count": 18,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/8qpa.cxc"
   },
   {
@@ -23451,6 +23911,7 @@
     "title": "Cryo-EM Structure of Pre-B-like Complex (core part)",
     "state": "pre-B",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.1",
     "year": "2024",
     "paper_title": "Structural insights into the cross-exon to cross-intron spliceosome switch.",
@@ -23585,6 +24046,9 @@
     ],
     "protein_count": 15,
     "rna_count": 5,
+    "chain_count": 21,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/8qpe.cxc"
   },
   {
@@ -23592,6 +24056,7 @@
     "title": "Cryo-EM Structure of Pre-B+5'ss Complex (core part)",
     "state": "pre-B",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "4.2",
     "year": "2024",
     "paper_title": "Structural insights into the cross-exon to cross-intron spliceosome switch.",
@@ -23702,6 +24167,9 @@
     ],
     "protein_count": 12,
     "rna_count": 4,
+    "chain_count": 17,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/8qpk.cxc"
   },
   {
@@ -23709,6 +24177,7 @@
     "title": "Cryo-EM structure of the cross-exon pre-B complex",
     "state": "pre-B",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "9.6",
     "year": "2024",
     "paper_title": "Structural insights into the cross-exon to cross-intron spliceosome switch.",
@@ -24029,6 +24498,9 @@
     ],
     "protein_count": 46,
     "rna_count": 5,
+    "chain_count": 61,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/8qxd.cxc"
   },
   {
@@ -24036,6 +24508,7 @@
     "title": "Cryo-EM structure of the cross-exon pre-B+5'ss+ATPgammaS complex",
     "state": "pre-B",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "4.3",
     "year": "2024",
     "paper_title": "Structural insights into the cross-exon to cross-intron spliceosome switch.",
@@ -24326,6 +24799,9 @@
     ],
     "protein_count": 40,
     "rna_count": 6,
+    "chain_count": 60,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/8r09.cxc"
   },
   {
@@ -24333,6 +24809,7 @@
     "title": "Cryo-EM structure of the cross-exon pre-B+5'ss complex",
     "state": "pre-B",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "5.8",
     "year": "2024",
     "paper_title": "Structural insights into the cross-exon to cross-intron spliceosome switch.",
@@ -24635,6 +25112,9 @@
     ],
     "protein_count": 42,
     "rna_count": 6,
+    "chain_count": 62,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/8r0a.cxc"
   },
   {
@@ -24642,6 +25122,7 @@
     "title": "Cryo-EM structure of the cross-exon pre-B+5'ssLNG+ATPyS complex",
     "state": "pre-B",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "6.9",
     "year": "2024",
     "paper_title": "Structural insights into the cross-exon to cross-intron spliceosome switch.",
@@ -24932,6 +25413,9 @@
     ],
     "protein_count": 40,
     "rna_count": 6,
+    "chain_count": 60,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/8rm5.cxc"
   },
   {
@@ -24939,6 +25423,7 @@
     "title": "Cryo-EM Structure of the human minor pre-B complex (pre-precatalytic spliceosome) U11 and tri-snRNP part",
     "state": "pre-B",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.38",
     "year": "2024",
     "paper_title": "Structural basis of U12-type intron engagement by the fully assembled human minor spliceosome.",
@@ -25145,6 +25630,9 @@
     ],
     "protein_count": 27,
     "rna_count": 5,
+    "chain_count": 54,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/8y6o.cxc"
   },
   {
@@ -25152,6 +25640,7 @@
     "title": "Cryo-EM Structure of the human minor pre-B complex (pre-precatalytic spliceosome) U12 snRNP part",
     "state": "pre-B",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "4.66",
     "year": "2024",
     "paper_title": "Structural basis of U12-type intron engagement by the fully assembled human minor spliceosome.",
@@ -25268,6 +25757,9 @@
     ],
     "protein_count": 15,
     "rna_count": 2,
+    "chain_count": 19,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/8y7e.cxc"
   },
   {
@@ -25275,6 +25767,7 @@
     "title": "Human pre-Bact-2 spliceosome core structure",
     "state": "pre-Bact",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "4.2",
     "year": "2020",
     "paper_title": "Mechanism of protein-guided folding of the active site U2/U6 RNA during spliceosome activation.",
@@ -25391,6 +25884,9 @@
     ],
     "protein_count": 13,
     "rna_count": 4,
+    "chain_count": 20,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/7aav.cxc"
   },
   {
@@ -25398,6 +25894,7 @@
     "title": "Human pre-Bact-1 spliceosome core structure",
     "state": "pre-Bact",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.9",
     "year": "2020",
     "paper_title": "Mechanism of protein-guided folding of the active site U2/U6 RNA during spliceosome activation.",
@@ -25502,6 +25999,9 @@
     ],
     "protein_count": 12,
     "rna_count": 3,
+    "chain_count": 18,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/7abf.cxc"
   },
   {
@@ -25509,6 +26009,7 @@
     "title": "Human pre-Bact-1 spliceosome",
     "state": "pre-Bact",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "7.8",
     "year": "2020",
     "paper_title": "Mechanism of protein-guided folding of the active site U2/U6 RNA during spliceosome activation.",
@@ -25829,6 +26330,9 @@
     ],
     "protein_count": 47,
     "rna_count": 4,
+    "chain_count": 62,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/7abg.cxc"
   },
   {
@@ -25836,6 +26340,7 @@
     "title": "Human pre-Bact-2 spliceosome (SF3b/U2 snRNP portion)",
     "state": "pre-Bact",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "4.5",
     "year": "2020",
     "paper_title": "Mechanism of protein-guided folding of the active site U2/U6 RNA during spliceosome activation.",
@@ -25946,6 +26451,9 @@
     ],
     "protein_count": 14,
     "rna_count": 2,
+    "chain_count": 16,
+    "has_prpf8": false,
+    "has_sf3b1": true,
     "script_path": "scripts/7abh.cxc"
   },
   {
@@ -25953,6 +26461,7 @@
     "title": "Human pre-Bact-2 spliceosome",
     "state": "pre-Bact",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "8.0",
     "year": "2020",
     "paper_title": "Mechanism of protein-guided folding of the active site U2/U6 RNA during spliceosome activation.",
@@ -26261,6 +26770,9 @@
     ],
     "protein_count": 45,
     "rna_count": 4,
+    "chain_count": 59,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/7abi.cxc"
   },
   {
@@ -26268,6 +26780,7 @@
     "title": "The cryo-EM structure of human pre-Bact complex",
     "state": "pre-Bact",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.4",
     "year": "2024",
     "paper_title": "Molecular basis for the activation of human spliceosome.",
@@ -26546,6 +27059,9 @@
     ],
     "protein_count": 40,
     "rna_count": 4,
+    "chain_count": 55,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/8i0p.cxc"
   },
   {
@@ -26553,6 +27069,7 @@
     "title": "Cryo-EM structure of the human pre-Bact-OTS complex (whole map)",
     "state": "pre-Bact",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "3.12",
     "year": "",
     "paper_title": "cryo-EM structure of the human pre-Bact-OTS complex",
@@ -26669,6 +27186,9 @@
     ],
     "protein_count": 14,
     "rna_count": 3,
+    "chain_count": 18,
+    "has_prpf8": true,
+    "has_sf3b1": false,
     "script_path": "scripts/9r3d.cxc"
   },
   {
@@ -26676,6 +27196,7 @@
     "title": "Cryo-EM structure of the human pre-Bact-OTS complex (whole map)",
     "state": "pre-Bact",
     "species": "Human",
+    "species_code": "HUMAN",
     "resolution": "8.5",
     "year": "",
     "paper_title": "cryo-EM structure of the human pre-Bact-OTS complex",
@@ -27014,6 +27535,9 @@
     ],
     "protein_count": 50,
     "rna_count": 4,
+    "chain_count": 63,
+    "has_prpf8": true,
+    "has_sf3b1": true,
     "script_path": "scripts/9r8v.cxc"
   }
 ]
