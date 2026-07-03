@@ -21,7 +21,6 @@ cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 
 cartoon style ~(nucleic|strand) x round
 cartoon style (nucleic|strand) x rect
 cartoon style nucleic x round width 4 thick 4
-nucleotides stubs
 lighting shadows false
 lighting simple
 camera ortho
@@ -32,7 +31,6 @@ lighting soft
 
 # bg and model colors
 set bgColor white
-nucleotides fill
 style nucleic stick
 graphics silhouettes true
 cartoon style arrowScale 1.5
@@ -70,4 +68,6 @@ color #414.1/m #B0C4DE
 color #414.1/n #B0C4DE
 # SCNM1
 color #414.1/v #547083
+show nucleic
 view
+show nucleic
