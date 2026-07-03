@@ -1,5 +1,7 @@
 # Spliceosome Cryo-EM ChimeraX Scripts
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21168651.svg)](https://doi.org/10.5281/zenodo.21168651)
+
 Lightweight static dashboard for copying ChimeraX scripts for spliceosome cryo-EM PDB entries.
 
 - 131 deposited PDB entries.
