@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this dashboard or the generated ChimeraX scripts, please cite it as below."
+type: software
+title: "Spliceosome Structure Visualization Dashboard"
+authors:
+  - family-names: "Vorlaender"
+    given-names: "Matthias"
+    affiliation: "Vienna BioCenter"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+repository-code: "https://github.com/mvorlander/spliceosome-structure-vis"
+url: "https://mvorlander.github.io/spliceosome-structure-vis/"
+# doi: "10.0000/zenodo.0000000"
+abstract: "A lightweight static dashboard for copying ChimeraX scripts to visualize spliceosome cryo-EM structures from deposited PDB entries."
+keywords:
+  - spliceosome
+  - cryo-EM
+  - ChimeraX
+  - structural biology
+# license: "MIT"
+version: "0.1.0"
+date-released: "2026-07-03"
