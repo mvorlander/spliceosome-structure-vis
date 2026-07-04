@@ -53,13 +53,17 @@
     .actions { margin-top:12px; }
     .actions button, .actions a { display:inline-flex; min-height:30px; align-items:center; padding:5px 9px; border:1px solid var(--line); border-radius:6px; background:#fff; color:var(--ink); text-decoration:none; }
     .chip { border:1px solid var(--line); border-radius:6px; background:#fff; padding:4px 6px; font-size:12px; max-width:230px; }
+    .kv { display:grid; grid-template-columns:135px minmax(0,1fr); gap:5px 8px; font-size:12px; }
+    .kv div:nth-child(odd) { color:var(--muted); }
+    .detail-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .detail-block { min-width:0; }
     .mini-list { max-height:180px; overflow:auto; border:1px solid var(--line); border-radius:8px; padding:8px; }
     pre { white-space:pre-wrap; max-height:320px; overflow:auto; background:#111820; color:#edf6ff; padding:12px; border-radius:6px; font-size:12px; }
     .swatch { display:inline-block; width:18px; height:18px; border-radius:4px; border:1px solid rgba(0,0,0,.25); vertical-align:middle; margin-right:6px; }
     .copy-button { padding:3px 7px; font-size:12px; }
     .copy-button.copied { border-color:#8bc5b5; color:#0f5e4b; background:#e7f3ef; }
     .cycle { overflow-x:auto; }
-    .cycle-svg { width:100%; min-width:760px; height:auto; display:block; }
+    .cycle-svg { width:100%; min-width:1040px; height:auto; display:block; }
     .cycle-band { fill:none; stroke-linecap:round; stroke-linejoin:round; opacity:.9; }
     .cycle-flow { fill:none; stroke:#22272d; stroke-width:2.1; stroke-linecap:round; stroke-linejoin:round; }
     .cycle-flow.dashed { stroke:#aeb6bf; stroke-dasharray:8 8; stroke-width:1.8; }
@@ -76,7 +80,7 @@
     .cycle-region-label { fill:#64808b; font-size:13px; font-weight:760; pointer-events:none; }
     .cycle-region-label.release { fill:#b49a2b; }
     .cycle-region-label.catalytic { fill:#c54a54; }
-    @media (max-width:1100px) { .app, .workspace { grid-template-columns:1fr; } aside { position:static; height:auto; border-right:0; border-bottom:1px solid var(--line); } .stats { grid-template-columns:repeat(2,1fr); } .table-wrap { max-height:none; } }
+    @media (max-width:1100px) { .app, .workspace { grid-template-columns:1fr; } aside { position:static; height:auto; border-right:0; border-bottom:1px solid var(--line); } .stats { grid-template-columns:repeat(2,1fr); } .table-wrap { max-height:none; } .detail-grid { grid-template-columns:1fr; } }
     @media (max-width:680px) { main { padding:12px; } .topbar { align-items:start; flex-direction:column; } th:nth-child(4),td:nth-child(4),th:nth-child(6),td:nth-child(6) { display:none; } }
     </style>
 </head>
@@ -120,7 +124,7 @@
     for (const id of ["search","searchMode","family","species","componentFilter","sortBy","reset","tabs","structuresView","proteinsView","stats","cycle","rows","detail","tableCount","resultSubtitle","selectedId","proteinRows","proteinCount"]) els[id] = document.getElementById(id);
     const STAGES = ["U2 snRNP","E complex","A complex","U5/tri-snRNP","pre-B","B","pre-Bact","Bact","B*","C","C*","P","ILS/disassembly","U5 recycling"];
     const ORDER = Object.fromEntries(STAGES.map((s,i)=>[s,i]));
-    const NODE_POS = [[95,70],[150,250],[205,158],[300,245],[405,315],[520,338],[635,345],[750,332],[865,285],[995,220],[1100,150],[995,90],[760,105],[520,150]];
+    const NODE_POS = [[232,54],[122,126],[150,222],[305,200],[188,318],[350,334],[492,334],[630,324],[765,294],[890,238],[1000,170],[1024,86],[795,54],[535,66]];
     const U = {u1:"#d8a3cf", u2:"#78c96b", u4:"#f2dc4e", u5:"#5da8d7", u6:"#ee5960", ntc:"#f2bd5c", mrna:"#22272d"};
     function esc(v){return String(v ?? "").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
     function attr(v){return esc(v);}
@@ -194,7 +198,7 @@
     function renderCycle(rows){
       const counts = Object.fromEntries(STAGES.map(s=>[s, rows.filter(r=>r.state===s).length]));
       const nodes = STAGES.map((stage,i)=>cycleNode(stage,NODE_POS[i][0],NODE_POS[i][1],counts[stage]||0)).join("");
-      els.cycle.innerHTML = `<svg class="cycle-svg" viewBox="0 0 1220 430" role="img" aria-label="Splicing cycle filter"><path class="cycle-band" d="M120 225 C185 70 390 75 520 150" stroke="#d9f1f4" stroke-width="70"/><path class="cycle-band" d="M360 318 C560 405 875 370 1065 140" stroke="#fde3e5" stroke-width="70"/><path class="cycle-band" d="M805 100 C1005 45 1135 120 1110 210" stroke="#fff2b5" stroke-width="70"/><path class="cycle-flow" d="M150 250 C205 170 260 165 300 245 C345 300 405 325 520 338 C630 355 740 348 865 285 C970 235 1050 180 1100 150"/><path class="cycle-flow" d="M995 90 C900 70 810 75 760 105"/><path class="cycle-flow" d="M760 105 C650 105 560 120 520 150"/><path class="cycle-flow dashed" d="M760 105 C710 185 665 250 635 345"/><text x="110" y="145" class="cycle-region-label" transform="rotate(-52 110 145)">Early spliceosome assembly</text><text x="775" y="390" class="cycle-region-label catalytic">Catalytic stages</text><text x="985" y="315" class="cycle-region-label release" transform="rotate(-18 985 315)">Release and disassembly</text>${nodes}</svg>`;
+      els.cycle.innerHTML = `<svg class="cycle-svg" viewBox="0 0 1120 410" role="img" aria-label="Splicing cycle filter"><path class="cycle-band" d="M230 54 C110 95 92 210 180 318" stroke="#d9f1f4" stroke-width="50"/><path class="cycle-band" d="M200 326 C420 392 810 340 1010 170" stroke="#fde3e5" stroke-width="50"/><path class="cycle-band" d="M1025 86 C900 35 665 43 535 66" stroke="#fff2b5" stroke-width="50"/><path class="cycle-flow" d="M195 77 C160 88 135 105 126 126"/><path class="cycle-flow" d="M126 163 C126 181 134 197 144 207"/><path class="cycle-flow" d="M162 242 C167 269 176 293 184 309"/><path class="cycle-flow" d="M275 279 C248 295 220 305 199 315"/><path class="cycle-flow" d="M230 324 C263 329 303 333 333 334 C386 334 430 335 476 334 C557 329 589 326 613 324 C695 310 729 302 749 296 C830 270 862 252 878 241 C952 207 981 188 994 171 C1018 120 1020 105 1022 91"/><path class="cycle-flow" d="M988 71 C930 48 850 52 807 54 C727 56 603 61 548 65"/><path class="cycle-flow dashed" d="M535 96 C465 143 385 190 310 236"/><text x="58" y="205" class="cycle-region-label" transform="rotate(-80 58 205)">Early assembly</text><text x="560" y="402" class="cycle-region-label catalytic" transform="rotate(-4 560 402)">Catalytic stages</text><text x="820" y="140" class="cycle-region-label release" transform="rotate(-8 820 140)">Release / disassembly</text>${nodes}</svg>`;
     }
     function cycleNode(stage,x,y,count){
       const active = state.family===stage ? " active" : "";
@@ -253,7 +257,7 @@
       els.selectedId.textContent = r.pdb_id.toUpperCase();
       const proteins = r.proteins.map(p=>`<span class="chip"><strong>${esc(p.gene||p.name)}</strong><br><span class="subtle">${esc(p.chains)}</span></span>`).join("");
       const rnas = r.rnas.map(x=>`<span class="chip"><strong>${esc(x.name)}</strong><br><span class="subtle">${esc(x.chains)}</span></span>`).join("");
-      els.detail.innerHTML = `<p class="detail-title">${esc(r.title)}</p><div class="detail-meta"><span class="badge">${esc(r.state)}</span><span class="badge">${esc(r.species)}</span><span class="badge">${esc(r.resolution||"?")} A</span><span class="badge">${esc(r.year||"")}</span><span class="badge">${r.chain_count||0} chains</span></div><div class="actions"><button onclick="copyStructureScript('${attr(r.pdb_id)}', this)">Copy ChimeraX script</button><a href="${attr(r.script_path)}">Open .cxc file</a></div><h3>Paper</h3><div>${esc(r.paper_title||"")}</div><div class="subtle">${esc(r.authors_short||"")}${r.doi ? " - DOI " + esc(r.doi) : ""}</div><h3>Proteins (${r.protein_count})</h3><div class="mini-list"><div class="chips">${proteins || '<span class="subtle">None listed</span>'}</div></div><h3>RNAs (${r.rna_count})</h3><div class="mini-list"><div class="chips">${rnas || '<span class="subtle">None listed</span>'}</div></div><h3>Script Preview</h3><pre id="scriptPreview">Loading script...</pre>`;
+      els.detail.innerHTML = `<p class="detail-title">${esc(r.title)}</p><div class="detail-meta"><span class="badge">${esc(r.state)}</span><span class="badge">${esc(r.species)}</span><span class="badge">${esc(r.resolution||"?")} A</span><span class="badge">${esc(r.year||"")}</span><span class="badge">${r.chain_count||0} chains</span></div><div class="actions"><button onclick="copyStructureScript('${attr(r.pdb_id)}', this)">Copy ChimeraX script</button><a href="${attr(r.script_path)}">Open .cxc file</a></div><h3>Paper</h3><div>${esc(r.paper_title||"")}</div><div class="subtle">${esc(r.authors_short||"")}${r.doi ? " - DOI " + esc(r.doi) : ""}</div>${qualityPanel(r.quality)}<h3>Proteins (${r.protein_count})</h3><div class="mini-list"><div class="chips">${proteins || '<span class="subtle">None listed</span>'}</div></div><h3>RNAs (${r.rna_count})</h3><div class="mini-list"><div class="chips">${rnas || '<span class="subtle">None listed</span>'}</div></div><h3>Script Preview</h3><pre id="scriptPreview">Loading script...</pre>`;
       scriptFor(r).then(text => {
         const preview = document.getElementById("scriptPreview");
         if (preview && state.selected === r.pdb_id) preview.textContent = text;
@@ -261,6 +265,23 @@
         const preview = document.getElementById("scriptPreview");
         if (preview) preview.textContent = error.message;
       });
+    }
+    function fmtMetric(value, suffix="", digits=2){
+      if(value === null || value === undefined || value === "") return "n/a";
+      const n = Number(value);
+      if(!Number.isFinite(n)) return esc(value);
+      return `${n.toFixed(digits)}${suffix}`;
+    }
+    function fmtInt(value){
+      if(value === null || value === undefined || value === "") return "n/a";
+      const n = Number(value);
+      if(!Number.isFinite(n)) return esc(value);
+      return n.toLocaleString();
+    }
+    function qualityPanel(q){
+      if(!q || q.status === "missing") return `<h3>Quality Metrics</h3><div class="subtle">No extracted quality metrics.</div>`;
+      const qscore = q.q_score ? `${fmtMetric(q.q_score, "", 3)}${q.q_score_source ? " (" + esc(q.q_score_source) + ")" : ""}` : "not available from PDBe/EMDB API";
+      return `<h3>Quality Metrics</h3><div class="detail-grid"><div class="detail-block"><div class="kv"><div>Status</div><div>${esc(q.status||"n/a")}</div><div>Overall quality</div><div>${fmtMetric(q.overall_quality)}</div><div>Geometry quality</div><div>${fmtMetric(q.geometry_quality)}</div><div>Ramachandran outliers</div><div>${fmtMetric(q.rama_outliers_percent,"%")}</div><div>Rotamer outliers</div><div>${fmtMetric(q.rota_outliers_percent,"%")}</div><div>RNA suite outliers</div><div>${fmtMetric(q.rna_suite_outliers_percent,"%")}</div><div>Clashscore</div><div>${fmtMetric(q.clashscore)}</div></div></div><div class="detail-block"><div class="kv"><div>Primary map</div><div>${esc(q.primary_emdb_id||"n/a")}</div><div>Map resolution</div><div>${fmtMetric(q.map_resolution_A," A")}</div><div>Pixel spacing</div><div>${fmtMetric(q.map_pixel_spacing_A," A",3)}</div><div>Map box</div><div>${esc(q.map_box_size||"n/a")}</div><div>Particles</div><div>${fmtInt(q.particles_used)}</div><div>Q-score</div><div>${qscore}</div></div></div></div>`;
     }
     function renderProteins(){
       const q = state.query;
