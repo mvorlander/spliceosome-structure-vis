@@ -48,6 +48,9 @@
     .truncate { overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; }
     .badge { display:inline-flex; min-height:20px; align-items:center; border:1px solid var(--line); border-radius:999px; padding:1px 7px; background:#fff; white-space:nowrap; font-size:12px; }
     .badge.good { background:#e7f6ee; color:var(--good); border-color:#acd9bf; }
+    .badge.warn { background:#fff4d9; color:#7a4e00; border-color:#e4c16a; }
+    .badge.bad { background:#fde8e6; color:#b42318; border-color:#efb4ad; }
+    .badge.review { background:#f4edff; color:#5b2a86; border-color:#d4b7f0; }
     .detail-title { font-size:18px; font-weight:760; margin:0; }
     .detail-meta, .actions, .chips { display:flex; flex-wrap:wrap; gap:6px; }
     .actions { margin-top:12px; }
@@ -62,6 +65,9 @@
     .swatch { display:inline-block; width:18px; height:18px; border-radius:4px; border:1px solid rgba(0,0,0,.25); vertical-align:middle; margin-right:6px; }
     .copy-button { padding:3px 7px; font-size:12px; }
     .copy-button.copied { border-color:#8bc5b5; color:#0f5e4b; background:#e7f3ef; }
+    .compare-toggle { border:1px solid var(--line); border-radius:6px; background:#fff; color:var(--ink); padding:3px 7px; font-size:12px; }
+    .compare-toggle.active { background:#eaf4ff; border-color:#9fc6ef; color:#0b5cab; font-weight:700; }
+    .badge-row { display:flex; flex-wrap:wrap; gap:5px; align-items:center; }
     .cycle { overflow-x:auto; }
     .cycle-svg { width:100%; min-width:1040px; height:auto; display:block; }
     .cycle-band { fill:none; stroke-linecap:round; stroke-linejoin:round; opacity:.9; }
@@ -106,7 +112,7 @@
         <section class="stats" id="stats"></section>
         <section class="panel"><div class="panel-head"><h2>Splicing Cycle</h2><span class="subtle">click a state to filter structures</span></div><div class="panel-body"><div class="cycle" id="cycle"></div></div></section>
         <section class="workspace">
-          <div class="panel"><div class="panel-head"><h2>Structure Set</h2><span class="subtle" id="tableCount"></span></div><div class="table-wrap"><table><thead><tr><th>PDB</th><th>Species</th><th>Title</th><th>Complex</th><th>Resolution</th><th>Year</th><th>Chain count</th><th>Chains</th></tr></thead><tbody id="rows"></tbody></table></div></div>
+          <div class="panel"><div class="panel-head"><h2>Structure Set</h2><span class="subtle" id="tableCount"></span></div><div class="table-wrap"><table><thead><tr><th>PDB</th><th>Species</th><th>Title</th><th>Complex</th><th>Resolution</th><th>Year</th><th>Chain count</th><th>Chains</th><th>Curation</th><th>Compare</th></tr></thead><tbody id="rows"></tbody></table></div></div>
           <div class="panel"><div class="panel-head"><h2>Selected Structure</h2><span class="subtle" id="selectedId"></span></div><div class="panel-body" id="detail"></div></div>
         </section>
       </div>
@@ -119,7 +125,7 @@
     const DATA = { records: [], protein_lookup: [], scriptCache: {} };
     let records = [];
     let proteinLookup = [];
-    const state = { activeTab:"structures", query:"", mode:"all", family:"all", species:"all", components:"all", sortBy:"pathway", selected: records[0]?.pdb_id || "" };
+    const state = { activeTab:"structures", query:"", mode:"all", family:"all", species:"all", components:"all", sortBy:"pathway", selected: records[0]?.pdb_id || "", compareIds: [] };
     const els = {};
     for (const id of ["search","searchMode","family","species","componentFilter","sortBy","reset","tabs","structuresView","proteinsView","stats","cycle","rows","detail","tableCount","resultSubtitle","selectedId","proteinRows","proteinCount"]) els[id] = document.getElementById(id);
     const STAGES = ["U2 snRNP","E complex","A complex","U5/tri-snRNP","pre-B","B","pre-Bact","Bact","B*","C","C*","P","ILS/disassembly","U5 recycling"];
@@ -233,7 +239,29 @@
       return `<g class="cycle-node${active}${empty}" tabindex="0" role="button" data-stage="${attr(stage)}" onclick="state.family='${attr(stage)}'; els.family.value='${attr(stage)}'; render();"><ellipse class="cycle-node-shell" cx="${x}" cy="${y}" rx="65" ry="37"/>${particles}<text class="cycle-label" x="${x}" y="${y+52}">${esc(stage)}</text><circle class="cycle-count-badge" cx="${x+52}" cy="${y-29}" r="12"/><text class="cycle-count-label" x="${x+52}" y="${y-29}">${count}</text></g>`;
     }
     function renderRows(rows){
-      els.rows.innerHTML = rows.map(r=>`<tr class="${r.pdb_id===state.selected?"selected":""}" onclick="state.selected='${attr(r.pdb_id)}'; render();"><td class="pdb">${esc(r.pdb_id)}</td><td>${esc(r.species)}</td><td class="title-cell"><div class="truncate">${esc(r.title)}</div></td><td>${esc(r.state)}</td><td>${esc(r.resolution||"")}</td><td>${esc(r.year||"")}</td><td>${r.chain_count||0}</td><td>${r.protein_count} protein<br>${r.rna_count} RNA</td></tr>`).join("");
+      els.rows.innerHTML = rows.map(r=>{ const inCompare=state.compareIds.includes(r.pdb_id); return `<tr class="${r.pdb_id===state.selected?"selected":""}" data-pdb="${attr(r.pdb_id)}"><td class="pdb">${esc(r.pdb_id)}</td><td>${esc(r.species)}</td><td class="title-cell"><div class="truncate">${esc(r.title)}</div></td><td>${esc(r.state)}</td><td>${esc(r.resolution||"")}</td><td>${esc(r.year||"")}</td><td>${r.chain_count||0}</td><td>${r.protein_count} protein<br>${r.rna_count} RNA</td><td>${curationBadges(r)}</td><td><button type="button" class="compare-toggle ${inCompare?"active":""}" data-compare="${attr(r.pdb_id)}">${inCompare?"On":"Add"}</button></td></tr>`; }).join("");
+      for (const row of els.rows.querySelectorAll("tr")) {
+        row.addEventListener("click", event => {
+          const button = event.target.closest("[data-compare]");
+          if (button) { toggleCompare(button.dataset.compare); event.stopPropagation(); return; }
+          state.selected = row.dataset.pdb;
+          render();
+        });
+      }
+    }
+    function curationBadges(r){
+      const c=r.curation||{}; const flags=c.flags||[]; const confidence=c.overall_confidence||"";
+      const bits=[];
+      if(confidence) bits.push(`<span class="badge ${confidence==="high"?"good":confidence==="review"?"review":confidence==="low"?"bad":"warn"}">${esc(confidence)}</span>`);
+      if((c.badges||[]).includes("chains renamed")) bits.push('<span class="badge good">renamed</span>');
+      if(flags.length) bits.push(`<span class="badge bad">${flags.length} flag${flags.length===1?"":"s"}</span>`);
+      return `<div class="badge-row">${bits.join("") || '<span class="badge">n/a</span>'}</div>`;
+    }
+    function toggleCompare(pdbId){
+      const i=state.compareIds.indexOf(pdbId);
+      if(i>=0) state.compareIds.splice(i,1); else state.compareIds.push(pdbId);
+      if(state.compareIds.length>5) state.compareIds.shift();
+      render();
     }
     async function copyText(text, button){
       await navigator.clipboard.writeText(text);
@@ -257,7 +285,7 @@
       els.selectedId.textContent = r.pdb_id.toUpperCase();
       const proteins = r.proteins.map(p=>`<span class="chip"><strong>${esc(p.gene||p.name)}</strong><br><span class="subtle">${esc(p.chains)}</span></span>`).join("");
       const rnas = r.rnas.map(x=>`<span class="chip"><strong>${esc(x.name)}</strong><br><span class="subtle">${esc(x.chains)}</span></span>`).join("");
-      els.detail.innerHTML = `<p class="detail-title">${esc(r.title)}</p><div class="detail-meta"><span class="badge">${esc(r.state)}</span><span class="badge">${esc(r.species)}</span><span class="badge">${esc(r.resolution||"?")} A</span><span class="badge">${esc(r.year||"")}</span><span class="badge">${r.chain_count||0} chains</span></div><div class="actions"><button onclick="copyStructureScript('${attr(r.pdb_id)}', this)">Copy ChimeraX script</button><a href="${attr(r.script_path)}">Open .cxc file</a></div><h3>Paper</h3><div>${esc(r.paper_title||"")}</div><div class="subtle">${esc(r.authors_short||"")}${r.doi ? " - DOI " + esc(r.doi) : ""}</div>${qualityPanel(r.quality)}<h3>Proteins (${r.protein_count})</h3><div class="mini-list"><div class="chips">${proteins || '<span class="subtle">None listed</span>'}</div></div><h3>RNAs (${r.rna_count})</h3><div class="mini-list"><div class="chips">${rnas || '<span class="subtle">None listed</span>'}</div></div><h3>Script Preview</h3><pre id="scriptPreview">Loading script...</pre>`;
+      els.detail.innerHTML = `<p class="detail-title">${esc(r.title)}</p><div class="detail-meta"><span class="badge">${esc(r.state)}</span><span class="badge">${esc(r.species)}</span><span class="badge">${esc(r.resolution||"?")} A</span><span class="badge">${esc(r.year||"")}</span><span class="badge">${r.chain_count||0} chains</span>${curationBadges(r)}</div><div class="actions"><button onclick="copyStructureScript('${attr(r.pdb_id)}', this)">Copy ChimeraX script</button><a href="${attr(r.script_path)}">Open .cxc file</a></div><h3>Paper</h3><div>${esc(r.paper_title||"")}</div><div class="subtle">${esc(r.authors_short||"")}${r.doi ? " - DOI " + esc(r.doi) : ""}</div>${curationPanel(r)}${qualityPanel(r.quality)}<h3>Proteins (${r.protein_count})</h3><div class="mini-list"><div class="chips">${proteins || '<span class="subtle">None listed</span>'}</div></div><h3>RNAs (${r.rna_count})</h3><div class="mini-list"><div class="chips">${rnas || '<span class="subtle">None listed</span>'}</div></div>${unassignedPanel(r.unassigned_components||[])}${comparisonPanel()}<h3>Script Preview</h3><pre id="scriptPreview">Loading script...</pre>`;
       scriptFor(r).then(text => {
         const preview = document.getElementById("scriptPreview");
         if (preview && state.selected === r.pdb_id) preview.textContent = text;
@@ -265,6 +293,20 @@
         const preview = document.getElementById("scriptPreview");
         if (preview) preview.textContent = error.message;
       });
+    }
+    function confidenceBadge(v){ const label=v||"n/a"; const cls=label==="high"?"good":label==="review"?"review":label==="low"?"bad":"warn"; return `<span class="badge ${cls}">${esc(label)}</span>`; }
+    function curationPanel(r){
+      const c=r.curation||{}; const flags=c.flags||[];
+      return `<h3>Curation Provenance</h3><div class="detail-grid"><div class="detail-block"><div class="kv"><div>Stage evidence</div><div>${esc(c.stage_evidence||"n/a")}</div><div>Stage confidence</div><div>${confidenceBadge(c.stage_confidence)}</div><div>Homolog confidence</div><div>${confidenceBadge(c.homolog_confidence)}</div><div>Color confidence</div><div>${confidenceBadge(c.color_confidence)}</div><div>RNA ID confidence</div><div>${confidenceBadge(c.rna_identity_confidence)}</div></div></div><div class="detail-block"><div class="kv"><div>Badges</div><div>${(c.badges||[]).map(x=>`<span class="badge ${x==="needs review"?"review":"good"}">${esc(x)}</span>`).join(" ")||"n/a"}</div><div>Flags</div><div>${flags.length?flags.map(x=>`<span class="badge bad">${esc(x)}</span>`).join(" "):'<span class="badge good">none</span>'}</div><div>Protein colors</div><div>${esc(c.colored_proteins||"0")}/${esc(c.protein_count||"0")}</div><div>Unassigned</div><div>${esc(c.unassigned_components||"0")}</div><div>Summary</div><div>${esc(c.curation_summary||"n/a")}</div></div></div></div>`;
+    }
+    function unassignedPanel(items){
+      if(!items.length) return `<h3>Unassigned Components</h3><div class="subtle">No unresolved components in the generated audit.</div>`;
+      return `<h3>Unassigned Components (${items.length})</h3><div class="mini-list">${items.map(i=>`<div><strong>${esc(i.gene_name||i.molecule_name)}</strong> <span class="subtle">${esc(i.chains)} · ${esc(i.issue)}</span></div>`).join("")}</div>`;
+    }
+    function comparisonPanel(){
+      if(!state.compareIds.length) return `<h3>Compare Structures</h3><div class="subtle">Use the Compare column to add up to five structures.</div>`;
+      const selected=state.compareIds.map(id=>records.find(r=>r.pdb_id===id)).filter(Boolean);
+      return `<h3>Compare Structures (${selected.length})</h3><div class="mini-list"><div class="kv"><div>PDBs</div><div>${selected.map(r=>`<span class="badge">${esc(r.pdb_id.toUpperCase())}</span>`).join(" ")}</div><div>Complexes</div><div>${selected.map(r=>`${esc(r.pdb_id.toUpperCase())}: ${esc(r.state)}`).join("<br>")}</div><div>Species</div><div>${selected.map(r=>`${esc(r.pdb_id.toUpperCase())}: ${esc(r.species)}`).join("<br>")}</div><div>Proteins/RNAs</div><div>${selected.map(r=>`${esc(r.pdb_id.toUpperCase())}: ${r.protein_count}/${r.rna_count}`).join("<br>")}</div><div>Flags</div><div>${selected.map(r=>`${esc(r.pdb_id.toUpperCase())}: ${(r.curation?.flags||[]).join("; ")||"none"}`).join("<br>")}</div></div></div>`;
     }
     function fmtMetric(value, suffix="", digits=2){
       if(value === null || value === undefined || value === "") return "n/a";
