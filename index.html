@@ -55,6 +55,8 @@
     .legend-item { display:flex; align-items:flex-start; gap:8px; min-width:0; }
     .legend-item .badge { flex:0 0 auto; margin-top:1px; }
     .thumbnail-img { display:block; width:100%; max-width:360px; border:1px solid var(--line); border-radius:8px; background:#fff; }
+    .table-thumbnail { display:block; width:64px; height:64px; object-fit:contain; border:1px solid var(--line); border-radius:6px; background:#fff; }
+    .preview-cell { width:78px; min-width:78px; }
     .detail-title { font-size:18px; font-weight:760; margin:0; }
     .detail-meta, .actions, .chips { display:flex; flex-wrap:wrap; gap:6px; }
     .actions { margin-top:12px; }
@@ -124,7 +126,7 @@
           <div class="legend-item"><span class="badge">Add</span><span>Toggle the structure into the comparison panel.</span></div>
         </div></div></section>
         <section class="workspace">
-          <div class="panel"><div class="panel-head"><h2>Structure Set</h2><span class="subtle" id="tableCount"></span></div><div class="table-wrap"><table><thead><tr><th>PDB</th><th>Species</th><th>Title</th><th>Complex</th><th>Resolution</th><th>Year</th><th>Chain count</th><th>Chains</th><th>Curation</th><th>Compare</th></tr></thead><tbody id="rows"></tbody></table></div></div>
+          <div class="panel"><div class="panel-head"><h2>Structure Set</h2><span class="subtle" id="tableCount"></span></div><div class="table-wrap"><table><thead><tr><th>PDB</th><th>Preview</th><th>Species</th><th>Title</th><th>Complex</th><th>Resolution</th><th>Year</th><th>Chain count</th><th>Chains</th><th>Curation</th><th>Compare</th></tr></thead><tbody id="rows"></tbody></table></div></div>
           <div class="panel"><div class="panel-head"><h2>Selected Structure</h2><span class="subtle" id="selectedId"></span></div><div class="panel-body" id="detail"></div></div>
         </section>
       </div>
@@ -251,7 +253,7 @@
       return `<g class="cycle-node${active}${empty}" tabindex="0" role="button" data-stage="${attr(stage)}" onclick="state.family='${attr(stage)}'; els.family.value='${attr(stage)}'; render();"><ellipse class="cycle-node-shell" cx="${x}" cy="${y}" rx="65" ry="37"/>${particles}<text class="cycle-label" x="${x}" y="${y+52}">${esc(stage)}</text><circle class="cycle-count-badge" cx="${x+52}" cy="${y-29}" r="12"/><text class="cycle-count-label" x="${x+52}" y="${y-29}">${count}</text></g>`;
     }
     function renderRows(rows){
-      els.rows.innerHTML = rows.map(r=>{ const inCompare=state.compareIds.includes(r.pdb_id); return `<tr class="${r.pdb_id===state.selected?"selected":""}" data-pdb="${attr(r.pdb_id)}"><td class="pdb">${esc(r.pdb_id)}</td><td>${esc(r.species)}</td><td class="title-cell"><div class="truncate">${esc(r.title)}</div></td><td>${esc(r.state)}</td><td>${esc(r.resolution||"")}</td><td>${esc(r.year||"")}</td><td>${r.chain_count||0}</td><td>${r.protein_count} protein<br>${r.rna_count} RNA</td><td>${curationBadges(r)}</td><td><button type="button" class="compare-toggle ${inCompare?"active":""}" data-compare="${attr(r.pdb_id)}">${inCompare?"On":"Add"}</button></td></tr>`; }).join("");
+      els.rows.innerHTML = rows.map(r=>{ const inCompare=state.compareIds.includes(r.pdb_id); return `<tr class="${r.pdb_id===state.selected?"selected":""}" data-pdb="${attr(r.pdb_id)}"><td class="pdb">${esc(r.pdb_id)}</td><td class="preview-cell">${tableThumbnail(r)}</td><td>${esc(r.species)}</td><td class="title-cell"><div class="truncate">${esc(r.title)}</div></td><td>${esc(r.state)}</td><td>${esc(r.resolution||"")}</td><td>${esc(r.year||"")}</td><td>${r.chain_count||0}</td><td>${r.protein_count} protein<br>${r.rna_count} RNA</td><td>${curationBadges(r)}</td><td><button type="button" class="compare-toggle ${inCompare?"active":""}" data-compare="${attr(r.pdb_id)}">${inCompare?"On":"Add"}</button></td></tr>`; }).join("");
       for (const row of els.rows.querySelectorAll("tr")) {
         row.addEventListener("click", event => {
           const button = event.target.closest("[data-compare]");
@@ -260,6 +262,11 @@
           render();
         });
       }
+    }
+    function tableThumbnail(r){
+      const image = r.thumbnail && r.thumbnail.image;
+      if(!image) return '<span class="subtle">-</span>';
+      return `<img class="table-thumbnail" src="${attr(image)}" alt="${attr(r.pdb_id.toUpperCase())} thumbnail" loading="lazy">`;
     }
     function curationBadges(r){
       const c=r.curation||{}; const flags=c.flags||[]; const confidence=c.overall_confidence||"";
