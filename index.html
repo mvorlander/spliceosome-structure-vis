@@ -51,6 +51,10 @@
     .badge.warn { background:#fff4d9; color:#7a4e00; border-color:#e4c16a; }
     .badge.bad { background:#fde8e6; color:#b42318; border-color:#efb4ad; }
     .badge.review { background:#f4edff; color:#5b2a86; border-color:#d4b7f0; }
+    .legend-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:9px 16px; font-size:12px; }
+    .legend-item { display:flex; align-items:flex-start; gap:8px; min-width:0; }
+    .legend-item .badge { flex:0 0 auto; margin-top:1px; }
+    .thumbnail-img { display:block; width:100%; max-width:360px; border:1px solid var(--line); border-radius:8px; background:#fff; }
     .detail-title { font-size:18px; font-weight:760; margin:0; }
     .detail-meta, .actions, .chips { display:flex; flex-wrap:wrap; gap:6px; }
     .actions { margin-top:12px; }
@@ -111,6 +115,14 @@
       <div id="structuresView">
         <section class="stats" id="stats"></section>
         <section class="panel"><div class="panel-head"><h2>Splicing Cycle</h2><span class="subtle">click a state to filter structures</span></div><div class="panel-body"><div class="cycle" id="cycle"></div></div></section>
+        <section class="panel"><div class="panel-head"><h2>Badge Legend</h2><span class="subtle">table, detail, and curation badges</span></div><div class="panel-body"><div class="legend-grid">
+          <div class="legend-item"><span class="badge good">high</span><span>High-confidence assignment in the curation audit.</span></div>
+          <div class="legend-item"><span class="badge warn">medium</span><span>Inferred or incomplete assignment; check details for provenance.</span></div>
+          <div class="legend-item"><span class="badge review">review</span><span>Generated audit marked the entry for manual review.</span></div>
+          <div class="legend-item"><span class="badge bad">flags</span><span>One or more unresolved curation flags are present.</span></div>
+          <div class="legend-item"><span class="badge good">renamed</span><span>Canonical renamed-chain data exist in the full resource; public scripts still use original chain IDs.</span></div>
+          <div class="legend-item"><span class="badge">Add</span><span>Toggle the structure into the comparison panel.</span></div>
+        </div></div></section>
         <section class="workspace">
           <div class="panel"><div class="panel-head"><h2>Structure Set</h2><span class="subtle" id="tableCount"></span></div><div class="table-wrap"><table><thead><tr><th>PDB</th><th>Species</th><th>Title</th><th>Complex</th><th>Resolution</th><th>Year</th><th>Chain count</th><th>Chains</th><th>Curation</th><th>Compare</th></tr></thead><tbody id="rows"></tbody></table></div></div>
           <div class="panel"><div class="panel-head"><h2>Selected Structure</h2><span class="subtle" id="selectedId"></span></div><div class="panel-body" id="detail"></div></div>
@@ -285,7 +297,8 @@
       els.selectedId.textContent = r.pdb_id.toUpperCase();
       const proteins = r.proteins.map(p=>`<span class="chip"><strong>${esc(p.gene||p.name)}</strong><br><span class="subtle">${esc(p.chains)}</span></span>`).join("");
       const rnas = r.rnas.map(x=>`<span class="chip"><strong>${esc(x.name)}</strong><br><span class="subtle">${esc(x.chains)}</span></span>`).join("");
-      els.detail.innerHTML = `<p class="detail-title">${esc(r.title)}</p><div class="detail-meta"><span class="badge">${esc(r.state)}</span><span class="badge">${esc(r.species)}</span><span class="badge">${esc(r.resolution||"?")} A</span><span class="badge">${esc(r.year||"")}</span><span class="badge">${r.chain_count||0} chains</span>${curationBadges(r)}</div><div class="actions"><button onclick="copyStructureScript('${attr(r.pdb_id)}', this)">Copy ChimeraX script</button><a href="${attr(r.script_path)}">Open .cxc file</a></div><h3>Paper</h3><div>${esc(r.paper_title||"")}</div><div class="subtle">${esc(r.authors_short||"")}${r.doi ? " - DOI " + esc(r.doi) : ""}</div>${curationPanel(r)}${qualityPanel(r.quality)}<h3>Proteins (${r.protein_count})</h3><div class="mini-list"><div class="chips">${proteins || '<span class="subtle">None listed</span>'}</div></div><h3>RNAs (${r.rna_count})</h3><div class="mini-list"><div class="chips">${rnas || '<span class="subtle">None listed</span>'}</div></div>${unassignedPanel(r.unassigned_components||[])}${comparisonPanel()}<h3>Script Preview</h3><pre id="scriptPreview">Loading script...</pre>`;
+      const thumbnail = r.thumbnail && r.thumbnail.image ? `<h3>Thumbnail</h3><img class="thumbnail-img" src="${attr(r.thumbnail.image)}" alt="ChimeraX thumbnail" loading="lazy">` : "";
+      els.detail.innerHTML = `<p class="detail-title">${esc(r.title)}</p><div class="detail-meta"><span class="badge">${esc(r.state)}</span><span class="badge">${esc(r.species)}</span><span class="badge">${esc(r.resolution||"?")} A</span><span class="badge">${esc(r.year||"")}</span><span class="badge">${r.chain_count||0} chains</span>${curationBadges(r)}</div>${thumbnail}<div class="actions"><button onclick="copyStructureScript('${attr(r.pdb_id)}', this)">Copy ChimeraX script</button><a href="${attr(r.script_path)}">Open .cxc file</a></div><h3>Paper</h3><div>${esc(r.paper_title||"")}</div><div class="subtle">${esc(r.authors_short||"")}${r.doi ? " - DOI " + esc(r.doi) : ""}</div>${curationPanel(r)}${qualityPanel(r.quality)}<h3>Proteins (${r.protein_count})</h3><div class="mini-list"><div class="chips">${proteins || '<span class="subtle">None listed</span>'}</div></div><h3>RNAs (${r.rna_count})</h3><div class="mini-list"><div class="chips">${rnas || '<span class="subtle">None listed</span>'}</div></div>${unassignedPanel(r.unassigned_components||[])}${comparisonPanel()}<h3>Script Preview</h3><pre id="scriptPreview">Loading script...</pre>`;
       scriptFor(r).then(text => {
         const preview = document.getElementById("scriptPreview");
         if (preview && state.selected === r.pdb_id) preview.textContent = text;
