@@ -3,15 +3,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #351; target model: #351.1.
+# Structure group: #352; target model: #352.1.
 
-open 8h6l id 351.9 name 8H6L_anchor
-open 6zym id 351.1 name 6ZYM
-rename #351 C_6zym_structure
+open 8h6l id 352.9 name 8H6L_anchor
+open 6zym id 352.1 name 6ZYM
+rename #352 C_6zym_structure
 
 # Align on PRPF8.
-matchmaker #351.1/A to #351.9/5B
-close #351.9
+matchmaker #352.1/A to #352.9/5B
+close #352.9
 
 hide atoms
 cartoon
@@ -37,57 +37,56 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # U2 snRNA
-color #351.1/2 #006400
-# U5 snRNA
-color #351.1/5 #0000CD
-# U6 snRNA
-color #351.1/6 #DC143C
-# CIR
-color #351.1/9 #C7CBDB
-# PRPF8
-color #351.1/A #BFC3E8
-# EFTUD2
-color #351.1/B #6495ED
-# SNW1
-color #351.1/C #D49F96
-# PLRG1
-color #351.1/D #F4A460
-# PRPF17
-color #351.1/E #FFF7C9
+color #352.1/2 #006400
 # PRP8BP
-color #351.1/F #E2F3F4
+color #352.1/F #E2F3F4
 # CDC5L
-color #351.1/L #DAA520
+color #352.1/L #DAA520
 # CRNKL1
-color #351.1/O #FFC388
+color #352.1/O #FFC388
 # RBM22
-color #351.1/P #DE9A52
+color #352.1/P #DE9A52
 # BUD31
-color #351.1/Q #FFF584
+color #352.1/Q #FFF584
 # CWC15
-color #351.1/R #FFDEAD
+color #352.1/R #FFDEAD
 # SRRM2
-color #351.1/S #BDD6F0
+color #352.1/S #BDD6F0
 # CWC22
-color #351.1/T #2C54DD
+color #352.1/T #2C54DD
 # PPIL1
-color #351.1/V #EEE8AA
+color #352.1/V #EEE8AA
 # pre-mRNA
-color #351.1/Y #303030
+color #352.1/Y #303030
 # pre-mRNA
-color #351.1/Z #303030
+color #352.1/Z #303030
+# U5 snRNA
+color #352.1/5 #0000CD
 # WDR70
-color #351.1/p #7363C5
+color #352.1/p #7363C5
 # DDX38
-color #351.1/r #5F2E8A
+color #352.1/r #5F2E8A
 # ISY1
-color #351.1/s #FFEF8C
+color #352.1/s #FFEF8C
 # CCDC49
-color #351.1/t #2F4DB1
+color #352.1/t #2F4DB1
 # CCDC94
-color #351.1/u #CE4678
+color #352.1/u #CE4678
 # FRG1
-color #351.1/x #CDA470
-show nucleic
+color #352.1/x #CDA470
+# U6 snRNA
+color #352.1/6 #DC143C
+# CIR
+color #352.1/9 #C7CBDB
+# PRPF8
+color #352.1/A #BFC3E8
+# EFTUD2
+color #352.1/B #6495ED
+# SNW1
+color #352.1/C #D49F96
+# PLRG1
+color #352.1/D #F4A460
+# PRPF17
+color #352.1/E #FFF7C9
 view
 show nucleic

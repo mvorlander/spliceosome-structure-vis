@@ -38,22 +38,6 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # U4 snRNA
 color #305.1/V #E6D900
-# U6 snRNA
-color #305.1/W #DC143C
-# PRPF8
-color #305.1/A #BFC3E8
-# PRPF4
-color #305.1/H #E2C496
-# PRPF6
-color #305.1/J #CFA785
-# TXNL4A
-color #305.1/D #C3BA7A
-# PRPF31
-color #305.1/F #DFD570
-# PRPF3
-color #305.1/G #E1DD1B
-# SNRNP200
-color #305.1/B #AFEEEE
 # U5-Sm SNRPB
 color #305.1/b #B0C4DE
 # U4-Sm SNRPB
@@ -86,6 +70,8 @@ color #305.1/r #F7F0A6
 color #305.1/E #D6937B
 # U5 snRNA
 color #305.1/U #0000CD
+# U6 snRNA
+color #305.1/W #DC143C
 # NHP2L1
 color #305.1/K #A89264
 # LSM2
@@ -104,6 +90,19 @@ color #305.1/7 #F4A3A8
 color #305.1/8 #F4A3A8
 # EFTUD2
 color #305.1/C #6495ED
-show nucleic
+# PRPF8
+color #305.1/A #BFC3E8
+# PRPF4
+color #305.1/H #E2C496
+# PRPF6
+color #305.1/J #CFA785
+# TXNL4A
+color #305.1/D #C3BA7A
+# PRPF31
+color #305.1/F #DFD570
+# PRPF3
+color #305.1/G #E1DD1B
+# SNRNP200
+color #305.1/B #AFEEEE
 view
 show nucleic

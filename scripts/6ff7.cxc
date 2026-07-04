@@ -3,15 +3,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #334; target model: #334.1.
+# Structure group: #335; target model: #335.1.
 
-open 8h6l id 334.9 name 8H6L_anchor
-open 6ff7 id 334.1 name 6FF7
-rename #334 Bact_6ff7_structure
+open 8h6l id 335.9 name 8H6L_anchor
+open 6ff7 id 335.1 name 6FF7
+rename #335 Bact_6ff7_structure
 
 # Align on PRPF8.
-matchmaker #334.1/A to #334.9/5B
-close #334.9
+matchmaker #335.1/A to #335.9/5B
+close #335.9
 
 hide atoms
 cartoon
@@ -37,127 +37,126 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # CGI-79
-color #334.1/1 #5FB491
-# U2 snRNA
-color #334.1/2 #006400
-# BUD13
-color #334.1/3 #459285
-# U5 snRNA
-color #334.1/5 #0000CD
-# U6 snRNA
-color #334.1/6 #DC143C
-# SF3A2
-color #334.1/7 #75A074
-# SF3B2
-color #334.1/8 #49926C
-# PRPF8
-color #334.1/A #BFC3E8
-# EFTUD2
-color #334.1/B #6495ED
+color #335.1/1 #5FB491
 # SNW1
-color #334.1/C #D49F96
+color #335.1/C #D49F96
 # PLRG1
-color #334.1/D #F4A460
+color #335.1/D #F4A460
 # PRPF17
-color #334.1/E #FFF7C9
+color #335.1/E #FFF7C9
 # CDC5L
-color #334.1/L #DAA520
+color #335.1/L #DAA520
 # CRNKL1
-color #334.1/O #FFC388
+color #335.1/O #FFC388
 # RBM22
-color #334.1/P #DE9A52
+color #335.1/P #DE9A52
 # BUD31
-color #334.1/Q #FFF584
+color #335.1/Q #FFF584
 # CWC15
-color #334.1/R #FFDEAD
+color #335.1/R #FFDEAD
 # SRRM2
-color #334.1/S #BDD6F0
+color #335.1/S #BDD6F0
 # PPIL1
-color #334.1/V #EEE8AA
+color #335.1/V #EEE8AA
+# U2 snRNA
+color #335.1/2 #006400
 # SRM160
-color #334.1/Y #6E96C4
+color #335.1/Y #6E96C4
 # pre-mRNA
-color #334.1/Z #303030
+color #335.1/Z #303030
 # CWC27
-color #334.1/s #806ED8
+color #335.1/s #806ED8
 # RNF113
-color #334.1/t #6C46CE
+color #335.1/t #6C46CE
 # SF3B1
-color #334.1/u #487957
+color #335.1/u #487957
 # SF3B3
-color #334.1/v #6A9064
+color #335.1/v #6A9064
 # SF3B5
-color #334.1/x #92BB8F
+color #335.1/x #92BB8F
 # PHF5A
-color #334.1/y #375A40
+color #335.1/y #375A40
 # SF3B6
-color #334.1/N #ADCEA0
+color #335.1/N #ADCEA0
 # SF3B6
-color #334.1/z #ADCEA0
+color #335.1/z #ADCEA0
 # SNIP1
-color #334.1/0 #89BFC8
+color #335.1/0 #89BFC8
+# BUD13
+color #335.1/3 #459285
 # SF3A3
-color #334.1/9 #9BCF91
+color #335.1/9 #9BCF91
 # PRP8BP
-color #334.1/F #E2F3F4
+color #335.1/F #E2F3F4
 # PRPF19
-color #334.1/G #FFFFAB
+color #335.1/G #FFFFAB
 # PRPF19
-color #334.1/H #FFFFAB
+color #335.1/H #FFFFAB
 # PRPF19
-color #334.1/I #FFFFAB
+color #335.1/I #FFFFAB
 # PRPF19
-color #334.1/J #FFFFAB
+color #335.1/J #FFFFAB
 # BCAS2
-color #334.1/K #FFDAB9
+color #335.1/K #FFDAB9
 # SYF1
-color #334.1/M #FF957B
+color #335.1/M #FF957B
 # CWC22
-color #334.1/T #2C54DD
+color #335.1/T #2C54DD
 # AQR
-color #334.1/U #FFDAB9
+color #335.1/U #FFDAB9
 # SNRPA1
-color #334.1/W #58D68D
+color #335.1/W #58D68D
 # SNRPB2
-color #334.1/X #DAF7A6
+color #335.1/X #DAF7A6
 # SNRPD2
-color #334.1/a #B0C4DE
+color #335.1/a #B0C4DE
 # SNRPD2
-color #334.1/h #B0C4DE
+color #335.1/h #B0C4DE
+# U5 snRNA
+color #335.1/5 #0000CD
 # SNRPF
-color #334.1/b #B0C4DE
+color #335.1/b #B0C4DE
 # SNRPF
-color #334.1/i #B0C4DE
+color #335.1/i #B0C4DE
 # SNRPE
-color #334.1/c #B0C4DE
+color #335.1/c #B0C4DE
 # SNRPE
-color #334.1/j #B0C4DE
+color #335.1/j #B0C4DE
 # SNRPG
-color #334.1/d #B0C4DE
+color #335.1/d #B0C4DE
 # SNRPG
-color #334.1/k #B0C4DE
+color #335.1/k #B0C4DE
 # SNRPD3
-color #334.1/e #B0C4DE
+color #335.1/e #B0C4DE
 # SNRPD3
-color #334.1/l #B0C4DE
+color #335.1/l #B0C4DE
 # SNRPB
-color #334.1/f #B0C4DE
+color #335.1/f #B0C4DE
 # SNRPB
-color #334.1/m #B0C4DE
+color #335.1/m #B0C4DE
 # SNRPD1
-color #334.1/g #B0C4DE
+color #335.1/g #B0C4DE
 # SNRPD1
-color #334.1/n #B0C4DE
+color #335.1/n #B0C4DE
 # PPIE
-color #334.1/o #FFFFE0
+color #335.1/o #FFFFE0
 # SF3A1
-color #334.1/p #55947F
+color #335.1/p #55947F
 # DBP2
-color #334.1/q #E3B296
+color #335.1/q #E3B296
 # SNRNP200
-color #334.1/r #AFEEEE
+color #335.1/r #AFEEEE
+# U6 snRNA
+color #335.1/6 #DC143C
 # ISY1
-color #334.1/w #FFEF8C
-show nucleic
+color #335.1/w #FFEF8C
+# SF3A2
+color #335.1/7 #75A074
+# SF3B2
+color #335.1/8 #49926C
+# PRPF8
+color #335.1/A #BFC3E8
+# EFTUD2
+color #335.1/B #6495ED
 view
 show nucleic

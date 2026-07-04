@@ -3,15 +3,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #348; target model: #348.1.
+# Structure group: #349; target model: #349.1.
 
-open 8h6l id 348.9 name 8H6L_anchor
-open 6y50 id 348.1 name 6Y50
-rename #348 SF3B_U2_6y50_structure
+open 8h6l id 349.9 name 8H6L_anchor
+open 6y50 id 349.1 name 6Y50
+rename #349 SF3B_U2_6y50_structure
 
 # Align on SF3B1.
-matchmaker #348.1/u to #348.9/2G
-close #348.9
+matchmaker #349.1/u to #349.9/2G
+close #349.9
 
 hide atoms
 cartoon
@@ -37,23 +37,22 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # SF3A3
-color #348.1/9 #9BCF91
+color #349.1/9 #9BCF91
 # PHF5A
-color #348.1/y #375A40
+color #349.1/y #375A40
 # SF3B5
-color #348.1/x #92BB8F
+color #349.1/x #92BB8F
 # SF3B2
-color #348.1/8 #49926C
+color #349.1/8 #49926C
 # SF3B3
-color #348.1/v #6A9064
+color #349.1/v #6A9064
 # SF3B1
-color #348.1/u #487957
+color #349.1/u #487957
 # U2 snRNA
-color #348.1/2 #006400
+color #349.1/2 #006400
 # HTATSF1
-color #348.1/q #7DBF82
+color #349.1/q #7DBF82
 # DDX46
-color #348.1/p #5BAE8A
-show nucleic
+color #349.1/p #5BAE8A
 view
 show nucleic

@@ -3,15 +3,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #396; target model: #396.1.
+# Structure group: #397; target model: #397.1.
 
-open 8h6l id 396.9 name 8H6L_anchor
-open 8qo9 id 396.1 name 8QO9
-rename #396 B_8qo9_structure
+open 8h6l id 397.9 name 8H6L_anchor
+open 8qo9 id 397.1 name 8QO9
+rename #397 B_8qo9_structure
 
 # Align on PRPF8.
-matchmaker #396.1/A to #396.9/5B
-close #396.9
+matchmaker #397.1/A to #397.9/5B
+close #397.9
 
 hide atoms
 cartoon
@@ -37,147 +37,146 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # SF3B4
-color #396.1/B4 #77B088
-# SF3A2
-color #396.1/8 #75A074
-# SF3A2
-color #396.1/G #75A074
-# SF3A3
-color #396.1/9 #9BCF91
-# SF3A3
-color #396.1/H #9BCF91
-# SF3B2
-color #396.1/B2 #49926C
-# SF3B5
-color #396.1/B5 #92BB8F
-# U2 snRNA
-color #396.1/2 #006400
-# SF3B3
-color #396.1/B3 #6A9064
-# PHF5A
-color #396.1/BP #375A40
-# SF3B1
-color #396.1/B1 #487957
+color #397.1/B4 #77B088
 # SF3B6
-color #396.1/B6 #ADCEA0
+color #397.1/B6 #ADCEA0
 # LSM2
-color #396.1/62 #F4A3A8
+color #397.1/62 #F4A3A8
 # LSM3
-color #396.1/63 #F4A3A8
+color #397.1/63 #F4A3A8
 # LSM4
-color #396.1/64 #F4A3A8
+color #397.1/64 #F4A3A8
 # LSM5
-color #396.1/65 #F4A3A8
+color #397.1/65 #F4A3A8
 # LSM6
-color #396.1/66 #F4A3A8
+color #397.1/66 #F4A3A8
 # LSM7
-color #396.1/67 #F4A3A8
+color #397.1/67 #F4A3A8
 # LSM8
-color #396.1/68 #F4A3A8
+color #397.1/68 #F4A3A8
 # U2-Sm SNRPB
-color #396.1/2b #D5F5E3
+color #397.1/2b #D5F5E3
 # U4-Sm SNRPB
-color #396.1/4b #F7F0A6
+color #397.1/4b #F7F0A6
 # U5-Sm SNRPB
-color #396.1/5b #B0C4DE
+color #397.1/5b #B0C4DE
 # U2-Sm SNRPD1
-color #396.1/21 #D5F5E3
+color #397.1/21 #D5F5E3
 # U4-Sm SNRPD1
-color #396.1/41 #F7F0A6
+color #397.1/41 #F7F0A6
 # U5-Sm SNRPD1
-color #396.1/51 #B0C4DE
+color #397.1/51 #B0C4DE
+# SF3A2
+color #397.1/8 #75A074
+# SF3A2
+color #397.1/G #75A074
 # U2-Sm SNRPD2
-color #396.1/22 #D5F5E3
+color #397.1/22 #D5F5E3
 # U4-Sm SNRPD2
-color #396.1/42 #F7F0A6
+color #397.1/42 #F7F0A6
 # U5-Sm SNRPD2
-color #396.1/52 #B0C4DE
+color #397.1/52 #B0C4DE
 # U2-Sm SNRPF
-color #396.1/2f #D5F5E3
+color #397.1/2f #D5F5E3
 # U4-Sm SNRPF
-color #396.1/4f #F7F0A6
+color #397.1/4f #F7F0A6
 # U5-Sm SNRPF
-color #396.1/5f #B0C4DE
+color #397.1/5f #B0C4DE
 # U2-Sm SNRPE
-color #396.1/2e #D5F5E3
+color #397.1/2e #D5F5E3
 # U4-Sm SNRPE
-color #396.1/4e #F7F0A6
+color #397.1/4e #F7F0A6
 # U5-Sm SNRPE
-color #396.1/5e #B0C4DE
+color #397.1/5e #B0C4DE
 # U2-Sm SNRPG
-color #396.1/2g #D5F5E3
+color #397.1/2g #D5F5E3
 # U4-Sm SNRPG
-color #396.1/4g #F7F0A6
+color #397.1/4g #F7F0A6
 # U5-Sm SNRPG
-color #396.1/5g #B0C4DE
+color #397.1/5g #B0C4DE
 # U2-Sm SNRPD3
-color #396.1/23 #D5F5E3
+color #397.1/23 #D5F5E3
 # U4-Sm SNRPD3
-color #396.1/43 #F7F0A6
+color #397.1/43 #F7F0A6
 # U5-Sm SNRPD3
-color #396.1/53 #B0C4DE
+color #397.1/53 #B0C4DE
 # SNRPB2
-color #396.1/2B #DAF7A6
+color #397.1/2B #DAF7A6
 # SNRPA1
-color #396.1/2A #58D68D
+color #397.1/2A #58D68D
 # SF3A1
-color #396.1/7 #55947F
+color #397.1/7 #55947F
 # PRP8BP
-color #396.1/E #E2F3F4
+color #397.1/E #E2F3F4
 # SNRNP200
-color #396.1/B #AFEEEE
+color #397.1/B #AFEEEE
+# SF3A3
+color #397.1/9 #9BCF91
+# SF3A3
+color #397.1/H #9BCF91
 # IK
-color #396.1/x #C75769
+color #397.1/x #C75769
 # IK
-color #396.1/y #C75769
+color #397.1/y #C75769
 # SMU1
-color #396.1/v #E0A3D2
+color #397.1/v #E0A3D2
 # SMU1
-color #396.1/w #E0A3D2
+color #397.1/w #E0A3D2
 # ASF
-color #396.1/z #CC3E8E
+color #397.1/z #CC3E8E
 # CYP20
-color #396.1/W #C9AC36
+color #397.1/W #C9AC36
 # U5 snRNA
-color #396.1/5 #0000CD
+color #397.1/5 #0000CD
 # BUD31
-color #396.1/Q #FFF584
+color #397.1/Q #FFF584
 # TXNL4A
-color #396.1/D #C3BA7A
+color #397.1/D #C3BA7A
 # FBP21
-color #396.1/X #B03B66
+color #397.1/X #B03B66
 # MFAP1
-color #396.1/K #CD5C5C
+color #397.1/K #CD5C5C
 # pre-mRNA
-color #396.1/Z #303030
+color #397.1/Z #303030
+# SF3B2
+color #397.1/B2 #49926C
 # PRPF31
-color #396.1/L #DFD570
+color #397.1/L #DFD570
 # PRPF4
-color #396.1/F #E2C496
+color #397.1/F #E2C496
 # PRPF6
-color #396.1/N #CFA785
+color #397.1/N #CFA785
 # PRPF8
-color #396.1/A #BFC3E8
+color #397.1/A #BFC3E8
 # PRPF38A
-color #396.1/I #F88379
+color #397.1/I #F88379
 # SART1
-color #396.1/S #D6937B
+color #397.1/S #D6937B
 # EFTUD2
-color #396.1/C #6495ED
+color #397.1/C #6495ED
 # NHP2L1
-color #396.1/M #A89264
+color #397.1/M #A89264
 # CA150
-color #396.1/T #A2B8CD
+color #397.1/T #A2B8CD
 # U4 snRNA
-color #396.1/4 #E6D900
+color #397.1/4 #E6D900
+# SF3B5
+color #397.1/B5 #92BB8F
 # U6 snRNA
-color #396.1/6 #DC143C
+color #397.1/6 #DC143C
 # ZMAT2
-color #396.1/r #FFB6C1
+color #397.1/r #FFB6C1
 # PRPF3
-color #396.1/J #E1DD1B
+color #397.1/J #E1DD1B
 # UBL5
-color #396.1/s #DB7093
-show nucleic
+color #397.1/s #DB7093
+# U2 snRNA
+color #397.1/2 #006400
+# SF3B3
+color #397.1/B3 #6A9064
+# PHF5A
+color #397.1/BP #375A40
+# SF3B1
+color #397.1/B1 #487957
 view
 show nucleic

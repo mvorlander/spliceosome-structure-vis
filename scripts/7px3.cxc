@@ -3,15 +3,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #367; target model: #367.1.
+# Structure group: #368; target model: #368.1.
 
-open 8h6l id 367.9 name 8H6L_anchor
-open 7px3 id 367.1 name 7PX3
-rename #367 U5_recycling_7px3_structure
+open 8h6l id 368.9 name 8H6L_anchor
+open 7px3 id 368.1 name 7PX3
+rename #368 U5_recycling_7px3_structure
 
 # Align on PRPF8.
-matchmaker #367.1/J to #367.9/5B
-close #367.9
+matchmaker #368.1/J to #368.9/5B
+close #368.9
 
 hide atoms
 cartoon
@@ -37,11 +37,10 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # SNRNP200
-color #367.1/B #AFEEEE
+color #368.1/B #AFEEEE
 # PRPF8
-color #367.1/J #BFC3E8
+color #368.1/J #BFC3E8
 # TSSC4
-color #367.1/T #800000
-show nucleic
+color #368.1/T #800000
 view
 show nucleic

@@ -3,15 +3,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #350; target model: #350.1.
+# Structure group: #351; target model: #351.1.
 
-open 8h6l id 350.9 name 8H6L_anchor
-open 6y5q id 350.1 name 6Y5Q
-rename #350 SF3B_U2_6y5q_structure
+open 8h6l id 351.9 name 8H6L_anchor
+open 6y5q id 351.1 name 6Y5Q
+rename #351 SF3B_U2_6y5q_structure
 
 # Align on SF3B1.
-matchmaker #350.1/u to #350.9/2G
-close #350.9
+matchmaker #351.1/u to #351.9/2G
+close #351.9
 
 hide atoms
 cartoon
@@ -37,49 +37,48 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # PHF5A
-color #350.1/y #375A40
-# SF3B5
-color #350.1/x #92BB8F
-# SF3B2
-color #350.1/8 #49926C
-# SF3B3
-color #350.1/v #6A9064
-# SF3B1
-color #350.1/u #487957
-# DDX46
-color #350.1/p #5BAE8A
-# SNRPA1
-color #350.1/a #58D68D
-# SNRPB2
-color #350.1/b #DAF7A6
-# SF3B6
-color #350.1/z #ADCEA0
+color #351.1/y #375A40
 # SF3A1
-color #350.1/6 #55947F
+color #351.1/6 #55947F
 # SF3A2
-color #350.1/7 #75A074
+color #351.1/7 #75A074
 # SF3A3
-color #350.1/9 #9BCF91
+color #351.1/9 #9BCF91
 # SF3B4
-color #350.1/o #77B088
+color #351.1/o #77B088
 # U2-Sm SNRPB
-color #350.1/m #D5F5E3
+color #351.1/m #D5F5E3
 # U2-Sm SNRPG
-color #350.1/k #D5F5E3
+color #351.1/k #D5F5E3
 # U2-Sm SNRPD1
-color #350.1/n #D5F5E3
+color #351.1/n #D5F5E3
 # U2-Sm SNRPD2
-color #350.1/h #D5F5E3
+color #351.1/h #D5F5E3
 # U2-Sm SNRPD3
-color #350.1/l #D5F5E3
+color #351.1/l #D5F5E3
 # U2-Sm SNRPE
-color #350.1/j #D5F5E3
+color #351.1/j #D5F5E3
+# SF3B5
+color #351.1/x #92BB8F
 # U2-Sm SNRPF
-color #350.1/i #D5F5E3
+color #351.1/i #D5F5E3
 # HTATSF1
-color #350.1/q #7DBF82
+color #351.1/q #7DBF82
 # U2 snRNA
-color #350.1/2 #006400
-show nucleic
+color #351.1/2 #006400
+# SF3B2
+color #351.1/8 #49926C
+# SF3B3
+color #351.1/v #6A9064
+# SF3B1
+color #351.1/u #487957
+# DDX46
+color #351.1/p #5BAE8A
+# SNRPA1
+color #351.1/a #58D68D
+# SNRPB2
+color #351.1/b #DAF7A6
+# SF3B6
+color #351.1/z #ADCEA0
 view
 show nucleic

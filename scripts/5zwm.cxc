@@ -38,22 +38,6 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # PRPF8
 color #326.1/A #BFC3E8
-# PRPF4
-color #326.1/K #E2C496
-# PRPF31
-color #326.1/L #DFD570
-# PRPF6
-color #326.1/N #CFA785
-# PRPF3
-color #326.1/J #E1DD1B
-# TXNL4A
-color #326.1/E #C3BA7A
-# NHP2L1
-color #326.1/M #A89264
-# EFTUD2
-color #326.1/C #6495ED
-# LSM8
-color #326.1/z #F4A3A8
 # LSM2
 color #326.1/q #F4A3A8
 # LSM3
@@ -74,6 +58,8 @@ color #326.1/I #E6D900
 color #326.1/B #0000CD
 # SART1
 color #326.1/O #D6937B
+# PRPF4
+color #326.1/K #E2C496
 # U4-Sm SNRPD3
 color #326.1/S #F7F0A6
 # U5-Sm SNRPD3
@@ -122,6 +108,8 @@ color #326.1/D #AFEEEE
 color #326.1/G #303030
 # U2 snRNA
 color #326.1/H #006400
+# PRPF31
+color #326.1/L #DFD570
 # SNRPA1
 color #326.1/o #58D68D
 # SNRPB2
@@ -142,6 +130,8 @@ color #326.1/6 #92BB8F
 color #326.1/X #5FB491
 # BUD13
 color #326.1/Y #459285
+# PRPF6
+color #326.1/N #CFA785
 # SNIP1
 color #326.1/Z #89BFC8
 # SF3A3
@@ -150,6 +140,15 @@ color #326.1/u #9BCF91
 color #326.1/w #55947F
 # SF3A2
 color #326.1/v #75A074
-show nucleic
+# PRPF3
+color #326.1/J #E1DD1B
+# TXNL4A
+color #326.1/E #C3BA7A
+# NHP2L1
+color #326.1/M #A89264
+# EFTUD2
+color #326.1/C #6495ED
+# LSM8
+color #326.1/z #F4A3A8
 view
 show nucleic

@@ -38,22 +38,6 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # pre-mRNA
 color #314.1/I #303030
-# pre-mRNA
-color #314.1/E #303030
-# pre-mRNA
-color #314.1/2 #303030
-# pre-mRNA
-color #314.1/6 #303030
-# pre-mRNA
-color #314.1/5 #303030
-# PRPF8
-color #314.1/A #BFC3E8
-# EFTUD2
-color #314.1/C #6495ED
-# CWC22
-color #314.1/H #2C54DD
-# PLRG1
-color #314.1/J #F4A460
 # SNW1
 color #314.1/K #D49F96
 # BUD31
@@ -70,6 +54,8 @@ color #314.1/P #FFDEAD
 color #314.1/S #FFC388
 # SYF1
 color #314.1/T #FF957B
+# pre-mRNA
+color #314.1/E #303030
 # SLU7
 color #314.1/c #5A338B
 # PRPF17
@@ -100,6 +86,8 @@ color #314.1/r #B0C4DE
 color #314.1/h #B0C4DE
 # SNRPD1
 color #314.1/l #B0C4DE
+# pre-mRNA
+color #314.1/2 #303030
 # SNRPD2
 color #314.1/j #B0C4DE
 # SNRPD2
@@ -120,6 +108,17 @@ color #314.1/u #FFFFAB
 color #314.1/v #FFFFAB
 # PRPF19
 color #314.1/w #FFFFAB
-show nucleic
+# pre-mRNA
+color #314.1/6 #303030
+# pre-mRNA
+color #314.1/5 #303030
+# PRPF8
+color #314.1/A #BFC3E8
+# EFTUD2
+color #314.1/C #6495ED
+# CWC22
+color #314.1/H #2C54DD
+# PLRG1
+color #314.1/J #F4A460
 view
 show nucleic

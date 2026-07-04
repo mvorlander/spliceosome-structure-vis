@@ -4,7 +4,7 @@
 
 Lightweight static dashboard for copying ChimeraX scripts for spliceosome cryo-EM PDB entries.
 
-- 133 deposited PDB entries.
+- 134 deposited PDB entries.
 - Original deposited chain identifiers only.
 - No maps, mmCIF files, local CIF models, or large binary assets are included.
 - ChimeraX scripts use `open <pdb_id>` so ChimeraX downloads structures directly from the PDB.

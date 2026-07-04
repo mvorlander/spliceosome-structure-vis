@@ -3,15 +3,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #356; target model: #356.1.
+# Structure group: #357; target model: #357.1.
 
-open 8h6l id 356.9 name 8H6L_anchor
-open 7abh id 356.1 name 7ABH
-rename #356 pre_Bact_7abh_structure
+open 8h6l id 357.9 name 8H6L_anchor
+open 7abh id 357.1 name 7ABH
+rename #357 pre_Bact_7abh_structure
 
 # Align on SF3B1.
-matchmaker #356.1/u to #356.9/2G
-close #356.9
+matchmaker #357.1/u to #357.9/2G
+close #357.9
 
 hide atoms
 cartoon
@@ -37,37 +37,36 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # CDC5L
-color #356.1/L #DAA520
-# PHF5A
-color #356.1/y #375A40
-# pre-mRNA
-color #356.1/Z #303030
-# SF3A2
-color #356.1/F #75A074
-# SF3A3
-color #356.1/4 #9BCF91
-# SF3B1
-color #356.1/u #487957
-# SF3B2
-color #356.1/T #49926C
-# SF3B3
-color #356.1/E #6A9064
-# SF3B4
-color #356.1/w #77B088
+color #357.1/L #DAA520
 # SF3B5
-color #356.1/x #92BB8F
+color #357.1/x #92BB8F
 # SF3B6
-color #356.1/z #ADCEA0
+color #357.1/z #ADCEA0
 # SNIP1
-color #356.1/0 #89BFC8
+color #357.1/0 #89BFC8
 # CGI-79
-color #356.1/1 #5FB491
+color #357.1/1 #5FB491
 # SRM160
-color #356.1/Y #6E96C4
+color #357.1/Y #6E96C4
 # U2 snRNA
-color #356.1/2 #006400
+color #357.1/2 #006400
 # BTCD
-color #356.1/7 #BBA681
-show nucleic
+color #357.1/7 #BBA681
+# PHF5A
+color #357.1/y #375A40
+# pre-mRNA
+color #357.1/Z #303030
+# SF3A2
+color #357.1/F #75A074
+# SF3A3
+color #357.1/4 #9BCF91
+# SF3B1
+color #357.1/u #487957
+# SF3B2
+color #357.1/T #49926C
+# SF3B3
+color #357.1/E #6A9064
+# SF3B4
+color #357.1/w #77B088
 view
 show nucleic

@@ -3,15 +3,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #349; target model: #349.1.
+# Structure group: #350; target model: #350.1.
 
-open 8h6l id 349.9 name 8H6L_anchor
-open 6y53 id 349.1 name 6Y53
-rename #349 SF3B_U2_6y53_structure
+open 8h6l id 350.9 name 8H6L_anchor
+open 6y53 id 350.1 name 6Y53
+rename #350 SF3B_U2_6y53_structure
 
 # Align on SF3B1.
-matchmaker #349.1/u to #349.9/2G
-close #349.9
+matchmaker #350.1/u to #350.9/2G
+close #350.9
 
 hide atoms
 cartoon
@@ -37,43 +37,42 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # SNRPA1
-color #349.1/a #58D68D
-# SNRPB2
-color #349.1/b #DAF7A6
-# SF3B6
-color #349.1/z #ADCEA0
-# DDX46
-color #349.1/p #5BAE8A
-# SF3A1
-color #349.1/6 #55947F
-# SF3A2
-color #349.1/7 #75A074
-# SF3A3
-color #349.1/9 #9BCF91
-# SF3B4
-color #349.1/o #77B088
-# U2-Sm SNRPB
-color #349.1/m #D5F5E3
+color #350.1/a #58D68D
 # U2-Sm SNRPG
-color #349.1/k #D5F5E3
+color #350.1/k #D5F5E3
 # U2-Sm SNRPD1
-color #349.1/n #D5F5E3
+color #350.1/n #D5F5E3
 # U2-Sm SNRPD2
-color #349.1/h #D5F5E3
+color #350.1/h #D5F5E3
 # U2-Sm SNRPD3
-color #349.1/l #D5F5E3
+color #350.1/l #D5F5E3
 # U2-Sm SNRPE
-color #349.1/j #D5F5E3
+color #350.1/j #D5F5E3
 # U2-Sm SNRPF
-color #349.1/i #D5F5E3
+color #350.1/i #D5F5E3
 # HTATSF1
-color #349.1/q #7DBF82
+color #350.1/q #7DBF82
 # SF3B2
-color #349.1/8 #49926C
+color #350.1/8 #49926C
 # SF3B1
-color #349.1/u #487957
+color #350.1/u #487957
 # U2 snRNA
-color #349.1/2 #006400
-show nucleic
+color #350.1/2 #006400
+# SNRPB2
+color #350.1/b #DAF7A6
+# SF3B6
+color #350.1/z #ADCEA0
+# DDX46
+color #350.1/p #5BAE8A
+# SF3A1
+color #350.1/6 #55947F
+# SF3A2
+color #350.1/7 #75A074
+# SF3A3
+color #350.1/9 #9BCF91
+# SF3B4
+color #350.1/o #77B088
+# U2-Sm SNRPB
+color #350.1/m #D5F5E3
 view
 show nucleic

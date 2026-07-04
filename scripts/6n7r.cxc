@@ -3,14 +3,14 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #344; target model: #344.1.
+# Structure group: #345; target model: #345.1.
 
-open 8h6l id 344.9 name 8H6L_anchor
-open 6n7r id 344.1 name 6N7R
-rename #344 spliceosome_6n7r_structure
+open 8h6l id 345.9 name 8H6L_anchor
+open 6n7r id 345.1 name 6N7R
+rename #345 spliceosome_6n7r_structure
 
 # No PRPF8 or SF3B1 chain was detected; anchor is closed without alignment.
-close #344.9
+close #345.9
 
 hide atoms
 cartoon
@@ -36,41 +36,40 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # SNRNP70
-color #344.1/A #8C3D78
-# SNRPC
-color #344.1/B #D7A3CF
-# SNRPA
-color #344.1/C #C07AB6
-# PRP42
-color #344.1/D #7F5BA6
-# PRPF39
-color #344.1/E #E1B8D9
-# NAM8
-color #344.1/F #C7A6BE
-# SNU56
-color #344.1/G #D65B96
-# SNU71
-color #344.1/H #A95A9B
-# LUC7L
-color #344.1/I #B03372
+color #345.1/A #8C3D78
 # U1-Sm SNRPB
-color #344.1/K #EAD7E8
+color #345.1/K #EAD7E8
 # U1-Sm SNRPD1
-color #344.1/L #EAD7E8
+color #345.1/L #EAD7E8
 # U1-Sm SNRPD2
-color #344.1/M #EAD7E8
+color #345.1/M #EAD7E8
 # U1-Sm SNRPD3
-color #344.1/N #EAD7E8
+color #345.1/N #EAD7E8
 # U1-Sm SNRPE
-color #344.1/O #EAD7E8
+color #345.1/O #EAD7E8
 # U1-Sm SNRPF
-color #344.1/P #EAD7E8
+color #345.1/P #EAD7E8
 # U1-Sm SNRPG
-color #344.1/Q #EAD7E8
+color #345.1/Q #EAD7E8
 # U1 snRNA
-color #344.1/R #B66AAE
+color #345.1/R #B66AAE
 # pre-mRNA
-color #344.1/r #303030
-show nucleic
+color #345.1/r #303030
+# SNRPC
+color #345.1/B #D7A3CF
+# SNRPA
+color #345.1/C #C07AB6
+# PRP42
+color #345.1/D #7F5BA6
+# PRPF39
+color #345.1/E #E1B8D9
+# NAM8
+color #345.1/F #C7A6BE
+# SNU56
+color #345.1/G #D65B96
+# SNU71
+color #345.1/H #A95A9B
+# LUC7L
+color #345.1/I #B03372
 view
 show nucleic

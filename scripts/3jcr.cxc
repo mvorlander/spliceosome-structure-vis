@@ -38,26 +38,6 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # PRPF6
 color #303.1/G #CFA785
-# PRP8BP
-color #303.1/D #E2F3F4
-# SNRNP200
-color #303.1/C #AFEEEE
-# TXNL4A
-color #303.1/E #C3BA7A
-# PRPF8
-color #303.1/A #BFC3E8
-# DDX23
-color #303.1/F #CA9982
-# EFTUD2
-color #303.1/B #6495ED
-# U5-Sm SNRPB
-color #303.1/O #B0C4DE
-# U4-Sm SNRPB
-color #303.1/o #F7F0A6
-# U5-Sm SNRPD1
-color #303.1/P #B0C4DE
-# U4-Sm SNRPD1
-color #303.1/p #F7F0A6
 # U5-Sm SNRPD2
 color #303.1/Q #B0C4DE
 # U4-Sm SNRPD2
@@ -88,6 +68,8 @@ color #303.1/5 #F4A3A8
 color #303.1/4 #F4A3A8
 # LSM3
 color #303.1/3 #F4A3A8
+# PRP8BP
+color #303.1/D #E2F3F4
 # LSM2
 color #303.1/2 #F4A3A8
 # LSM7
@@ -108,6 +90,23 @@ color #303.1/M #E6D900
 color #303.1/N #DC143C
 # U5 snRNA
 color #303.1/H #0000CD
-show nucleic
+# SNRNP200
+color #303.1/C #AFEEEE
+# TXNL4A
+color #303.1/E #C3BA7A
+# PRPF8
+color #303.1/A #BFC3E8
+# DDX23
+color #303.1/F #CA9982
+# EFTUD2
+color #303.1/B #6495ED
+# U5-Sm SNRPB
+color #303.1/O #B0C4DE
+# U4-Sm SNRPB
+color #303.1/o #F7F0A6
+# U5-Sm SNRPD1
+color #303.1/P #B0C4DE
+# U4-Sm SNRPD1
+color #303.1/p #F7F0A6
 view
 show nucleic

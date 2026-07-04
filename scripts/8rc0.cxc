@@ -3,15 +3,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #410; target model: #410.1.
+# Structure group: #411; target model: #411.1.
 
-open 8h6l id 410.9 name 8H6L_anchor
-open 8rc0 id 410.1 name 8RC0
-rename #410 tri_snRNP_8rc0_structure
+open 8h6l id 411.9 name 8H6L_anchor
+open 8rc0 id 411.1 name 8RC0
+rename #411 tri_snRNP_8rc0_structure
 
 # Align on PRPF8.
-matchmaker #410.1/A to #410.9/5B
-close #410.9
+matchmaker #411.1/A to #411.9/5B
+close #411.9
 
 hide atoms
 cartoon
@@ -37,35 +37,34 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # CD2BP2
-color #410.1/F #FF4500
-# PRPF8
-color #410.1/A #BFC3E8
-# U5 snRNA
-color #410.1/5 #0000CD
-# PRPF6
-color #410.1/E #CFA785
-# DDX23
-color #410.1/D #CA9982
-# PRP8BP
-color #410.1/G #E2F3F4
-# SNRNP200
-color #410.1/B #AFEEEE
-# U5-Sm SNRPD1
-color #410.1/i #B0C4DE
-# U5-Sm SNRPD3
-color #410.1/k #B0C4DE
+color #411.1/F #FF4500
 # U5-Sm SNRPE
-color #410.1/l #B0C4DE
+color #411.1/l #B0C4DE
 # U5-Sm SNRPF
-color #410.1/m #B0C4DE
+color #411.1/m #B0C4DE
 # U5-Sm SNRPG
-color #410.1/n #B0C4DE
+color #411.1/n #B0C4DE
 # U5-Sm SNRPD2
-color #410.1/j #B0C4DE
+color #411.1/j #B0C4DE
 # U5-Sm SNRPB
-color #410.1/h #B0C4DE
+color #411.1/h #B0C4DE
 # EFTUD2
-color #410.1/C #6495ED
-show nucleic
+color #411.1/C #6495ED
+# PRPF8
+color #411.1/A #BFC3E8
+# U5 snRNA
+color #411.1/5 #0000CD
+# PRPF6
+color #411.1/E #CFA785
+# DDX23
+color #411.1/D #CA9982
+# PRP8BP
+color #411.1/G #E2F3F4
+# SNRNP200
+color #411.1/B #AFEEEE
+# U5-Sm SNRPD1
+color #411.1/i #B0C4DE
+# U5-Sm SNRPD3
+color #411.1/k #B0C4DE
 view
 show nucleic

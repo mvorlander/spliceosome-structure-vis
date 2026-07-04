@@ -3,15 +3,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #357; target model: #357.1.
+# Structure group: #358; target model: #358.1.
 
-open 8h6l id 357.9 name 8H6L_anchor
-open 7abi id 357.1 name 7ABI
-rename #357 pre_Bact_7abi_structure
+open 8h6l id 358.9 name 8H6L_anchor
+open 7abi id 358.1 name 7ABI
+rename #358 pre_Bact_7abi_structure
 
 # Align on PRPF8.
-matchmaker #357.1/A to #357.9/5B
-close #357.9
+matchmaker #358.1/A to #358.9/5B
+close #358.9
 
 hide atoms
 cartoon
@@ -37,117 +37,116 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # PRP8BP
-color #357.1/D #E2F3F4
-# SF3B3
-color #357.1/E #6A9064
-# U5-Sm SNRPF
-color #357.1/b #B0C4DE
-# U2-Sm SNRPF
-color #357.1/i #D5F5E3
-# SNRPA1
-color #357.1/W #58D68D
-# SF3B4
-color #357.1/w #77B088
-# U5-Sm SNRPG
-color #357.1/d #B0C4DE
-# U2-Sm SNRPG
-color #357.1/k #D5F5E3
-# AQR
-color #357.1/U #FFDAB9
-# SF3B5
-color #357.1/x #92BB8F
-# U6 snRNA
-color #357.1/6 #DC143C
+color #358.1/D #E2F3F4
 # SNRPB2
-color #357.1/B #DAF7A6
+color #358.1/B #DAF7A6
 # SF3B6
-color #357.1/z #ADCEA0
+color #358.1/z #ADCEA0
 # UBL5
-color #357.1/q #DB7093
+color #358.1/q #DB7093
 # SNRNP200
-color #357.1/s #AFEEEE
+color #358.1/s #AFEEEE
 # SNW1
-color #357.1/v #D49F96
+color #358.1/v #D49F96
 # BUD13
-color #357.1/3 #459285
+color #358.1/3 #459285
 # SNIP1
-color #357.1/0 #89BFC8
+color #358.1/0 #89BFC8
 # BUD31
-color #357.1/Q #FFF584
+color #358.1/Q #FFF584
 # CGI-79
-color #357.1/1 #5FB491
+color #358.1/1 #5FB491
 # CDC5L
-color #357.1/L #DAA520
+color #358.1/L #DAA520
+# SF3B3
+color #358.1/E #6A9064
 # ZMAT2
-color #357.1/N #FFB6C1
+color #358.1/N #FFB6C1
 # C20ORF33
-color #357.1/S #C99A2C
+color #358.1/S #C99A2C
 # EFTUD2
-color #357.1/r #6495ED
+color #358.1/r #6495ED
 # CWC15
-color #357.1/R #FFDEAD
+color #358.1/R #FFDEAD
 # SRM160
-color #357.1/Y #6E96C4
+color #358.1/Y #6E96C4
 # BTCD
-color #357.1/7 #BBA681
+color #358.1/7 #BBA681
 # SYF1
-color #357.1/M #FF957B
+color #358.1/M #FF957B
 # MFAP1
-color #357.1/K #CD5C5C
+color #358.1/K #CD5C5C
 # CRNKL1
-color #357.1/O #FFC388
+color #358.1/O #FFC388
 # PHF5A
-color #357.1/y #375A40
+color #358.1/y #375A40
+# U5-Sm SNRPF
+color #358.1/b #B0C4DE
+# U2-Sm SNRPF
+color #358.1/i #D5F5E3
 # U2 snRNA
-color #357.1/2 #006400
+color #358.1/2 #006400
 # PLRG1
-color #357.1/G #F4A460
+color #358.1/G #F4A460
 # U5-Sm SNRPD2
-color #357.1/a #B0C4DE
+color #358.1/a #B0C4DE
 # U2-Sm SNRPD2
-color #357.1/h #D5F5E3
+color #358.1/h #D5F5E3
 # PPIE
-color #357.1/o #FFFFE0
+color #358.1/o #FFFFE0
 # PPIL2
-color #357.1/t #B12F50
+color #358.1/t #B12F50
 # U5-Sm SNRPB
-color #357.1/f #B0C4DE
+color #358.1/f #B0C4DE
 # U2-Sm SNRPB
-color #357.1/m #D5F5E3
+color #358.1/m #D5F5E3
 # pre-mRNA
-color #357.1/Z #303030
+color #358.1/Z #303030
 # U5-Sm SNRPD3
-color #357.1/e #B0C4DE
+color #358.1/e #B0C4DE
 # U2-Sm SNRPD3
-color #357.1/l #D5F5E3
+color #358.1/l #D5F5E3
 # PRPF8
-color #357.1/A #BFC3E8
+color #358.1/A #BFC3E8
 # PRPF17
-color #357.1/8 #FFF7C9
+color #358.1/8 #FFF7C9
+# SNRPA1
+color #358.1/W #58D68D
 # U5-Sm SNRPE
-color #357.1/c #B0C4DE
+color #358.1/c #B0C4DE
 # U2-Sm SNRPE
-color #357.1/j #D5F5E3
+color #358.1/j #D5F5E3
 # PRPF38A
-color #357.1/I #F88379
+color #358.1/I #F88379
 # U5-Sm SNRPD1
-color #357.1/g #B0C4DE
+color #358.1/g #B0C4DE
 # U2-Sm SNRPD1
-color #357.1/n #D5F5E3
+color #358.1/n #D5F5E3
 # RBM22
-color #357.1/P #DE9A52
+color #358.1/P #DE9A52
 # U5 snRNA
-color #357.1/5 #0000CD
+color #358.1/5 #0000CD
 # SF3A1
-color #357.1/p #55947F
+color #358.1/p #55947F
 # SF3A2
-color #357.1/F #75A074
+color #358.1/F #75A074
 # SF3A3
-color #357.1/4 #9BCF91
+color #358.1/4 #9BCF91
 # SF3B1
-color #357.1/u #487957
+color #358.1/u #487957
 # SF3B2
-color #357.1/T #49926C
-show nucleic
+color #358.1/T #49926C
+# SF3B4
+color #358.1/w #77B088
+# U5-Sm SNRPG
+color #358.1/d #B0C4DE
+# U2-Sm SNRPG
+color #358.1/k #D5F5E3
+# AQR
+color #358.1/U #FFDAB9
+# SF3B5
+color #358.1/x #92BB8F
+# U6 snRNA
+color #358.1/6 #DC143C
 view
 show nucleic

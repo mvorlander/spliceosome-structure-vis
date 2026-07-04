@@ -38,20 +38,6 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # PRPF8
 color #320.1/A #BFC3E8
-# U5 snRNA
-color #320.1/B #0000CD
-# EFTUD2
-color #320.1/C #6495ED
-# U6 snRNA
-color #320.1/D #DC143C
-# INTRON
-color #320.1/E #303030
-# U2 snRNA
-color #320.1/F #006400
-# SYF1
-color #320.1/H #FF957B
-# CRNKL1
-color #320.1/I #FFC388
 # CDC5L
 color #320.1/J #DAA520
 # SYF2
@@ -72,6 +58,8 @@ color #320.1/Q #D49F96
 color #320.1/R #CE4678
 # PRPF17
 color #320.1/S #FFF7C9
+# U5 snRNA
+color #320.1/B #0000CD
 # TFIP11
 color #320.1/U #FF69B4
 # PAXBP1
@@ -102,6 +90,8 @@ color #320.1/l #D5F5E3
 color #320.1/f #B0C4DE
 # U2-Sm SNRPD1
 color #320.1/m #D5F5E3
+# EFTUD2
+color #320.1/C #6495ED
 # U5-Sm SNRPD2
 color #320.1/g #B0C4DE
 # U2-Sm SNRPD2
@@ -120,6 +110,15 @@ color #320.1/s #FFFFAB
 color #320.1/t #FFFFAB
 # U6 snRNA
 color #320.1/x #DC143C
-show nucleic
+# U6 snRNA
+color #320.1/D #DC143C
+# INTRON
+color #320.1/E #303030
+# U2 snRNA
+color #320.1/F #006400
+# SYF1
+color #320.1/H #FF957B
+# CRNKL1
+color #320.1/I #FFC388
 view
 show nucleic

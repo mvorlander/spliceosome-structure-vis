@@ -212,6 +212,578 @@
       "script_path": "scripts/6g90.cxc"
     },
     {
+      "pdb_id": "5nrl",
+      "title": "Structure of a pre-catalytic spliceosome",
+      "state": "B",
+      "species": "S. cerevisiae",
+      "species_code": "YEAST",
+      "resolution": "7.2",
+      "year": "2017",
+      "paper_title": "Structure of a pre-catalytic spliceosome.",
+      "doi": "10.1038/nature22799",
+      "pubmed_id": "28530653",
+      "journal": "Nature",
+      "authors": "Plaschka C; Lin PC; Nagai K",
+      "authors_short": "Plaschka C; Lin PC; Nagai K",
+      "proteins": [
+        {
+          "name": "66 kDa U4/U6.U5 small nuclear ribonucleoprotein component",
+          "gene": "05667; SNU66; YOR308C",
+          "chains": "E",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Pre-mRNA-splicing helicase BRR2",
+          "gene": "BRR2; RSS1; SNU246; SYGP-ORF66; YER172C",
+          "chains": "B",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Spliceosomal protein DIB1",
+          "gene": "CDH1; DIB1; P9513.12; SNU16; YPR082C",
+          "chains": "D",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Cold sensitive U2 snRNA suppressor 1",
+          "gene": "CUS1; YM9408.02C; YMR240C",
+          "chains": "Q",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "23 kDa U4/U6.U5 small nuclear ribonucleoprotein component",
+          "gene": "D2378; SNU23; YDL098C",
+          "chains": "L",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Pre-mRNA-splicing factor PRP11",
+          "gene": "D2711; PRP10; PRP11; RNA11; YDL043C",
+          "chains": "U",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Pre-mRNA-splicing factor PRP9",
+          "gene": "D2773; PRP9; YDL030W",
+          "chains": "T",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "U4/U6 small nuclear ribonucleoprotein PRP3",
+          "gene": "D8035.16; PRP3; RNA3; YDR473C",
+          "chains": "G",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Pre-mRNA-splicing factor 8",
+          "gene": "DBF3; DNA39; PRP8; RNA8; SLT21; USA2; YHR165C",
+          "chains": "A",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Pre-mRNA-splicing factor SNU114",
+          "gene": "GIN10; SNU114; YKL173W; YKL637",
+          "chains": "C",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "U2 snRNP component HSH155",
+          "gene": "HSH155; YM8021.14; YMR288W",
+          "chains": "O",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Protein HSH49",
+          "gene": "HSH49; O6142; YOR319W",
+          "chains": "R",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Pre-mRNA-splicing factor PRP21",
+          "gene": "J0322; PRP21; SPP91; YJL203W",
+          "chains": "V",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "LSM2-LSM8 complex subunit LSM8",
+          "gene": "J1464; LSM8; YJR022W; YJR83.16",
+          "chains": "8",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D2",
+          "gene": "L9328.5; SMD2; YLR275W",
+          "chains": "i; m; u",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D3",
+          "gene": "L9634.6; SMD3; YLR147C",
+          "chains": "d; n; v",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "U2 small nuclear ribonucleoprotein A'",
+          "gene": "LEA1; YPL213W",
+          "chains": "W",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "LSM complex subunit LSM2",
+          "gene": "LSM2; SMX5; SNP3; YBL026W; YBL0425",
+          "chains": "a",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "LSM complex subunit LSM3",
+          "gene": "LSM3; SMX4; USS2; YLR438C-A",
+          "chains": "3",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "LSM complex subunit LSM4",
+          "gene": "LSM4; SDB23; USS1; YER112W",
+          "chains": "j",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "LSM complex subunit LSM5",
+          "gene": "LSM5; YER146W",
+          "chains": "o",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "U6 snRNA-associated Sm-like protein LSm6",
+          "gene": "LSM6; SCY_1265",
+          "chains": "z",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "LSM complex subunit LSM7",
+          "gene": "LSM7; N1202; N1780; YNL147W",
+          "chains": "7",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "U2 small nuclear ribonucleoprotein B''",
+          "gene": "MSL1; YIB9W; YIR009W",
+          "chains": "Y",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Pre-mRNA-splicing factor RDS3",
+          "gene": "P9513.2; RDS3; YPR094W",
+          "chains": "S",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein F",
+          "gene": "P9705.4; SMX3; YPR182W",
+          "chains": "f; q; x",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "U4/U6 small nuclear ribonucleoprotein PRP4",
+          "gene": "P9705.6; PRP4; RNA4; YPR178W",
+          "chains": "H",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Pre-mRNA-processing factor 31",
+          "gene": "PRP31; YGR091W",
+          "chains": "F",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Pre-mRNA-splicing factor 38",
+          "gene": "PRP38; YGR075C",
+          "chains": "M",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Pre-mRNA-splicing factor 6",
+          "gene": "PRP6; RNA6; YBR0508; YBR055C",
+          "chains": "J",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "RDS3 complex subunit 10",
+          "gene": "RCP10; YNL138W-A; YSF3",
+          "chains": "Z",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Pre-mRNA-splicing factor RSE1",
+          "gene": "RSE1; SAP130; YM9827.03C; YML049C",
+          "chains": "P",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein-associated protein B",
+          "gene": "SMB1; YER029C",
+          "chains": "b; k; s",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D1",
+          "gene": "SMD1; YGR074W",
+          "chains": "h; l; t",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein E",
+          "gene": "SME1; YOR159C",
+          "chains": "e; p; w",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein G",
+          "gene": "SMX2; SNP2; YFL017BW; YFL017W-A",
+          "chains": "g; r; y",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "13 kDa ribonucleoprotein-associated protein",
+          "gene": "SNU13; YEL026W",
+          "chains": "K",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Pre-mRNA-splicing factor SPP381",
+          "gene": "SPP381; YBR1202; YBR152W",
+          "chains": "N",
+          "organisms": "Saccharomyces cerevisiae"
+        },
+        {
+          "name": "Unknown",
+          "gene": "",
+          "chains": "X",
+          "organisms": "Saccharomyces cerevisiae"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "U2 snRNA",
+          "gene": "",
+          "chains": "2",
+          "organisms": ""
+        },
+        {
+          "name": "U4 snRNA",
+          "gene": "",
+          "chains": "4",
+          "organisms": ""
+        },
+        {
+          "name": "U5 snRNA",
+          "gene": "",
+          "chains": "5",
+          "organisms": ""
+        },
+        {
+          "name": "U6 snRNA",
+          "gene": "",
+          "chains": "6",
+          "organisms": ""
+        },
+        {
+          "name": "Yeast UBC4 gene for ubiquitin-conjugating enzyme",
+          "gene": "",
+          "chains": "I",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 39,
+      "rna_count": 5,
+      "chain_count": 63,
+      "has_prpf8": true,
+      "has_sf3b1": true,
+      "script_path": "scripts/5nrl.cxc"
+    },
+    {
+      "pdb_id": "5o9z",
+      "title": "Cryo-EM structure of a pre-catalytic human spliceosome primed for activation (B complex)",
+      "state": "B",
+      "species": "Human",
+      "species_code": "HUMAN",
+      "resolution": "4.5",
+      "year": "2017",
+      "paper_title": "Cryo-EM Structure of a Pre-catalytic Human Spliceosome Primed for Activation.",
+      "doi": "10.1016/j.cell.2017.07.011",
+      "pubmed_id": "28781166",
+      "journal": "Cell",
+      "authors": "Bertram K; Agafonov DE; Dybkov O; Haselbach D; Leelaram MN; Will CL; Urlaub H; Kastner B; Lührmann R; Stark H",
+      "authors_short": "Bertram K; Agafonov DE; Dybkov O; et al. (10 authors)",
+      "proteins": [
+        {
+          "name": "U5 small nuclear ribonucleoprotein 200 kDa helicase",
+          "gene": "ASCC3L1; BRR2; HELIC2; KIAA0788; SNRNP200",
+          "chains": "C",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Pre-mRNA-processing factor 6",
+          "gene": "C20ORF14; PRPF6",
+          "chains": "G",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U6 snRNA-associated Sm-like protein LSm2",
+          "gene": "C6ORF28; G7B; LSM2",
+          "chains": "o",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein-associated proteins B and B'",
+          "gene": "COD; SNRPB; SNRPB1",
+          "chains": "X; f; m",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Peptidyl-prolyl cis-trans isomerase H",
+          "gene": "CYP20; CYPH; PPIH",
+          "chains": "M",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Thioredoxin-like protein 4A",
+          "gene": "DIM1; TXNL4; TXNL4A",
+          "chains": "J",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "116 kDa U5 small nuclear ribonucleoprotein component",
+          "gene": "EFTUD2; KIAA0031; SNRP116",
+          "chains": "B",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "WW domain-binding protein 4",
+          "gene": "FBP21; FNBP21; WBP4",
+          "chains": "Q",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U4/U6 small nuclear ribonucleoprotein Prp3",
+          "gene": "HPRP3; PRP3; PRPF3",
+          "chains": "E",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Protein Red",
+          "gene": "IK; RED; RER",
+          "chains": "R",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 3",
+          "gene": "KIAA0017; SAP130; SF3B3",
+          "chains": "w",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U6 snRNA-associated Sm-like protein LSm3",
+          "gene": "LSM3; MDS017",
+          "chains": "p",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U6 snRNA-associated Sm-like protein LSm4",
+          "gene": "LSM4",
+          "chains": "q",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U6 snRNA-associated Sm-like protein LSm5",
+          "gene": "LSM5",
+          "chains": "r",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U6 snRNA-associated Sm-like protein LSm6",
+          "gene": "LSM6",
+          "chains": "s",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U6 snRNA-associated Sm-like protein LSm7",
+          "gene": "LSM7",
+          "chains": "t",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U6 snRNA-associated Sm-like protein LSm8",
+          "gene": "LSM8",
+          "chains": "u",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Microfibrillar-associated protein 1",
+          "gene": "MFAP1",
+          "chains": "K",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "NHP2-like protein 1",
+          "gene": "NHP2L1; SNU13",
+          "chains": "O",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein F",
+          "gene": "PBSCF; SNRPF",
+          "chains": "T; b; i",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein G",
+          "gene": "PBSCG; SNRPG",
+          "chains": "V; d; k",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "PHD finger-like domain-containing protein 5A",
+          "gene": "PHF5A",
+          "chains": "y",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U4/U6 small nuclear ribonucleoprotein Prp31",
+          "gene": "PRP31; PRPF31",
+          "chains": "H",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U4/U6 small nuclear ribonucleoprotein Prp4",
+          "gene": "PRP4; PRPF4",
+          "chains": "F",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U5 small nuclear ribonucleoprotein 40 kDa protein",
+          "gene": "PRP8BP; SFP38; SNRNP40; WDR57",
+          "chains": "D",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Pre-mRNA-processing-splicing factor 8",
+          "gene": "PRPC8; PRPF8",
+          "chains": "A",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Pre-mRNA-splicing factor 38A",
+          "gene": "PRPF38A",
+          "chains": "I",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 1",
+          "gene": "SAP155; SF3B1",
+          "chains": "v",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U4/U6.U5 tri-snRNP-associated protein 1",
+          "gene": "SART1",
+          "chains": "P",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 5",
+          "gene": "SF3B10; SF3B5",
+          "chains": "x",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "WD40 repeat-containing protein SMU1",
+          "gene": "SMU1",
+          "chains": "L",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U2 small nuclear ribonucleoprotein A'",
+          "gene": "SNRPA1",
+          "chains": "z",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U2 small nuclear ribonucleoprotein B''",
+          "gene": "SNRPB2",
+          "chains": "1",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D1",
+          "gene": "SNRPD1",
+          "chains": "Z; g; n",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D2",
+          "gene": "SNRPD1; SNRPD2",
+          "chains": "S; a; h",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D3",
+          "gene": "SNRPD3",
+          "chains": "W; e; l",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein E",
+          "gene": "SNRPE",
+          "chains": "U; c; j",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Zinc finger matrin-type protein 2",
+          "gene": "ZMAT2",
+          "chains": "N",
+          "organisms": "Homo sapiens"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "Homo sapiens RNA, U6 small nuclear 1 (RNU6-1), small nuclear RNA",
+          "gene": "",
+          "chains": "6",
+          "organisms": ""
+        },
+        {
+          "name": "Homo sapiens U4A snRNA",
+          "gene": "",
+          "chains": "4",
+          "organisms": ""
+        },
+        {
+          "name": "Homo sapiens U5 A small nuclear RNA",
+          "gene": "",
+          "chains": "5",
+          "organisms": ""
+        },
+        {
+          "name": "Human gene for small nuclear RNA U2 (snRNA U2)",
+          "gene": "",
+          "chains": "2",
+          "organisms": ""
+        },
+        {
+          "name": "MINX pre-mRNA",
+          "gene": "",
+          "chains": "Y",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 38,
+      "rna_count": 5,
+      "chain_count": 57,
+      "has_prpf8": true,
+      "has_sf3b1": true,
+      "script_path": "scripts/5o9z.cxc"
+    },
+    {
       "pdb_id": "5zwo",
       "title": "Cryo-EM structure of the yeast B complex at average resolution of 3.9 angstrom",
       "state": "B",
@@ -511,6 +1083,325 @@
       "has_prpf8": true,
       "has_sf3b1": true,
       "script_path": "scripts/5zwo.cxc"
+    },
+    {
+      "pdb_id": "6ahd",
+      "title": "The Cryo-EM Structure of Human Pre-catalytic Spliceosome (B complex) at 3.8 angstrom resolution",
+      "state": "B",
+      "species": "Human",
+      "species_code": "HUMAN",
+      "resolution": "3.8",
+      "year": "2018",
+      "paper_title": "Structures of the human pre-catalytic spliceosome and its precursor spliceosome.",
+      "doi": "10.1038/s41422-018-0094-7",
+      "pubmed_id": "30315277",
+      "journal": "Cell Res",
+      "authors": "Zhan X; Yan C; Zhang X; Lei J; Shi Y",
+      "authors_short": "Zhan X; Yan C; Zhang X; et al. (5 authors)",
+      "proteins": [
+        {
+          "name": "U5 small nuclear ribonucleoprotein 200 kDa helicase",
+          "gene": "ASCC3L1; BRR2; HELIC2; KIAA0788; SNRNP200",
+          "chains": "D",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Pre-mRNA-processing factor 6",
+          "gene": "C20ORF14; PRPF6",
+          "chains": "N",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U6 snRNA-associated Sm-like protein LSm2",
+          "gene": "C6ORF28; G7B; LSM2",
+          "chains": "q",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 6",
+          "gene": "CGI-110; HSPC175; HT006; SAP14; SF3B14; SF3B14A; SF3B6",
+          "chains": "5",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Peptidyl-prolyl cis-trans isomerase H",
+          "gene": "CYP20; CYPH; PPIH",
+          "chains": "W",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Thioredoxin-like protein 4A",
+          "gene": "DIM1; TXNL4; TXNL4A",
+          "chains": "O",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "116 kDa U5 small nuclear ribonucleoprotein component",
+          "gene": "EFTUD2; KIAA0031; SNRP116",
+          "chains": "C",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "WW domain-binding protein 4",
+          "gene": "FBP21; FNBP21; WBP4",
+          "chains": "X",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U4/U6 small nuclear ribonucleoprotein Prp3",
+          "gene": "HPRP3; PRP3; PRPF3",
+          "chains": "J",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 3",
+          "gene": "KIAA0017; SAP130; SF3B3",
+          "chains": "3",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U6 snRNA-associated Sm-like protein LSm3",
+          "gene": "LSM3; MDS017",
+          "chains": "r",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U6 snRNA-associated Sm-like protein LSm4",
+          "gene": "LSM4",
+          "chains": "s",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U6 snRNA-associated Sm-like protein LSm5",
+          "gene": "LSM5",
+          "chains": "t",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U6 snRNA-associated Sm-like protein LSm6",
+          "gene": "LSM6",
+          "chains": "x",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U6 snRNA-associated Sm-like protein LSm7",
+          "gene": "LSM7",
+          "chains": "y",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U6 snRNA-associated Sm-like protein LSm8",
+          "gene": "LSM8",
+          "chains": "z",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Microfibrillar-associated protein 1",
+          "gene": "MFAP1",
+          "chains": "0",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "NHP2-like protein 1",
+          "gene": "NHP2L1; SNU13",
+          "chains": "M",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein G",
+          "gene": "PBSCG; SNRPG",
+          "chains": "S; f; n",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "PHD finger-like domain-containing protein 5A",
+          "gene": "PHF5A",
+          "chains": "6",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U4/U6 small nuclear ribonucleoprotein Prp31",
+          "gene": "PRP31; PRPF31",
+          "chains": "L",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U4/U6 small nuclear ribonucleoprotein Prp4",
+          "gene": "PRP4; PRPF4",
+          "chains": "K",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U5 small nuclear ribonucleoprotein 40 kDa protein",
+          "gene": "PRP8BP; SFP38; SNRNP40; WDR57",
+          "chains": "E",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Pre-mRNA-processing-splicing factor 8",
+          "gene": "PRPC8; PRPF8",
+          "chains": "A",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Pre-mRNA-splicing factor 38A",
+          "gene": "PRPF38A",
+          "chains": "Z",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 1",
+          "gene": "SAP114; SF3A1",
+          "chains": "u",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 2",
+          "gene": "SAP145; SF3B2",
+          "chains": "2",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 1",
+          "gene": "SAP155; SF3B1",
+          "chains": "1",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 4",
+          "gene": "SAP49; SF3B4",
+          "chains": "4",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 3",
+          "gene": "SAP61; SF3A3",
+          "chains": "w",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3A subunit 2",
+          "gene": "SAP62; SF3A2",
+          "chains": "v",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U4/U6.U5 tri-snRNP-associated protein 1",
+          "gene": "SART1",
+          "chains": "9",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Splicing factor 3B subunit 5",
+          "gene": "SF3B10; SF3B5",
+          "chains": "7",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "SmB",
+          "gene": "",
+          "chains": "U; a; i",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "SmE",
+          "gene": "",
+          "chains": "Q; d; l",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "SmF",
+          "gene": "",
+          "chains": "R; e; m",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "WD40 repeat-containing protein SMU1",
+          "gene": "SMU1",
+          "chains": "Y",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U2 small nuclear ribonucleoprotein A'",
+          "gene": "SNRPA1",
+          "chains": "o",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "U2 small nuclear ribonucleoprotein B''",
+          "gene": "SNRPB2",
+          "chains": "p",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D1",
+          "gene": "SNRPD1",
+          "chains": "V; b; j",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D2",
+          "gene": "SNRPD1; SNRPD2",
+          "chains": "P; c; k",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D3",
+          "gene": "SNRPD3",
+          "chains": "T; g; h",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Ubiquitin-like protein 5",
+          "gene": "UBL5",
+          "chains": "A0",
+          "organisms": "Homo sapiens"
+        },
+        {
+          "name": "Zinc finger matrin-type protein 2",
+          "gene": "ZMAT2",
+          "chains": "8",
+          "organisms": "Homo sapiens"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "pre-mRNA",
+          "gene": "",
+          "chains": "G",
+          "organisms": ""
+        },
+        {
+          "name": "U2snRNA",
+          "gene": "",
+          "chains": "H",
+          "organisms": ""
+        },
+        {
+          "name": "U4snRNA",
+          "gene": "",
+          "chains": "I",
+          "organisms": ""
+        },
+        {
+          "name": "U5snRNA",
+          "gene": "",
+          "chains": "B",
+          "organisms": ""
+        },
+        {
+          "name": "U6snRNA",
+          "gene": "",
+          "chains": "F",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 44,
+      "rna_count": 5,
+      "chain_count": 66,
+      "has_prpf8": true,
+      "has_sf3b1": true,
+      "script_path": "scripts/6ahd.cxc"
     },
     {
       "pdb_id": "8h6k",
@@ -5438,13 +6329,13 @@
         {
           "name": "Small nuclear ribonucleoprotein Sm D3",
           "gene": "",
-          "chains": "d",
+          "chains": "l",
           "organisms": "Saccharomyces cerevisiae"
         },
         {
           "name": "Small nuclear ribonucleoprotein Sm D3",
           "gene": "",
-          "chains": "l",
+          "chains": "d",
           "organisms": "Saccharomyces cerevisiae"
         },
         {
@@ -20553,578 +21444,6 @@
       "script_path": "scripts/8rc0.cxc"
     },
     {
-      "pdb_id": "5nrl",
-      "title": "Structure of a pre-catalytic spliceosome",
-      "state": "pre-B",
-      "species": "S. cerevisiae",
-      "species_code": "YEAST",
-      "resolution": "7.2",
-      "year": "2017",
-      "paper_title": "Structure of a pre-catalytic spliceosome.",
-      "doi": "10.1038/nature22799",
-      "pubmed_id": "28530653",
-      "journal": "Nature",
-      "authors": "Plaschka C; Lin PC; Nagai K",
-      "authors_short": "Plaschka C; Lin PC; Nagai K",
-      "proteins": [
-        {
-          "name": "66 kDa U4/U6.U5 small nuclear ribonucleoprotein component",
-          "gene": "05667; SNU66; YOR308C",
-          "chains": "E",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Pre-mRNA-splicing helicase BRR2",
-          "gene": "BRR2; RSS1; SNU246; SYGP-ORF66; YER172C",
-          "chains": "B",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Spliceosomal protein DIB1",
-          "gene": "CDH1; DIB1; P9513.12; SNU16; YPR082C",
-          "chains": "D",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Cold sensitive U2 snRNA suppressor 1",
-          "gene": "CUS1; YM9408.02C; YMR240C",
-          "chains": "Q",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "23 kDa U4/U6.U5 small nuclear ribonucleoprotein component",
-          "gene": "D2378; SNU23; YDL098C",
-          "chains": "L",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Pre-mRNA-splicing factor PRP11",
-          "gene": "D2711; PRP10; PRP11; RNA11; YDL043C",
-          "chains": "U",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Pre-mRNA-splicing factor PRP9",
-          "gene": "D2773; PRP9; YDL030W",
-          "chains": "T",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "U4/U6 small nuclear ribonucleoprotein PRP3",
-          "gene": "D8035.16; PRP3; RNA3; YDR473C",
-          "chains": "G",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Pre-mRNA-splicing factor 8",
-          "gene": "DBF3; DNA39; PRP8; RNA8; SLT21; USA2; YHR165C",
-          "chains": "A",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Pre-mRNA-splicing factor SNU114",
-          "gene": "GIN10; SNU114; YKL173W; YKL637",
-          "chains": "C",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "U2 snRNP component HSH155",
-          "gene": "HSH155; YM8021.14; YMR288W",
-          "chains": "O",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Protein HSH49",
-          "gene": "HSH49; O6142; YOR319W",
-          "chains": "R",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Pre-mRNA-splicing factor PRP21",
-          "gene": "J0322; PRP21; SPP91; YJL203W",
-          "chains": "V",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "LSM2-LSM8 complex subunit LSM8",
-          "gene": "J1464; LSM8; YJR022W; YJR83.16",
-          "chains": "8",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D2",
-          "gene": "L9328.5; SMD2; YLR275W",
-          "chains": "i; m; u",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D3",
-          "gene": "L9634.6; SMD3; YLR147C",
-          "chains": "d; n; v",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "U2 small nuclear ribonucleoprotein A'",
-          "gene": "LEA1; YPL213W",
-          "chains": "W",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "LSM complex subunit LSM2",
-          "gene": "LSM2; SMX5; SNP3; YBL026W; YBL0425",
-          "chains": "a",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "LSM complex subunit LSM3",
-          "gene": "LSM3; SMX4; USS2; YLR438C-A",
-          "chains": "3",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "LSM complex subunit LSM4",
-          "gene": "LSM4; SDB23; USS1; YER112W",
-          "chains": "j",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "LSM complex subunit LSM5",
-          "gene": "LSM5; YER146W",
-          "chains": "o",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "U6 snRNA-associated Sm-like protein LSm6",
-          "gene": "LSM6; SCY_1265",
-          "chains": "z",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "LSM complex subunit LSM7",
-          "gene": "LSM7; N1202; N1780; YNL147W",
-          "chains": "7",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "U2 small nuclear ribonucleoprotein B''",
-          "gene": "MSL1; YIB9W; YIR009W",
-          "chains": "Y",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Pre-mRNA-splicing factor RDS3",
-          "gene": "P9513.2; RDS3; YPR094W",
-          "chains": "S",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein F",
-          "gene": "P9705.4; SMX3; YPR182W",
-          "chains": "f; q; x",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "U4/U6 small nuclear ribonucleoprotein PRP4",
-          "gene": "P9705.6; PRP4; RNA4; YPR178W",
-          "chains": "H",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Pre-mRNA-processing factor 31",
-          "gene": "PRP31; YGR091W",
-          "chains": "F",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Pre-mRNA-splicing factor 38",
-          "gene": "PRP38; YGR075C",
-          "chains": "M",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Pre-mRNA-splicing factor 6",
-          "gene": "PRP6; RNA6; YBR0508; YBR055C",
-          "chains": "J",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "RDS3 complex subunit 10",
-          "gene": "RCP10; YNL138W-A; YSF3",
-          "chains": "Z",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Pre-mRNA-splicing factor RSE1",
-          "gene": "RSE1; SAP130; YM9827.03C; YML049C",
-          "chains": "P",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein-associated protein B",
-          "gene": "SMB1; YER029C",
-          "chains": "b; k; s",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D1",
-          "gene": "SMD1; YGR074W",
-          "chains": "h; l; t",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein E",
-          "gene": "SME1; YOR159C",
-          "chains": "e; p; w",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein G",
-          "gene": "SMX2; SNP2; YFL017BW; YFL017W-A",
-          "chains": "g; r; y",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "13 kDa ribonucleoprotein-associated protein",
-          "gene": "SNU13; YEL026W",
-          "chains": "K",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Pre-mRNA-splicing factor SPP381",
-          "gene": "SPP381; YBR1202; YBR152W",
-          "chains": "N",
-          "organisms": "Saccharomyces cerevisiae"
-        },
-        {
-          "name": "Unknown",
-          "gene": "",
-          "chains": "X",
-          "organisms": "Saccharomyces cerevisiae"
-        }
-      ],
-      "rnas": [
-        {
-          "name": "U2 snRNA",
-          "gene": "",
-          "chains": "2",
-          "organisms": ""
-        },
-        {
-          "name": "U4 snRNA",
-          "gene": "",
-          "chains": "4",
-          "organisms": ""
-        },
-        {
-          "name": "U5 snRNA",
-          "gene": "",
-          "chains": "5",
-          "organisms": ""
-        },
-        {
-          "name": "U6 snRNA",
-          "gene": "",
-          "chains": "6",
-          "organisms": ""
-        },
-        {
-          "name": "Yeast UBC4 gene for ubiquitin-conjugating enzyme",
-          "gene": "",
-          "chains": "I",
-          "organisms": ""
-        }
-      ],
-      "protein_count": 39,
-      "rna_count": 5,
-      "chain_count": 63,
-      "has_prpf8": true,
-      "has_sf3b1": true,
-      "script_path": "scripts/5nrl.cxc"
-    },
-    {
-      "pdb_id": "5o9z",
-      "title": "Cryo-EM structure of a pre-catalytic human spliceosome primed for activation (B complex)",
-      "state": "pre-B",
-      "species": "Human",
-      "species_code": "HUMAN",
-      "resolution": "4.5",
-      "year": "2017",
-      "paper_title": "Cryo-EM Structure of a Pre-catalytic Human Spliceosome Primed for Activation.",
-      "doi": "10.1016/j.cell.2017.07.011",
-      "pubmed_id": "28781166",
-      "journal": "Cell",
-      "authors": "Bertram K; Agafonov DE; Dybkov O; Haselbach D; Leelaram MN; Will CL; Urlaub H; Kastner B; Lührmann R; Stark H",
-      "authors_short": "Bertram K; Agafonov DE; Dybkov O; et al. (10 authors)",
-      "proteins": [
-        {
-          "name": "U5 small nuclear ribonucleoprotein 200 kDa helicase",
-          "gene": "ASCC3L1; BRR2; HELIC2; KIAA0788; SNRNP200",
-          "chains": "C",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Pre-mRNA-processing factor 6",
-          "gene": "C20ORF14; PRPF6",
-          "chains": "G",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U6 snRNA-associated Sm-like protein LSm2",
-          "gene": "C6ORF28; G7B; LSM2",
-          "chains": "o",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein-associated proteins B and B'",
-          "gene": "COD; SNRPB; SNRPB1",
-          "chains": "X; f; m",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Peptidyl-prolyl cis-trans isomerase H",
-          "gene": "CYP20; CYPH; PPIH",
-          "chains": "M",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Thioredoxin-like protein 4A",
-          "gene": "DIM1; TXNL4; TXNL4A",
-          "chains": "J",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "116 kDa U5 small nuclear ribonucleoprotein component",
-          "gene": "EFTUD2; KIAA0031; SNRP116",
-          "chains": "B",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "WW domain-binding protein 4",
-          "gene": "FBP21; FNBP21; WBP4",
-          "chains": "Q",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U4/U6 small nuclear ribonucleoprotein Prp3",
-          "gene": "HPRP3; PRP3; PRPF3",
-          "chains": "E",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Protein Red",
-          "gene": "IK; RED; RER",
-          "chains": "R",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 3",
-          "gene": "KIAA0017; SAP130; SF3B3",
-          "chains": "w",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U6 snRNA-associated Sm-like protein LSm3",
-          "gene": "LSM3; MDS017",
-          "chains": "p",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U6 snRNA-associated Sm-like protein LSm4",
-          "gene": "LSM4",
-          "chains": "q",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U6 snRNA-associated Sm-like protein LSm5",
-          "gene": "LSM5",
-          "chains": "r",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U6 snRNA-associated Sm-like protein LSm6",
-          "gene": "LSM6",
-          "chains": "s",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U6 snRNA-associated Sm-like protein LSm7",
-          "gene": "LSM7",
-          "chains": "t",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U6 snRNA-associated Sm-like protein LSm8",
-          "gene": "LSM8",
-          "chains": "u",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Microfibrillar-associated protein 1",
-          "gene": "MFAP1",
-          "chains": "K",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "NHP2-like protein 1",
-          "gene": "NHP2L1; SNU13",
-          "chains": "O",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein F",
-          "gene": "PBSCF; SNRPF",
-          "chains": "T; b; i",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein G",
-          "gene": "PBSCG; SNRPG",
-          "chains": "V; d; k",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "PHD finger-like domain-containing protein 5A",
-          "gene": "PHF5A",
-          "chains": "y",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U4/U6 small nuclear ribonucleoprotein Prp31",
-          "gene": "PRP31; PRPF31",
-          "chains": "H",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U4/U6 small nuclear ribonucleoprotein Prp4",
-          "gene": "PRP4; PRPF4",
-          "chains": "F",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U5 small nuclear ribonucleoprotein 40 kDa protein",
-          "gene": "PRP8BP; SFP38; SNRNP40; WDR57",
-          "chains": "D",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Pre-mRNA-processing-splicing factor 8",
-          "gene": "PRPC8; PRPF8",
-          "chains": "A",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Pre-mRNA-splicing factor 38A",
-          "gene": "PRPF38A",
-          "chains": "I",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 1",
-          "gene": "SAP155; SF3B1",
-          "chains": "v",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U4/U6.U5 tri-snRNP-associated protein 1",
-          "gene": "SART1",
-          "chains": "P",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 5",
-          "gene": "SF3B10; SF3B5",
-          "chains": "x",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "WD40 repeat-containing protein SMU1",
-          "gene": "SMU1",
-          "chains": "L",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U2 small nuclear ribonucleoprotein A'",
-          "gene": "SNRPA1",
-          "chains": "z",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U2 small nuclear ribonucleoprotein B''",
-          "gene": "SNRPB2",
-          "chains": "1",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D1",
-          "gene": "SNRPD1",
-          "chains": "Z; g; n",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D2",
-          "gene": "SNRPD1; SNRPD2",
-          "chains": "S; a; h",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D3",
-          "gene": "SNRPD3",
-          "chains": "W; e; l",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein E",
-          "gene": "SNRPE",
-          "chains": "U; c; j",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Zinc finger matrin-type protein 2",
-          "gene": "ZMAT2",
-          "chains": "N",
-          "organisms": "Homo sapiens"
-        }
-      ],
-      "rnas": [
-        {
-          "name": "Homo sapiens RNA, U6 small nuclear 1 (RNU6-1), small nuclear RNA",
-          "gene": "",
-          "chains": "6",
-          "organisms": ""
-        },
-        {
-          "name": "Homo sapiens U4A snRNA",
-          "gene": "",
-          "chains": "4",
-          "organisms": ""
-        },
-        {
-          "name": "Homo sapiens U5 A small nuclear RNA",
-          "gene": "",
-          "chains": "5",
-          "organisms": ""
-        },
-        {
-          "name": "Human gene for small nuclear RNA U2 (snRNA U2)",
-          "gene": "",
-          "chains": "2",
-          "organisms": ""
-        },
-        {
-          "name": "MINX pre-mRNA",
-          "gene": "",
-          "chains": "Y",
-          "organisms": ""
-        }
-      ],
-      "protein_count": 38,
-      "rna_count": 5,
-      "chain_count": 57,
-      "has_prpf8": true,
-      "has_sf3b1": true,
-      "script_path": "scripts/5o9z.cxc"
-    },
-    {
       "pdb_id": "5zwm",
       "title": "Cryo-EM structure of the yeast pre-B complex at an average resolution of 3.4~4.6 angstrom (tri-snRNP and U2 snRNP Part)",
       "state": "pre-B",
@@ -21408,6 +21727,151 @@
       "script_path": "scripts/5zwm.cxc"
     },
     {
+      "pdb_id": "5zwn",
+      "title": "Cryo-EM structure of the yeast pre-B complex at an average resolution of 3.3 angstrom (Part II: U1 snRNP region)",
+      "state": "pre-B",
+      "species": "S. cerevisiae",
+      "species_code": "YEAST",
+      "resolution": "3.4",
+      "year": "2018",
+      "paper_title": "Structures of the fully assembled <i>Saccharomyces cerevisiae</i> spliceosome before activation.",
+      "doi": "10.1126/science.aau0325",
+      "pubmed_id": "29794219",
+      "journal": "Science",
+      "authors": "Bai R; Wan R; Yan C; Lei J; Shi Y",
+      "authors_short": "Bai R; Wan R; Yan C; et al. (5 authors)",
+      "proteins": [
+        {
+          "name": "Protein LUC7",
+          "gene": "EPE1; EXM2; LUC7; YDL087C",
+          "chains": "Y",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "U1 small nuclear ribonucleoprotein C",
+          "gene": "L8003.21; YHC1; YLR298C",
+          "chains": "R",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D2",
+          "gene": "L9328.5; SMD2; YLR275W",
+          "chains": "c",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D3",
+          "gene": "L9634.6; SMD3; YLR147C",
+          "chains": "d",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Protein NAM8",
+          "gene": "MRE2; MUD15; NAM8; YHR086W",
+          "chains": "V",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "56 kDa U1 small nuclear ribonucleoprotein component",
+          "gene": "MUD10; SNU56; YDR240C",
+          "chains": "W",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "U1 small nuclear ribonucleoprotein component PRP42",
+          "gene": "MUD16; PRP42; SNU65; YD8419.02; YDR235W",
+          "chains": "T",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "U1 small nuclear ribonucleoprotein A",
+          "gene": "MUD1; YBR0915; YBR119W",
+          "chains": "S",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein F",
+          "gene": "P9705.4; SMX3; YPR182W",
+          "chains": "f",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Pre-mRNA-splicing ATP-dependent RNA helicase PRP28",
+          "gene": "PRP28; YD8419.10C; YDR243C",
+          "chains": "y",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Pre-mRNA-processing factor 39",
+          "gene": "PRP39; YM9827.06; YML046W",
+          "chains": "U",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein-associated protein B",
+          "gene": "SMB1; YER029C",
+          "chains": "a",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein Sm D1",
+          "gene": "SMD1; YGR074W",
+          "chains": "b",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein E",
+          "gene": "SME1; YOR159C",
+          "chains": "e",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "Small nuclear ribonucleoprotein G",
+          "gene": "SMX2; SNP2; YFL017BW; YFL017W-A",
+          "chains": "g",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "U1 small nuclear ribonucleoprotein 70 kDa homolog",
+          "gene": "SNP1; YIL061C",
+          "chains": "Q",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "U1 small nuclear ribonucleoprotein component SNU71",
+          "gene": "SNU71; YGR013W",
+          "chains": "X",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        },
+        {
+          "name": "U1 snRNP",
+          "gene": "",
+          "chains": "x",
+          "organisms": "Saccharomyces cerevisiae S288C"
+        }
+      ],
+      "rnas": [
+        {
+          "name": "pre-mRNA",
+          "gene": "",
+          "chains": "G",
+          "organisms": ""
+        },
+        {
+          "name": "U1 snRNA",
+          "gene": "",
+          "chains": "P",
+          "organisms": ""
+        }
+      ],
+      "protein_count": 18,
+      "rna_count": 2,
+      "chain_count": 22,
+      "has_prpf8": false,
+      "has_sf3b1": false,
+      "script_path": "scripts/5zwn.cxc"
+    },
+    {
       "pdb_id": "6ah0",
       "title": "The Cryo-EM Structure of the Precusor of Human Pre-catalytic Spliceosome (pre-B complex)",
       "state": "pre-B",
@@ -21689,325 +22153,6 @@
       "has_prpf8": true,
       "has_sf3b1": true,
       "script_path": "scripts/6ah0.cxc"
-    },
-    {
-      "pdb_id": "6ahd",
-      "title": "The Cryo-EM Structure of Human Pre-catalytic Spliceosome (B complex) at 3.8 angstrom resolution",
-      "state": "pre-B",
-      "species": "Human",
-      "species_code": "HUMAN",
-      "resolution": "3.8",
-      "year": "2018",
-      "paper_title": "Structures of the human pre-catalytic spliceosome and its precursor spliceosome.",
-      "doi": "10.1038/s41422-018-0094-7",
-      "pubmed_id": "30315277",
-      "journal": "Cell Res",
-      "authors": "Zhan X; Yan C; Zhang X; Lei J; Shi Y",
-      "authors_short": "Zhan X; Yan C; Zhang X; et al. (5 authors)",
-      "proteins": [
-        {
-          "name": "U5 small nuclear ribonucleoprotein 200 kDa helicase",
-          "gene": "ASCC3L1; BRR2; HELIC2; KIAA0788; SNRNP200",
-          "chains": "D",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Pre-mRNA-processing factor 6",
-          "gene": "C20ORF14; PRPF6",
-          "chains": "N",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U6 snRNA-associated Sm-like protein LSm2",
-          "gene": "C6ORF28; G7B; LSM2",
-          "chains": "q",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 6",
-          "gene": "CGI-110; HSPC175; HT006; SAP14; SF3B14; SF3B14A; SF3B6",
-          "chains": "5",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Peptidyl-prolyl cis-trans isomerase H",
-          "gene": "CYP20; CYPH; PPIH",
-          "chains": "W",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Thioredoxin-like protein 4A",
-          "gene": "DIM1; TXNL4; TXNL4A",
-          "chains": "O",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "116 kDa U5 small nuclear ribonucleoprotein component",
-          "gene": "EFTUD2; KIAA0031; SNRP116",
-          "chains": "C",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "WW domain-binding protein 4",
-          "gene": "FBP21; FNBP21; WBP4",
-          "chains": "X",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U4/U6 small nuclear ribonucleoprotein Prp3",
-          "gene": "HPRP3; PRP3; PRPF3",
-          "chains": "J",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 3",
-          "gene": "KIAA0017; SAP130; SF3B3",
-          "chains": "3",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U6 snRNA-associated Sm-like protein LSm3",
-          "gene": "LSM3; MDS017",
-          "chains": "r",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U6 snRNA-associated Sm-like protein LSm4",
-          "gene": "LSM4",
-          "chains": "s",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U6 snRNA-associated Sm-like protein LSm5",
-          "gene": "LSM5",
-          "chains": "t",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U6 snRNA-associated Sm-like protein LSm6",
-          "gene": "LSM6",
-          "chains": "x",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U6 snRNA-associated Sm-like protein LSm7",
-          "gene": "LSM7",
-          "chains": "y",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U6 snRNA-associated Sm-like protein LSm8",
-          "gene": "LSM8",
-          "chains": "z",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Microfibrillar-associated protein 1",
-          "gene": "MFAP1",
-          "chains": "0",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "NHP2-like protein 1",
-          "gene": "NHP2L1; SNU13",
-          "chains": "M",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein G",
-          "gene": "PBSCG; SNRPG",
-          "chains": "S; f; n",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "PHD finger-like domain-containing protein 5A",
-          "gene": "PHF5A",
-          "chains": "6",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U4/U6 small nuclear ribonucleoprotein Prp31",
-          "gene": "PRP31; PRPF31",
-          "chains": "L",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U4/U6 small nuclear ribonucleoprotein Prp4",
-          "gene": "PRP4; PRPF4",
-          "chains": "K",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U5 small nuclear ribonucleoprotein 40 kDa protein",
-          "gene": "PRP8BP; SFP38; SNRNP40; WDR57",
-          "chains": "E",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Pre-mRNA-processing-splicing factor 8",
-          "gene": "PRPC8; PRPF8",
-          "chains": "A",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Pre-mRNA-splicing factor 38A",
-          "gene": "PRPF38A",
-          "chains": "Z",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 1",
-          "gene": "SAP114; SF3A1",
-          "chains": "u",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 2",
-          "gene": "SAP145; SF3B2",
-          "chains": "2",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 1",
-          "gene": "SAP155; SF3B1",
-          "chains": "1",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 4",
-          "gene": "SAP49; SF3B4",
-          "chains": "4",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 3",
-          "gene": "SAP61; SF3A3",
-          "chains": "w",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3A subunit 2",
-          "gene": "SAP62; SF3A2",
-          "chains": "v",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U4/U6.U5 tri-snRNP-associated protein 1",
-          "gene": "SART1",
-          "chains": "9",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Splicing factor 3B subunit 5",
-          "gene": "SF3B10; SF3B5",
-          "chains": "7",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "SmB",
-          "gene": "",
-          "chains": "U; a; i",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "SmE",
-          "gene": "",
-          "chains": "Q; d; l",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "SmF",
-          "gene": "",
-          "chains": "R; e; m",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "WD40 repeat-containing protein SMU1",
-          "gene": "SMU1",
-          "chains": "Y",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U2 small nuclear ribonucleoprotein A'",
-          "gene": "SNRPA1",
-          "chains": "o",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "U2 small nuclear ribonucleoprotein B''",
-          "gene": "SNRPB2",
-          "chains": "p",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D1",
-          "gene": "SNRPD1",
-          "chains": "V; b; j",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D2",
-          "gene": "SNRPD1; SNRPD2",
-          "chains": "P; c; k",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Small nuclear ribonucleoprotein Sm D3",
-          "gene": "SNRPD3",
-          "chains": "T; g; h",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Ubiquitin-like protein 5",
-          "gene": "UBL5",
-          "chains": "A0",
-          "organisms": "Homo sapiens"
-        },
-        {
-          "name": "Zinc finger matrin-type protein 2",
-          "gene": "ZMAT2",
-          "chains": "8",
-          "organisms": "Homo sapiens"
-        }
-      ],
-      "rnas": [
-        {
-          "name": "pre-mRNA",
-          "gene": "",
-          "chains": "G",
-          "organisms": ""
-        },
-        {
-          "name": "U2snRNA",
-          "gene": "",
-          "chains": "H",
-          "organisms": ""
-        },
-        {
-          "name": "U4snRNA",
-          "gene": "",
-          "chains": "I",
-          "organisms": ""
-        },
-        {
-          "name": "U5snRNA",
-          "gene": "",
-          "chains": "B",
-          "organisms": ""
-        },
-        {
-          "name": "U6snRNA",
-          "gene": "",
-          "chains": "F",
-          "organisms": ""
-        }
-      ],
-      "protein_count": 44,
-      "rna_count": 5,
-      "chain_count": 66,
-      "has_prpf8": true,
-      "has_sf3b1": true,
-      "script_path": "scripts/6ahd.cxc"
     },
     {
       "pdb_id": "6qx9",
@@ -35453,7 +35598,7 @@
       "canonical_chain_ids": [
         {
           "canonical_identity": "ZMAT2",
-          "canonical_base_id": "XB7",
+          "canonical_base_id": "XB8",
           "subcomplex": "other",
           "id_source": "generated_from_class"
         }
@@ -36945,7 +37090,7 @@
       "canonical_chain_ids": [
         {
           "canonical_identity": "WDR83",
-          "canonical_base_id": "XBT",
+          "canonical_base_id": "XBU",
           "subcomplex": "other",
           "id_source": "generated_from_class"
         }
@@ -38479,7 +38624,7 @@
       "canonical_chain_ids": [
         {
           "canonical_identity": "UBL5",
-          "canonical_base_id": "XBI",
+          "canonical_base_id": "XBJ",
           "subcomplex": "other",
           "id_source": "generated_from_class"
         }
@@ -38650,7 +38795,7 @@
       "canonical_chain_ids": [
         {
           "canonical_identity": "WDR70",
-          "canonical_base_id": "XBS",
+          "canonical_base_id": "XBT",
           "subcomplex": "other",
           "id_source": "generated_from_class"
         }
@@ -38676,7 +38821,7 @@
       "canonical_chain_ids": [
         {
           "canonical_identity": "ZCCHC10",
-          "canonical_base_id": "XB6",
+          "canonical_base_id": "XB7",
           "subcomplex": "other",
           "id_source": "generated_from_class"
         }
@@ -39956,7 +40101,7 @@
       "canonical_chain_ids": [
         {
           "canonical_identity": "YJU2B",
-          "canonical_base_id": "XB1",
+          "canonical_base_id": "XB2",
           "subcomplex": "other",
           "id_source": "generated_from_class"
         }

@@ -3,15 +3,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #403; target model: #403.1.
+# Structure group: #404; target model: #404.1.
 
-open 8h6l id 403.9 name 8H6L_anchor
-open 8qpk id 403.1 name 8QPK
-rename #403 pre_B_8qpk_structure
+open 8h6l id 404.9 name 8H6L_anchor
+open 8qpk id 404.1 name 8QPK
+rename #404 pre_B_8qpk_structure
 
 # Align on PRPF8.
-matchmaker #403.1/A to #403.9/5B
-close #403.9
+matchmaker #404.1/A to #404.9/5B
+close #404.9
 
 hide atoms
 cartoon
@@ -37,37 +37,36 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # DDX23
-color #403.1/G #CA9982
-# TXNL4A
-color #403.1/D #C3BA7A
-# PRPF31
-color #403.1/L #DFD570
-# PRPF8
-color #403.1/A #BFC3E8
-# RBM42
-color #403.1/R #44A0A7
-# USP39
-color #403.1/U #B37E6A
-# SART1
-color #403.1/S #D6937B
-# EFTUD2
-color #403.1/C #6495ED
-# U5 snRNA
-color #403.1/5 #0000CD
+color #404.1/G #CA9982
 # U4 snRNA
-color #403.1/4 #E6D900
+color #404.1/4 #E6D900
 # SNRNP27
-color #403.1/X #F4E7D2
+color #404.1/X #F4E7D2
 # pre-mRNA
-color #403.1/z #303030
+color #404.1/z #303030
 # U6 snRNA
-color #403.1/6 #DC143C
+color #404.1/6 #DC143C
 # PRPF6
-color #403.1/N #CFA785
+color #404.1/N #CFA785
 # SNRNP200
-color #403.1/B #AFEEEE
+color #404.1/B #AFEEEE
 # SF3A1
-color #403.1/7 #55947F
-show nucleic
+color #404.1/7 #55947F
+# TXNL4A
+color #404.1/D #C3BA7A
+# PRPF31
+color #404.1/L #DFD570
+# PRPF8
+color #404.1/A #BFC3E8
+# RBM42
+color #404.1/R #44A0A7
+# USP39
+color #404.1/U #B37E6A
+# SART1
+color #404.1/S #D6937B
+# EFTUD2
+color #404.1/C #6495ED
+# U5 snRNA
+color #404.1/5 #0000CD
 view
 show nucleic

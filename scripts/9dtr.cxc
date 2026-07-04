@@ -3,15 +3,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #417; target model: #417.1.
+# Structure group: #418; target model: #418.1.
 
-open 8h6l id 417.9 name 8H6L_anchor
-open 9dtr id 417.1 name 9DTR
-rename #417 P_9dtr_structure
+open 8h6l id 418.9 name 8H6L_anchor
+open 9dtr id 418.1 name 9DTR
+rename #418 P_9dtr_structure
 
 # Align on PRPF8.
-matchmaker #417.1/A to #417.9/5B
-close #417.9
+matchmaker #418.1/A to #418.9/5B
+close #418.9
 
 hide atoms
 cartoon
@@ -37,89 +37,88 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # U2 snRNA
-color #417.1/2 #006400
-# U5 snRNA
-color #417.1/5 #0000CD
-# U6 snRNA
-color #417.1/6 #DC143C
-# PRPF8
-color #417.1/A #BFC3E8
-# EFTUD2
-color #417.1/C #6495ED
-# pre-mRNA
-color #417.1/E #303030
-# ISY1
-color #417.1/G #FFEF8C
-# CWC22
-color #417.1/H #2C54DD
+color #418.1/2 #006400
 # INTRON
-color #417.1/I #303030
+color #418.1/I #303030
 # PLRG1
-color #417.1/J #F4A460
+color #418.1/J #F4A460
 # SNW1
-color #417.1/K #D49F96
+color #418.1/K #D49F96
 # BUD31
-color #417.1/L #FFF584
+color #418.1/L #FFF584
 # CWC2
-color #417.1/M #E6B566
+color #418.1/M #E6B566
 # RBM22
-color #417.1/N #DE9A52
+color #418.1/N #DE9A52
 # CDC5L
-color #417.1/O #DAA520
+color #418.1/O #DAA520
 # CWC15
-color #417.1/P #FFDEAD
+color #418.1/P #FFDEAD
 # CRNKL1
-color #417.1/S #FFC388
+color #418.1/S #FFC388
+# U5 snRNA
+color #418.1/5 #0000CD
 # SYF1
-color #417.1/T #FF957B
+color #418.1/T #FF957B
 # DHX8
-color #417.1/V #900C3F
+color #418.1/V #900C3F
 # SNRPA1
-color #417.1/W #58D68D
+color #418.1/W #58D68D
 # SNRPB2
-color #417.1/Y #DAF7A6
+color #418.1/Y #DAF7A6
 # U5-Sm SNRPB
-color #417.1/b #B0C4DE
+color #418.1/b #B0C4DE
 # U2-Sm SNRPB
-color #417.1/k #D5F5E3
+color #418.1/k #D5F5E3
 # SLU7
-color #417.1/c #5A338B
+color #418.1/c #5A338B
 # U5-Sm SNRPD3
-color #417.1/d #B0C4DE
+color #418.1/d #B0C4DE
 # U2-Sm SNRPD3
-color #417.1/n #D5F5E3
+color #418.1/n #D5F5E3
 # U5-Sm SNRPE
-color #417.1/e #B0C4DE
+color #418.1/e #B0C4DE
 # U2-Sm SNRPE
-color #417.1/p #D5F5E3
+color #418.1/p #D5F5E3
+# U6 snRNA
+color #418.1/6 #DC143C
 # U5-Sm SNRPF
-color #417.1/f #B0C4DE
+color #418.1/f #B0C4DE
 # U2-Sm SNRPF
-color #417.1/q #D5F5E3
+color #418.1/q #D5F5E3
 # U5-Sm SNRPG
-color #417.1/g #B0C4DE
+color #418.1/g #B0C4DE
 # U2-Sm SNRPG
-color #417.1/r #D5F5E3
+color #418.1/r #D5F5E3
 # U5-Sm SNRPD1
-color #417.1/h #B0C4DE
+color #418.1/h #B0C4DE
 # U2-Sm SNRPD1
-color #417.1/l #D5F5E3
+color #418.1/l #D5F5E3
 # U5-Sm SNRPD2
-color #417.1/j #B0C4DE
+color #418.1/j #B0C4DE
 # U2-Sm SNRPD2
-color #417.1/m #D5F5E3
+color #418.1/m #D5F5E3
 # PRPF17
-color #417.1/o #FFF7C9
+color #418.1/o #FFF7C9
 # PRPF19
-color #417.1/t #FFFFAB
+color #418.1/t #FFFFAB
 # PRPF19
-color #417.1/u #FFFFAB
+color #418.1/u #FFFFAB
 # PRPF19
-color #417.1/v #FFFFAB
+color #418.1/v #FFFFAB
 # PRPF19
-color #417.1/w #FFFFAB
+color #418.1/w #FFFFAB
 # SYF2
-color #417.1/y #FF8C00
-show nucleic
+color #418.1/y #FF8C00
+# PRPF8
+color #418.1/A #BFC3E8
+# EFTUD2
+color #418.1/C #6495ED
+# pre-mRNA
+color #418.1/E #303030
+# ISY1
+color #418.1/G #FFEF8C
+# CWC22
+color #418.1/H #2C54DD
 view
 show nucleic

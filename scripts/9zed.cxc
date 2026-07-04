@@ -3,15 +3,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #435; target model: #435.1.
+# Structure group: #436; target model: #436.1.
 
-open 8h6l id 435.9 name 8H6L_anchor
-open 9zed id 435.1 name 9ZED
-rename #435 U2_pre_A_A_9zed_structure
+open 8h6l id 436.9 name 8H6L_anchor
+open 9zed id 436.1 name 9ZED
+rename #436 U2_pre_A_A_9zed_structure
 
 # Align on SF3B1.
-matchmaker #435.1/B1 to #435.9/2G
-close #435.9
+matchmaker #436.1/B1 to #436.9/2G
+close #436.9
 
 hide atoms
 cartoon
@@ -37,31 +37,30 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # U2 snRNA
-color #435.1/2 #006400
-# NAM8
-color #435.1/A #C7A6BE
-# SF3A1
-color #435.1/A1 #55947F
-# SF3A2
-color #435.1/A2 #75A074
-# SF3A3
-color #435.1/A3 #9BCF91
-# SF3B1
-color #435.1/B1 #487957
-# SF3B2
-color #435.1/B2 #49926C
-# SF3B3
-color #435.1/B3 #6A9064
-# SF3B4
-color #435.1/B4 #77B088
+color #436.1/2 #006400
 # SF3B5
-color #435.1/B5 #92BB8F
+color #436.1/B5 #92BB8F
 # SF3B6
-color #435.1/B6 #ADCEA0
+color #436.1/B6 #ADCEA0
 # PHF5A
-color #435.1/H #375A40
+color #436.1/H #375A40
 # pre-mRNA
-color #435.1/R #303030
-show nucleic
+color #436.1/R #303030
+# NAM8
+color #436.1/A #C7A6BE
+# SF3A1
+color #436.1/A1 #55947F
+# SF3A2
+color #436.1/A2 #75A074
+# SF3A3
+color #436.1/A3 #9BCF91
+# SF3B1
+color #436.1/B1 #487957
+# SF3B2
+color #436.1/B2 #49926C
+# SF3B3
+color #436.1/B3 #6A9064
+# SF3B4
+color #436.1/B4 #77B088
 view
 show nucleic

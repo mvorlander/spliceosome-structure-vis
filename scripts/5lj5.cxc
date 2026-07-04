@@ -38,22 +38,6 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # U5 snRNA
 color #311.1/U #0000CD
-# pre-mRNA
-color #311.1/E #303030
-# INTRON
-color #311.1/I #303030
-# U2 snRNA
-color #311.1/Z #006400
-# U6 snRNA
-color #311.1/V #DC143C
-# PRPF8
-color #311.1/A #BFC3E8
-# SNRNP200
-color #311.1/B #AFEEEE
-# CCDC94
-color #311.1/D #CE4678
-# CCDC49
-color #311.1/F #2F4DB1
 # EFTUD2
 color #311.1/C #6495ED
 # ISY1
@@ -74,6 +58,8 @@ color #311.1/N #DE9A52
 color #311.1/O #DAA520
 # CWC15
 color #311.1/P #FFDEAD
+# pre-mRNA
+color #311.1/E #303030
 # CRNKL1
 color #311.1/S #FFC388
 # SYF1
@@ -106,6 +92,8 @@ color #311.1/l #D5F5E3
 color #311.1/j #B0C4DE
 # U2-Sm SNRPD2
 color #311.1/m #D5F5E3
+# INTRON
+color #311.1/I #303030
 # SNRPA1
 color #311.1/W #58D68D
 # SNRPB2
@@ -120,6 +108,17 @@ color #311.1/u #FFFFAB
 color #311.1/v #FFFFAB
 # PRPF19
 color #311.1/w #FFFFAB
-show nucleic
+# U2 snRNA
+color #311.1/Z #006400
+# U6 snRNA
+color #311.1/V #DC143C
+# PRPF8
+color #311.1/A #BFC3E8
+# SNRNP200
+color #311.1/B #AFEEEE
+# CCDC94
+color #311.1/D #CE4678
+# CCDC49
+color #311.1/F #2F4DB1
 view
 show nucleic

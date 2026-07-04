@@ -3,15 +3,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #335; target model: #335.1.
+# Structure group: #336; target model: #336.1.
 
-open 8h6l id 335.9 name 8H6L_anchor
-open 6g90 id 335.1 name 6G90
-rename #335 U2_pre_A_A_6g90_structure
+open 8h6l id 336.9 name 8H6L_anchor
+open 6g90 id 336.1 name 6G90
+rename #336 U2_pre_A_A_6g90_structure
 
 # Align on SF3B1.
-matchmaker #335.1/O to #335.9/2G
-close #335.9
+matchmaker #336.1/O to #336.9/2G
+close #336.9
 
 hide atoms
 cartoon
@@ -37,79 +37,78 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # U1 snRNA
-color #335.1/1 #B66AAE
-# U2 snRNA
-color #335.1/2 #006400
-# SNRPA
-color #335.1/A #C07AB6
-# SNRNP70
-color #335.1/B #8C3D78
-# SNRPC
-color #335.1/C #D7A3CF
-# PRPF39
-color #335.1/D #E1B8D9
-# PRP42
-color #335.1/E #7F5BA6
-# NAM8
-color #335.1/F #C7A6BE
-# SNU56
-color #335.1/G #D65B96
+color #336.1/1 #B66AAE
 # LUC7L
-color #335.1/H #B03372
+color #336.1/H #B03372
 # pre-mRNA
-color #335.1/I #303030
+color #336.1/I #303030
 # SNU71
-color #335.1/J #A95A9B
+color #336.1/J #A95A9B
 # SF3B1
-color #335.1/O #487957
+color #336.1/O #487957
 # SF3B3
-color #335.1/P #6A9064
+color #336.1/P #6A9064
 # SF3B2
-color #335.1/Q #49926C
+color #336.1/Q #49926C
 # SF3B4
-color #335.1/R #77B088
+color #336.1/R #77B088
 # PHF5A
-color #335.1/S #375A40
+color #336.1/S #375A40
 # SF3A3
-color #335.1/T #9BCF91
+color #336.1/T #9BCF91
 # SF3A2
-color #335.1/U #75A074
+color #336.1/U #75A074
+# U2 snRNA
+color #336.1/2 #006400
 # SF3A1
-color #335.1/V #55947F
+color #336.1/V #55947F
 # SNRPA1
-color #335.1/W #58D68D
+color #336.1/W #58D68D
 # SNRPB2
-color #335.1/Y #DAF7A6
+color #336.1/Y #DAF7A6
 # SF3B5
-color #335.1/Z #92BB8F
+color #336.1/Z #92BB8F
 # U1-Sm SNRPB
-color #335.1/b #EAD7E8
+color #336.1/b #EAD7E8
 # U2-Sm SNRPB
-color #335.1/s #D5F5E3
+color #336.1/s #D5F5E3
 # U1-Sm SNRPD3
-color #335.1/d #EAD7E8
+color #336.1/d #EAD7E8
 # U2-Sm SNRPD3
-color #335.1/v #D5F5E3
+color #336.1/v #D5F5E3
 # U1-Sm SNRPE
-color #335.1/e #EAD7E8
+color #336.1/e #EAD7E8
 # U2-Sm SNRPE
-color #335.1/w #D5F5E3
+color #336.1/w #D5F5E3
 # U1-Sm SNRPF
-color #335.1/f #EAD7E8
+color #336.1/f #EAD7E8
 # U2-Sm SNRPF
-color #335.1/x #D5F5E3
+color #336.1/x #D5F5E3
 # U1-Sm SNRPG
-color #335.1/g #EAD7E8
+color #336.1/g #EAD7E8
 # U2-Sm SNRPG
-color #335.1/y #D5F5E3
+color #336.1/y #D5F5E3
+# SNRPA
+color #336.1/A #C07AB6
 # U1-Sm SNRPD1
-color #335.1/h #EAD7E8
+color #336.1/h #EAD7E8
 # U2-Sm SNRPD1
-color #335.1/t #D5F5E3
+color #336.1/t #D5F5E3
 # U1-Sm SNRPD2
-color #335.1/i #EAD7E8
+color #336.1/i #EAD7E8
 # U2-Sm SNRPD2
-color #335.1/u #D5F5E3
-show nucleic
+color #336.1/u #D5F5E3
+# SNRNP70
+color #336.1/B #8C3D78
+# SNRPC
+color #336.1/C #D7A3CF
+# PRPF39
+color #336.1/D #E1B8D9
+# PRP42
+color #336.1/E #7F5BA6
+# NAM8
+color #336.1/F #C7A6BE
+# SNU56
+color #336.1/G #D65B96
 view
 show nucleic

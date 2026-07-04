@@ -38,22 +38,6 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # PRPF8
 color #308.1/A #BFC3E8
-# SNRNP200
-color #308.1/B #AFEEEE
-# EFTUD2
-color #308.1/C #6495ED
-# pre-mRNA
-color #308.1/D #303030
-# pre-mRNA
-color #308.1/E #303030
-# SF3B3
-color #308.1/F #6A9064
-# SF3B2
-color #308.1/H #49926C
-# SF3A2
-color #308.1/I #75A074
-# PHF5A
-color #308.1/J #375A40
 # SF3B5
 color #308.1/K #92BB8F
 # U2 snRNA
@@ -74,6 +58,8 @@ color #308.1/R #E6B566
 color #308.1/S #FFDEAD
 # BUD31
 color #308.1/T #FFF584
+# SNRNP200
+color #308.1/B #AFEEEE
 # SNIP1
 color #308.1/U #89BFC8
 # CGI-79
@@ -92,6 +78,8 @@ color #308.1/c #DAA520
 color #308.1/G #487957
 # CRNKL1
 color #308.1/d #FFC388
+# EFTUD2
+color #308.1/C #6495ED
 # SYF1
 color #308.1/v #FF957B
 # SF3B4
@@ -114,6 +102,8 @@ color #308.1/k #B0C4DE
 color #308.1/i #B0C4DE
 # SNRPF
 color #308.1/h #B0C4DE
+# pre-mRNA
+color #308.1/D #303030
 # SNRPG
 color #308.1/j #B0C4DE
 # SNRPD3
@@ -122,6 +112,15 @@ color #308.1/l #B0C4DE
 color #308.1/m #B0C4DE
 # SNRPD2
 color #308.1/g #B0C4DE
-show nucleic
+# pre-mRNA
+color #308.1/E #303030
+# SF3B3
+color #308.1/F #6A9064
+# SF3B2
+color #308.1/H #49926C
+# SF3A2
+color #308.1/I #75A074
+# PHF5A
+color #308.1/J #375A40
 view
 show nucleic

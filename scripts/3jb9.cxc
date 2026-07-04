@@ -38,34 +38,6 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # PRPF8
 color #301.1/A #BFC3E8
-# EFTUD2
-color #301.1/B #6495ED
-# U5 snRNA
-color #301.1/C #0000CD
-# U5-Sm SNRPD3
-color #301.1/D #B0C4DE
-# U2-Sm SNRPD3
-color #301.1/Z #D5F5E3
-# U5-Sm SNRPB
-color #301.1/E #B0C4DE
-# U2-Sm SNRPB
-color #301.1/b #D5F5E3
-# U5-Sm SNRPD1
-color #301.1/F #B0C4DE
-# U2-Sm SNRPD1
-color #301.1/f #D5F5E3
-# U5-Sm SNRPD2
-color #301.1/G #B0C4DE
-# U2-Sm SNRPD2
-color #301.1/l #D5F5E3
-# U5-Sm SNRPE
-color #301.1/H #B0C4DE
-# U2-Sm SNRPE
-color #301.1/m #D5F5E3
-# U5-Sm SNRPF
-color #301.1/I #B0C4DE
-# U2-Sm SNRPF
-color #301.1/n #D5F5E3
 # U5-Sm SNRPG
 color #301.1/J #B0C4DE
 # U2-Sm SNRPG
@@ -94,6 +66,8 @@ color #301.1/U #FFFFAB
 color #301.1/V #FFFFAB
 # CDC5L
 color #301.1/W #DAA520
+# EFTUD2
+color #301.1/B #6495ED
 # PRPF3
 color #301.1/Y #E1DD1B
 # RBM22
@@ -114,12 +88,37 @@ color #301.1/i #FFDAB9
 color #301.1/R #FFC388
 # SYF1
 color #301.1/r #FF957B
+# U5 snRNA
+color #301.1/C #0000CD
 # AQR
 color #301.1/X #FFDAB9
 # SNRPA1
 color #301.1/j #58D68D
 # SNRPB2
 color #301.1/k #DAF7A6
-show nucleic
+# U5-Sm SNRPD3
+color #301.1/D #B0C4DE
+# U2-Sm SNRPD3
+color #301.1/Z #D5F5E3
+# U5-Sm SNRPB
+color #301.1/E #B0C4DE
+# U2-Sm SNRPB
+color #301.1/b #D5F5E3
+# U5-Sm SNRPD1
+color #301.1/F #B0C4DE
+# U2-Sm SNRPD1
+color #301.1/f #D5F5E3
+# U5-Sm SNRPD2
+color #301.1/G #B0C4DE
+# U2-Sm SNRPD2
+color #301.1/l #D5F5E3
+# U5-Sm SNRPE
+color #301.1/H #B0C4DE
+# U2-Sm SNRPE
+color #301.1/m #D5F5E3
+# U5-Sm SNRPF
+color #301.1/I #B0C4DE
+# U2-Sm SNRPF
+color #301.1/n #D5F5E3
 view
 show nucleic
