@@ -111,30 +111,28 @@ color #336.1/F #C7A6BE
 # SNU56
 color #336.1/G #D65B96
 # Named selections for resolved substrate RNA features.
-# substrate RNA: chain I, residues -1,0,1,2,3,4,5,6,7,8,9,10,51,52,53,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79, component, medium confidence
-name s_6G90_sub_substrate_M #336.1/I:-1,0,1,2,3,4,5,6,7,8,9,10,51,52,53,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79
-# branch helix substrate strand: chain I, residues 7,8,9,10,51, sequence-motif, medium confidence
-name s_6G90_sub_branch_helix_M #336.1/I:7,8,9,10,51
-# branch point region: chain I, residues 7,8,9,10,51, sequence-motif, medium confidence
-name s_6G90_sub_branch_point_region_M #336.1/I:7,8,9,10,51
-# branch point adenosine: chain I, residues 10, sequence-motif, medium confidence
-name s_6G90_sub_branch_point_adenosine_M #336.1/I:10
+# substrate RNA: residues -1,0,1,2,3,4,5,6,7,8,9,10,51,52,53,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79, component, medium confidence
+name A_complex_6G90_substrate #336.1/I:-1,0,1,2,3,4,5,6,7,8,9,10,51,52,53,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79
+# branch helix substrate strand: residues 7,8,9,10,51, sequence-motif, medium confidence
+name A_complex_6G90_branch_helix #336.1/I:7,8,9,10,51
+# branch point region: residues 7,8,9,10,51, sequence-motif, medium confidence
+name A_complex_6G90_branch_region #336.1/I:7,8,9,10,51
+# branch point adenosine: residues 10, sequence-motif, medium confidence
+name A_complex_6G90_branch_A #336.1/I:10
 # Named selections for resolved snRNA functional regions.
-# U1 snRNA 5' splice-site recognition region: chain 1, residues 1-10, review-region, medium confidence
-name r_6G90_U1_5prime_5SS_recognition_1 #336.1/1:1-10
-# U1 snRNA stem-loop 1: chain 1, residues 11-45, review-region, low confidence
-name r_6G90_U1_SL1_1 #336.1/1:11-45
-# U1 snRNA stem-loop 2: chain 1, residues 46-61;67-95, review-region, low confidence
-name r_6G90_U1_SL2_1 #336.1/1:46-61,67-95
-# U1 snRNA Sm site: chain 1, residues 241-247, sequence-motif, medium confidence
-name r_6G90_U1_Sm_site_1 #336.1/1:241-247
-# U1 snRNA Sm site: chain 1, residues 439,440,516,517,518,519,520, sequence-motif, medium confidence
-name r_6G90_U1_Sm_site_1 #336.1/1:439,440,516,517,518,519,520
-# U2 snRNA branchpoint pairing region: chain 2, residues 34-39, sequence-motif, medium confidence
-name r_6G90_U2_branchpoint_pairing_region_2 #336.1/2:34-39
-# U2 snRNA U2/U6 helix I partner: chain 2, residues 54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,79,80,81,82,83,84,85,86,108,109,110, review-region, low confidence
-name r_6G90_U2_U6_helix_I_partner_2 #336.1/2:54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,79,80,81,82,83,84,85,86,108,109,110
-# U2 snRNA stem IIa: chain 2, residues 80,81,82,83,84,85,86,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,139,140,141,142,143,144,145,146,147,148,149,150,1089, review-region, low confidence
-name r_6G90_U2_stem_IIa_2 #336.1/2:80,81,82,83,84,85,86,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,139,140,141,142,143,144,145,146,147,148,149,150,1089
+# U1 snRNA 5' splice-site recognition region: residues 1-10, review-region, medium confidence
+name A_complex_6G90_U1_5_5SS_recognition #336.1/1:1-10
+# U1 snRNA stem-loop 1: residues 11-45, review-region, low confidence
+name A_complex_6G90_U1_SL1 #336.1/1:11-45
+# U1 snRNA stem-loop 2: residues 46-61;67-95, review-region, low confidence
+name A_complex_6G90_U1_SL2 #336.1/1:46-61,67-95
+# U1 snRNA Sm site: residues 241-247; 439,440,516,517,518,519,520, sequence-motif, medium confidence
+name A_complex_6G90_U1_Sm_site #336.1/1:241-247|#336.1/1:439,440,516,517,518,519,520
+# U2 snRNA branchpoint pairing region: residues 34-39, sequence-motif, medium confidence
+name A_complex_6G90_U2_branchpoint_pairing_region #336.1/2:34-39
+# U2 snRNA U2/U6 helix I partner: residues 54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,79,80,81,82,83,84,85,86,108,109,110, review-region, low confidence
+name A_complex_6G90_U2_U6_helix_I_partner #336.1/2:54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,79,80,81,82,83,84,85,86,108,109,110
+# U2 snRNA stem IIa: residues 80,81,82,83,84,85,86,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,139,140,141,142,143,144,145,146,147,148,149,150,1089, review-region, low confidence
+name A_complex_6G90_U2_stem_IIa #336.1/2:80,81,82,83,84,85,86,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,139,140,141,142,143,144,145,146,147,148,149,150,1089
 view
 show nucleic

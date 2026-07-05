@@ -49,10 +49,10 @@ color #423.1/G #303030
 # U2 snRNA
 color #423.1/H #006400
 # Named selections for resolved substrate RNA features.
-# substrate RNA: chain G, residues 27-48, component, medium confidence
-name s_9K1W_sub_substrate_I #423.1/G:27-48
+# substrate RNA: residues 27-48, component, medium confidence
+name U2_snRNP_9K1W_substrate #423.1/G:27-48
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA branchpoint pairing region: chain H, residues 3-8, sequence-motif, medium confidence
-name r_9K1W_U2_branchpoint_pairing_region_2 #423.1/H:3-8
+# U2 snRNA branchpoint pairing region: residues 3-8, sequence-motif, medium confidence
+name U2_snRNP_9K1W_U2_branchpoint_pairing_region #423.1/H:3-8
 view
 show nucleic

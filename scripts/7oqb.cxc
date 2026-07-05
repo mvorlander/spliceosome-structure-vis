@@ -79,16 +79,16 @@ color #365.1/P #6A9064
 # SF3B4
 color #365.1/R #77B088
 # Named selections for resolved substrate RNA features.
-# substrate RNA: chain I, residues 246-268, component, medium confidence
-name s_7OQB_sub_substrate_M #365.1/I:246-268
-# intron: chain I, residues 246-268, splice-site-inference, medium confidence
-name s_7OQB_sub_intron_M #365.1/I:246-268
+# substrate RNA: residues 246-268, component, medium confidence
+name U2_snRNP_7OQB_substrate #365.1/I:246-268
+# intron: residues 246-268, splice-site-inference, medium confidence
+name U2_snRNP_7OQB_intron #365.1/I:246-268
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA U2/U6 helix I partner: chain 2, residues 32-55, review-region, low confidence
-name r_7OQB_U2_U6_helix_I_partner_2 #365.1/2:32-55
-# U2 snRNA branchpoint pairing region: chain 2, residues 34-39, sequence-motif, medium confidence
-name r_7OQB_U2_branchpoint_pairing_region_2 #365.1/2:34-39
-# U2 snRNA stem IIa: chain 2, residues 46-74;78-80, review-region, low confidence
-name r_7OQB_U2_stem_IIa_2 #365.1/2:46-74,78-80
+# U2 snRNA U2/U6 helix I partner: residues 32-55, review-region, low confidence
+name U2_snRNP_7OQB_U2_U6_helix_I_partner #365.1/2:32-55
+# U2 snRNA branchpoint pairing region: residues 34-39, sequence-motif, medium confidence
+name U2_snRNP_7OQB_U2_branchpoint_pairing_region #365.1/2:34-39
+# U2 snRNA stem IIa: residues 46-74;78-80, review-region, low confidence
+name U2_snRNP_7OQB_U2_stem_IIa #365.1/2:46-74,78-80
 view
 show nucleic

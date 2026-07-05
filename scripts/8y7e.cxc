@@ -71,16 +71,16 @@ color #417.1/7 #92BB8F
 # U2 snRNA
 color #417.1/H #006400
 # Named selections for resolved substrate RNA features.
-# substrate RNA: chain A, residues 193-222, component, medium confidence
-name s_8Y7E_sub_substrate_M #417.1/A:193-222
+# substrate RNA: residues 193-222, component, medium confidence
+name pre_B_8Y7E_substrate #417.1/A:193-222
 # Named selections for resolved snRNA functional regions.
-# U12 snRNA U2/U6 helix I partner: chain H, residues 25-51, review-region, low confidence
-name r_8Y7E_U12_U6_helix_I_partner_12 #417.1/H:25-51
-# U12 snRNA branchpoint pairing region: chain H, residues 30-45, review-region, low confidence
-name r_8Y7E_U12_branchpoint_pairing_region_12 #417.1/H:30-45
-# U12 snRNA stem IIa: chain H, residues 46-51;73-80, review-region, low confidence
-name r_8Y7E_U12_stem_IIa_12 #417.1/H:46-51,73-80
-# U12 snRNA Sm site: chain H, residues 75-81, sequence-motif, medium confidence
-name r_8Y7E_U12_Sm_site_12 #417.1/H:75-81
+# U12 snRNA U2/U6 helix I partner: residues 25-51, review-region, low confidence
+name pre_B_8Y7E_U12_U6_helix_I_partner #417.1/H:25-51
+# U12 snRNA branchpoint pairing region: residues 30-45, review-region, low confidence
+name pre_B_8Y7E_U12_branchpoint_pairing_region #417.1/H:30-45
+# U12 snRNA stem IIa: residues 46-51;73-80, review-region, low confidence
+name pre_B_8Y7E_U12_stem_IIa #417.1/H:46-51,73-80
+# U12 snRNA Sm site: residues 75-81, sequence-motif, medium confidence
+name pre_B_8Y7E_U12_Sm_site #417.1/H:75-81
 view
 show nucleic

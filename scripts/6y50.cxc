@@ -55,11 +55,11 @@ color #349.1/q #7DBF82
 # DDX46
 color #349.1/p #5BAE8A
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA U2/U6 helix I partner: chain 2, residues 25-55, review-region, low confidence
-name r_6Y50_U2_U6_helix_I_partner_2 #349.1/2:25-55
-# U2 snRNA branchpoint pairing region: chain 2, residues 33-38, sequence-motif, medium confidence
-name r_6Y50_U2_branchpoint_pairing_region_2 #349.1/2:33-38
-# U2 snRNA stem IIa: chain 2, residues 46-65, review-region, low confidence
-name r_6Y50_U2_stem_IIa_2 #349.1/2:46-65
+# U2 snRNA U2/U6 helix I partner: residues 25-55, review-region, low confidence
+name U2_snRNP_6Y50_U2_U6_helix_I_partner #349.1/2:25-55
+# U2 snRNA branchpoint pairing region: residues 33-38, sequence-motif, medium confidence
+name U2_snRNP_6Y50_U2_branchpoint_pairing_region #349.1/2:33-38
+# U2 snRNA stem IIa: residues 46-65, review-region, low confidence
+name U2_snRNP_6Y50_U2_stem_IIa #349.1/2:46-65
 view
 show nucleic

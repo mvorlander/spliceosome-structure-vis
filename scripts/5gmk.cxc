@@ -123,52 +123,46 @@ color #309.1/B #303030
 # pre-mRNA
 color #309.1/N #303030
 # Named selections for resolved substrate RNA features.
-# 5' exon: chain B, residues 87-99, component-name, high confidence
-name s_5GMK_sub_exon_5_MA #309.1/B:87-99
-# substrate RNA: chain B, residues 87-99, component, medium confidence
-name s_5GMK_sub_substrate_MA #309.1/B:87-99
-# branch point region: chain M, residues 482-510, component-name, high confidence
-name s_5GMK_sub_branch_point_region_I #309.1/M:482-510
-# intron: chain M, residues 482-510, component-name, high confidence
-name s_5GMK_sub_intron_I #309.1/M:482-510
-# substrate RNA: chain M, residues 482-510, component, medium confidence
-name s_5GMK_sub_substrate_I #309.1/M:482-510
-# branch helix substrate strand: chain M, residues 496-502, sequence-motif, medium confidence
-name s_5GMK_sub_branch_helix_I #309.1/M:496-502
-# branch point region: chain M, residues 496-502, sequence-motif, medium confidence
-name s_5GMK_sub_branch_point_region_I #309.1/M:496-502
-# branch point adenosine: chain M, residues 501, sequence-motif, medium confidence
-name s_5GMK_sub_branch_point_adenosine_I #309.1/M:501
-# 5' splice site: chain N, residues 100-114, component-name, high confidence
-name s_5GMK_sub_five_prime_splice_site_MB #309.1/N:100-114
-# substrate RNA: chain N, residues 100-114, component, medium confidence
-name s_5GMK_sub_substrate_MB #309.1/N:100-114
+# 5' exon: residues 87-99, component-name, high confidence
+name C_5GMK_5exon #309.1/B:87-99
+# substrate RNA: residues 100-114; 482-510; 87-99, component, medium confidence
+name C_5GMK_substrate #309.1/B:87-99|#309.1/M:482-510|#309.1/N:100-114
+# branch point region: residues 482-510; 496-502, component-name/sequence-motif, high/medium confidence
+name C_5GMK_branch_region #309.1/M:482-510|#309.1/M:496-502
+# intron: residues 482-510, component-name, high confidence
+name C_5GMK_intron #309.1/M:482-510
+# branch helix substrate strand: residues 496-502, sequence-motif, medium confidence
+name C_5GMK_branch_helix #309.1/M:496-502
+# branch point adenosine: residues 501, sequence-motif, medium confidence
+name C_5GMK_branch_A #309.1/M:501
+# 5' splice site: residues 100-114, component-name, high confidence
+name C_5GMK_5SS #309.1/N:100-114
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA U2/U6 helix I partner: chain L, residues 25-48;54-55, review-region, low confidence
-name r_5GMK_U2_U6_helix_I_partner_2 #309.1/L:25-48,54-55
-# U2 snRNA branchpoint pairing region: chain L, residues 34-39, sequence-motif, medium confidence
-name r_5GMK_U2_branchpoint_pairing_region_2 #309.1/L:34-39
-# U2 snRNA stem IIa: chain L, residues 46-48;54-63;66-75;78-80, review-region, low confidence
-name r_5GMK_U2_stem_IIa_2 #309.1/L:46-48,54-63,66-75,78-80
-# U5 snRNA loop I 5' exon contact side: chain D, residues 35-42, review-region, low confidence
-name r_5GMK_U5_loop_I_5exon_contact_5 #309.1/D:35-42
-# U5 snRNA loop I 3' exon contact side: chain D, residues 43-50, review-region, low confidence
-name r_5GMK_U5_loop_I_3exon_contact_5 #309.1/D:43-50
-# U5 snRNA loop I: chain D, residues 53-55, sequence-motif, medium confidence
-name r_5GMK_U5_loop_I_5 #309.1/D:53-55
-# U6 snRNA U4/U6 stem I partner: chain E, residues 1-30, review-region, low confidence
-name r_5GMK_U6_U4_stem_I_partner_6 #309.1/E:1-30
-# U6 snRNA U2/U6 helix I partner: chain E, residues 35-60, review-region, low confidence
-name r_5GMK_U6_U2_helix_I_partner_6 #309.1/E:35-60
-# U6 snRNA 5' splice-site upstream contact: chain E, residues 44-55, motif-neighborhood, medium confidence
-name r_5GMK_U6_5SS_upstream_contact_6 #309.1/E:44-55
-# U6 snRNA internal stem-loop: chain E, residues 46-73, motif-neighborhood, low confidence
-name r_5GMK_U6_ISL_6 #309.1/E:46-73
-# U6 snRNA ACAGAGA box: chain E, residues 47-53, sequence-motif, high confidence
-name r_5GMK_U6_ACAGAGA_box_6 #309.1/E:47-53
-# U6 snRNA AGC catalytic triad: chain E, residues 59-61, sequence-motif, medium confidence
-name r_5GMK_U6_AGC_catalytic_triad_6 #309.1/E:59-61
-# U6 snRNA LSm site: chain E, residues 103, terminal-region, low confidence
-name r_5GMK_U6_LSm_site_6 #309.1/E:103
+# U2 snRNA U2/U6 helix I partner: residues 25-48;54-55, review-region, low confidence
+name C_5GMK_U2_U6_helix_I_partner #309.1/L:25-48,54-55
+# U2 snRNA branchpoint pairing region: residues 34-39, sequence-motif, medium confidence
+name C_5GMK_U2_branchpoint_pairing_region #309.1/L:34-39
+# U2 snRNA stem IIa: residues 46-48;54-63;66-75;78-80, review-region, low confidence
+name C_5GMK_U2_stem_IIa #309.1/L:46-48,54-63,66-75,78-80
+# U5 snRNA loop I 5' exon contact side: residues 35-42, review-region, low confidence
+name C_5GMK_U5_loop_I_5exon_contact #309.1/D:35-42
+# U5 snRNA loop I 3' exon contact side: residues 43-50, review-region, low confidence
+name C_5GMK_U5_loop_I_3exon_contact #309.1/D:43-50
+# U5 snRNA loop I: residues 53-55, sequence-motif, medium confidence
+name C_5GMK_U5_loop_I #309.1/D:53-55
+# U6 snRNA U4/U6 stem I partner: residues 1-30, review-region, low confidence
+name C_5GMK_U6_U4_stem_I_partner #309.1/E:1-30
+# U6 snRNA U2/U6 helix I partner: residues 35-60, review-region, low confidence
+name C_5GMK_U6_U2_helix_I_partner #309.1/E:35-60
+# U6 snRNA 5' splice-site upstream contact: residues 44-55, motif-neighborhood, medium confidence
+name C_5GMK_U6_5SS_upstream_contact #309.1/E:44-55
+# U6 snRNA internal stem-loop: residues 46-73, motif-neighborhood, low confidence
+name C_5GMK_U6_ISL #309.1/E:46-73
+# U6 snRNA ACAGAGA box: residues 47-53, sequence-motif, high confidence
+name C_5GMK_U6_ACAGAGA_box #309.1/E:47-53
+# U6 snRNA AGC catalytic triad: residues 59-61, sequence-motif, medium confidence
+name C_5GMK_U6_AGC_catalytic_triad #309.1/E:59-61
+# U6 snRNA LSm site: residues 103, terminal-region, low confidence
+name C_5GMK_U6_LSm_site #309.1/E:103
 view
 show nucleic

@@ -121,44 +121,42 @@ color #320.1/H #FF957B
 # CRNKL1
 color #320.1/I #FFC388
 # Named selections for resolved substrate RNA features.
-# intron: chain E, residues 1-15;492-504, component-name, high confidence
-name s_5Y88_sub_intron_I #320.1/E:1-15,492-504
-# intron lariat: chain E, residues 1-15;492-504, component-name, high confidence
-name s_5Y88_sub_intron_lariat_I #320.1/E:1-15,492-504
-# substrate RNA: chain E, residues 1-15;492-504, component, medium confidence
-name s_5Y88_sub_substrate_I #320.1/E:1-15,492-504
-# branch helix substrate strand: chain E, residues 496-502, sequence-motif, medium confidence
-name s_5Y88_sub_branch_helix_I #320.1/E:496-502
-# branch point region: chain E, residues 496-502, sequence-motif, medium confidence
-name s_5Y88_sub_branch_point_region_I #320.1/E:496-502
-# branch point adenosine: chain E, residues 501, sequence-motif, medium confidence
-name s_5Y88_sub_branch_point_adenosine_I #320.1/E:501
+# intron: residues 1-15;492-504, component-name, high confidence
+name ILS_disassembly_5Y88_intron #320.1/E:1-15,492-504
+# intron lariat: residues 1-15;492-504, component-name, high confidence
+name ILS_disassembly_5Y88_intron_lariat #320.1/E:1-15,492-504
+# substrate RNA: residues 1-15;492-504, component, medium confidence
+name ILS_disassembly_5Y88_substrate #320.1/E:1-15,492-504
+# branch helix substrate strand: residues 496-502, sequence-motif, medium confidence
+name ILS_disassembly_5Y88_branch_helix #320.1/E:496-502
+# branch point region: residues 496-502, sequence-motif, medium confidence
+name ILS_disassembly_5Y88_branch_region #320.1/E:496-502
+# branch point adenosine: residues 501, sequence-motif, medium confidence
+name ILS_disassembly_5Y88_branch_A #320.1/E:501
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA U2/U6 helix I partner: chain F, residues 25-43, review-region, low confidence
-name r_5Y88_U2_U6_helix_I_partner_2 #320.1/F:25-43
-# U2 snRNA branchpoint pairing region: chain F, residues 34-39, sequence-motif, medium confidence
-name r_5Y88_U2_branchpoint_pairing_region_2 #320.1/F:34-39
-# U5 snRNA loop I 5' exon contact side: chain B, residues 35-42, review-region, low confidence
-name r_5Y88_U5_loop_I_5exon_contact_5 #320.1/B:35-42
-# U5 snRNA loop I 3' exon contact side: chain B, residues 43-50, review-region, low confidence
-name r_5Y88_U5_loop_I_3exon_contact_5 #320.1/B:43-50
-# U5 snRNA loop I: chain B, residues 53-55, sequence-motif, medium confidence
-name r_5Y88_U5_loop_I_5 #320.1/B:53-55
-# U6 snRNA U4/U6 stem I partner: chain D, residues 1-30, review-region, low confidence
-name r_5Y88_U6_U4_stem_I_partner_6R1 #320.1/D:1-30
-# U6 snRNA U2/U6 helix I partner: chain D, residues 35-60, review-region, low confidence
-name r_5Y88_U6_U2_helix_I_partner_6R1 #320.1/D:35-60
-# U6 snRNA 5' splice-site upstream contact: chain D, residues 44-55, motif-neighborhood, medium confidence
-name r_5Y88_U6_5SS_upstream_contact_6R1 #320.1/D:44-55
-# U6 snRNA internal stem-loop: chain D, residues 46-73, motif-neighborhood, low confidence
-name r_5Y88_U6_ISL_6R1 #320.1/D:46-73
-# U6 snRNA ACAGAGA box: chain D, residues 47-53, sequence-motif, high confidence
-name r_5Y88_U6_ACAGAGA_box_6R1 #320.1/D:47-53
-# U6 snRNA AGC catalytic triad: chain D, residues 59-61, sequence-motif, medium confidence
-name r_5Y88_U6_AGC_catalytic_triad_6R1 #320.1/D:59-61
-# U6 snRNA LSm site: chain x, residues 1-9, terminal-region, low confidence
-name r_5Y88_U6_LSm_site_6R2 #320.1/x:1-9
-# U6 snRNA U4/U6 stem I partner: chain x, residues 1-9, review-region, low confidence
-name r_5Y88_U6_U4_stem_I_partner_6R2 #320.1/x:1-9
+# U2 snRNA U2/U6 helix I partner: residues 25-43, review-region, low confidence
+name ILS_disassembly_5Y88_U2_U6_helix_I_partner #320.1/F:25-43
+# U2 snRNA branchpoint pairing region: residues 34-39, sequence-motif, medium confidence
+name ILS_disassembly_5Y88_U2_branchpoint_pairing_region #320.1/F:34-39
+# U5 snRNA loop I 5' exon contact side: residues 35-42, review-region, low confidence
+name ILS_disassembly_5Y88_U5_loop_I_5exon_contact #320.1/B:35-42
+# U5 snRNA loop I 3' exon contact side: residues 43-50, review-region, low confidence
+name ILS_disassembly_5Y88_U5_loop_I_3exon_contact #320.1/B:43-50
+# U5 snRNA loop I: residues 53-55, sequence-motif, medium confidence
+name ILS_disassembly_5Y88_U5_loop_I #320.1/B:53-55
+# U6 snRNA U4/U6 stem I partner: residues 1-30; 1-9, review-region, low confidence
+name ILS_disassembly_5Y88_U6_U4_stem_I_partner #320.1/D:1-30|#320.1/x:1-9
+# U6 snRNA U2/U6 helix I partner: residues 35-60, review-region, low confidence
+name ILS_disassembly_5Y88_U6_U2_helix_I_partner #320.1/D:35-60
+# U6 snRNA 5' splice-site upstream contact: residues 44-55, motif-neighborhood, medium confidence
+name ILS_disassembly_5Y88_U6_5SS_upstream_contact #320.1/D:44-55
+# U6 snRNA internal stem-loop: residues 46-73, motif-neighborhood, low confidence
+name ILS_disassembly_5Y88_U6_ISL #320.1/D:46-73
+# U6 snRNA ACAGAGA box: residues 47-53, sequence-motif, high confidence
+name ILS_disassembly_5Y88_U6_ACAGAGA_box #320.1/D:47-53
+# U6 snRNA AGC catalytic triad: residues 59-61, sequence-motif, medium confidence
+name ILS_disassembly_5Y88_U6_AGC_catalytic_triad #320.1/D:59-61
+# U6 snRNA LSm site: residues 1-9, terminal-region, low confidence
+name ILS_disassembly_5Y88_U6_LSm_site #320.1/x:1-9
 view
 show nucleic

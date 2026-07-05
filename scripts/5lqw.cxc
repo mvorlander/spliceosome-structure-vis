@@ -99,36 +99,36 @@ color #312.1/J #5FB491
 # PLRG1
 color #312.1/K #F4A460
 # Named selections for resolved substrate RNA features.
-# 5' exon: chain 9, residues 2-30, splice-site-inference, medium confidence
-name s_5LQW_sub_exon_5_M #312.1/9:2-30
-# substrate RNA: chain 9, residues 2-30;494-518, component, medium confidence
-name s_5LQW_sub_substrate_M #312.1/9:2-30,494-518
-# intron: chain 9, residues 494-518, splice-site-inference, medium confidence
-name s_5LQW_sub_intron_M #312.1/9:494-518
+# 5' exon: residues 2-30, splice-site-inference, medium confidence
+name Bact_5LQW_5exon #312.1/9:2-30
+# substrate RNA: residues 2-30;494-518, component, medium confidence
+name Bact_5LQW_substrate #312.1/9:2-30,494-518
+# intron: residues 494-518, splice-site-inference, medium confidence
+name Bact_5LQW_intron #312.1/9:494-518
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA U2/U6 helix I partner: chain 2, residues 25-55, review-region, low confidence
-name r_5LQW_U2_U6_helix_I_partner_2 #312.1/2:25-55
-# U2 snRNA branchpoint pairing region: chain 2, residues 34-39, sequence-motif, medium confidence
-name r_5LQW_U2_branchpoint_pairing_region_2 #312.1/2:34-39
-# U2 snRNA stem IIa: chain 2, residues 46-80, review-region, low confidence
-name r_5LQW_U2_stem_IIa_2 #312.1/2:46-80
-# U5 snRNA loop I 5' exon contact side: chain 5, residues 35-42, review-region, low confidence
-name r_5LQW_U5_loop_I_5exon_contact_5 #312.1/5:35-42
-# U5 snRNA loop I 3' exon contact side: chain 5, residues 43-50, review-region, low confidence
-name r_5LQW_U5_loop_I_3exon_contact_5 #312.1/5:43-50
-# U5 snRNA loop I: chain 5, residues 53, sequence-motif, medium confidence
-name r_5LQW_U5_loop_I_5 #312.1/5:53
-# U6 snRNA U4/U6 stem I partner: chain 6, residues 1-30, review-region, low confidence
-name r_5LQW_U6_U4_stem_I_partner_6 #312.1/6:1-30
-# U6 snRNA U2/U6 helix I partner: chain 6, residues 35-60, review-region, low confidence
-name r_5LQW_U6_U2_helix_I_partner_6 #312.1/6:35-60
-# U6 snRNA 5' splice-site upstream contact: chain 6, residues 44-55, motif-neighborhood, medium confidence
-name r_5LQW_U6_5SS_upstream_contact_6 #312.1/6:44-55
-# U6 snRNA internal stem-loop: chain 6, residues 46-73, motif-neighborhood, low confidence
-name r_5LQW_U6_ISL_6 #312.1/6:46-73
-# U6 snRNA ACAGAGA box: chain 6, residues 47-53, sequence-motif, high confidence
-name r_5LQW_U6_ACAGAGA_box_6 #312.1/6:47-53
-# U6 snRNA AGC catalytic triad: chain 6, residues 59-61, sequence-motif, medium confidence
-name r_5LQW_U6_AGC_catalytic_triad_6 #312.1/6:59-61
+# U2 snRNA U2/U6 helix I partner: residues 25-55, review-region, low confidence
+name Bact_5LQW_U2_U6_helix_I_partner #312.1/2:25-55
+# U2 snRNA branchpoint pairing region: residues 34-39, sequence-motif, medium confidence
+name Bact_5LQW_U2_branchpoint_pairing_region #312.1/2:34-39
+# U2 snRNA stem IIa: residues 46-80, review-region, low confidence
+name Bact_5LQW_U2_stem_IIa #312.1/2:46-80
+# U5 snRNA loop I 5' exon contact side: residues 35-42, review-region, low confidence
+name Bact_5LQW_U5_loop_I_5exon_contact #312.1/5:35-42
+# U5 snRNA loop I 3' exon contact side: residues 43-50, review-region, low confidence
+name Bact_5LQW_U5_loop_I_3exon_contact #312.1/5:43-50
+# U5 snRNA loop I: residues 53, sequence-motif, medium confidence
+name Bact_5LQW_U5_loop_I #312.1/5:53
+# U6 snRNA U4/U6 stem I partner: residues 1-30, review-region, low confidence
+name Bact_5LQW_U6_U4_stem_I_partner #312.1/6:1-30
+# U6 snRNA U2/U6 helix I partner: residues 35-60, review-region, low confidence
+name Bact_5LQW_U6_U2_helix_I_partner #312.1/6:35-60
+# U6 snRNA 5' splice-site upstream contact: residues 44-55, motif-neighborhood, medium confidence
+name Bact_5LQW_U6_5SS_upstream_contact #312.1/6:44-55
+# U6 snRNA internal stem-loop: residues 46-73, motif-neighborhood, low confidence
+name Bact_5LQW_U6_ISL #312.1/6:46-73
+# U6 snRNA ACAGAGA box: residues 47-53, sequence-motif, high confidence
+name Bact_5LQW_U6_ACAGAGA_box #312.1/6:47-53
+# U6 snRNA AGC catalytic triad: residues 59-61, sequence-motif, medium confidence
+name Bact_5LQW_U6_AGC_catalytic_triad #312.1/6:59-61
 view
 show nucleic

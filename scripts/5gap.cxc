@@ -59,23 +59,23 @@ color #307.1/D #C3BA7A
 # PRPF31
 color #307.1/F #DFD570
 # Named selections for resolved snRNA functional regions.
-# U4 snRNA U4/U6 stem I partner: chain V, residues 1-25, review-region, low confidence
-name r_5GAP_U4_U6_stem_I_partner_4 #307.1/V:1-25
-# U4 snRNA U4/U6 stem II partner: chain V, residues 45-67, review-region, low confidence
-name r_5GAP_U4_U6_stem_II_partner_4 #307.1/V:45-67
-# U4 snRNA Brr2 loading region: chain V, residues 60-67, review-region, low confidence
-name r_5GAP_U4_Brr2_loading_region_4 #307.1/V:60-67
-# U6 snRNA U4/U6 stem I partner: chain W, residues 26-30, review-region, low confidence
-name r_5GAP_U6_U4_stem_I_partner_6 #307.1/W:26-30
-# U6 snRNA U2/U6 helix I partner: chain W, residues 35-39;44-51;55-60, review-region, low confidence
-name r_5GAP_U6_U2_helix_I_partner_6 #307.1/W:35-39,44-51,55-60
-# U6 snRNA 5' splice-site upstream contact: chain W, residues 44-51;55, motif-neighborhood, medium confidence
-name r_5GAP_U6_5SS_upstream_contact_6 #307.1/W:44-51,55
-# U6 snRNA internal stem-loop: chain W, residues 46-51;55-73, motif-neighborhood, low confidence
-name r_5GAP_U6_ISL_6 #307.1/W:46-51,55-73
-# U6 snRNA ACAGAGA box: chain W, residues 47-51, sequence-motif, high confidence
-name r_5GAP_U6_ACAGAGA_box_6 #307.1/W:47-51
-# U6 snRNA AGC catalytic triad: chain W, residues 59-61, sequence-motif, medium confidence
-name r_5GAP_U6_AGC_catalytic_triad_6 #307.1/W:59-61
+# U4 snRNA U4/U6 stem I partner: residues 1-25, review-region, low confidence
+name U5_tri_snRNP_5GAP_U4_U6_stem_I_partner #307.1/V:1-25
+# U4 snRNA U4/U6 stem II partner: residues 45-67, review-region, low confidence
+name U5_tri_snRNP_5GAP_U4_U6_stem_II_partner #307.1/V:45-67
+# U4 snRNA Brr2 loading region: residues 60-67, review-region, low confidence
+name U5_tri_snRNP_5GAP_U4_Brr2_loading_region #307.1/V:60-67
+# U6 snRNA U4/U6 stem I partner: residues 26-30, review-region, low confidence
+name U5_tri_snRNP_5GAP_U6_U4_stem_I_partner #307.1/W:26-30
+# U6 snRNA U2/U6 helix I partner: residues 35-39;44-51;55-60, review-region, low confidence
+name U5_tri_snRNP_5GAP_U6_U2_helix_I_partner #307.1/W:35-39,44-51,55-60
+# U6 snRNA 5' splice-site upstream contact: residues 44-51;55, motif-neighborhood, medium confidence
+name U5_tri_snRNP_5GAP_U6_5SS_upstream_contact #307.1/W:44-51,55
+# U6 snRNA internal stem-loop: residues 46-51;55-73, motif-neighborhood, low confidence
+name U5_tri_snRNP_5GAP_U6_ISL #307.1/W:46-51,55-73
+# U6 snRNA ACAGAGA box: residues 47-51, sequence-motif, high confidence
+name U5_tri_snRNP_5GAP_U6_ACAGAGA_box #307.1/W:47-51
+# U6 snRNA AGC catalytic triad: residues 59-61, sequence-motif, medium confidence
+name U5_tri_snRNP_5GAP_U6_AGC_catalytic_triad #307.1/W:59-61
 view
 show nucleic

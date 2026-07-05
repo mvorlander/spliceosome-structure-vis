@@ -105,34 +105,34 @@ color #302.1/H #6495ED
 # SNRNP200
 color #302.1/N #AFEEEE
 # Named selections for resolved substrate RNA features.
-# substrate RNA: chain C, residues -6-13, component, medium confidence
-name s_3JCM_sub_substrate_M #302.1/C:-6-13
+# substrate RNA: residues -6-13, component, medium confidence
+name U5_tri_snRNP_3JCM_substrate #302.1/C:-6-13
 # Named selections for resolved snRNA functional regions.
-# U4 snRNA U4/U6 stem I partner: chain E, residues 1-25, review-region, low confidence
-name r_3JCM_U4_U6_stem_I_partner_4 #302.1/E:1-25
-# U4 snRNA U4/U6 stem II partner: chain E, residues 45-64, review-region, low confidence
-name r_3JCM_U4_U6_stem_II_partner_4 #302.1/E:45-64
-# U4 snRNA Brr2 loading region: chain E, residues 60-64, review-region, low confidence
-name r_3JCM_U4_Brr2_loading_region_4 #302.1/E:60-64
-# U4 snRNA Sm site: chain E, residues 144-150, sequence-motif, medium confidence
-name r_3JCM_U4_Sm_site_4 #302.1/E:144-150
-# U5 snRNA loop I 5' exon contact side: chain F, residues 35-42, review-region, low confidence
-name r_3JCM_U5_loop_I_5exon_contact_5 #302.1/F:35-42
-# U5 snRNA loop I 3' exon contact side: chain F, residues 43-50, review-region, low confidence
-name r_3JCM_U5_loop_I_3exon_contact_5 #302.1/F:43-50
-# U5 snRNA loop I: chain F, residues 53, sequence-motif, medium confidence
-name r_3JCM_U5_loop_I_5 #302.1/F:53
-# U6 snRNA U2/U6 helix I partner: chain D, residues 44-52;56-60, review-region, low confidence
-name r_3JCM_U6_U2_helix_I_partner_6 #302.1/D:44-52,56-60
-# U6 snRNA 5' splice-site upstream contact: chain D, residues 44-52, motif-neighborhood, medium confidence
-name r_3JCM_U6_5SS_upstream_contact_6 #302.1/D:44-52
-# U6 snRNA internal stem-loop: chain D, residues 46-52;56-73, motif-neighborhood, low confidence
-name r_3JCM_U6_ISL_6 #302.1/D:46-52,56-73
-# U6 snRNA ACAGAGA box: chain D, residues 47-52, sequence-motif, high confidence
-name r_3JCM_U6_ACAGAGA_box_6 #302.1/D:47-52
-# U6 snRNA AGC catalytic triad: chain D, residues 59-61, sequence-motif, medium confidence
-name r_3JCM_U6_AGC_catalytic_triad_6 #302.1/D:59-61
-# U6 snRNA LSm site: chain D, residues 108-111, terminal-region, low confidence
-name r_3JCM_U6_LSm_site_6 #302.1/D:108-111
+# U4 snRNA U4/U6 stem I partner: residues 1-25, review-region, low confidence
+name U5_tri_snRNP_3JCM_U4_U6_stem_I_partner #302.1/E:1-25
+# U4 snRNA U4/U6 stem II partner: residues 45-64, review-region, low confidence
+name U5_tri_snRNP_3JCM_U4_U6_stem_II_partner #302.1/E:45-64
+# U4 snRNA Brr2 loading region: residues 60-64, review-region, low confidence
+name U5_tri_snRNP_3JCM_U4_Brr2_loading_region #302.1/E:60-64
+# U4 snRNA Sm site: residues 144-150, sequence-motif, medium confidence
+name U5_tri_snRNP_3JCM_U4_Sm_site #302.1/E:144-150
+# U5 snRNA loop I 5' exon contact side: residues 35-42, review-region, low confidence
+name U5_tri_snRNP_3JCM_U5_loop_I_5exon_contact #302.1/F:35-42
+# U5 snRNA loop I 3' exon contact side: residues 43-50, review-region, low confidence
+name U5_tri_snRNP_3JCM_U5_loop_I_3exon_contact #302.1/F:43-50
+# U5 snRNA loop I: residues 53, sequence-motif, medium confidence
+name U5_tri_snRNP_3JCM_U5_loop_I #302.1/F:53
+# U6 snRNA U2/U6 helix I partner: residues 44-52;56-60, review-region, low confidence
+name U5_tri_snRNP_3JCM_U6_U2_helix_I_partner #302.1/D:44-52,56-60
+# U6 snRNA 5' splice-site upstream contact: residues 44-52, motif-neighborhood, medium confidence
+name U5_tri_snRNP_3JCM_U6_5SS_upstream_contact #302.1/D:44-52
+# U6 snRNA internal stem-loop: residues 46-52;56-73, motif-neighborhood, low confidence
+name U5_tri_snRNP_3JCM_U6_ISL #302.1/D:46-52,56-73
+# U6 snRNA ACAGAGA box: residues 47-52, sequence-motif, high confidence
+name U5_tri_snRNP_3JCM_U6_ACAGAGA_box #302.1/D:47-52
+# U6 snRNA AGC catalytic triad: residues 59-61, sequence-motif, medium confidence
+name U5_tri_snRNP_3JCM_U6_AGC_catalytic_triad #302.1/D:59-61
+# U6 snRNA LSm site: residues 108-111, terminal-region, low confidence
+name U5_tri_snRNP_3JCM_U6_LSm_site #302.1/D:108-111
 view
 show nucleic

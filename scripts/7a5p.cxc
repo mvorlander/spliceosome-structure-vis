@@ -131,16 +131,16 @@ color #353.1/J #FFFFAB
 # BCAS2
 color #353.1/K #FFDAB9
 # Named selections for resolved substrate RNA features.
-# substrate RNA: chain Y, residues 80-94;127-140, component, medium confidence
-name s_7A5P_sub_substrate_M #353.1/Y:80-94,127-140
-# intron: chain Y, residues 80-94;127-140, splice-site-inference, medium confidence
-name s_7A5P_sub_intron_M #353.1/Y:80-94,127-140
+# substrate RNA: residues 80-94;127-140, component, medium confidence
+name C_7A5P_substrate #353.1/Y:80-94,127-140
+# intron: residues 80-94;127-140, splice-site-inference, medium confidence
+name C_7A5P_intron #353.1/Y:80-94,127-140
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA Sm site: chain 2, residues 99-105, sequence-motif, medium confidence
-name r_7A5P_U2_Sm_site_2 #353.1/2:99-105
-# U6 snRNA internal stem-loop: chain 6, residues 80-95, motif-neighborhood, low confidence
-name r_7A5P_U6_ISL_6 #353.1/6:80-95
-# U6 snRNA AGC catalytic triad: chain 6, residues 92-94, sequence-motif, medium confidence
-name r_7A5P_U6_AGC_catalytic_triad_6 #353.1/6:92-94
+# U2 snRNA Sm site: residues 99-105, sequence-motif, medium confidence
+name C_7A5P_U2_Sm_site #353.1/2:99-105
+# U6 snRNA internal stem-loop: residues 80-95, motif-neighborhood, low confidence
+name C_7A5P_U6_ISL #353.1/6:80-95
+# U6 snRNA AGC catalytic triad: residues 92-94, sequence-motif, medium confidence
+name C_7A5P_U6_AGC_catalytic_triad #353.1/6:92-94
 view
 show nucleic

@@ -57,22 +57,20 @@ color #370.1/F #ADCEA0
 # PHF5A
 color #370.1/G #375A40
 # Named selections for resolved substrate RNA features.
-# branch point region: chain h, residues 1-13, component-name, high confidence
-name s_7Q4O_sub_branch_point_region_M #370.1/h:1-13
-# substrate RNA: chain h, residues 1-13, component, medium confidence
-name s_7Q4O_sub_substrate_M #370.1/h:1-13
-# branch helix substrate strand: chain h, residues 5-11, sequence-motif, medium confidence
-name s_7Q4O_sub_branch_helix_M #370.1/h:5-11
-# branch point region: chain h, residues 5-11, sequence-motif, medium confidence
-name s_7Q4O_sub_branch_point_region_M #370.1/h:5-11
-# branch point adenosine: chain h, residues 10, sequence-motif, medium confidence
-name s_7Q4O_sub_branch_point_adenosine_M #370.1/h:10
+# branch point region: residues 1-13; 5-11, component-name/sequence-motif, high/medium confidence
+name U2_snRNP_7Q4O_branch_region #370.1/h:1-13|#370.1/h:5-11
+# substrate RNA: residues 1-13, component, medium confidence
+name U2_snRNP_7Q4O_substrate #370.1/h:1-13
+# branch helix substrate strand: residues 5-11, sequence-motif, medium confidence
+name U2_snRNP_7Q4O_branch_helix #370.1/h:5-11
+# branch point adenosine: residues 10, sequence-motif, medium confidence
+name U2_snRNP_7Q4O_branch_A #370.1/h:10
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA U2/U6 helix I partner: chain 2, residues 29-55, review-region, low confidence
-name r_7Q4O_U2_U6_helix_I_partner_2 #370.1/2:29-55
-# U2 snRNA branchpoint pairing region: chain 2, residues 33-38, sequence-motif, medium confidence
-name r_7Q4O_U2_branchpoint_pairing_region_2 #370.1/2:33-38
-# U2 snRNA stem IIa: chain 2, residues 46-63, review-region, low confidence
-name r_7Q4O_U2_stem_IIa_2 #370.1/2:46-63
+# U2 snRNA U2/U6 helix I partner: residues 29-55, review-region, low confidence
+name U2_snRNP_7Q4O_U2_U6_helix_I_partner #370.1/2:29-55
+# U2 snRNA branchpoint pairing region: residues 33-38, sequence-motif, medium confidence
+name U2_snRNP_7Q4O_U2_branchpoint_pairing_region #370.1/2:33-38
+# U2 snRNA stem IIa: residues 46-63, review-region, low confidence
+name U2_snRNP_7Q4O_U2_stem_IIa #370.1/2:46-63
 view
 show nucleic

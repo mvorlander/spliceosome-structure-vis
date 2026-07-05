@@ -135,30 +135,30 @@ color #361.1/d #B0C4DE
 # SNRPD2
 color #361.1/k #B0C4DE
 # Named selections for resolved substrate RNA features.
-# substrate RNA: chain G, residues -11-19;191-222, component, medium confidence
-name s_7DVQ_sub_substrate_M #361.1/G:-11-19,191-222
+# substrate RNA: residues -11-19;191-222, component, medium confidence
+name Bact_7DVQ_substrate #361.1/G:-11-19,191-222
 # Named selections for resolved snRNA functional regions.
-# U12 snRNA U2/U6 helix I partner: chain H, residues 25-51, review-region, low confidence
-name r_7DVQ_U12_U6_helix_I_partner_12 #361.1/H:25-51
-# U12 snRNA branchpoint pairing region: chain H, residues 30-45, review-region, low confidence
-name r_7DVQ_U12_branchpoint_pairing_region_12 #361.1/H:30-45
-# U12 snRNA stem IIa: chain H, residues 46-51;73-80, review-region, low confidence
-name r_7DVQ_U12_stem_IIa_12 #361.1/H:46-51,73-80
-# U12 snRNA Sm site: chain H, residues 75-81, sequence-motif, medium confidence
-name r_7DVQ_U12_Sm_site_12 #361.1/H:75-81
-# U5 snRNA loop I 5' exon contact side: chain B, residues 35-42, review-region, low confidence
-name r_7DVQ_U5_loop_I_5exon_contact_5 #361.1/B:35-42
-# U5 snRNA loop I: chain B, residues 38-42, sequence-motif, medium confidence
-name r_7DVQ_U5_loop_I_5 #361.1/B:38-42
-# U5 snRNA loop I 3' exon contact side: chain B, residues 43-50, review-region, low confidence
-name r_7DVQ_U5_loop_I_3exon_contact_5 #361.1/B:43-50
-# U6atac snRNA U4/U6 stem I partner: chain F, residues 2-31, review-region, low confidence
-name r_7DVQ_U6atac_U4_stem_I_partner_6AT #361.1/F:2-31
-# U6atac snRNA internal stem-loop: chain F, residues 13-40, motif-neighborhood, low confidence
-name r_7DVQ_U6atac_ISL_6AT #361.1/F:13-40
-# U6atac snRNA AGC catalytic triad: chain F, residues 26-28, sequence-motif, medium confidence
-name r_7DVQ_U6atac_AGC_catalytic_triad_6AT #361.1/F:26-28
-# U6atac snRNA U2/U6 helix I partner: chain F, residues 36-56;61, review-region, low confidence
-name r_7DVQ_U6atac_U2_helix_I_partner_6AT #361.1/F:36-56,61
+# U12 snRNA U2/U6 helix I partner: residues 25-51, review-region, low confidence
+name Bact_7DVQ_U12_U6_helix_I_partner #361.1/H:25-51
+# U12 snRNA branchpoint pairing region: residues 30-45, review-region, low confidence
+name Bact_7DVQ_U12_branchpoint_pairing_region #361.1/H:30-45
+# U12 snRNA stem IIa: residues 46-51;73-80, review-region, low confidence
+name Bact_7DVQ_U12_stem_IIa #361.1/H:46-51,73-80
+# U12 snRNA Sm site: residues 75-81, sequence-motif, medium confidence
+name Bact_7DVQ_U12_Sm_site #361.1/H:75-81
+# U5 snRNA loop I 5' exon contact side: residues 35-42, review-region, low confidence
+name Bact_7DVQ_U5_loop_I_5exon_contact #361.1/B:35-42
+# U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence
+name Bact_7DVQ_U5_loop_I #361.1/B:38-42
+# U5 snRNA loop I 3' exon contact side: residues 43-50, review-region, low confidence
+name Bact_7DVQ_U5_loop_I_3exon_contact #361.1/B:43-50
+# U6atac snRNA U4/U6 stem I partner: residues 2-31, review-region, low confidence
+name Bact_7DVQ_U6atac_U4_stem_I_partner #361.1/F:2-31
+# U6atac snRNA internal stem-loop: residues 13-40, motif-neighborhood, low confidence
+name Bact_7DVQ_U6atac_ISL #361.1/F:13-40
+# U6atac snRNA AGC catalytic triad: residues 26-28, sequence-motif, medium confidence
+name Bact_7DVQ_U6atac_AGC_catalytic_triad #361.1/F:26-28
+# U6atac snRNA U2/U6 helix I partner: residues 36-56;61, review-region, low confidence
+name Bact_7DVQ_U6atac_U2_helix_I_partner #361.1/F:36-56,61
 view
 show nucleic

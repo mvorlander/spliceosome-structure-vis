@@ -159,38 +159,38 @@ color #335.1/A #BFC3E8
 # EFTUD2
 color #335.1/B #6495ED
 # Named selections for resolved substrate RNA features.
-# substrate RNA: chain Z, residues 233-262;380-397, component, medium confidence
-name s_6FF7_sub_substrate_M #335.1/Z:233-262,380-397
-# branch helix substrate strand: chain Z, residues 380-383, sequence-motif, medium confidence
-name s_6FF7_sub_branch_helix_M #335.1/Z:380-383
-# branch point region: chain Z, residues 380-383, sequence-motif, medium confidence
-name s_6FF7_sub_branch_point_region_M #335.1/Z:380-383
-# branch point adenosine: chain Z, residues 382, sequence-motif, medium confidence
-name s_6FF7_sub_branch_point_adenosine_M #335.1/Z:382
+# substrate RNA: residues 233-262;380-397, component, medium confidence
+name Bact_6FF7_substrate #335.1/Z:233-262,380-397
+# branch helix substrate strand: residues 380-383, sequence-motif, medium confidence
+name Bact_6FF7_branch_helix #335.1/Z:380-383
+# branch point region: residues 380-383, sequence-motif, medium confidence
+name Bact_6FF7_branch_region #335.1/Z:380-383
+# branch point adenosine: residues 382, sequence-motif, medium confidence
+name Bact_6FF7_branch_A #335.1/Z:382
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA U2/U6 helix I partner: chain 2, residues 25-45;48-55, review-region, low confidence
-name r_6FF7_U2_U6_helix_I_partner_2 #335.1/2:25-45,48-55
-# U2 snRNA branchpoint pairing region: chain 2, residues 33-38, sequence-motif, medium confidence
-name r_6FF7_U2_branchpoint_pairing_region_2 #335.1/2:33-38
-# U2 snRNA stem IIa: chain 2, residues 48-64, review-region, low confidence
-name r_6FF7_U2_stem_IIa_2 #335.1/2:48-64
-# U5 snRNA loop I 5' exon contact side: chain 5, residues 35-42, review-region, low confidence
-name r_6FF7_U5_loop_I_5exon_contact_5 #335.1/5:35-42
-# U5 snRNA loop I: chain 5, residues 38-42, sequence-motif, medium confidence
-name r_6FF7_U5_loop_I_5 #335.1/5:38-42
-# U5 snRNA loop I 3' exon contact side: chain 5, residues 43-50, review-region, low confidence
-name r_6FF7_U5_loop_I_3exon_contact_5 #335.1/5:43-50
-# U6 snRNA U4/U6 stem I partner: chain 6, residues 1-30, review-region, low confidence
-name r_6FF7_U6_U4_stem_I_partner_6 #335.1/6:1-30
-# U6 snRNA U2/U6 helix I partner: chain 6, residues 35-60, review-region, low confidence
-name r_6FF7_U6_U2_helix_I_partner_6 #335.1/6:35-60
-# U6 snRNA 5' splice-site upstream contact: chain 6, residues 38-49, motif-neighborhood, medium confidence
-name r_6FF7_U6_5SS_upstream_contact_6 #335.1/6:38-49
-# U6 snRNA ACAGAGA box: chain 6, residues 41-47, sequence-motif, high confidence
-name r_6FF7_U6_ACAGAGA_box_6 #335.1/6:41-47
-# U6 snRNA internal stem-loop: chain 6, residues 79-95, motif-neighborhood, low confidence
-name r_6FF7_U6_ISL_6 #335.1/6:79-95
-# U6 snRNA AGC catalytic triad: chain 6, residues 92-94, sequence-motif, medium confidence
-name r_6FF7_U6_AGC_catalytic_triad_6 #335.1/6:92-94
+# U2 snRNA U2/U6 helix I partner: residues 25-45;48-55, review-region, low confidence
+name Bact_6FF7_U2_U6_helix_I_partner #335.1/2:25-45,48-55
+# U2 snRNA branchpoint pairing region: residues 33-38, sequence-motif, medium confidence
+name Bact_6FF7_U2_branchpoint_pairing_region #335.1/2:33-38
+# U2 snRNA stem IIa: residues 48-64, review-region, low confidence
+name Bact_6FF7_U2_stem_IIa #335.1/2:48-64
+# U5 snRNA loop I 5' exon contact side: residues 35-42, review-region, low confidence
+name Bact_6FF7_U5_loop_I_5exon_contact #335.1/5:35-42
+# U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence
+name Bact_6FF7_U5_loop_I #335.1/5:38-42
+# U5 snRNA loop I 3' exon contact side: residues 43-50, review-region, low confidence
+name Bact_6FF7_U5_loop_I_3exon_contact #335.1/5:43-50
+# U6 snRNA U4/U6 stem I partner: residues 1-30, review-region, low confidence
+name Bact_6FF7_U6_U4_stem_I_partner #335.1/6:1-30
+# U6 snRNA U2/U6 helix I partner: residues 35-60, review-region, low confidence
+name Bact_6FF7_U6_U2_helix_I_partner #335.1/6:35-60
+# U6 snRNA 5' splice-site upstream contact: residues 38-49, motif-neighborhood, medium confidence
+name Bact_6FF7_U6_5SS_upstream_contact #335.1/6:38-49
+# U6 snRNA ACAGAGA box: residues 41-47, sequence-motif, high confidence
+name Bact_6FF7_U6_ACAGAGA_box #335.1/6:41-47
+# U6 snRNA internal stem-loop: residues 79-95, motif-neighborhood, low confidence
+name Bact_6FF7_U6_ISL #335.1/6:79-95
+# U6 snRNA AGC catalytic triad: residues 92-94, sequence-motif, medium confidence
+name Bact_6FF7_U6_AGC_catalytic_triad #335.1/6:92-94
 view
 show nucleic

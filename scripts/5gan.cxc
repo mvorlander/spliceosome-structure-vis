@@ -105,33 +105,33 @@ color #305.1/G #E1DD1B
 # SNRNP200
 color #305.1/B #AFEEEE
 # Named selections for resolved snRNA functional regions.
-# U4 snRNA U4/U6 stem I partner: chain V, residues 1-25, review-region, low confidence
-name r_5GAN_U4_U6_stem_I_partner_4 #305.1/V:1-25
-# U4 snRNA U4/U6 stem II partner: chain V, residues 45-67;73-75, review-region, low confidence
-name r_5GAN_U4_U6_stem_II_partner_4 #305.1/V:45-67,73-75
-# U4 snRNA Brr2 loading region: chain V, residues 60-67;73-95, review-region, low confidence
-name r_5GAN_U4_Brr2_loading_region_4 #305.1/V:60-67,73-95
-# U4 snRNA Sm site: chain V, residues 144-150, sequence-motif, medium confidence
-name r_5GAN_U4_Sm_site_4 #305.1/V:144-150
-# U5 snRNA loop I 5' exon contact side: chain U, residues 35-42, review-region, low confidence
-name r_5GAN_U5_loop_I_5exon_contact_5 #305.1/U:35-42
-# U5 snRNA loop I 3' exon contact side: chain U, residues 43-50, review-region, low confidence
-name r_5GAN_U5_loop_I_3exon_contact_5 #305.1/U:43-50
-# U5 snRNA loop I: chain U, residues 53, sequence-motif, medium confidence
-name r_5GAN_U5_loop_I_5 #305.1/U:53
-# U6 snRNA U4/U6 stem I partner: chain W, residues 1-9;16-30, review-region, low confidence
-name r_5GAN_U6_U4_stem_I_partner_6 #305.1/W:1-9,16-30
-# U6 snRNA U2/U6 helix I partner: chain W, residues 35-39;44-51;55-60, review-region, low confidence
-name r_5GAN_U6_U2_helix_I_partner_6 #305.1/W:35-39,44-51,55-60
-# U6 snRNA 5' splice-site upstream contact: chain W, residues 44-51;55, motif-neighborhood, medium confidence
-name r_5GAN_U6_5SS_upstream_contact_6 #305.1/W:44-51,55
-# U6 snRNA internal stem-loop: chain W, residues 46-51;55-73, motif-neighborhood, low confidence
-name r_5GAN_U6_ISL_6 #305.1/W:46-51,55-73
-# U6 snRNA ACAGAGA box: chain W, residues 47-51, sequence-motif, high confidence
-name r_5GAN_U6_ACAGAGA_box_6 #305.1/W:47-51
-# U6 snRNA AGC catalytic triad: chain W, residues 59-61, sequence-motif, medium confidence
-name r_5GAN_U6_AGC_catalytic_triad_6 #305.1/W:59-61
-# U6 snRNA LSm site: chain W, residues 108-112, terminal-region, low confidence
-name r_5GAN_U6_LSm_site_6 #305.1/W:108-112
+# U4 snRNA U4/U6 stem I partner: residues 1-25, review-region, low confidence
+name U5_tri_snRNP_5GAN_U4_U6_stem_I_partner #305.1/V:1-25
+# U4 snRNA U4/U6 stem II partner: residues 45-67;73-75, review-region, low confidence
+name U5_tri_snRNP_5GAN_U4_U6_stem_II_partner #305.1/V:45-67,73-75
+# U4 snRNA Brr2 loading region: residues 60-67;73-95, review-region, low confidence
+name U5_tri_snRNP_5GAN_U4_Brr2_loading_region #305.1/V:60-67,73-95
+# U4 snRNA Sm site: residues 144-150, sequence-motif, medium confidence
+name U5_tri_snRNP_5GAN_U4_Sm_site #305.1/V:144-150
+# U5 snRNA loop I 5' exon contact side: residues 35-42, review-region, low confidence
+name U5_tri_snRNP_5GAN_U5_loop_I_5exon_contact #305.1/U:35-42
+# U5 snRNA loop I 3' exon contact side: residues 43-50, review-region, low confidence
+name U5_tri_snRNP_5GAN_U5_loop_I_3exon_contact #305.1/U:43-50
+# U5 snRNA loop I: residues 53, sequence-motif, medium confidence
+name U5_tri_snRNP_5GAN_U5_loop_I #305.1/U:53
+# U6 snRNA U4/U6 stem I partner: residues 1-9;16-30, review-region, low confidence
+name U5_tri_snRNP_5GAN_U6_U4_stem_I_partner #305.1/W:1-9,16-30
+# U6 snRNA U2/U6 helix I partner: residues 35-39;44-51;55-60, review-region, low confidence
+name U5_tri_snRNP_5GAN_U6_U2_helix_I_partner #305.1/W:35-39,44-51,55-60
+# U6 snRNA 5' splice-site upstream contact: residues 44-51;55, motif-neighborhood, medium confidence
+name U5_tri_snRNP_5GAN_U6_5SS_upstream_contact #305.1/W:44-51,55
+# U6 snRNA internal stem-loop: residues 46-51;55-73, motif-neighborhood, low confidence
+name U5_tri_snRNP_5GAN_U6_ISL #305.1/W:46-51,55-73
+# U6 snRNA ACAGAGA box: residues 47-51, sequence-motif, high confidence
+name U5_tri_snRNP_5GAN_U6_ACAGAGA_box #305.1/W:47-51
+# U6 snRNA AGC catalytic triad: residues 59-61, sequence-motif, medium confidence
+name U5_tri_snRNP_5GAN_U6_AGC_catalytic_triad #305.1/W:59-61
+# U6 snRNA LSm site: residues 108-112, terminal-region, low confidence
+name U5_tri_snRNP_5GAN_U6_LSm_site #305.1/W:108-112
 view
 show nucleic

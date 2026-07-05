@@ -159,48 +159,48 @@ color #379.1/6f #F4A3A8
 # LSM8
 color #379.1/6g #F4A3A8
 # Named selections for resolved substrate RNA features.
-# 5' exon: chain A, residues 7-48;103-107, five-ss-inference, medium confidence
-name s_8H6E_sub_exon_5_M #379.1/A:7-48,103-107
-# substrate RNA: chain A, residues 7-48;103-119, component, medium confidence
-name s_8H6E_sub_substrate_M #379.1/A:7-48,103-119
-# 5' splice site: chain A, residues 108-113, sequence-motif, medium confidence
-name s_8H6E_sub_five_prime_splice_site_M #379.1/A:108-113
-# intron from 5' splice site: chain A, residues 108-119, five-ss-inference, low confidence
-name s_8H6E_sub_intron_M #379.1/A:108-119
+# 5' exon: residues 7-48;103-107, five-ss-inference, medium confidence
+name pre_B_8H6E_5exon #379.1/A:7-48,103-107
+# substrate RNA: residues 7-48;103-119, component, medium confidence
+name pre_B_8H6E_substrate #379.1/A:7-48,103-119
+# 5' splice site: residues 108-113, sequence-motif, medium confidence
+name pre_B_8H6E_5SS #379.1/A:108-113
+# intron from 5' splice site: residues 108-119, five-ss-inference, low confidence
+name pre_B_8H6E_intron #379.1/A:108-119
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA U2/U6 helix I partner: chain 2A, residues 30-55, review-region, low confidence
-name r_8H6E_U2_U6_helix_I_partner_2 #379.1/2A:30-55
-# U2 snRNA branchpoint pairing region: chain 2A, residues 33-38, sequence-motif, medium confidence
-name r_8H6E_U2_branchpoint_pairing_region_2 #379.1/2A:33-38
-# U2 snRNA stem IIa: chain 2A, residues 46-65, review-region, low confidence
-name r_8H6E_U2_stem_IIa_2 #379.1/2A:46-65
-# U2 snRNA Sm site: chain 2A, residues 99-105, sequence-motif, medium confidence
-name r_8H6E_U2_Sm_site_2 #379.1/2A:99-105
-# U4 snRNA U4/U6 stem I partner: chain 4A, residues 1-24, review-region, low confidence
-name r_8H6E_U4_U6_stem_I_partner_4 #379.1/4A:1-24
-# U4 snRNA U4/U6 stem II partner: chain 4A, residues 44-52;55-70;73-74, review-region, low confidence
-name r_8H6E_U4_U6_stem_II_partner_4 #379.1/4A:44-52,55-70,73-74
-# U4 snRNA Brr2 loading region: chain 4A, residues 59-70;73-80;85-94, review-region, low confidence
-name r_8H6E_U4_Brr2_loading_region_4 #379.1/4A:59-70,73-80,85-94
-# U4 snRNA Sm site: chain 4A, residues 118-124, sequence-motif, medium confidence
-name r_8H6E_U4_Sm_site_4 #379.1/4A:118-124
-# U5 snRNA loop I 5' exon contact side: chain 5A, residues 35-42, review-region, low confidence
-name r_8H6E_U5_loop_I_5exon_contact_5 #379.1/5A:35-42
-# U5 snRNA loop I: chain 5A, residues 38-42, sequence-motif, medium confidence
-name r_8H6E_U5_loop_I_5 #379.1/5A:38-42
-# U5 snRNA loop I 3' exon contact side: chain 5A, residues 43-50, review-region, low confidence
-name r_8H6E_U5_loop_I_3exon_contact_5 #379.1/5A:43-50
-# U6 snRNA U2/U6 helix I partner: chain 6A, residues 36-60, review-region, low confidence
-name r_8H6E_U6_U2_helix_I_partner_6 #379.1/6A:36-60
-# U6 snRNA 5' splice-site upstream contact: chain 6A, residues 38-49, motif-neighborhood, medium confidence
-name r_8H6E_U6_5SS_upstream_contact_6 #379.1/6A:38-49
-# U6 snRNA ACAGAGA box: chain 6A, residues 41-47, sequence-motif, high confidence
-name r_8H6E_U6_ACAGAGA_box_6 #379.1/6A:41-47
-# U6 snRNA internal stem-loop: chain 6A, residues 85-96;102-105, motif-neighborhood, low confidence
-name r_8H6E_U6_ISL_6 #379.1/6A:85-96,102-105
-# U6 snRNA AGC catalytic triad: chain 6A, residues 92-94, sequence-motif, medium confidence
-name r_8H6E_U6_AGC_catalytic_triad_6 #379.1/6A:92-94
-# U6 snRNA LSm site: chain 6A, residues 102-105, terminal-region, low confidence
-name r_8H6E_U6_LSm_site_6 #379.1/6A:102-105
+# U2 snRNA U2/U6 helix I partner: residues 30-55, review-region, low confidence
+name pre_B_8H6E_U2_U6_helix_I_partner #379.1/2A:30-55
+# U2 snRNA branchpoint pairing region: residues 33-38, sequence-motif, medium confidence
+name pre_B_8H6E_U2_branchpoint_pairing_region #379.1/2A:33-38
+# U2 snRNA stem IIa: residues 46-65, review-region, low confidence
+name pre_B_8H6E_U2_stem_IIa #379.1/2A:46-65
+# U2 snRNA Sm site: residues 99-105, sequence-motif, medium confidence
+name pre_B_8H6E_U2_Sm_site #379.1/2A:99-105
+# U4 snRNA U4/U6 stem I partner: residues 1-24, review-region, low confidence
+name pre_B_8H6E_U4_U6_stem_I_partner #379.1/4A:1-24
+# U4 snRNA U4/U6 stem II partner: residues 44-52;55-70;73-74, review-region, low confidence
+name pre_B_8H6E_U4_U6_stem_II_partner #379.1/4A:44-52,55-70,73-74
+# U4 snRNA Brr2 loading region: residues 59-70;73-80;85-94, review-region, low confidence
+name pre_B_8H6E_U4_Brr2_loading_region #379.1/4A:59-70,73-80,85-94
+# U4 snRNA Sm site: residues 118-124, sequence-motif, medium confidence
+name pre_B_8H6E_U4_Sm_site #379.1/4A:118-124
+# U5 snRNA loop I 5' exon contact side: residues 35-42, review-region, low confidence
+name pre_B_8H6E_U5_loop_I_5exon_contact #379.1/5A:35-42
+# U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence
+name pre_B_8H6E_U5_loop_I #379.1/5A:38-42
+# U5 snRNA loop I 3' exon contact side: residues 43-50, review-region, low confidence
+name pre_B_8H6E_U5_loop_I_3exon_contact #379.1/5A:43-50
+# U6 snRNA U2/U6 helix I partner: residues 36-60, review-region, low confidence
+name pre_B_8H6E_U6_U2_helix_I_partner #379.1/6A:36-60
+# U6 snRNA 5' splice-site upstream contact: residues 38-49, motif-neighborhood, medium confidence
+name pre_B_8H6E_U6_5SS_upstream_contact #379.1/6A:38-49
+# U6 snRNA ACAGAGA box: residues 41-47, sequence-motif, high confidence
+name pre_B_8H6E_U6_ACAGAGA_box #379.1/6A:41-47
+# U6 snRNA internal stem-loop: residues 85-96;102-105, motif-neighborhood, low confidence
+name pre_B_8H6E_U6_ISL #379.1/6A:85-96,102-105
+# U6 snRNA AGC catalytic triad: residues 92-94, sequence-motif, medium confidence
+name pre_B_8H6E_U6_AGC_catalytic_triad #379.1/6A:92-94
+# U6 snRNA LSm site: residues 102-105, terminal-region, low confidence
+name pre_B_8H6E_U6_LSm_site #379.1/6A:102-105
 view
 show nucleic

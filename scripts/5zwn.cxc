@@ -74,20 +74,16 @@ color #327.1/V #C7A6BE
 # SNU56
 color #327.1/W #D65B96
 # Named selections for resolved substrate RNA features.
-# substrate RNA: chain G, residues -9-12, component, medium confidence
-name s_5ZWN_sub_substrate_M #327.1/G:-9-12
+# substrate RNA: residues -9-12, component, medium confidence
+name pre_B_5ZWN_substrate #327.1/G:-9-12
 # Named selections for resolved snRNA functional regions.
-# U1 snRNA 5' splice-site recognition region: chain P, residues 1-10, review-region, medium confidence
-name r_5ZWN_U1_5prime_5SS_recognition_1 #327.1/P:1-10
-# U1 snRNA stem-loop 1: chain P, residues 11-25;33-45, review-region, low confidence
-name r_5ZWN_U1_SL1_1 #327.1/P:11-25,33-45
-# U1 snRNA stem-loop 2: chain P, residues 46-95, review-region, low confidence
-name r_5ZWN_U1_SL2_1 #327.1/P:46-95
-# U1 snRNA Sm site: chain P, residues 228-230, sequence-motif, medium confidence
-name r_5ZWN_U1_Sm_site_1 #327.1/P:228-230
-# U1 snRNA Sm site: chain P, residues 241-247, sequence-motif, medium confidence
-name r_5ZWN_U1_Sm_site_1 #327.1/P:241-247
-# U1 snRNA Sm site: chain P, residues 553-559, sequence-motif, medium confidence
-name r_5ZWN_U1_Sm_site_1 #327.1/P:553-559
+# U1 snRNA 5' splice-site recognition region: residues 1-10, review-region, medium confidence
+name pre_B_5ZWN_U1_5_5SS_recognition #327.1/P:1-10
+# U1 snRNA stem-loop 1: residues 11-25;33-45, review-region, low confidence
+name pre_B_5ZWN_U1_SL1 #327.1/P:11-25,33-45
+# U1 snRNA stem-loop 2: residues 46-95, review-region, low confidence
+name pre_B_5ZWN_U1_SL2 #327.1/P:46-95
+# U1 snRNA Sm site: residues 228-230; 241-247; 553-559, sequence-motif, medium confidence
+name pre_B_5ZWN_U1_Sm_site #327.1/P:228-230|#327.1/P:241-247|#327.1/P:553-559
 view
 show nucleic
