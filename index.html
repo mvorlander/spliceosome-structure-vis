@@ -115,7 +115,7 @@
     <main>
       <div class="topbar">
         <div><h1>Deposited Spliceosome Structures</h1><div class="subtle" id="resultSubtitle"></div></div>
-        <div class="tabs" id="tabs"><button type="button" class="tab-button active" data-tab="structures">Structures</button><button type="button" class="tab-button" data-tab="proteins">Protein Colors</button></div>
+        <div class="tabs" id="tabs"><button type="button" class="tab-button active" data-tab="structures">Structures</button><button type="button" class="tab-button" data-tab="rnaFeatures">RNA Features</button><button type="button" class="tab-button" data-tab="proteins">Protein Colors</button></div>
       </div>
       <div id="structuresView">
         <section class="stats" id="stats"></section>
@@ -130,12 +130,14 @@
           <div class="legend-item"><span class="badge good">snRNA features annotated</span><span>Resolved snRNA functional-region selections are available in generated ChimeraX scripts.</span></div>
           <div class="legend-item"><span class="badge">Add</span><span>Toggle the structure into the comparison panel.</span></div>
         </div></div></section>
-        <section class="panel"><div class="panel-head"><h2>RNA Feature Definitions</h2><span class="subtle">selector vocabulary</span></div><div class="panel-body"><div class="field"><label for="rnaDefinitionSearch">Find Feature</label><input id="rnaDefinitionSearch" type="search" placeholder="5' splice site, branch, U6 ACAGAGA"></div><div class="mini-table"><table><thead><tr><th>Feature</th><th>Definition</th><th>Method</th><th>Notes</th></tr></thead><tbody id="rnaDefinitionRows"></tbody></table></div></div></section>
-        <section class="panel"><div class="panel-head"><h2>Repeated RNA Consistency</h2><span class="subtle">exact-sequence substrate families</span></div><div class="panel-body"><div class="mini-table"><table><thead><tr><th>RNA family</th><th>Feature</th><th>Status</th><th>Observed / missing / conflicts</th><th>Members</th></tr></thead><tbody id="rnaConsistencyRows"></tbody></table></div></div></section>
         <section class="workspace">
           <div class="panel"><div class="panel-head"><h2>Structure Set</h2><span class="subtle" id="tableCount"></span></div><div class="table-wrap"><table><thead><tr><th>PDB</th><th>Preview</th><th>Species</th><th>Title</th><th>Complex</th><th>Resolution</th><th>Year</th><th>Chain count</th><th>Chains</th><th>Curation</th><th>Compare</th></tr></thead><tbody id="rows"></tbody></table></div></div>
           <div class="panel"><div class="panel-head"><h2>Selected Structure</h2><span class="subtle" id="selectedId"></span></div><div class="panel-body" id="detail"></div></div>
         </section>
+      </div>
+      <div id="rnaFeaturesView" hidden>
+        <section class="panel"><div class="panel-head"><h2>RNA Feature Definitions</h2><span class="subtle">selector vocabulary</span></div><div class="panel-body"><div class="field"><label for="rnaDefinitionSearch">Find Feature</label><input id="rnaDefinitionSearch" type="search" placeholder="5' splice site, branch, U6 ACAGAGA"></div><div class="mini-table"><table><thead><tr><th>Feature</th><th>Definition</th><th>Method</th><th>Notes</th></tr></thead><tbody id="rnaDefinitionRows"></tbody></table></div></div></section>
+        <section class="panel"><div class="panel-head"><h2>Repeated RNA Consistency</h2><span class="subtle">exact-sequence substrate families</span></div><div class="panel-body"><div class="mini-table"><table><thead><tr><th>RNA family</th><th>Feature</th><th>Status</th><th>Observed / missing / conflicts</th><th>Members</th></tr></thead><tbody id="rnaConsistencyRows"></tbody></table></div></div></section>
       </div>
       <div id="proteinsView" hidden>
         <section class="panel"><div class="panel-head"><h2>Protein Color And Homolog Lookup</h2><span class="subtle" id="proteinCount"></span></div><div class="protein-table-wrap"><table><thead><tr><th>Protein</th><th>Class / Family</th><th>Aliases</th><th>Color</th><th>Canonical IDs</th><th>Model-species homologs</th><th>Seen in</th></tr></thead><tbody id="proteinRows"></tbody></table></div></section>
@@ -150,7 +152,7 @@
     let rnaFeatureConsistency = [];
     const state = { activeTab:"structures", query:"", mode:"all", family:"all", species:"all", components:"all", rnaFeature:"all", rnaDefinitionQuery:"", sortBy:"pathway", selected: records[0]?.pdb_id || "", compareIds: [] };
     const els = {};
-    for (const id of ["search","searchMode","family","species","componentFilter","rnaFeatureFilter","rnaDefinitionSearch","rnaDefinitionRows","rnaConsistencyRows","sortBy","reset","tabs","structuresView","proteinsView","stats","cycle","rows","detail","tableCount","resultSubtitle","selectedId","proteinRows","proteinCount"]) els[id] = document.getElementById(id);
+    for (const id of ["search","searchMode","family","species","componentFilter","rnaFeatureFilter","rnaDefinitionSearch","rnaDefinitionRows","rnaConsistencyRows","sortBy","reset","tabs","structuresView","rnaFeaturesView","proteinsView","stats","cycle","rows","detail","tableCount","resultSubtitle","selectedId","proteinRows","proteinCount"]) els[id] = document.getElementById(id);
     const STAGES = ["U2 snRNP","E complex","A complex","U5/tri-snRNP","pre-B","B","pre-Bact","Bact","B*","C","C*","P","ILS/disassembly","U5 recycling"];
     const ORDER = Object.fromEntries(STAGES.map((s,i)=>[s,i]));
     const NODE_POS = [[232,54],[122,126],[150,222],[305,200],[188,318],[350,334],[492,334],[630,324],[765,294],[890,238],[1000,170],[1024,86],[795,54],[535,66]];
@@ -226,14 +228,19 @@
     }
     function render(){
       els.structuresView.hidden = state.activeTab !== "structures";
+      els.rnaFeaturesView.hidden = state.activeTab !== "rnaFeatures";
       els.proteinsView.hidden = state.activeTab !== "proteins";
-      if(state.activeTab === "proteins") renderProteins();
+      if(state.activeTab === "proteins") { renderProteins(); return; }
+      if(state.activeTab === "rnaFeatures") {
+        renderRnaFeatureDefinitions();
+        renderRnaConsistency();
+        els.resultSubtitle.textContent = `${rnaFeatureDefinitions.length} definitions; ${rnaFeatureConsistency.length} repeated-RNA audit rows`;
+        return;
+      }
       const rows = filtered();
       if(!rows.some(r=>r.pdb_id===state.selected)) state.selected = rows[0]?.pdb_id || "";
       renderStats(rows);
       renderCycle(rows);
-      renderRnaFeatureDefinitions();
-      renderRnaConsistency();
       renderRows(rows);
       renderDetail(records.find(r=>r.pdb_id===state.selected));
     }
