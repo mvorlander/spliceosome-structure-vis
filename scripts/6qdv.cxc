@@ -145,10 +145,14 @@ color #346.1/B #AFEEEE
 # EFTUD2
 color #346.1/C #6495ED
 # Named selections for resolved substrate RNA features.
+# 5' exon: chain E, residues -12--1, auth-residue-numbering, high confidence
+name s_6QDV_sub_exon_5_M #346.1/E:-12--1
 # ligated exons: chain E, residues -12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2, component-name, high confidence
 name s_6QDV_sub_ligated_exons_M #346.1/E:-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2
 # substrate RNA: chain E, residues -12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2, component, medium confidence
 name s_6QDV_sub_substrate_M #346.1/E:-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2
+# 3' exon: chain E, residues 1-2, auth-residue-numbering, high confidence
+name s_6QDV_sub_exon_3_M #346.1/E:1-2
 # intron: chain I, residues 1-20;83-101;111-113, component-name, high confidence
 name s_6QDV_sub_intron_I #346.1/I:1-20,83-101,111-113
 # intron lariat: chain I, residues 1-20;83-101;111-113, component-name, high confidence

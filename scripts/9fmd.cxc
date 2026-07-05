@@ -163,8 +163,12 @@ color #419.1/6 #DC143C
 # EIF4A3
 color #419.1/7 #F1D8BC
 # Named selections for resolved substrate RNA features.
+# 5' exon: chain EX, residues -12--1, auth-residue-numbering, high confidence
+name s_9FMD_sub_exon_5_M #419.1/EX:-12--1
 # substrate RNA: chain EX, residues -12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2, component, medium confidence
 name s_9FMD_sub_substrate_M #419.1/EX:-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2
+# 3' exon: chain EX, residues 1-2, auth-residue-numbering, high confidence
+name s_9FMD_sub_exon_3_M #419.1/EX:1-2
 # intron: chain IN, residues 1-21;131-148;165-167, component-name, high confidence
 name s_9FMD_sub_intron_I #419.1/IN:1-21,131-148,165-167
 # substrate RNA: chain IN, residues 1-21;131-148;165-167, component, medium confidence

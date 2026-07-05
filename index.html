@@ -67,6 +67,8 @@
     .detail-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
     .detail-block { min-width:0; }
     .mini-list { max-height:180px; overflow:auto; border:1px solid var(--line); border-radius:8px; padding:8px; }
+    .mini-table { max-height:210px; overflow:auto; border:1px solid var(--line); border-radius:8px; }
+    .mini-table table { font-size:12px; }
     pre { white-space:pre-wrap; max-height:320px; overflow:auto; background:#111820; color:#edf6ff; padding:12px; border-radius:6px; font-size:12px; }
     .swatch { display:inline-block; width:18px; height:18px; border-radius:4px; border:1px solid rgba(0,0,0,.25); vertical-align:middle; margin-right:6px; }
     .copy-button { padding:3px 7px; font-size:12px; }
@@ -74,8 +76,8 @@
     .compare-toggle { border:1px solid var(--line); border-radius:6px; background:#fff; color:var(--ink); padding:3px 7px; font-size:12px; }
     .compare-toggle.active { background:#eaf4ff; border-color:#9fc6ef; color:#0b5cab; font-weight:700; }
     .badge-row { display:flex; flex-wrap:wrap; gap:5px; align-items:center; }
-    .cycle { overflow-x:auto; }
-    .cycle-svg { width:100%; min-width:1040px; height:auto; display:block; }
+    .cycle { overflow-x:auto; height:clamp(220px,22vw,330px); }
+    .cycle-svg { width:100%; min-width:0; height:100%; display:block; }
     .cycle-band { fill:none; stroke-linecap:round; stroke-linejoin:round; opacity:.9; }
     .cycle-flow { fill:none; stroke:#22272d; stroke-width:2.1; stroke-linecap:round; stroke-linejoin:round; }
     .cycle-flow.dashed { stroke:#aeb6bf; stroke-dasharray:8 8; stroke-width:1.8; }
@@ -106,6 +108,7 @@
       <div class="field"><label for="family">Complex</label><select id="family"></select></div>
       <div class="field"><label for="species">Species</label><select id="species"></select></div>
       <div class="field"><label>Components</label><div class="segmented" id="componentFilter"><button type="button" data-value="all" class="active">All</button><button type="button" data-value="both">PRPF8 + SF3B1</button><button type="button" data-value="prpf8">PRPF8</button><button type="button" data-value="sf3b1">SF3B1</button></div></div>
+      <div class="field"><label for="rnaFeatureFilter">RNA Features</label><select id="rnaFeatureFilter"></select></div>
       <div class="field"><label for="sortBy">Sort</label><select id="sortBy"><option value="pathway">Splicing pathway</option><option value="resolution">Resolution</option><option value="year">Year</option><option value="pdb">PDB</option><option value="chains">Chain count</option><option value="proteins">Protein count</option></select></div>
       <button class="button" id="reset" type="button">Reset</button>
     </aside>
@@ -127,6 +130,8 @@
           <div class="legend-item"><span class="badge good">snRNA features annotated</span><span>Resolved snRNA functional-region selections are available in generated ChimeraX scripts.</span></div>
           <div class="legend-item"><span class="badge">Add</span><span>Toggle the structure into the comparison panel.</span></div>
         </div></div></section>
+        <section class="panel"><div class="panel-head"><h2>RNA Feature Definitions</h2><span class="subtle">selector vocabulary</span></div><div class="panel-body"><div class="field"><label for="rnaDefinitionSearch">Find Feature</label><input id="rnaDefinitionSearch" type="search" placeholder="5' splice site, branch, U6 ACAGAGA"></div><div class="mini-table"><table><thead><tr><th>Feature</th><th>Definition</th><th>Method</th><th>Notes</th></tr></thead><tbody id="rnaDefinitionRows"></tbody></table></div></div></section>
+        <section class="panel"><div class="panel-head"><h2>Repeated RNA Consistency</h2><span class="subtle">exact-sequence substrate families</span></div><div class="panel-body"><div class="mini-table"><table><thead><tr><th>RNA family</th><th>Feature</th><th>Status</th><th>Observed / missing / conflicts</th><th>Members</th></tr></thead><tbody id="rnaConsistencyRows"></tbody></table></div></div></section>
         <section class="workspace">
           <div class="panel"><div class="panel-head"><h2>Structure Set</h2><span class="subtle" id="tableCount"></span></div><div class="table-wrap"><table><thead><tr><th>PDB</th><th>Preview</th><th>Species</th><th>Title</th><th>Complex</th><th>Resolution</th><th>Year</th><th>Chain count</th><th>Chains</th><th>Curation</th><th>Compare</th></tr></thead><tbody id="rows"></tbody></table></div></div>
           <div class="panel"><div class="panel-head"><h2>Selected Structure</h2><span class="subtle" id="selectedId"></span></div><div class="panel-body" id="detail"></div></div>
@@ -141,9 +146,11 @@
     const DATA = { records: [], protein_lookup: [], scriptCache: {} };
     let records = [];
     let proteinLookup = [];
-    const state = { activeTab:"structures", query:"", mode:"all", family:"all", species:"all", components:"all", sortBy:"pathway", selected: records[0]?.pdb_id || "", compareIds: [] };
+    let rnaFeatureDefinitions = [];
+    let rnaFeatureConsistency = [];
+    const state = { activeTab:"structures", query:"", mode:"all", family:"all", species:"all", components:"all", rnaFeature:"all", rnaDefinitionQuery:"", sortBy:"pathway", selected: records[0]?.pdb_id || "", compareIds: [] };
     const els = {};
-    for (const id of ["search","searchMode","family","species","componentFilter","sortBy","reset","tabs","structuresView","proteinsView","stats","cycle","rows","detail","tableCount","resultSubtitle","selectedId","proteinRows","proteinCount"]) els[id] = document.getElementById(id);
+    for (const id of ["search","searchMode","family","species","componentFilter","rnaFeatureFilter","rnaDefinitionSearch","rnaDefinitionRows","rnaConsistencyRows","sortBy","reset","tabs","structuresView","proteinsView","stats","cycle","rows","detail","tableCount","resultSubtitle","selectedId","proteinRows","proteinCount"]) els[id] = document.getElementById(id);
     const STAGES = ["U2 snRNP","E complex","A complex","U5/tri-snRNP","pre-B","B","pre-Bact","Bact","B*","C","C*","P","ILS/disassembly","U5 recycling"];
     const ORDER = Object.fromEntries(STAGES.map((s,i)=>[s,i]));
     const NODE_POS = [[232,54],[122,126],[150,222],[305,200],[188,318],[350,334],[492,334],[630,324],[765,294],[890,238],[1000,170],[1024,86],[795,54],[535,66]];
@@ -157,11 +164,14 @@
       const payload = await response.json();
       DATA.records = payload.records || payload;
       DATA.protein_lookup = payload.protein_lookup || [];
+      rnaFeatureDefinitions = payload.rna_feature_definitions || [];
+      rnaFeatureConsistency = payload.rna_feature_consistency || [];
       records = DATA.records;
       proteinLookup = DATA.protein_lookup;
       state.selected = records[0]?.pdb_id || "";
       els.family.innerHTML = '<option value="all">All complexes</option>' + STAGES.map(s=>`<option value="${attr(s)}">${esc(s)}</option>`).join("");
       els.species.innerHTML = '<option value="all">All species</option>' + unique(records.map(r=>r.species)).map(s=>`<option>${esc(s)}</option>`).join("");
+      els.rnaFeatureFilter.innerHTML = '<option value="all">All RNA feature states</option><option value="any">Any RNA features annotated</option><option value="substrate">Any (pre-)mRNA features</option><option value="snrna">Any snRNA features</option><option value="both">Both (pre-)mRNA and snRNA features</option><option value="none">No RNA feature annotations</option>' + rnaFeatureDefinitions.filter(x=>x.feature).sort((a,b)=>(a.label||a.feature).localeCompare(b.label||b.feature)).map(x=>`<option value="feature:${attr(x.feature)}">${esc(x.label||x.feature)}</option>`).join("");
       bind();
       render();
     }
@@ -170,26 +180,41 @@
       els.searchMode.addEventListener("change",()=>{state.mode=els.searchMode.value; render();});
       els.family.addEventListener("change",()=>{state.family=els.family.value; render();});
       els.species.addEventListener("change",()=>{state.species=els.species.value; render();});
+      els.rnaFeatureFilter.addEventListener("change",()=>{state.rnaFeature=els.rnaFeatureFilter.value; render();});
+      els.rnaDefinitionSearch.addEventListener("input",()=>{state.rnaDefinitionQuery=els.rnaDefinitionSearch.value.trim().toLowerCase(); renderRnaFeatureDefinitions();});
       els.sortBy.addEventListener("change",()=>{state.sortBy=els.sortBy.value; render();});
       els.componentFilter.addEventListener("click",event=>{const b=event.target.closest("button"); if(!b)return; state.components=b.dataset.value; for(const x of els.componentFilter.querySelectorAll("button")) x.classList.toggle("active",x===b); render();});
       els.tabs.addEventListener("click",event=>{const b=event.target.closest("button"); if(!b)return; state.activeTab=b.dataset.tab; for(const x of els.tabs.querySelectorAll("button")) x.classList.toggle("active",x===b); render();});
-      els.reset.addEventListener("click",()=>{state.query=""; state.mode="all"; state.family="all"; state.species="all"; state.components="all"; state.sortBy="pathway"; els.search.value=""; els.searchMode.value="all"; els.family.value="all"; els.species.value="all"; els.sortBy.value="pathway"; for(const x of els.componentFilter.querySelectorAll("button")) x.classList.toggle("active",x.dataset.value==="all"); render();});
+      els.reset.addEventListener("click",()=>{state.query=""; state.mode="all"; state.family="all"; state.species="all"; state.components="all"; state.rnaFeature="all"; state.rnaDefinitionQuery=""; state.sortBy="pathway"; els.search.value=""; els.searchMode.value="all"; els.family.value="all"; els.species.value="all"; els.rnaFeatureFilter.value="all"; els.rnaDefinitionSearch.value=""; els.sortBy.value="pathway"; for(const x of els.componentFilter.querySelectorAll("button")) x.classList.toggle("active",x.dataset.value==="all"); render();});
     }
     function fieldsFor(r){
       return {
         structure:[r.pdb_id,r.title,r.state,r.species],
         paper:[r.paper_title,r.doi,r.pubmed_id,r.journal,r.authors],
         author:[r.authors],
-        component:[...r.proteins.map(p=>`${p.gene} ${p.name}`),...r.rnas.map(x=>x.name)],
-        all:[r.pdb_id,r.title,r.state,r.species,r.paper_title,r.doi,r.pubmed_id,r.journal,r.authors,...r.proteins.map(p=>`${p.gene} ${p.name}`),...r.rnas.map(x=>x.name)]
+        component:[...r.proteins.map(p=>`${p.gene} ${p.name}`),...r.rnas.map(x=>x.name),...(r.substrate_features||[]).map(x=>`${x.feature} ${x.label} ${x.feature_sequence}`),...(r.snrna_features||[]).map(x=>`${x.snrna} ${x.feature} ${x.label} ${x.feature_sequence}`)],
+        all:[r.pdb_id,r.title,r.state,r.species,r.paper_title,r.doi,r.pubmed_id,r.journal,r.authors,...r.proteins.map(p=>`${p.gene} ${p.name}`),...r.rnas.map(x=>x.name),...(r.substrate_features||[]).map(x=>`${x.feature} ${x.label} ${x.feature_sequence}`),...(r.snrna_features||[]).map(x=>`${x.snrna} ${x.feature} ${x.label} ${x.feature_sequence}`)]
       };
+    }
+    function rnaFeatureOk(r){
+      const value = state.rnaFeature;
+      const substrate = r.substrate_features || [];
+      const snrna = r.snrna_features || [];
+      if(value==="all") return true;
+      if(value==="any") return substrate.length || snrna.length;
+      if(value==="substrate") return substrate.length;
+      if(value==="snrna") return snrna.length;
+      if(value==="both") return substrate.length && snrna.length;
+      if(value==="none") return !substrate.length && !snrna.length;
+      if(value.startsWith("feature:")) return [...substrate,...snrna].some(x=>x.feature===value.slice(8));
+      return true;
     }
     function filtered(){
       return records.filter(r=>{
         const parts = fieldsFor(r)[state.mode] || fieldsFor(r).all;
         const hay = parts.join(" ").toLowerCase();
         const componentOk = state.components==="all" || (state.components==="both" && r.has_prpf8 && r.has_sf3b1) || (state.components==="prpf8" && r.has_prpf8) || (state.components==="sf3b1" && r.has_sf3b1);
-        return (!state.query || hay.includes(state.query)) && (state.family==="all" || r.state===state.family) && (state.species==="all" || r.species===state.species) && componentOk;
+        return (!state.query || hay.includes(state.query)) && (state.family==="all" || r.state===state.family) && (state.species==="all" || r.species===state.species) && componentOk && rnaFeatureOk(r);
       }).sort((a,b)=>{
         if(state.sortBy==="resolution") return (parseFloat(a.resolution)||99)-(parseFloat(b.resolution)||99);
         if(state.sortBy==="year") return (parseInt(b.year)||0)-(parseInt(a.year)||0);
@@ -207,6 +232,8 @@
       if(!rows.some(r=>r.pdb_id===state.selected)) state.selected = rows[0]?.pdb_id || "";
       renderStats(rows);
       renderCycle(rows);
+      renderRnaFeatureDefinitions();
+      renderRnaConsistency();
       renderRows(rows);
       renderDetail(records.find(r=>r.pdb_id===state.selected));
     }
@@ -356,6 +383,23 @@
       if(!q || q.status === "missing") return `<h3>Quality Metrics</h3><div class="subtle">No extracted quality metrics.</div>`;
       const qscore = q.q_score ? `${fmtMetric(q.q_score, "", 3)}${q.q_score_source ? " (" + esc(q.q_score_source) + ")" : ""}` : "not available from PDBe/EMDB API";
       return `<h3>Quality Metrics</h3><div class="detail-grid"><div class="detail-block"><div class="kv"><div>Status</div><div>${esc(q.status||"n/a")}</div><div>Overall quality</div><div>${fmtMetric(q.overall_quality)}</div><div>Geometry quality</div><div>${fmtMetric(q.geometry_quality)}</div><div>Ramachandran outliers</div><div>${fmtMetric(q.rama_outliers_percent,"%")}</div><div>Rotamer outliers</div><div>${fmtMetric(q.rota_outliers_percent,"%")}</div><div>RNA suite outliers</div><div>${fmtMetric(q.rna_suite_outliers_percent,"%")}</div><div>Clashscore</div><div>${fmtMetric(q.clashscore)}</div></div></div><div class="detail-block"><div class="kv"><div>Primary map</div><div>${esc(q.primary_emdb_id||"n/a")}</div><div>Map resolution</div><div>${fmtMetric(q.map_resolution_A," A")}</div><div>Pixel spacing</div><div>${fmtMetric(q.map_pixel_spacing_A," A",3)}</div><div>Map box</div><div>${esc(q.map_box_size||"n/a")}</div><div>Particles</div><div>${fmtInt(q.particles_used)}</div><div>Q-score</div><div>${qscore}</div></div></div></div>`;
+    }
+    function renderRnaFeatureDefinitions(){
+      const q = state.rnaDefinitionQuery;
+      const rows = rnaFeatureDefinitions.filter(x=>!q || [x.feature,x.label,x.definition,x.method,x.notes].join(" ").toLowerCase().includes(q));
+      els.rnaDefinitionRows.innerHTML = rows.map(x=>`<tr><td><strong>${esc(x.label||x.feature)}</strong><br><code>${esc(x.feature||"")}</code></td><td>${esc(x.definition||"")}</td><td>${esc(x.method||"")}</td><td>${esc(x.notes||"")}</td></tr>`).join("") || '<tr><td colspan="4" class="subtle">No RNA feature definitions match.</td></tr>';
+    }
+    function rnaConsistencyBadge(status){
+      if(status==="consistent") return '<span class="badge good">consistent</span>';
+      if(status==="partial_resolved") return '<span class="badge warn">partial resolved</span>';
+      if(status==="not_resolved") return '<span class="badge">not resolved</span>';
+      if(status==="inconsistent") return '<span class="badge bad">inconsistent</span>';
+      return `<span class="badge">${esc(status||"n/a")}</span>`;
+    }
+    function renderRnaConsistency(){
+      const rank = {inconsistent:0, partial_resolved:1, not_resolved:2, consistent:3};
+      const rows = [...rnaFeatureConsistency].sort((a,b)=>(rank[a.status]??9)-(rank[b.status]??9) || String(a.family_label).localeCompare(String(b.family_label)) || String(a.feature).localeCompare(String(b.feature))).slice(0,170);
+      els.rnaConsistencyRows.innerHTML = rows.map(x=>`<tr><td><strong>${esc(x.family_label||"")}</strong><br><span class="subtle">${esc(x.sequence_length||"")} nt</span></td><td>${esc(x.label||x.feature)}<br><code>${esc(x.expected_seq_start)}-${esc(x.expected_seq_end)} ${esc(x.expected_sequence||"")}</code></td><td>${rnaConsistencyBadge(x.status)}</td><td>${esc(x.observed_count||"0")} / ${esc(x.missing_count||"0")} / ${esc(x.conflict_count||"0")}</td><td><span class="subtle">seen:</span> ${esc(x.observed_members||"none")}<br>${x.missing_members?`<span class="subtle">missing:</span> ${esc(x.missing_members)}<br>`:""}${x.conflicting_members?`<span class="subtle">conflicts:</span> ${esc(x.conflicting_members)}`:""}</td></tr>`).join("") || '<tr><td colspan="5" class="subtle">No repeated RNA feature audit rows.</td></tr>';
     }
     function renderProteins(){
       const q = state.query;
