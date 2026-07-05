@@ -156,5 +156,14 @@ color #412.1/65 #F4A3A8
 color #412.1/E #E2F3F4
 # SF3B4
 color #412.1/B4 #77B088
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain Z, residues 29-43, component, medium confidence
+name pdb_8RM5_substrate_substrate_MA #412.1/Z:29-43
+# 5' splice site: chain z, residues -3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15, component-name, high confidence
+name pdb_8RM5_substrate_five_prime_splice_site_MB #412.1/z:-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+# substrate RNA: chain z, residues -3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15, component, medium confidence
+name pdb_8RM5_substrate_substrate_MB #412.1/z:-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+# 5' splice site: chain z, residues 1-6, sequence-motif, medium confidence
+name pdb_8RM5_substrate_five_prime_splice_site_MB #412.1/z:1-6
 view
 show nucleic

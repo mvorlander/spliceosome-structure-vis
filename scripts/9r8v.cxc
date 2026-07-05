@@ -160,5 +160,8 @@ color #429.1/L #DAA520
 color #429.1/C #6495ED
 # PRP8BP
 color #429.1/E #E2F3F4
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain Z, residues 234-262;382-396, component, medium confidence
+name pdb_9R8V_substrate_substrate_M #429.1/Z:234-262,382-396
 view
 show nucleic

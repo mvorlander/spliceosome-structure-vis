@@ -178,5 +178,10 @@ color #407.1/U #B37E6A
 color #407.1/X #F4E7D2
 # pre-mRNA
 color #407.1/Z #303030
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain Z, residues 29-43, component, medium confidence
+name pdb_8R08_substrate_substrate_MA #407.1/Z:29-43
+# substrate RNA: chain Z1, residues 3-7, component, medium confidence
+name pdb_8R08_substrate_substrate_MB #407.1/Z1:3-7
 view
 show nucleic

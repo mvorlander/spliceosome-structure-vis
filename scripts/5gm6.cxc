@@ -122,5 +122,18 @@ color #308.1/H #49926C
 color #308.1/I #75A074
 # PHF5A
 color #308.1/J #375A40
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain D, residues 28-55;60-127;163-183, component, medium confidence
+name pdb_5GM6_substrate_substrate_MA #308.1/D:28-55,60-127,163-183
+# substrate RNA: chain E, residues 1-103, component, medium confidence
+name pdb_5GM6_substrate_substrate_MB #308.1/E:1-103
+# substrate RNA: chain M, residues 468-475;479-484;487-522, component, medium confidence
+name pdb_5GM6_substrate_substrate_MC #308.1/M:468-475,479-484,487-522
+# branch point region: chain M, residues 496-502, sequence-motif, medium confidence
+name pdb_5GM6_substrate_branch_point_region_MC #308.1/M:496-502
+# branch point adenosine: chain M, residues 501, sequence-motif, medium confidence
+name pdb_5GM6_substrate_branch_point_adenosine_MC #308.1/M:501
+# substrate RNA: chain N, residues 90-114, component, medium confidence
+name pdb_5GM6_substrate_substrate_MD #308.1/N:90-114
 view
 show nucleic

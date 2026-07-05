@@ -68,5 +68,12 @@ color #404.1/S #D6937B
 color #404.1/C #6495ED
 # U5 snRNA
 color #404.1/5 #0000CD
+# Named selections for resolved substrate RNA features.
+# 5' splice site: chain z, residues -3,-2,-1,1,2,3,4,5,6,7,8, component-name, high confidence
+name pdb_8QPK_substrate_five_prime_splice_site_M #404.1/z:-3,-2,-1,1,2,3,4,5,6,7,8
+# substrate RNA: chain z, residues -3,-2,-1,1,2,3,4,5,6,7,8, component, medium confidence
+name pdb_8QPK_substrate_substrate_M #404.1/z:-3,-2,-1,1,2,3,4,5,6,7,8
+# 5' splice site: chain z, residues 1-6, sequence-motif, medium confidence
+name pdb_8QPK_substrate_five_prime_splice_site_M #404.1/z:1-6
 view
 show nucleic

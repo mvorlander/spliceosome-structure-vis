@@ -88,5 +88,12 @@ color #352.1/C #D49F96
 color #352.1/D #F4A460
 # PRPF17
 color #352.1/E #FFF7C9
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain Y, residues 59-79;141-160, component, medium confidence
+name pdb_6ZYM_substrate_substrate_MA #352.1/Y:59-79,141-160
+# 5' splice site: chain Y, residues 59-64, sequence-motif, medium confidence
+name pdb_6ZYM_substrate_five_prime_splice_site_MA #352.1/Y:59-64
+# substrate RNA: chain Z, residues 46-58, component, medium confidence
+name pdb_6ZYM_substrate_substrate_MB #352.1/Z:46-58
 view
 show nucleic

@@ -120,5 +120,26 @@ color #314.1/C #6495ED
 color #314.1/H #2C54DD
 # PLRG1
 color #314.1/J #F4A460
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain 2, residues 1-49;55-73;78-84;98-104;139-150;1089-1108;1117-1129;1138-1154;1159-1169, component, medium confidence
+name pdb_5MQ0_substrate_substrate_MA #314.1/2:1-49,55-73,78-84,98-104,139-150,1089-1108,1117-1129,1138-1154,1159-1169
+# 3' exon: chain 3, residues 1-3, component-name, high confidence
+name pdb_5MQ0_substrate_exon_3_MB #314.1/3:1-3
+# substrate RNA: chain 3, residues 1-3, component, medium confidence
+name pdb_5MQ0_substrate_substrate_MB #314.1/3:1-3
+# substrate RNA: chain 5, residues 4-53;62-145;167-173, component, medium confidence
+name pdb_5MQ0_substrate_substrate_MC #314.1/5:4-53,62-145,167-173
+# substrate RNA: chain 6, residues 1-10;16-104, component, medium confidence
+name pdb_5MQ0_substrate_substrate_MD #314.1/6:1-10,16-104
+# 5' exon: chain E, residues -16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1, component-name, high confidence
+name pdb_5MQ0_substrate_exon_5_ME #314.1/E:-16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1
+# substrate RNA: chain E, residues -16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1, component, medium confidence
+name pdb_5MQ0_substrate_substrate_ME #314.1/E:-16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1
+# substrate RNA: chain I, residues 1-16;56-73, component, medium confidence
+name pdb_5MQ0_substrate_substrate_MF #314.1/I:1-16,56-73
+# branch point region: chain I, residues 65-71, sequence-motif, medium confidence
+name pdb_5MQ0_substrate_branch_point_region_MF #314.1/I:65-71
+# branch point adenosine: chain I, residues 70, sequence-motif, medium confidence
+name pdb_5MQ0_substrate_branch_point_adenosine_MF #314.1/I:70
 view
 show nucleic

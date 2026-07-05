@@ -122,5 +122,10 @@ color #339.1/L #DAA520
 color #339.1/M #FF8C00
 # BUD31
 color #339.1/N #FFF584
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain G, residues 1-30;118-155, component, medium confidence
+name pdb_6ID1_substrate_substrate_M #339.1/G:1-30,118-155
+# 5' splice site: chain G, residues 1-6, sequence-motif, medium confidence
+name pdb_6ID1_substrate_five_prime_splice_site_M #339.1/G:1-6
 view
 show nucleic

@@ -120,5 +120,14 @@ color #301.1/m #D5F5E3
 color #301.1/I #B0C4DE
 # U2-Sm SNRPF
 color #301.1/n #D5F5E3
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain O, residues 100-107, component, medium confidence
+name pdb_3JB9_substrate_substrate_MA #301.1/O:100-107
+# substrate RNA: chain Q, residues 492-504, component, medium confidence
+name pdb_3JB9_substrate_substrate_MB #301.1/Q:492-504
+# branch point region: chain Q, residues 496-502, sequence-motif, medium confidence
+name pdb_3JB9_substrate_branch_point_region_MB #301.1/Q:496-502
+# branch point adenosine: chain Q, residues 501, sequence-motif, medium confidence
+name pdb_3JB9_substrate_branch_point_adenosine_MB #301.1/Q:501
 view
 show nucleic

@@ -120,5 +120,16 @@ color #320.1/F #006400
 color #320.1/H #FF957B
 # CRNKL1
 color #320.1/I #FFC388
+# Named selections for resolved substrate RNA features.
+# intron: chain E, residues 1-15;492-504, component-name, high confidence
+name pdb_5Y88_substrate_intron_I #320.1/E:1-15,492-504
+# intron lariat: chain E, residues 1-15;492-504, component-name, high confidence
+name pdb_5Y88_substrate_intron_lariat_I #320.1/E:1-15,492-504
+# substrate RNA: chain E, residues 1-15;492-504, component, medium confidence
+name pdb_5Y88_substrate_substrate_I #320.1/E:1-15,492-504
+# branch point region: chain E, residues 496-502, sequence-motif, medium confidence
+name pdb_5Y88_substrate_branch_point_region_I #320.1/E:496-502
+# branch point adenosine: chain E, residues 501, sequence-motif, medium confidence
+name pdb_5Y88_substrate_branch_point_adenosine_I #320.1/E:501
 view
 show nucleic

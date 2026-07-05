@@ -126,5 +126,12 @@ color #413.1/D #FFEF8C
 color #413.1/E #E2F3F4
 # SYF1
 color #413.1/I #FF957B
+# Named selections for resolved substrate RNA features.
+# intron: chain In, residues 10-28, component-name, high confidence
+name pdb_8RO0_substrate_intron_XAM #413.1/In:10-28
+# intron lariat: chain In, residues 10-28, component-name, high confidence
+name pdb_8RO0_substrate_intron_lariat_XAM #413.1/In:10-28
+# substrate RNA: chain In, residues 10-28, component, medium confidence
+name pdb_8RO0_substrate_substrate_XAM #413.1/In:10-28
 view
 show nucleic

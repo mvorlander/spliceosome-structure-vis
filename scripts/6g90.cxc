@@ -110,5 +110,12 @@ color #336.1/E #7F5BA6
 color #336.1/F #C7A6BE
 # SNU56
 color #336.1/G #D65B96
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain I, residues -1,0,1,2,3,4,5,6,7,8,9,10,51,52,53,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79, component, medium confidence
+name pdb_6G90_substrate_substrate_M #336.1/I:-1,0,1,2,3,4,5,6,7,8,9,10,51,52,53,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79
+# branch point region: chain I, residues 7,8,9,10,51, sequence-motif, medium confidence
+name pdb_6G90_substrate_branch_point_region_M #336.1/I:7,8,9,10,51
+# branch point adenosine: chain I, residues 10, sequence-motif, medium confidence
+name pdb_6G90_substrate_branch_point_adenosine_M #336.1/I:10
 view
 show nucleic

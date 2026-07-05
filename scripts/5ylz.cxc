@@ -116,5 +116,18 @@ color #321.1/F #006400
 color #321.1/H #FF957B
 # CRNKL1
 color #321.1/I #FFC388
+# Named selections for resolved substrate RNA features.
+# intron: chain E, residues -13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1;1-15;282-304;345-355, component-name, high confidence
+name pdb_5YLZ_substrate_intron_I #321.1/E:-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1-15,282-304,345-355
+# intron lariat: chain E, residues -13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1;1-15;282-304;345-355, component-name, high confidence
+name pdb_5YLZ_substrate_intron_lariat_I #321.1/E:-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1-15,282-304,345-355
+# substrate RNA: chain E, residues -13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1;1-15;282-304;345-355, component, medium confidence
+name pdb_5YLZ_substrate_substrate_I #321.1/E:-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1-15,282-304,345-355
+# branch point region: chain E, residues 296-302, sequence-motif, medium confidence
+name pdb_5YLZ_substrate_branch_point_region_I #321.1/E:296-302
+# branch point adenosine: chain E, residues 301, sequence-motif, medium confidence
+name pdb_5YLZ_substrate_branch_point_adenosine_I #321.1/E:301
+# 3' splice site: chain E, residues 348-350, sequence-motif, medium confidence
+name pdb_5YLZ_substrate_three_prime_splice_site_I #321.1/E:348-350
 view
 show nucleic

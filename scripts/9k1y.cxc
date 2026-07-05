@@ -48,5 +48,8 @@ color #424.1/B #92BB8F
 color #424.1/G #303030
 # U2 snRNA
 color #424.1/H #006400
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain G, residues 25-48, component, medium confidence
+name pdb_9K1Y_substrate_substrate_I #424.1/G:25-48
 view
 show nucleic

@@ -106,5 +106,14 @@ color #373.1/3 #6A9064
 color #373.1/4 #77B088
 # SF3B5
 color #373.1/5 #92BB8F
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain I, residues 27-41, component, medium confidence
+name pdb_7VPX_substrate_substrate_MA #373.1/I:27-41
+# 5' splice site: chain K, residues -1,0,1,2,3,4,5,6,7,8, component-name, high confidence
+name pdb_7VPX_substrate_five_prime_splice_site_MB #373.1/K:-1,0,1,2,3,4,5,6,7,8
+# substrate RNA: chain K, residues -1,0,1,2,3,4,5,6,7,8, component, medium confidence
+name pdb_7VPX_substrate_substrate_MB #373.1/K:-1,0,1,2,3,4,5,6,7,8
+# 5' splice site: chain K, residues 1-6, sequence-motif, medium confidence
+name pdb_7VPX_substrate_five_prime_splice_site_MB #373.1/K:1-6
 view
 show nucleic

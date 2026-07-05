@@ -120,5 +120,22 @@ color #418.1/E #303030
 color #418.1/G #FFEF8C
 # CWC22
 color #418.1/H #2C54DD
+# Named selections for resolved substrate RNA features.
+# ligated exons: chain E, residues -14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11;14-21, component-name, high confidence
+name pdb_9DTR_substrate_ligated_exons_M #418.1/E:-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,14-21
+# substrate RNA: chain E, residues -14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11;14-21, component, medium confidence
+name pdb_9DTR_substrate_substrate_M #418.1/E:-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,14-21
+# intron: chain I, residues 1-16;56-77;86-95, component-name, high confidence
+name pdb_9DTR_substrate_intron_I #418.1/I:1-16,56-77,86-95
+# intron lariat: chain I, residues 1-16;56-77;86-95, component-name, high confidence
+name pdb_9DTR_substrate_intron_lariat_I #418.1/I:1-16,56-77,86-95
+# substrate RNA: chain I, residues 1-16;56-77;86-95, component, medium confidence
+name pdb_9DTR_substrate_substrate_I #418.1/I:1-16,56-77,86-95
+# branch point region: chain I, residues 65-71, sequence-motif, medium confidence
+name pdb_9DTR_substrate_branch_point_region_I #418.1/I:65-71
+# branch point adenosine: chain I, residues 70, sequence-motif, medium confidence
+name pdb_9DTR_substrate_branch_point_adenosine_I #418.1/I:70
+# 3' splice site: chain I, residues 93-95, sequence-motif, medium confidence
+name pdb_9DTR_substrate_three_prime_splice_site_I #418.1/I:93-95
 view
 show nucleic

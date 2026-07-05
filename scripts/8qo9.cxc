@@ -178,5 +178,10 @@ color #397.1/B3 #6A9064
 color #397.1/BP #375A40
 # SF3B1
 color #397.1/B1 #487957
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain Z, residues 49-79;144-158, component, medium confidence
+name pdb_8QO9_substrate_substrate_M #397.1/Z:49-79,144-158
+# 5' splice site: chain Z, residues 59-64, sequence-motif, medium confidence
+name pdb_8QO9_substrate_five_prime_splice_site_M #397.1/Z:59-64
 view
 show nucleic

@@ -108,5 +108,16 @@ color #310.1/D #CE4678
 color #310.1/F #2F4DB1
 # EFTUD2
 color #310.1/C #6495ED
+# Named selections for resolved substrate RNA features.
+# 5' exon: chain E, residues -16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1, component-name, high confidence
+name pdb_5LJ3_substrate_exon_5_M #310.1/E:-16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1
+# substrate RNA: chain E, residues -16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1, component, medium confidence
+name pdb_5LJ3_substrate_substrate_M #310.1/E:-16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1
+# substrate RNA: chain I, residues 1-10;54-76, component, medium confidence
+name pdb_5LJ3_substrate_substrate_I #310.1/I:1-10,54-76
+# branch point region: chain I, residues 65-71, sequence-motif, medium confidence
+name pdb_5LJ3_substrate_branch_point_region_I #310.1/I:65-71
+# branch point adenosine: chain I, residues 70, sequence-motif, medium confidence
+name pdb_5LJ3_substrate_branch_point_adenosine_I #310.1/I:70
 view
 show nucleic

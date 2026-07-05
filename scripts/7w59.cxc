@@ -136,5 +136,10 @@ color #374.1/L #DAA520
 color #374.1/M #FF8C00
 # BUD31
 color #374.1/N #FFF584
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain 4, residues -13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1, component, medium confidence
+name pdb_7W59_substrate_substrate_MA #374.1/4:-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1
+# substrate RNA: chain G, residues 1-31;69-103;117-132, component, medium confidence
+name pdb_7W59_substrate_substrate_MB #374.1/G:1-31,69-103,117-132
 view
 show nucleic

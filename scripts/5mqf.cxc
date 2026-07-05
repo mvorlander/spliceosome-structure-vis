@@ -128,5 +128,12 @@ color #315.1/J #FFFFAB
 color #315.1/K #FFDAB9
 # CDC5L
 color #315.1/L #DAA520
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain Y, residues 59-67;135-157, component, medium confidence
+name pdb_5MQF_substrate_substrate_IA #315.1/Y:59-67,135-157
+# 5' splice site: chain Y, residues 59-64, sequence-motif, medium confidence
+name pdb_5MQF_substrate_five_prime_splice_site_IA #315.1/Y:59-64
+# substrate RNA: chain Z, residues 47-58, component, medium confidence
+name pdb_5MQF_substrate_substrate_IB #315.1/Z:47-58
 view
 show nucleic

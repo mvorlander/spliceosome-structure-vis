@@ -160,5 +160,14 @@ color #409.1/R #44A0A7
 color #409.1/U #B37E6A
 # SNRNP27
 color #409.1/X #F4E7D2
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain Z, residues 29-43, component, medium confidence
+name pdb_8R0A_substrate_substrate_MA #409.1/Z:29-43
+# 5' splice site: chain z, residues -3,-2,-1,1,2,3,4,5,6,7,8, component-name, high confidence
+name pdb_8R0A_substrate_five_prime_splice_site_MB #409.1/z:-3,-2,-1,1,2,3,4,5,6,7,8
+# substrate RNA: chain z, residues -3,-2,-1,1,2,3,4,5,6,7,8, component, medium confidence
+name pdb_8R0A_substrate_substrate_MB #409.1/z:-3,-2,-1,1,2,3,4,5,6,7,8
+# 5' splice site: chain z, residues 1-6, sequence-motif, medium confidence
+name pdb_8R0A_substrate_five_prime_splice_site_MB #409.1/z:1-6
 view
 show nucleic

@@ -146,5 +146,10 @@ color #376.1/4 #303030
 color #376.1/G #303030
 # U2 snRNA
 color #376.1/H #006400
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain 4, residues -13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1, component, medium confidence
+name pdb_7W5B_substrate_substrate_MA #376.1/4:-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1
+# substrate RNA: chain G, residues 1-31;116-150;164-179, component, medium confidence
+name pdb_7W5B_substrate_substrate_MB #376.1/G:1-31,116-150,164-179
 view
 show nucleic

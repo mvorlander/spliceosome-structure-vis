@@ -152,5 +152,10 @@ color #356.1/B #DAF7A6
 color #356.1/s #AFEEEE
 # BUD31
 color #356.1/Q #FFF584
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain Z, residues 50-78;141-158, component, medium confidence
+name pdb_7ABG_substrate_substrate_M #356.1/Z:50-78,141-158
+# 5' splice site: chain Z, residues 59-64, sequence-motif, medium confidence
+name pdb_7ABG_substrate_five_prime_splice_site_M #356.1/Z:59-64
 view
 show nucleic

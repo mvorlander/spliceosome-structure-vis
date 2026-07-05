@@ -116,5 +116,20 @@ color #359.1/D #CE4678
 color #359.1/E #303030
 # CCDC49
 color #359.1/F #2F4DB1
+# Named selections for resolved substrate RNA features.
+# 5' exon: chain E, residues -14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1, component-name, high confidence
+name pdb_7B9V_substrate_exon_5_M #359.1/E:-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1
+# substrate RNA: chain E, residues -14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1, component, medium confidence
+name pdb_7B9V_substrate_substrate_M #359.1/E:-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1
+# branch point region: chain I, residues 1-17;55-92, component-name, high confidence
+name pdb_7B9V_substrate_branch_point_region_I #359.1/I:1-17,55-92
+# 3' exon: chain I, residues 1-17;55-92, component-name, high confidence
+name pdb_7B9V_substrate_exon_3_I #359.1/I:1-17,55-92
+# substrate RNA: chain I, residues 1-17;55-92, component, medium confidence
+name pdb_7B9V_substrate_substrate_I #359.1/I:1-17,55-92
+# branch point region: chain I, residues 65-71, sequence-motif, medium confidence
+name pdb_7B9V_substrate_branch_point_region_I #359.1/I:65-71
+# branch point adenosine: chain I, residues 70, sequence-motif, medium confidence
+name pdb_7B9V_substrate_branch_point_adenosine_I #359.1/I:70
 view
 show nucleic

@@ -114,5 +114,12 @@ color #342.1/R #E6B566
 color #342.1/S #FFDEAD
 # BUD31
 color #342.1/T #FFF584
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain B, residues -12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15;51-79, component, medium confidence
+name pdb_6J6N_substrate_substrate_M #342.1/B:-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,51-79
+# branch point region: chain B, residues 65-71, sequence-motif, medium confidence
+name pdb_6J6N_substrate_branch_point_region_M #342.1/B:65-71
+# branch point adenosine: chain B, residues 70, sequence-motif, medium confidence
+name pdb_6J6N_substrate_branch_point_adenosine_M #342.1/B:70
 view
 show nucleic

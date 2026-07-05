@@ -134,5 +134,8 @@ color #361.1/j #B0C4DE
 color #361.1/d #B0C4DE
 # SNRPD2
 color #361.1/k #B0C4DE
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain G, residues -11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19;191-222, component, medium confidence
+name pdb_7DVQ_substrate_substrate_M #361.1/G:-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,191-222
 view
 show nucleic

@@ -130,5 +130,8 @@ color #353.1/I #FFFFAB
 color #353.1/J #FFFFAB
 # BCAS2
 color #353.1/K #FFDAB9
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain Y, residues 80-94;127-140, component, medium confidence
+name pdb_7A5P_substrate_substrate_M #353.1/Y:80-94,127-140
 view
 show nucleic

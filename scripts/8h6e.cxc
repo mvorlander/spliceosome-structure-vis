@@ -158,5 +158,10 @@ color #379.1/6e #F4A3A8
 color #379.1/6f #F4A3A8
 # LSM8
 color #379.1/6g #F4A3A8
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain A, residues 7-48;103-119, component, medium confidence
+name pdb_8H6E_substrate_substrate_M #379.1/A:7-48,103-119
+# 5' splice site: chain A, residues 108-113, sequence-motif, medium confidence
+name pdb_8H6E_substrate_five_prime_splice_site_M #379.1/A:108-113
 view
 show nucleic

@@ -148,5 +148,10 @@ color #358.1/U #FFDAB9
 color #358.1/x #92BB8F
 # U6 snRNA
 color #358.1/6 #DC143C
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain Z, residues 50-78;141-168, component, medium confidence
+name pdb_7ABI_substrate_substrate_M #358.1/Z:50-78,141-168
+# 5' splice site: chain Z, residues 59-64, sequence-motif, medium confidence
+name pdb_7ABI_substrate_five_prime_splice_site_M #358.1/Z:59-64
 view
 show nucleic

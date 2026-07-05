@@ -128,5 +128,8 @@ color #416.1/G #CFA785
 color #416.1/H #6A90A0
 # DDX23
 color #416.1/I #CA9982
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain A, residues -1,0,1,2,3,4,5,6,7,8,9,10,11, component, medium confidence
+name pdb_8Y6O_substrate_substrate_M #416.1/A:-1,0,1,2,3,4,5,6,7,8,9,10,11
 view
 show nucleic

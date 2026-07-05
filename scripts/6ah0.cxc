@@ -150,5 +150,8 @@ color #330.1/U #F7F0A6
 color #330.1/f #B0C4DE
 # U2-Sm SNRPB
 color #330.1/i #D5F5E3
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain G, residues 122-163, component, medium confidence
+name pdb_6AH0_substrate_substrate_M #330.1/G:122-163
 view
 show nucleic

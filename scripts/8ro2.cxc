@@ -116,5 +116,10 @@ color #415.1/J #FFC388
 color #415.1/K #FFDAB9
 # CWF19L1
 color #415.1/L1 #DDA0DD
+# Named selections for resolved substrate RNA features.
+# intron: chain IN, residues 1-24;138-154, component-name, high confidence
+name pdb_8RO2_substrate_intron_I #415.1/IN:1-24,138-154
+# substrate RNA: chain IN, residues 1-24;138-154, component, medium confidence
+name pdb_8RO2_substrate_substrate_I #415.1/IN:1-24,138-154
 view
 show nucleic

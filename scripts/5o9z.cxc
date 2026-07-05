@@ -150,5 +150,10 @@ color #317.1/G #CFA785
 color #317.1/H #DFD570
 # PRPF38A
 color #317.1/I #F88379
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain Y, residues 49-75;142-160, component, medium confidence
+name pdb_5O9Z_substrate_substrate_M #317.1/Y:49-75,142-160
+# 5' splice site: chain Y, residues 59-64, sequence-motif, medium confidence
+name pdb_5O9Z_substrate_five_prime_splice_site_M #317.1/Y:59-64
 view
 show nucleic

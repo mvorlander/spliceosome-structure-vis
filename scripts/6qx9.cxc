@@ -178,5 +178,10 @@ color #348.1/5e #B0C4DE
 color #348.1/I #303030
 # SNRNP70
 color #348.1/1K #8C3D78
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain I, residues -1,0,1,2,3,4,5,6,7,8;88-102, component, medium confidence
+name pdb_6QX9_substrate_substrate_M #348.1/I:-1,0,1,2,3,4,5,6,7,8,88-102
+# 5' splice site: chain I, residues 1-6, sequence-motif, medium confidence
+name pdb_6QX9_substrate_five_prime_splice_site_M #348.1/I:1-6
 view
 show nucleic

@@ -56,5 +56,14 @@ color #370.1/E #92BB8F
 color #370.1/F #ADCEA0
 # PHF5A
 color #370.1/G #375A40
+# Named selections for resolved substrate RNA features.
+# branch point region: chain h, residues 1-13, component-name, high confidence
+name pdb_7Q4O_substrate_branch_point_region_M #370.1/h:1-13
+# substrate RNA: chain h, residues 1-13, component, medium confidence
+name pdb_7Q4O_substrate_substrate_M #370.1/h:1-13
+# branch point region: chain h, residues 5-11, sequence-motif, medium confidence
+name pdb_7Q4O_substrate_branch_point_region_M #370.1/h:5-11
+# branch point adenosine: chain h, residues 10, sequence-motif, medium confidence
+name pdb_7Q4O_substrate_branch_point_adenosine_M #370.1/h:10
 view
 show nucleic

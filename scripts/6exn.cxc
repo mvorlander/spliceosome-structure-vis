@@ -120,5 +120,22 @@ color #333.1/E #303030
 color #333.1/H #2C54DD
 # INTRON
 color #333.1/I #303030
+# Named selections for resolved substrate RNA features.
+# ligated exons: chain E, residues -14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13;15-19, component-name, high confidence
+name pdb_6EXN_substrate_ligated_exons_M #333.1/E:-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,15-19
+# substrate RNA: chain E, residues -14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13;15-19, component, medium confidence
+name pdb_6EXN_substrate_substrate_M #333.1/E:-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,15-19
+# intron: chain I, residues 1-16;56-73;91-95, component-name, high confidence
+name pdb_6EXN_substrate_intron_I #333.1/I:1-16,56-73,91-95
+# intron lariat: chain I, residues 1-16;56-73;91-95, component-name, high confidence
+name pdb_6EXN_substrate_intron_lariat_I #333.1/I:1-16,56-73,91-95
+# substrate RNA: chain I, residues 1-16;56-73;91-95, component, medium confidence
+name pdb_6EXN_substrate_substrate_I #333.1/I:1-16,56-73,91-95
+# branch point region: chain I, residues 65-71, sequence-motif, medium confidence
+name pdb_6EXN_substrate_branch_point_region_I #333.1/I:65-71
+# branch point adenosine: chain I, residues 70, sequence-motif, medium confidence
+name pdb_6EXN_substrate_branch_point_adenosine_I #333.1/I:70
+# 3' splice site: chain I, residues 93-95, sequence-motif, medium confidence
+name pdb_6EXN_substrate_three_prime_splice_site_I #333.1/I:93-95
 view
 show nucleic

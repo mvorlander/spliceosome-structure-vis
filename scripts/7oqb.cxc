@@ -78,5 +78,12 @@ color #365.1/Q #49926C
 color #365.1/P #6A9064
 # SF3B4
 color #365.1/R #77B088
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain I, residues 246-268, component, medium confidence
+name pdb_7OQB_substrate_substrate_M #365.1/I:246-268
+# branch point region: chain I, residues 247-252, sequence-motif, medium confidence
+name pdb_7OQB_substrate_branch_point_region_M #365.1/I:247-252
+# branch point adenosine: chain I, residues 252, sequence-motif, medium confidence
+name pdb_7OQB_substrate_branch_point_adenosine_M #365.1/I:252
 view
 show nucleic

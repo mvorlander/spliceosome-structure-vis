@@ -92,5 +92,8 @@ color #334.1/8 #49926C
 color #334.1/A #BFC3E8
 # EFTUD2
 color #334.1/B #6495ED
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain Z, residues 233-262;380-397, component, medium confidence
+name pdb_6FF4_substrate_substrate_M #334.1/Z:233-262,380-397
 view
 show nucleic

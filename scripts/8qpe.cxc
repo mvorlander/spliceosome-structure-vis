@@ -76,5 +76,12 @@ color #403.1/I #F88379
 color #403.1/K #CD5C5C
 # NHP2L1
 color #403.1/M #A89264
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain z1, residues -3,-2,-1,1,2,3,4,5,6,7,8, component, medium confidence
+name pdb_8QPE_substrate_substrate_MA #403.1/z1:-3,-2,-1,1,2,3,4,5,6,7,8
+# 5' splice site: chain z1, residues 1-6, sequence-motif, medium confidence
+name pdb_8QPE_substrate_five_prime_splice_site_MA #403.1/z1:1-6
+# substrate RNA: chain z2, residues -3,-2,-1,1, component, medium confidence
+name pdb_8QPE_substrate_substrate_MB #403.1/z2:-3,-2,-1,1
 view
 show nucleic

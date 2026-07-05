@@ -116,5 +116,12 @@ color #360.1/m #D5F5E3
 color #360.1/e #B0C4DE
 # U2-Sm SNRPE
 color #360.1/i #D5F5E3
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain G, residues 74-115;468-475;479-484;486-525;528-536, component, medium confidence
+name pdb_7DCO_substrate_substrate_M #360.1/G:74-115,468-475,479-484,486-525,528-536
+# branch point region: chain G, residues 496-502, sequence-motif, medium confidence
+name pdb_7DCO_substrate_branch_point_region_M #360.1/G:496-502
+# branch point adenosine: chain G, residues 501, sequence-motif, medium confidence
+name pdb_7DCO_substrate_branch_point_adenosine_M #360.1/G:501
 view
 show nucleic

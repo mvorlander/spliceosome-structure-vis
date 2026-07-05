@@ -134,5 +134,12 @@ color #414.1/DX #663399
 color #414.1/E #E2F3F4
 # SYF1
 color #414.1/I #FF957B
+# Named selections for resolved substrate RNA features.
+# intron: chain IN, residues 1-2;10-28;40-51, component-name, high confidence
+name pdb_8RO1_substrate_intron_I #414.1/IN:1-2,10-28,40-51
+# intron lariat: chain IN, residues 1-2;10-28;40-51, component-name, high confidence
+name pdb_8RO1_substrate_intron_lariat_I #414.1/IN:1-2,10-28,40-51
+# substrate RNA: chain IN, residues 1-2;10-28;40-51, component, medium confidence
+name pdb_8RO1_substrate_substrate_I #414.1/IN:1-2,10-28,40-51
 view
 show nucleic

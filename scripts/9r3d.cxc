@@ -70,5 +70,8 @@ color #428.1/Q #FFF584
 color #428.1/T #A2B8CD
 # NPWBP
 color #428.1/X #D8944F
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain Z, residues 50-78, component, medium confidence
+name pdb_9R3D_substrate_substrate_M #428.1/Z:50-78
 view
 show nucleic

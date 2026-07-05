@@ -150,5 +150,14 @@ color #326.1/M #A89264
 color #326.1/C #6495ED
 # LSM8
 color #326.1/z #F4A3A8
+# Named selections for resolved substrate RNA features.
+# branch point region: chain G, residues 479-522, component-name, high confidence
+name pdb_5ZWM_substrate_branch_point_region_M #326.1/G:479-522
+# substrate RNA: chain G, residues 479-522, component, medium confidence
+name pdb_5ZWM_substrate_substrate_M #326.1/G:479-522
+# branch point region: chain G, residues 496-502, sequence-motif, medium confidence
+name pdb_5ZWM_substrate_branch_point_region_M #326.1/G:496-502
+# branch point adenosine: chain G, residues 501, sequence-motif, medium confidence
+name pdb_5ZWM_substrate_branch_point_adenosine_M #326.1/G:501
 view
 show nucleic

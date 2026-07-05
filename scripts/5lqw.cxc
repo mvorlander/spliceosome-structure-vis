@@ -98,5 +98,12 @@ color #312.1/H #2C54DD
 color #312.1/J #5FB491
 # PLRG1
 color #312.1/K #F4A460
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain 9, residues 2-30;494-518, component, medium confidence
+name pdb_5LQW_substrate_substrate_M #312.1/9:2-30,494-518
+# branch point region: chain 9, residues 496-502, sequence-motif, medium confidence
+name pdb_5LQW_substrate_branch_point_region_M #312.1/9:496-502
+# branch point adenosine: chain 9, residues 501, sequence-motif, medium confidence
+name pdb_5LQW_substrate_branch_point_adenosine_M #312.1/9:501
 view
 show nucleic

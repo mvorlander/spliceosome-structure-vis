@@ -146,5 +146,12 @@ color #316.1/8 #F4A3A8
 color #316.1/A #BFC3E8
 # SNRNP200
 color #316.1/B #AFEEEE
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain I, residues 6-8;51-53;57-79, component, medium confidence
+name pdb_5NRL_substrate_substrate_M #316.1/I:6-8,51-53,57-79
+# branch point region: chain I, residues 65-71, sequence-motif, medium confidence
+name pdb_5NRL_substrate_branch_point_region_M #316.1/I:65-71
+# branch point adenosine: chain I, residues 70, sequence-motif, medium confidence
+name pdb_5NRL_substrate_branch_point_adenosine_M #316.1/I:70
 view
 show nucleic

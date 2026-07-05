@@ -70,5 +70,10 @@ color #354.1/Z #303030
 color #354.1/8 #FFF7C9
 # PRPF38A
 color #354.1/I #F88379
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain Z, residues 50-78, component, medium confidence
+name pdb_7AAV_substrate_substrate_M #354.1/Z:50-78
+# 5' splice site: chain Z, residues 59-64, sequence-motif, medium confidence
+name pdb_7AAV_substrate_five_prime_splice_site_M #354.1/Z:59-64
 view
 show nucleic

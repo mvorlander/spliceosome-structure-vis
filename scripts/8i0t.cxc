@@ -148,5 +148,10 @@ color #387.1/G #303030
 color #387.1/H #006400
 # SYF1
 color #387.1/I #FF957B
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain G, residues -12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24;83-117, component, medium confidence
+name pdb_8I0T_substrate_substrate_M #387.1/G:-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,83-117
+# 5' splice site: chain G, residues 1-6, sequence-motif, medium confidence
+name pdb_8I0T_substrate_five_prime_splice_site_M #387.1/G:1-6
 view
 show nucleic

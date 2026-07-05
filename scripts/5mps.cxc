@@ -90,5 +90,16 @@ color #313.1/C #6495ED
 color #313.1/H #2C54DD
 # PLRG1
 color #313.1/J #F4A460
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain 6, residues 1-10;16-104, component, medium confidence
+name pdb_5MPS_substrate_substrate_MA #313.1/6:1-10,16-104
+# substrate RNA: chain E, residues -16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1, component, medium confidence
+name pdb_5MPS_substrate_substrate_MB #313.1/E:-16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1
+# substrate RNA: chain I, residues 1-16;56-73, component, medium confidence
+name pdb_5MPS_substrate_substrate_MC #313.1/I:1-16,56-73
+# branch point region: chain I, residues 65-71, sequence-motif, medium confidence
+name pdb_5MPS_substrate_branch_point_region_MC #313.1/I:65-71
+# branch point adenosine: chain I, residues 70, sequence-motif, medium confidence
+name pdb_5MPS_substrate_branch_point_adenosine_MC #313.1/I:70
 view
 show nucleic

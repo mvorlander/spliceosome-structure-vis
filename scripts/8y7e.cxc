@@ -70,5 +70,8 @@ color #417.1/6 #375A40
 color #417.1/7 #92BB8F
 # U2 snRNA
 color #417.1/H #006400
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain A, residues 193-222, component, medium confidence
+name pdb_8Y7E_substrate_substrate_M #417.1/A:193-222
 view
 show nucleic

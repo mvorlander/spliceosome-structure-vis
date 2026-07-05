@@ -122,5 +122,24 @@ color #309.1/M #303030
 color #309.1/B #303030
 # pre-mRNA
 color #309.1/N #303030
+# Named selections for resolved substrate RNA features.
+# 5' exon: chain B, residues 87-99, component-name, high confidence
+name pdb_5GMK_substrate_exon_5_MA #309.1/B:87-99
+# substrate RNA: chain B, residues 87-99, component, medium confidence
+name pdb_5GMK_substrate_substrate_MA #309.1/B:87-99
+# branch point region: chain M, residues 482-510, component-name, high confidence
+name pdb_5GMK_substrate_branch_point_region_I #309.1/M:482-510
+# intron: chain M, residues 482-510, component-name, high confidence
+name pdb_5GMK_substrate_intron_I #309.1/M:482-510
+# substrate RNA: chain M, residues 482-510, component, medium confidence
+name pdb_5GMK_substrate_substrate_I #309.1/M:482-510
+# branch point region: chain M, residues 496-502, sequence-motif, medium confidence
+name pdb_5GMK_substrate_branch_point_region_I #309.1/M:496-502
+# branch point adenosine: chain M, residues 501, sequence-motif, medium confidence
+name pdb_5GMK_substrate_branch_point_adenosine_I #309.1/M:501
+# 5' splice site: chain N, residues 100-114, component-name, high confidence
+name pdb_5GMK_substrate_five_prime_splice_site_MB #309.1/N:100-114
+# substrate RNA: chain N, residues 100-114, component, medium confidence
+name pdb_5GMK_substrate_substrate_MB #309.1/N:100-114
 view
 show nucleic

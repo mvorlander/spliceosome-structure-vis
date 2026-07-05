@@ -138,5 +138,10 @@ color #337.1/C #6495ED
 color #337.1/E #E2F3F4
 # U6 snRNA
 color #337.1/F #DC143C
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain G, residues -12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1;1-31;116-150;162-167, component, medium confidence
+name pdb_6ICZ_substrate_substrate_M #337.1/G:-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1-31,116-150,162-167
+# 5' splice site: chain G, residues 1-6, sequence-motif, medium confidence
+name pdb_6ICZ_substrate_five_prime_splice_site_M #337.1/G:1-6
 view
 show nucleic

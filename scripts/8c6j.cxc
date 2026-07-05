@@ -162,5 +162,14 @@ color #377.1/9 #EAA439
 color #377.1/A #BFC3E8
 # SNRNP200
 color #377.1/B #AFEEEE
+# Named selections for resolved substrate RNA features.
+# 5' exon: chain E, residues -24,-23,-22,-21,-20,-19,-18,-17,-16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1, component-name, high confidence
+name pdb_8C6J_substrate_exon_5_M #377.1/E:-24,-23,-22,-21,-20,-19,-18,-17,-16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1
+# substrate RNA: chain E, residues -24,-23,-22,-21,-20,-19,-18,-17,-16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1, component, medium confidence
+name pdb_8C6J_substrate_substrate_M #377.1/E:-24,-23,-22,-21,-20,-19,-18,-17,-16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1
+# intron: chain I, residues 1-22;132-193, component-name, high confidence
+name pdb_8C6J_substrate_intron_I #377.1/I:1-22,132-193
+# substrate RNA: chain I, residues 1-22;132-193, component, medium confidence
+name pdb_8C6J_substrate_substrate_I #377.1/I:1-22,132-193
 view
 show nucleic

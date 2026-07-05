@@ -118,5 +118,18 @@ color #332.1/B #6495ED
 color #332.1/D #F4A460
 # SNW1
 color #332.1/E #D49F96
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain e, residues -13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21, component, medium confidence
+name pdb_6BK8_substrate_substrate_MA #332.1/e:-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21
+# substrate RNA: chain i, residues 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,501,502,503,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,620,621,622,623,624,625,626,627,628,1001,1002,1003,1004,1005,1006,1007,1008,1110,1111,1112,1113,1114,1115,1116,1117,1118, component, medium confidence
+name pdb_6BK8_substrate_substrate_MB #332.1/i:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,501,502,503,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,620,621,622,623,624,625,626,627,628,1001,1002,1003,1004,1005,1006,1007,1008,1110,1111,1112,1113,1114,1115,1116,1117,1118
+# branch point region: chain i, residues 510-516, sequence-motif, medium confidence
+name pdb_6BK8_substrate_branch_point_region_MB #332.1/i:510-516
+# branch point adenosine: chain i, residues 515, sequence-motif, medium confidence
+name pdb_6BK8_substrate_branch_point_adenosine_MB #332.1/i:515
+# polypyrimidine tract: chain i, residues 518,620,621,622,623,624,625,626,627,628, sequence-motif, medium confidence
+name pdb_6BK8_substrate_polypyrimidine_tract_MB #332.1/i:518,620,621,622,623,624,625,626,627,628
+# 3' splice site: chain i, residues 1116-1118, sequence-motif, medium confidence
+name pdb_6BK8_substrate_three_prime_splice_site_MB #332.1/i:1116-1118
 view
 show nucleic

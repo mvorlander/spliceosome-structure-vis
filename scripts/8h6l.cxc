@@ -149,5 +149,10 @@ color #382.1/2c #D5F5E3
 color #382.1/4c #F7F0A6
 # U5-Sm SNRPD2
 color #382.1/5c #B0C4DE
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain A, residues 7-48;102-116, component, medium confidence
+name pdb_8H6L_substrate_substrate_M #382.1/A:7-48,102-116
+# 5' splice site: chain A, residues 108-113, sequence-motif, medium confidence
+name pdb_8H6L_substrate_five_prime_splice_site_M #382.1/A:108-113
 view
 show nucleic

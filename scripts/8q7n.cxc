@@ -78,5 +78,10 @@ color #391.1/K #CD5C5C
 color #391.1/M #A89264
 # BUD31
 color #391.1/Q #FFF584
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain Z, residues 49-79, component, medium confidence
+name pdb_8Q7N_substrate_substrate_M #391.1/Z:49-79
+# 5' splice site: chain Z, residues 59-64, sequence-motif, medium confidence
+name pdb_8Q7N_substrate_five_prime_splice_site_M #391.1/Z:59-64
 view
 show nucleic

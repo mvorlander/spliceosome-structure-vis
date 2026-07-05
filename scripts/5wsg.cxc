@@ -120,5 +120,32 @@ color #318.1/R #E6B566
 color #318.1/S #FFDEAD
 # BUD31
 color #318.1/T #FFF584
+# Named selections for resolved substrate RNA features.
+# 5' exon: chain B, residues 87-99, component-name, high confidence
+name pdb_5WSG_substrate_exon_5_MA #318.1/B:87-99
+# substrate RNA: chain B, residues 87-99, component, medium confidence
+name pdb_5WSG_substrate_substrate_MA #318.1/B:87-99
+# substrate RNA: chain L, residues 1-52;110-123;1096-1120, component, medium confidence
+name pdb_5WSG_substrate_substrate_MB #318.1/L:1-52,110-123,1096-1120
+# intron: chain M, residues 482-504, component-name, high confidence
+name pdb_5WSG_substrate_intron_IA #318.1/M:482-504
+# intron lariat: chain M, residues 482-504, component-name, high confidence
+name pdb_5WSG_substrate_intron_lariat_IA #318.1/M:482-504
+# substrate RNA: chain M, residues 482-504, component, medium confidence
+name pdb_5WSG_substrate_substrate_IA #318.1/M:482-504
+# branch point region: chain M, residues 496-502, sequence-motif, medium confidence
+name pdb_5WSG_substrate_branch_point_region_IA #318.1/M:496-502
+# branch point adenosine: chain M, residues 501, sequence-motif, medium confidence
+name pdb_5WSG_substrate_branch_point_adenosine_IA #318.1/M:501
+# intron: chain N, residues 100-114, component-name, high confidence
+name pdb_5WSG_substrate_intron_IB #318.1/N:100-114
+# intron lariat: chain N, residues 100-114, component-name, high confidence
+name pdb_5WSG_substrate_intron_lariat_IB #318.1/N:100-114
+# substrate RNA: chain N, residues 100-114, component, medium confidence
+name pdb_5WSG_substrate_substrate_IB #318.1/N:100-114
+# 3' exon: chain b, residues -5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8, component-name, high confidence
+name pdb_5WSG_substrate_exon_3_IC #318.1/b:-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8
+# substrate RNA: chain b, residues -5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8, component, medium confidence
+name pdb_5WSG_substrate_substrate_IC #318.1/b:-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8
 view
 show nucleic

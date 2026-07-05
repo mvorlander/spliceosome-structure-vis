@@ -172,5 +172,14 @@ color #406.1/C #6495ED
 color #406.1/D #C3BA7A
 # PRP8BP
 color #406.1/E #E2F3F4
+# Named selections for resolved substrate RNA features.
+# substrate RNA: chain Z, residues 29-43, component, medium confidence
+name pdb_8QZS_substrate_substrate_MA #406.1/Z:29-43
+# substrate RNA: chain z1, residues -3,-2,-1,1,2,3,4,5,6,7,8, component, medium confidence
+name pdb_8QZS_substrate_substrate_MB #406.1/z1:-3,-2,-1,1,2,3,4,5,6,7,8
+# 5' splice site: chain z1, residues 1-6, sequence-motif, medium confidence
+name pdb_8QZS_substrate_five_prime_splice_site_MB #406.1/z1:1-6
+# substrate RNA: chain z2, residues -3,-2,-1,1, component, medium confidence
+name pdb_8QZS_substrate_substrate_MC #406.1/z2:-3,-2,-1,1
 view
 show nucleic
