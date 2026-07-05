@@ -54,6 +54,11 @@
     .legend-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:9px 16px; font-size:12px; }
     .legend-item { display:flex; align-items:flex-start; gap:8px; min-width:0; }
     .legend-item .badge { flex:0 0 auto; margin-top:1px; }
+    .doc-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:14px; }
+    .doc-section { border:1px solid var(--line); border-radius:8px; background:#fff; padding:13px 14px; min-width:0; }
+    .doc-section h3 { margin:0 0 8px; font-size:14px; }
+    .doc-section p, .doc-section li { color:#3d444d; font-size:13px; }
+    .doc-section ul { margin:8px 0 0; padding-left:18px; }
     .thumbnail-img { display:block; width:100%; max-width:360px; border:1px solid var(--line); border-radius:8px; background:#fff; }
     .table-thumbnail { display:block; width:64px; height:64px; object-fit:contain; border:1px solid var(--line); border-radius:6px; background:#fff; }
     .preview-cell { width:78px; min-width:78px; }
@@ -125,7 +130,7 @@
     <main>
       <div class="topbar">
         <div><h1>Deposited Spliceosome Structures</h1><div class="subtle" id="resultSubtitle"></div></div>
-        <div class="tabs" id="tabs"><button type="button" class="tab-button active" data-tab="structures">Structures</button><button type="button" class="tab-button" data-tab="rnaFeatures">RNA Features</button><button type="button" class="tab-button" data-tab="proteins">Protein Colors</button><button type="button" class="tab-button" data-tab="help">Help</button></div>
+        <div class="tabs" id="tabs"><button type="button" class="tab-button active" data-tab="structures">Structures</button><button type="button" class="tab-button" data-tab="rnaFeatures">RNA Features</button><button type="button" class="tab-button" data-tab="proteins">Protein Colors</button><button type="button" class="tab-button" data-tab="documentation">Documentation</button><button type="button" class="tab-button" data-tab="help">Help</button></div>
       </div>
       <div id="structuresView">
         <section class="stats" id="stats"></section>
@@ -152,6 +157,16 @@
       <div id="proteinsView" hidden>
         <section class="panel"><div class="panel-head"><h2>Protein Color And Homolog Lookup</h2><span class="subtle" id="proteinCount"></span></div><div class="protein-table-wrap"><table><thead><tr><th>Protein</th><th>Class / Family</th><th>Aliases</th><th>Color</th><th>Canonical IDs</th><th>Model-species homologs</th><th>Seen in</th></tr></thead><tbody id="proteinRows"></tbody></table></div></section>
       </div>
+      <div id="documentationView" hidden>
+        <section class="panel"><div class="panel-head"><h2>Dashboard Documentation</h2><span class="subtle">features, UI, and curation methodology</span></div><div class="panel-body"><div class="doc-grid">
+          <div class="doc-section"><h3>Scope</h3><p>This lightweight dashboard lists deposited spliceosome and spliceosomal snRNP structures and provides ChimeraX scripts that download models directly from the PDB.</p><ul><li>No maps, mmCIF files, local curated CIF entries, or large binary assets are bundled here.</li><li>The full internal resource adds shared coordinate files, renamed-chain mmCIFs, EM map support, and local curated structures.</li><li>Entries are organized by pathway state, species, publication, resolved components, RNA annotations, quality metrics, and color/homolog metadata.</li></ul></div>
+          <div class="doc-section"><h3>Structure UI</h3><p>The Structures tab is the main workspace for finding entries and copying ChimeraX scripts.</p><ul><li>Use the sidebar to filter by text, complex, species, PRPF8/SF3B1 content, RNA features, and sort order.</li><li>Click a state in the splicing-cycle cartoon to filter the structure table.</li><li>Select a row to open details with paper metadata, components, RNA annotations, quality metrics, curation audit summaries, and a script preview.</li><li>Use the Compare column to keep up to five structures in a temporary comparison panel.</li></ul></div>
+          <div class="doc-section"><h3>RNA Features</h3><p>Resolved substrate and snRNA feature annotations are generated from deposited sequences and coordinates.</p><ul><li>The RNA feature text box narrows the feature drop-down; choosing a feature filters the structure table.</li><li>Common presets expose substrate annotations, snRNA annotations, 3' exon, ligated exons, branch A, and U6 ACAGAGA.</li><li>Named ChimeraX selectors follow `stage_PDB_feature`, for example `pre_Bact_7AAV_5exon`.</li><li>When multiple chains or segments represent one biological feature, the script creates a single named selection that unions the residue specs.</li></ul></div>
+          <div class="doc-section"><h3>Protein Colors And Homologs</h3><p>The Protein Colors tab exposes the universal color table, common aliases, canonical chain IDs, homolog mappings, and source/provenance metadata.</p><ul><li>Colors combine provided ChimeraX examples, curated palettes, and generated class/family palettes.</li><li>Canonical chain IDs are shown for compatibility with the full renamed-chain resource, although this public dashboard uses original deposited chains.</li><li>Homolog mapping combines deposited names, curated aliases, SpliceosomeDB-style classes, OMA/BLAST-supported mappings, and manual corrections.</li></ul></div>
+          <div class="doc-section"><h3>ChimeraX Scripts</h3><p>Public scripts use original chain IDs and `open PDBID` commands so ChimeraX retrieves models directly from the PDB.</p><ul><li>Scripts use unique model IDs so multiple structures can be opened in one ChimeraX session.</li><li>Structures are aligned to a shared anchor frame where PRPF8/SF3B1-compatible anchors are available.</li><li>Scripts apply the shared color code, RNA feature named selections, default display style, and nucleic-acid visibility.</li><li>Map-loading and renamed-chain script variants are available in the full shared/internal resource, not this lightweight package.</li></ul></div>
+          <div class="doc-section"><h3>Curation Methodology</h3><p>Metadata are generated from PDBe/PDB records, mmCIF coordinate content, publications, validation summaries, and curated project tables.</p><ul><li>Pathway states are inferred from titles and paper context, with manual correction for known ambiguous cases.</li><li>Components are derived from deposited polymer entities, chain IDs, gene/molecule names, UniProt cross-references, and canonical-chain mappings.</li><li>RNA identities and functional features are assigned conservatively; unresolved or ambiguous cases remain visible through audit and confidence badges.</li><li>Quality metrics are extracted from available PDBe/EMDB validation and experiment metadata; missing metrics are left as unavailable rather than inferred.</li></ul></div>
+        </div></div></section>
+      </div>
       <div id="helpView" hidden>
         <section class="panel"><div class="panel-head"><h2>Badge Legend</h2><span class="subtle">table, detail, and curation badges</span></div><div class="panel-body"><div class="legend-grid">
           <div class="legend-item"><span class="badge good">high</span><span>High-confidence assignment in the curation audit.</span></div>
@@ -173,7 +188,7 @@
     let rnaFeatureConsistency = [];
     const state = { activeTab:"structures", query:"", mode:"all", family:"all", species:"all", components:"all", rnaFeature:"all", rnaFeatureSearch:"", rnaDefinitionQuery:"", sortBy:"pathway", selected: records[0]?.pdb_id || "", compareIds: [] };
     const els = {};
-    for (const id of ["search","searchMode","family","species","componentFilter","rnaFeatureFilter","rnaFeatureQuickSearch","rnaFeatureQuickSelect","rnaQuickFilters","activeFilterChips","rnaDefinitionSearch","rnaDefinitionRows","sortBy","reset","tabs","structuresView","rnaFeaturesView","proteinsView","helpView","stats","cycle","rows","detail","tableCount","resultSubtitle","selectedId","proteinRows","proteinCount"]) els[id] = document.getElementById(id);
+    for (const id of ["search","searchMode","family","species","componentFilter","rnaFeatureFilter","rnaFeatureQuickSearch","rnaFeatureQuickSelect","rnaQuickFilters","activeFilterChips","rnaDefinitionSearch","rnaDefinitionRows","sortBy","reset","tabs","structuresView","rnaFeaturesView","proteinsView","documentationView","helpView","stats","cycle","rows","detail","tableCount","resultSubtitle","selectedId","proteinRows","proteinCount"]) els[id] = document.getElementById(id);
     const STAGES = ["U2 snRNP","E complex","A complex","U5/tri-snRNP","pre-B","B","pre-Bact","Bact","B*","C","C*","P","ILS/disassembly","U5 recycling"];
     const ORDER = Object.fromEntries(STAGES.map((s,i)=>[s,i]));
     const NODE_POS = [[232,54],[122,126],[150,222],[305,200],[188,318],[350,334],[492,334],[630,324],[765,294],[890,238],[1000,170],[1024,86],[795,54],[535,66]];
@@ -320,11 +335,16 @@
       els.structuresView.hidden = state.activeTab !== "structures";
       els.rnaFeaturesView.hidden = state.activeTab !== "rnaFeatures";
       els.proteinsView.hidden = state.activeTab !== "proteins";
+      els.documentationView.hidden = state.activeTab !== "documentation";
       els.helpView.hidden = state.activeTab !== "help";
       if(state.activeTab === "proteins") { renderProteins(); return; }
       if(state.activeTab === "rnaFeatures") {
         renderRnaFeatureDefinitions();
         els.resultSubtitle.textContent = `${rnaFeatureDefinitions.length} RNA feature definitions`;
+        return;
+      }
+      if(state.activeTab === "documentation") {
+        els.resultSubtitle.textContent = "Features, UI, and methodology";
         return;
       }
       if(state.activeTab === "help") {
