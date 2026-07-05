@@ -115,11 +115,30 @@ color #366.1/b #EAD7E8
 # U2-Sm SNRPB
 color #366.1/s #D5F5E3
 # Named selections for resolved substrate RNA features.
+# 5' exon: chain I, residues -2,-1,1,2,3,4,5,6,7,8, splice-site-inference, medium confidence
+name s_7OQE_sub_exon_5_M #366.1/I:-2,-1,1,2,3,4,5,6,7,8
 # substrate RNA: chain I, residues -2,-1,1,2,3,4,5,6,7,8;103-128;130-156;246-268, component, medium confidence
-name pdb_7OQE_substrate_substrate_M #366.1/I:-2,-1,1,2,3,4,5,6,7,8,103-128,130-156,246-268
-# branch point region: chain I, residues 247-252, sequence-motif, medium confidence
-name pdb_7OQE_substrate_branch_point_region_M #366.1/I:247-252
-# branch point adenosine: chain I, residues 252, sequence-motif, medium confidence
-name pdb_7OQE_substrate_branch_point_adenosine_M #366.1/I:252
+name s_7OQE_sub_substrate_M #366.1/I:-2,-1,1,2,3,4,5,6,7,8,103-128,130-156,246-268
+# intron: chain I, residues 103-128;130-156;246-268, splice-site-inference, medium confidence
+name s_7OQE_sub_intron_M #366.1/I:103-128,130-156,246-268
+# Named selections for resolved snRNA functional regions.
+# U1 snRNA 5' splice-site recognition region: chain 1, residues 1-10, review-region, medium confidence
+name r_7OQE_U1_5prime_5SS_recognition_1 #366.1/1:1-10
+# U1 snRNA stem-loop 1: chain 1, residues 11-26;34-45, review-region, low confidence
+name r_7OQE_U1_SL1_1 #366.1/1:11-26,34-45
+# U1 snRNA stem-loop 2: chain 1, residues 46-95, review-region, low confidence
+name r_7OQE_U1_SL2_1 #366.1/1:46-95
+# U1 snRNA Sm site: chain 1, residues 224-230, sequence-motif, medium confidence
+name r_7OQE_U1_Sm_site_1 #366.1/1:224-230
+# U1 snRNA Sm site: chain 1, residues 241-247, sequence-motif, medium confidence
+name r_7OQE_U1_Sm_site_1 #366.1/1:241-247
+# U1 snRNA Sm site: chain 1, residues 553-559, sequence-motif, medium confidence
+name r_7OQE_U1_Sm_site_1 #366.1/1:553-559
+# U2 snRNA U2/U6 helix I partner: chain 2, residues 32-55, review-region, low confidence
+name r_7OQE_U2_U6_helix_I_partner_2 #366.1/2:32-55
+# U2 snRNA branchpoint pairing region: chain 2, residues 34-39, sequence-motif, medium confidence
+name r_7OQE_U2_branchpoint_pairing_region_2 #366.1/2:34-39
+# U2 snRNA stem IIa: chain 2, residues 46-74;78-80, review-region, low confidence
+name r_7OQE_U2_stem_IIa_2 #366.1/2:46-74,78-80
 view
 show nucleic

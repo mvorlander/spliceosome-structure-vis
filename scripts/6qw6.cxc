@@ -114,5 +114,32 @@ color #347.1/4B #E2C496
 color #347.1/4C #DFD570
 # NHP2L1
 color #347.1/4D #A89264
+# Named selections for resolved snRNA functional regions.
+# U4 snRNA U4/U6 stem I partner: chain 4, residues 0-24, review-region, low confidence
+name r_6QW6_U4_U6_stem_I_partner_4 #347.1/4:0-24
+# U4 snRNA U4/U6 stem II partner: chain 4, residues 44-52;55-70;73-74, review-region, low confidence
+name r_6QW6_U4_U6_stem_II_partner_4 #347.1/4:44-52,55-70,73-74
+# U4 snRNA Brr2 loading region: chain 4, residues 59-70;73-80;85-94, review-region, low confidence
+name r_6QW6_U4_Brr2_loading_region_4 #347.1/4:59-70,73-80,85-94
+# U4 snRNA Sm site: chain 4, residues 118-124, sequence-motif, medium confidence
+name r_6QW6_U4_Sm_site_4 #347.1/4:118-124
+# U5 snRNA loop I 5' exon contact side: chain 5, residues 35-38, review-region, low confidence
+name r_6QW6_U5_loop_I_5exon_contact_5 #347.1/5:35-38
+# U5 snRNA loop I: chain 5, residues 38, sequence-motif, medium confidence
+name r_6QW6_U5_loop_I_5 #347.1/5:38
+# U5 snRNA loop I 3' exon contact side: chain 5, residues 44-50, review-region, low confidence
+name r_6QW6_U5_loop_I_3exon_contact_5 #347.1/5:44-50
+# U6 snRNA U2/U6 helix I partner: chain 6, residues 35-36;47-60, review-region, low confidence
+name r_6QW6_U6_U2_helix_I_partner_6 #347.1/6:35-36,47-60
+# U6 snRNA 5' splice-site upstream contact: chain 6, residues 47-49, motif-neighborhood, medium confidence
+name r_6QW6_U6_5SS_upstream_contact_6 #347.1/6:47-49
+# U6 snRNA internal stem-loop: chain 6, residues 47-67, motif-neighborhood, low confidence
+name r_6QW6_U6_ISL_6 #347.1/6:47-67
+# U6 snRNA ACAGAGA box: chain 6, residues 47, sequence-motif, high confidence
+name r_6QW6_U6_ACAGAGA_box_6 #347.1/6:47
+# U6 snRNA AGC catalytic triad: chain 6, residues 53-55, sequence-motif, medium confidence
+name r_6QW6_U6_AGC_catalytic_triad_6 #347.1/6:53-55
+# U6 snRNA LSm site: chain 6, residues 102-106, terminal-region, low confidence
+name r_6QW6_U6_LSm_site_6 #347.1/6:102-106
 view
 show nucleic

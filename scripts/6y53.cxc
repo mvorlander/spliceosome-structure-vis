@@ -74,5 +74,10 @@ color #350.1/9 #9BCF91
 color #350.1/o #77B088
 # U2-Sm SNRPB
 color #350.1/m #D5F5E3
+# Named selections for resolved snRNA functional regions.
+# U2 snRNA stem IIa: chain 2, residues 69-73;81-82, review-region, low confidence
+name r_6Y53_U2_stem_IIa_2 #350.1/2:69-73,81-82
+# U2 snRNA Sm site: chain 2, residues 99-105, sequence-motif, medium confidence
+name r_6Y53_U2_Sm_site_2 #350.1/2:99-105
 view
 show nucleic

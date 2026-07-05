@@ -109,15 +109,42 @@ color #310.1/F #2F4DB1
 # EFTUD2
 color #310.1/C #6495ED
 # Named selections for resolved substrate RNA features.
-# 5' exon: chain E, residues -16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1, component-name, high confidence
-name pdb_5LJ3_substrate_exon_5_M #310.1/E:-16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1
-# substrate RNA: chain E, residues -16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1, component, medium confidence
-name pdb_5LJ3_substrate_substrate_M #310.1/E:-16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1
+# 5' exon: chain E, residues -16--1, component-name, high confidence
+name s_5LJ3_sub_exon_5_M #310.1/E:-16--1
+# substrate RNA: chain E, residues -16--1, component, medium confidence
+name s_5LJ3_sub_substrate_M #310.1/E:-16--1
 # substrate RNA: chain I, residues 1-10;54-76, component, medium confidence
-name pdb_5LJ3_substrate_substrate_I #310.1/I:1-10,54-76
-# branch point region: chain I, residues 65-71, sequence-motif, medium confidence
-name pdb_5LJ3_substrate_branch_point_region_I #310.1/I:65-71
-# branch point adenosine: chain I, residues 70, sequence-motif, medium confidence
-name pdb_5LJ3_substrate_branch_point_adenosine_I #310.1/I:70
+name s_5LJ3_sub_substrate_I #310.1/I:1-10,54-76
+# branch helix substrate strand: chain I, residues 54-55, sequence-motif, medium confidence
+name s_5LJ3_sub_branch_helix_I #310.1/I:54-55
+# branch point region: chain I, residues 54-55, sequence-motif, medium confidence
+name s_5LJ3_sub_branch_point_region_I #310.1/I:54-55
+# branch point adenosine: chain I, residues 54, sequence-motif, medium confidence
+name s_5LJ3_sub_branch_point_adenosine_I #310.1/I:54
+# Named selections for resolved snRNA functional regions.
+# U2 snRNA U2/U6 helix I partner: chain Z, residues 25-47;54-55, review-region, low confidence
+name r_5LJ3_U2_U6_helix_I_partner_2 #310.1/Z:25-47,54-55
+# U2 snRNA branchpoint pairing region: chain Z, residues 34-39, sequence-motif, medium confidence
+name r_5LJ3_U2_branchpoint_pairing_region_2 #310.1/Z:34-39
+# U2 snRNA stem IIa: chain Z, residues 46-47;54-73;78-79, review-region, low confidence
+name r_5LJ3_U2_stem_IIa_2 #310.1/Z:46-47,54-73,78-79
+# U5 snRNA loop I 5' exon contact side: chain U, residues 35-42, review-region, low confidence
+name r_5LJ3_U5_loop_I_5exon_contact_5 #310.1/U:35-42
+# U5 snRNA loop I 3' exon contact side: chain U, residues 43-50, review-region, low confidence
+name r_5LJ3_U5_loop_I_3exon_contact_5 #310.1/U:43-50
+# U5 snRNA loop I: chain U, residues 53, sequence-motif, medium confidence
+name r_5LJ3_U5_loop_I_5 #310.1/U:53
+# U6 snRNA U4/U6 stem I partner: chain V, residues 1-10;16-30, review-region, low confidence
+name r_5LJ3_U6_U4_stem_I_partner_6 #310.1/V:1-10,16-30
+# U6 snRNA U2/U6 helix I partner: chain V, residues 35-60, review-region, low confidence
+name r_5LJ3_U6_U2_helix_I_partner_6 #310.1/V:35-60
+# U6 snRNA 5' splice-site upstream contact: chain V, residues 44-55, motif-neighborhood, medium confidence
+name r_5LJ3_U6_5SS_upstream_contact_6 #310.1/V:44-55
+# U6 snRNA internal stem-loop: chain V, residues 46-73, motif-neighborhood, low confidence
+name r_5LJ3_U6_ISL_6 #310.1/V:46-73
+# U6 snRNA ACAGAGA box: chain V, residues 47-53, sequence-motif, high confidence
+name r_5LJ3_U6_ACAGAGA_box_6 #310.1/V:47-53
+# U6 snRNA AGC catalytic triad: chain V, residues 59-61, sequence-motif, medium confidence
+name r_5LJ3_U6_AGC_catalytic_triad_6 #310.1/V:59-61
 view
 show nucleic

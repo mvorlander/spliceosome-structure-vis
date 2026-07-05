@@ -149,9 +149,46 @@ color #358.1/x #92BB8F
 # U6 snRNA
 color #358.1/6 #DC143C
 # Named selections for resolved substrate RNA features.
+# 5' exon: chain Z, residues 50-58, splice-site-inference, medium confidence
+name s_7ABI_sub_exon_5_M #358.1/Z:50-58
 # substrate RNA: chain Z, residues 50-78;141-168, component, medium confidence
-name pdb_7ABI_substrate_substrate_M #358.1/Z:50-78,141-168
+name s_7ABI_sub_substrate_M #358.1/Z:50-78,141-168
 # 5' splice site: chain Z, residues 59-64, sequence-motif, medium confidence
-name pdb_7ABI_substrate_five_prime_splice_site_M #358.1/Z:59-64
+name s_7ABI_sub_five_prime_splice_site_M #358.1/Z:59-64
+# intron: chain Z, residues 59-78;141-168, splice-site-inference, medium confidence
+name s_7ABI_sub_intron_M #358.1/Z:59-78,141-168
+# branch helix substrate strand: chain Z, residues 150-156, sequence-motif, medium confidence
+name s_7ABI_sub_branch_helix_M #358.1/Z:150-156
+# branch point region: chain Z, residues 150-156, sequence-motif, medium confidence
+name s_7ABI_sub_branch_point_region_M #358.1/Z:150-156
+# branch point adenosine: chain Z, residues 155, sequence-motif, medium confidence
+name s_7ABI_sub_branch_point_adenosine_M #358.1/Z:155
+# Named selections for resolved snRNA functional regions.
+# U2 snRNA U2/U6 helix I partner: chain 2, residues 25-55, review-region, low confidence
+name r_7ABI_U2_U6_helix_I_partner_2 #358.1/2:25-55
+# U2 snRNA branchpoint pairing region: chain 2, residues 33-38, sequence-motif, medium confidence
+name r_7ABI_U2_branchpoint_pairing_region_2 #358.1/2:33-38
+# U2 snRNA stem IIa: chain 2, residues 46-65;68-73;79-80, review-region, low confidence
+name r_7ABI_U2_stem_IIa_2 #358.1/2:46-65,68-73,79-80
+# U2 snRNA Sm site: chain 2, residues 99-105, sequence-motif, medium confidence
+name r_7ABI_U2_Sm_site_2 #358.1/2:99-105
+# U5 snRNA loop I 5' exon contact side: chain 5, residues 35-42, review-region, low confidence
+name r_7ABI_U5_loop_I_5exon_contact_5 #358.1/5:35-42
+# U5 snRNA loop I: chain 5, residues 38-42, sequence-motif, medium confidence
+name r_7ABI_U5_loop_I_5 #358.1/5:38-42
+# U5 snRNA loop I 3' exon contact side: chain 5, residues 43-50, review-region, low confidence
+name r_7ABI_U5_loop_I_3exon_contact_5 #358.1/5:43-50
+# U6 snRNA U4/U6 stem I partner: chain 6, residues 1-30, review-region, low confidence
+name r_7ABI_U6_U4_stem_I_partner_6 #358.1/6:1-30
+# U6 snRNA U2/U6 helix I partner: chain 6, residues 35-57;60, review-region, low confidence
+name r_7ABI_U6_U2_helix_I_partner_6 #358.1/6:35-57,60
+# U6 snRNA 5' splice-site upstream contact: chain 6, residues 38-49, motif-neighborhood, medium confidence
+name r_7ABI_U6_5SS_upstream_contact_6 #358.1/6:38-49
+# U6 snRNA ACAGAGA box: chain 6, residues 41-47, sequence-motif, high confidence
+name r_7ABI_U6_ACAGAGA_box_6 #358.1/6:41-47
+# U6 snRNA internal stem-loop: chain 6, residues 79-95, motif-neighborhood, low confidence
+name r_7ABI_U6_ISL_6 #358.1/6:79-95
+# U6 snRNA AGC catalytic triad: chain 6, residues 92-94, sequence-motif, medium confidence
+name r_7ABI_U6_AGC_catalytic_triad_6 #358.1/6:92-94
 view
 show nucleic

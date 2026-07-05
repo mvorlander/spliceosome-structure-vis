@@ -71,11 +71,34 @@ color #402.1/U #B37E6A
 # SART1
 color #402.1/S #D6937B
 # Named selections for resolved substrate RNA features.
+# 5' exon: chain z, residues -5--1, five-ss-inference, medium confidence
+name s_8QPB_sub_exon_5_M #402.1/z:-5--1
 # 5' splice site: chain z, residues -5,-4,-3,-2,-1,1,2,3,4,5,6,7,8, component-name, high confidence
-name pdb_8QPB_substrate_five_prime_splice_site_M #402.1/z:-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8
+name s_8QPB_sub_five_prime_splice_site_M #402.1/z:-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8
 # substrate RNA: chain z, residues -5,-4,-3,-2,-1,1,2,3,4,5,6,7,8, component, medium confidence
-name pdb_8QPB_substrate_substrate_M #402.1/z:-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8
+name s_8QPB_sub_substrate_M #402.1/z:-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8
 # 5' splice site: chain z, residues 1-6, sequence-motif, medium confidence
-name pdb_8QPB_substrate_five_prime_splice_site_M #402.1/z:1-6
+name s_8QPB_sub_five_prime_splice_site_M #402.1/z:1-6
+# intron from 5' splice site: chain z, residues 1-8, five-ss-inference, low confidence
+name s_8QPB_sub_intron_M #402.1/z:1-8
+# Named selections for resolved snRNA functional regions.
+# U4 snRNA U4/U6 stem I partner: chain 4, residues 1-25, review-region, low confidence
+name r_8QPB_U4_U6_stem_I_partner_4 #402.1/4:1-25
+# U4 snRNA U4/U6 stem II partner: chain 4, residues 45-75, review-region, low confidence
+name r_8QPB_U4_U6_stem_II_partner_4 #402.1/4:45-75
+# U4 snRNA Brr2 loading region: chain 4, residues 60-80, review-region, low confidence
+name r_8QPB_U4_Brr2_loading_region_4 #402.1/4:60-80
+# U5 snRNA loop I 5' exon contact side: chain 5, residues 35-42, review-region, low confidence
+name r_8QPB_U5_loop_I_5exon_contact_5 #402.1/5:35-42
+# U5 snRNA loop I: chain 5, residues 38-42, sequence-motif, medium confidence
+name r_8QPB_U5_loop_I_5 #402.1/5:38-42
+# U5 snRNA loop I 3' exon contact side: chain 5, residues 43-50, review-region, low confidence
+name r_8QPB_U5_loop_I_3exon_contact_5 #402.1/5:43-50
+# U6 snRNA U2/U6 helix I partner: chain 6, residues 35-60, review-region, low confidence
+name r_8QPB_U6_U2_helix_I_partner_6 #402.1/6:35-60
+# U6 snRNA 5' splice-site upstream contact: chain 6, residues 38-49, motif-neighborhood, medium confidence
+name r_8QPB_U6_5SS_upstream_contact_6 #402.1/6:38-49
+# U6 snRNA ACAGAGA box: chain 6, residues 41-47, sequence-motif, high confidence
+name r_8QPB_U6_ACAGAGA_box_6 #402.1/6:41-47
 view
 show nucleic

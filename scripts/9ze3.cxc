@@ -67,7 +67,12 @@ color #434.1/B2 #49926C
 # SF3B3
 color #434.1/B3 #6A9064
 # Named selections for resolved substrate RNA features.
-# substrate RNA: chain R, residues -18,-17,-16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25, component, medium confidence
-name pdb_9ZE3_substrate_substrate_M #434.1/R:-18,-17,-16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25
+# substrate RNA: chain R, residues -18-25, component, medium confidence
+name s_9ZE3_sub_substrate_M #434.1/R:-18-25
+# Named selections for resolved snRNA functional regions.
+# U2 snRNA branchpoint pairing region: chain 2, residues 33-38, sequence-motif, medium confidence
+name r_9ZE3_U2_branchpoint_pairing_region_2 #434.1/2:33-38
+# U2 snRNA U2/U6 helix I partner: chain 2, residues 53-65, review-region, low confidence
+name r_9ZE3_U2_U6_helix_I_partner_2 #434.1/2:53-65
 view
 show nucleic

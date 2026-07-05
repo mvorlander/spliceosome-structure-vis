@@ -57,7 +57,16 @@ color #364.1/I #49926C
 # SF3A2
 color #364.1/M #75A074
 # Named selections for resolved substrate RNA features.
+# 5' exon: chain G, residues 129-142, five-ss-inference, medium confidence
+name s_7ONB_sub_exon_5_M #364.1/G:129-142
 # substrate RNA: chain G, residues 129-142, component, medium confidence
-name pdb_7ONB_substrate_substrate_M #364.1/G:129-142
+name s_7ONB_sub_substrate_M #364.1/G:129-142
+# Named selections for resolved snRNA functional regions.
+# U2 snRNA U2/U6 helix I partner: chain H, residues 34-55, review-region, low confidence
+name r_7ONB_U2_U6_helix_I_partner_2 #364.1/H:34-55
+# U2 snRNA branchpoint pairing region: chain H, residues 34-38, sequence-motif, medium confidence
+name r_7ONB_U2_branchpoint_pairing_region_2 #364.1/H:34-38
+# U2 snRNA stem IIa: chain H, residues 46-65, review-region, low confidence
+name r_7ONB_U2_stem_IIa_2 #364.1/H:46-65
 view
 show nucleic

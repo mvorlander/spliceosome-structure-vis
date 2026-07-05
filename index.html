@@ -123,6 +123,8 @@
           <div class="legend-item"><span class="badge review">review</span><span>Generated audit marked the entry for manual review.</span></div>
           <div class="legend-item"><span class="badge bad">flags</span><span>One or more quality/validation warnings are present.</span></div>
           <div class="legend-item"><span class="badge good">renamed</span><span>Canonical renamed-chain data exist in the full resource; public scripts still use original chain IDs.</span></div>
+          <div class="legend-item"><span class="badge good">(pre-)mRNA features annotated</span><span>Resolved substrate RNA feature selections are available in generated ChimeraX scripts.</span></div>
+          <div class="legend-item"><span class="badge good">snRNA features annotated</span><span>Resolved snRNA functional-region selections are available in generated ChimeraX scripts.</span></div>
           <div class="legend-item"><span class="badge">Add</span><span>Toggle the structure into the comparison panel.</span></div>
         </div></div></section>
         <section class="workspace">
@@ -273,6 +275,8 @@
       const bits=[];
       if(confidence) bits.push(`<span class="badge ${confidence==="high"?"good":confidence==="review"?"review":confidence==="low"?"bad":"warn"}">${esc(confidence)}</span>`);
       if((c.badges||[]).includes("chains renamed")) bits.push('<span class="badge good">renamed</span>');
+      if((r.substrate_features||[]).length) bits.push('<span class="badge good">(pre-)mRNA features annotated</span>');
+      if((r.snrna_features||[]).length) bits.push('<span class="badge good">snRNA features annotated</span>');
       if(flags.length) bits.push(`<span class="badge bad">${flags.length} flag${flags.length===1?"":"s"}</span>`);
       return `<div class="badge-row">${bits.join("") || '<span class="badge">n/a</span>'}</div>`;
     }
@@ -305,7 +309,7 @@
       const proteins = r.proteins.map(p=>`<span class="chip"><strong>${esc(p.gene||p.name)}</strong><br><span class="subtle">${esc(p.chains)}</span></span>`).join("");
       const rnas = r.rnas.map(x=>`<span class="chip"><strong>${esc(x.name)}</strong><br><span class="subtle">${esc(x.chains)}</span></span>`).join("");
       const thumbnail = r.thumbnail && r.thumbnail.image ? `<h3>Thumbnail</h3><img class="thumbnail-img" src="${attr(r.thumbnail.image)}" alt="ChimeraX thumbnail" loading="lazy">` : "";
-      els.detail.innerHTML = `<p class="detail-title">${esc(r.title)}</p><div class="detail-meta"><span class="badge">${esc(r.state)}</span><span class="badge">${esc(r.species)}</span><span class="badge">${esc(r.resolution||"?")} A</span><span class="badge">${esc(r.year||"")}</span><span class="badge">${r.chain_count||0} chains</span>${curationBadges(r)}</div>${thumbnail}<div class="actions"><button onclick="copyStructureScript('${attr(r.pdb_id)}', this)">Copy ChimeraX script</button><a href="${attr(r.script_path)}">Open .cxc file</a></div><h3>Paper</h3><div>${esc(r.paper_title||"")}</div><div class="subtle">${esc(r.authors_short||"")}${r.doi ? " - DOI " + esc(r.doi) : ""}</div>${curationPanel(r)}${qualityPanel(r.quality)}<h3>Proteins (${r.protein_count})</h3><div class="mini-list"><div class="chips">${proteins || '<span class="subtle">None listed</span>'}</div></div><h3>RNAs (${r.rna_count})</h3><div class="mini-list"><div class="chips">${rnas || '<span class="subtle">None listed</span>'}</div></div>${substratePanel(r.substrate_features||[])}${unassignedPanel(r.unassigned_components||[])}${comparisonPanel()}<h3>Script Preview</h3><pre id="scriptPreview">Loading script...</pre>`;
+      els.detail.innerHTML = `<p class="detail-title">${esc(r.title)}</p><div class="detail-meta"><span class="badge">${esc(r.state)}</span><span class="badge">${esc(r.species)}</span><span class="badge">${esc(r.resolution||"?")} A</span><span class="badge">${esc(r.year||"")}</span><span class="badge">${r.chain_count||0} chains</span>${curationBadges(r)}</div>${thumbnail}<div class="actions"><button onclick="copyStructureScript('${attr(r.pdb_id)}', this)">Copy ChimeraX script</button><a href="${attr(r.script_path)}">Open .cxc file</a></div><h3>Paper</h3><div>${esc(r.paper_title||"")}</div><div class="subtle">${esc(r.authors_short||"")}${r.doi ? " - DOI " + esc(r.doi) : ""}</div>${curationPanel(r)}${qualityPanel(r.quality)}<h3>Proteins (${r.protein_count})</h3><div class="mini-list"><div class="chips">${proteins || '<span class="subtle">None listed</span>'}</div></div><h3>RNAs (${r.rna_count})</h3><div class="mini-list"><div class="chips">${rnas || '<span class="subtle">None listed</span>'}</div></div>${substratePanel(r.substrate_features||[])}${snrnaPanel(r.snrna_features||[])}${unassignedPanel(r.unassigned_components||[])}${comparisonPanel()}<h3>Script Preview</h3><pre id="scriptPreview">Loading script...</pre>`;
       scriptFor(r).then(text => {
         const preview = document.getElementById("scriptPreview");
         if (preview && state.selected === r.pdb_id) preview.textContent = text;
@@ -326,6 +330,10 @@
     function substratePanel(items){
       if(!items.length) return "";
       return `<h3>Substrate RNA Features (${items.length})</h3><div class="mini-list">${items.map(i=>`<div><strong>${esc(i.label||i.feature)}</strong> <span class="subtle">chain ${esc(i.original_chain_id||"")} (${esc(i.canonical_chain_id||"renamed n/a")}), seq ${esc(i.seq_start)}-${esc(i.seq_end)}, residues ${esc(i.auth_residue_ranges||"n/a")}</span><br><code>${esc(i.feature_sequence||i.notes||"")}</code></div>`).join("")}</div>`;
+    }
+    function snrnaPanel(items){
+      if(!items.length) return "";
+      return `<h3>snRNA Features (${items.length})</h3><div class="mini-list">${items.map(i=>`<div><strong>${esc(i.snrna||"snRNA")} ${esc(i.label||i.feature)}</strong> <span class="subtle">chain ${esc(i.original_chain_id||"")} (${esc(i.canonical_chain_id||"renamed n/a")}), seq ${esc(i.seq_start)}-${esc(i.seq_end)}, residues ${esc(i.auth_residue_ranges||"n/a")}</span><br><code>${esc(i.feature_sequence||"")}</code></div>`).join("")}</div>`;
     }
     function comparisonPanel(){
       if(!state.compareIds.length) return `<h3>Compare Structures</h3><div class="subtle">Use the Compare column to add up to five structures.</div>`;

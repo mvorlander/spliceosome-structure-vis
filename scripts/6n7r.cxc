@@ -73,6 +73,19 @@ color #345.1/H #A95A9B
 color #345.1/I #B03372
 # Named selections for resolved substrate RNA features.
 # substrate RNA: chain r, residues -2,-1,1,2,3,4,5,6,7,8,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156, component, medium confidence
-name pdb_6N7R_substrate_substrate_M #345.1/r:-2,-1,1,2,3,4,5,6,7,8,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156
+name s_6N7R_sub_substrate_M #345.1/r:-2,-1,1,2,3,4,5,6,7,8,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156
+# Named selections for resolved snRNA functional regions.
+# U1 snRNA 5' splice-site recognition region: chain R, residues 1-10, review-region, medium confidence
+name r_6N7R_U1_5prime_5SS_recognition_1 #345.1/R:1-10
+# U1 snRNA stem-loop 1: chain R, residues 11-25;33-45, review-region, low confidence
+name r_6N7R_U1_SL1_1 #345.1/R:11-25,33-45
+# U1 snRNA stem-loop 2: chain R, residues 46-95, review-region, low confidence
+name r_6N7R_U1_SL2_1 #345.1/R:46-95
+# U1 snRNA Sm site: chain R, residues 224-230, sequence-motif, medium confidence
+name r_6N7R_U1_Sm_site_1 #345.1/R:224-230
+# U1 snRNA Sm site: chain R, residues 241-247, sequence-motif, medium confidence
+name r_6N7R_U1_Sm_site_1 #345.1/R:241-247
+# U1 snRNA Sm site: chain R, residues 553-559, sequence-motif, medium confidence
+name r_6N7R_U1_Sm_site_1 #345.1/R:553-559
 view
 show nucleic

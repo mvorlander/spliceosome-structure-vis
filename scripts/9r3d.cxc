@@ -72,6 +72,27 @@ color #428.1/T #A2B8CD
 color #428.1/X #D8944F
 # Named selections for resolved substrate RNA features.
 # substrate RNA: chain Z, residues 50-78, component, medium confidence
-name pdb_9R3D_substrate_substrate_M #428.1/Z:50-78
+name s_9R3D_sub_substrate_M #428.1/Z:50-78
+# Named selections for resolved snRNA functional regions.
+# U5 snRNA loop I 5' exon contact side: chain 5, residues 37-44, review-region, low confidence
+name r_9R3D_U5_loop_I_5exon_contact_5 #428.1/5:37-44
+# U5 snRNA loop I: chain 5, residues 38-42, sequence-motif, medium confidence
+name r_9R3D_U5_loop_I_5 #428.1/5:38-42
+# U5 snRNA loop I 3' exon contact side: chain 5, residues 45-52, review-region, low confidence
+name r_9R3D_U5_loop_I_3exon_contact_5 #428.1/5:45-52
+# U6 snRNA U4/U6 stem I partner: chain 6, residues 1-30, review-region, low confidence
+name r_9R3D_U6_U4_stem_I_partner_6 #428.1/6:1-30
+# U6 snRNA U2/U6 helix I partner: chain 6, residues 35-60, review-region, low confidence
+name r_9R3D_U6_U2_helix_I_partner_6 #428.1/6:35-60
+# U6 snRNA 5' splice-site upstream contact: chain 6, residues 38-49, motif-neighborhood, medium confidence
+name r_9R3D_U6_5SS_upstream_contact_6 #428.1/6:38-49
+# U6 snRNA internal stem-loop: chain 6, residues 40-67, motif-neighborhood, low confidence
+name r_9R3D_U6_ISL_6 #428.1/6:40-67
+# U6 snRNA ACAGAGA box: chain 6, residues 41-47, sequence-motif, high confidence
+name r_9R3D_U6_ACAGAGA_box_6 #428.1/6:41-47
+# U6 snRNA AGC catalytic triad: chain 6, residues 53-55, sequence-motif, medium confidence
+name r_9R3D_U6_AGC_catalytic_triad_6 #428.1/6:53-55
+# U6 snRNA LSm site: chain 6, residues 76-85, terminal-region, low confidence
+name r_9R3D_U6_LSm_site_6 #428.1/6:76-85
 view
 show nucleic

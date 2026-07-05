@@ -152,12 +152,49 @@ color #326.1/C #6495ED
 color #326.1/z #F4A3A8
 # Named selections for resolved substrate RNA features.
 # branch point region: chain G, residues 479-522, component-name, high confidence
-name pdb_5ZWM_substrate_branch_point_region_M #326.1/G:479-522
+name s_5ZWM_sub_branch_point_region_M #326.1/G:479-522
 # substrate RNA: chain G, residues 479-522, component, medium confidence
-name pdb_5ZWM_substrate_substrate_M #326.1/G:479-522
+name s_5ZWM_sub_substrate_M #326.1/G:479-522
+# branch helix substrate strand: chain G, residues 496-502, sequence-motif, medium confidence
+name s_5ZWM_sub_branch_helix_M #326.1/G:496-502
 # branch point region: chain G, residues 496-502, sequence-motif, medium confidence
-name pdb_5ZWM_substrate_branch_point_region_M #326.1/G:496-502
+name s_5ZWM_sub_branch_point_region_M #326.1/G:496-502
 # branch point adenosine: chain G, residues 501, sequence-motif, medium confidence
-name pdb_5ZWM_substrate_branch_point_adenosine_M #326.1/G:501
+name s_5ZWM_sub_branch_point_adenosine_M #326.1/G:501
+# Named selections for resolved snRNA functional regions.
+# U2 snRNA U2/U6 helix I partner: chain H, residues 31-55, review-region, low confidence
+name r_5ZWM_U2_U6_helix_I_partner_2 #326.1/H:31-55
+# U2 snRNA branchpoint pairing region: chain H, residues 34-39, sequence-motif, medium confidence
+name r_5ZWM_U2_branchpoint_pairing_region_2 #326.1/H:34-39
+# U2 snRNA stem IIa: chain H, residues 46-73;79-80, review-region, low confidence
+name r_5ZWM_U2_stem_IIa_2 #326.1/H:46-73,79-80
+# U4 snRNA U4/U6 stem I partner: chain I, residues 1-25, review-region, low confidence
+name r_5ZWM_U4_U6_stem_I_partner_4 #326.1/I:1-25
+# U4 snRNA U4/U6 stem II partner: chain I, residues 45-64;71-75, review-region, low confidence
+name r_5ZWM_U4_U6_stem_II_partner_4 #326.1/I:45-64,71-75
+# U4 snRNA Brr2 loading region: chain I, residues 60-64;71-79;90-95, review-region, low confidence
+name r_5ZWM_U4_Brr2_loading_region_4 #326.1/I:60-64,71-79,90-95
+# U4 snRNA Sm site: chain I, residues 144-150, sequence-motif, medium confidence
+name r_5ZWM_U4_Sm_site_4 #326.1/I:144-150
+# U5 snRNA loop I 5' exon contact side: chain B, residues 35-42, review-region, low confidence
+name r_5ZWM_U5_loop_I_5exon_contact_5 #326.1/B:35-42
+# U5 snRNA loop I 3' exon contact side: chain B, residues 43-50, review-region, low confidence
+name r_5ZWM_U5_loop_I_3exon_contact_5 #326.1/B:43-50
+# U5 snRNA loop I: chain B, residues 53, sequence-motif, medium confidence
+name r_5ZWM_U5_loop_I_5 #326.1/B:53
+# U6 snRNA U4/U6 stem I partner: chain F, residues 1-30, review-region, low confidence
+name r_5ZWM_U6_U4_stem_I_partner_6 #326.1/F:1-30
+# U6 snRNA U2/U6 helix I partner: chain F, residues 35-51;56-60, review-region, low confidence
+name r_5ZWM_U6_U2_helix_I_partner_6 #326.1/F:35-51,56-60
+# U6 snRNA 5' splice-site upstream contact: chain F, residues 44-51, motif-neighborhood, medium confidence
+name r_5ZWM_U6_5SS_upstream_contact_6 #326.1/F:44-51
+# U6 snRNA internal stem-loop: chain F, residues 46-51;56-73, motif-neighborhood, low confidence
+name r_5ZWM_U6_ISL_6 #326.1/F:46-51,56-73
+# U6 snRNA ACAGAGA box: chain F, residues 47-51, sequence-motif, high confidence
+name r_5ZWM_U6_ACAGAGA_box_6 #326.1/F:47-51
+# U6 snRNA AGC catalytic triad: chain F, residues 59-61, sequence-motif, medium confidence
+name r_5ZWM_U6_AGC_catalytic_triad_6 #326.1/F:59-61
+# U6 snRNA LSm site: chain F, residues 108-112, terminal-region, low confidence
+name r_5ZWM_U6_LSm_site_6 #326.1/F:108-112
 view
 show nucleic

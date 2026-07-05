@@ -79,6 +79,19 @@ color #344.1/H #A95A9B
 color #344.1/I #B03372
 # Named selections for resolved substrate RNA features.
 # substrate RNA: chain r, residues -9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13, component, medium confidence
-name pdb_6N7P_substrate_substrate_M #344.1/r:-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13
+name s_6N7P_sub_substrate_M #344.1/r:-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13
+# Named selections for resolved snRNA functional regions.
+# U1 snRNA 5' splice-site recognition region: chain R, residues 1-10, review-region, medium confidence
+name r_6N7P_U1_5prime_5SS_recognition_1 #344.1/R:1-10
+# U1 snRNA stem-loop 1: chain R, residues 11-26;34-45, review-region, low confidence
+name r_6N7P_U1_SL1_1 #344.1/R:11-26,34-45
+# U1 snRNA stem-loop 2: chain R, residues 46-95, review-region, low confidence
+name r_6N7P_U1_SL2_1 #344.1/R:46-95
+# U1 snRNA Sm site: chain R, residues 224-230, sequence-motif, medium confidence
+name r_6N7P_U1_Sm_site_1 #344.1/R:224-230
+# U1 snRNA Sm site: chain R, residues 241-247, sequence-motif, medium confidence
+name r_6N7P_U1_Sm_site_1 #344.1/R:241-247
+# U1 snRNA Sm site: chain R, residues 553-559, sequence-motif, medium confidence
+name r_6N7P_U1_Sm_site_1 #344.1/R:553-559
 view
 show nucleic

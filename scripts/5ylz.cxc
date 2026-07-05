@@ -117,17 +117,48 @@ color #321.1/H #FF957B
 # CRNKL1
 color #321.1/I #FFC388
 # Named selections for resolved substrate RNA features.
-# intron: chain E, residues -13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1;1-15;282-304;345-355, component-name, high confidence
-name pdb_5YLZ_substrate_intron_I #321.1/E:-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1-15,282-304,345-355
-# intron lariat: chain E, residues -13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1;1-15;282-304;345-355, component-name, high confidence
-name pdb_5YLZ_substrate_intron_lariat_I #321.1/E:-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1-15,282-304,345-355
-# substrate RNA: chain E, residues -13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1;1-15;282-304;345-355, component, medium confidence
-name pdb_5YLZ_substrate_substrate_I #321.1/E:-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1-15,282-304,345-355
+# intron: chain E, residues -13--1;1-15;282-304;345-355, component-name, high confidence
+name s_5YLZ_sub_intron_I #321.1/E:-13--1,1-15,282-304,345-355
+# intron lariat: chain E, residues -13--1;1-15;282-304;345-355, component-name, high confidence
+name s_5YLZ_sub_intron_lariat_I #321.1/E:-13--1,1-15,282-304,345-355
+# substrate RNA: chain E, residues -13--1;1-15;282-304;345-355, component, medium confidence
+name s_5YLZ_sub_substrate_I #321.1/E:-13--1,1-15,282-304,345-355
+# branch helix substrate strand: chain E, residues 296-302, sequence-motif, medium confidence
+name s_5YLZ_sub_branch_helix_I #321.1/E:296-302
 # branch point region: chain E, residues 296-302, sequence-motif, medium confidence
-name pdb_5YLZ_substrate_branch_point_region_I #321.1/E:296-302
+name s_5YLZ_sub_branch_point_region_I #321.1/E:296-302
 # branch point adenosine: chain E, residues 301, sequence-motif, medium confidence
-name pdb_5YLZ_substrate_branch_point_adenosine_I #321.1/E:301
+name s_5YLZ_sub_branch_point_adenosine_I #321.1/E:301
+# polypyrimidine tract: chain E, residues 304, sequence-motif, medium confidence
+name s_5YLZ_sub_polypyrimidine_tract_I #321.1/E:304
 # 3' splice site: chain E, residues 348-350, sequence-motif, medium confidence
-name pdb_5YLZ_substrate_three_prime_splice_site_I #321.1/E:348-350
+name s_5YLZ_sub_three_prime_splice_site_I #321.1/E:348-350
+# Named selections for resolved snRNA functional regions.
+# U2 snRNA U2/U6 helix I partner: chain F, residues 25-52, review-region, low confidence
+name r_5YLZ_U2_U6_helix_I_partner_2 #321.1/F:25-52
+# U2 snRNA branchpoint pairing region: chain F, residues 34-39, sequence-motif, medium confidence
+name r_5YLZ_U2_branchpoint_pairing_region_2 #321.1/F:34-39
+# U2 snRNA stem IIa: chain F, residues 46-52, review-region, low confidence
+name r_5YLZ_U2_stem_IIa_2 #321.1/F:46-52
+# U5 snRNA loop I 5' exon contact side: chain B, residues 35-42, review-region, low confidence
+name r_5YLZ_U5_loop_I_5exon_contact_5 #321.1/B:35-42
+# U5 snRNA loop I 3' exon contact side: chain B, residues 43-50, review-region, low confidence
+name r_5YLZ_U5_loop_I_3exon_contact_5 #321.1/B:43-50
+# U5 snRNA loop I: chain B, residues 53-55, sequence-motif, medium confidence
+name r_5YLZ_U5_loop_I_5 #321.1/B:53-55
+# U6 snRNA U4/U6 stem I partner: chain D, residues 1-30, review-region, low confidence
+name r_5YLZ_U6_U4_stem_I_partner_6 #321.1/D:1-30
+# U6 snRNA U2/U6 helix I partner: chain D, residues 35-60, review-region, low confidence
+name r_5YLZ_U6_U2_helix_I_partner_6 #321.1/D:35-60
+# U6 snRNA 5' splice-site upstream contact: chain D, residues 44-55, motif-neighborhood, medium confidence
+name r_5YLZ_U6_5SS_upstream_contact_6 #321.1/D:44-55
+# U6 snRNA internal stem-loop: chain D, residues 46-73, motif-neighborhood, low confidence
+name r_5YLZ_U6_ISL_6 #321.1/D:46-73
+# U6 snRNA ACAGAGA box: chain D, residues 47-53, sequence-motif, high confidence
+name r_5YLZ_U6_ACAGAGA_box_6 #321.1/D:47-53
+# U6 snRNA AGC catalytic triad: chain D, residues 59-61, sequence-motif, medium confidence
+name r_5YLZ_U6_AGC_catalytic_triad_6 #321.1/D:59-61
+# U6 snRNA LSm site: chain D, residues 103, terminal-region, low confidence
+name r_5YLZ_U6_LSm_site_6 #321.1/D:103
 view
 show nucleic

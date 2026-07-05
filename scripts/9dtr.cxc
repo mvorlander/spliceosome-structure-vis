@@ -122,20 +122,43 @@ color #418.1/G #FFEF8C
 color #418.1/H #2C54DD
 # Named selections for resolved substrate RNA features.
 # ligated exons: chain E, residues -14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11;14-21, component-name, high confidence
-name pdb_9DTR_substrate_ligated_exons_M #418.1/E:-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,14-21
+name s_9DTR_sub_ligated_exons_M #418.1/E:-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,14-21
 # substrate RNA: chain E, residues -14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11;14-21, component, medium confidence
-name pdb_9DTR_substrate_substrate_M #418.1/E:-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,14-21
+name s_9DTR_sub_substrate_M #418.1/E:-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,14-21
 # intron: chain I, residues 1-16;56-77;86-95, component-name, high confidence
-name pdb_9DTR_substrate_intron_I #418.1/I:1-16,56-77,86-95
+name s_9DTR_sub_intron_I #418.1/I:1-16,56-77,86-95
 # intron lariat: chain I, residues 1-16;56-77;86-95, component-name, high confidence
-name pdb_9DTR_substrate_intron_lariat_I #418.1/I:1-16,56-77,86-95
+name s_9DTR_sub_intron_lariat_I #418.1/I:1-16,56-77,86-95
 # substrate RNA: chain I, residues 1-16;56-77;86-95, component, medium confidence
-name pdb_9DTR_substrate_substrate_I #418.1/I:1-16,56-77,86-95
-# branch point region: chain I, residues 65-71, sequence-motif, medium confidence
-name pdb_9DTR_substrate_branch_point_region_I #418.1/I:65-71
-# branch point adenosine: chain I, residues 70, sequence-motif, medium confidence
-name pdb_9DTR_substrate_branch_point_adenosine_I #418.1/I:70
+name s_9DTR_sub_substrate_I #418.1/I:1-16,56-77,86-95
+# polypyrimidine tract: chain I, residues 57-61, sequence-motif, medium confidence
+name s_9DTR_sub_polypyrimidine_tract_I #418.1/I:57-61
 # 3' splice site: chain I, residues 93-95, sequence-motif, medium confidence
-name pdb_9DTR_substrate_three_prime_splice_site_I #418.1/I:93-95
+name s_9DTR_sub_three_prime_splice_site_I #418.1/I:93-95
+# Named selections for resolved snRNA functional regions.
+# U2 snRNA U2/U6 helix I partner: chain 2, residues 25-48, review-region, low confidence
+name r_9DTR_U2_U6_helix_I_partner_2 #418.1/2:25-48
+# U2 snRNA branchpoint pairing region: chain 2, residues 34-39, sequence-motif, medium confidence
+name r_9DTR_U2_branchpoint_pairing_region_2 #418.1/2:34-39
+# U2 snRNA stem IIa: chain 2, residues 46-48, review-region, low confidence
+name r_9DTR_U2_stem_IIa_2 #418.1/2:46-48
+# U5 snRNA loop I 5' exon contact side: chain 5, residues 35-42, review-region, low confidence
+name r_9DTR_U5_loop_I_5exon_contact_5 #418.1/5:35-42
+# U5 snRNA loop I 3' exon contact side: chain 5, residues 43-50, review-region, low confidence
+name r_9DTR_U5_loop_I_3exon_contact_5 #418.1/5:43-50
+# U5 snRNA loop I: chain 5, residues 53-57, sequence-motif, medium confidence
+name r_9DTR_U5_loop_I_5 #418.1/5:53-57
+# U6 snRNA U4/U6 stem I partner: chain 6, residues 1-30, review-region, low confidence
+name r_9DTR_U6_U4_stem_I_partner_6 #418.1/6:1-30
+# U6 snRNA U2/U6 helix I partner: chain 6, residues 35-60, review-region, low confidence
+name r_9DTR_U6_U2_helix_I_partner_6 #418.1/6:35-60
+# U6 snRNA 5' splice-site upstream contact: chain 6, residues 44-55, motif-neighborhood, medium confidence
+name r_9DTR_U6_5SS_upstream_contact_6 #418.1/6:44-55
+# U6 snRNA internal stem-loop: chain 6, residues 46-73, motif-neighborhood, low confidence
+name r_9DTR_U6_ISL_6 #418.1/6:46-73
+# U6 snRNA ACAGAGA box: chain 6, residues 47-53, sequence-motif, high confidence
+name r_9DTR_U6_ACAGAGA_box_6 #418.1/6:47-53
+# U6 snRNA AGC catalytic triad: chain 6, residues 59-61, sequence-motif, medium confidence
+name r_9DTR_U6_AGC_catalytic_triad_6 #418.1/6:59-61
 view
 show nucleic

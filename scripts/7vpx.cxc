@@ -107,13 +107,34 @@ color #373.1/4 #77B088
 # SF3B5
 color #373.1/5 #92BB8F
 # Named selections for resolved substrate RNA features.
+# 5' exon: chain I, residues 27-41, five-ss-inference, medium confidence
+name s_7VPX_sub_exon_5_MA #373.1/I:27-41
 # substrate RNA: chain I, residues 27-41, component, medium confidence
-name pdb_7VPX_substrate_substrate_MA #373.1/I:27-41
-# 5' splice site: chain K, residues -1,0,1,2,3,4,5,6,7,8, component-name, high confidence
-name pdb_7VPX_substrate_five_prime_splice_site_MB #373.1/K:-1,0,1,2,3,4,5,6,7,8
-# substrate RNA: chain K, residues -1,0,1,2,3,4,5,6,7,8, component, medium confidence
-name pdb_7VPX_substrate_substrate_MB #373.1/K:-1,0,1,2,3,4,5,6,7,8
+name s_7VPX_sub_substrate_MA #373.1/I:27-41
+# 5' exon: chain K, residues -1-0, five-ss-inference, medium confidence
+name s_7VPX_sub_exon_5_MB #373.1/K:-1-0
+# 5' splice site: chain K, residues -1-8, component-name, high confidence
+name s_7VPX_sub_five_prime_splice_site_MB #373.1/K:-1-8
+# substrate RNA: chain K, residues -1-8, component, medium confidence
+name s_7VPX_sub_substrate_MB #373.1/K:-1-8
 # 5' splice site: chain K, residues 1-6, sequence-motif, medium confidence
-name pdb_7VPX_substrate_five_prime_splice_site_MB #373.1/K:1-6
+name s_7VPX_sub_five_prime_splice_site_MB #373.1/K:1-6
+# intron from 5' splice site: chain K, residues 1-8, five-ss-inference, low confidence
+name s_7VPX_sub_intron_MB #373.1/K:1-8
+# Named selections for resolved snRNA functional regions.
+# U1 snRNA 5' splice-site recognition region: chain L, residues 1-10, review-region, medium confidence
+name r_7VPX_U1_5prime_5SS_recognition_1 #373.1/L:1-10
+# U1 snRNA stem-loop 1: chain L, residues 11-45, review-region, low confidence
+name r_7VPX_U1_SL1_1 #373.1/L:11-45
+# U1 snRNA stem-loop 2: chain L, residues 46-95, review-region, low confidence
+name r_7VPX_U1_SL2_1 #373.1/L:46-95
+# U2 snRNA U2/U6 helix I partner: chain H, residues 34-55, review-region, low confidence
+name r_7VPX_U2_U6_helix_I_partner_2 #373.1/H:34-55
+# U2 snRNA branchpoint pairing region: chain H, residues 34-38, sequence-motif, medium confidence
+name r_7VPX_U2_branchpoint_pairing_region_2 #373.1/H:34-38
+# U2 snRNA stem IIa: chain H, residues 46-65;69-73;81-82, review-region, low confidence
+name r_7VPX_U2_stem_IIa_2 #373.1/H:46-65,69-73,81-82
+# U2 snRNA Sm site: chain H, residues 99-105, sequence-motif, medium confidence
+name r_7VPX_U2_Sm_site_2 #373.1/H:99-105
 view
 show nucleic

@@ -52,5 +52,12 @@ color #371.1/C #6A9064
 color #371.1/E #92BB8F
 # PHF5A
 color #371.1/G #375A40
+# Named selections for resolved snRNA functional regions.
+# U2 snRNA U2/U6 helix I partner: chain 2, residues 25-27;34-55, review-region, low confidence
+name r_7Q4P_U2_U6_helix_I_partner_2 #371.1/2:25-27,34-55
+# U2 snRNA branchpoint pairing region: chain 2, residues 34-38, sequence-motif, medium confidence
+name r_7Q4P_U2_branchpoint_pairing_region_2 #371.1/2:34-38
+# U2 snRNA stem IIa: chain 2, residues 46-64, review-region, low confidence
+name r_7Q4P_U2_stem_IIa_2 #371.1/2:46-64
 view
 show nucleic

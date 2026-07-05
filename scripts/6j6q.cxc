@@ -117,11 +117,42 @@ color #343.1/S #FFDEAD
 # BUD31
 color #343.1/T #FFF584
 # Named selections for resolved substrate RNA features.
-# substrate RNA: chain B, residues -12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15;51-79, component, medium confidence
-name pdb_6J6Q_substrate_substrate_M #343.1/B:-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,51-79
-# branch point region: chain B, residues 65-71, sequence-motif, medium confidence
-name pdb_6J6Q_substrate_branch_point_region_M #343.1/B:65-71
-# branch point adenosine: chain B, residues 70, sequence-motif, medium confidence
-name pdb_6J6Q_substrate_branch_point_adenosine_M #343.1/B:70
+# substrate RNA: chain B, residues -12-15;51-79, component, medium confidence
+name s_6J6Q_sub_substrate_M #343.1/B:-12-15,51-79
+# branch helix substrate strand: chain B, residues 51-55, sequence-motif, medium confidence
+name s_6J6Q_sub_branch_helix_M #343.1/B:51-55
+# branch point region: chain B, residues 51-55, sequence-motif, medium confidence
+name s_6J6Q_sub_branch_point_region_M #343.1/B:51-55
+# branch point adenosine: chain B, residues 54, sequence-motif, medium confidence
+name s_6J6Q_sub_branch_point_adenosine_M #343.1/B:54
+# polypyrimidine tract: chain B, residues 57-61, sequence-motif, medium confidence
+name s_6J6Q_sub_polypyrimidine_tract_M #343.1/B:57-61
+# Named selections for resolved snRNA functional regions.
+# U2 snRNA U2/U6 helix I partner: chain L, residues 25-55, review-region, low confidence
+name r_6J6Q_U2_U6_helix_I_partner_2 #343.1/L:25-55
+# U2 snRNA branchpoint pairing region: chain L, residues 34-39, sequence-motif, medium confidence
+name r_6J6Q_U2_branchpoint_pairing_region_2 #343.1/L:34-39
+# U2 snRNA stem IIa: chain L, residues 46-63;66-75;78-80, review-region, low confidence
+name r_6J6Q_U2_stem_IIa_2 #343.1/L:46-63,66-75,78-80
+# U5 snRNA loop I 5' exon contact side: chain D, residues 35-42, review-region, low confidence
+name r_6J6Q_U5_loop_I_5exon_contact_5 #343.1/D:35-42
+# U5 snRNA loop I 3' exon contact side: chain D, residues 43-50, review-region, low confidence
+name r_6J6Q_U5_loop_I_3exon_contact_5 #343.1/D:43-50
+# U5 snRNA loop I: chain D, residues 53-55, sequence-motif, medium confidence
+name r_6J6Q_U5_loop_I_5 #343.1/D:53-55
+# U6 snRNA U4/U6 stem I partner: chain E, residues 1-30, review-region, low confidence
+name r_6J6Q_U6_U4_stem_I_partner_6 #343.1/E:1-30
+# U6 snRNA U2/U6 helix I partner: chain E, residues 35-60, review-region, low confidence
+name r_6J6Q_U6_U2_helix_I_partner_6 #343.1/E:35-60
+# U6 snRNA 5' splice-site upstream contact: chain E, residues 44-55, motif-neighborhood, medium confidence
+name r_6J6Q_U6_5SS_upstream_contact_6 #343.1/E:44-55
+# U6 snRNA internal stem-loop: chain E, residues 46-73, motif-neighborhood, low confidence
+name r_6J6Q_U6_ISL_6 #343.1/E:46-73
+# U6 snRNA ACAGAGA box: chain E, residues 47-53, sequence-motif, high confidence
+name r_6J6Q_U6_ACAGAGA_box_6 #343.1/E:47-53
+# U6 snRNA AGC catalytic triad: chain E, residues 59-61, sequence-motif, medium confidence
+name r_6J6Q_U6_AGC_catalytic_triad_6 #343.1/E:59-61
+# U6 snRNA LSm site: chain E, residues 103, terminal-region, low confidence
+name r_6J6Q_U6_LSm_site_6 #343.1/E:103
 view
 show nucleic

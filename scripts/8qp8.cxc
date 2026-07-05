@@ -66,5 +66,24 @@ color #399.1/C #6495ED
 color #399.1/U #B37E6A
 # PRPF8
 color #399.1/A #BFC3E8
+# Named selections for resolved snRNA functional regions.
+# U4 snRNA U4/U6 stem I partner: chain 4, residues 1-25, review-region, low confidence
+name r_8QP8_U4_U6_stem_I_partner_4 #399.1/4:1-25
+# U4 snRNA U4/U6 stem II partner: chain 4, residues 45-52;55-70;73-75, review-region, low confidence
+name r_8QP8_U4_U6_stem_II_partner_4 #399.1/4:45-52,55-70,73-75
+# U4 snRNA Brr2 loading region: chain 4, residues 60-70;73-80, review-region, low confidence
+name r_8QP8_U4_Brr2_loading_region_4 #399.1/4:60-70,73-80
+# U5 snRNA loop I 5' exon contact side: chain 5, residues 35-38, review-region, low confidence
+name r_8QP8_U5_loop_I_5exon_contact_5 #399.1/5:35-38
+# U5 snRNA loop I: chain 5, residues 38, sequence-motif, medium confidence
+name r_8QP8_U5_loop_I_5 #399.1/5:38
+# U5 snRNA loop I 3' exon contact side: chain 5, residues 44-50, review-region, low confidence
+name r_8QP8_U5_loop_I_3exon_contact_5 #399.1/5:44-50
+# U6 snRNA U2/U6 helix I partner: chain 6, residues 35-36;47-60, review-region, low confidence
+name r_8QP8_U6_U2_helix_I_partner_6 #399.1/6:35-36,47-60
+# U6 snRNA 5' splice-site upstream contact: chain 6, residues 47-49, motif-neighborhood, medium confidence
+name r_8QP8_U6_5SS_upstream_contact_6 #399.1/6:47-49
+# U6 snRNA ACAGAGA box: chain 6, residues 47, sequence-motif, high confidence
+name r_8QP8_U6_ACAGAGA_box_6 #399.1/6:47
 view
 show nucleic

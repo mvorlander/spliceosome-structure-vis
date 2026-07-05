@@ -70,6 +70,23 @@ color #357.1/E #6A9064
 color #357.1/w #77B088
 # Named selections for resolved substrate RNA features.
 # substrate RNA: chain Z, residues 141-168, component, medium confidence
-name pdb_7ABH_substrate_substrate_M #357.1/Z:141-168
+name s_7ABH_sub_substrate_M #357.1/Z:141-168
+# intron: chain Z, residues 141-168, splice-site-inference, medium confidence
+name s_7ABH_sub_intron_M #357.1/Z:141-168
+# branch helix substrate strand: chain Z, residues 150-156, sequence-motif, medium confidence
+name s_7ABH_sub_branch_helix_M #357.1/Z:150-156
+# branch point region: chain Z, residues 150-156, sequence-motif, medium confidence
+name s_7ABH_sub_branch_point_region_M #357.1/Z:150-156
+# branch point adenosine: chain Z, residues 155, sequence-motif, medium confidence
+name s_7ABH_sub_branch_point_adenosine_M #357.1/Z:155
+# polypyrimidine tract: chain Z, residues 161-168, sequence-motif, medium confidence
+name s_7ABH_sub_polypyrimidine_tract_M #357.1/Z:161-168
+# Named selections for resolved snRNA functional regions.
+# U2 snRNA U2/U6 helix I partner: chain 2, residues 29-55, review-region, low confidence
+name r_7ABH_U2_U6_helix_I_partner_2 #357.1/2:29-55
+# U2 snRNA branchpoint pairing region: chain 2, residues 33-38, sequence-motif, medium confidence
+name r_7ABH_U2_branchpoint_pairing_region_2 #357.1/2:33-38
+# U2 snRNA stem IIa: chain 2, residues 46-65, review-region, low confidence
+name r_7ABH_U2_stem_IIa_2 #357.1/2:46-65
 view
 show nucleic
