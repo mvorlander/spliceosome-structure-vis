@@ -4,7 +4,7 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #363; target model: #363.1.
+# Structure group: #363; target model: #363.1; RNA labels: #363.2.
 
 open 8h6l id 363.9 name 8H6L_anchor
 open 7evo id 363.1 name 7EVO
@@ -108,13 +108,7 @@ select #363.1/H:46-65,69-73,81-82
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-# Each label is moved into #363.1.90 as an independently togglable model.
-label #363.1/H:28 residues text "U2/U6 helix I 26-30" color #047857 height 3 bgColor white
-rename #363.1.1 label_01_U2_U6_helix_I_26_30 id #363.1.90.1
-rename #363.1.90 RNA_feature_labels
-label #363.1/H:36 residues text "U2 BP pairing 32-41" color #0B6E2D height 3 bgColor white
-rename #363.1.1 label_02_U2_BP_pairing_32_41 id #363.1.90.2
-label #363.1/H:56 residues text "U2 stem IIa 46-65;69-73;81-82" color #167A38 height 3 bgColor white
-rename #363.1.1 label_03_U2_stem_IIa_46_65_69_73_81_82 id #363.1.90.3
+# Labels are created as independent grouped models under #363.2.
+runscript "rna_feature_label_models.py" args "label_specs/7evo_rna_labels.json"
 view
 show nucleic

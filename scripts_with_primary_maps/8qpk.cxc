@@ -4,15 +4,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #404; target model: #404.1.
+# Structure group: #404; target model: #404.1; RNA labels: #404.2.
 
 open 8h6l id 404.9 name 8H6L_anchor
 open 8qpk id 404.1 name 8QPK
-open emdb:18555 id 404.2.1 name 8QPK_EMD-18555_primary_map
+open emdb:18555 id 404.3.1 name 8QPK_EMD-18555_primary_map
 rename #404 pre_B_8qpk_structure
 
 # Align on PRPF8.
-matchmaker #404.1/A to #404.9/5B bring #404.2.1
+matchmaker #404.1/A to #404.9/5B bring #404.3.1
 close #404.9
 
 hide atoms
@@ -155,31 +155,7 @@ select #404.1/6:63-74
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-# Each label is moved into #404.1.90 as an independently togglable model.
-label #404.1/z:-2 residues text "5' exon -3--1" color #FF8C00 height 3 bgColor white
-rename #404.1.1 label_01_5_exon_3_1 id #404.1.90.1
-rename #404.1.90 RNA_feature_labels
-label #404.1/z:4 residues text "? 5'SS 1-6" color #303030 height 3 bgColor white
-rename #404.1.1 label_02_5_SS_1_6 id #404.1.90.2
-label #404.1/z:4 residues text "intron 1-8" color #303030 height 3 bgColor white
-rename #404.1.1 label_03_intron_1_8 id #404.1.90.3
-label #404.1/4:10 residues text "U4/U6 stem I 1-18" color #D8C800 height 3 bgColor white
-rename #404.1.1 label_04_U4_U6_stem_I_1_18 id #404.1.90.4
-label #404.1/4:60 residues text "U4/U6 stem II 56-64" color #E0CF1A height 3 bgColor white
-rename #404.1.1 label_05_U4_U6_stem_II_56_64 id #404.1.90.5
-label #404.1/4:65 residues text "U4 Brr2 region 60-70;73-80" color #F0DF2E height 3 bgColor white
-rename #404.1.1 label_06_U4_Brr2_region_60_70_73_80 id #404.1.90.6
-label #404.1/5:40 residues text "U5 loop I 38-42" color #1B3CD0 height 3 bgColor white
-rename #404.1.1 label_07_U5_loop_I_38_42 id #404.1.90.7
-label #404.1/6:50 residues text "U2/U6 helix I 35-36;40-60" color #D0183C height 3 bgColor white
-rename #404.1.1 label_08_U2_U6_helix_I_35_36_40_60 id #404.1.90.8
-label #404.1/6:44 residues text "U6 5'SS contact 40-49" color #E01842 height 3 bgColor white
-rename #404.1.1 label_09_U6_5_SS_contact_40_49 id #404.1.90.9
-label #404.1/6:44 residues text "U6 ACAGAGA 41-47" color #DC143C height 3 bgColor white
-rename #404.1.1 label_10_U6_ACAGAGA_41_47 id #404.1.90.10
-label #404.1/6:56 residues text "U4/U6 stem II 52-61" color #E01842 height 3 bgColor white
-rename #404.1.1 label_11_U4_U6_stem_II_52_61 id #404.1.90.11
-label #404.1/6:68 residues text "U4/U6 stem I 63-74" color #D9183E height 3 bgColor white
-rename #404.1.1 label_12_U4_U6_stem_I_63_74 id #404.1.90.12
+# Labels are created as independent grouped models under #404.2.
+runscript "rna_feature_label_models.py" args "label_specs/8qpk_rna_labels.json"
 view
 show nucleic

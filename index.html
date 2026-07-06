@@ -133,7 +133,7 @@
     <main>
       <div class="topbar">
         <div><h1>Deposited Spliceosome Structures</h1><div class="subtle" id="resultSubtitle"></div></div>
-        <div class="tabs" id="tabs"><button type="button" class="tab-button active" data-tab="structures">Structures</button><button type="button" class="tab-button" data-tab="rnaFeatures">RNA Features</button><button type="button" class="tab-button" data-tab="proteins">Protein Colors</button><button type="button" class="tab-button" data-tab="documentation">Documentation</button><button type="button" class="tab-button" data-tab="help">Help</button></div>
+        <div class="tabs" id="tabs"><button type="button" class="tab-button active" data-tab="structures">Structures</button><button type="button" class="tab-button" data-tab="rnaFeatures">RNA Features</button><button type="button" class="tab-button" data-tab="rnaElements">RNA Elements</button><button type="button" class="tab-button" data-tab="complexes">Complexes</button><button type="button" class="tab-button" data-tab="proteins">Protein Colors</button><button type="button" class="tab-button" data-tab="documentation">Documentation</button><button type="button" class="tab-button" data-tab="help">Help</button></div>
       </div>
       <div id="structuresView">
         <section class="stats" id="stats"></section>
@@ -156,6 +156,12 @@
       </div>
       <div id="rnaFeaturesView" hidden>
         <section class="panel"><div class="panel-head"><h2>RNA Feature Definitions</h2><span class="subtle">selector vocabulary</span></div><div class="panel-body"><div class="field"><label for="rnaDefinitionSearch">Find Feature</label><input id="rnaDefinitionSearch" type="search" placeholder="5' splice site, branch, U6 ACAGAGA"></div><div class="mini-table"><table><thead><tr><th>Feature</th><th>Definition</th><th>Method</th><th>Notes</th></tr></thead><tbody id="rnaDefinitionRows"></tbody></table></div></div></section>
+      </div>
+      <div id="rnaElementsView" hidden>
+        <section class="panel"><div class="panel-head"><h2>RNA Element Guide</h2><span class="subtle">functions, interactors, remodeling, and helicases</span></div><div class="panel-body"><div class="doc-grid" id="rnaElementGuide"></div></div></section>
+      </div>
+      <div id="complexesView" hidden>
+        <section class="panel"><div class="panel-head"><h2>Protein Complex Guide</h2><span class="subtle">when complexes join, leave, and remodel the spliceosome</span></div><div class="panel-body"><div class="doc-grid" id="proteinComplexGuide"></div></div></section>
       </div>
       <div id="proteinsView" hidden>
         <section class="panel"><div class="panel-head"><h2>Protein Color And Homolog Lookup</h2><span class="subtle" id="proteinCount"></span></div><div class="protein-table-wrap"><table><thead><tr><th>Protein</th><th>Class / Family</th><th>Aliases</th><th>Color</th><th>Model-species homologs</th><th>Seen in</th></tr></thead><tbody id="proteinRows"></tbody></table></div></section>
@@ -184,14 +190,14 @@
     </main>
   </div>
   <script>
-    const DATA = { records: [], protein_lookup: [], primary_map_scripts: {}, scriptCache: {} };
+    const DATA = { records: [], protein_lookup: [], primary_map_scripts: {}, guides: {rna_elements: [], protein_complexes: []}, scriptCache: {} };
     let records = [];
     let proteinLookup = [];
     let rnaFeatureDefinitions = [];
     let rnaFeatureConsistency = [];
     const state = { activeTab:"structures", query:"", mode:"all", family:"all", species:"all", components:"all", rnaFeature:"all", rnaFeatureSearch:"", rnaDefinitionQuery:"", sortBy:"pathway", selected: records[0]?.pdb_id || "", compareIds: [] };
     const els = {};
-    for (const id of ["search","searchMode","family","species","componentFilter","rnaFeatureFilter","rnaFeatureQuickSearch","rnaFeatureQuickSelect","rnaQuickFilters","activeFilterChips","rnaDefinitionSearch","rnaDefinitionRows","sortBy","reset","tabs","structuresView","rnaFeaturesView","proteinsView","documentationView","helpView","stats","cycle","rows","detail","tableCount","resultSubtitle","selectedId","proteinRows","proteinCount"]) els[id] = document.getElementById(id);
+    for (const id of ["search","searchMode","family","species","componentFilter","rnaFeatureFilter","rnaFeatureQuickSearch","rnaFeatureQuickSelect","rnaQuickFilters","activeFilterChips","rnaDefinitionSearch","rnaDefinitionRows","rnaElementGuide","proteinComplexGuide","sortBy","reset","tabs","structuresView","rnaFeaturesView","rnaElementsView","complexesView","proteinsView","documentationView","helpView","stats","cycle","rows","detail","tableCount","resultSubtitle","selectedId","proteinRows","proteinCount"]) els[id] = document.getElementById(id);
     const STAGES = ["U2 snRNP","E complex","A complex","U5/tri-snRNP","pre-B","B","pre-Bact","Bact","B*","C","C*","P","ILS/disassembly","U5 recycling"];
     const ORDER = Object.fromEntries(STAGES.map((s,i)=>[s,i]));
     const NODE_POS = [[232,54],[122,126],[150,222],[305,200],[188,318],[350,334],[492,334],[630,324],[765,294],[890,238],[1000,170],[1024,86],[795,54],[535,66]];
@@ -206,6 +212,7 @@
       DATA.records = payload.records || payload;
       DATA.protein_lookup = payload.protein_lookup || [];
       DATA.primary_map_scripts = payload.primary_map_scripts || {};
+      DATA.guides = payload.guides || {rna_elements: [], protein_complexes: []};
       rnaFeatureDefinitions = payload.rna_feature_definitions || [];
       rnaFeatureConsistency = payload.rna_feature_consistency || [];
       records = DATA.records;
@@ -237,10 +244,10 @@
     function fieldsFor(r){
       return {
         structure:[r.pdb_id,r.title,r.state,r.species],
-        paper:[r.paper_title,r.doi,r.pubmed_id,r.journal,r.authors],
+        paper:[r.paper_title,r.abstract,r.doi,r.pubmed_id,r.journal,r.authors],
         author:[r.authors],
         component:[...r.proteins.map(p=>`${p.gene} ${p.name}`),...r.rnas.map(x=>x.name),...(r.substrate_features||[]).map(x=>`${x.feature} ${x.label} ${x.feature_sequence}`),...(r.snrna_features||[]).map(x=>`${x.snrna} ${x.feature} ${x.label} ${x.feature_sequence}`)],
-        all:[r.pdb_id,r.title,r.state,r.species,r.paper_title,r.doi,r.pubmed_id,r.journal,r.authors,...r.proteins.map(p=>`${p.gene} ${p.name}`),...r.rnas.map(x=>x.name),...(r.substrate_features||[]).map(x=>`${x.feature} ${x.label} ${x.feature_sequence}`),...(r.snrna_features||[]).map(x=>`${x.snrna} ${x.feature} ${x.label} ${x.feature_sequence}`)]
+        all:[r.pdb_id,r.title,r.state,r.species,r.paper_title,r.abstract,r.doi,r.pubmed_id,r.journal,r.authors,...r.proteins.map(p=>`${p.gene} ${p.name}`),...r.rnas.map(x=>x.name),...(r.substrate_features||[]).map(x=>`${x.feature} ${x.label} ${x.feature_sequence}`),...(r.snrna_features||[]).map(x=>`${x.snrna} ${x.feature} ${x.label} ${x.feature_sequence}`)]
       };
     }
     function rnaFeatureOk(r){
@@ -338,6 +345,8 @@
     function render(){
       els.structuresView.hidden = state.activeTab !== "structures";
       els.rnaFeaturesView.hidden = state.activeTab !== "rnaFeatures";
+      els.rnaElementsView.hidden = state.activeTab !== "rnaElements";
+      els.complexesView.hidden = state.activeTab !== "complexes";
       els.proteinsView.hidden = state.activeTab !== "proteins";
       els.documentationView.hidden = state.activeTab !== "documentation";
       els.helpView.hidden = state.activeTab !== "help";
@@ -345,6 +354,16 @@
       if(state.activeTab === "rnaFeatures") {
         renderRnaFeatureDefinitions();
         els.resultSubtitle.textContent = `${rnaFeatureDefinitions.length} RNA feature definitions`;
+        return;
+      }
+      if(state.activeTab === "rnaElements") {
+        renderGuideCards(els.rnaElementGuide, DATA.guides.rna_elements || [], "name", ["category","function","interactors","remodeling","helicases"]);
+        els.resultSubtitle.textContent = `${(DATA.guides.rna_elements || []).length} RNA element explanations`;
+        return;
+      }
+      if(state.activeTab === "complexes") {
+        renderGuideCards(els.proteinComplexGuide, DATA.guides.protein_complexes || [], "name", ["joins","leaves","role","remodeling","key_factors"]);
+        els.resultSubtitle.textContent = `${(DATA.guides.protein_complexes || []).length} protein complex explanations`;
         return;
       }
       if(state.activeTab === "documentation") {
@@ -473,7 +492,8 @@
       const rnas = r.rnas.map(x=>`<span class="chip"><strong>${esc(x.name)}</strong><br><span class="subtle">${esc(x.chains)}</span></span>`).join("");
       const thumbnail = r.thumbnail && r.thumbnail.image ? `<h3>Thumbnail</h3><img class="thumbnail-img" src="${attr(r.thumbnail.image)}" alt="ChimeraX thumbnail" loading="lazy">` : "";
       const primaryMapButton = r.primary_map_script_path ? `<button onclick="copyStructureScript('${attr(r.pdb_id)}', this, 'primary_map')" title="Copy a script that downloads the model and primary EMDB map, then aligns the model and brings the map when possible.">Script with primary map</button><a href="${attr(r.primary_map_script_path)}" title="Open the primary-map ChimeraX script file.">Open primary-map .cxc</a>` : "";
-      els.detail.innerHTML = `<p class="detail-title">${esc(r.title)}</p><div class="detail-meta"><span class="badge">${esc(r.state)}</span><span class="badge">${esc(r.species)}</span><span class="badge">${esc(r.resolution||"?")} A</span><span class="badge">${esc(r.year||"")}</span><span class="badge">${r.chain_count||0} chains</span>${curationBadges(r)}</div><div class="actions"><button onclick="copyStructureScript('${attr(r.pdb_id)}', this, 'no_maps')" title="Copy a model-only ChimeraX script that downloads the deposited PDB coordinates directly.">Script without maps</button><a href="${attr(r.script_path)}" title="Open the model-only ChimeraX script file.">Open model-only .cxc</a>${primaryMapButton}</div>${detailSection("Overview", `${thumbnail}<h3>Paper</h3><div>${esc(r.paper_title||"")}</div><div class="subtle">${esc(r.authors_short||"")}${r.doi ? " - DOI " + esc(r.doi) : ""}</div>`, true)}${detailSection("Curation And Quality", curationPanel(r) + qualityPanel(r.quality))}${detailSection("Components", `<h3>Proteins (${r.protein_count})</h3><div class="mini-list"><div class="chips">${proteins || '<span class="subtle">None listed</span>'}</div></div><h3>RNAs (${r.rna_count})</h3><div class="mini-list"><div class="chips">${rnas || '<span class="subtle">None listed</span>'}</div></div>`)}${detailSection("RNA Annotations", rna2dPanel(r.rna_2d||{}) + substratePanel(r.substrate_features||[]) + snrnaPanel(r.snrna_features||[]), Boolean((r.rna_2d&&r.rna_2d.png) || (r.substrate_features||[]).length || (r.snrna_features||[]).length))}${detailSection("Audits", unassignedPanel(r.unassigned_components||[]))}${detailSection("Compare Structures", comparisonPanel())}${detailSection("Script Preview", '<pre id="scriptPreview">Loading script...</pre>')}`;
+      const abstractBlock = r.abstract ? `<details class="detail-section"><summary>Abstract</summary><div class="detail-section-body">${esc(r.abstract)}</div></details>` : "";
+      els.detail.innerHTML = `<p class="detail-title">${esc(r.title)}</p><div class="detail-meta"><span class="badge">${esc(r.state)}</span><span class="badge">${esc(r.species)}</span><span class="badge">${esc(r.resolution||"?")} A</span><span class="badge">${esc(r.year||"")}</span><span class="badge">${r.chain_count||0} chains</span>${curationBadges(r)}</div><div class="actions"><button onclick="copyStructureScript('${attr(r.pdb_id)}', this, 'no_maps')" title="Copy a model-only ChimeraX script that downloads the deposited PDB coordinates directly.">Script without maps</button><a href="${attr(r.script_path)}" title="Open the model-only ChimeraX script file.">Open model-only .cxc</a>${primaryMapButton}</div>${detailSection("Overview", `${thumbnail}<h3>Paper</h3><div>${esc(r.paper_title||"")}</div><div class="subtle">${esc(r.authors_short||"")}${r.doi ? " - DOI " + esc(r.doi) : ""}</div>${abstractBlock}`, true)}${detailSection("Curation And Quality", curationPanel(r) + qualityPanel(r.quality))}${detailSection("Components", `<h3>Proteins (${r.protein_count})</h3><div class="mini-list"><div class="chips">${proteins || '<span class="subtle">None listed</span>'}</div></div><h3>RNAs (${r.rna_count})</h3><div class="mini-list"><div class="chips">${rnas || '<span class="subtle">None listed</span>'}</div></div>`)}${detailSection("RNA Annotations", rna2dPanel(r.rna_2d||{}) + substratePanel(r.substrate_features||[]) + snrnaPanel(r.snrna_features||[]), Boolean((r.rna_2d&&r.rna_2d.png) || (r.substrate_features||[]).length || (r.snrna_features||[]).length))}${detailSection("Audits", unassignedPanel(r.unassigned_components||[]))}${detailSection("Compare Structures", comparisonPanel())}${detailSection("Script Preview", '<pre id="scriptPreview">Loading script...</pre>')}`;
       scriptFor(r, "no_maps").then(text => {
         const preview = document.getElementById("scriptPreview");
         if (preview && state.selected === r.pdb_id) preview.textContent = text;
@@ -546,6 +566,9 @@
       const rows = rnaFeatureDefinitions.filter(x=>!q || [x.feature,x.label,x.definition,x.method,x.notes].join(" ").toLowerCase().includes(q));
       els.rnaDefinitionRows.innerHTML = rows.map(x=>`<tr><td><strong>${esc(x.label||x.feature)}</strong><br><code>${esc(x.feature||"")}</code></td><td>${esc(x.definition||"")}</td><td>${esc(x.method||"")}</td><td>${esc(x.notes||"")}</td></tr>`).join("") || '<tr><td colspan="4" class="subtle">No RNA feature definitions match.</td></tr>';
     }
+    function renderGuideCards(container, items, titleKey, fields){
+      container.innerHTML = items.map(item=>`<div class="doc-section"><h3>${esc(item[titleKey]||"")}</h3><div class="kv">${fields.map(field=>`<div>${esc(field.replace(/_/g," "))}</div><div>${esc(item[field]||"n/a")}</div>`).join("")}</div></div>`).join("") || '<div class="subtle">No guide entries available.</div>';
+    }
     function rnaConsistencyBadge(status){
       if(status==="consistent") return '<span class="badge good">consistent</span>';
       if(status==="partial_resolved") return '<span class="badge warn">partial resolved</span>';
@@ -561,8 +584,11 @@
     function renderProteins(){
       const q = state.query;
       const rows = proteinLookup.filter(p=>!q || [p.human_gene,p.protein_name,p.class_family,p.aliases?.join(" "),homologItems(p).map(h=>`${h.species_code} ${h.gene}`).join(" ")].join(" ").toLowerCase().includes(q));
-      els.proteinCount.textContent = `${rows.length} proteins`;
-      els.proteinRows.innerHTML = rows.map(p=>{ const color=p.color_hex||""; const homologs=homologItems(p).map(h=>`${esc(h.species_code)}: ${esc(h.gene)}`).join("<br>"); return `<tr><td><strong>${esc(p.human_gene||p.color_key||"")}</strong><br><span class="subtle">${esc(p.protein_name||"")}</span></td><td>${esc(p.class_family||"")}</td><td>${esc((p.aliases||[]).join("; "))}</td><td>${color?`<span class="swatch" style="background:${attr(color)}"></span>${esc(color)} <button class="copy-button" onclick="copyText('${attr(color)}', this)">Copy</button>`:""}</td><td>${homologs}</td><td>${esc((p.seen_in_pdb_ids||[]).slice(0,10).join("; "))}</td></tr>`; }).join("");
+      const resolved = rows.filter(p=>(p.seen_in_pdb_ids||[]).length);
+      const referenceOnly = rows.filter(p=>!(p.seen_in_pdb_ids||[]).length);
+      els.proteinCount.textContent = `${resolved.length} resolved; ${referenceOnly.length} reference-only`;
+      const rowHtml = p=>{ const color=p.color_hex||""; const homologs=homologItems(p).map(h=>`${esc(h.species_code)}: ${esc(h.gene)}`).join("<br>"); return `<tr><td><strong>${esc(p.human_gene||p.color_key||"")}</strong><br><span class="subtle">${esc(p.protein_name||"")}</span></td><td>${esc(p.class_family||"")}</td><td>${esc((p.aliases||[]).join("; "))}</td><td>${color?`<span class="swatch" style="background:${attr(color)}"></span>${esc(color)} <button class="copy-button" onclick="copyText('${attr(color)}', this)">Copy</button>`:""}</td><td>${homologs}</td><td>${esc((p.seen_in_pdb_ids||[]).slice(0,10).join("; "))}</td></tr>`; };
+      els.proteinRows.innerHTML = resolved.map(rowHtml).join("") + (referenceOnly.length ? `<tr><td colspan="6"><details><summary><strong>${referenceOnly.length} reference-only proteins</strong> <span class="subtle">listed in reference/color tables but not resolved in the current PDB set</span></summary><table class="mini-table"><tbody>${referenceOnly.map(rowHtml).join("")}</tbody></table></details></td></tr>` : "");
     }
     function homologItems(p){
       const homologs = p.homologs || [];

@@ -4,7 +4,7 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #354; target model: #354.1.
+# Structure group: #354; target model: #354.1; RNA labels: #354.2.
 
 open 8h6l id 354.9 name 8H6L_anchor
 open 7aav id 354.1 name 7AAV
@@ -135,25 +135,7 @@ select #354.1/6:41-47
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-# Each label is moved into #354.1.90 as an independently togglable model.
-label #354.1/Z:54 residues text "5' exon 50-58" color #FF8C00 height 3 bgColor white
-rename #354.1.1 label_01_5_exon_50_58 id #354.1.90.1
-rename #354.1.90 RNA_feature_labels
-label #354.1/Z:62 residues text "? 5'SS 59-64" color #303030 height 3 bgColor white
-rename #354.1.1 label_02_5_SS_59_64 id #354.1.90.2
-label #354.1/Z:68 residues text "intron 59-78" color #303030 height 3 bgColor white
-rename #354.1.1 label_03_intron_59_78 id #354.1.90.3
-label #354.1/2:27 residues text "U2/U6 helix I 26-28" color #047857 height 3 bgColor white
-rename #354.1.1 label_04_U2_U6_helix_I_26_28 id #354.1.90.4
-label #354.1/5:40 residues text "U5 loop I 38-42" color #1B3CD0 height 3 bgColor white
-rename #354.1.1 label_05_U5_loop_I_38_42 id #354.1.90.5
-label #354.1/6:16 residues text "U6 5' terminal SL 1-30" color #DC143C height 3 bgColor white
-rename #354.1.1 label_06_U6_5_terminal_SL_1_30 id #354.1.90.6
-label #354.1/6:46 residues text "U2/U6 helix I 35-57;60" color #D0183C height 3 bgColor white
-rename #354.1.1 label_07_U2_U6_helix_I_35_57_60 id #354.1.90.7
-label #354.1/6:44 residues text "U6 5'SS contact 38-49" color #E01842 height 3 bgColor white
-rename #354.1.1 label_08_U6_5_SS_contact_38_49 id #354.1.90.8
-label #354.1/6:44 residues text "U6 ACAGAGA 41-47" color #DC143C height 3 bgColor white
-rename #354.1.1 label_09_U6_ACAGAGA_41_47 id #354.1.90.9
+# Labels are created as independent grouped models under #354.2.
+runscript "rna_feature_label_models.py" args "label_specs/7aav_rna_labels.json"
 view
 show nucleic

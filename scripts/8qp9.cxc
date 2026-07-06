@@ -4,7 +4,7 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #400; target model: #400.1.
+# Structure group: #400; target model: #400.1; RNA labels: #400.2.
 
 open 8h6l id 400.9 name 8H6L_anchor
 open 8qp9 id 400.1 name 8QP9
@@ -138,25 +138,7 @@ select #400.1/6:63-74
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-# Each label is moved into #400.1.90 as an independently togglable model.
-label #400.1/4:10 residues text "U4/U6 stem I 1-18" color #D8C800 height 3 bgColor white
-rename #400.1.1 label_01_U4_U6_stem_I_1_18 id #400.1.90.1
-rename #400.1.90 RNA_feature_labels
-label #400.1/4:60 residues text "U4/U6 stem II 56-64" color #E0CF1A height 3 bgColor white
-rename #400.1.1 label_02_U4_U6_stem_II_56_64 id #400.1.90.2
-label #400.1/4:65 residues text "U4 Brr2 region 60-70;73-80" color #F0DF2E height 3 bgColor white
-rename #400.1.1 label_03_U4_Brr2_region_60_70_73_80 id #400.1.90.3
-label #400.1/5:38 residues text "U5 loop I 38" color #1B3CD0 height 3 bgColor white
-rename #400.1.1 label_04_U5_loop_I_38 id #400.1.90.4
-label #400.1/6:54 residues text "U2/U6 helix I 35-36;47-60" color #D0183C height 3 bgColor white
-rename #400.1.1 label_05_U2_U6_helix_I_35_36_47_60 id #400.1.90.5
-label #400.1/6:48 residues text "U6 5'SS contact 47-49" color #E01842 height 3 bgColor white
-rename #400.1.1 label_06_U6_5_SS_contact_47_49 id #400.1.90.6
-label #400.1/6:47 residues text "U6 ACAGAGA 47" color #DC143C height 3 bgColor white
-rename #400.1.1 label_07_U6_ACAGAGA_47 id #400.1.90.7
-label #400.1/6:56 residues text "U4/U6 stem II 52-61" color #E01842 height 3 bgColor white
-rename #400.1.1 label_08_U4_U6_stem_II_52_61 id #400.1.90.8
-label #400.1/6:68 residues text "U4/U6 stem I 63-74" color #D9183E height 3 bgColor white
-rename #400.1.1 label_09_U4_U6_stem_I_63_74 id #400.1.90.9
+# Labels are created as independent grouped models under #400.2.
+runscript "rna_feature_label_models.py" args "label_specs/8qp9_rna_labels.json"
 view
 show nucleic

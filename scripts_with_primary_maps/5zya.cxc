@@ -4,15 +4,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #329; target model: #329.1.
+# Structure group: #329; target model: #329.1; RNA labels: #329.2.
 
 open 8h6l id 329.9 name 8H6L_anchor
 open 5zya id 329.1 name 5ZYA
-open emdb:6915 id 329.2.1 name 5ZYA_EMD-6915_primary_map
+open emdb:6915 id 329.3.1 name 5ZYA_EMD-6915_primary_map
 rename #329 SF3B_U2_5zya_structure
 
 # Align on SF3B1.
-matchmaker #329.1/C to #329.9/2G bring #329.2.1
+matchmaker #329.1/C to #329.9/2G bring #329.3.1
 close #329.9
 
 hide atoms

@@ -1,0 +1,113 @@
+{
+  "structure_model_id": "396.1",
+  "label_group_model_id": "396.2",
+  "cleanup_model_ids": [
+    "396.1.90"
+  ],
+  "label_group_name": "RNA_feature_labels",
+  "height": 3.35,
+  "size": 144,
+  "background": "none",
+  "outline_color": "#ffffff",
+  "outline_offsets": [
+    [
+      -0.085,
+      0,
+      0
+    ],
+    [
+      0.085,
+      0,
+      0
+    ],
+    [
+      0,
+      -0.085,
+      0
+    ],
+    [
+      0,
+      0.085,
+      0
+    ],
+    [
+      -0.06,
+      -0.06,
+      0
+    ],
+    [
+      -0.06,
+      0.06,
+      0
+    ],
+    [
+      0.06,
+      -0.06,
+      0
+    ],
+    [
+      0.06,
+      0.06,
+      0
+    ],
+    [
+      -0.052,
+      0,
+      0
+    ],
+    [
+      0.052,
+      0,
+      0
+    ],
+    [
+      0,
+      -0.052,
+      0
+    ],
+    [
+      0,
+      0.052,
+      0
+    ],
+    [
+      -0.037,
+      -0.037,
+      0
+    ],
+    [
+      -0.037,
+      0.037,
+      0
+    ],
+    [
+      0.037,
+      -0.037,
+      0
+    ],
+    [
+      0.037,
+      0.037,
+      0
+    ]
+  ],
+  "default_visible_category_keys": [
+    "pre_mRNA_features",
+    "snRNA_pre_mRNA_regions"
+  ],
+  "default_visible_category_names": [
+    "pre-mRNA features",
+    "snRNA-pre-mRNA regions"
+  ],
+  "labels": [
+    {
+      "index": 1,
+      "atomspec": "#396.1/5:38",
+      "text": "U5 loop I (res. 38)",
+      "color": "#1B3CD0",
+      "model_name": "label_01_U5_loop_I_res_38",
+      "category_key": "snRNA_pre_mRNA_regions",
+      "category_name": "snRNA-pre-mRNA regions"
+    }
+  ]
+}

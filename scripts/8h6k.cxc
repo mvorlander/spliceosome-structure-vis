@@ -4,7 +4,7 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #381; target model: #381.1.
+# Structure group: #381; target model: #381.1; RNA labels: #381.2.
 
 open 8h6l id 381.9 name 8H6L_anchor
 open 8h6k id 381.1 name 8H6K
@@ -298,47 +298,7 @@ select #381.1/6A:92-94
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-# Each label is moved into #381.1.90 as an independently togglable model.
-label #381.1/A:28 residues text "intron 7-48" color #303030 height 3 bgColor white
-rename #381.1.1 label_01_intron_7_48 id #381.1.90.1
-rename #381.1.90 RNA_feature_labels
-label #381.1/A:27 residues text "BP region 24-30" color #303030 height 3 bgColor white
-rename #381.1.1 label_02_BP_region_24_30 id #381.1.90.2
-label #381.1/A:29 residues text "BP-A 29" color #303030 height 3 bgColor white
-rename #381.1.1 label_03_BP_A_29 id #381.1.90.3
-label #381.1/A:42 residues text "PPT 35-48" color #303030 height 3 bgColor white
-rename #381.1.1 label_04_PPT_35_48 id #381.1.90.4
-label #381.1/A:102 residues text "exon 98-107" color #FF8C00 height 3 bgColor white
-rename #381.1.1 label_05_exon_98_107 id #381.1.90.5
-label #381.1/A:110 residues text "? 5'SS 108-113" color #303030 height 3 bgColor white
-rename #381.1.1 label_06_5_SS_108_113 id #381.1.90.6
-label #381.1/2A:30 residues text "U2/U6 helix I 30" color #047857 height 3 bgColor white
-rename #381.1.1 label_07_U2_U6_helix_I_30 id #381.1.90.7
-label #381.1/2A:36 residues text "U2 BP pairing 32-41" color #0B6E2D height 3 bgColor white
-rename #381.1.1 label_08_U2_BP_pairing_32_41 id #381.1.90.8
-label #381.1/2A:56 residues text "U2 stem IIa 46-65" color #167A38 height 3 bgColor white
-rename #381.1.1 label_09_U2_stem_IIa_46_65 id #381.1.90.9
-label #381.1/4A:10 residues text "U4/U6 stem I 1-18" color #D8C800 height 3 bgColor white
-rename #381.1.1 label_10_U4_U6_stem_I_1_18 id #381.1.90.10
-label #381.1/4A:60 residues text "U4/U6 stem II 56-63" color #E0CF1A height 3 bgColor white
-rename #381.1.1 label_11_U4_U6_stem_II_56_63 id #381.1.90.11
-label #381.1/4A:88 residues text "U4 Brr2 region 59-63;70-76;83-94" color #F0DF2E height 3 bgColor white
-rename #381.1.1 label_12_U4_Brr2_region_59_63_70_76_83_94 id #381.1.90.12
-label #381.1/5A:40 residues text "U5 loop I 38-42" color #1B3CD0 height 3 bgColor white
-rename #381.1.1 label_13_U5_loop_I_38_42 id #381.1.90.13
-label #381.1/6A:48 residues text "U2/U6 helix I 35-60" color #D0183C height 3 bgColor white
-rename #381.1.1 label_14_U2_U6_helix_I_35_60 id #381.1.90.14
-label #381.1/6A:44 residues text "U6 5'SS contact 38-49" color #E01842 height 3 bgColor white
-rename #381.1.1 label_15_U6_5_SS_contact_38_49 id #381.1.90.15
-label #381.1/6A:44 residues text "U6 ACAGAGA 41-47" color #DC143C height 3 bgColor white
-rename #381.1.1 label_16_U6_ACAGAGA_41_47 id #381.1.90.16
-label #381.1/6A:56 residues text "U4/U6 stem II 52-61" color #E01842 height 3 bgColor white
-rename #381.1.1 label_17_U4_U6_stem_II_52_61 id #381.1.90.17
-label #381.1/6A:68 residues text "U4/U6 stem I 63-74" color #D9183E height 3 bgColor white
-rename #381.1.1 label_18_U4_U6_stem_I_63_74 id #381.1.90.18
-label #381.1/6A:90 residues text "U6 ISL 85-96;102-105" color #D61A3D height 3 bgColor white
-rename #381.1.1 label_19_U6_ISL_85_96_102_105 id #381.1.90.19
-label #381.1/6A:93 residues text "U6 AGC triad 92-94" color #C91236 height 3 bgColor white
-rename #381.1.1 label_20_U6_AGC_triad_92_94 id #381.1.90.20
+# Labels are created as independent grouped models under #381.2.
+runscript "rna_feature_label_models.py" args "label_specs/8h6k_rna_labels.json"
 view
 show nucleic

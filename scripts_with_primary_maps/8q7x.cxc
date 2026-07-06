@@ -4,15 +4,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #395; target model: #395.1.
+# Structure group: #395; target model: #395.1; RNA labels: #395.2.
 
 open 8h6l id 395.9 name 8H6L_anchor
 open 8q7x id 395.1 name 8Q7X
-open emdb:18237 id 395.2.1 name 8Q7X_EMD-18237_primary_map
+open emdb:18237 id 395.3.1 name 8Q7X_EMD-18237_primary_map
 rename #395 U5_recycling_8q7x_structure
 
 # Align on PRPF8.
-matchmaker #395.1/A to #395.9/5B bring #395.2.1
+matchmaker #395.1/A to #395.9/5B bring #395.3.1
 close #395.9
 
 hide atoms
@@ -81,9 +81,7 @@ select #395.1/5:38
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-# Each label is moved into #395.1.90 as an independently togglable model.
-label #395.1/5:38 residues text "U5 loop I 38" color #1B3CD0 height 3 bgColor white
-rename #395.1.1 label_01_U5_loop_I_38 id #395.1.90.1
-rename #395.1.90 RNA_feature_labels
+# Labels are created as independent grouped models under #395.2.
+runscript "rna_feature_label_models.py" args "label_specs/8q7x_rna_labels.json"
 view
 show nucleic

@@ -4,7 +4,7 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #352; target model: #352.1.
+# Structure group: #352; target model: #352.1; RNA labels: #352.2.
 
 open 8h6l id 352.9 name 8H6L_anchor
 open 6zym id 352.1 name 6ZYM
@@ -166,31 +166,7 @@ select #352.1/6:41-47
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-# Each label is moved into #352.1.90 as an independently togglable model.
-label #352.1/Y:62 residues text "? 5'SS 59-64" color #303030 height 3 bgColor white
-rename #352.1.1 label_01_5_SS_59_64 id #352.1.90.1
-rename #352.1.90 RNA_feature_labels
-label #352.1/Y:69 residues text "intron 59-79;141-160" color #303030 height 3 bgColor white
-rename #352.1.1 label_02_intron_59_79_141_160 id #352.1.90.2
-label #352.1/Y:150 residues text "BP region 145-156" color #303030 height 3 bgColor white
-rename #352.1.1 label_03_BP_region_145_156 id #352.1.90.3
-label #352.1/Y:155 residues text "BP-A 155" color #303030 height 3 bgColor white
-rename #352.1.1 label_04_BP_A_155 id #352.1.90.4
-label #352.1/Z:52 residues text "5' exon 46-58" color #FF8C00 height 3 bgColor white
-rename #352.1.1 label_05_5_exon_46_58 id #352.1.90.5
-label #352.1/2:28 residues text "U2/U6 helix I 26-30" color #047857 height 3 bgColor white
-rename #352.1.1 label_06_U2_U6_helix_I_26_30 id #352.1.90.6
-label #352.1/2:36 residues text "U2 BP pairing 32-41" color #0B6E2D height 3 bgColor white
-rename #352.1.1 label_07_U2_BP_pairing_32_41 id #352.1.90.7
-label #352.1/5:40 residues text "U5 loop I 38-42" color #1B3CD0 height 3 bgColor white
-rename #352.1.1 label_08_U5_loop_I_38_42 id #352.1.90.8
-label #352.1/6:16 residues text "U6 5' terminal SL 1-30" color #DC143C height 3 bgColor white
-rename #352.1.1 label_09_U6_5_terminal_SL_1_30 id #352.1.90.9
-label #352.1/6:48 residues text "U2/U6 helix I 35-60" color #D0183C height 3 bgColor white
-rename #352.1.1 label_10_U2_U6_helix_I_35_60 id #352.1.90.10
-label #352.1/6:44 residues text "U6 5'SS contact 38-49" color #E01842 height 3 bgColor white
-rename #352.1.1 label_11_U6_5_SS_contact_38_49 id #352.1.90.11
-label #352.1/6:44 residues text "U6 ACAGAGA 41-47" color #DC143C height 3 bgColor white
-rename #352.1.1 label_12_U6_ACAGAGA_41_47 id #352.1.90.12
+# Labels are created as independent grouped models under #352.2.
+runscript "rna_feature_label_models.py" args "label_specs/6zym_rna_labels.json"
 view
 show nucleic

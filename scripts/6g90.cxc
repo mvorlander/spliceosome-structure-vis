@@ -4,7 +4,7 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #336; target model: #336.1.
+# Structure group: #336; target model: #336.1; RNA labels: #336.2.
 
 open 8h6l id 336.9 name 8H6L_anchor
 open 6g90 id 336.1 name 6G90
@@ -155,17 +155,7 @@ select #336.1/2:33-42
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-# Each label is moved into #336.1.90 as an independently togglable model.
-label #336.1/1:6 residues text "U1 5'SS recog. 1-10" color #B66AAE height 3 bgColor white
-rename #336.1.1 label_01_U1_5_SS_recog_1_10 id #336.1.90.1
-rename #336.1.90 RNA_feature_labels
-label #336.1/1:28 residues text "U1 SL1 11-45" color #BF72B7 height 3 bgColor white
-rename #336.1.1 label_02_U1_SL1_11_45 id #336.1.90.2
-label #336.1/1:81 residues text "U1 SL2 46-61;67-95" color #AD62A6 height 3 bgColor white
-rename #336.1.1 label_03_U1_SL2_46_61_67_95 id #336.1.90.3
-label #336.1/1:244 residues text "U1 Sm site 241-247; 439,440,516,517,518,519,520" color #C783BF height 3 bgColor white
-rename #336.1.1 label_04_U1_Sm_site_241_247_439_440_516_517_518_519_520 id #336.1.90.4
-label #336.1/2:38 residues text "U2 BP pairing 33-42" color #0B6E2D height 3 bgColor white
-rename #336.1.1 label_05_U2_BP_pairing_33_42 id #336.1.90.5
+# Labels are created as independent grouped models under #336.2.
+runscript "rna_feature_label_models.py" args "label_specs/6g90_rna_labels.json"
 view
 show nucleic

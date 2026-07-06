@@ -4,15 +4,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #307; target model: #307.1.
+# Structure group: #307; target model: #307.1; RNA labels: #307.2.
 
 open 8h6l id 307.9 name 8H6L_anchor
 open 5gap id 307.1 name 5GAP
-open emdb:8014 id 307.2.1 name 5GAP_EMD-8014_primary_map
+open emdb:8014 id 307.3.1 name 5GAP_EMD-8014_primary_map
 rename #307 tri_snRNP_5gap_structure
 
 # Align on PRPF8.
-matchmaker #307.1/A to #307.9/5B bring #307.2.1
+matchmaker #307.1/A to #307.9/5B bring #307.3.1
 close #307.9
 
 hide atoms
@@ -129,25 +129,7 @@ select #307.1/W:70-80
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-# Each label is moved into #307.1.90 as an independently togglable model.
-label #307.1/V:10 residues text "U4/U6 stem I 1-18" color #D8C800 height 3 bgColor white
-rename #307.1.1 label_01_U4_U6_stem_I_1_18 id #307.1.90.1
-rename #307.1.90 RNA_feature_labels
-label #307.1/W:28 residues text "U6 5' terminal SL 26-30" color #DC143C height 3 bgColor white
-rename #307.1.1 label_02_U6_5_terminal_SL_26_30 id #307.1.90.2
-label #307.1/W:60 residues text "U2/U6 helix I 44-51;55-66" color #D0183C height 3 bgColor white
-rename #307.1.1 label_03_U2_U6_helix_I_44_51_55_66 id #307.1.90.3
-label #307.1/W:48 residues text "U6 5'SS contact 44-51;55" color #E01842 height 3 bgColor white
-rename #307.1.1 label_04_U6_5_SS_contact_44_51_55 id #307.1.90.4
-label #307.1/W:64 residues text "U6 ISL 46-51;55-73" color #D61A3D height 3 bgColor white
-rename #307.1.1 label_05_U6_ISL_46_51_55_73 id #307.1.90.5
-label #307.1/W:49 residues text "U6 ACAGAGA 47-51" color #DC143C height 3 bgColor white
-rename #307.1.1 label_06_U6_ACAGAGA_47_51 id #307.1.90.6
-label #307.1/W:62 residues text "U4/U6 stem II 55-68" color #E01842 height 3 bgColor white
-rename #307.1.1 label_07_U4_U6_stem_II_55_68 id #307.1.90.7
-label #307.1/W:60 residues text "U6 AGC triad 59-61" color #C91236 height 3 bgColor white
-rename #307.1.1 label_08_U6_AGC_triad_59_61 id #307.1.90.8
-label #307.1/W:75 residues text "U4/U6 stem I 70-80" color #D9183E height 3 bgColor white
-rename #307.1.1 label_09_U4_U6_stem_I_70_80 id #307.1.90.9
+# Labels are created as independent grouped models under #307.2.
+runscript "rna_feature_label_models.py" args "label_specs/5gap_rna_labels.json"
 view
 show nucleic

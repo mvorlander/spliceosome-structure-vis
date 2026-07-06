@@ -4,15 +4,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #421; target model: #421.1.
+# Structure group: #421; target model: #421.1; RNA labels: #421.2.
 
 open 8h6l id 421.9 name 8H6L_anchor
 open 9k1q id 421.1 name 9K1Q
-open emdb:61978 id 421.2.1 name 9K1Q_EMD-61978_primary_map
+open emdb:61978 id 421.3.1 name 9K1Q_EMD-61978_primary_map
 rename #421 SF3B_U2_9k1q_structure
 
 # Align on SF3B1.
-matchmaker #421.1/C to #421.9/2G bring #421.2.1
+matchmaker #421.1/C to #421.9/2G bring #421.3.1
 close #421.9
 
 hide atoms

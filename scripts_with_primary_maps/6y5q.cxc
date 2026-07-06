@@ -4,15 +4,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #351; target model: #351.1.
+# Structure group: #351; target model: #351.1; RNA labels: #351.2.
 
 open 8h6l id 351.9 name 8H6L_anchor
 open 6y5q id 351.1 name 6Y5Q
-open emdb:10689 id 351.2.1 name 6Y5Q_EMD-10689_primary_map
+open emdb:10689 id 351.3.1 name 6Y5Q_EMD-10689_primary_map
 rename #351 SF3B_U2_6y5q_structure
 
 # Align on SF3B1.
-matchmaker #351.1/u to #351.9/2G bring #351.2.1
+matchmaker #351.1/u to #351.9/2G bring #351.3.1
 close #351.9
 
 hide atoms
@@ -111,13 +111,7 @@ select #351.1/2:46-65,69-73,81-82
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-# Each label is moved into #351.1.90 as an independently togglable model.
-label #351.1/2:28 residues text "U2/U6 helix I 26-30" color #047857 height 3 bgColor white
-rename #351.1.1 label_01_U2_U6_helix_I_26_30 id #351.1.90.1
-rename #351.1.90 RNA_feature_labels
-label #351.1/2:36 residues text "U2 BP pairing 32-41" color #0B6E2D height 3 bgColor white
-rename #351.1.1 label_02_U2_BP_pairing_32_41 id #351.1.90.2
-label #351.1/2:56 residues text "U2 stem IIa 46-65;69-73;81-82" color #167A38 height 3 bgColor white
-rename #351.1.1 label_03_U2_stem_IIa_46_65_69_73_81_82 id #351.1.90.3
+# Labels are created as independent grouped models under #351.2.
+runscript "rna_feature_label_models.py" args "label_specs/6y5q_rna_labels.json"
 view
 show nucleic

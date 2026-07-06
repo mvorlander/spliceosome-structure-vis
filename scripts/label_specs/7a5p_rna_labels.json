@@ -1,0 +1,131 @@
+{
+  "structure_model_id": "353.1",
+  "label_group_model_id": "353.2",
+  "cleanup_model_ids": [
+    "353.1.90"
+  ],
+  "label_group_name": "RNA_feature_labels",
+  "height": 3.35,
+  "size": 144,
+  "background": "none",
+  "outline_color": "#ffffff",
+  "outline_offsets": [
+    [
+      -0.085,
+      0,
+      0
+    ],
+    [
+      0.085,
+      0,
+      0
+    ],
+    [
+      0,
+      -0.085,
+      0
+    ],
+    [
+      0,
+      0.085,
+      0
+    ],
+    [
+      -0.06,
+      -0.06,
+      0
+    ],
+    [
+      -0.06,
+      0.06,
+      0
+    ],
+    [
+      0.06,
+      -0.06,
+      0
+    ],
+    [
+      0.06,
+      0.06,
+      0
+    ],
+    [
+      -0.052,
+      0,
+      0
+    ],
+    [
+      0.052,
+      0,
+      0
+    ],
+    [
+      0,
+      -0.052,
+      0
+    ],
+    [
+      0,
+      0.052,
+      0
+    ],
+    [
+      -0.037,
+      -0.037,
+      0
+    ],
+    [
+      -0.037,
+      0.037,
+      0
+    ],
+    [
+      0.037,
+      -0.037,
+      0
+    ],
+    [
+      0.037,
+      0.037,
+      0
+    ]
+  ],
+  "default_visible_category_keys": [
+    "pre_mRNA_features",
+    "snRNA_pre_mRNA_regions"
+  ],
+  "default_visible_category_names": [
+    "pre-mRNA features",
+    "snRNA-pre-mRNA regions"
+  ],
+  "labels": [
+    {
+      "index": 1,
+      "atomspec": "#353.1/Y:87",
+      "text": "intron (res. 80-94;127-140)",
+      "color": "#303030",
+      "model_name": "label_01_intron_res_80_94_127_140",
+      "category_key": "pre_mRNA_features",
+      "category_name": "pre-mRNA features"
+    },
+    {
+      "index": 2,
+      "atomspec": "#353.1/6:88",
+      "text": "U6 ISL (res. 80-95)",
+      "color": "#D61A3D",
+      "model_name": "label_02_U6_ISL_res_80_95",
+      "category_key": "internal_stem_loops",
+      "category_name": "internal stem loops"
+    },
+    {
+      "index": 3,
+      "atomspec": "#353.1/6:93",
+      "text": "U6 AGC triad (res. 92-94)",
+      "color": "#C91236",
+      "model_name": "label_03_U6_AGC_triad_res_92_94",
+      "category_key": "catalytic_core_regions",
+      "category_name": "catalytic core regions"
+    }
+  ]
+}

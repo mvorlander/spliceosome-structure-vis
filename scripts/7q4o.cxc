@@ -4,7 +4,7 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #370; target model: #370.1.
+# Structure group: #370; target model: #370.1; RNA labels: #370.2.
 
 open 8h6l id 370.9 name 8H6L_anchor
 open 7q4o id 370.1 name 7Q4O
@@ -93,17 +93,7 @@ select #370.1/2:46-63
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-# Each label is moved into #370.1.90 as an independently togglable model.
-label #370.1/h:7 residues text "BP region 2-12" color #303030 height 3 bgColor white
-rename #370.1.1 label_01_BP_region_2_12 id #370.1.90.1
-rename #370.1.90 RNA_feature_labels
-label #370.1/h:10 residues text "BP-A 10" color #303030 height 3 bgColor white
-rename #370.1.1 label_02_BP_A_10 id #370.1.90.2
-label #370.1/2:30 residues text "U2/U6 helix I 29-30" color #047857 height 3 bgColor white
-rename #370.1.1 label_03_U2_U6_helix_I_29_30 id #370.1.90.3
-label #370.1/2:36 residues text "U2 BP pairing 32-41" color #0B6E2D height 3 bgColor white
-rename #370.1.1 label_04_U2_BP_pairing_32_41 id #370.1.90.4
-label #370.1/2:54 residues text "U2 stem IIa 46-63" color #167A38 height 3 bgColor white
-rename #370.1.1 label_05_U2_stem_IIa_46_63 id #370.1.90.5
+# Labels are created as independent grouped models under #370.2.
+runscript "rna_feature_label_models.py" args "label_specs/7q4o_rna_labels.json"
 view
 show nucleic

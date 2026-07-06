@@ -4,15 +4,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #416; target model: #416.1.
+# Structure group: #416; target model: #416.1; RNA labels: #416.2.
 
 open 8h6l id 416.9 name 8H6L_anchor
 open 8y6o id 416.1 name 8Y6O
-open emdb:38993 id 416.2.1 name 8Y6O_EMD-38993_primary_map
+open emdb:38993 id 416.3.1 name 8Y6O_EMD-38993_primary_map
 rename #416 pre_B_8y6o_structure
 
 # Align on PRPF8.
-matchmaker #416.1/C to #416.9/5B bring #416.2.1
+matchmaker #416.1/C to #416.9/5B bring #416.3.1
 close #416.9
 
 hide atoms
@@ -224,33 +224,7 @@ select #416.1/K:52-58,60-65
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-# Each label is moved into #416.1.90 as an independently togglable model.
-label #416.1/A:0 residues text "5' exon -1-0" color #FF8C00 height 3 bgColor white
-rename #416.1.1 label_01_5_exon_1_0 id #416.1.90.1
-rename #416.1.90 RNA_feature_labels
-label #416.1/A:6 residues text "5'SS 1-10" color #303030 height 3 bgColor white
-rename #416.1.1 label_02_5_SS_1_10 id #416.1.90.2
-label #416.1/A:6 residues text "intron 1-11" color #303030 height 3 bgColor white
-rename #416.1.1 label_03_intron_1_11 id #416.1.90.3
-label #416.1/P:4 residues text "U11 5'SS recog. 1-7" color #B66AAE height 3 bgColor white
-rename #416.1.1 label_04_U11_5_SS_recog_1_7 id #416.1.90.4
-label #416.1/P:25 residues text "U11 SL1 11-39;43-45" color #BF72B7 height 3 bgColor white
-rename #416.1.1 label_05_U11_SL1_11_39_43_45 id #416.1.90.5
-label #416.1/P:70 residues text "U11 SL2 46-95" color #AD62A6 height 3 bgColor white
-rename #416.1.1 label_06_U11_SL2_46_95 id #416.1.90.6
-label #416.1/J:10 residues text "U4atac/U6atac stem I 3-18" color #D8C800 height 3 bgColor white
-rename #416.1.1 label_07_U4atac_U6atac_stem_I_3_18 id #416.1.90.7
-label #416.1/J:62 residues text "U4atac/U6atac stem II 60-64" color #E0CF1A height 3 bgColor white
-rename #416.1.1 label_08_U4atac_U6atac_stem_II_60_64 id #416.1.90.8
-label #416.1/J:90 residues text "U4atac Brr2 region 83-96" color #F0DF2E height 3 bgColor white
-rename #416.1.1 label_09_U4atac_Brr2_region_83_96 id #416.1.90.9
-label #416.1/B:40 residues text "U5 loop I 38-42" color #1B3CD0 height 3 bgColor white
-rename #416.1.1 label_10_U5_loop_I_38_42 id #416.1.90.10
-label #416.1/K:26 residues text "U6atac/U12 helix I 23-29" color #D0183C height 3 bgColor white
-rename #416.1.1 label_11_U6atac_U12_helix_I_23_29 id #416.1.90.11
-label #416.1/K:27 residues text "U6atac AGC triad 26-28" color #C91236 height 3 bgColor white
-rename #416.1.1 label_12_U6atac_AGC_triad_26_28 id #416.1.90.12
-label #416.1/K:55 residues text "U6atac ISL 52-58;60-65" color #D61A3D height 3 bgColor white
-rename #416.1.1 label_13_U6atac_ISL_52_58_60_65 id #416.1.90.13
+# Labels are created as independent grouped models under #416.2.
+runscript "rna_feature_label_models.py" args "label_specs/8y6o_rna_labels.json"
 view
 show nucleic

@@ -4,7 +4,7 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #435; target model: #435.1.
+# Structure group: #435; target model: #435.1; RNA labels: #435.2.
 
 open 8h6l id 435.9 name 8H6L_anchor
 open 9zec id 435.1 name 9ZEC
@@ -79,9 +79,7 @@ select #435.1/2:32-41
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-# Each label is moved into #435.1.90 as an independently togglable model.
-label #435.1/2:36 residues text "U2 BP pairing 32-41" color #0B6E2D height 3 bgColor white
-rename #435.1.1 label_01_U2_BP_pairing_32_41 id #435.1.90.1
-rename #435.1.90 RNA_feature_labels
+# Labels are created as independent grouped models under #435.2.
+runscript "rna_feature_label_models.py" args "label_specs/9zec_rna_labels.json"
 view
 show nucleic

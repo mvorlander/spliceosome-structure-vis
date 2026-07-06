@@ -4,15 +4,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #367; target model: #367.1.
+# Structure group: #367; target model: #367.1; RNA labels: #367.2.
 
 open 8h6l id 367.9 name 8H6L_anchor
 open 7os2 id 367.1 name 7OS2
-open emdb:13046 id 367.2.1 name 7OS2_EMD-13046_primary_map
+open emdb:13046 id 367.3.1 name 7OS2_EMD-13046_primary_map
 rename #367 U5_recycling_7os2_structure
 
 # Align on PRPF8.
-matchmaker #367.1/J to #367.9/5B bring #367.2.1
+matchmaker #367.1/J to #367.9/5B bring #367.3.1
 close #367.9
 
 hide atoms

@@ -4,15 +4,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #417; target model: #417.1.
+# Structure group: #417; target model: #417.1; RNA labels: #417.2.
 
 open 8h6l id 417.9 name 8H6L_anchor
 open 8y7e id 417.1 name 8Y7E
-open emdb:39013 id 417.2.1 name 8Y7E_EMD-39013_primary_map
+open emdb:39013 id 417.3.1 name 8Y7E_EMD-39013_primary_map
 rename #417 pre_B_8y7e_structure
 
 # Align on SF3B1.
-matchmaker #417.1/1 to #417.9/2G bring #417.2.1
+matchmaker #417.1/1 to #417.9/2G bring #417.3.1
 close #417.9
 
 hide atoms
@@ -96,13 +96,7 @@ select #417.1/H:16-26
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-# Each label is moved into #417.1.90 as an independently togglable model.
-label #417.1/A:200 residues text "BP region 195-206" color #303030 height 3 bgColor white
-rename #417.1.1 label_01_BP_region_195_206 id #417.1.90.1
-rename #417.1.90 RNA_feature_labels
-label #417.1/A:203 residues text "BP-A 203" color #303030 height 3 bgColor white
-rename #417.1.1 label_02_BP_A_203 id #417.1.90.2
-label #417.1/H:21 residues text "U12 BP pairing 16-26" color #0B6E2D height 3 bgColor white
-rename #417.1.1 label_03_U12_BP_pairing_16_26 id #417.1.90.3
+# Labels are created as independent grouped models under #417.2.
+runscript "rna_feature_label_models.py" args "label_specs/8y7e_rna_labels.json"
 view
 show nucleic

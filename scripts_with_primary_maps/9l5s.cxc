@@ -4,15 +4,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #426; target model: #426.1.
+# Structure group: #426; target model: #426.1; RNA labels: #426.2.
 
 open 8h6l id 426.9 name 8H6L_anchor
 open 9l5s id 426.1 name 9L5S
-open emdb:62842 id 426.2.1 name 9L5S_EMD-62842_primary_map
+open emdb:62842 id 426.3.1 name 9L5S_EMD-62842_primary_map
 rename #426 Bstar_9l5s_structure
 
 # Align on PRPF8.
-matchmaker #426.1/A to #426.9/5B bring #426.2.1
+matchmaker #426.1/A to #426.9/5B bring #426.3.1
 close #426.9
 
 hide atoms
@@ -178,23 +178,7 @@ select #426.1/6:46-48
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-# Each label is moved into #426.1.90 as an independently togglable model.
-label #426.1/2:28 residues text "U2/U6 helix I 26-30" color #047857 height 3 bgColor white
-rename #426.1.1 label_01_U2_U6_helix_I_26_30 id #426.1.90.1
-rename #426.1.90 RNA_feature_labels
-label #426.1/2:34 residues text "U2 BP pairing 31-37" color #0B6E2D height 3 bgColor white
-rename #426.1.1 label_02_U2_BP_pairing_31_37 id #426.1.90.2
-label #426.1/5:39 residues text "U5 loop I 37-41" color #1B3CD0 height 3 bgColor white
-rename #426.1.1 label_03_U5_loop_I_37_41 id #426.1.90.3
-label #426.1/6:40 residues text "U2/U6 helix I 28-53" color #D0183C height 3 bgColor white
-rename #426.1.1 label_04_U2_U6_helix_I_28_53 id #426.1.90.4
-label #426.1/6:36 residues text "U6 5'SS contact 31-42" color #E01842 height 3 bgColor white
-rename #426.1.1 label_05_U6_5_SS_contact_31_42 id #426.1.90.5
-label #426.1/6:46 residues text "U6 ISL 33-60" color #D61A3D height 3 bgColor white
-rename #426.1.1 label_06_U6_ISL_33_60 id #426.1.90.6
-label #426.1/6:37 residues text "U6 ACAGAGA 34-40" color #DC143C height 3 bgColor white
-rename #426.1.1 label_07_U6_ACAGAGA_34_40 id #426.1.90.7
-label #426.1/6:47 residues text "U6 AGC triad 46-48" color #C91236 height 3 bgColor white
-rename #426.1.1 label_08_U6_AGC_triad_46_48 id #426.1.90.8
+# Labels are created as independent grouped models under #426.2.
+runscript "rna_feature_label_models.py" args "label_specs/9l5s_rna_labels.json"
 view
 show nucleic

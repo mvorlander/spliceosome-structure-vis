@@ -4,15 +4,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #362; target model: #362.1.
+# Structure group: #362; target model: #362.1; RNA labels: #362.2.
 
 open 8h6l id 362.9 name 8H6L_anchor
 open 7evn id 362.1 name 7EVN
-open emdb:31330 id 362.2.1 name 7EVN_EMD-31330_primary_map
+open emdb:31330 id 362.3.1 name 7EVN_EMD-31330_primary_map
 rename #362 SF3B_U2_7evn_structure
 
 # Align on SF3B1.
-matchmaker #362.1/C to #362.9/2G bring #362.2.1
+matchmaker #362.1/C to #362.9/2G bring #362.3.1
 close #362.9
 
 hide atoms

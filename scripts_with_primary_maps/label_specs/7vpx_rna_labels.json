@@ -1,0 +1,176 @@
+{
+  "structure_model_id": "373.1",
+  "label_group_model_id": "373.2",
+  "cleanup_model_ids": [
+    "373.1.90"
+  ],
+  "label_group_name": "RNA_feature_labels",
+  "height": 3.35,
+  "size": 144,
+  "background": "none",
+  "outline_color": "#ffffff",
+  "outline_offsets": [
+    [
+      -0.085,
+      0,
+      0
+    ],
+    [
+      0.085,
+      0,
+      0
+    ],
+    [
+      0,
+      -0.085,
+      0
+    ],
+    [
+      0,
+      0.085,
+      0
+    ],
+    [
+      -0.06,
+      -0.06,
+      0
+    ],
+    [
+      -0.06,
+      0.06,
+      0
+    ],
+    [
+      0.06,
+      -0.06,
+      0
+    ],
+    [
+      0.06,
+      0.06,
+      0
+    ],
+    [
+      -0.052,
+      0,
+      0
+    ],
+    [
+      0.052,
+      0,
+      0
+    ],
+    [
+      0,
+      -0.052,
+      0
+    ],
+    [
+      0,
+      0.052,
+      0
+    ],
+    [
+      -0.037,
+      -0.037,
+      0
+    ],
+    [
+      -0.037,
+      0.037,
+      0
+    ],
+    [
+      0.037,
+      -0.037,
+      0
+    ],
+    [
+      0.037,
+      0.037,
+      0
+    ]
+  ],
+  "default_visible_category_keys": [
+    "pre_mRNA_features",
+    "snRNA_pre_mRNA_regions"
+  ],
+  "default_visible_category_names": [
+    "pre-mRNA features",
+    "snRNA-pre-mRNA regions"
+  ],
+  "labels": [
+    {
+      "index": 1,
+      "atomspec": "#373.1/I:34",
+      "text": "5' exon (res. -1-0;27-41)",
+      "color": "#FF8C00",
+      "model_name": "label_01_5_exon_res_1_0_27_41",
+      "category_key": "pre_mRNA_features",
+      "category_name": "pre-mRNA features"
+    },
+    {
+      "index": 2,
+      "atomspec": "#373.1/K:4",
+      "text": "? 5'SS (res. 1-6)",
+      "color": "#303030",
+      "model_name": "label_02_5_SS_res_1_6",
+      "category_key": "pre_mRNA_features",
+      "category_name": "pre-mRNA features"
+    },
+    {
+      "index": 3,
+      "atomspec": "#373.1/K:4",
+      "text": "intron (res. 1-8)",
+      "color": "#303030",
+      "model_name": "label_03_intron_res_1_8",
+      "category_key": "pre_mRNA_features",
+      "category_name": "pre-mRNA features"
+    },
+    {
+      "index": 4,
+      "atomspec": "#373.1/L:6",
+      "text": "U1 5'SS recog. (res. 1-10)",
+      "color": "#B66AAE",
+      "model_name": "label_04_U1_5_SS_recog_res_1_10",
+      "category_key": "snRNA_pre_mRNA_regions",
+      "category_name": "snRNA-pre-mRNA regions"
+    },
+    {
+      "index": 5,
+      "atomspec": "#373.1/L:28",
+      "text": "U1 SL1 (res. 11-45)",
+      "color": "#BF72B7",
+      "model_name": "label_05_U1_SL1_res_11_45",
+      "category_key": "internal_stem_loops",
+      "category_name": "internal stem loops"
+    },
+    {
+      "index": 6,
+      "atomspec": "#373.1/L:70",
+      "text": "U1 SL2 (res. 46-95)",
+      "color": "#AD62A6",
+      "model_name": "label_06_U1_SL2_res_46_95",
+      "category_key": "internal_stem_loops",
+      "category_name": "internal stem loops"
+    },
+    {
+      "index": 7,
+      "atomspec": "#373.1/H:38",
+      "text": "U2 BP pairing (res. 34-41)",
+      "color": "#0B6E2D",
+      "model_name": "label_07_U2_BP_pairing_res_34_41",
+      "category_key": "snRNA_pre_mRNA_regions",
+      "category_name": "snRNA-pre-mRNA regions"
+    },
+    {
+      "index": 8,
+      "atomspec": "#373.1/H:56",
+      "text": "U2 stem IIa (res. 46-65;69-73;81-82)",
+      "color": "#167A38",
+      "model_name": "label_08_U2_stem_IIa_res_46_65_69_73_81_82",
+      "category_key": "internal_stem_loops",
+      "category_name": "internal stem loops"
+    }
+  ]
+}

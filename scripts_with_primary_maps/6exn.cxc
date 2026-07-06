@@ -4,15 +4,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #333; target model: #333.1.
+# Structure group: #333; target model: #333.1; RNA labels: #333.2.
 
 open 8h6l id 333.9 name 8H6L_anchor
 open 6exn id 333.1 name 6EXN
-open emdb:3979 id 333.2.1 name 6EXN_EMD-3979_primary_map
+open emdb:3979 id 333.3.1 name 6EXN_EMD-3979_primary_map
 rename #333 P_6exn_structure
 
 # Align on PRPF8.
-matchmaker #333.1/A to #333.9/5B bring #333.2.1
+matchmaker #333.1/A to #333.9/5B bring #333.3.1
 close #333.9
 
 hide atoms
@@ -240,45 +240,7 @@ select #333.1/6:59-61
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-# Each label is moved into #333.1.90 as an independently togglable model.
-label #333.1/E:17 residues text "ligated exons -14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13;15-19" color #FF8C00 height 3 bgColor white
-rename #333.1.1 label_01_ligated_exons_14_13_12_11_10_9_8_7_6_5_4_3_2_1_1_2_3_4_5_6_7_8_9_10_11_12_13_15_19 id #333.1.90.1
-rename #333.1.90 RNA_feature_labels
-label #333.1/E:-13 residues text "? 5'SS -14--12" color #303030 height 3 bgColor white
-rename #333.1.1 label_02_5_SS_14_12 id #333.1.90.2
-label #333.1/I:64 residues text "intron -14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13;15-19; 1-16;56-73;91-95" color #303030 height 3 bgColor white
-rename #333.1.1 label_03_intron_14_13_12_11_10_9_8_7_6_5_4_3_2_1_1_2_3_4_5_6_7_8_9_10_11_12_13_15_19_1_16_56_73_91_95 id #333.1.90.3
-label #333.1/E:-8 residues text "5' exon -14--1" color #FF8C00 height 3 bgColor white
-rename #333.1.1 label_04_5_exon_14_1 id #333.1.90.4
-label #333.1/E:7 residues text "3' exon 1-13;15-19" color #D97706 height 3 bgColor white
-rename #333.1.1 label_05_3_exon_1_13_15_19 id #333.1.90.5
-label #333.1/I:64 residues text "lariat 1-16;56-73;91-95" color #303030 height 3 bgColor white
-rename #333.1.1 label_06_lariat_1_16_56_73_91_95 id #333.1.90.6
-label #333.1/I:67 residues text "BP region 62-72" color #303030 height 3 bgColor white
-rename #333.1.1 label_07_BP_region_62_72 id #333.1.90.7
-label #333.1/I:70 residues text "BP-A 70" color #303030 height 3 bgColor white
-rename #333.1.1 label_08_BP_A_70 id #333.1.90.8
-label #333.1/I:94 residues text "3'SS 93-95" color #303030 height 3 bgColor white
-rename #333.1.1 label_09_3_SS_93_95 id #333.1.90.9
-label #333.1/2:28 residues text "U2/U6 helix I 26-30" color #047857 height 3 bgColor white
-rename #333.1.1 label_10_U2_U6_helix_I_26_30 id #333.1.90.10
-label #333.1/2:38 residues text "U2 BP pairing 33-42" color #0B6E2D height 3 bgColor white
-rename #333.1.1 label_11_U2_BP_pairing_33_42 id #333.1.90.11
-label #333.1/2:57 residues text "U2 stem IIa 46-48;54-60" color #167A38 height 3 bgColor white
-rename #333.1.1 label_12_U2_stem_IIa_46_48_54_60 id #333.1.90.12
-label #333.1/5:55 residues text "U5 loop I 53-57" color #1B3CD0 height 3 bgColor white
-rename #333.1.1 label_13_U5_loop_I_53_57 id #333.1.90.13
-label #333.1/6:16 residues text "U6 5' terminal SL 1-30" color #DC143C height 3 bgColor white
-rename #333.1.1 label_14_U6_5_terminal_SL_1_30 id #333.1.90.14
-label #333.1/6:54 residues text "U2/U6 helix I 41-66" color #D0183C height 3 bgColor white
-rename #333.1.1 label_15_U2_U6_helix_I_41_66 id #333.1.90.15
-label #333.1/6:50 residues text "U6 5'SS contact 44-55" color #E01842 height 3 bgColor white
-rename #333.1.1 label_16_U6_5_SS_contact_44_55 id #333.1.90.16
-label #333.1/6:60 residues text "U6 ISL 46-73" color #D61A3D height 3 bgColor white
-rename #333.1.1 label_17_U6_ISL_46_73 id #333.1.90.17
-label #333.1/6:50 residues text "U6 ACAGAGA 47-53" color #DC143C height 3 bgColor white
-rename #333.1.1 label_18_U6_ACAGAGA_47_53 id #333.1.90.18
-label #333.1/6:60 residues text "U6 AGC triad 59-61" color #C91236 height 3 bgColor white
-rename #333.1.1 label_19_U6_AGC_triad_59_61 id #333.1.90.19
+# Labels are created as independent grouped models under #333.2.
+runscript "rna_feature_label_models.py" args "label_specs/6exn_rna_labels.json"
 view
 show nucleic
