@@ -478,10 +478,12 @@
           {dx:24, dy:10, r:19, fill:U.u5, text:"U5"}
         ]
       };
+      const ntcStages = new Set(["Bact","B*","C","C*","P","ILS/disassembly"]);
       const defaultParticles = [
         {dx:-24, dy:-7, r:18, fill:U.u2, text:"U2"},
         {dx:15, dy:-10, r:17, fill:stage.includes("B")||["C","C*","P","ILS/disassembly"].includes(stage)?U.u6:U.u4, text:stage.includes("B")||["C","C*","P","ILS/disassembly"].includes(stage)?"U6":"U4"},
-        {dx:25, dy:13, r:20, fill:U.u5, text:"U5"}
+        {dx:25, dy:13, r:20, fill:U.u5, text:"U5"},
+        ...(ntcStages.has(stage) ? [{dx:0, dy:18, r:12, fill:U.ntc, text:"NTC"}] : [])
       ];
       const particles = (particlesByStage[stage] || defaultParticles).map(p => `<circle class="cycle-particle" cx="${x+p.dx}" cy="${y+p.dy}" r="${p.r}" fill="${p.fill}"/>${p.text ? `<text class="cycle-particle-label" x="${x+p.dx}" y="${y+p.dy}">${esc(p.text)}</text>` : ""}`).join("");
       const rnaLine = ["E complex","A complex"].includes(stage) ? `<path class="cycle-rna-line" d="M ${x-38} ${y+18} C ${x-18} ${y+7} ${x+18} ${y+7} ${x+38} ${y+18}"/>` : "";
