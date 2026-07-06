@@ -59,8 +59,6 @@ color #370.1/G #375A40
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 1-13, component, medium confidence, validation not_applicable
 name U2_snRNP_7Q4O_substrate #370.1/h:1-13
-# branch helix substrate strand: residues 2-12, network-scored-motif, high confidence, validation validated
-name U2_snRNP_7Q4O_branch_helix #370.1/h:2-12
 # branch point region: residues 2-12, network-scored-motif, high confidence, validation validated
 name U2_snRNP_7Q4O_branch_region #370.1/h:2-12
 # branch point adenosine: residues 10, network-scored-motif, high confidence, validation validated
@@ -76,7 +74,6 @@ name U2_snRNP_7Q4O_U2_stem_IIa #370.1/2:46-63
 select #370.1 & nucleic
 nucleotides sel atoms
 select clear
-# branch helix: residues 2-12
 # BP region: residues 2-12
 # BP-A: residues 10
 # U2/U6 helix I: residues 29-55
@@ -95,7 +92,6 @@ select #370.1/2:46-63
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #370.1/h:7 residues text "branch helix 2-12" color #303030 height 5 bgColor transparent
 label #370.1/h:7 residues text "BP region 2-12" color #303030 height 5 bgColor transparent
 label #370.1/h:10 residues text "BP-A 10" color #303030 height 5 bgColor transparent
 label #370.1/2:42 residues text "U2/U6 helix I 29-55" color #047857 height 5 bgColor transparent

@@ -51,8 +51,6 @@ color #424.1/H #006400
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 25-48, component, medium confidence, validation not_applicable
 name U2_snRNP_9K1Y_substrate #424.1/G:25-48
-# branch helix substrate strand: residues 28-38, network-scored-motif, high confidence, validation validated
-name U2_snRNP_9K1Y_branch_helix #424.1/G:28-38
 # branch point region: residues 28-38, network-scored-motif, high confidence, validation validated
 name U2_snRNP_9K1Y_branch_region #424.1/G:28-38
 # branch point adenosine: residues 36, network-scored-motif, high confidence, validation validated
@@ -66,7 +64,6 @@ name U2_snRNP_9K1Y_U2_branchpoint_pairing_region #424.1/H:2-11
 select #424.1 & nucleic
 nucleotides sel atoms
 select clear
-# branch helix: residues 28-38
 # BP region: residues 28-38
 # BP-A: residues 36
 # 3'SS: residues 39-41
@@ -76,7 +73,6 @@ select #424.1/H:2-11
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #424.1/G:33 residues text "branch helix 28-38" color #303030 height 5 bgColor transparent
 label #424.1/G:33 residues text "BP region 28-38" color #303030 height 5 bgColor transparent
 label #424.1/G:36 residues text "BP-A 36" color #303030 height 5 bgColor transparent
 label #424.1/G:40 residues text "? 3'SS 39-41" color #303030 height 5 bgColor transparent

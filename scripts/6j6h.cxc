@@ -121,8 +121,6 @@ name Bstar_6J6H_5exon #341.1/B:-12-17
 name Bstar_6J6H_substrate #341.1/B:-12-17,247-276
 # intron: residues 247-276, splice-site-inference, medium confidence, validation not_applicable
 name Bstar_6J6H_intron #341.1/B:247-276
-# branch helix substrate strand: residues 258-268, network-scored-motif, high confidence, validation validated
-name Bstar_6J6H_branch_helix #341.1/B:258-268
 # branch point region: residues 258-268, network-scored-motif, high confidence, validation validated
 name Bstar_6J6H_branch_region #341.1/B:258-268
 # branch point adenosine: residues 266, network-scored-motif, high confidence, validation validated
@@ -160,7 +158,6 @@ select #341.1/B:-12-17
 nucleotides sel fill
 select clear
 # intron: residues 247-276
-# branch helix: residues 258-268
 # BP region: residues 258-268
 # BP-A: residues 266
 # U2/U6 helix I: residues 25-55
@@ -216,7 +213,6 @@ select clear
 # RNA feature 3D residue labels.
 label #341.1/B:2 residues text "5' exon -12-17" color #FF8C00 height 5 bgColor transparent
 label #341.1/B:262 residues text "intron 247-276" color #303030 height 5 bgColor transparent
-label #341.1/B:263 residues text "branch helix 258-268" color #303030 height 5 bgColor transparent
 label #341.1/B:263 residues text "BP region 258-268" color #303030 height 5 bgColor transparent
 label #341.1/B:266 residues text "BP-A 266" color #303030 height 5 bgColor transparent
 label #341.1/L:40 residues text "U2/U6 helix I 25-55" color #047857 height 5 bgColor transparent

@@ -171,8 +171,6 @@ name B_6AHD_substrate #331.1/G:-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,
 name B_6AHD_5SS #331.1/G:1-6
 # intron: residues 1-23;122-163, splice-site-inference, medium confidence, validation not_applicable
 name B_6AHD_intron #331.1/G:1-23,122-163
-# branch helix substrate strand: residues 139-145, network-scored-motif, high confidence, validation validated
-name B_6AHD_branch_helix #331.1/G:139-145
 # branch point region: residues 139-145, network-scored-motif, high confidence, validation validated
 name B_6AHD_branch_region #331.1/G:139-145
 # branch point adenosine: residues 144, network-scored-motif, high confidence, validation validated
@@ -227,7 +225,6 @@ nucleotides sel fill
 select clear
 # 5'SS: residues 1-6
 # intron: residues 1-23;122-163
-# branch helix: residues 139-145
 # BP region: residues 139-145
 # BP-A: residues 144
 # PPT: residues 150-163
@@ -310,7 +307,6 @@ select clear
 label #331.1/G:-6 residues text "5' exon -12--1" color #FF8C00 height 5 bgColor transparent
 label #331.1/G:4 residues text "? 5'SS 1-6" color #303030 height 5 bgColor transparent
 label #331.1/G:142 residues text "intron 1-23;122-163" color #303030 height 5 bgColor transparent
-label #331.1/G:142 residues text "branch helix 139-145" color #303030 height 5 bgColor transparent
 label #331.1/G:142 residues text "BP region 139-145" color #303030 height 5 bgColor transparent
 label #331.1/G:144 residues text "BP-A 144" color #303030 height 5 bgColor transparent
 label #331.1/G:156 residues text "PPT 150-163" color #303030 height 5 bgColor transparent

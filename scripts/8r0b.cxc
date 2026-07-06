@@ -161,8 +161,6 @@ color #410.1/C #6495ED
 name pre_B_8R0B_substrate #410.1/Z:29-43|#410.1/z:-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8
 # intron: residues 1-8; 29-43, five-ss-inference/splice-site-inference, low/medium confidence, validation not_applicable
 name pre_B_8R0B_intron #410.1/Z:29-43|#410.1/z:1-8
-# branch helix substrate strand: residues 36-43, network-scored-motif, high confidence, validation validated
-name pre_B_8R0B_branch_helix #410.1/Z:36-43
 # branch point region: residues 36-43, network-scored-motif, high confidence, validation validated
 name pre_B_8R0B_branch_region #410.1/Z:36-43
 # branch point adenosine: residues 41, network-scored-motif, high confidence, validation validated
@@ -211,7 +209,6 @@ select #410.1 & nucleic
 nucleotides sel atoms
 select clear
 # intron: residues 1-8; 29-43
-# branch helix: residues 36-43
 # BP region: residues 36-43
 # BP-A: residues 41
 # 5' exon: residues -5--1
@@ -292,7 +289,6 @@ nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
 label #410.1/Z:36 residues text "intron 1-8; 29-43" color #303030 height 5 bgColor transparent
-label #410.1/Z:40 residues text "branch helix 36-43" color #303030 height 5 bgColor transparent
 label #410.1/Z:40 residues text "BP region 36-43" color #303030 height 5 bgColor transparent
 label #410.1/Z:41 residues text "BP-A 41" color #303030 height 5 bgColor transparent
 label #410.1/z:-3 residues text "5' exon -5--1" color #FF8C00 height 5 bgColor transparent

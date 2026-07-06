@@ -105,8 +105,6 @@ name Bact_5LQW_5exon #312.1/9:2-30
 name Bact_5LQW_substrate #312.1/9:2-30,494-518
 # intron: residues 494-518, splice-site-inference, medium confidence, validation not_applicable
 name Bact_5LQW_intron #312.1/9:494-518
-# branch helix substrate strand: residues 496-502, network-scored-motif, high confidence, validation validated
-name Bact_5LQW_branch_helix #312.1/9:496-502
 # branch point region: residues 496-502, network-scored-motif, high confidence, validation validated
 name Bact_5LQW_branch_region #312.1/9:496-502
 # branch point adenosine: residues 501, network-scored-motif, high confidence, validation validated
@@ -142,7 +140,6 @@ select #312.1/9:2-30
 nucleotides sel fill
 select clear
 # intron: residues 494-518
-# branch helix: residues 496-502
 # BP region: residues 496-502
 # BP-A: residues 501
 # U2/U6 helix I: residues 25-55
@@ -198,7 +195,6 @@ select clear
 # RNA feature 3D residue labels.
 label #312.1/9:16 residues text "5' exon 2-30" color #FF8C00 height 5 bgColor transparent
 label #312.1/9:506 residues text "intron 494-518" color #303030 height 5 bgColor transparent
-label #312.1/9:499 residues text "branch helix 496-502" color #303030 height 5 bgColor transparent
 label #312.1/9:499 residues text "BP region 496-502" color #303030 height 5 bgColor transparent
 label #312.1/9:501 residues text "BP-A 501" color #303030 height 5 bgColor transparent
 label #312.1/2:40 residues text "U2/U6 helix I 25-55" color #047857 height 5 bgColor transparent

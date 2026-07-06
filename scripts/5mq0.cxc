@@ -131,8 +131,6 @@ name Cstar_5MQ0_intron #314.1/2:1089|#314.1/E:-16--1
 name Cstar_5MQ0_3SS #314.1/2:1089|#314.1/5:133-135
 # 3' exon: residues 1-3; 1090-1108;1117-1129;1138-1154;1159-1169, component-name/splice-site-inference, high/medium confidence, validation not_applicable
 name Cstar_5MQ0_3exon #314.1/2:1090-1108,1117-1129,1138-1154,1159-1169|#314.1/3:1-3
-# branch helix substrate strand: residues 65-71; 72-76, network-scored-motif, medium/review confidence, validation uncertain uncertain validation
-name Cstar_5MQ0_branch_helix #314.1/5:72-76|#314.1/I:65-71
 # branch point region: residues 65-71; 72-76, network-scored-motif, medium/review confidence, validation uncertain uncertain validation
 name Cstar_5MQ0_branch_region #314.1/5:72-76|#314.1/I:65-71
 # polypyrimidine tract: residues 94-99, sequence-motif, medium confidence, validation uncertain uncertain validation
@@ -155,7 +153,6 @@ color #314.1/2:1090-1108,1117-1129,1138-1154,1159-1169|#314.1/3:1-3 #D97706
 select #314.1/2:1090-1108,1117-1129,1138-1154,1159-1169|#314.1/3:1-3
 nucleotides sel fill
 select clear
-# branch helix: residues 65-71; 72-76
 # BP region: residues 65-71; 72-76
 # PPT: residues 94-99
 # 5'SS: residues -16--12
@@ -164,7 +161,6 @@ label #314.1/2:25 residues text "5' exon -16--1; 1-49;55-73;78-84;98-104;139-150
 label #314.1/E:-8 residues text "intron -16--1; 1089" color #303030 height 5 bgColor transparent
 label #314.1/5:134 residues text "3'SS 1089; 133-135" color #303030 height 5 bgColor transparent
 label #314.1/2:1099 residues text "3' exon 1-3; 1090-1108;1117-1129;1138-1154;1159-1169" color #D97706 height 5 bgColor transparent
-label #314.1/I:68 residues text "? branch helix 65-71; 72-76" color #303030 height 5 bgColor transparent
 label #314.1/I:68 residues text "? BP region 65-71; 72-76" color #303030 height 5 bgColor transparent
 label #314.1/5:96 residues text "? PPT 94-99" color #303030 height 5 bgColor transparent
 label #314.1/E:-14 residues text "? 5'SS -16--12" color #303030 height 5 bgColor transparent

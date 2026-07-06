@@ -119,8 +119,6 @@ color #360.1/i #D5F5E3
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 74-115;468-475;479-484;486-525;528-536, component, medium confidence, validation not_applicable
 name Bact_7DCO_substrate #360.1/G:74-115,468-475,479-484,486-525,528-536
-# branch helix substrate strand: residues 493-503, network-scored-motif, high confidence, validation validated
-name Bact_7DCO_branch_helix #360.1/G:493-503
 # branch point region: residues 493-503, network-scored-motif, high confidence, validation validated
 name Bact_7DCO_branch_region #360.1/G:493-503
 # branch point adenosine: residues 501, network-scored-motif, high confidence, validation validated
@@ -152,7 +150,6 @@ name Bact_7DCO_U6_LSm_site #360.1/F:103
 select #360.1 & nucleic
 nucleotides sel atoms
 select clear
-# branch helix: residues 493-503
 # BP region: residues 493-503
 # BP-A: residues 501
 # U2/U6 helix I: residues 25-55
@@ -206,7 +203,6 @@ select #360.1/F:59-61
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #360.1/G:498 residues text "branch helix 493-503" color #303030 height 5 bgColor transparent
 label #360.1/G:498 residues text "BP region 493-503" color #303030 height 5 bgColor transparent
 label #360.1/G:501 residues text "BP-A 501" color #303030 height 5 bgColor transparent
 label #360.1/H:40 residues text "U2/U6 helix I 25-55" color #047857 height 5 bgColor transparent

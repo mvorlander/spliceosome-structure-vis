@@ -145,8 +145,6 @@ name Bact_8I0S_substrate #386.1/G:-12-24,83-117
 name Bact_8I0S_5SS #386.1/G:1-6
 # intron: residues 1-24;83-117, splice-site-inference, medium confidence, validation not_applicable
 name Bact_8I0S_intron #386.1/G:1-24,83-117
-# branch helix substrate strand: residues 92-98, network-scored-motif, high confidence, validation validated
-name Bact_8I0S_branch_helix #386.1/G:92-98
 # branch point region: residues 92-98, network-scored-motif, high confidence, validation validated
 name Bact_8I0S_branch_region #386.1/G:92-98
 # branch point adenosine: residues 97, network-scored-motif, high confidence, validation validated
@@ -187,7 +185,6 @@ nucleotides sel fill
 select clear
 # 5'SS: residues 1-6
 # intron: residues 1-24;83-117
-# branch helix: residues 92-98
 # BP region: residues 92-98
 # BP-A: residues 97
 # PPT: residues 103-116
@@ -245,7 +242,6 @@ select clear
 label #386.1/G:-6 residues text "5' exon -12-0" color #FF8C00 height 5 bgColor transparent
 label #386.1/G:4 residues text "? 5'SS 1-6" color #303030 height 5 bgColor transparent
 label #386.1/G:100 residues text "intron 1-24;83-117" color #303030 height 5 bgColor transparent
-label #386.1/G:95 residues text "branch helix 92-98" color #303030 height 5 bgColor transparent
 label #386.1/G:95 residues text "BP region 92-98" color #303030 height 5 bgColor transparent
 label #386.1/G:97 residues text "BP-A 97" color #303030 height 5 bgColor transparent
 label #386.1/G:110 residues text "PPT 103-116" color #303030 height 5 bgColor transparent

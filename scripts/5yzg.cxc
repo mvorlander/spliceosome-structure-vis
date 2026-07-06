@@ -153,8 +153,6 @@ name C_5YZG_substrate #322.1/G:-23--18,-12--1,1-31,116-154
 name C_5YZG_5SS #322.1/G:1-6
 # intron: residues 1-31;116-154, splice-site-inference, medium confidence, validation not_applicable
 name C_5YZG_intron #322.1/G:1-31,116-154
-# branch helix substrate strand: residues 139-145, network-scored-motif, high confidence, validation validated
-name C_5YZG_branch_helix #322.1/G:139-145
 # branch point region: residues 139-145, network-scored-motif, high confidence, validation validated
 name C_5YZG_branch_region #322.1/G:139-145
 # branch point adenosine: residues 144, network-scored-motif, high confidence, validation validated
@@ -195,7 +193,6 @@ nucleotides sel fill
 select clear
 # 5'SS: residues 1-6
 # intron: residues 1-31;116-154
-# branch helix: residues 139-145
 # BP region: residues 139-145
 # BP-A: residues 144
 # PPT: residues 150-154
@@ -253,7 +250,6 @@ select clear
 label #322.1/G:-6 residues text "5' exon -23--18;-12--1" color #FF8C00 height 5 bgColor transparent
 label #322.1/G:4 residues text "? 5'SS 1-6" color #303030 height 5 bgColor transparent
 label #322.1/G:135 residues text "intron 1-31;116-154" color #303030 height 5 bgColor transparent
-label #322.1/G:142 residues text "branch helix 139-145" color #303030 height 5 bgColor transparent
 label #322.1/G:142 residues text "BP region 139-145" color #303030 height 5 bgColor transparent
 label #322.1/G:144 residues text "BP-A 144" color #303030 height 5 bgColor transparent
 label #322.1/G:152 residues text "PPT 150-154" color #303030 height 5 bgColor transparent

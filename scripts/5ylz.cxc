@@ -123,8 +123,6 @@ name P_5YLZ_intron #321.1/E:-13--1,1-15,282-304,345-355
 name P_5YLZ_intron_lariat #321.1/E:-13--1,1-15,282-304,345-355
 # substrate RNA: residues -13--1;1-15;282-304;345-355, component, medium confidence, validation not_applicable
 name P_5YLZ_substrate #321.1/E:-13--1,1-15,282-304,345-355
-# branch helix substrate strand: residues 294-303, network-scored-motif, high confidence, validation validated
-name P_5YLZ_branch_helix #321.1/E:294-303
 # branch point region: residues 294-303, network-scored-motif, high confidence, validation validated
 name P_5YLZ_branch_region #321.1/E:294-303
 # branch point adenosine: residues 301, network-scored-motif, high confidence, validation validated
@@ -162,7 +160,6 @@ nucleotides sel atoms
 select clear
 # intron: residues -13--1;1-15;282-304;345-355
 # lariat: residues -13--1;1-15;282-304;345-355
-# branch helix: residues 294-303
 # BP region: residues 294-303
 # BP-A: residues 301
 # PPT: residues 304
@@ -220,7 +217,6 @@ select clear
 # RNA feature 3D residue labels.
 label #321.1/E:293 residues text "intron -13--1;1-15;282-304;345-355" color #303030 height 5 bgColor transparent
 label #321.1/E:293 residues text "lariat -13--1;1-15;282-304;345-355" color #303030 height 5 bgColor transparent
-label #321.1/E:298 residues text "branch helix 294-303" color #303030 height 5 bgColor transparent
 label #321.1/E:298 residues text "BP region 294-303" color #303030 height 5 bgColor transparent
 label #321.1/E:301 residues text "BP-A 301" color #303030 height 5 bgColor transparent
 label #321.1/E:304 residues text "? PPT 304" color #303030 height 5 bgColor transparent

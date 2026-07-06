@@ -97,8 +97,6 @@ name Cstar_5MPS_substrate #313.1/6:1-10,16-104|#313.1/E:-16--1|#313.1/I:1-16,56-
 name Cstar_5MPS_5SS #313.1/E:-16--12
 # intron from 5' splice site: residues -16--1, five-ss-inference, low confidence, validation not_applicable
 name Cstar_5MPS_intron #313.1/E:-16--1
-# branch helix substrate strand: residues 62-72, network-scored-motif, high confidence, validation validated
-name Cstar_5MPS_branch_helix #313.1/I:62-72
 # branch point region: residues 62-72, network-scored-motif, high confidence, validation validated
 name Cstar_5MPS_branch_region #313.1/I:62-72
 # branch point adenosine: residues 70, network-scored-motif, high confidence, validation validated
@@ -118,7 +116,6 @@ nucleotides sel atoms
 select clear
 # 5'SS: residues -16--12
 # intron: residues -16--1
-# branch helix: residues 62-72
 # BP region: residues 62-72
 # BP-A: residues 70
 # U2/U6 helix I: residues 25-49
@@ -144,7 +141,6 @@ select clear
 # RNA feature 3D residue labels.
 label #313.1/E:-14 residues text "? 5'SS -16--12" color #303030 height 5 bgColor transparent
 label #313.1/E:-8 residues text "intron -16--1" color #303030 height 5 bgColor transparent
-label #313.1/I:67 residues text "branch helix 62-72" color #303030 height 5 bgColor transparent
 label #313.1/I:67 residues text "BP region 62-72" color #303030 height 5 bgColor transparent
 label #313.1/I:70 residues text "BP-A 70" color #303030 height 5 bgColor transparent
 label #313.1/2:37 residues text "U2/U6 helix I 25-49" color #047857 height 5 bgColor transparent

@@ -157,8 +157,6 @@ name pre_Bact_7ABI_substrate #358.1/Z:50-78,141-168
 name pre_Bact_7ABI_5SS #358.1/Z:59-64
 # intron: residues 59-78;141-168, splice-site-inference, medium confidence, validation not_applicable
 name pre_Bact_7ABI_intron #358.1/Z:59-78,141-168
-# branch helix substrate strand: residues 150-156, network-scored-motif, high confidence, validation validated
-name pre_Bact_7ABI_branch_helix #358.1/Z:150-156
 # branch point region: residues 150-156, network-scored-motif, high confidence, validation validated
 name pre_Bact_7ABI_branch_region #358.1/Z:150-156
 # branch point adenosine: residues 155, network-scored-motif, high confidence, validation validated
@@ -197,7 +195,6 @@ nucleotides sel fill
 select clear
 # 5'SS: residues 59-64
 # intron: residues 59-78;141-168
-# branch helix: residues 150-156
 # BP region: residues 150-156
 # BP-A: residues 155
 # U2/U6 helix I: residues 25-55
@@ -254,7 +251,6 @@ select clear
 label #358.1/Z:54 residues text "5' exon 50-58" color #FF8C00 height 5 bgColor transparent
 label #358.1/Z:62 residues text "? 5'SS 59-64" color #303030 height 5 bgColor transparent
 label #358.1/Z:154 residues text "intron 59-78;141-168" color #303030 height 5 bgColor transparent
-label #358.1/Z:153 residues text "branch helix 150-156" color #303030 height 5 bgColor transparent
 label #358.1/Z:153 residues text "BP region 150-156" color #303030 height 5 bgColor transparent
 label #358.1/Z:155 residues text "BP-A 155" color #303030 height 5 bgColor transparent
 label #358.1/2:40 residues text "U2/U6 helix I 25-55" color #047857 height 5 bgColor transparent

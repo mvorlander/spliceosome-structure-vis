@@ -121,8 +121,6 @@ color #332.1/E #D49F96
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues -13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21; 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,501,502,503,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,620,621,622,623,624,625,626,627,628,1001,1002,1003,1004,1005,1006,1007,1008,1110,1111,1112,1113,1114,1115,1116,1117,1118, component, medium confidence, validation not_applicable
 name P_6BK8_substrate #332.1/e:-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21|#332.1/i:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,501,502,503,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,620,621,622,623,624,625,626,627,628,1001,1002,1003,1004,1005,1006,1007,1008,1110,1111,1112,1113,1114,1115,1116,1117,1118
-# branch helix substrate strand: residues 507-517, network-scored-motif, high confidence, validation validated
-name P_6BK8_branch_helix #332.1/i:507-517
 # branch point region: residues 507-517, network-scored-motif, high confidence, validation validated
 name P_6BK8_branch_region #332.1/i:507-517
 # branch point adenosine: residues 515, network-scored-motif, high confidence, validation validated
@@ -156,7 +154,6 @@ name P_6BK8_U6_AGC_catalytic_triad #332.1/6:59-61
 select #332.1 & nucleic
 nucleotides sel atoms
 select clear
-# branch helix: residues 507-517
 # BP region: residues 507-517
 # BP-A: residues 515
 # PPT: residues 518,620,621,622,623,624,625,626,627,628
@@ -212,7 +209,6 @@ select #332.1/6:59-61
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #332.1/i:512 residues text "branch helix 507-517" color #303030 height 5 bgColor transparent
 label #332.1/i:512 residues text "BP region 507-517" color #303030 height 5 bgColor transparent
 label #332.1/i:515 residues text "BP-A 515" color #303030 height 5 bgColor transparent
 label #332.1/i:518 residues text "? PPT 518,620,621,622,623,624,625,626,627,628" color #303030 height 5 bgColor transparent

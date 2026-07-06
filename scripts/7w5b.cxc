@@ -149,8 +149,6 @@ color #376.1/H #006400
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues -13--1; 1-31;116-150;164-179, component, medium confidence, validation not_applicable
 name Cstar_7W5B_substrate #376.1/4:-13--1|#376.1/G:1-31,116-150,164-179
-# branch helix substrate strand: residues 140-146, network-scored-motif, high confidence, validation validated
-name Cstar_7W5B_branch_helix #376.1/G:140-146
 # branch point region: residues 140-146, network-scored-motif, high confidence, validation validated
 name Cstar_7W5B_branch_region #376.1/G:140-146
 # branch point adenosine: residues 144, network-scored-motif, high confidence, validation validated
@@ -184,7 +182,6 @@ name Cstar_7W5B_U6_AGC_catalytic_triad #376.1/F:92-94
 select #376.1 & nucleic
 nucleotides sel atoms
 select clear
-# branch helix: residues 140-146
 # BP region: residues 140-146
 # BP-A: residues 144
 # PPT: residues 150
@@ -239,7 +236,6 @@ select #376.1/F:92-94
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #376.1/G:143 residues text "branch helix 140-146" color #303030 height 5 bgColor transparent
 label #376.1/G:143 residues text "BP region 140-146" color #303030 height 5 bgColor transparent
 label #376.1/G:144 residues text "BP-A 144" color #303030 height 5 bgColor transparent
 label #376.1/G:150 residues text "PPT 150" color #303030 height 5 bgColor transparent

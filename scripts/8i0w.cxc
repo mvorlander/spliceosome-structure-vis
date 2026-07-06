@@ -153,8 +153,6 @@ color #390.1/H #006400
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues -23--18;-12--1; 1-31;69-107, component, medium confidence, validation not_applicable
 name C_8I0W_substrate #390.1/6:1-31,69-107|#390.1/G:-23--18,-12--1
-# branch helix substrate strand: residues 92-99, network-scored-motif, high confidence, validation validated
-name C_8I0W_branch_helix #390.1/6:92-99
 # branch point region: residues 92-99, network-scored-motif, high confidence, validation validated
 name C_8I0W_branch_region #390.1/6:92-99
 # branch point adenosine: residues 97, network-scored-motif, high confidence, validation validated
@@ -188,7 +186,6 @@ name C_8I0W_U6_AGC_catalytic_triad #390.1/F:92-94
 select #390.1 & nucleic
 nucleotides sel atoms
 select clear
-# branch helix: residues 92-99
 # BP region: residues 92-99
 # BP-A: residues 97
 # PPT: residues 103-107
@@ -243,7 +240,6 @@ select #390.1/F:92-94
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #390.1/6:96 residues text "branch helix 92-99" color #303030 height 5 bgColor transparent
 label #390.1/6:96 residues text "BP region 92-99" color #303030 height 5 bgColor transparent
 label #390.1/6:97 residues text "BP-A 97" color #303030 height 5 bgColor transparent
 label #390.1/6:105 residues text "PPT 103-107" color #303030 height 5 bgColor transparent

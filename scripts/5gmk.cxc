@@ -129,8 +129,6 @@ name C_5GMK_5exon #309.1/B:87-99
 name C_5GMK_substrate #309.1/B:87-99|#309.1/M:482-510|#309.1/N:100-114
 # intron: residues 482-510, component-name, high confidence, validation not_applicable
 name C_5GMK_intron #309.1/M:482-510
-# branch helix substrate strand: residues 493-503, network-scored-motif, high confidence, validation validated
-name C_5GMK_branch_helix #309.1/M:493-503
 # branch point region: residues 493-503, network-scored-motif, high confidence, validation validated
 name C_5GMK_branch_region #309.1/M:493-503
 # branch point adenosine: residues 501, network-scored-motif, high confidence, validation validated
@@ -170,7 +168,6 @@ select #309.1/B:87-99
 nucleotides sel fill
 select clear
 # intron: residues 482-510
-# branch helix: residues 493-503
 # BP region: residues 493-503
 # BP-A: residues 501
 # 5'SS: residues 100-114
@@ -227,7 +224,6 @@ select clear
 # RNA feature 3D residue labels.
 label #309.1/B:93 residues text "5' exon 87-99" color #FF8C00 height 5 bgColor transparent
 label #309.1/M:496 residues text "intron 482-510" color #303030 height 5 bgColor transparent
-label #309.1/M:498 residues text "branch helix 493-503" color #303030 height 5 bgColor transparent
 label #309.1/M:498 residues text "BP region 493-503" color #303030 height 5 bgColor transparent
 label #309.1/M:501 residues text "BP-A 501" color #303030 height 5 bgColor transparent
 label #309.1/N:107 residues text "5'SS 100-114" color #303030 height 5 bgColor transparent

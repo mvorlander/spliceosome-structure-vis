@@ -149,8 +149,6 @@ color #316.1/B #AFEEEE
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 6-8;51-53;57-79, component, medium confidence, validation not_applicable
 name B_5NRL_substrate #316.1/I:6-8,51-53,57-79
-# branch helix substrate strand: residues 62-72, network-scored-motif, high confidence, validation validated
-name B_5NRL_branch_helix #316.1/I:62-72
 # branch point region: residues 62-72, network-scored-motif, high confidence, validation validated
 name B_5NRL_branch_region #316.1/I:62-72
 # branch point adenosine: residues 70, network-scored-motif, high confidence, validation validated
@@ -194,7 +192,6 @@ name B_5NRL_U6_LSm_site #316.1/6:108-112
 select #316.1 & nucleic
 nucleotides sel atoms
 select clear
-# branch helix: residues 62-72
 # BP region: residues 62-72
 # BP-A: residues 70
 # U2/U6 helix I: residues 30-55
@@ -273,7 +270,6 @@ select #316.1/6:70-80
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #316.1/I:67 residues text "branch helix 62-72" color #303030 height 5 bgColor transparent
 label #316.1/I:67 residues text "BP region 62-72" color #303030 height 5 bgColor transparent
 label #316.1/I:70 residues text "BP-A 70" color #303030 height 5 bgColor transparent
 label #316.1/2:42 residues text "U2/U6 helix I 30-55" color #047857 height 5 bgColor transparent

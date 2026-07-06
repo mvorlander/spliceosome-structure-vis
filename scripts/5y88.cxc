@@ -127,8 +127,6 @@ name ILS_disassembly_5Y88_intron #320.1/E:1-15,492-504
 name ILS_disassembly_5Y88_intron_lariat #320.1/E:1-15,492-504
 # substrate RNA: residues 1-15;492-504, component, medium confidence, validation not_applicable
 name ILS_disassembly_5Y88_substrate #320.1/E:1-15,492-504
-# branch helix substrate strand: residues 495-503, network-scored-motif, high confidence, validation validated
-name ILS_disassembly_5Y88_branch_helix #320.1/E:495-503
 # branch point region: residues 495-503, network-scored-motif, high confidence, validation validated
 name ILS_disassembly_5Y88_branch_region #320.1/E:495-503
 # branch point adenosine: residues 501, network-scored-motif, high confidence, validation validated
@@ -158,7 +156,6 @@ nucleotides sel atoms
 select clear
 # intron: residues 1-15;492-504
 # lariat: residues 1-15;492-504
-# branch helix: residues 495-503
 # BP region: residues 495-503
 # BP-A: residues 501
 # U2/U6 helix I: residues 25-43
@@ -209,7 +206,6 @@ select clear
 # RNA feature 3D residue labels.
 label #320.1/E:8 residues text "intron 1-15;492-504" color #303030 height 5 bgColor transparent
 label #320.1/E:8 residues text "lariat 1-15;492-504" color #303030 height 5 bgColor transparent
-label #320.1/E:499 residues text "branch helix 495-503" color #303030 height 5 bgColor transparent
 label #320.1/E:499 residues text "BP region 495-503" color #303030 height 5 bgColor transparent
 label #320.1/E:501 residues text "BP-A 501" color #303030 height 5 bgColor transparent
 label #320.1/F:34 residues text "U2/U6 helix I 25-43" color #047857 height 5 bgColor transparent

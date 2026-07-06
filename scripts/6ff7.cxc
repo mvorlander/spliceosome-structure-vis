@@ -161,8 +161,6 @@ color #335.1/B #6495ED
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 233-262;380-397, component, medium confidence, validation not_applicable
 name Bact_6FF7_substrate #335.1/Z:233-262,380-397
-# branch helix substrate strand: residues 386-395, network-scored-motif, high confidence, validation validated
-name Bact_6FF7_branch_helix #335.1/Z:386-395
 # branch point region: residues 386-395, network-scored-motif, high confidence, validation validated
 name Bact_6FF7_branch_region #335.1/Z:386-395
 # branch point adenosine: residues 394, network-scored-motif, high confidence, validation validated
@@ -192,7 +190,6 @@ name Bact_6FF7_U6_AGC_catalytic_triad #335.1/6:92-94
 select #335.1 & nucleic
 nucleotides sel atoms
 select clear
-# branch helix: residues 386-395
 # BP region: residues 386-395
 # BP-A: residues 394
 # U2/U6 helix I: residues 25-45;48-55
@@ -246,7 +243,6 @@ select #335.1/6:92-94
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #335.1/Z:390 residues text "branch helix 386-395" color #303030 height 5 bgColor transparent
 label #335.1/Z:390 residues text "BP region 386-395" color #303030 height 5 bgColor transparent
 label #335.1/Z:394 residues text "BP-A 394" color #303030 height 5 bgColor transparent
 label #335.1/2:35 residues text "U2/U6 helix I 25-45;48-55" color #047857 height 5 bgColor transparent

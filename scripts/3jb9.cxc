@@ -123,8 +123,6 @@ color #301.1/n #D5F5E3
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 100-107; 492-504, component, medium confidence, validation not_applicable
 name ILS_disassembly_3JB9_substrate #301.1/O:100-107|#301.1/Q:492-504
-# branch helix substrate strand: residues 496-502, network-scored-motif, high confidence, validation validated
-name ILS_disassembly_3JB9_branch_helix #301.1/Q:496-502
 # branch point region: residues 496-502, network-scored-motif, high confidence, validation validated
 name ILS_disassembly_3JB9_branch_region #301.1/Q:496-502
 # branch point adenosine: residues 501, network-scored-motif, high confidence, validation validated
@@ -146,7 +144,6 @@ name ILS_disassembly_3JB9_U6_ACAGAGA_box #301.1/N:35-41
 select #301.1 & nucleic
 nucleotides sel atoms
 select clear
-# branch helix: residues 496-502
 # BP region: residues 496-502
 # BP-A: residues 501
 # U2/U6 helix I: residues 25-43
@@ -180,7 +177,6 @@ select #301.1/N:35-41
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #301.1/Q:499 residues text "branch helix 496-502" color #303030 height 5 bgColor transparent
 label #301.1/Q:499 residues text "BP region 496-502" color #303030 height 5 bgColor transparent
 label #301.1/Q:501 residues text "BP-A 501" color #303030 height 5 bgColor transparent
 label #301.1/P:34 residues text "U2/U6 helix I 25-43" color #047857 height 5 bgColor transparent

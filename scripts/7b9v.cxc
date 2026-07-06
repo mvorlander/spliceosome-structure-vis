@@ -123,8 +123,6 @@ name C_7B9V_5exon #359.1/E:-14--1
 name C_7B9V_substrate #359.1/E:-14--1|#359.1/I:1-17,55-92
 # 3' exon: residues 1-17;55-92, component-name, high confidence, validation not_applicable
 name C_7B9V_3exon #359.1/I:1-17,55-92
-# branch helix substrate strand: residues 62-72, network-scored-motif, high confidence, validation validated
-name C_7B9V_branch_helix #359.1/I:62-72
 # branch point region: residues 62-72, network-scored-motif, high confidence, validation validated
 name C_7B9V_branch_region #359.1/I:62-72
 # branch point adenosine: residues 70, network-scored-motif, high confidence, validation validated
@@ -164,7 +162,6 @@ color #359.1/I:1-17,55-92 #D97706
 select #359.1/I:1-17,55-92
 nucleotides sel fill
 select clear
-# branch helix: residues 62-72
 # BP region: residues 62-72
 # BP-A: residues 70
 # U2/U6 helix I: residues 25-47;54-55
@@ -220,7 +217,6 @@ select clear
 # RNA feature 3D residue labels.
 label #359.1/E:-8 residues text "5' exon -14--1" color #FF8C00 height 5 bgColor transparent
 label #359.1/I:74 residues text "3' exon 1-17;55-92" color #D97706 height 5 bgColor transparent
-label #359.1/I:67 residues text "branch helix 62-72" color #303030 height 5 bgColor transparent
 label #359.1/I:67 residues text "BP region 62-72" color #303030 height 5 bgColor transparent
 label #359.1/I:70 residues text "BP-A 70" color #303030 height 5 bgColor transparent
 label #359.1/2:36 residues text "U2/U6 helix I 25-47;54-55" color #047857 height 5 bgColor transparent

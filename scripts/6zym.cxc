@@ -95,8 +95,6 @@ name C_6ZYM_substrate #352.1/Y:59-79,141-160|#352.1/Z:46-58
 name C_6ZYM_5SS #352.1/Y:59-64
 # intron: residues 59-79;141-160, splice-site-inference, medium confidence, validation not_applicable
 name C_6ZYM_intron #352.1/Y:59-79,141-160
-# branch helix substrate strand: residues 145-156, network-scored-motif, high confidence, validation validated
-name C_6ZYM_branch_helix #352.1/Y:145-156
 # branch point region: residues 145-156, network-scored-motif, high confidence, validation validated
 name C_6ZYM_branch_region #352.1/Y:145-156
 # branch point adenosine: residues 155, network-scored-motif, high confidence, validation validated
@@ -124,7 +122,6 @@ nucleotides sel atoms
 select clear
 # 5'SS: residues 59-64
 # intron: residues 59-79;141-160
-# branch helix: residues 145-156
 # BP region: residues 145-156
 # BP-A: residues 155
 # 5' exon: residues 46-58
@@ -170,7 +167,6 @@ select clear
 # RNA feature 3D residue labels.
 label #352.1/Y:62 residues text "? 5'SS 59-64" color #303030 height 5 bgColor transparent
 label #352.1/Y:69 residues text "intron 59-79;141-160" color #303030 height 5 bgColor transparent
-label #352.1/Y:150 residues text "branch helix 145-156" color #303030 height 5 bgColor transparent
 label #352.1/Y:150 residues text "BP region 145-156" color #303030 height 5 bgColor transparent
 label #352.1/Y:155 residues text "BP-A 155" color #303030 height 5 bgColor transparent
 label #352.1/Z:52 residues text "5' exon 46-58" color #FF8C00 height 5 bgColor transparent

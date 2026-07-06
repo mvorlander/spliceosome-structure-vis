@@ -129,8 +129,6 @@ name ILS_disassembly_6ID1_substrate #339.1/G:1-30,118-155
 name ILS_disassembly_6ID1_5SS #339.1/G:1-6
 # intron: residues 1-30;118-155, splice-site-inference, medium confidence, validation not_applicable
 name ILS_disassembly_6ID1_intron #339.1/G:1-30,118-155
-# branch helix substrate strand: residues 139-145, network-scored-motif, high confidence, validation validated
-name ILS_disassembly_6ID1_branch_helix #339.1/G:139-145
 # branch point region: residues 139-145, network-scored-motif, high confidence, validation validated
 name ILS_disassembly_6ID1_branch_region #339.1/G:139-145
 # branch point adenosine: residues 144, network-scored-motif, high confidence, validation validated
@@ -166,7 +164,6 @@ nucleotides sel atoms
 select clear
 # 5'SS: residues 1-6
 # intron: residues 1-30;118-155
-# branch helix: residues 139-145
 # BP region: residues 139-145
 # BP-A: residues 144
 # PPT: residues 150-155
@@ -223,7 +220,6 @@ select clear
 # RNA feature 3D residue labels.
 label #339.1/G:4 residues text "? 5'SS 1-6" color #303030 height 5 bgColor transparent
 label #339.1/G:136 residues text "intron 1-30;118-155" color #303030 height 5 bgColor transparent
-label #339.1/G:142 residues text "branch helix 139-145" color #303030 height 5 bgColor transparent
 label #339.1/G:142 residues text "BP region 139-145" color #303030 height 5 bgColor transparent
 label #339.1/G:144 residues text "BP-A 144" color #303030 height 5 bgColor transparent
 label #339.1/G:152 residues text "PPT 150-155" color #303030 height 5 bgColor transparent

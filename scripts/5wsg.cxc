@@ -131,8 +131,6 @@ name Cstar_5WSG_3exon #318.1/L:1096-1120|#318.1/b:-5-8
 name Cstar_5WSG_intron #318.1/M:482-504|#318.1/N:100-114
 # intron lariat: residues 100-114; 482-504, component-name, high confidence, validation not_applicable
 name Cstar_5WSG_intron_lariat #318.1/M:482-504|#318.1/N:100-114
-# branch helix substrate strand: residues 496-502, network-scored-motif, review confidence, validation uncertain uncertain validation
-name Cstar_5WSG_branch_helix #318.1/M:496-502
 # branch point region: residues 496-502, network-scored-motif, review confidence, validation uncertain uncertain validation
 name Cstar_5WSG_branch_region #318.1/M:496-502
 # Named selections for resolved snRNA functional regions.
@@ -168,7 +166,6 @@ nucleotides sel fill
 select clear
 # intron: residues 100-114; 482-504
 # lariat: residues 100-114; 482-504
-# branch helix: residues 496-502
 # BP region: residues 496-502
 # U5 loop I: residues 53-55
 color #318.1/D:53-55 #1B3CD0
@@ -210,7 +207,6 @@ label #318.1/L:26 residues text "5' exon 1-52;110-123; 87-99" color #FF8C00 heig
 label #318.1/L:1108 residues text "3' exon -5-8; 1096-1120" color #D97706 height 5 bgColor transparent
 label #318.1/M:493 residues text "intron 100-114; 482-504" color #303030 height 5 bgColor transparent
 label #318.1/M:493 residues text "lariat 100-114; 482-504" color #303030 height 5 bgColor transparent
-label #318.1/M:499 residues text "? branch helix 496-502" color #303030 height 5 bgColor transparent
 label #318.1/M:499 residues text "? BP region 496-502" color #303030 height 5 bgColor transparent
 label #318.1/D:54 residues text "U5 loop I 53-55" color #1B3CD0 height 5 bgColor transparent
 label #318.1/E:16 residues text "U6 5' terminal SL 1-30" color #DC143C height 5 bgColor transparent

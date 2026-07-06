@@ -187,8 +187,6 @@ name pre_B_6QX9_substrate #348.1/I:-1-8,88-102
 name pre_B_6QX9_5SS #348.1/I:1-6
 # intron from 5' splice site: residues 1-8;88-102, five-ss-inference, medium confidence, validation not_applicable
 name pre_B_6QX9_intron #348.1/I:1-8,88-102
-# branch helix substrate strand: residues 95-102, network-scored-motif, high confidence, validation validated
-name pre_B_6QX9_branch_helix #348.1/I:95-102
 # branch point region: residues 95-102, network-scored-motif, high confidence, validation validated
 name pre_B_6QX9_branch_region #348.1/I:95-102
 # branch point adenosine: residues 100, network-scored-motif, high confidence, validation validated
@@ -245,7 +243,6 @@ nucleotides sel fill
 select clear
 # 5'SS: residues 1-6
 # intron: residues 1-8;88-102
-# branch helix: residues 95-102
 # BP region: residues 95-102
 # BP-A: residues 100
 # U1 5'SS recog.: residues 1-10
@@ -337,7 +334,6 @@ select clear
 label #348.1/I:0 residues text "5' exon -1-0" color #FF8C00 height 5 bgColor transparent
 label #348.1/I:4 residues text "? 5'SS 1-6" color #303030 height 5 bgColor transparent
 label #348.1/I:95 residues text "intron 1-8;88-102" color #303030 height 5 bgColor transparent
-label #348.1/I:98 residues text "branch helix 95-102" color #303030 height 5 bgColor transparent
 label #348.1/I:98 residues text "BP region 95-102" color #303030 height 5 bgColor transparent
 label #348.1/I:100 residues text "BP-A 100" color #303030 height 5 bgColor transparent
 label #348.1/1:6 residues text "U1 5'SS recog. 1-10" color #B66AAE height 5 bgColor transparent

@@ -157,8 +157,6 @@ name P_6QDV_3exon #346.1/E:1-2
 name P_6QDV_intron #346.1/I:1-20,83-101,111-113
 # intron lariat: residues 1-20;83-101;111-113, component-name, high confidence, validation not_applicable
 name P_6QDV_intron_lariat #346.1/I:1-20,83-101,111-113
-# branch helix substrate strand: residues 93-99, network-scored-motif, high confidence, validation validated
-name P_6QDV_branch_helix #346.1/I:93-99
 # branch point region: residues 93-99, network-scored-motif, high confidence, validation validated
 name P_6QDV_branch_region #346.1/I:93-99
 # branch point adenosine: residues 97, network-scored-motif, high confidence, validation validated
@@ -211,7 +209,6 @@ nucleotides sel fill
 select clear
 # intron: residues 1-20;83-101;111-113
 # lariat: residues 1-20;83-101;111-113
-# branch helix: residues 93-99
 # BP region: residues 93-99
 # BP-A: residues 97
 # 3'SS: residues 111-113
@@ -271,7 +268,6 @@ label #346.1/E:-12 residues text "ligated exons -12,-11,-10,-9,-8,-7,-6,-5,-4,-3
 label #346.1/E:2 residues text "3' exon 1-2" color #D97706 height 5 bgColor transparent
 label #346.1/I:10 residues text "intron 1-20;83-101;111-113" color #303030 height 5 bgColor transparent
 label #346.1/I:10 residues text "lariat 1-20;83-101;111-113" color #303030 height 5 bgColor transparent
-label #346.1/I:96 residues text "branch helix 93-99" color #303030 height 5 bgColor transparent
 label #346.1/I:96 residues text "BP region 93-99" color #303030 height 5 bgColor transparent
 label #346.1/I:97 residues text "BP-A 97" color #303030 height 5 bgColor transparent
 label #346.1/I:112 residues text "? 3'SS 111-113" color #303030 height 5 bgColor transparent

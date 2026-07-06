@@ -155,8 +155,6 @@ color #330.1/i #D5F5E3
 name pre_B_6AH0_substrate #330.1/G:122-163
 # intron: residues 122-163, splice-site-inference, medium confidence, validation not_applicable
 name pre_B_6AH0_intron #330.1/G:122-163
-# branch helix substrate strand: residues 139-145, network-scored-motif, high confidence, validation validated
-name pre_B_6AH0_branch_helix #330.1/G:139-145
 # branch point region: residues 139-145, network-scored-motif, high confidence, validation validated
 name pre_B_6AH0_branch_region #330.1/G:139-145
 # branch point adenosine: residues 144, network-scored-motif, high confidence, validation validated
@@ -205,7 +203,6 @@ select #330.1 & nucleic
 nucleotides sel atoms
 select clear
 # intron: residues 122-163
-# branch helix: residues 139-145
 # BP region: residues 139-145
 # BP-A: residues 144
 # PPT: residues 150-163
@@ -286,7 +283,6 @@ nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
 label #330.1/G:142 residues text "intron 122-163" color #303030 height 5 bgColor transparent
-label #330.1/G:142 residues text "branch helix 139-145" color #303030 height 5 bgColor transparent
 label #330.1/G:142 residues text "BP region 139-145" color #303030 height 5 bgColor transparent
 label #330.1/G:144 residues text "BP-A 144" color #303030 height 5 bgColor transparent
 label #330.1/G:156 residues text "PPT 150-163" color #303030 height 5 bgColor transparent

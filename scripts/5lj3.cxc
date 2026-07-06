@@ -113,8 +113,6 @@ color #310.1/C #6495ED
 name C_5LJ3_5exon #310.1/E:-16--1
 # substrate RNA: residues -16--1; 1-10;54-76, component, medium confidence, validation not_applicable
 name C_5LJ3_substrate #310.1/E:-16--1|#310.1/I:1-10,54-76
-# branch helix substrate strand: residues 66-72, network-scored-motif, high confidence, validation validated
-name C_5LJ3_branch_helix #310.1/I:66-72
 # branch point region: residues 66-72, network-scored-motif, high confidence, validation validated
 name C_5LJ3_branch_region #310.1/I:66-72
 # branch point adenosine: residues 70, network-scored-motif, high confidence, validation validated
@@ -149,7 +147,6 @@ color #310.1/E:-16--1 #FF8C00
 select #310.1/E:-16--1
 nucleotides sel fill
 select clear
-# branch helix: residues 66-72
 # BP region: residues 66-72
 # BP-A: residues 70
 # U2/U6 helix I: residues 25-47;54-55
@@ -204,7 +201,6 @@ nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
 label #310.1/E:-8 residues text "5' exon -16--1" color #FF8C00 height 5 bgColor transparent
-label #310.1/I:69 residues text "branch helix 66-72" color #303030 height 5 bgColor transparent
 label #310.1/I:69 residues text "BP region 66-72" color #303030 height 5 bgColor transparent
 label #310.1/I:70 residues text "BP-A 70" color #303030 height 5 bgColor transparent
 label #310.1/Z:36 residues text "U2/U6 helix I 25-47;54-55" color #047857 height 5 bgColor transparent

@@ -135,8 +135,6 @@ name Cstar_5MQF_substrate #315.1/Y:59-67,135-157|#315.1/Z:47-58
 name Cstar_5MQF_5SS #315.1/Y:59-64
 # intron: residues 59-67;135-157, splice-site-inference, medium confidence, validation not_applicable
 name Cstar_5MQF_intron #315.1/Y:59-67,135-157
-# branch helix substrate strand: residues 150-156, network-scored-motif, high confidence, validation validated
-name Cstar_5MQF_branch_helix #315.1/Y:150-156
 # branch point region: residues 150-156, network-scored-motif, high confidence, validation validated
 name Cstar_5MQF_branch_region #315.1/Y:150-156
 # branch point adenosine: residues 155, network-scored-motif, high confidence, validation validated
@@ -172,7 +170,6 @@ nucleotides sel atoms
 select clear
 # 5'SS: residues 59-64
 # intron: residues 59-67;135-157
-# branch helix: residues 150-156
 # BP region: residues 150-156
 # BP-A: residues 155
 # 5' exon: residues 47-58
@@ -233,7 +230,6 @@ select clear
 # RNA feature 3D residue labels.
 label #315.1/Y:62 residues text "? 5'SS 59-64" color #303030 height 5 bgColor transparent
 label #315.1/Y:146 residues text "intron 59-67;135-157" color #303030 height 5 bgColor transparent
-label #315.1/Y:153 residues text "branch helix 150-156" color #303030 height 5 bgColor transparent
 label #315.1/Y:153 residues text "BP region 150-156" color #303030 height 5 bgColor transparent
 label #315.1/Y:155 residues text "BP-A 155" color #303030 height 5 bgColor transparent
 label #315.1/Z:52 residues text "5' exon 47-58" color #FF8C00 height 5 bgColor transparent
