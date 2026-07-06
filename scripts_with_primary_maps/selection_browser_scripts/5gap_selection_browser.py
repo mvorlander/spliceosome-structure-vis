@@ -80,7 +80,7 @@ def open_selection_browser(session, spec_path: str) -> None:
             layout.addWidget(self.search)
             self.tree = QTreeWidget(parent)
             self.tree.setColumnCount(4)
-            self.tree.setHeaderLabels(["Selection", "Target", "Selector", "Label"])
+            self.tree.setHeaderLabels(["Label", "Selection", "Target", "Selector"])
             self.tree.setAlternatingRowColors(True)
             self.tree.setRootIsDecorated(True)
             self.tree.setUniformRowHeights(False)
@@ -134,12 +134,12 @@ def open_selection_browser(session, spec_path: str) -> None:
             family_order = ["RNA", "Protein/RNP groups", "Other"]
             for family in sorted(grouped, key=lambda value: (family_order.index(value) if value in family_order else 99, value)):
                 family_count = sum(len(items) for items in grouped[family].values())
-                family_item = QTreeWidgetItem([f"{family} ({family_count})", "", "", ""])
+                family_item = QTreeWidgetItem(["", f"{family} ({family_count})", "", ""])
                 self._style_group_item(family_item, family)
                 self.tree.addTopLevelItem(family_item)
                 for group in sorted(grouped[family]):
                     rows = sorted(grouped[family][group], key=lambda value: (value.get("label") or value.get("name", "")).lower())
-                    group_item = QTreeWidgetItem([f"{group} ({len(rows)})", "", "", ""])
+                    group_item = QTreeWidgetItem(["", f"{group} ({len(rows)})", "", ""])
                     self._style_group_item(group_item, group)
                     family_item.addChild(group_item)
                     for data in rows:
@@ -147,41 +147,42 @@ def open_selection_browser(session, spec_path: str) -> None:
                         atomspec = data.get("atomspec", "")
                         selector = data.get("name", "")
                         has_label = bool(data.get("label_model_id"))
-                        row = QTreeWidgetItem([f"  {label}", atomspec, selector, ""])
+                        row = QTreeWidgetItem(["", f"  {label}", atomspec, selector])
                         row.setData(0, Qt.UserRole, data)
+                        row.setData(1, Qt.UserRole, data)
                         if has_label:
                             row.setFlags(row.flags() | Qt.ItemIsUserCheckable)
-                            row.setCheckState(3, Qt.Checked if self._label_visible(data) else Qt.Unchecked)
-                            row.setToolTip(3, "Show or hide the corresponding 3D RNA feature label")
+                            row.setCheckState(0, Qt.Checked if self._label_visible(data) else Qt.Unchecked)
+                            row.setToolTip(0, "Show or hide the corresponding 3D RNA feature label")
                         else:
-                            row.setText(3, "")
+                            row.setText(0, "")
                         self._style_leaf_item(row, data)
                         group_item.addChild(row)
             self.tree.expandAll()
-            for column in range(3):
+            for column in range(4):
                 self.tree.resizeColumnToContents(column)
-            self.tree.resizeColumnToContents(3)
             self._populating = False
 
         def _style_group_item(self, item, label):
-            font = item.font(0)
+            font = item.font(1)
             font.setBold(True)
-            item.setFont(0, font)
-            item.setForeground(0, QBrush(QColor("#20242a")))
-            item.setBackground(0, QBrush(QColor("#eef2f7")))
+            item.setFont(1, font)
+            item.setForeground(1, QBrush(QColor("#20242a")))
+            for column in range(4):
+                item.setBackground(column, QBrush(QColor("#eef2f7")))
 
         def _style_leaf_item(self, item, data):
             color = QColor(data.get("color") or "#9CA3AF")
             pale = QColor(color)
             pale.setAlpha(45)
-            for column in range(3):
+            for column in range(4):
                 item.setBackground(column, QBrush(pale))
-            item.setForeground(0, QBrush(color))
-            font = item.font(0)
+            item.setForeground(1, QBrush(color))
+            font = item.font(1)
             font.setBold(True)
-            item.setFont(0, font)
+            item.setFont(1, font)
             item.setToolTip(
-                0,
+                1,
                 f"{data.get('label') or data.get('name')}\n"
                 f"{data.get('category', '')} / {data.get('group', '')}\n"
                 f"{data.get('comment', '')}",
@@ -204,7 +205,10 @@ def open_selection_browser(session, spec_path: str) -> None:
             model_id = data.get("label_model_id", "")
             model = _model_by_id(self.session, model_id)
             if model is None:
-                self.session.logger.warning(f"RNA label model #{model_id} is not open")
+                self.session.logger.warning(
+                    f"RNA label model #{model_id} is not open. "
+                    "The checkbox only toggles labels created earlier by the RNA label script."
+                )
                 return
             if visible:
                 for parent_id in _parent_model_ids(model_id):
@@ -214,12 +218,12 @@ def open_selection_browser(session, spec_path: str) -> None:
             model.display = bool(visible)
 
         def _label_checkbox_changed(self, item, column):
-            if self._populating or column != 3:
+            if self._populating or column != 0:
                 return
             data = item.data(0, Qt.UserRole)
             if not data or not data.get("label_model_id"):
                 return
-            self._set_label_visible(data, item.checkState(3) == Qt.Checked)
+            self._set_label_visible(data, item.checkState(0) == Qt.Checked)
 
         def _set_all_filtered_labels(self, visible):
             self._populating = True
@@ -229,7 +233,7 @@ def open_selection_browser(session, spec_path: str) -> None:
                 if not data or not data.get("label_model_id"):
                     continue
                 self._set_label_visible(data, visible)
-                item.setCheckState(3, Qt.Checked if visible else Qt.Unchecked)
+                item.setCheckState(0, Qt.Checked if visible else Qt.Unchecked)
             self._populating = False
 
         def _iter_items(self, item):
@@ -241,10 +245,10 @@ def open_selection_browser(session, spec_path: str) -> None:
         def _activate_current(self):
             item = self.tree.currentItem()
             if item is not None:
-                self._activate_item(item)
+                self._activate_item(item, 1)
 
         def _activate_item(self, item, column=0):
-            if column == 3:
+            if column == 0:
                 return
             data = item.data(0, Qt.UserRole)
             if not data:
@@ -261,245 +265,8 @@ def open_selection_browser(session, spec_path: str) -> None:
     session.logger.info(f"Opened spliceosome named selection browser with {len(selectors)} entries.")
 
 # Embedded named-selection specification for remote execution from GitHub.
-_EMBEDDED_SPEC = {
-  "pdb_id": "5gap",
-  "selectors": [
-    {
-      "atomspec": "#307.1/V",
-      "category": "subcomplex",
-      "color": "#D8C800",
-      "comment": "U4 snRNP",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "U4 snRNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "U4 snRNP",
-      "name": "pdb_5GAP_U4_snRNP",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#307.1/D,F,G,H,K",
-      "category": "subcomplex",
-      "color": "#C3BA7A",
-      "comment": "U4/U6 snRNP",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "U4/U6 groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "U4/U6 snRNP",
-      "name": "pdb_5GAP_U4_U6_snRNP",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#307.1/A,B,J,U",
-      "category": "subcomplex",
-      "color": "#0000CD",
-      "comment": "U5 snRNP",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "U5 snRNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "U5 snRNP",
-      "name": "pdb_5GAP_U5_snRNP",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#307.1/W",
-      "category": "subcomplex",
-      "color": "#DC143C",
-      "comment": "U6 snRNP",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "U6 snRNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "U6 snRNP",
-      "name": "pdb_5GAP_U6_snRNP",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#307.1/x",
-      "category": "subcomplex",
-      "color": "#9CA3AF",
-      "comment": "other",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "other protein/RNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "other",
-      "name": "pdb_5GAP_other",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#307.1/V:1-18",
-      "category": "snRNA feature",
-      "color": "#D8C800",
-      "comment": "U4 snRNA U4/U6 stem I partner: residues 1-18, reference-alignment, high confidence",
-      "family": "RNA",
-      "feature": "U4_U6_stem_I_partner",
-      "group": "snRNA-snRNA interacting regions",
-      "group_key": "snRNA_snRNA_regions",
-      "kind": "rna_feature",
-      "label": "U4 snRNA U4/U6 stem I partner",
-      "label_category_model_id": "307.2.1",
-      "label_default_visible": "",
-      "label_group_model_id": "307.2",
-      "label_model_id": "307.2.1.1",
-      "name": "U5_tri_snRNP_5GAP_U4_U6_stem_I_partner",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#307.1/W:26-30",
-      "category": "snRNA feature",
-      "color": "#DC143C",
-      "comment": "U6 snRNA 5' terminal stem-loop: residues 26-30, reference-alignment, high confidence",
-      "family": "RNA",
-      "feature": "U6_5prime_terminal_stem_loop",
-      "group": "internal stem loops",
-      "group_key": "internal_stem_loops",
-      "kind": "rna_feature",
-      "label": "U6 snRNA 5' terminal stem-loop",
-      "label_category_model_id": "307.2.2",
-      "label_default_visible": "",
-      "label_group_model_id": "307.2",
-      "label_model_id": "307.2.2.1",
-      "name": "U5_tri_snRNP_5GAP_U6_5_terminal_stem_loop",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#307.1/W:44-51,55-66",
-      "category": "snRNA feature",
-      "color": "#D0183C",
-      "comment": "U6 snRNA U2/U6 helix I partner: residues 44-51;55-66, motif-neighborhood, medium confidence",
-      "family": "RNA",
-      "feature": "U6_U2_helix_I_partner",
-      "group": "snRNA-snRNA interacting regions",
-      "group_key": "snRNA_snRNA_regions",
-      "kind": "rna_feature",
-      "label": "U6 snRNA U2/U6 helix I partner",
-      "label_category_model_id": "307.2.1",
-      "label_default_visible": "",
-      "label_group_model_id": "307.2",
-      "label_model_id": "307.2.1.2",
-      "name": "U5_tri_snRNP_5GAP_U6_U2_helix_I_partner",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#307.1/W:44-51,55",
-      "category": "snRNA feature",
-      "color": "#E01842",
-      "comment": "U6 snRNA 5' splice-site upstream contact: residues 44-51;55, motif-neighborhood, medium confidence",
-      "family": "RNA",
-      "feature": "U6_5SS_upstream_contact",
-      "group": "other snRNA regions",
-      "group_key": "other_snRNA_regions",
-      "kind": "rna_feature",
-      "label": "U6 snRNA 5' splice-site upstream contact",
-      "label_category_model_id": "307.2.3",
-      "label_default_visible": "true",
-      "label_group_model_id": "307.2",
-      "label_model_id": "307.2.3.1",
-      "name": "U5_tri_snRNP_5GAP_U6_5SS_upstream_contact",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#307.1/W:46-51,55-73",
-      "category": "snRNA feature",
-      "color": "#D61A3D",
-      "comment": "U6 snRNA internal stem-loop: residues 46-51;55-73, motif-neighborhood, low confidence",
-      "family": "RNA",
-      "feature": "U6_ISL",
-      "group": "internal stem loops",
-      "group_key": "internal_stem_loops",
-      "kind": "rna_feature",
-      "label": "U6 snRNA internal stem-loop",
-      "label_category_model_id": "307.2.2",
-      "label_default_visible": "",
-      "label_group_model_id": "307.2",
-      "label_model_id": "307.2.2.2",
-      "name": "U5_tri_snRNP_5GAP_U6_ISL",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#307.1/W:47-51",
-      "category": "snRNA feature",
-      "color": "#DC143C",
-      "comment": "U6 snRNA ACAGAGA box: residues 47-51, sequence-motif, high confidence",
-      "family": "RNA",
-      "feature": "U6_ACAGAGA_box",
-      "group": "other snRNA regions",
-      "group_key": "other_snRNA_regions",
-      "kind": "rna_feature",
-      "label": "U6 snRNA ACAGAGA box",
-      "label_category_model_id": "307.2.4",
-      "label_default_visible": "",
-      "label_group_model_id": "307.2",
-      "label_model_id": "307.2.4.1",
-      "name": "U5_tri_snRNP_5GAP_U6_ACAGAGA_box",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#307.1/W:55-68",
-      "category": "snRNA feature",
-      "color": "#E01842",
-      "comment": "U6 snRNA U4/U6 stem II partner: residues 55-68, reference-alignment, high confidence",
-      "family": "RNA",
-      "feature": "U6_U4_stem_II_partner",
-      "group": "other snRNA regions",
-      "group_key": "other_snRNA_regions",
-      "kind": "rna_feature",
-      "label": "U6 snRNA U4/U6 stem II partner",
-      "label_category_model_id": "307.2.4",
-      "label_default_visible": "",
-      "label_group_model_id": "307.2",
-      "label_model_id": "307.2.4.2",
-      "name": "U5_tri_snRNP_5GAP_U6_U4_stem_II_partner",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#307.1/W:59-61",
-      "category": "snRNA feature",
-      "color": "#C91236",
-      "comment": "U6 snRNA AGC catalytic triad: residues 59-61, sequence-motif, medium confidence",
-      "family": "RNA",
-      "feature": "U6_AGC_catalytic_triad",
-      "group": "catalytic core regions",
-      "group_key": "catalytic_core_regions",
-      "kind": "rna_feature",
-      "label": "U6 snRNA AGC catalytic triad",
-      "label_category_model_id": "307.2.5",
-      "label_default_visible": "",
-      "label_group_model_id": "307.2",
-      "label_model_id": "307.2.5.1",
-      "name": "U5_tri_snRNP_5GAP_U6_AGC_catalytic_triad",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#307.1/W:70-80",
-      "category": "snRNA feature",
-      "color": "#D9183E",
-      "comment": "U6 snRNA U4/U6 stem I partner: residues 70-80, reference-alignment, high confidence",
-      "family": "RNA",
-      "feature": "U6_U4_stem_I_partner",
-      "group": "other snRNA regions",
-      "group_key": "other_snRNA_regions",
-      "kind": "rna_feature",
-      "label": "U6 snRNA U4/U6 stem I partner",
-      "label_category_model_id": "307.2.4",
-      "label_default_visible": "",
-      "label_group_model_id": "307.2",
-      "label_model_id": "307.2.4.3",
-      "name": "U5_tri_snRNP_5GAP_U6_U4_stem_I_partner",
-      "section": "Named selections for resolved snRNA functional regions."
-    }
-  ],
-  "structure_group_id": "307",
-  "structure_model_id": "307.1"
-}
+_EMBEDDED_SPEC_JSON = '{\n  "pdb_id": "5gap",\n  "selectors": [\n    {\n      "atomspec": "#307.1/V",\n      "category": "subcomplex",\n      "color": "#D8C800",\n      "comment": "U4 snRNP",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "U4 snRNP groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "U4 snRNP",\n      "name": "pdb_5GAP_U4_snRNP",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#307.1/D,F,G,H,K",\n      "category": "subcomplex",\n      "color": "#C3BA7A",\n      "comment": "U4/U6 snRNP",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "U4/U6 groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "U4/U6 snRNP",\n      "name": "pdb_5GAP_U4_U6_snRNP",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#307.1/A,B,J,U",\n      "category": "subcomplex",\n      "color": "#0000CD",\n      "comment": "U5 snRNP",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "U5 snRNP groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "U5 snRNP",\n      "name": "pdb_5GAP_U5_snRNP",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#307.1/W",\n      "category": "subcomplex",\n      "color": "#DC143C",\n      "comment": "U6 snRNP",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "U6 snRNP groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "U6 snRNP",\n      "name": "pdb_5GAP_U6_snRNP",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#307.1/x",\n      "category": "subcomplex",\n      "color": "#9CA3AF",\n      "comment": "other",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "other protein/RNP groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "other",\n      "name": "pdb_5GAP_other",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#307.1/V:1-18",\n      "category": "snRNA feature",\n      "color": "#D8C800",\n      "comment": "U4 snRNA U4/U6 stem I partner: residues 1-18, reference-alignment, high confidence",\n      "family": "RNA",\n      "feature": "U4_U6_stem_I_partner",\n      "group": "snRNA-snRNA interacting regions",\n      "group_key": "snRNA_snRNA_regions",\n      "kind": "rna_feature",\n      "label": "U4 snRNA U4/U6 stem I partner",\n      "label_category_model_id": "307.2.1",\n      "label_default_visible": "",\n      "label_group_model_id": "307.2",\n      "label_model_id": "307.2.1.1",\n      "name": "U5_tri_snRNP_5GAP_U4_U6_stem_I_partner",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#307.1/W:26-30",\n      "category": "snRNA feature",\n      "color": "#DC143C",\n      "comment": "U6 snRNA 5\' terminal stem-loop: residues 26-30, reference-alignment, high confidence",\n      "family": "RNA",\n      "feature": "U6_5prime_terminal_stem_loop",\n      "group": "internal stem loops",\n      "group_key": "internal_stem_loops",\n      "kind": "rna_feature",\n      "label": "U6 snRNA 5\' terminal stem-loop",\n      "label_category_model_id": "307.2.2",\n      "label_default_visible": "",\n      "label_group_model_id": "307.2",\n      "label_model_id": "307.2.2.1",\n      "name": "U5_tri_snRNP_5GAP_U6_5_terminal_stem_loop",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#307.1/W:44-51,55-66",\n      "category": "snRNA feature",\n      "color": "#D0183C",\n      "comment": "U6 snRNA U2/U6 helix I partner: residues 44-51;55-66, motif-neighborhood, medium confidence",\n      "family": "RNA",\n      "feature": "U6_U2_helix_I_partner",\n      "group": "snRNA-snRNA interacting regions",\n      "group_key": "snRNA_snRNA_regions",\n      "kind": "rna_feature",\n      "label": "U6 snRNA U2/U6 helix I partner",\n      "label_category_model_id": "307.2.1",\n      "label_default_visible": "",\n      "label_group_model_id": "307.2",\n      "label_model_id": "307.2.1.2",\n      "name": "U5_tri_snRNP_5GAP_U6_U2_helix_I_partner",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#307.1/W:44-51,55",\n      "category": "snRNA feature",\n      "color": "#E01842",\n      "comment": "U6 snRNA 5\' splice-site upstream contact: residues 44-51;55, motif-neighborhood, medium confidence",\n      "family": "RNA",\n      "feature": "U6_5SS_upstream_contact",\n      "group": "other snRNA regions",\n      "group_key": "other_snRNA_regions",\n      "kind": "rna_feature",\n      "label": "U6 snRNA 5\' splice-site upstream contact",\n      "label_category_model_id": "307.2.3",\n      "label_default_visible": "true",\n      "label_group_model_id": "307.2",\n      "label_model_id": "307.2.3.1",\n      "name": "U5_tri_snRNP_5GAP_U6_5SS_upstream_contact",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#307.1/W:46-51,55-73",\n      "category": "snRNA feature",\n      "color": "#D61A3D",\n      "comment": "U6 snRNA internal stem-loop: residues 46-51;55-73, motif-neighborhood, low confidence",\n      "family": "RNA",\n      "feature": "U6_ISL",\n      "group": "internal stem loops",\n      "group_key": "internal_stem_loops",\n      "kind": "rna_feature",\n      "label": "U6 snRNA internal stem-loop",\n      "label_category_model_id": "307.2.2",\n      "label_default_visible": "",\n      "label_group_model_id": "307.2",\n      "label_model_id": "307.2.2.2",\n      "name": "U5_tri_snRNP_5GAP_U6_ISL",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#307.1/W:47-51",\n      "category": "snRNA feature",\n      "color": "#DC143C",\n      "comment": "U6 snRNA ACAGAGA box: residues 47-51, sequence-motif, high confidence",\n      "family": "RNA",\n      "feature": "U6_ACAGAGA_box",\n      "group": "other snRNA regions",\n      "group_key": "other_snRNA_regions",\n      "kind": "rna_feature",\n      "label": "U6 snRNA ACAGAGA box",\n      "label_category_model_id": "307.2.4",\n      "label_default_visible": "",\n      "label_group_model_id": "307.2",\n      "label_model_id": "307.2.4.1",\n      "name": "U5_tri_snRNP_5GAP_U6_ACAGAGA_box",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#307.1/W:55-68",\n      "category": "snRNA feature",\n      "color": "#E01842",\n      "comment": "U6 snRNA U4/U6 stem II partner: residues 55-68, reference-alignment, high confidence",\n      "family": "RNA",\n      "feature": "U6_U4_stem_II_partner",\n      "group": "other snRNA regions",\n      "group_key": "other_snRNA_regions",\n      "kind": "rna_feature",\n      "label": "U6 snRNA U4/U6 stem II partner",\n      "label_category_model_id": "307.2.4",\n      "label_default_visible": "",\n      "label_group_model_id": "307.2",\n      "label_model_id": "307.2.4.2",\n      "name": "U5_tri_snRNP_5GAP_U6_U4_stem_II_partner",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#307.1/W:59-61",\n      "category": "snRNA feature",\n      "color": "#C91236",\n      "comment": "U6 snRNA AGC catalytic triad: residues 59-61, sequence-motif, medium confidence",\n      "family": "RNA",\n      "feature": "U6_AGC_catalytic_triad",\n      "group": "catalytic core regions",\n      "group_key": "catalytic_core_regions",\n      "kind": "rna_feature",\n      "label": "U6 snRNA AGC catalytic triad",\n      "label_category_model_id": "307.2.5",\n      "label_default_visible": "",\n      "label_group_model_id": "307.2",\n      "label_model_id": "307.2.5.1",\n      "name": "U5_tri_snRNP_5GAP_U6_AGC_catalytic_triad",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#307.1/W:70-80",\n      "category": "snRNA feature",\n      "color": "#D9183E",\n      "comment": "U6 snRNA U4/U6 stem I partner: residues 70-80, reference-alignment, high confidence",\n      "family": "RNA",\n      "feature": "U6_U4_stem_I_partner",\n      "group": "other snRNA regions",\n      "group_key": "other_snRNA_regions",\n      "kind": "rna_feature",\n      "label": "U6 snRNA U4/U6 stem I partner",\n      "label_category_model_id": "307.2.4",\n      "label_default_visible": "",\n      "label_group_model_id": "307.2",\n      "label_model_id": "307.2.4.3",\n      "name": "U5_tri_snRNP_5GAP_U6_U4_stem_I_partner",\n      "section": "Named selections for resolved snRNA functional regions."\n    }\n  ],\n  "structure_group_id": "307",\n  "structure_model_id": "307.1"\n}'
+_EMBEDDED_SPEC = json.loads(_EMBEDDED_SPEC_JSON)
 
 import os as _os
 import tempfile as _tempfile

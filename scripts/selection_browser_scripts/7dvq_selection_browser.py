@@ -80,7 +80,7 @@ def open_selection_browser(session, spec_path: str) -> None:
             layout.addWidget(self.search)
             self.tree = QTreeWidget(parent)
             self.tree.setColumnCount(4)
-            self.tree.setHeaderLabels(["Selection", "Target", "Selector", "Label"])
+            self.tree.setHeaderLabels(["Label", "Selection", "Target", "Selector"])
             self.tree.setAlternatingRowColors(True)
             self.tree.setRootIsDecorated(True)
             self.tree.setUniformRowHeights(False)
@@ -134,12 +134,12 @@ def open_selection_browser(session, spec_path: str) -> None:
             family_order = ["RNA", "Protein/RNP groups", "Other"]
             for family in sorted(grouped, key=lambda value: (family_order.index(value) if value in family_order else 99, value)):
                 family_count = sum(len(items) for items in grouped[family].values())
-                family_item = QTreeWidgetItem([f"{family} ({family_count})", "", "", ""])
+                family_item = QTreeWidgetItem(["", f"{family} ({family_count})", "", ""])
                 self._style_group_item(family_item, family)
                 self.tree.addTopLevelItem(family_item)
                 for group in sorted(grouped[family]):
                     rows = sorted(grouped[family][group], key=lambda value: (value.get("label") or value.get("name", "")).lower())
-                    group_item = QTreeWidgetItem([f"{group} ({len(rows)})", "", "", ""])
+                    group_item = QTreeWidgetItem(["", f"{group} ({len(rows)})", "", ""])
                     self._style_group_item(group_item, group)
                     family_item.addChild(group_item)
                     for data in rows:
@@ -147,41 +147,42 @@ def open_selection_browser(session, spec_path: str) -> None:
                         atomspec = data.get("atomspec", "")
                         selector = data.get("name", "")
                         has_label = bool(data.get("label_model_id"))
-                        row = QTreeWidgetItem([f"  {label}", atomspec, selector, ""])
+                        row = QTreeWidgetItem(["", f"  {label}", atomspec, selector])
                         row.setData(0, Qt.UserRole, data)
+                        row.setData(1, Qt.UserRole, data)
                         if has_label:
                             row.setFlags(row.flags() | Qt.ItemIsUserCheckable)
-                            row.setCheckState(3, Qt.Checked if self._label_visible(data) else Qt.Unchecked)
-                            row.setToolTip(3, "Show or hide the corresponding 3D RNA feature label")
+                            row.setCheckState(0, Qt.Checked if self._label_visible(data) else Qt.Unchecked)
+                            row.setToolTip(0, "Show or hide the corresponding 3D RNA feature label")
                         else:
-                            row.setText(3, "")
+                            row.setText(0, "")
                         self._style_leaf_item(row, data)
                         group_item.addChild(row)
             self.tree.expandAll()
-            for column in range(3):
+            for column in range(4):
                 self.tree.resizeColumnToContents(column)
-            self.tree.resizeColumnToContents(3)
             self._populating = False
 
         def _style_group_item(self, item, label):
-            font = item.font(0)
+            font = item.font(1)
             font.setBold(True)
-            item.setFont(0, font)
-            item.setForeground(0, QBrush(QColor("#20242a")))
-            item.setBackground(0, QBrush(QColor("#eef2f7")))
+            item.setFont(1, font)
+            item.setForeground(1, QBrush(QColor("#20242a")))
+            for column in range(4):
+                item.setBackground(column, QBrush(QColor("#eef2f7")))
 
         def _style_leaf_item(self, item, data):
             color = QColor(data.get("color") or "#9CA3AF")
             pale = QColor(color)
             pale.setAlpha(45)
-            for column in range(3):
+            for column in range(4):
                 item.setBackground(column, QBrush(pale))
-            item.setForeground(0, QBrush(color))
-            font = item.font(0)
+            item.setForeground(1, QBrush(color))
+            font = item.font(1)
             font.setBold(True)
-            item.setFont(0, font)
+            item.setFont(1, font)
             item.setToolTip(
-                0,
+                1,
                 f"{data.get('label') or data.get('name')}\n"
                 f"{data.get('category', '')} / {data.get('group', '')}\n"
                 f"{data.get('comment', '')}",
@@ -204,7 +205,10 @@ def open_selection_browser(session, spec_path: str) -> None:
             model_id = data.get("label_model_id", "")
             model = _model_by_id(self.session, model_id)
             if model is None:
-                self.session.logger.warning(f"RNA label model #{model_id} is not open")
+                self.session.logger.warning(
+                    f"RNA label model #{model_id} is not open. "
+                    "The checkbox only toggles labels created earlier by the RNA label script."
+                )
                 return
             if visible:
                 for parent_id in _parent_model_ids(model_id):
@@ -214,12 +218,12 @@ def open_selection_browser(session, spec_path: str) -> None:
             model.display = bool(visible)
 
         def _label_checkbox_changed(self, item, column):
-            if self._populating or column != 3:
+            if self._populating or column != 0:
                 return
             data = item.data(0, Qt.UserRole)
             if not data or not data.get("label_model_id"):
                 return
-            self._set_label_visible(data, item.checkState(3) == Qt.Checked)
+            self._set_label_visible(data, item.checkState(0) == Qt.Checked)
 
         def _set_all_filtered_labels(self, visible):
             self._populating = True
@@ -229,7 +233,7 @@ def open_selection_browser(session, spec_path: str) -> None:
                 if not data or not data.get("label_model_id"):
                     continue
                 self._set_label_visible(data, visible)
-                item.setCheckState(3, Qt.Checked if visible else Qt.Unchecked)
+                item.setCheckState(0, Qt.Checked if visible else Qt.Unchecked)
             self._populating = False
 
         def _iter_items(self, item):
@@ -241,10 +245,10 @@ def open_selection_browser(session, spec_path: str) -> None:
         def _activate_current(self):
             item = self.tree.currentItem()
             if item is not None:
-                self._activate_item(item)
+                self._activate_item(item, 1)
 
         def _activate_item(self, item, column=0):
-            if column == 3:
+            if column == 0:
                 return
             data = item.data(0, Qt.UserRole)
             if not data:
@@ -261,425 +265,8 @@ def open_selection_browser(session, spec_path: str) -> None:
     session.logger.info(f"Opened spliceosome named selection browser with {len(selectors)} entries.")
 
 # Embedded named-selection specification for remote execution from GitHub.
-_EMBEDDED_SPEC = {
-  "pdb_id": "7dvq",
-  "selectors": [
-    {
-      "atomspec": "#361.1/V",
-      "category": "subcomplex",
-      "color": "#EAA439",
-      "comment": "EJC/mRNP",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "EJC/mRNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "EJC/mRNP",
-      "name": "pdb_7DVQ_EJC_mRNP",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#361.1/J,R",
-      "category": "subcomplex",
-      "color": "#F4BF67",
-      "comment": "NTC/NTR related",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "NTC/NTR groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "NTC/NTR related",
-      "name": "pdb_7DVQ_NTC_NTR_related",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#361.1/L,P,T",
-      "category": "subcomplex",
-      "color": "#F4BF67",
-      "comment": "NTC/PRP19",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "NTC/NTR groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "NTC/PRP19",
-      "name": "pdb_7DVQ_NTC_PRP19",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#361.1/G",
-      "category": "subcomplex",
-      "color": "#303030",
-      "comment": "RNA/substrate",
-      "family": "RNA",
-      "feature": "",
-      "group": "pre-mRNA features",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "RNA/substrate",
-      "name": "pdb_7DVQ_RNA_substrate",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#361.1/U",
-      "category": "subcomplex",
-      "color": "#9CA3AF",
-      "comment": "SR proteins",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "other protein/RNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "SR proteins",
-      "name": "pdb_7DVQ_SR_proteins",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#361.1/h,i,j,k,l,m,n",
-      "category": "subcomplex",
-      "color": "#9CA3AF",
-      "comment": "Sm ring",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "other protein/RNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "Sm ring",
-      "name": "pdb_7DVQ_Sm_ring",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#361.1/H",
-      "category": "subcomplex",
-      "color": "#B66AAE",
-      "comment": "U11/U12 snRNP",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "U1 snRNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "U11/U12 snRNP",
-      "name": "pdb_7DVQ_U11_U12_snRNP",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#361.1/1,2,3,4,5,6,7",
-      "category": "subcomplex",
-      "color": "#6DBE70",
-      "comment": "U2/SF3B",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "U2/SF3B groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "U2/SF3B",
-      "name": "pdb_7DVQ_U2_SF3B",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#361.1/F",
-      "category": "subcomplex",
-      "color": "#D8C800",
-      "comment": "U4atac/U6atac snRNP",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "U4/U6 groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "U4atac/U6atac snRNP",
-      "name": "pdb_7DVQ_U4atac_U6atac_snRNP",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#361.1/a,b,c,d,e,f,g",
-      "category": "subcomplex",
-      "color": "#BFC3E8",
-      "comment": "U5 Sm ring",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "U5 snRNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "U5 Sm ring",
-      "name": "pdb_7DVQ_U5_Sm_ring",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#361.1/A,B,C,D,E",
-      "category": "subcomplex",
-      "color": "#0000CD",
-      "comment": "U5 snRNP",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "U5 snRNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "U5 snRNP",
-      "name": "pdb_7DVQ_U5_snRNP",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#361.1/0,8,9,I,K,M,X,Y,Z,v,x,y,z",
-      "category": "subcomplex",
-      "color": "#9CA3AF",
-      "comment": "other",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "other protein/RNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "other",
-      "name": "pdb_7DVQ_other",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#361.1/G:-11-0",
-      "category": "substrate RNA feature",
-      "color": "#FF8C00",
-      "comment": "5' exon: residues -11-0, five-ss-inference, medium confidence, validation not_applicable",
-      "family": "RNA",
-      "feature": "exon_5",
-      "group": "pre-mRNA features",
-      "group_key": "pre_mRNA_features",
-      "kind": "rna_feature",
-      "label": "5' exon",
-      "label_category_model_id": "361.2.1",
-      "label_default_visible": "true",
-      "label_group_model_id": "361.2",
-      "label_model_id": "361.2.1.1",
-      "name": "Bact_7DVQ_5exon",
-      "section": "Named selections for resolved substrate RNA features."
-    },
-    {
-      "atomspec": "#361.1/G:-11-19,191-222",
-      "category": "substrate RNA feature",
-      "color": "#303030",
-      "comment": "substrate RNA: residues -11-19;191-222, component, medium confidence, validation not_applicable",
-      "family": "RNA",
-      "feature": "substrate",
-      "group": "pre-mRNA features",
-      "group_key": "pre_mRNA_features",
-      "kind": "rna_feature",
-      "label": "substrate RNA",
-      "name": "Bact_7DVQ_substrate",
-      "section": "Named selections for resolved substrate RNA features."
-    },
-    {
-      "atomspec": "#361.1/G:1-9",
-      "category": "substrate RNA feature",
-      "color": "#303030",
-      "comment": "5' splice site: residues 1-9, minor-snrna-basepair, high confidence, validation validated",
-      "family": "RNA",
-      "feature": "five_prime_splice_site",
-      "group": "pre-mRNA features",
-      "group_key": "pre_mRNA_features",
-      "kind": "rna_feature",
-      "label": "5' splice site",
-      "label_category_model_id": "361.2.1",
-      "label_default_visible": "true",
-      "label_group_model_id": "361.2",
-      "label_model_id": "361.2.1.2",
-      "name": "Bact_7DVQ_5SS",
-      "section": "Named selections for resolved substrate RNA features."
-    },
-    {
-      "atomspec": "#361.1/G:1-19,191-222",
-      "category": "substrate RNA feature",
-      "color": "#303030",
-      "comment": "intron from 5' splice site: residues 1-19;191-222, five-ss-inference, medium confidence, validation not_applicable",
-      "family": "RNA",
-      "feature": "intron",
-      "group": "pre-mRNA features",
-      "group_key": "pre_mRNA_features",
-      "kind": "rna_feature",
-      "label": "intron from 5' splice site",
-      "label_category_model_id": "361.2.1",
-      "label_default_visible": "true",
-      "label_group_model_id": "361.2",
-      "label_model_id": "361.2.1.3",
-      "name": "Bact_7DVQ_intron",
-      "section": "Named selections for resolved substrate RNA features."
-    },
-    {
-      "atomspec": "#361.1/G:195-206",
-      "category": "substrate RNA feature",
-      "color": "#303030",
-      "comment": "branch point region: residues 195-206, network-scored-motif, high confidence, validation validated",
-      "family": "RNA",
-      "feature": "branch_point_region",
-      "group": "pre-mRNA features",
-      "group_key": "pre_mRNA_features",
-      "kind": "rna_feature",
-      "label": "branch point region",
-      "label_category_model_id": "361.2.1",
-      "label_default_visible": "true",
-      "label_group_model_id": "361.2",
-      "label_model_id": "361.2.1.4",
-      "name": "Bact_7DVQ_branch_region",
-      "section": "Named selections for resolved substrate RNA features."
-    },
-    {
-      "atomspec": "#361.1/G:203",
-      "category": "substrate RNA feature",
-      "color": "#303030",
-      "comment": "branch point adenosine: residues 203, network-scored-motif, high confidence, validation validated",
-      "family": "RNA",
-      "feature": "branch_point_adenosine",
-      "group": "pre-mRNA features",
-      "group_key": "pre_mRNA_features",
-      "kind": "rna_feature",
-      "label": "branch point adenosine",
-      "label_category_model_id": "361.2.1",
-      "label_default_visible": "true",
-      "label_group_model_id": "361.2",
-      "label_model_id": "361.2.1.5",
-      "name": "Bact_7DVQ_branch_A",
-      "section": "Named selections for resolved substrate RNA features."
-    },
-    {
-      "atomspec": "#361.1/H:2-11",
-      "category": "snRNA feature",
-      "color": "#047857",
-      "comment": "U12 snRNA U12/U6atac helix I partner: residues 2-11, reference-alignment, high confidence",
-      "family": "RNA",
-      "feature": "U12_U6atac_helix_I_partner",
-      "group": "snRNA-snRNA interacting regions",
-      "group_key": "snRNA_snRNA_regions",
-      "kind": "rna_feature",
-      "label": "U12 snRNA U12/U6atac helix I partner",
-      "label_category_model_id": "361.2.2",
-      "label_default_visible": "",
-      "label_group_model_id": "361.2",
-      "label_model_id": "361.2.2.1",
-      "name": "Bact_7DVQ_U12_U6atac_helix_I_partner",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#361.1/H:16-26",
-      "category": "snRNA feature",
-      "color": "#0B6E2D",
-      "comment": "U12 snRNA branchpoint pairing region: residues 16-26, reference-alignment, high confidence",
-      "family": "RNA",
-      "feature": "U12_branchpoint_pairing_region",
-      "group": "snRNA-pre-mRNA regions",
-      "group_key": "snRNA_pre_mRNA_regions",
-      "kind": "rna_feature",
-      "label": "U12 snRNA branchpoint pairing region",
-      "label_category_model_id": "361.2.3",
-      "label_default_visible": "true",
-      "label_group_model_id": "361.2",
-      "label_model_id": "361.2.3.1",
-      "name": "Bact_7DVQ_U12_branchpoint_pairing_region",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#361.1/H:75-81",
-      "category": "snRNA feature",
-      "color": "#2F8B4D",
-      "comment": "U12 snRNA Sm site: residues 75-81, sequence-motif, medium confidence",
-      "family": "RNA",
-      "feature": "U12_Sm_site",
-      "group": "other snRNA regions",
-      "group_key": "other_snRNA_regions",
-      "kind": "rna_feature",
-      "label": "U12 snRNA Sm site",
-      "name": "Bact_7DVQ_U12_Sm_site",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#361.1/B:38-42",
-      "category": "snRNA feature",
-      "color": "#1B3CD0",
-      "comment": "U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence",
-      "family": "RNA",
-      "feature": "U5_loop_I",
-      "group": "snRNA-pre-mRNA regions",
-      "group_key": "snRNA_pre_mRNA_regions",
-      "kind": "rna_feature",
-      "label": "U5 snRNA loop I",
-      "label_category_model_id": "361.2.3",
-      "label_default_visible": "true",
-      "label_group_model_id": "361.2",
-      "label_model_id": "361.2.3.2",
-      "name": "Bact_7DVQ_U5_loop_I",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#361.1/F:11-17",
-      "category": "snRNA feature",
-      "color": "#DC143C",
-      "comment": "U6atac snRNA 5' splice-site recognition region: residues 11-17, reference-alignment, high confidence",
-      "family": "RNA",
-      "feature": "U6atac_5prime_5SS_recognition",
-      "group": "snRNA-pre-mRNA regions",
-      "group_key": "snRNA_pre_mRNA_regions",
-      "kind": "rna_feature",
-      "label": "U6atac snRNA 5' splice-site recognition region",
-      "label_category_model_id": "361.2.3",
-      "label_default_visible": "true",
-      "label_group_model_id": "361.2",
-      "label_model_id": "361.2.3.3",
-      "name": "Bact_7DVQ_U6atac_5_5SS_recognition",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#361.1/F:23-29",
-      "category": "snRNA feature",
-      "color": "#D0183C",
-      "comment": "U6atac snRNA U6atac/U12 helix I partner: residues 23-29, reference-alignment, high confidence",
-      "family": "RNA",
-      "feature": "U6atac_U12_helix_I_partner",
-      "group": "snRNA-snRNA interacting regions",
-      "group_key": "snRNA_snRNA_regions",
-      "kind": "rna_feature",
-      "label": "U6atac snRNA U6atac/U12 helix I partner",
-      "label_category_model_id": "361.2.2",
-      "label_default_visible": "",
-      "label_group_model_id": "361.2",
-      "label_model_id": "361.2.2.2",
-      "name": "Bact_7DVQ_U6atac_U12_helix_I_partner",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#361.1/F:26-28",
-      "category": "snRNA feature",
-      "color": "#C91236",
-      "comment": "U6atac snRNA AGC catalytic triad: residues 26-28, reference-alignment, high confidence",
-      "family": "RNA",
-      "feature": "U6atac_AGC_catalytic_triad",
-      "group": "catalytic core regions",
-      "group_key": "catalytic_core_regions",
-      "kind": "rna_feature",
-      "label": "U6atac snRNA AGC catalytic triad",
-      "label_category_model_id": "361.2.4",
-      "label_default_visible": "",
-      "label_group_model_id": "361.2",
-      "label_model_id": "361.2.4.1",
-      "name": "Bact_7DVQ_U6atac_AGC_catalytic_triad",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#361.1/F:52-56,61-65",
-      "category": "snRNA feature",
-      "color": "#D61A3D",
-      "comment": "U6atac snRNA internal stem-loop: residues 52-56;61-65, reference-alignment, medium confidence",
-      "family": "RNA",
-      "feature": "U6atac_ISL",
-      "group": "internal stem loops",
-      "group_key": "internal_stem_loops",
-      "kind": "rna_feature",
-      "label": "U6atac snRNA internal stem-loop",
-      "label_category_model_id": "361.2.5",
-      "label_default_visible": "",
-      "label_group_model_id": "361.2",
-      "label_model_id": "361.2.5.1",
-      "name": "Bact_7DVQ_U6atac_ISL",
-      "section": "Named selections for resolved snRNA functional regions."
-    }
-  ],
-  "structure_group_id": "361",
-  "structure_model_id": "361.1"
-}
+_EMBEDDED_SPEC_JSON = '{\n  "pdb_id": "7dvq",\n  "selectors": [\n    {\n      "atomspec": "#361.1/V",\n      "category": "subcomplex",\n      "color": "#EAA439",\n      "comment": "EJC/mRNP",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "EJC/mRNP groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "EJC/mRNP",\n      "name": "pdb_7DVQ_EJC_mRNP",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#361.1/J,R",\n      "category": "subcomplex",\n      "color": "#F4BF67",\n      "comment": "NTC/NTR related",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "NTC/NTR groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "NTC/NTR related",\n      "name": "pdb_7DVQ_NTC_NTR_related",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#361.1/L,P,T",\n      "category": "subcomplex",\n      "color": "#F4BF67",\n      "comment": "NTC/PRP19",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "NTC/NTR groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "NTC/PRP19",\n      "name": "pdb_7DVQ_NTC_PRP19",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#361.1/G",\n      "category": "subcomplex",\n      "color": "#303030",\n      "comment": "RNA/substrate",\n      "family": "RNA",\n      "feature": "",\n      "group": "pre-mRNA features",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "RNA/substrate",\n      "name": "pdb_7DVQ_RNA_substrate",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#361.1/U",\n      "category": "subcomplex",\n      "color": "#9CA3AF",\n      "comment": "SR proteins",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "other protein/RNP groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "SR proteins",\n      "name": "pdb_7DVQ_SR_proteins",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#361.1/h,i,j,k,l,m,n",\n      "category": "subcomplex",\n      "color": "#9CA3AF",\n      "comment": "Sm ring",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "other protein/RNP groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "Sm ring",\n      "name": "pdb_7DVQ_Sm_ring",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#361.1/H",\n      "category": "subcomplex",\n      "color": "#B66AAE",\n      "comment": "U11/U12 snRNP",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "U1 snRNP groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "U11/U12 snRNP",\n      "name": "pdb_7DVQ_U11_U12_snRNP",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#361.1/1,2,3,4,5,6,7",\n      "category": "subcomplex",\n      "color": "#6DBE70",\n      "comment": "U2/SF3B",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "U2/SF3B groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "U2/SF3B",\n      "name": "pdb_7DVQ_U2_SF3B",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#361.1/F",\n      "category": "subcomplex",\n      "color": "#D8C800",\n      "comment": "U4atac/U6atac snRNP",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "U4/U6 groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "U4atac/U6atac snRNP",\n      "name": "pdb_7DVQ_U4atac_U6atac_snRNP",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#361.1/a,b,c,d,e,f,g",\n      "category": "subcomplex",\n      "color": "#BFC3E8",\n      "comment": "U5 Sm ring",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "U5 snRNP groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "U5 Sm ring",\n      "name": "pdb_7DVQ_U5_Sm_ring",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#361.1/A,B,C,D,E",\n      "category": "subcomplex",\n      "color": "#0000CD",\n      "comment": "U5 snRNP",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "U5 snRNP groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "U5 snRNP",\n      "name": "pdb_7DVQ_U5_snRNP",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#361.1/0,8,9,I,K,M,X,Y,Z,v,x,y,z",\n      "category": "subcomplex",\n      "color": "#9CA3AF",\n      "comment": "other",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "other protein/RNP groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "other",\n      "name": "pdb_7DVQ_other",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#361.1/G:-11-0",\n      "category": "substrate RNA feature",\n      "color": "#FF8C00",\n      "comment": "5\' exon: residues -11-0, five-ss-inference, medium confidence, validation not_applicable",\n      "family": "RNA",\n      "feature": "exon_5",\n      "group": "pre-mRNA features",\n      "group_key": "pre_mRNA_features",\n      "kind": "rna_feature",\n      "label": "5\' exon",\n      "label_category_model_id": "361.2.1",\n      "label_default_visible": "true",\n      "label_group_model_id": "361.2",\n      "label_model_id": "361.2.1.1",\n      "name": "Bact_7DVQ_5exon",\n      "section": "Named selections for resolved substrate RNA features."\n    },\n    {\n      "atomspec": "#361.1/G:-11-19,191-222",\n      "category": "substrate RNA feature",\n      "color": "#303030",\n      "comment": "substrate RNA: residues -11-19;191-222, component, medium confidence, validation not_applicable",\n      "family": "RNA",\n      "feature": "substrate",\n      "group": "pre-mRNA features",\n      "group_key": "pre_mRNA_features",\n      "kind": "rna_feature",\n      "label": "substrate RNA",\n      "name": "Bact_7DVQ_substrate",\n      "section": "Named selections for resolved substrate RNA features."\n    },\n    {\n      "atomspec": "#361.1/G:1-9",\n      "category": "substrate RNA feature",\n      "color": "#303030",\n      "comment": "5\' splice site: residues 1-9, minor-snrna-basepair, high confidence, validation validated",\n      "family": "RNA",\n      "feature": "five_prime_splice_site",\n      "group": "pre-mRNA features",\n      "group_key": "pre_mRNA_features",\n      "kind": "rna_feature",\n      "label": "5\' splice site",\n      "label_category_model_id": "361.2.1",\n      "label_default_visible": "true",\n      "label_group_model_id": "361.2",\n      "label_model_id": "361.2.1.2",\n      "name": "Bact_7DVQ_5SS",\n      "section": "Named selections for resolved substrate RNA features."\n    },\n    {\n      "atomspec": "#361.1/G:1-19,191-222",\n      "category": "substrate RNA feature",\n      "color": "#303030",\n      "comment": "intron from 5\' splice site: residues 1-19;191-222, five-ss-inference, medium confidence, validation not_applicable",\n      "family": "RNA",\n      "feature": "intron",\n      "group": "pre-mRNA features",\n      "group_key": "pre_mRNA_features",\n      "kind": "rna_feature",\n      "label": "intron from 5\' splice site",\n      "label_category_model_id": "361.2.1",\n      "label_default_visible": "true",\n      "label_group_model_id": "361.2",\n      "label_model_id": "361.2.1.3",\n      "name": "Bact_7DVQ_intron",\n      "section": "Named selections for resolved substrate RNA features."\n    },\n    {\n      "atomspec": "#361.1/G:195-206",\n      "category": "substrate RNA feature",\n      "color": "#303030",\n      "comment": "branch point region: residues 195-206, network-scored-motif, high confidence, validation validated",\n      "family": "RNA",\n      "feature": "branch_point_region",\n      "group": "pre-mRNA features",\n      "group_key": "pre_mRNA_features",\n      "kind": "rna_feature",\n      "label": "branch point region",\n      "label_category_model_id": "361.2.1",\n      "label_default_visible": "true",\n      "label_group_model_id": "361.2",\n      "label_model_id": "361.2.1.4",\n      "name": "Bact_7DVQ_branch_region",\n      "section": "Named selections for resolved substrate RNA features."\n    },\n    {\n      "atomspec": "#361.1/G:203",\n      "category": "substrate RNA feature",\n      "color": "#303030",\n      "comment": "branch point adenosine: residues 203, network-scored-motif, high confidence, validation validated",\n      "family": "RNA",\n      "feature": "branch_point_adenosine",\n      "group": "pre-mRNA features",\n      "group_key": "pre_mRNA_features",\n      "kind": "rna_feature",\n      "label": "branch point adenosine",\n      "label_category_model_id": "361.2.1",\n      "label_default_visible": "true",\n      "label_group_model_id": "361.2",\n      "label_model_id": "361.2.1.5",\n      "name": "Bact_7DVQ_branch_A",\n      "section": "Named selections for resolved substrate RNA features."\n    },\n    {\n      "atomspec": "#361.1/H:2-11",\n      "category": "snRNA feature",\n      "color": "#047857",\n      "comment": "U12 snRNA U12/U6atac helix I partner: residues 2-11, reference-alignment, high confidence",\n      "family": "RNA",\n      "feature": "U12_U6atac_helix_I_partner",\n      "group": "snRNA-snRNA interacting regions",\n      "group_key": "snRNA_snRNA_regions",\n      "kind": "rna_feature",\n      "label": "U12 snRNA U12/U6atac helix I partner",\n      "label_category_model_id": "361.2.2",\n      "label_default_visible": "",\n      "label_group_model_id": "361.2",\n      "label_model_id": "361.2.2.1",\n      "name": "Bact_7DVQ_U12_U6atac_helix_I_partner",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#361.1/H:16-26",\n      "category": "snRNA feature",\n      "color": "#0B6E2D",\n      "comment": "U12 snRNA branchpoint pairing region: residues 16-26, reference-alignment, high confidence",\n      "family": "RNA",\n      "feature": "U12_branchpoint_pairing_region",\n      "group": "snRNA-pre-mRNA regions",\n      "group_key": "snRNA_pre_mRNA_regions",\n      "kind": "rna_feature",\n      "label": "U12 snRNA branchpoint pairing region",\n      "label_category_model_id": "361.2.3",\n      "label_default_visible": "true",\n      "label_group_model_id": "361.2",\n      "label_model_id": "361.2.3.1",\n      "name": "Bact_7DVQ_U12_branchpoint_pairing_region",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#361.1/H:75-81",\n      "category": "snRNA feature",\n      "color": "#2F8B4D",\n      "comment": "U12 snRNA Sm site: residues 75-81, sequence-motif, medium confidence",\n      "family": "RNA",\n      "feature": "U12_Sm_site",\n      "group": "other snRNA regions",\n      "group_key": "other_snRNA_regions",\n      "kind": "rna_feature",\n      "label": "U12 snRNA Sm site",\n      "name": "Bact_7DVQ_U12_Sm_site",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#361.1/B:38-42",\n      "category": "snRNA feature",\n      "color": "#1B3CD0",\n      "comment": "U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence",\n      "family": "RNA",\n      "feature": "U5_loop_I",\n      "group": "snRNA-pre-mRNA regions",\n      "group_key": "snRNA_pre_mRNA_regions",\n      "kind": "rna_feature",\n      "label": "U5 snRNA loop I",\n      "label_category_model_id": "361.2.3",\n      "label_default_visible": "true",\n      "label_group_model_id": "361.2",\n      "label_model_id": "361.2.3.2",\n      "name": "Bact_7DVQ_U5_loop_I",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#361.1/F:11-17",\n      "category": "snRNA feature",\n      "color": "#DC143C",\n      "comment": "U6atac snRNA 5\' splice-site recognition region: residues 11-17, reference-alignment, high confidence",\n      "family": "RNA",\n      "feature": "U6atac_5prime_5SS_recognition",\n      "group": "snRNA-pre-mRNA regions",\n      "group_key": "snRNA_pre_mRNA_regions",\n      "kind": "rna_feature",\n      "label": "U6atac snRNA 5\' splice-site recognition region",\n      "label_category_model_id": "361.2.3",\n      "label_default_visible": "true",\n      "label_group_model_id": "361.2",\n      "label_model_id": "361.2.3.3",\n      "name": "Bact_7DVQ_U6atac_5_5SS_recognition",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#361.1/F:23-29",\n      "category": "snRNA feature",\n      "color": "#D0183C",\n      "comment": "U6atac snRNA U6atac/U12 helix I partner: residues 23-29, reference-alignment, high confidence",\n      "family": "RNA",\n      "feature": "U6atac_U12_helix_I_partner",\n      "group": "snRNA-snRNA interacting regions",\n      "group_key": "snRNA_snRNA_regions",\n      "kind": "rna_feature",\n      "label": "U6atac snRNA U6atac/U12 helix I partner",\n      "label_category_model_id": "361.2.2",\n      "label_default_visible": "",\n      "label_group_model_id": "361.2",\n      "label_model_id": "361.2.2.2",\n      "name": "Bact_7DVQ_U6atac_U12_helix_I_partner",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#361.1/F:26-28",\n      "category": "snRNA feature",\n      "color": "#C91236",\n      "comment": "U6atac snRNA AGC catalytic triad: residues 26-28, reference-alignment, high confidence",\n      "family": "RNA",\n      "feature": "U6atac_AGC_catalytic_triad",\n      "group": "catalytic core regions",\n      "group_key": "catalytic_core_regions",\n      "kind": "rna_feature",\n      "label": "U6atac snRNA AGC catalytic triad",\n      "label_category_model_id": "361.2.4",\n      "label_default_visible": "",\n      "label_group_model_id": "361.2",\n      "label_model_id": "361.2.4.1",\n      "name": "Bact_7DVQ_U6atac_AGC_catalytic_triad",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#361.1/F:52-56,61-65",\n      "category": "snRNA feature",\n      "color": "#D61A3D",\n      "comment": "U6atac snRNA internal stem-loop: residues 52-56;61-65, reference-alignment, medium confidence",\n      "family": "RNA",\n      "feature": "U6atac_ISL",\n      "group": "internal stem loops",\n      "group_key": "internal_stem_loops",\n      "kind": "rna_feature",\n      "label": "U6atac snRNA internal stem-loop",\n      "label_category_model_id": "361.2.5",\n      "label_default_visible": "",\n      "label_group_model_id": "361.2",\n      "label_model_id": "361.2.5.1",\n      "name": "Bact_7DVQ_U6atac_ISL",\n      "section": "Named selections for resolved snRNA functional regions."\n    }\n  ],\n  "structure_group_id": "361",\n  "structure_model_id": "361.1"\n}'
+_EMBEDDED_SPEC = json.loads(_EMBEDDED_SPEC_JSON)
 
 import os as _os
 import tempfile as _tempfile

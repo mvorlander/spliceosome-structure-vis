@@ -80,7 +80,7 @@ def open_selection_browser(session, spec_path: str) -> None:
             layout.addWidget(self.search)
             self.tree = QTreeWidget(parent)
             self.tree.setColumnCount(4)
-            self.tree.setHeaderLabels(["Selection", "Target", "Selector", "Label"])
+            self.tree.setHeaderLabels(["Label", "Selection", "Target", "Selector"])
             self.tree.setAlternatingRowColors(True)
             self.tree.setRootIsDecorated(True)
             self.tree.setUniformRowHeights(False)
@@ -134,12 +134,12 @@ def open_selection_browser(session, spec_path: str) -> None:
             family_order = ["RNA", "Protein/RNP groups", "Other"]
             for family in sorted(grouped, key=lambda value: (family_order.index(value) if value in family_order else 99, value)):
                 family_count = sum(len(items) for items in grouped[family].values())
-                family_item = QTreeWidgetItem([f"{family} ({family_count})", "", "", ""])
+                family_item = QTreeWidgetItem(["", f"{family} ({family_count})", "", ""])
                 self._style_group_item(family_item, family)
                 self.tree.addTopLevelItem(family_item)
                 for group in sorted(grouped[family]):
                     rows = sorted(grouped[family][group], key=lambda value: (value.get("label") or value.get("name", "")).lower())
-                    group_item = QTreeWidgetItem([f"{group} ({len(rows)})", "", "", ""])
+                    group_item = QTreeWidgetItem(["", f"{group} ({len(rows)})", "", ""])
                     self._style_group_item(group_item, group)
                     family_item.addChild(group_item)
                     for data in rows:
@@ -147,41 +147,42 @@ def open_selection_browser(session, spec_path: str) -> None:
                         atomspec = data.get("atomspec", "")
                         selector = data.get("name", "")
                         has_label = bool(data.get("label_model_id"))
-                        row = QTreeWidgetItem([f"  {label}", atomspec, selector, ""])
+                        row = QTreeWidgetItem(["", f"  {label}", atomspec, selector])
                         row.setData(0, Qt.UserRole, data)
+                        row.setData(1, Qt.UserRole, data)
                         if has_label:
                             row.setFlags(row.flags() | Qt.ItemIsUserCheckable)
-                            row.setCheckState(3, Qt.Checked if self._label_visible(data) else Qt.Unchecked)
-                            row.setToolTip(3, "Show or hide the corresponding 3D RNA feature label")
+                            row.setCheckState(0, Qt.Checked if self._label_visible(data) else Qt.Unchecked)
+                            row.setToolTip(0, "Show or hide the corresponding 3D RNA feature label")
                         else:
-                            row.setText(3, "")
+                            row.setText(0, "")
                         self._style_leaf_item(row, data)
                         group_item.addChild(row)
             self.tree.expandAll()
-            for column in range(3):
+            for column in range(4):
                 self.tree.resizeColumnToContents(column)
-            self.tree.resizeColumnToContents(3)
             self._populating = False
 
         def _style_group_item(self, item, label):
-            font = item.font(0)
+            font = item.font(1)
             font.setBold(True)
-            item.setFont(0, font)
-            item.setForeground(0, QBrush(QColor("#20242a")))
-            item.setBackground(0, QBrush(QColor("#eef2f7")))
+            item.setFont(1, font)
+            item.setForeground(1, QBrush(QColor("#20242a")))
+            for column in range(4):
+                item.setBackground(column, QBrush(QColor("#eef2f7")))
 
         def _style_leaf_item(self, item, data):
             color = QColor(data.get("color") or "#9CA3AF")
             pale = QColor(color)
             pale.setAlpha(45)
-            for column in range(3):
+            for column in range(4):
                 item.setBackground(column, QBrush(pale))
-            item.setForeground(0, QBrush(color))
-            font = item.font(0)
+            item.setForeground(1, QBrush(color))
+            font = item.font(1)
             font.setBold(True)
-            item.setFont(0, font)
+            item.setFont(1, font)
             item.setToolTip(
-                0,
+                1,
                 f"{data.get('label') or data.get('name')}\n"
                 f"{data.get('category', '')} / {data.get('group', '')}\n"
                 f"{data.get('comment', '')}",
@@ -204,7 +205,10 @@ def open_selection_browser(session, spec_path: str) -> None:
             model_id = data.get("label_model_id", "")
             model = _model_by_id(self.session, model_id)
             if model is None:
-                self.session.logger.warning(f"RNA label model #{model_id} is not open")
+                self.session.logger.warning(
+                    f"RNA label model #{model_id} is not open. "
+                    "The checkbox only toggles labels created earlier by the RNA label script."
+                )
                 return
             if visible:
                 for parent_id in _parent_model_ids(model_id):
@@ -214,12 +218,12 @@ def open_selection_browser(session, spec_path: str) -> None:
             model.display = bool(visible)
 
         def _label_checkbox_changed(self, item, column):
-            if self._populating or column != 3:
+            if self._populating or column != 0:
                 return
             data = item.data(0, Qt.UserRole)
             if not data or not data.get("label_model_id"):
                 return
-            self._set_label_visible(data, item.checkState(3) == Qt.Checked)
+            self._set_label_visible(data, item.checkState(0) == Qt.Checked)
 
         def _set_all_filtered_labels(self, visible):
             self._populating = True
@@ -229,7 +233,7 @@ def open_selection_browser(session, spec_path: str) -> None:
                 if not data or not data.get("label_model_id"):
                     continue
                 self._set_label_visible(data, visible)
-                item.setCheckState(3, Qt.Checked if visible else Qt.Unchecked)
+                item.setCheckState(0, Qt.Checked if visible else Qt.Unchecked)
             self._populating = False
 
         def _iter_items(self, item):
@@ -241,10 +245,10 @@ def open_selection_browser(session, spec_path: str) -> None:
         def _activate_current(self):
             item = self.tree.currentItem()
             if item is not None:
-                self._activate_item(item)
+                self._activate_item(item, 1)
 
         def _activate_item(self, item, column=0):
-            if column == 3:
+            if column == 0:
                 return
             data = item.data(0, Qt.UserRole)
             if not data:
@@ -261,279 +265,8 @@ def open_selection_browser(session, spec_path: str) -> None:
     session.logger.info(f"Opened spliceosome named selection browser with {len(selectors)} entries.")
 
 # Embedded named-selection specification for remote execution from GitHub.
-_EMBEDDED_SPEC = {
-  "pdb_id": "5mq0",
-  "selectors": [
-    {
-      "atomspec": "#314.1/H",
-      "category": "subcomplex",
-      "color": "#EAA439",
-      "comment": "EJC/mRNP",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "EJC/mRNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "EJC/mRNP",
-      "name": "pdb_5MQ0_EJC_mRNP",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#314.1/K,L,M,N,S,T,y",
-      "category": "subcomplex",
-      "color": "#F4BF67",
-      "comment": "NTC/NTR related",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "NTC/NTR groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "NTC/NTR related",
-      "name": "pdb_5MQ0_NTC_NTR_related",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#314.1/J,O,P,t,u,v,w",
-      "category": "subcomplex",
-      "color": "#F4BF67",
-      "comment": "NTC/PRP19",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "NTC/NTR groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "NTC/PRP19",
-      "name": "pdb_5MQ0_NTC_PRP19",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#314.1/2,3,5,6,E,I",
-      "category": "subcomplex",
-      "color": "#303030",
-      "comment": "RNA/substrate",
-      "family": "RNA",
-      "feature": "",
-      "group": "pre-mRNA features",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "RNA/substrate",
-      "name": "pdb_5MQ0_RNA_substrate",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#314.1/V,c,o",
-      "category": "subcomplex",
-      "color": "#9CA3AF",
-      "comment": "Second step factors",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "other protein/RNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "Second step factors",
-      "name": "pdb_5MQ0_Second_step_factors",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#314.1/b,d,e,f,g,h,j,k,l,m,n,p,q,r",
-      "category": "subcomplex",
-      "color": "#9CA3AF",
-      "comment": "Sm ring",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "other protein/RNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "Sm ring",
-      "name": "pdb_5MQ0_Sm_ring",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#314.1/W,Y",
-      "category": "subcomplex",
-      "color": "#2F8B4D",
-      "comment": "U2 snRNP",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "U2/SF3B groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "U2 snRNP",
-      "name": "pdb_5MQ0_U2_snRNP",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#314.1/A,C",
-      "category": "subcomplex",
-      "color": "#0000CD",
-      "comment": "U5 snRNP",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "U5 snRNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "U5 snRNP",
-      "name": "pdb_5MQ0_U5_snRNP",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#314.1/R,X,a,s",
-      "category": "subcomplex",
-      "color": "#9CA3AF",
-      "comment": "other",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "other protein/RNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "other",
-      "name": "pdb_5MQ0_other",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#314.1/2:1-49,55-73,78-84,98-104,139-150|#314.1/E:-16--1",
-      "category": "substrate RNA feature",
-      "color": "#FF8C00",
-      "comment": "5' exon: residues -16--1; 1-49;55-73;78-84;98-104;139-150, component-name/splice-site-inference, high/medium confidence, validation not_applicable",
-      "family": "RNA",
-      "feature": "exon_5",
-      "group": "pre-mRNA features",
-      "group_key": "pre_mRNA_features",
-      "kind": "rna_feature",
-      "label": "5' exon",
-      "label_category_model_id": "314.2.1",
-      "label_default_visible": "true",
-      "label_group_model_id": "314.2",
-      "label_model_id": "314.2.1.1",
-      "name": "Cstar_5MQ0_5exon",
-      "section": "Named selections for resolved substrate RNA features."
-    },
-    {
-      "atomspec": "#314.1/2:1-49,55-73,78-84,98-104,139-150,1089-1108,1117-1129,1138-1154,1159-1169|#314.1/3:1-3|#314.1/5:4-53,62-145,167-173|#314.1/6:1-10,16-104|#314.1/E:-16--1|#314.1/I:1-16,56-73",
-      "category": "substrate RNA feature",
-      "color": "#303030",
-      "comment": "substrate RNA: residues -16--1; 1-10;16-104; 1-16;56-73; 1-3; 1-49;55-73;78-84;98-104;139-150;1089-1108;1117-1129;1138-1154;1159-1169; 4-53;62-145;167-173, component, medium confidence, validation not_applicable",
-      "family": "RNA",
-      "feature": "substrate",
-      "group": "pre-mRNA features",
-      "group_key": "pre_mRNA_features",
-      "kind": "rna_feature",
-      "label": "substrate RNA",
-      "name": "Cstar_5MQ0_substrate",
-      "section": "Named selections for resolved substrate RNA features."
-    },
-    {
-      "atomspec": "#314.1/2:1089|#314.1/E:-16--1",
-      "category": "substrate RNA feature",
-      "color": "#303030",
-      "comment": "intron: residues -16--1; 1089, five-ss-inference/splice-site-inference, low/medium confidence, validation not_applicable",
-      "family": "RNA",
-      "feature": "intron",
-      "group": "pre-mRNA features",
-      "group_key": "pre_mRNA_features",
-      "kind": "rna_feature",
-      "label": "intron",
-      "label_category_model_id": "314.2.1",
-      "label_default_visible": "true",
-      "label_group_model_id": "314.2",
-      "label_model_id": "314.2.1.2",
-      "name": "Cstar_5MQ0_intron",
-      "section": "Named selections for resolved substrate RNA features."
-    },
-    {
-      "atomspec": "#314.1/2:1089|#314.1/5:133-135",
-      "category": "substrate RNA feature",
-      "color": "#303030",
-      "comment": "3' splice site: residues 1089; 133-135, sequence-motif, medium confidence, validation validated",
-      "family": "RNA",
-      "feature": "three_prime_splice_site",
-      "group": "pre-mRNA features",
-      "group_key": "pre_mRNA_features",
-      "kind": "rna_feature",
-      "label": "3' splice site",
-      "label_category_model_id": "314.2.1",
-      "label_default_visible": "true",
-      "label_group_model_id": "314.2",
-      "label_model_id": "314.2.1.3",
-      "name": "Cstar_5MQ0_3SS",
-      "section": "Named selections for resolved substrate RNA features."
-    },
-    {
-      "atomspec": "#314.1/2:1090-1108,1117-1129,1138-1154,1159-1169|#314.1/3:1-3",
-      "category": "substrate RNA feature",
-      "color": "#D97706",
-      "comment": "3' exon: residues 1-3; 1090-1108;1117-1129;1138-1154;1159-1169, component-name/splice-site-inference, high/medium confidence, validation not_applicable",
-      "family": "RNA",
-      "feature": "exon_3",
-      "group": "pre-mRNA features",
-      "group_key": "pre_mRNA_features",
-      "kind": "rna_feature",
-      "label": "3' exon",
-      "label_category_model_id": "314.2.1",
-      "label_default_visible": "true",
-      "label_group_model_id": "314.2",
-      "label_model_id": "314.2.1.4",
-      "name": "Cstar_5MQ0_3exon",
-      "section": "Named selections for resolved substrate RNA features."
-    },
-    {
-      "atomspec": "#314.1/5:72-76|#314.1/I:65-71",
-      "category": "substrate RNA feature",
-      "color": "#303030",
-      "comment": "branch point region: residues 65-71; 72-76, network-scored-motif, medium/review confidence, validation uncertain uncertain validation",
-      "family": "RNA",
-      "feature": "branch_point_region",
-      "group": "pre-mRNA features",
-      "group_key": "pre_mRNA_features",
-      "kind": "rna_feature",
-      "label": "branch point region",
-      "label_category_model_id": "314.2.1",
-      "label_default_visible": "true",
-      "label_group_model_id": "314.2",
-      "label_model_id": "314.2.1.5",
-      "name": "Cstar_5MQ0_branch_region",
-      "section": "Named selections for resolved substrate RNA features."
-    },
-    {
-      "atomspec": "#314.1/5:94-99",
-      "category": "substrate RNA feature",
-      "color": "#303030",
-      "comment": "polypyrimidine tract: residues 94-99, sequence-motif, medium confidence, validation uncertain uncertain validation",
-      "family": "RNA",
-      "feature": "polypyrimidine_tract",
-      "group": "pre-mRNA features",
-      "group_key": "pre_mRNA_features",
-      "kind": "rna_feature",
-      "label": "polypyrimidine tract",
-      "label_category_model_id": "314.2.1",
-      "label_default_visible": "true",
-      "label_group_model_id": "314.2",
-      "label_model_id": "314.2.1.6",
-      "name": "Cstar_5MQ0_PPT",
-      "section": "Named selections for resolved substrate RNA features."
-    },
-    {
-      "atomspec": "#314.1/E:-16--12",
-      "category": "substrate RNA feature",
-      "color": "#303030",
-      "comment": "5' splice site: residues -16--12, sequence-motif, medium confidence, validation uncertain uncertain validation",
-      "family": "RNA",
-      "feature": "five_prime_splice_site",
-      "group": "pre-mRNA features",
-      "group_key": "pre_mRNA_features",
-      "kind": "rna_feature",
-      "label": "5' splice site",
-      "label_category_model_id": "314.2.1",
-      "label_default_visible": "true",
-      "label_group_model_id": "314.2",
-      "label_model_id": "314.2.1.7",
-      "name": "Cstar_5MQ0_5SS",
-      "section": "Named selections for resolved substrate RNA features."
-    }
-  ],
-  "structure_group_id": "314",
-  "structure_model_id": "314.1"
-}
+_EMBEDDED_SPEC_JSON = '{\n  "pdb_id": "5mq0",\n  "selectors": [\n    {\n      "atomspec": "#314.1/H",\n      "category": "subcomplex",\n      "color": "#EAA439",\n      "comment": "EJC/mRNP",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "EJC/mRNP groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "EJC/mRNP",\n      "name": "pdb_5MQ0_EJC_mRNP",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#314.1/K,L,M,N,S,T,y",\n      "category": "subcomplex",\n      "color": "#F4BF67",\n      "comment": "NTC/NTR related",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "NTC/NTR groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "NTC/NTR related",\n      "name": "pdb_5MQ0_NTC_NTR_related",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#314.1/J,O,P,t,u,v,w",\n      "category": "subcomplex",\n      "color": "#F4BF67",\n      "comment": "NTC/PRP19",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "NTC/NTR groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "NTC/PRP19",\n      "name": "pdb_5MQ0_NTC_PRP19",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#314.1/2,3,5,6,E,I",\n      "category": "subcomplex",\n      "color": "#303030",\n      "comment": "RNA/substrate",\n      "family": "RNA",\n      "feature": "",\n      "group": "pre-mRNA features",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "RNA/substrate",\n      "name": "pdb_5MQ0_RNA_substrate",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#314.1/V,c,o",\n      "category": "subcomplex",\n      "color": "#9CA3AF",\n      "comment": "Second step factors",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "other protein/RNP groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "Second step factors",\n      "name": "pdb_5MQ0_Second_step_factors",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#314.1/b,d,e,f,g,h,j,k,l,m,n,p,q,r",\n      "category": "subcomplex",\n      "color": "#9CA3AF",\n      "comment": "Sm ring",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "other protein/RNP groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "Sm ring",\n      "name": "pdb_5MQ0_Sm_ring",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#314.1/W,Y",\n      "category": "subcomplex",\n      "color": "#2F8B4D",\n      "comment": "U2 snRNP",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "U2/SF3B groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "U2 snRNP",\n      "name": "pdb_5MQ0_U2_snRNP",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#314.1/A,C",\n      "category": "subcomplex",\n      "color": "#0000CD",\n      "comment": "U5 snRNP",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "U5 snRNP groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "U5 snRNP",\n      "name": "pdb_5MQ0_U5_snRNP",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#314.1/R,X,a,s",\n      "category": "subcomplex",\n      "color": "#9CA3AF",\n      "comment": "other",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "other protein/RNP groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "other",\n      "name": "pdb_5MQ0_other",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#314.1/2:1-49,55-73,78-84,98-104,139-150|#314.1/E:-16--1",\n      "category": "substrate RNA feature",\n      "color": "#FF8C00",\n      "comment": "5\' exon: residues -16--1; 1-49;55-73;78-84;98-104;139-150, component-name/splice-site-inference, high/medium confidence, validation not_applicable",\n      "family": "RNA",\n      "feature": "exon_5",\n      "group": "pre-mRNA features",\n      "group_key": "pre_mRNA_features",\n      "kind": "rna_feature",\n      "label": "5\' exon",\n      "label_category_model_id": "314.2.1",\n      "label_default_visible": "true",\n      "label_group_model_id": "314.2",\n      "label_model_id": "314.2.1.1",\n      "name": "Cstar_5MQ0_5exon",\n      "section": "Named selections for resolved substrate RNA features."\n    },\n    {\n      "atomspec": "#314.1/2:1-49,55-73,78-84,98-104,139-150,1089-1108,1117-1129,1138-1154,1159-1169|#314.1/3:1-3|#314.1/5:4-53,62-145,167-173|#314.1/6:1-10,16-104|#314.1/E:-16--1|#314.1/I:1-16,56-73",\n      "category": "substrate RNA feature",\n      "color": "#303030",\n      "comment": "substrate RNA: residues -16--1; 1-10;16-104; 1-16;56-73; 1-3; 1-49;55-73;78-84;98-104;139-150;1089-1108;1117-1129;1138-1154;1159-1169; 4-53;62-145;167-173, component, medium confidence, validation not_applicable",\n      "family": "RNA",\n      "feature": "substrate",\n      "group": "pre-mRNA features",\n      "group_key": "pre_mRNA_features",\n      "kind": "rna_feature",\n      "label": "substrate RNA",\n      "name": "Cstar_5MQ0_substrate",\n      "section": "Named selections for resolved substrate RNA features."\n    },\n    {\n      "atomspec": "#314.1/2:1089|#314.1/E:-16--1",\n      "category": "substrate RNA feature",\n      "color": "#303030",\n      "comment": "intron: residues -16--1; 1089, five-ss-inference/splice-site-inference, low/medium confidence, validation not_applicable",\n      "family": "RNA",\n      "feature": "intron",\n      "group": "pre-mRNA features",\n      "group_key": "pre_mRNA_features",\n      "kind": "rna_feature",\n      "label": "intron",\n      "label_category_model_id": "314.2.1",\n      "label_default_visible": "true",\n      "label_group_model_id": "314.2",\n      "label_model_id": "314.2.1.2",\n      "name": "Cstar_5MQ0_intron",\n      "section": "Named selections for resolved substrate RNA features."\n    },\n    {\n      "atomspec": "#314.1/2:1089|#314.1/5:133-135",\n      "category": "substrate RNA feature",\n      "color": "#303030",\n      "comment": "3\' splice site: residues 1089; 133-135, sequence-motif, medium confidence, validation validated",\n      "family": "RNA",\n      "feature": "three_prime_splice_site",\n      "group": "pre-mRNA features",\n      "group_key": "pre_mRNA_features",\n      "kind": "rna_feature",\n      "label": "3\' splice site",\n      "label_category_model_id": "314.2.1",\n      "label_default_visible": "true",\n      "label_group_model_id": "314.2",\n      "label_model_id": "314.2.1.3",\n      "name": "Cstar_5MQ0_3SS",\n      "section": "Named selections for resolved substrate RNA features."\n    },\n    {\n      "atomspec": "#314.1/2:1090-1108,1117-1129,1138-1154,1159-1169|#314.1/3:1-3",\n      "category": "substrate RNA feature",\n      "color": "#D97706",\n      "comment": "3\' exon: residues 1-3; 1090-1108;1117-1129;1138-1154;1159-1169, component-name/splice-site-inference, high/medium confidence, validation not_applicable",\n      "family": "RNA",\n      "feature": "exon_3",\n      "group": "pre-mRNA features",\n      "group_key": "pre_mRNA_features",\n      "kind": "rna_feature",\n      "label": "3\' exon",\n      "label_category_model_id": "314.2.1",\n      "label_default_visible": "true",\n      "label_group_model_id": "314.2",\n      "label_model_id": "314.2.1.4",\n      "name": "Cstar_5MQ0_3exon",\n      "section": "Named selections for resolved substrate RNA features."\n    },\n    {\n      "atomspec": "#314.1/5:72-76|#314.1/I:65-71",\n      "category": "substrate RNA feature",\n      "color": "#303030",\n      "comment": "branch point region: residues 65-71; 72-76, network-scored-motif, medium/review confidence, validation uncertain uncertain validation",\n      "family": "RNA",\n      "feature": "branch_point_region",\n      "group": "pre-mRNA features",\n      "group_key": "pre_mRNA_features",\n      "kind": "rna_feature",\n      "label": "branch point region",\n      "label_category_model_id": "314.2.1",\n      "label_default_visible": "true",\n      "label_group_model_id": "314.2",\n      "label_model_id": "314.2.1.5",\n      "name": "Cstar_5MQ0_branch_region",\n      "section": "Named selections for resolved substrate RNA features."\n    },\n    {\n      "atomspec": "#314.1/5:94-99",\n      "category": "substrate RNA feature",\n      "color": "#303030",\n      "comment": "polypyrimidine tract: residues 94-99, sequence-motif, medium confidence, validation uncertain uncertain validation",\n      "family": "RNA",\n      "feature": "polypyrimidine_tract",\n      "group": "pre-mRNA features",\n      "group_key": "pre_mRNA_features",\n      "kind": "rna_feature",\n      "label": "polypyrimidine tract",\n      "label_category_model_id": "314.2.1",\n      "label_default_visible": "true",\n      "label_group_model_id": "314.2",\n      "label_model_id": "314.2.1.6",\n      "name": "Cstar_5MQ0_PPT",\n      "section": "Named selections for resolved substrate RNA features."\n    },\n    {\n      "atomspec": "#314.1/E:-16--12",\n      "category": "substrate RNA feature",\n      "color": "#303030",\n      "comment": "5\' splice site: residues -16--12, sequence-motif, medium confidence, validation uncertain uncertain validation",\n      "family": "RNA",\n      "feature": "five_prime_splice_site",\n      "group": "pre-mRNA features",\n      "group_key": "pre_mRNA_features",\n      "kind": "rna_feature",\n      "label": "5\' splice site",\n      "label_category_model_id": "314.2.1",\n      "label_default_visible": "true",\n      "label_group_model_id": "314.2",\n      "label_model_id": "314.2.1.7",\n      "name": "Cstar_5MQ0_5SS",\n      "section": "Named selections for resolved substrate RNA features."\n    }\n  ],\n  "structure_group_id": "314",\n  "structure_model_id": "314.1"\n}'
+_EMBEDDED_SPEC = json.loads(_EMBEDDED_SPEC_JSON)
 
 import os as _os
 import tempfile as _tempfile

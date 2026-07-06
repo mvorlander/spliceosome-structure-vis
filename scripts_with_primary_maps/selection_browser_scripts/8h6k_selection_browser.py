@@ -80,7 +80,7 @@ def open_selection_browser(session, spec_path: str) -> None:
             layout.addWidget(self.search)
             self.tree = QTreeWidget(parent)
             self.tree.setColumnCount(4)
-            self.tree.setHeaderLabels(["Selection", "Target", "Selector", "Label"])
+            self.tree.setHeaderLabels(["Label", "Selection", "Target", "Selector"])
             self.tree.setAlternatingRowColors(True)
             self.tree.setRootIsDecorated(True)
             self.tree.setUniformRowHeights(False)
@@ -134,12 +134,12 @@ def open_selection_browser(session, spec_path: str) -> None:
             family_order = ["RNA", "Protein/RNP groups", "Other"]
             for family in sorted(grouped, key=lambda value: (family_order.index(value) if value in family_order else 99, value)):
                 family_count = sum(len(items) for items in grouped[family].values())
-                family_item = QTreeWidgetItem([f"{family} ({family_count})", "", "", ""])
+                family_item = QTreeWidgetItem(["", f"{family} ({family_count})", "", ""])
                 self._style_group_item(family_item, family)
                 self.tree.addTopLevelItem(family_item)
                 for group in sorted(grouped[family]):
                     rows = sorted(grouped[family][group], key=lambda value: (value.get("label") or value.get("name", "")).lower())
-                    group_item = QTreeWidgetItem([f"{group} ({len(rows)})", "", "", ""])
+                    group_item = QTreeWidgetItem(["", f"{group} ({len(rows)})", "", ""])
                     self._style_group_item(group_item, group)
                     family_item.addChild(group_item)
                     for data in rows:
@@ -147,41 +147,42 @@ def open_selection_browser(session, spec_path: str) -> None:
                         atomspec = data.get("atomspec", "")
                         selector = data.get("name", "")
                         has_label = bool(data.get("label_model_id"))
-                        row = QTreeWidgetItem([f"  {label}", atomspec, selector, ""])
+                        row = QTreeWidgetItem(["", f"  {label}", atomspec, selector])
                         row.setData(0, Qt.UserRole, data)
+                        row.setData(1, Qt.UserRole, data)
                         if has_label:
                             row.setFlags(row.flags() | Qt.ItemIsUserCheckable)
-                            row.setCheckState(3, Qt.Checked if self._label_visible(data) else Qt.Unchecked)
-                            row.setToolTip(3, "Show or hide the corresponding 3D RNA feature label")
+                            row.setCheckState(0, Qt.Checked if self._label_visible(data) else Qt.Unchecked)
+                            row.setToolTip(0, "Show or hide the corresponding 3D RNA feature label")
                         else:
-                            row.setText(3, "")
+                            row.setText(0, "")
                         self._style_leaf_item(row, data)
                         group_item.addChild(row)
             self.tree.expandAll()
-            for column in range(3):
+            for column in range(4):
                 self.tree.resizeColumnToContents(column)
-            self.tree.resizeColumnToContents(3)
             self._populating = False
 
         def _style_group_item(self, item, label):
-            font = item.font(0)
+            font = item.font(1)
             font.setBold(True)
-            item.setFont(0, font)
-            item.setForeground(0, QBrush(QColor("#20242a")))
-            item.setBackground(0, QBrush(QColor("#eef2f7")))
+            item.setFont(1, font)
+            item.setForeground(1, QBrush(QColor("#20242a")))
+            for column in range(4):
+                item.setBackground(column, QBrush(QColor("#eef2f7")))
 
         def _style_leaf_item(self, item, data):
             color = QColor(data.get("color") or "#9CA3AF")
             pale = QColor(color)
             pale.setAlpha(45)
-            for column in range(3):
+            for column in range(4):
                 item.setBackground(column, QBrush(pale))
-            item.setForeground(0, QBrush(color))
-            font = item.font(0)
+            item.setForeground(1, QBrush(color))
+            font = item.font(1)
             font.setBold(True)
-            item.setFont(0, font)
+            item.setFont(1, font)
             item.setToolTip(
-                0,
+                1,
                 f"{data.get('label') or data.get('name')}\n"
                 f"{data.get('category', '')} / {data.get('group', '')}\n"
                 f"{data.get('comment', '')}",
@@ -204,7 +205,10 @@ def open_selection_browser(session, spec_path: str) -> None:
             model_id = data.get("label_model_id", "")
             model = _model_by_id(self.session, model_id)
             if model is None:
-                self.session.logger.warning(f"RNA label model #{model_id} is not open")
+                self.session.logger.warning(
+                    f"RNA label model #{model_id} is not open. "
+                    "The checkbox only toggles labels created earlier by the RNA label script."
+                )
                 return
             if visible:
                 for parent_id in _parent_model_ids(model_id):
@@ -214,12 +218,12 @@ def open_selection_browser(session, spec_path: str) -> None:
             model.display = bool(visible)
 
         def _label_checkbox_changed(self, item, column):
-            if self._populating or column != 3:
+            if self._populating or column != 0:
                 return
             data = item.data(0, Qt.UserRole)
             if not data or not data.get("label_model_id"):
                 return
-            self._set_label_visible(data, item.checkState(3) == Qt.Checked)
+            self._set_label_visible(data, item.checkState(0) == Qt.Checked)
 
         def _set_all_filtered_labels(self, visible):
             self._populating = True
@@ -229,7 +233,7 @@ def open_selection_browser(session, spec_path: str) -> None:
                 if not data or not data.get("label_model_id"):
                     continue
                 self._set_label_visible(data, visible)
-                item.setCheckState(3, Qt.Checked if visible else Qt.Unchecked)
+                item.setCheckState(0, Qt.Checked if visible else Qt.Unchecked)
             self._populating = False
 
         def _iter_items(self, item):
@@ -241,10 +245,10 @@ def open_selection_browser(session, spec_path: str) -> None:
         def _activate_current(self):
             item = self.tree.currentItem()
             if item is not None:
-                self._activate_item(item)
+                self._activate_item(item, 1)
 
         def _activate_item(self, item, column=0):
-            if column == 3:
+            if column == 0:
                 return
             data = item.data(0, Qt.UserRole)
             if not data:
@@ -261,597 +265,8 @@ def open_selection_browser(session, spec_path: str) -> None:
     session.logger.info(f"Opened spliceosome named selection browser with {len(selectors)} entries.")
 
 # Embedded named-selection specification for remote execution from GitHub.
-_EMBEDDED_SPEC = {
-  "pdb_id": "8h6k",
-  "selectors": [
-    {
-      "atomspec": "#381.1/A",
-      "category": "subcomplex",
-      "color": "#303030",
-      "comment": "RNA/substrate",
-      "family": "RNA",
-      "feature": "",
-      "group": "pre-mRNA features",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "RNA/substrate",
-      "name": "pdb_8H6K_RNA_substrate",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#381.1/2a,2b,2c,2d,2e,2f,2g",
-      "category": "subcomplex",
-      "color": "#BFE6BF",
-      "comment": "U2 Sm ring",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "U2/SF3B groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "U2 Sm ring",
-      "name": "pdb_8H6K_U2_Sm_ring",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#381.1/2A,2B,2C",
-      "category": "subcomplex",
-      "color": "#2F8B4D",
-      "comment": "U2 snRNP",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "U2/SF3B groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "U2 snRNP",
-      "name": "pdb_8H6K_U2_snRNP",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#381.1/2D,2E,2F,2G,2H,2I,2J,2K,2L,2M",
-      "category": "subcomplex",
-      "color": "#6DBE70",
-      "comment": "U2/SF3B",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "U2/SF3B groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "U2/SF3B",
-      "name": "pdb_8H6K_U2_SF3B",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#381.1/4a,4b,4c,4d,4e,4f,4g",
-      "category": "subcomplex",
-      "color": "#F5E85A",
-      "comment": "U4 Sm ring",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "U4 snRNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "U4 Sm ring",
-      "name": "pdb_8H6K_U4_Sm_ring",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#381.1/4A",
-      "category": "subcomplex",
-      "color": "#D8C800",
-      "comment": "U4 snRNP",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "U4 snRNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "U4 snRNP",
-      "name": "pdb_8H6K_U4_snRNP",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#381.1/4B,4C,4D,4E,4F",
-      "category": "subcomplex",
-      "color": "#C3BA7A",
-      "comment": "U4/U6 snRNP",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "U4/U6 groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "U4/U6 snRNP",
-      "name": "pdb_8H6K_U4_U6_snRNP",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#381.1/5a,5b,5c,5d,5e,5f,5g",
-      "category": "subcomplex",
-      "color": "#BFC3E8",
-      "comment": "U5 Sm ring",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "U5 snRNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "U5 Sm ring",
-      "name": "pdb_8H6K_U5_Sm_ring",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#381.1/4G,4J,5A,5B,5C,5D,5E",
-      "category": "subcomplex",
-      "color": "#0000CD",
-      "comment": "U5 snRNP",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "U5 snRNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "U5 snRNP",
-      "name": "pdb_8H6K_U5_snRNP",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#381.1/6a,6b,6c,6d,6e,6f,6g",
-      "category": "subcomplex",
-      "color": "#FECACA",
-      "comment": "U6 LSm",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "U6 snRNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "U6 LSm",
-      "name": "pdb_8H6K_U6_LSm",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#381.1/6A",
-      "category": "subcomplex",
-      "color": "#DC143C",
-      "comment": "U6 snRNP",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "U6 snRNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "U6 snRNP",
-      "name": "pdb_8H6K_U6_snRNP",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#381.1/4H,4I,4K,4L,4M,4N,4Z",
-      "category": "subcomplex",
-      "color": "#9CA3AF",
-      "comment": "other",
-      "family": "Protein/RNP groups",
-      "feature": "",
-      "group": "other protein/RNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "label": "other",
-      "name": "pdb_8H6K_other",
-      "section": "Named selections for subcomplexes using original deposited chain IDs."
-    },
-    {
-      "atomspec": "#381.1/A:7-48",
-      "category": "substrate RNA feature",
-      "color": "#303030",
-      "comment": "upstream intron: residues 7-48, exon-definition-inference, medium confidence, validation not_applicable",
-      "family": "RNA",
-      "feature": "intron",
-      "group": "pre-mRNA features",
-      "group_key": "pre_mRNA_features",
-      "kind": "rna_feature",
-      "label": "upstream intron",
-      "label_category_model_id": "381.2.1",
-      "label_default_visible": "true",
-      "label_group_model_id": "381.2",
-      "label_model_id": "381.2.1.1",
-      "name": "B_8H6K_intron",
-      "section": "Named selections for resolved substrate RNA features."
-    },
-    {
-      "atomspec": "#381.1/A:7-48,98-119",
-      "category": "substrate RNA feature",
-      "color": "#303030",
-      "comment": "substrate RNA: residues 7-48;98-119, component, medium confidence, validation not_applicable",
-      "family": "RNA",
-      "feature": "substrate",
-      "group": "pre-mRNA features",
-      "group_key": "pre_mRNA_features",
-      "kind": "rna_feature",
-      "label": "substrate RNA",
-      "name": "B_8H6K_substrate",
-      "section": "Named selections for resolved substrate RNA features."
-    },
-    {
-      "atomspec": "#381.1/A:24-30",
-      "category": "substrate RNA feature",
-      "color": "#303030",
-      "comment": "branch point region: residues 24-30, network-scored-motif, high confidence, validation validated",
-      "family": "RNA",
-      "feature": "branch_point_region",
-      "group": "pre-mRNA features",
-      "group_key": "pre_mRNA_features",
-      "kind": "rna_feature",
-      "label": "branch point region",
-      "label_category_model_id": "381.2.1",
-      "label_default_visible": "true",
-      "label_group_model_id": "381.2",
-      "label_model_id": "381.2.1.2",
-      "name": "B_8H6K_branch_region",
-      "section": "Named selections for resolved substrate RNA features."
-    },
-    {
-      "atomspec": "#381.1/A:29",
-      "category": "substrate RNA feature",
-      "color": "#303030",
-      "comment": "branch point adenosine: residues 29, network-scored-motif, high confidence, validation validated",
-      "family": "RNA",
-      "feature": "branch_point_adenosine",
-      "group": "pre-mRNA features",
-      "group_key": "pre_mRNA_features",
-      "kind": "rna_feature",
-      "label": "branch point adenosine",
-      "label_category_model_id": "381.2.1",
-      "label_default_visible": "true",
-      "label_group_model_id": "381.2",
-      "label_model_id": "381.2.1.3",
-      "name": "B_8H6K_branch_A",
-      "section": "Named selections for resolved substrate RNA features."
-    },
-    {
-      "atomspec": "#381.1/A:35-48",
-      "category": "substrate RNA feature",
-      "color": "#303030",
-      "comment": "polypyrimidine tract: residues 35-48, sequence-motif, medium confidence, validation validated",
-      "family": "RNA",
-      "feature": "polypyrimidine_tract",
-      "group": "pre-mRNA features",
-      "group_key": "pre_mRNA_features",
-      "kind": "rna_feature",
-      "label": "polypyrimidine tract",
-      "label_category_model_id": "381.2.1",
-      "label_default_visible": "true",
-      "label_group_model_id": "381.2",
-      "label_model_id": "381.2.1.4",
-      "name": "B_8H6K_PPT",
-      "section": "Named selections for resolved substrate RNA features."
-    },
-    {
-      "atomspec": "#381.1/A:98-107",
-      "category": "substrate RNA feature",
-      "color": "#FF8C00",
-      "comment": "exon-defined exon: residues 98-107, exon-definition-inference, medium confidence, validation not_applicable",
-      "family": "RNA",
-      "feature": "exon_defined_exon",
-      "group": "pre-mRNA features",
-      "group_key": "pre_mRNA_features",
-      "kind": "rna_feature",
-      "label": "exon-defined exon",
-      "label_category_model_id": "381.2.1",
-      "label_default_visible": "true",
-      "label_group_model_id": "381.2",
-      "label_model_id": "381.2.1.5",
-      "name": "B_8H6K_exon",
-      "section": "Named selections for resolved substrate RNA features."
-    },
-    {
-      "atomspec": "#381.1/A:108-113",
-      "category": "substrate RNA feature",
-      "color": "#303030",
-      "comment": "5' splice site: residues 108-113, sequence-motif, medium confidence, validation uncertain uncertain validation",
-      "family": "RNA",
-      "feature": "five_prime_splice_site",
-      "group": "pre-mRNA features",
-      "group_key": "pre_mRNA_features",
-      "kind": "rna_feature",
-      "label": "5' splice site",
-      "label_category_model_id": "381.2.1",
-      "label_default_visible": "true",
-      "label_group_model_id": "381.2",
-      "label_model_id": "381.2.1.6",
-      "name": "B_8H6K_5SS",
-      "section": "Named selections for resolved substrate RNA features."
-    },
-    {
-      "atomspec": "#381.1/2A:30",
-      "category": "snRNA feature",
-      "color": "#047857",
-      "comment": "U2 snRNA U2/U6 helix I partner: residues 30, review-region, high confidence",
-      "family": "RNA",
-      "feature": "U2_U6_helix_I_partner",
-      "group": "snRNA-snRNA interacting regions",
-      "group_key": "snRNA_snRNA_regions",
-      "kind": "rna_feature",
-      "label": "U2 snRNA U2/U6 helix I partner",
-      "label_category_model_id": "381.2.2",
-      "label_default_visible": "",
-      "label_group_model_id": "381.2",
-      "label_model_id": "381.2.2.1",
-      "name": "B_8H6K_U2_U6_helix_I_partner",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#381.1/2A:32-41",
-      "category": "snRNA feature",
-      "color": "#0B6E2D",
-      "comment": "U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence",
-      "family": "RNA",
-      "feature": "U2_branchpoint_pairing_region",
-      "group": "snRNA-pre-mRNA regions",
-      "group_key": "snRNA_pre_mRNA_regions",
-      "kind": "rna_feature",
-      "label": "U2 snRNA branchpoint pairing region",
-      "label_category_model_id": "381.2.3",
-      "label_default_visible": "true",
-      "label_group_model_id": "381.2",
-      "label_model_id": "381.2.3.1",
-      "name": "B_8H6K_U2_branchpoint_pairing_region",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#381.1/2A:46-65",
-      "category": "snRNA feature",
-      "color": "#167A38",
-      "comment": "U2 snRNA stem IIa: residues 46-65, review-region, low confidence",
-      "family": "RNA",
-      "feature": "U2_stem_IIa",
-      "group": "internal stem loops",
-      "group_key": "internal_stem_loops",
-      "kind": "rna_feature",
-      "label": "U2 snRNA stem IIa",
-      "label_category_model_id": "381.2.4",
-      "label_default_visible": "",
-      "label_group_model_id": "381.2",
-      "label_model_id": "381.2.4.1",
-      "name": "B_8H6K_U2_stem_IIa",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#381.1/2A:99-105",
-      "category": "snRNA feature",
-      "color": "#2F8B4D",
-      "comment": "U2 snRNA Sm site: residues 99-105, sequence-motif, medium confidence",
-      "family": "RNA",
-      "feature": "U2_Sm_site",
-      "group": "other snRNA regions",
-      "group_key": "other_snRNA_regions",
-      "kind": "rna_feature",
-      "label": "U2 snRNA Sm site",
-      "name": "B_8H6K_U2_Sm_site",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#381.1/4A:1-18",
-      "category": "snRNA feature",
-      "color": "#D8C800",
-      "comment": "U4 snRNA U4/U6 stem I partner: residues 1-18, reference-alignment, high confidence",
-      "family": "RNA",
-      "feature": "U4_U6_stem_I_partner",
-      "group": "snRNA-snRNA interacting regions",
-      "group_key": "snRNA_snRNA_regions",
-      "kind": "rna_feature",
-      "label": "U4 snRNA U4/U6 stem I partner",
-      "label_category_model_id": "381.2.2",
-      "label_default_visible": "",
-      "label_group_model_id": "381.2",
-      "label_model_id": "381.2.2.2",
-      "name": "B_8H6K_U4_U6_stem_I_partner",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#381.1/4A:56-63",
-      "category": "snRNA feature",
-      "color": "#E0CF1A",
-      "comment": "U4 snRNA U4/U6 stem II partner: residues 56-63, reference-alignment, high confidence",
-      "family": "RNA",
-      "feature": "U4_U6_stem_II_partner",
-      "group": "snRNA-snRNA interacting regions",
-      "group_key": "snRNA_snRNA_regions",
-      "kind": "rna_feature",
-      "label": "U4 snRNA U4/U6 stem II partner",
-      "label_category_model_id": "381.2.2",
-      "label_default_visible": "",
-      "label_group_model_id": "381.2",
-      "label_model_id": "381.2.2.3",
-      "name": "B_8H6K_U4_U6_stem_II_partner",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#381.1/4A:59-63,70-76,83-94",
-      "category": "snRNA feature",
-      "color": "#F0DF2E",
-      "comment": "U4 snRNA Brr2 loading region: residues 59-63;70-76;83-94, review-region, low confidence",
-      "family": "RNA",
-      "feature": "U4_Brr2_loading_region",
-      "group": "other snRNA regions",
-      "group_key": "other_snRNA_regions",
-      "kind": "rna_feature",
-      "label": "U4 snRNA Brr2 loading region",
-      "label_category_model_id": "381.2.5",
-      "label_default_visible": "",
-      "label_group_model_id": "381.2",
-      "label_model_id": "381.2.5.1",
-      "name": "B_8H6K_U4_Brr2_loading_region",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#381.1/4A:118-124",
-      "category": "snRNA feature",
-      "color": "#F5E85A",
-      "comment": "U4 snRNA Sm site: residues 118-124, sequence-motif, medium confidence",
-      "family": "RNA",
-      "feature": "U4_Sm_site",
-      "group": "other snRNA regions",
-      "group_key": "other_snRNA_regions",
-      "kind": "rna_feature",
-      "label": "U4 snRNA Sm site",
-      "name": "B_8H6K_U4_Sm_site",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#381.1/5A:38-42",
-      "category": "snRNA feature",
-      "color": "#1B3CD0",
-      "comment": "U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence",
-      "family": "RNA",
-      "feature": "U5_loop_I",
-      "group": "snRNA-pre-mRNA regions",
-      "group_key": "snRNA_pre_mRNA_regions",
-      "kind": "rna_feature",
-      "label": "U5 snRNA loop I",
-      "label_category_model_id": "381.2.3",
-      "label_default_visible": "true",
-      "label_group_model_id": "381.2",
-      "label_model_id": "381.2.3.2",
-      "name": "B_8H6K_U5_loop_I",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#381.1/6A:35-60",
-      "category": "snRNA feature",
-      "color": "#D0183C",
-      "comment": "U6 snRNA U2/U6 helix I partner: residues 35-60, motif-neighborhood, medium confidence",
-      "family": "RNA",
-      "feature": "U6_U2_helix_I_partner",
-      "group": "snRNA-snRNA interacting regions",
-      "group_key": "snRNA_snRNA_regions",
-      "kind": "rna_feature",
-      "label": "U6 snRNA U2/U6 helix I partner",
-      "label_category_model_id": "381.2.2",
-      "label_default_visible": "",
-      "label_group_model_id": "381.2",
-      "label_model_id": "381.2.2.4",
-      "name": "B_8H6K_U6_U2_helix_I_partner",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#381.1/6A:38-49",
-      "category": "snRNA feature",
-      "color": "#E01842",
-      "comment": "U6 snRNA 5' splice-site upstream contact: residues 38-49, motif-neighborhood, medium confidence",
-      "family": "RNA",
-      "feature": "U6_5SS_upstream_contact",
-      "group": "other snRNA regions",
-      "group_key": "other_snRNA_regions",
-      "kind": "rna_feature",
-      "label": "U6 snRNA 5' splice-site upstream contact",
-      "label_category_model_id": "381.2.3",
-      "label_default_visible": "true",
-      "label_group_model_id": "381.2",
-      "label_model_id": "381.2.3.3",
-      "name": "B_8H6K_U6_5SS_upstream_contact",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#381.1/6A:41-47",
-      "category": "snRNA feature",
-      "color": "#DC143C",
-      "comment": "U6 snRNA ACAGAGA box: residues 41-47, sequence-motif, high confidence",
-      "family": "RNA",
-      "feature": "U6_ACAGAGA_box",
-      "group": "other snRNA regions",
-      "group_key": "other_snRNA_regions",
-      "kind": "rna_feature",
-      "label": "U6 snRNA ACAGAGA box",
-      "label_category_model_id": "381.2.5",
-      "label_default_visible": "",
-      "label_group_model_id": "381.2",
-      "label_model_id": "381.2.5.2",
-      "name": "B_8H6K_U6_ACAGAGA_box",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#381.1/6A:52-61",
-      "category": "snRNA feature",
-      "color": "#E01842",
-      "comment": "U6 snRNA U4/U6 stem II partner: residues 52-61, reference-alignment, high confidence",
-      "family": "RNA",
-      "feature": "U6_U4_stem_II_partner",
-      "group": "other snRNA regions",
-      "group_key": "other_snRNA_regions",
-      "kind": "rna_feature",
-      "label": "U6 snRNA U4/U6 stem II partner",
-      "label_category_model_id": "381.2.5",
-      "label_default_visible": "",
-      "label_group_model_id": "381.2",
-      "label_model_id": "381.2.5.3",
-      "name": "B_8H6K_U6_U4_stem_II_partner",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#381.1/6A:63-74",
-      "category": "snRNA feature",
-      "color": "#D9183E",
-      "comment": "U6 snRNA U4/U6 stem I partner: residues 63-74, reference-alignment, high confidence",
-      "family": "RNA",
-      "feature": "U6_U4_stem_I_partner",
-      "group": "other snRNA regions",
-      "group_key": "other_snRNA_regions",
-      "kind": "rna_feature",
-      "label": "U6 snRNA U4/U6 stem I partner",
-      "label_category_model_id": "381.2.5",
-      "label_default_visible": "",
-      "label_group_model_id": "381.2",
-      "label_model_id": "381.2.5.4",
-      "name": "B_8H6K_U6_U4_stem_I_partner",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#381.1/6A:85-96,102-105",
-      "category": "snRNA feature",
-      "color": "#D61A3D",
-      "comment": "U6 snRNA internal stem-loop: residues 85-96;102-105, motif-neighborhood, low confidence",
-      "family": "RNA",
-      "feature": "U6_ISL",
-      "group": "internal stem loops",
-      "group_key": "internal_stem_loops",
-      "kind": "rna_feature",
-      "label": "U6 snRNA internal stem-loop",
-      "label_category_model_id": "381.2.4",
-      "label_default_visible": "",
-      "label_group_model_id": "381.2",
-      "label_model_id": "381.2.4.2",
-      "name": "B_8H6K_U6_ISL",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#381.1/6A:92-94",
-      "category": "snRNA feature",
-      "color": "#C91236",
-      "comment": "U6 snRNA AGC catalytic triad: residues 92-94, sequence-motif, medium confidence",
-      "family": "RNA",
-      "feature": "U6_AGC_catalytic_triad",
-      "group": "catalytic core regions",
-      "group_key": "catalytic_core_regions",
-      "kind": "rna_feature",
-      "label": "U6 snRNA AGC catalytic triad",
-      "label_category_model_id": "381.2.6",
-      "label_default_visible": "",
-      "label_group_model_id": "381.2",
-      "label_model_id": "381.2.6.1",
-      "name": "B_8H6K_U6_AGC_catalytic_triad",
-      "section": "Named selections for resolved snRNA functional regions."
-    },
-    {
-      "atomspec": "#381.1/6A:102-105",
-      "category": "snRNA feature",
-      "color": "#E33A55",
-      "comment": "U6 snRNA LSm site: residues 102-105, terminal-region, low confidence",
-      "family": "RNA",
-      "feature": "U6_LSm_site",
-      "group": "other snRNA regions",
-      "group_key": "other_snRNA_regions",
-      "kind": "rna_feature",
-      "label": "U6 snRNA LSm site",
-      "name": "B_8H6K_U6_LSm_site",
-      "section": "Named selections for resolved snRNA functional regions."
-    }
-  ],
-  "structure_group_id": "381",
-  "structure_model_id": "381.1"
-}
+_EMBEDDED_SPEC_JSON = '{\n  "pdb_id": "8h6k",\n  "selectors": [\n    {\n      "atomspec": "#381.1/A",\n      "category": "subcomplex",\n      "color": "#303030",\n      "comment": "RNA/substrate",\n      "family": "RNA",\n      "feature": "",\n      "group": "pre-mRNA features",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "RNA/substrate",\n      "name": "pdb_8H6K_RNA_substrate",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#381.1/2a,2b,2c,2d,2e,2f,2g",\n      "category": "subcomplex",\n      "color": "#BFE6BF",\n      "comment": "U2 Sm ring",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "U2/SF3B groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "U2 Sm ring",\n      "name": "pdb_8H6K_U2_Sm_ring",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#381.1/2A,2B,2C",\n      "category": "subcomplex",\n      "color": "#2F8B4D",\n      "comment": "U2 snRNP",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "U2/SF3B groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "U2 snRNP",\n      "name": "pdb_8H6K_U2_snRNP",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#381.1/2D,2E,2F,2G,2H,2I,2J,2K,2L,2M",\n      "category": "subcomplex",\n      "color": "#6DBE70",\n      "comment": "U2/SF3B",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "U2/SF3B groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "U2/SF3B",\n      "name": "pdb_8H6K_U2_SF3B",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#381.1/4a,4b,4c,4d,4e,4f,4g",\n      "category": "subcomplex",\n      "color": "#F5E85A",\n      "comment": "U4 Sm ring",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "U4 snRNP groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "U4 Sm ring",\n      "name": "pdb_8H6K_U4_Sm_ring",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#381.1/4A",\n      "category": "subcomplex",\n      "color": "#D8C800",\n      "comment": "U4 snRNP",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "U4 snRNP groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "U4 snRNP",\n      "name": "pdb_8H6K_U4_snRNP",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#381.1/4B,4C,4D,4E,4F",\n      "category": "subcomplex",\n      "color": "#C3BA7A",\n      "comment": "U4/U6 snRNP",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "U4/U6 groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "U4/U6 snRNP",\n      "name": "pdb_8H6K_U4_U6_snRNP",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#381.1/5a,5b,5c,5d,5e,5f,5g",\n      "category": "subcomplex",\n      "color": "#BFC3E8",\n      "comment": "U5 Sm ring",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "U5 snRNP groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "U5 Sm ring",\n      "name": "pdb_8H6K_U5_Sm_ring",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#381.1/4G,4J,5A,5B,5C,5D,5E",\n      "category": "subcomplex",\n      "color": "#0000CD",\n      "comment": "U5 snRNP",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "U5 snRNP groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "U5 snRNP",\n      "name": "pdb_8H6K_U5_snRNP",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#381.1/6a,6b,6c,6d,6e,6f,6g",\n      "category": "subcomplex",\n      "color": "#FECACA",\n      "comment": "U6 LSm",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "U6 snRNP groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "U6 LSm",\n      "name": "pdb_8H6K_U6_LSm",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#381.1/6A",\n      "category": "subcomplex",\n      "color": "#DC143C",\n      "comment": "U6 snRNP",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "U6 snRNP groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "U6 snRNP",\n      "name": "pdb_8H6K_U6_snRNP",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#381.1/4H,4I,4K,4L,4M,4N,4Z",\n      "category": "subcomplex",\n      "color": "#9CA3AF",\n      "comment": "other",\n      "family": "Protein/RNP groups",\n      "feature": "",\n      "group": "other protein/RNP groups",\n      "group_key": "",\n      "kind": "subcomplex",\n      "label": "other",\n      "name": "pdb_8H6K_other",\n      "section": "Named selections for subcomplexes using original deposited chain IDs."\n    },\n    {\n      "atomspec": "#381.1/A:7-48",\n      "category": "substrate RNA feature",\n      "color": "#303030",\n      "comment": "upstream intron: residues 7-48, exon-definition-inference, medium confidence, validation not_applicable",\n      "family": "RNA",\n      "feature": "intron",\n      "group": "pre-mRNA features",\n      "group_key": "pre_mRNA_features",\n      "kind": "rna_feature",\n      "label": "upstream intron",\n      "label_category_model_id": "381.2.1",\n      "label_default_visible": "true",\n      "label_group_model_id": "381.2",\n      "label_model_id": "381.2.1.1",\n      "name": "B_8H6K_intron",\n      "section": "Named selections for resolved substrate RNA features."\n    },\n    {\n      "atomspec": "#381.1/A:7-48,98-119",\n      "category": "substrate RNA feature",\n      "color": "#303030",\n      "comment": "substrate RNA: residues 7-48;98-119, component, medium confidence, validation not_applicable",\n      "family": "RNA",\n      "feature": "substrate",\n      "group": "pre-mRNA features",\n      "group_key": "pre_mRNA_features",\n      "kind": "rna_feature",\n      "label": "substrate RNA",\n      "name": "B_8H6K_substrate",\n      "section": "Named selections for resolved substrate RNA features."\n    },\n    {\n      "atomspec": "#381.1/A:24-30",\n      "category": "substrate RNA feature",\n      "color": "#303030",\n      "comment": "branch point region: residues 24-30, network-scored-motif, high confidence, validation validated",\n      "family": "RNA",\n      "feature": "branch_point_region",\n      "group": "pre-mRNA features",\n      "group_key": "pre_mRNA_features",\n      "kind": "rna_feature",\n      "label": "branch point region",\n      "label_category_model_id": "381.2.1",\n      "label_default_visible": "true",\n      "label_group_model_id": "381.2",\n      "label_model_id": "381.2.1.2",\n      "name": "B_8H6K_branch_region",\n      "section": "Named selections for resolved substrate RNA features."\n    },\n    {\n      "atomspec": "#381.1/A:29",\n      "category": "substrate RNA feature",\n      "color": "#303030",\n      "comment": "branch point adenosine: residues 29, network-scored-motif, high confidence, validation validated",\n      "family": "RNA",\n      "feature": "branch_point_adenosine",\n      "group": "pre-mRNA features",\n      "group_key": "pre_mRNA_features",\n      "kind": "rna_feature",\n      "label": "branch point adenosine",\n      "label_category_model_id": "381.2.1",\n      "label_default_visible": "true",\n      "label_group_model_id": "381.2",\n      "label_model_id": "381.2.1.3",\n      "name": "B_8H6K_branch_A",\n      "section": "Named selections for resolved substrate RNA features."\n    },\n    {\n      "atomspec": "#381.1/A:35-48",\n      "category": "substrate RNA feature",\n      "color": "#303030",\n      "comment": "polypyrimidine tract: residues 35-48, sequence-motif, medium confidence, validation validated",\n      "family": "RNA",\n      "feature": "polypyrimidine_tract",\n      "group": "pre-mRNA features",\n      "group_key": "pre_mRNA_features",\n      "kind": "rna_feature",\n      "label": "polypyrimidine tract",\n      "label_category_model_id": "381.2.1",\n      "label_default_visible": "true",\n      "label_group_model_id": "381.2",\n      "label_model_id": "381.2.1.4",\n      "name": "B_8H6K_PPT",\n      "section": "Named selections for resolved substrate RNA features."\n    },\n    {\n      "atomspec": "#381.1/A:98-107",\n      "category": "substrate RNA feature",\n      "color": "#FF8C00",\n      "comment": "exon-defined exon: residues 98-107, exon-definition-inference, medium confidence, validation not_applicable",\n      "family": "RNA",\n      "feature": "exon_defined_exon",\n      "group": "pre-mRNA features",\n      "group_key": "pre_mRNA_features",\n      "kind": "rna_feature",\n      "label": "exon-defined exon",\n      "label_category_model_id": "381.2.1",\n      "label_default_visible": "true",\n      "label_group_model_id": "381.2",\n      "label_model_id": "381.2.1.5",\n      "name": "B_8H6K_exon",\n      "section": "Named selections for resolved substrate RNA features."\n    },\n    {\n      "atomspec": "#381.1/A:108-113",\n      "category": "substrate RNA feature",\n      "color": "#303030",\n      "comment": "5\' splice site: residues 108-113, sequence-motif, medium confidence, validation uncertain uncertain validation",\n      "family": "RNA",\n      "feature": "five_prime_splice_site",\n      "group": "pre-mRNA features",\n      "group_key": "pre_mRNA_features",\n      "kind": "rna_feature",\n      "label": "5\' splice site",\n      "label_category_model_id": "381.2.1",\n      "label_default_visible": "true",\n      "label_group_model_id": "381.2",\n      "label_model_id": "381.2.1.6",\n      "name": "B_8H6K_5SS",\n      "section": "Named selections for resolved substrate RNA features."\n    },\n    {\n      "atomspec": "#381.1/2A:30",\n      "category": "snRNA feature",\n      "color": "#047857",\n      "comment": "U2 snRNA U2/U6 helix I partner: residues 30, review-region, high confidence",\n      "family": "RNA",\n      "feature": "U2_U6_helix_I_partner",\n      "group": "snRNA-snRNA interacting regions",\n      "group_key": "snRNA_snRNA_regions",\n      "kind": "rna_feature",\n      "label": "U2 snRNA U2/U6 helix I partner",\n      "label_category_model_id": "381.2.2",\n      "label_default_visible": "",\n      "label_group_model_id": "381.2",\n      "label_model_id": "381.2.2.1",\n      "name": "B_8H6K_U2_U6_helix_I_partner",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#381.1/2A:32-41",\n      "category": "snRNA feature",\n      "color": "#0B6E2D",\n      "comment": "U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence",\n      "family": "RNA",\n      "feature": "U2_branchpoint_pairing_region",\n      "group": "snRNA-pre-mRNA regions",\n      "group_key": "snRNA_pre_mRNA_regions",\n      "kind": "rna_feature",\n      "label": "U2 snRNA branchpoint pairing region",\n      "label_category_model_id": "381.2.3",\n      "label_default_visible": "true",\n      "label_group_model_id": "381.2",\n      "label_model_id": "381.2.3.1",\n      "name": "B_8H6K_U2_branchpoint_pairing_region",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#381.1/2A:46-65",\n      "category": "snRNA feature",\n      "color": "#167A38",\n      "comment": "U2 snRNA stem IIa: residues 46-65, review-region, low confidence",\n      "family": "RNA",\n      "feature": "U2_stem_IIa",\n      "group": "internal stem loops",\n      "group_key": "internal_stem_loops",\n      "kind": "rna_feature",\n      "label": "U2 snRNA stem IIa",\n      "label_category_model_id": "381.2.4",\n      "label_default_visible": "",\n      "label_group_model_id": "381.2",\n      "label_model_id": "381.2.4.1",\n      "name": "B_8H6K_U2_stem_IIa",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#381.1/2A:99-105",\n      "category": "snRNA feature",\n      "color": "#2F8B4D",\n      "comment": "U2 snRNA Sm site: residues 99-105, sequence-motif, medium confidence",\n      "family": "RNA",\n      "feature": "U2_Sm_site",\n      "group": "other snRNA regions",\n      "group_key": "other_snRNA_regions",\n      "kind": "rna_feature",\n      "label": "U2 snRNA Sm site",\n      "name": "B_8H6K_U2_Sm_site",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#381.1/4A:1-18",\n      "category": "snRNA feature",\n      "color": "#D8C800",\n      "comment": "U4 snRNA U4/U6 stem I partner: residues 1-18, reference-alignment, high confidence",\n      "family": "RNA",\n      "feature": "U4_U6_stem_I_partner",\n      "group": "snRNA-snRNA interacting regions",\n      "group_key": "snRNA_snRNA_regions",\n      "kind": "rna_feature",\n      "label": "U4 snRNA U4/U6 stem I partner",\n      "label_category_model_id": "381.2.2",\n      "label_default_visible": "",\n      "label_group_model_id": "381.2",\n      "label_model_id": "381.2.2.2",\n      "name": "B_8H6K_U4_U6_stem_I_partner",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#381.1/4A:56-63",\n      "category": "snRNA feature",\n      "color": "#E0CF1A",\n      "comment": "U4 snRNA U4/U6 stem II partner: residues 56-63, reference-alignment, high confidence",\n      "family": "RNA",\n      "feature": "U4_U6_stem_II_partner",\n      "group": "snRNA-snRNA interacting regions",\n      "group_key": "snRNA_snRNA_regions",\n      "kind": "rna_feature",\n      "label": "U4 snRNA U4/U6 stem II partner",\n      "label_category_model_id": "381.2.2",\n      "label_default_visible": "",\n      "label_group_model_id": "381.2",\n      "label_model_id": "381.2.2.3",\n      "name": "B_8H6K_U4_U6_stem_II_partner",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#381.1/4A:59-63,70-76,83-94",\n      "category": "snRNA feature",\n      "color": "#F0DF2E",\n      "comment": "U4 snRNA Brr2 loading region: residues 59-63;70-76;83-94, review-region, low confidence",\n      "family": "RNA",\n      "feature": "U4_Brr2_loading_region",\n      "group": "other snRNA regions",\n      "group_key": "other_snRNA_regions",\n      "kind": "rna_feature",\n      "label": "U4 snRNA Brr2 loading region",\n      "label_category_model_id": "381.2.5",\n      "label_default_visible": "",\n      "label_group_model_id": "381.2",\n      "label_model_id": "381.2.5.1",\n      "name": "B_8H6K_U4_Brr2_loading_region",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#381.1/4A:118-124",\n      "category": "snRNA feature",\n      "color": "#F5E85A",\n      "comment": "U4 snRNA Sm site: residues 118-124, sequence-motif, medium confidence",\n      "family": "RNA",\n      "feature": "U4_Sm_site",\n      "group": "other snRNA regions",\n      "group_key": "other_snRNA_regions",\n      "kind": "rna_feature",\n      "label": "U4 snRNA Sm site",\n      "name": "B_8H6K_U4_Sm_site",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#381.1/5A:38-42",\n      "category": "snRNA feature",\n      "color": "#1B3CD0",\n      "comment": "U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence",\n      "family": "RNA",\n      "feature": "U5_loop_I",\n      "group": "snRNA-pre-mRNA regions",\n      "group_key": "snRNA_pre_mRNA_regions",\n      "kind": "rna_feature",\n      "label": "U5 snRNA loop I",\n      "label_category_model_id": "381.2.3",\n      "label_default_visible": "true",\n      "label_group_model_id": "381.2",\n      "label_model_id": "381.2.3.2",\n      "name": "B_8H6K_U5_loop_I",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#381.1/6A:35-60",\n      "category": "snRNA feature",\n      "color": "#D0183C",\n      "comment": "U6 snRNA U2/U6 helix I partner: residues 35-60, motif-neighborhood, medium confidence",\n      "family": "RNA",\n      "feature": "U6_U2_helix_I_partner",\n      "group": "snRNA-snRNA interacting regions",\n      "group_key": "snRNA_snRNA_regions",\n      "kind": "rna_feature",\n      "label": "U6 snRNA U2/U6 helix I partner",\n      "label_category_model_id": "381.2.2",\n      "label_default_visible": "",\n      "label_group_model_id": "381.2",\n      "label_model_id": "381.2.2.4",\n      "name": "B_8H6K_U6_U2_helix_I_partner",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#381.1/6A:38-49",\n      "category": "snRNA feature",\n      "color": "#E01842",\n      "comment": "U6 snRNA 5\' splice-site upstream contact: residues 38-49, motif-neighborhood, medium confidence",\n      "family": "RNA",\n      "feature": "U6_5SS_upstream_contact",\n      "group": "other snRNA regions",\n      "group_key": "other_snRNA_regions",\n      "kind": "rna_feature",\n      "label": "U6 snRNA 5\' splice-site upstream contact",\n      "label_category_model_id": "381.2.3",\n      "label_default_visible": "true",\n      "label_group_model_id": "381.2",\n      "label_model_id": "381.2.3.3",\n      "name": "B_8H6K_U6_5SS_upstream_contact",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#381.1/6A:41-47",\n      "category": "snRNA feature",\n      "color": "#DC143C",\n      "comment": "U6 snRNA ACAGAGA box: residues 41-47, sequence-motif, high confidence",\n      "family": "RNA",\n      "feature": "U6_ACAGAGA_box",\n      "group": "other snRNA regions",\n      "group_key": "other_snRNA_regions",\n      "kind": "rna_feature",\n      "label": "U6 snRNA ACAGAGA box",\n      "label_category_model_id": "381.2.5",\n      "label_default_visible": "",\n      "label_group_model_id": "381.2",\n      "label_model_id": "381.2.5.2",\n      "name": "B_8H6K_U6_ACAGAGA_box",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#381.1/6A:52-61",\n      "category": "snRNA feature",\n      "color": "#E01842",\n      "comment": "U6 snRNA U4/U6 stem II partner: residues 52-61, reference-alignment, high confidence",\n      "family": "RNA",\n      "feature": "U6_U4_stem_II_partner",\n      "group": "other snRNA regions",\n      "group_key": "other_snRNA_regions",\n      "kind": "rna_feature",\n      "label": "U6 snRNA U4/U6 stem II partner",\n      "label_category_model_id": "381.2.5",\n      "label_default_visible": "",\n      "label_group_model_id": "381.2",\n      "label_model_id": "381.2.5.3",\n      "name": "B_8H6K_U6_U4_stem_II_partner",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#381.1/6A:63-74",\n      "category": "snRNA feature",\n      "color": "#D9183E",\n      "comment": "U6 snRNA U4/U6 stem I partner: residues 63-74, reference-alignment, high confidence",\n      "family": "RNA",\n      "feature": "U6_U4_stem_I_partner",\n      "group": "other snRNA regions",\n      "group_key": "other_snRNA_regions",\n      "kind": "rna_feature",\n      "label": "U6 snRNA U4/U6 stem I partner",\n      "label_category_model_id": "381.2.5",\n      "label_default_visible": "",\n      "label_group_model_id": "381.2",\n      "label_model_id": "381.2.5.4",\n      "name": "B_8H6K_U6_U4_stem_I_partner",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#381.1/6A:85-96,102-105",\n      "category": "snRNA feature",\n      "color": "#D61A3D",\n      "comment": "U6 snRNA internal stem-loop: residues 85-96;102-105, motif-neighborhood, low confidence",\n      "family": "RNA",\n      "feature": "U6_ISL",\n      "group": "internal stem loops",\n      "group_key": "internal_stem_loops",\n      "kind": "rna_feature",\n      "label": "U6 snRNA internal stem-loop",\n      "label_category_model_id": "381.2.4",\n      "label_default_visible": "",\n      "label_group_model_id": "381.2",\n      "label_model_id": "381.2.4.2",\n      "name": "B_8H6K_U6_ISL",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#381.1/6A:92-94",\n      "category": "snRNA feature",\n      "color": "#C91236",\n      "comment": "U6 snRNA AGC catalytic triad: residues 92-94, sequence-motif, medium confidence",\n      "family": "RNA",\n      "feature": "U6_AGC_catalytic_triad",\n      "group": "catalytic core regions",\n      "group_key": "catalytic_core_regions",\n      "kind": "rna_feature",\n      "label": "U6 snRNA AGC catalytic triad",\n      "label_category_model_id": "381.2.6",\n      "label_default_visible": "",\n      "label_group_model_id": "381.2",\n      "label_model_id": "381.2.6.1",\n      "name": "B_8H6K_U6_AGC_catalytic_triad",\n      "section": "Named selections for resolved snRNA functional regions."\n    },\n    {\n      "atomspec": "#381.1/6A:102-105",\n      "category": "snRNA feature",\n      "color": "#E33A55",\n      "comment": "U6 snRNA LSm site: residues 102-105, terminal-region, low confidence",\n      "family": "RNA",\n      "feature": "U6_LSm_site",\n      "group": "other snRNA regions",\n      "group_key": "other_snRNA_regions",\n      "kind": "rna_feature",\n      "label": "U6 snRNA LSm site",\n      "name": "B_8H6K_U6_LSm_site",\n      "section": "Named selections for resolved snRNA functional regions."\n    }\n  ],\n  "structure_group_id": "381",\n  "structure_model_id": "381.1"\n}'
+_EMBEDDED_SPEC = json.loads(_EMBEDDED_SPEC_JSON)
 
 import os as _os
 import tempfile as _tempfile
