@@ -169,7 +169,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "branch_point_region",
-      "color": "#303030"
+      "color": "#303030",
+      "label_model_id": "308.2.1.1",
+      "label_category_model_id": "308.2.1",
+      "label_group_model_id": "308.2",
+      "label_default_visible": "true"
     },
     {
       "name": "Bact_5GM6_PPT",
@@ -183,7 +187,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "polypyrimidine_tract",
-      "color": "#303030"
+      "color": "#303030",
+      "label_model_id": "308.2.1.2",
+      "label_category_model_id": "308.2.1",
+      "label_group_model_id": "308.2",
+      "label_default_visible": "true"
     },
     {
       "name": "Bact_5GM6_branch_A",
@@ -197,7 +205,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "branch_point_adenosine",
-      "color": "#303030"
+      "color": "#303030",
+      "label_model_id": "308.2.1.3",
+      "label_category_model_id": "308.2.1",
+      "label_group_model_id": "308.2",
+      "label_default_visible": "true"
     },
     {
       "name": "Bact_5GM6_U2_U6_helix_I_partner",
@@ -211,7 +223,11 @@
       "group_key": "snRNA_snRNA_regions",
       "kind": "rna_feature",
       "feature": "U2_U6_helix_I_partner",
-      "color": "#047857"
+      "color": "#047857",
+      "label_model_id": "308.2.2.1",
+      "label_category_model_id": "308.2.2",
+      "label_group_model_id": "308.2",
+      "label_default_visible": ""
     },
     {
       "name": "Bact_5GM6_U2_branchpoint_pairing_region",
@@ -225,7 +241,11 @@
       "group_key": "snRNA_pre_mRNA_regions",
       "kind": "rna_feature",
       "feature": "U2_branchpoint_pairing_region",
-      "color": "#0B6E2D"
+      "color": "#0B6E2D",
+      "label_model_id": "308.2.3.1",
+      "label_category_model_id": "308.2.3",
+      "label_group_model_id": "308.2",
+      "label_default_visible": "true"
     },
     {
       "name": "Bact_5GM6_U2_stem_IIa",
@@ -239,7 +259,11 @@
       "group_key": "internal_stem_loops",
       "kind": "rna_feature",
       "feature": "U2_stem_IIa",
-      "color": "#167A38"
+      "color": "#167A38",
+      "label_model_id": "308.2.4.1",
+      "label_category_model_id": "308.2.4",
+      "label_group_model_id": "308.2",
+      "label_default_visible": ""
     }
   ]
 }

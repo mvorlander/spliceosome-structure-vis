@@ -190,28 +190,43 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#353.1/Y:87",
       "category_key": "pre_mRNA_features",
+      "category_model_id": "353.2.1",
       "category_name": "pre-mRNA features",
       "color": "#303030",
+      "default_visible": true,
+      "feature": "intron",
       "index": 1,
+      "label_model_id": "353.2.1.1",
       "model_name": "label_01_intron_res_80_94_127_140",
+      "selector_name": "C_7A5P_intron",
       "text": "intron (res. 80-94;127-140)"
     },
     {
       "atomspec": "#353.1/6:88",
       "category_key": "internal_stem_loops",
+      "category_model_id": "353.2.2",
       "category_name": "internal stem loops",
       "color": "#D61A3D",
+      "default_visible": false,
+      "feature": "U6_ISL",
       "index": 2,
+      "label_model_id": "353.2.2.1",
       "model_name": "label_02_U6_ISL_res_80_95",
+      "selector_name": "C_7A5P_U6_ISL",
       "text": "U6 ISL (res. 80-95)"
     },
     {
       "atomspec": "#353.1/6:93",
       "category_key": "catalytic_core_regions",
+      "category_model_id": "353.2.3",
       "category_name": "catalytic core regions",
       "color": "#C91236",
+      "default_visible": false,
+      "feature": "U6_AGC_catalytic_triad",
       "index": 3,
+      "label_model_id": "353.2.3.1",
       "model_name": "label_03_U6_AGC_triad_res_92_94",
+      "selector_name": "C_7A5P_U6_AGC_catalytic_triad",
       "text": "U6 AGC triad (res. 92-94)"
     }
   ],

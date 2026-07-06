@@ -85,7 +85,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "intron",
-      "color": "#303030"
+      "color": "#303030",
+      "label_model_id": "365.2.1.1",
+      "label_category_model_id": "365.2.1",
+      "label_group_model_id": "365.2",
+      "label_default_visible": "true"
     },
     {
       "name": "U2_snRNP_7OQB_U2_branchpoint_pairing_region",
@@ -99,7 +103,11 @@
       "group_key": "snRNA_pre_mRNA_regions",
       "kind": "rna_feature",
       "feature": "U2_branchpoint_pairing_region",
-      "color": "#0B6E2D"
+      "color": "#0B6E2D",
+      "label_model_id": "365.2.2.1",
+      "label_category_model_id": "365.2.2",
+      "label_group_model_id": "365.2",
+      "label_default_visible": "true"
     },
     {
       "name": "U2_snRNP_7OQB_U2_stem_IIa",
@@ -113,7 +121,11 @@
       "group_key": "internal_stem_loops",
       "kind": "rna_feature",
       "feature": "U2_stem_IIa",
-      "color": "#167A38"
+      "color": "#167A38",
+      "label_model_id": "365.2.3.1",
+      "label_category_model_id": "365.2.3",
+      "label_group_model_id": "365.2",
+      "label_default_visible": ""
     }
   ]
 }

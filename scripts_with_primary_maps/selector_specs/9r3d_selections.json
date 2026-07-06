@@ -113,7 +113,11 @@
       "group_key": "snRNA_pre_mRNA_regions",
       "kind": "rna_feature",
       "feature": "U5_loop_I",
-      "color": "#1B3CD0"
+      "color": "#1B3CD0",
+      "label_model_id": "428.2.1.1",
+      "label_category_model_id": "428.2.1",
+      "label_group_model_id": "428.2",
+      "label_default_visible": "true"
     },
     {
       "name": "pre_Bact_9R3D_U6_5_terminal_stem_loop",
@@ -127,7 +131,11 @@
       "group_key": "internal_stem_loops",
       "kind": "rna_feature",
       "feature": "U6_5prime_terminal_stem_loop",
-      "color": "#DC143C"
+      "color": "#DC143C",
+      "label_model_id": "428.2.2.1",
+      "label_category_model_id": "428.2.2",
+      "label_group_model_id": "428.2",
+      "label_default_visible": ""
     },
     {
       "name": "pre_Bact_9R3D_U6_U2_helix_I_partner",
@@ -141,7 +149,11 @@
       "group_key": "snRNA_snRNA_regions",
       "kind": "rna_feature",
       "feature": "U6_U2_helix_I_partner",
-      "color": "#D0183C"
+      "color": "#D0183C",
+      "label_model_id": "428.2.3.1",
+      "label_category_model_id": "428.2.3",
+      "label_group_model_id": "428.2",
+      "label_default_visible": ""
     },
     {
       "name": "pre_Bact_9R3D_U6_5SS_upstream_contact",
@@ -155,7 +167,11 @@
       "group_key": "other_snRNA_regions",
       "kind": "rna_feature",
       "feature": "U6_5SS_upstream_contact",
-      "color": "#E01842"
+      "color": "#E01842",
+      "label_model_id": "428.2.1.2",
+      "label_category_model_id": "428.2.1",
+      "label_group_model_id": "428.2",
+      "label_default_visible": "true"
     },
     {
       "name": "pre_Bact_9R3D_U6_ACAGAGA_box",
@@ -169,7 +185,11 @@
       "group_key": "other_snRNA_regions",
       "kind": "rna_feature",
       "feature": "U6_ACAGAGA_box",
-      "color": "#DC143C"
+      "color": "#DC143C",
+      "label_model_id": "428.2.4.1",
+      "label_category_model_id": "428.2.4",
+      "label_group_model_id": "428.2",
+      "label_default_visible": ""
     }
   ]
 }

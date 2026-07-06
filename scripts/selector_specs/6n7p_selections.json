@@ -85,7 +85,11 @@
       "group_key": "snRNA_pre_mRNA_regions",
       "kind": "rna_feature",
       "feature": "U1_5prime_5SS_recognition",
-      "color": "#B66AAE"
+      "color": "#B66AAE",
+      "label_model_id": "344.2.1.1",
+      "label_category_model_id": "344.2.1",
+      "label_group_model_id": "344.2",
+      "label_default_visible": "true"
     },
     {
       "name": "E_complex_6N7P_U1_SL1",
@@ -99,7 +103,11 @@
       "group_key": "internal_stem_loops",
       "kind": "rna_feature",
       "feature": "U1_SL1",
-      "color": "#BF72B7"
+      "color": "#BF72B7",
+      "label_model_id": "344.2.2.1",
+      "label_category_model_id": "344.2.2",
+      "label_group_model_id": "344.2",
+      "label_default_visible": ""
     },
     {
       "name": "E_complex_6N7P_U1_SL2",
@@ -113,7 +121,11 @@
       "group_key": "internal_stem_loops",
       "kind": "rna_feature",
       "feature": "U1_SL2",
-      "color": "#AD62A6"
+      "color": "#AD62A6",
+      "label_model_id": "344.2.2.2",
+      "label_category_model_id": "344.2.2",
+      "label_group_model_id": "344.2",
+      "label_default_visible": ""
     },
     {
       "name": "E_complex_6N7P_U1_Sm_site",
@@ -127,7 +139,11 @@
       "group_key": "other_snRNA_regions",
       "kind": "rna_feature",
       "feature": "U1_Sm_site",
-      "color": "#C783BF"
+      "color": "#C783BF",
+      "label_model_id": "344.2.3.1",
+      "label_category_model_id": "344.2.3",
+      "label_group_model_id": "344.2",
+      "label_default_visible": ""
     }
   ]
 }

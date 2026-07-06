@@ -51,7 +51,7 @@ name pdb_7OS2_U5_snRNP #367.1/B,J
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_7OS2_other #367.1/C
 # Searchable named selection browser.
-# In GUI ChimeraX this opens a small panel for selecting and zooming named selections.
+# In GUI ChimeraX this opens a small panel for selecting, zooming, and toggling RNA labels.
 # Fetch and open the self-contained named selection browser from GitHub.
 open https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/selection_browser_scripts/7os2_selection_browser.py
 view

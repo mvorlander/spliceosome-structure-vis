@@ -99,7 +99,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "branch_point_region",
-      "color": "#303030"
+      "color": "#303030",
+      "label_model_id": "417.2.1.1",
+      "label_category_model_id": "417.2.1",
+      "label_group_model_id": "417.2",
+      "label_default_visible": "true"
     },
     {
       "name": "pre_B_8Y7E_branch_A",
@@ -113,7 +117,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "branch_point_adenosine",
-      "color": "#303030"
+      "color": "#303030",
+      "label_model_id": "417.2.1.2",
+      "label_category_model_id": "417.2.1",
+      "label_group_model_id": "417.2",
+      "label_default_visible": "true"
     },
     {
       "name": "pre_B_8Y7E_U12_branchpoint_pairing_region",
@@ -127,7 +135,11 @@
       "group_key": "snRNA_pre_mRNA_regions",
       "kind": "rna_feature",
       "feature": "U12_branchpoint_pairing_region",
-      "color": "#0B6E2D"
+      "color": "#0B6E2D",
+      "label_model_id": "417.2.2.1",
+      "label_category_model_id": "417.2.2",
+      "label_group_model_id": "417.2",
+      "label_default_visible": "true"
     },
     {
       "name": "pre_B_8Y7E_U12_Sm_site",

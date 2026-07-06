@@ -190,28 +190,43 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#417.1/A:200",
       "category_key": "pre_mRNA_features",
+      "category_model_id": "417.2.1",
       "category_name": "pre-mRNA features",
       "color": "#303030",
+      "default_visible": true,
+      "feature": "branch_point_region",
       "index": 1,
+      "label_model_id": "417.2.1.1",
       "model_name": "label_01_BP_region_res_195_206",
+      "selector_name": "pre_B_8Y7E_branch_region",
       "text": "BP region (res. 195-206)"
     },
     {
       "atomspec": "#417.1/A:203",
       "category_key": "pre_mRNA_features",
+      "category_model_id": "417.2.1",
       "category_name": "pre-mRNA features",
       "color": "#303030",
+      "default_visible": true,
+      "feature": "branch_point_adenosine",
       "index": 2,
+      "label_model_id": "417.2.1.2",
       "model_name": "label_02_BP_A_res_203",
+      "selector_name": "pre_B_8Y7E_branch_A",
       "text": "BP-A (res. 203)"
     },
     {
       "atomspec": "#417.1/H:21",
       "category_key": "snRNA_pre_mRNA_regions",
+      "category_model_id": "417.2.2",
       "category_name": "snRNA-pre-mRNA regions",
       "color": "#0B6E2D",
+      "default_visible": true,
+      "feature": "U12_branchpoint_pairing_region",
       "index": 3,
+      "label_model_id": "417.2.2.1",
       "model_name": "label_03_U12_BP_pairing_res_16_26",
+      "selector_name": "pre_B_8Y7E_U12_branchpoint_pairing_region",
       "text": "U12 BP pairing (res. 16-26)"
     }
   ],

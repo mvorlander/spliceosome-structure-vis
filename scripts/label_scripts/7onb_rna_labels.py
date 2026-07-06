@@ -190,28 +190,43 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#364.1/G:136",
       "category_key": "pre_mRNA_features",
+      "category_model_id": "364.2.1",
       "category_name": "pre-mRNA features",
       "color": "#FF8C00",
+      "default_visible": true,
+      "feature": "exon_5",
       "index": 1,
+      "label_model_id": "364.2.1.1",
       "model_name": "label_01_5_exon_res_129_142",
+      "selector_name": "U2_snRNP_7ONB_5exon",
       "text": "5' exon (res. 129-142)"
     },
     {
       "atomspec": "#364.1/H:38",
       "category_key": "snRNA_pre_mRNA_regions",
+      "category_model_id": "364.2.2",
       "category_name": "snRNA-pre-mRNA regions",
       "color": "#0B6E2D",
+      "default_visible": true,
+      "feature": "U2_branchpoint_pairing_region",
       "index": 2,
+      "label_model_id": "364.2.2.1",
       "model_name": "label_02_U2_BP_pairing_res_34_41",
+      "selector_name": "U2_snRNP_7ONB_U2_branchpoint_pairing_region",
       "text": "U2 BP pairing (res. 34-41)"
     },
     {
       "atomspec": "#364.1/H:56",
       "category_key": "internal_stem_loops",
+      "category_model_id": "364.2.3",
       "category_name": "internal stem loops",
       "color": "#167A38",
+      "default_visible": false,
+      "feature": "U2_stem_IIa",
       "index": 3,
+      "label_model_id": "364.2.3.1",
       "model_name": "label_03_U2_stem_IIa_res_46_65",
+      "selector_name": "U2_snRNP_7ONB_U2_stem_IIa",
       "text": "U2 stem IIa (res. 46-65)"
     }
   ],

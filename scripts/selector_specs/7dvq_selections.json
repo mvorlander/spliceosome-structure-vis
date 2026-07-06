@@ -183,7 +183,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "exon_5",
-      "color": "#FF8C00"
+      "color": "#FF8C00",
+      "label_model_id": "361.2.1.1",
+      "label_category_model_id": "361.2.1",
+      "label_group_model_id": "361.2",
+      "label_default_visible": "true"
     },
     {
       "name": "Bact_7DVQ_substrate",
@@ -211,7 +215,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "five_prime_splice_site",
-      "color": "#303030"
+      "color": "#303030",
+      "label_model_id": "361.2.1.2",
+      "label_category_model_id": "361.2.1",
+      "label_group_model_id": "361.2",
+      "label_default_visible": "true"
     },
     {
       "name": "Bact_7DVQ_intron",
@@ -225,7 +233,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "intron",
-      "color": "#303030"
+      "color": "#303030",
+      "label_model_id": "361.2.1.3",
+      "label_category_model_id": "361.2.1",
+      "label_group_model_id": "361.2",
+      "label_default_visible": "true"
     },
     {
       "name": "Bact_7DVQ_branch_region",
@@ -239,7 +251,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "branch_point_region",
-      "color": "#303030"
+      "color": "#303030",
+      "label_model_id": "361.2.1.4",
+      "label_category_model_id": "361.2.1",
+      "label_group_model_id": "361.2",
+      "label_default_visible": "true"
     },
     {
       "name": "Bact_7DVQ_branch_A",
@@ -253,7 +269,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "branch_point_adenosine",
-      "color": "#303030"
+      "color": "#303030",
+      "label_model_id": "361.2.1.5",
+      "label_category_model_id": "361.2.1",
+      "label_group_model_id": "361.2",
+      "label_default_visible": "true"
     },
     {
       "name": "Bact_7DVQ_U12_U6atac_helix_I_partner",
@@ -267,7 +287,11 @@
       "group_key": "snRNA_snRNA_regions",
       "kind": "rna_feature",
       "feature": "U12_U6atac_helix_I_partner",
-      "color": "#047857"
+      "color": "#047857",
+      "label_model_id": "361.2.2.1",
+      "label_category_model_id": "361.2.2",
+      "label_group_model_id": "361.2",
+      "label_default_visible": ""
     },
     {
       "name": "Bact_7DVQ_U12_branchpoint_pairing_region",
@@ -281,7 +305,11 @@
       "group_key": "snRNA_pre_mRNA_regions",
       "kind": "rna_feature",
       "feature": "U12_branchpoint_pairing_region",
-      "color": "#0B6E2D"
+      "color": "#0B6E2D",
+      "label_model_id": "361.2.3.1",
+      "label_category_model_id": "361.2.3",
+      "label_group_model_id": "361.2",
+      "label_default_visible": "true"
     },
     {
       "name": "Bact_7DVQ_U12_Sm_site",
@@ -309,7 +337,11 @@
       "group_key": "snRNA_pre_mRNA_regions",
       "kind": "rna_feature",
       "feature": "U5_loop_I",
-      "color": "#1B3CD0"
+      "color": "#1B3CD0",
+      "label_model_id": "361.2.3.2",
+      "label_category_model_id": "361.2.3",
+      "label_group_model_id": "361.2",
+      "label_default_visible": "true"
     },
     {
       "name": "Bact_7DVQ_U6atac_5_5SS_recognition",
@@ -323,7 +355,11 @@
       "group_key": "snRNA_pre_mRNA_regions",
       "kind": "rna_feature",
       "feature": "U6atac_5prime_5SS_recognition",
-      "color": "#DC143C"
+      "color": "#DC143C",
+      "label_model_id": "361.2.3.3",
+      "label_category_model_id": "361.2.3",
+      "label_group_model_id": "361.2",
+      "label_default_visible": "true"
     },
     {
       "name": "Bact_7DVQ_U6atac_U12_helix_I_partner",
@@ -337,7 +373,11 @@
       "group_key": "snRNA_snRNA_regions",
       "kind": "rna_feature",
       "feature": "U6atac_U12_helix_I_partner",
-      "color": "#D0183C"
+      "color": "#D0183C",
+      "label_model_id": "361.2.2.2",
+      "label_category_model_id": "361.2.2",
+      "label_group_model_id": "361.2",
+      "label_default_visible": ""
     },
     {
       "name": "Bact_7DVQ_U6atac_AGC_catalytic_triad",
@@ -351,7 +391,11 @@
       "group_key": "catalytic_core_regions",
       "kind": "rna_feature",
       "feature": "U6atac_AGC_catalytic_triad",
-      "color": "#C91236"
+      "color": "#C91236",
+      "label_model_id": "361.2.4.1",
+      "label_category_model_id": "361.2.4",
+      "label_group_model_id": "361.2",
+      "label_default_visible": ""
     },
     {
       "name": "Bact_7DVQ_U6atac_ISL",
@@ -365,7 +409,11 @@
       "group_key": "internal_stem_loops",
       "kind": "rna_feature",
       "feature": "U6atac_ISL",
-      "color": "#D61A3D"
+      "color": "#D61A3D",
+      "label_model_id": "361.2.5.1",
+      "label_category_model_id": "361.2.5",
+      "label_group_model_id": "361.2",
+      "label_default_visible": ""
     }
   ]
 }

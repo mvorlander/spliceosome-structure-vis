@@ -190,10 +190,15 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#392.1/5:38",
       "category_key": "snRNA_pre_mRNA_regions",
+      "category_model_id": "392.2.1",
       "category_name": "snRNA-pre-mRNA regions",
       "color": "#1B3CD0",
+      "default_visible": true,
+      "feature": "U5_loop_I",
       "index": 1,
+      "label_model_id": "392.2.1.1",
       "model_name": "label_01_U5_loop_I_res_38",
+      "selector_name": "U5_recycling_8Q7Q_U5_loop_I",
       "text": "U5 loop I (res. 38)"
     }
   ],

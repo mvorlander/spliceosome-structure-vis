@@ -197,7 +197,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "intron",
-      "color": "#303030"
+      "color": "#303030",
+      "label_model_id": "353.2.1.1",
+      "label_category_model_id": "353.2.1",
+      "label_group_model_id": "353.2",
+      "label_default_visible": "true"
     },
     {
       "name": "C_7A5P_U2_Sm_site",
@@ -225,7 +229,11 @@
       "group_key": "internal_stem_loops",
       "kind": "rna_feature",
       "feature": "U6_ISL",
-      "color": "#D61A3D"
+      "color": "#D61A3D",
+      "label_model_id": "353.2.2.1",
+      "label_category_model_id": "353.2.2",
+      "label_group_model_id": "353.2",
+      "label_default_visible": ""
     },
     {
       "name": "C_7A5P_U6_AGC_catalytic_triad",
@@ -239,7 +247,11 @@
       "group_key": "catalytic_core_regions",
       "kind": "rna_feature",
       "feature": "U6_AGC_catalytic_triad",
-      "color": "#C91236"
+      "color": "#C91236",
+      "label_model_id": "353.2.3.1",
+      "label_category_model_id": "353.2.3",
+      "label_group_model_id": "353.2",
+      "label_default_visible": ""
     }
   ]
 }

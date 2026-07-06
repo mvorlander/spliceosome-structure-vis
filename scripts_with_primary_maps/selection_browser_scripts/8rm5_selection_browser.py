@@ -13,6 +13,22 @@ def _ui_available(session) -> bool:
     return bool(getattr(getattr(session, "ui", None), "is_gui", False))
 
 
+def _id_tuple(model_id: str) -> tuple[int, ...]:
+    return tuple(int(part) for part in str(model_id).split(".") if part)
+
+
+def _model_by_id(session, model_id: str):
+    if not model_id:
+        return None
+    models = session.models.list(model_id=_id_tuple(model_id))
+    return models[0] if models else None
+
+
+def _parent_model_ids(model_id: str) -> list[str]:
+    parts = str(model_id).split(".")
+    return [".".join(parts[:idx]) for idx in range(1, len(parts))]
+
+
 def open_selection_browser(session, spec_path: str) -> None:
     with open(spec_path, "r", encoding="utf-8") as handle:
         spec = json.load(handle)
@@ -50,6 +66,7 @@ def open_selection_browser(session, spec_path: str) -> None:
             self.spec = spec
             self.selectors = selectors
             self.filtered = list(selectors)
+            self._populating = False
             self.tool_window = MainToolWindow(self)
             parent = self.tool_window.ui_area
             layout = QVBoxLayout(parent)
@@ -62,23 +79,30 @@ def open_selection_browser(session, spec_path: str) -> None:
             self.search.setPlaceholderText("Search selector, label, category, residues, or atomspec")
             layout.addWidget(self.search)
             self.tree = QTreeWidget(parent)
-            self.tree.setColumnCount(3)
-            self.tree.setHeaderLabels(["Selection", "Target", "Selector"])
+            self.tree.setColumnCount(4)
+            self.tree.setHeaderLabels(["Selection", "Target", "Selector", "Label"])
             self.tree.setAlternatingRowColors(True)
             self.tree.setRootIsDecorated(True)
             self.tree.setUniformRowHeights(False)
             layout.addWidget(self.tree)
             buttons = QHBoxLayout()
             self.select_button = QPushButton("Select + Zoom", parent)
+            self.show_labels_button = QPushButton("Show Labels", parent)
+            self.hide_labels_button = QPushButton("Hide Labels", parent)
             self.clear_button = QPushButton("Clear", parent)
             buttons.addWidget(self.select_button)
+            buttons.addWidget(self.show_labels_button)
+            buttons.addWidget(self.hide_labels_button)
             buttons.addWidget(self.clear_button)
             layout.addLayout(buttons)
 
             self.search.textChanged.connect(self._filter)
             self.tree.itemClicked.connect(self._activate_item)
             self.tree.itemDoubleClicked.connect(self._activate_item)
+            self.tree.itemChanged.connect(self._label_checkbox_changed)
             self.select_button.clicked.connect(self._activate_current)
+            self.show_labels_button.clicked.connect(lambda: self._set_all_filtered_labels(True))
+            self.hide_labels_button.clicked.connect(lambda: self._set_all_filtered_labels(False))
             self.clear_button.clicked.connect(lambda: run(self.session, "select clear"))
             self._populate()
             self.tool_window.manage("side")
@@ -97,6 +121,7 @@ def open_selection_browser(session, spec_path: str) -> None:
             self._populate()
 
         def _populate(self):
+            self._populating = True
             self.tree.clear()
             grouped = {}
             for item in self.filtered:
@@ -109,25 +134,34 @@ def open_selection_browser(session, spec_path: str) -> None:
             family_order = ["RNA", "Protein/RNP groups", "Other"]
             for family in sorted(grouped, key=lambda value: (family_order.index(value) if value in family_order else 99, value)):
                 family_count = sum(len(items) for items in grouped[family].values())
-                family_item = QTreeWidgetItem([f"{family} ({family_count})", "", ""])
+                family_item = QTreeWidgetItem([f"{family} ({family_count})", "", "", ""])
                 self._style_group_item(family_item, family)
                 self.tree.addTopLevelItem(family_item)
                 for group in sorted(grouped[family]):
                     rows = sorted(grouped[family][group], key=lambda value: (value.get("label") or value.get("name", "")).lower())
-                    group_item = QTreeWidgetItem([f"{group} ({len(rows)})", "", ""])
+                    group_item = QTreeWidgetItem([f"{group} ({len(rows)})", "", "", ""])
                     self._style_group_item(group_item, group)
                     family_item.addChild(group_item)
                     for data in rows:
                         label = data.get("label") or data.get("name")
                         atomspec = data.get("atomspec", "")
                         selector = data.get("name", "")
-                        row = QTreeWidgetItem([f"  {label}", atomspec, selector])
+                        has_label = bool(data.get("label_model_id"))
+                        row = QTreeWidgetItem([f"  {label}", atomspec, selector, ""])
                         row.setData(0, Qt.UserRole, data)
+                        if has_label:
+                            row.setFlags(row.flags() | Qt.ItemIsUserCheckable)
+                            row.setCheckState(3, Qt.Checked if self._label_visible(data) else Qt.Unchecked)
+                            row.setToolTip(3, "Show or hide the corresponding 3D RNA feature label")
+                        else:
+                            row.setText(3, "")
                         self._style_leaf_item(row, data)
                         group_item.addChild(row)
             self.tree.expandAll()
             for column in range(3):
                 self.tree.resizeColumnToContents(column)
+            self.tree.resizeColumnToContents(3)
+            self._populating = False
 
         def _style_group_item(self, item, label):
             font = item.font(0)
@@ -153,12 +187,65 @@ def open_selection_browser(session, spec_path: str) -> None:
                 f"{data.get('comment', '')}",
             )
 
+        def _label_visible(self, data):
+            model_id = data.get("label_model_id", "")
+            model = _model_by_id(self.session, model_id)
+            if model is None:
+                return bool(data.get("label_default_visible"))
+            if not getattr(model, "display", True):
+                return False
+            for parent_id in _parent_model_ids(model_id):
+                parent = _model_by_id(self.session, parent_id)
+                if parent is not None and not getattr(parent, "display", True):
+                    return False
+            return True
+
+        def _set_label_visible(self, data, visible):
+            model_id = data.get("label_model_id", "")
+            model = _model_by_id(self.session, model_id)
+            if model is None:
+                self.session.logger.warning(f"RNA label model #{model_id} is not open")
+                return
+            if visible:
+                for parent_id in _parent_model_ids(model_id):
+                    parent = _model_by_id(self.session, parent_id)
+                    if parent is not None:
+                        parent.display = True
+            model.display = bool(visible)
+
+        def _label_checkbox_changed(self, item, column):
+            if self._populating or column != 3:
+                return
+            data = item.data(0, Qt.UserRole)
+            if not data or not data.get("label_model_id"):
+                return
+            self._set_label_visible(data, item.checkState(3) == Qt.Checked)
+
+        def _set_all_filtered_labels(self, visible):
+            self._populating = True
+            root = self.tree.invisibleRootItem()
+            for item in self._iter_items(root):
+                data = item.data(0, Qt.UserRole)
+                if not data or not data.get("label_model_id"):
+                    continue
+                self._set_label_visible(data, visible)
+                item.setCheckState(3, Qt.Checked if visible else Qt.Unchecked)
+            self._populating = False
+
+        def _iter_items(self, item):
+            for index in range(item.childCount()):
+                child = item.child(index)
+                yield child
+                yield from self._iter_items(child)
+
         def _activate_current(self):
             item = self.tree.currentItem()
             if item is not None:
                 self._activate_item(item)
 
         def _activate_item(self, item, column=0):
+            if column == 3:
+                return
             data = item.data(0, Qt.UserRole)
             if not data:
                 return
@@ -370,6 +457,10 @@ _EMBEDDED_SPEC = {
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "label": "intron",
+      "label_category_model_id": "412.2.1",
+      "label_default_visible": "true",
+      "label_group_model_id": "412.2",
+      "label_model_id": "412.2.1.1",
       "name": "pre_B_8RM5_intron",
       "section": "Named selections for resolved substrate RNA features."
     },
@@ -384,6 +475,10 @@ _EMBEDDED_SPEC = {
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "label": "5' exon",
+      "label_category_model_id": "412.2.1",
+      "label_default_visible": "true",
+      "label_group_model_id": "412.2",
+      "label_model_id": "412.2.1.2",
       "name": "pre_B_8RM5_5exon",
       "section": "Named selections for resolved substrate RNA features."
     },
@@ -398,6 +493,10 @@ _EMBEDDED_SPEC = {
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "label": "5' splice site",
+      "label_category_model_id": "412.2.1",
+      "label_default_visible": "true",
+      "label_group_model_id": "412.2",
+      "label_model_id": "412.2.1.3",
       "name": "pre_B_8RM5_5SS",
       "section": "Named selections for resolved substrate RNA features."
     },
@@ -412,6 +511,10 @@ _EMBEDDED_SPEC = {
       "group_key": "snRNA_snRNA_regions",
       "kind": "rna_feature",
       "label": "U2 snRNA U2/U6 helix I partner",
+      "label_category_model_id": "412.2.2",
+      "label_default_visible": "",
+      "label_group_model_id": "412.2",
+      "label_model_id": "412.2.2.1",
       "name": "pre_B_8RM5_U2_U6_helix_I_partner",
       "section": "Named selections for resolved snRNA functional regions."
     },
@@ -426,6 +529,10 @@ _EMBEDDED_SPEC = {
       "group_key": "snRNA_pre_mRNA_regions",
       "kind": "rna_feature",
       "label": "U2 snRNA branchpoint pairing region",
+      "label_category_model_id": "412.2.3",
+      "label_default_visible": "true",
+      "label_group_model_id": "412.2",
+      "label_model_id": "412.2.3.1",
       "name": "pre_B_8RM5_U2_branchpoint_pairing_region",
       "section": "Named selections for resolved snRNA functional regions."
     },
@@ -440,6 +547,10 @@ _EMBEDDED_SPEC = {
       "group_key": "internal_stem_loops",
       "kind": "rna_feature",
       "label": "U2 snRNA stem IIa",
+      "label_category_model_id": "412.2.4",
+      "label_default_visible": "",
+      "label_group_model_id": "412.2",
+      "label_model_id": "412.2.4.1",
       "name": "pre_B_8RM5_U2_stem_IIa",
       "section": "Named selections for resolved snRNA functional regions."
     },
@@ -468,6 +579,10 @@ _EMBEDDED_SPEC = {
       "group_key": "snRNA_snRNA_regions",
       "kind": "rna_feature",
       "label": "U4 snRNA U4/U6 stem I partner",
+      "label_category_model_id": "412.2.2",
+      "label_default_visible": "",
+      "label_group_model_id": "412.2",
+      "label_model_id": "412.2.2.2",
       "name": "pre_B_8RM5_U4_U6_stem_I_partner",
       "section": "Named selections for resolved snRNA functional regions."
     },
@@ -482,6 +597,10 @@ _EMBEDDED_SPEC = {
       "group_key": "snRNA_snRNA_regions",
       "kind": "rna_feature",
       "label": "U4 snRNA U4/U6 stem II partner",
+      "label_category_model_id": "412.2.2",
+      "label_default_visible": "",
+      "label_group_model_id": "412.2",
+      "label_model_id": "412.2.2.3",
       "name": "pre_B_8RM5_U4_U6_stem_II_partner",
       "section": "Named selections for resolved snRNA functional regions."
     },
@@ -496,6 +615,10 @@ _EMBEDDED_SPEC = {
       "group_key": "other_snRNA_regions",
       "kind": "rna_feature",
       "label": "U4 snRNA Brr2 loading region",
+      "label_category_model_id": "412.2.5",
+      "label_default_visible": "",
+      "label_group_model_id": "412.2",
+      "label_model_id": "412.2.5.1",
       "name": "pre_B_8RM5_U4_Brr2_loading_region",
       "section": "Named selections for resolved snRNA functional regions."
     },
@@ -524,6 +647,10 @@ _EMBEDDED_SPEC = {
       "group_key": "snRNA_pre_mRNA_regions",
       "kind": "rna_feature",
       "label": "U5 snRNA loop I",
+      "label_category_model_id": "412.2.3",
+      "label_default_visible": "true",
+      "label_group_model_id": "412.2",
+      "label_model_id": "412.2.3.2",
       "name": "pre_B_8RM5_U5_loop_I",
       "section": "Named selections for resolved snRNA functional regions."
     },
@@ -538,6 +665,10 @@ _EMBEDDED_SPEC = {
       "group_key": "snRNA_snRNA_regions",
       "kind": "rna_feature",
       "label": "U6 snRNA U2/U6 helix I partner",
+      "label_category_model_id": "412.2.2",
+      "label_default_visible": "",
+      "label_group_model_id": "412.2",
+      "label_model_id": "412.2.2.4",
       "name": "pre_B_8RM5_U6_U2_helix_I_partner",
       "section": "Named selections for resolved snRNA functional regions."
     },
@@ -552,6 +683,10 @@ _EMBEDDED_SPEC = {
       "group_key": "other_snRNA_regions",
       "kind": "rna_feature",
       "label": "U6 snRNA 5' splice-site upstream contact",
+      "label_category_model_id": "412.2.3",
+      "label_default_visible": "true",
+      "label_group_model_id": "412.2",
+      "label_model_id": "412.2.3.3",
       "name": "pre_B_8RM5_U6_5SS_upstream_contact",
       "section": "Named selections for resolved snRNA functional regions."
     },
@@ -566,6 +701,10 @@ _EMBEDDED_SPEC = {
       "group_key": "other_snRNA_regions",
       "kind": "rna_feature",
       "label": "U6 snRNA ACAGAGA box",
+      "label_category_model_id": "412.2.5",
+      "label_default_visible": "",
+      "label_group_model_id": "412.2",
+      "label_model_id": "412.2.5.2",
       "name": "pre_B_8RM5_U6_ACAGAGA_box",
       "section": "Named selections for resolved snRNA functional regions."
     },
@@ -580,6 +719,10 @@ _EMBEDDED_SPEC = {
       "group_key": "other_snRNA_regions",
       "kind": "rna_feature",
       "label": "U6 snRNA U4/U6 stem II partner",
+      "label_category_model_id": "412.2.5",
+      "label_default_visible": "",
+      "label_group_model_id": "412.2",
+      "label_model_id": "412.2.5.3",
       "name": "pre_B_8RM5_U6_U4_stem_II_partner",
       "section": "Named selections for resolved snRNA functional regions."
     },
@@ -594,6 +737,10 @@ _EMBEDDED_SPEC = {
       "group_key": "other_snRNA_regions",
       "kind": "rna_feature",
       "label": "U6 snRNA U4/U6 stem I partner",
+      "label_category_model_id": "412.2.5",
+      "label_default_visible": "",
+      "label_group_model_id": "412.2",
+      "label_model_id": "412.2.5.4",
       "name": "pre_B_8RM5_U6_U4_stem_I_partner",
       "section": "Named selections for resolved snRNA functional regions."
     },
@@ -608,6 +755,10 @@ _EMBEDDED_SPEC = {
       "group_key": "internal_stem_loops",
       "kind": "rna_feature",
       "label": "U6 snRNA internal stem-loop",
+      "label_category_model_id": "412.2.4",
+      "label_default_visible": "",
+      "label_group_model_id": "412.2",
+      "label_model_id": "412.2.4.2",
       "name": "pre_B_8RM5_U6_ISL",
       "section": "Named selections for resolved snRNA functional regions."
     },
@@ -622,6 +773,10 @@ _EMBEDDED_SPEC = {
       "group_key": "catalytic_core_regions",
       "kind": "rna_feature",
       "label": "U6 snRNA AGC catalytic triad",
+      "label_category_model_id": "412.2.6",
+      "label_default_visible": "",
+      "label_group_model_id": "412.2",
+      "label_model_id": "412.2.6.1",
       "name": "pre_B_8RM5_U6_AGC_catalytic_triad",
       "section": "Named selections for resolved snRNA functional regions."
     },

@@ -297,7 +297,7 @@ select clear
 # Fetch and run the self-contained RNA label script from GitHub.
 open https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/label_scripts/6exn_rna_labels.py
 # Searchable named selection browser.
-# In GUI ChimeraX this opens a small panel for selecting and zooming named selections.
+# In GUI ChimeraX this opens a small panel for selecting, zooming, and toggling RNA labels.
 # Fetch and open the self-contained named selection browser from GitHub.
 open https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/selection_browser_scripts/6exn_selection_browser.py
 view

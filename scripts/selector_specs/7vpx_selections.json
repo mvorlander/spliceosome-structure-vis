@@ -113,7 +113,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "exon_5",
-      "color": "#FF8C00"
+      "color": "#FF8C00",
+      "label_model_id": "373.2.1.1",
+      "label_category_model_id": "373.2.1",
+      "label_group_model_id": "373.2",
+      "label_default_visible": "true"
     },
     {
       "name": "E_complex_7VPX_substrate",
@@ -141,7 +145,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "five_prime_splice_site",
-      "color": "#303030"
+      "color": "#303030",
+      "label_model_id": "373.2.1.2",
+      "label_category_model_id": "373.2.1",
+      "label_group_model_id": "373.2",
+      "label_default_visible": "true"
     },
     {
       "name": "E_complex_7VPX_intron",
@@ -155,7 +163,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "intron",
-      "color": "#303030"
+      "color": "#303030",
+      "label_model_id": "373.2.1.3",
+      "label_category_model_id": "373.2.1",
+      "label_group_model_id": "373.2",
+      "label_default_visible": "true"
     },
     {
       "name": "E_complex_7VPX_U1_5_5SS_recognition",
@@ -169,7 +181,11 @@
       "group_key": "snRNA_pre_mRNA_regions",
       "kind": "rna_feature",
       "feature": "U1_5prime_5SS_recognition",
-      "color": "#B66AAE"
+      "color": "#B66AAE",
+      "label_model_id": "373.2.2.1",
+      "label_category_model_id": "373.2.2",
+      "label_group_model_id": "373.2",
+      "label_default_visible": "true"
     },
     {
       "name": "E_complex_7VPX_U1_SL1",
@@ -183,7 +199,11 @@
       "group_key": "internal_stem_loops",
       "kind": "rna_feature",
       "feature": "U1_SL1",
-      "color": "#BF72B7"
+      "color": "#BF72B7",
+      "label_model_id": "373.2.3.1",
+      "label_category_model_id": "373.2.3",
+      "label_group_model_id": "373.2",
+      "label_default_visible": ""
     },
     {
       "name": "E_complex_7VPX_U1_SL2",
@@ -197,7 +217,11 @@
       "group_key": "internal_stem_loops",
       "kind": "rna_feature",
       "feature": "U1_SL2",
-      "color": "#AD62A6"
+      "color": "#AD62A6",
+      "label_model_id": "373.2.3.2",
+      "label_category_model_id": "373.2.3",
+      "label_group_model_id": "373.2",
+      "label_default_visible": ""
     },
     {
       "name": "E_complex_7VPX_U2_branchpoint_pairing_region",
@@ -211,7 +235,11 @@
       "group_key": "snRNA_pre_mRNA_regions",
       "kind": "rna_feature",
       "feature": "U2_branchpoint_pairing_region",
-      "color": "#0B6E2D"
+      "color": "#0B6E2D",
+      "label_model_id": "373.2.2.2",
+      "label_category_model_id": "373.2.2",
+      "label_group_model_id": "373.2",
+      "label_default_visible": "true"
     },
     {
       "name": "E_complex_7VPX_U2_stem_IIa",
@@ -225,7 +253,11 @@
       "group_key": "internal_stem_loops",
       "kind": "rna_feature",
       "feature": "U2_stem_IIa",
-      "color": "#167A38"
+      "color": "#167A38",
+      "label_model_id": "373.2.3.3",
+      "label_category_model_id": "373.2.3",
+      "label_group_model_id": "373.2",
+      "label_default_visible": ""
     },
     {
       "name": "E_complex_7VPX_U2_Sm_site",

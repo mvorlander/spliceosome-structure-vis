@@ -183,7 +183,11 @@
       "group_key": "snRNA_snRNA_regions",
       "kind": "rna_feature",
       "feature": "U2_U6_helix_I_partner",
-      "color": "#047857"
+      "color": "#047857",
+      "label_model_id": "301.2.1.1",
+      "label_category_model_id": "301.2.1",
+      "label_group_model_id": "301.2",
+      "label_default_visible": ""
     },
     {
       "name": "ILS_disassembly_3JB9_U2_branchpoint_pairing_region",
@@ -197,7 +201,11 @@
       "group_key": "snRNA_pre_mRNA_regions",
       "kind": "rna_feature",
       "feature": "U2_branchpoint_pairing_region",
-      "color": "#0B6E2D"
+      "color": "#0B6E2D",
+      "label_model_id": "301.2.2.1",
+      "label_category_model_id": "301.2.2",
+      "label_group_model_id": "301.2",
+      "label_default_visible": "true"
     },
     {
       "name": "ILS_disassembly_3JB9_U5_loop_I",
@@ -211,7 +219,11 @@
       "group_key": "snRNA_pre_mRNA_regions",
       "kind": "rna_feature",
       "feature": "U5_loop_I",
-      "color": "#1B3CD0"
+      "color": "#1B3CD0",
+      "label_model_id": "301.2.2.2",
+      "label_category_model_id": "301.2.2",
+      "label_group_model_id": "301.2",
+      "label_default_visible": "true"
     },
     {
       "name": "ILS_disassembly_3JB9_U6_U2_helix_I_partner",
@@ -225,7 +237,11 @@
       "group_key": "snRNA_snRNA_regions",
       "kind": "rna_feature",
       "feature": "U6_U2_helix_I_partner",
-      "color": "#D0183C"
+      "color": "#D0183C",
+      "label_model_id": "301.2.1.2",
+      "label_category_model_id": "301.2.1",
+      "label_group_model_id": "301.2",
+      "label_default_visible": ""
     },
     {
       "name": "ILS_disassembly_3JB9_U6_5SS_upstream_contact",
@@ -239,7 +255,11 @@
       "group_key": "other_snRNA_regions",
       "kind": "rna_feature",
       "feature": "U6_5SS_upstream_contact",
-      "color": "#E01842"
+      "color": "#E01842",
+      "label_model_id": "301.2.2.3",
+      "label_category_model_id": "301.2.2",
+      "label_group_model_id": "301.2",
+      "label_default_visible": "true"
     },
     {
       "name": "ILS_disassembly_3JB9_U6_ACAGAGA_box",
@@ -253,7 +273,11 @@
       "group_key": "other_snRNA_regions",
       "kind": "rna_feature",
       "feature": "U6_ACAGAGA_box",
-      "color": "#DC143C"
+      "color": "#DC143C",
+      "label_model_id": "301.2.3.1",
+      "label_category_model_id": "301.2.3",
+      "label_group_model_id": "301.2",
+      "label_default_visible": ""
     }
   ]
 }

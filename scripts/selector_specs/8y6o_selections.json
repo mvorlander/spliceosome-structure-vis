@@ -141,7 +141,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "exon_5",
-      "color": "#FF8C00"
+      "color": "#FF8C00",
+      "label_model_id": "416.2.1.1",
+      "label_category_model_id": "416.2.1",
+      "label_group_model_id": "416.2",
+      "label_default_visible": "true"
     },
     {
       "name": "pre_B_8Y6O_substrate",
@@ -169,7 +173,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "five_prime_splice_site",
-      "color": "#303030"
+      "color": "#303030",
+      "label_model_id": "416.2.1.2",
+      "label_category_model_id": "416.2.1",
+      "label_group_model_id": "416.2",
+      "label_default_visible": "true"
     },
     {
       "name": "pre_B_8Y6O_intron",
@@ -183,7 +191,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "intron",
-      "color": "#303030"
+      "color": "#303030",
+      "label_model_id": "416.2.1.3",
+      "label_category_model_id": "416.2.1",
+      "label_group_model_id": "416.2",
+      "label_default_visible": "true"
     },
     {
       "name": "pre_B_8Y6O_U11_5_5SS_recognition",
@@ -197,7 +209,11 @@
       "group_key": "snRNA_pre_mRNA_regions",
       "kind": "rna_feature",
       "feature": "U11_5prime_5SS_recognition",
-      "color": "#B66AAE"
+      "color": "#B66AAE",
+      "label_model_id": "416.2.2.1",
+      "label_category_model_id": "416.2.2",
+      "label_group_model_id": "416.2",
+      "label_default_visible": "true"
     },
     {
       "name": "pre_B_8Y6O_U11_SL1",
@@ -211,7 +227,11 @@
       "group_key": "internal_stem_loops",
       "kind": "rna_feature",
       "feature": "U11_SL1",
-      "color": "#BF72B7"
+      "color": "#BF72B7",
+      "label_model_id": "416.2.3.1",
+      "label_category_model_id": "416.2.3",
+      "label_group_model_id": "416.2",
+      "label_default_visible": ""
     },
     {
       "name": "pre_B_8Y6O_U11_SL2",
@@ -225,7 +245,11 @@
       "group_key": "internal_stem_loops",
       "kind": "rna_feature",
       "feature": "U11_SL2",
-      "color": "#AD62A6"
+      "color": "#AD62A6",
+      "label_model_id": "416.2.3.2",
+      "label_category_model_id": "416.2.3",
+      "label_group_model_id": "416.2",
+      "label_default_visible": ""
     },
     {
       "name": "pre_B_8Y6O_U4atac_U6_stem_I_partner",
@@ -239,7 +263,11 @@
       "group_key": "snRNA_snRNA_regions",
       "kind": "rna_feature",
       "feature": "U4atac_U6_stem_I_partner",
-      "color": "#D8C800"
+      "color": "#D8C800",
+      "label_model_id": "416.2.4.1",
+      "label_category_model_id": "416.2.4",
+      "label_group_model_id": "416.2",
+      "label_default_visible": ""
     },
     {
       "name": "pre_B_8Y6O_U4atac_U6_stem_II_partner",
@@ -253,7 +281,11 @@
       "group_key": "snRNA_snRNA_regions",
       "kind": "rna_feature",
       "feature": "U4atac_U6_stem_II_partner",
-      "color": "#E0CF1A"
+      "color": "#E0CF1A",
+      "label_model_id": "416.2.4.2",
+      "label_category_model_id": "416.2.4",
+      "label_group_model_id": "416.2",
+      "label_default_visible": ""
     },
     {
       "name": "pre_B_8Y6O_U4atac_Brr2_loading_region",
@@ -267,7 +299,11 @@
       "group_key": "other_snRNA_regions",
       "kind": "rna_feature",
       "feature": "U4atac_Brr2_loading_region",
-      "color": "#F0DF2E"
+      "color": "#F0DF2E",
+      "label_model_id": "416.2.5.1",
+      "label_category_model_id": "416.2.5",
+      "label_group_model_id": "416.2",
+      "label_default_visible": ""
     },
     {
       "name": "pre_B_8Y6O_U4atac_Sm_site",
@@ -295,7 +331,11 @@
       "group_key": "snRNA_pre_mRNA_regions",
       "kind": "rna_feature",
       "feature": "U5_loop_I",
-      "color": "#1B3CD0"
+      "color": "#1B3CD0",
+      "label_model_id": "416.2.2.2",
+      "label_category_model_id": "416.2.2",
+      "label_group_model_id": "416.2",
+      "label_default_visible": "true"
     },
     {
       "name": "pre_B_8Y6O_U6atac_U12_helix_I_partner",
@@ -309,7 +349,11 @@
       "group_key": "snRNA_snRNA_regions",
       "kind": "rna_feature",
       "feature": "U6atac_U12_helix_I_partner",
-      "color": "#D0183C"
+      "color": "#D0183C",
+      "label_model_id": "416.2.4.3",
+      "label_category_model_id": "416.2.4",
+      "label_group_model_id": "416.2",
+      "label_default_visible": ""
     },
     {
       "name": "pre_B_8Y6O_U6atac_AGC_catalytic_triad",
@@ -323,7 +367,11 @@
       "group_key": "catalytic_core_regions",
       "kind": "rna_feature",
       "feature": "U6atac_AGC_catalytic_triad",
-      "color": "#C91236"
+      "color": "#C91236",
+      "label_model_id": "416.2.6.1",
+      "label_category_model_id": "416.2.6",
+      "label_group_model_id": "416.2",
+      "label_default_visible": ""
     },
     {
       "name": "pre_B_8Y6O_U6atac_ISL",
@@ -337,7 +385,11 @@
       "group_key": "internal_stem_loops",
       "kind": "rna_feature",
       "feature": "U6atac_ISL",
-      "color": "#D61A3D"
+      "color": "#D61A3D",
+      "label_model_id": "416.2.3.3",
+      "label_category_model_id": "416.2.3",
+      "label_group_model_id": "416.2",
+      "label_default_visible": ""
     }
   ]
 }

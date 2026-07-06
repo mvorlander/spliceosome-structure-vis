@@ -190,10 +190,15 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#432.1/2:36",
       "category_key": "snRNA_pre_mRNA_regions",
+      "category_model_id": "432.2.1",
       "category_name": "snRNA-pre-mRNA regions",
       "color": "#0B6E2D",
+      "default_visible": true,
+      "feature": "U2_branchpoint_pairing_region",
       "index": 1,
+      "label_model_id": "432.2.1.1",
       "model_name": "label_01_U2_BP_pairing_res_32_41",
+      "selector_name": "U2_snRNP_9ZE0_U2_branchpoint_pairing_region",
       "text": "U2 BP pairing (res. 32-41)"
     }
   ],

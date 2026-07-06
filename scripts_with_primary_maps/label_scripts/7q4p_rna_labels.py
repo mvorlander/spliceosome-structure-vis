@@ -190,28 +190,43 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#371.1/2:26",
       "category_key": "snRNA_snRNA_regions",
+      "category_model_id": "371.2.1",
       "category_name": "snRNA-snRNA interacting regions",
       "color": "#047857",
+      "default_visible": false,
+      "feature": "U2_U6_helix_I_partner",
       "index": 1,
+      "label_model_id": "371.2.1.1",
       "model_name": "label_01_U2_U6_helix_I_res_26_27",
+      "selector_name": "U2_snRNP_7Q4P_U2_U6_helix_I_partner",
       "text": "U2/U6 helix I (res. 26-27)"
     },
     {
       "atomspec": "#371.1/2:38",
       "category_key": "snRNA_pre_mRNA_regions",
+      "category_model_id": "371.2.2",
       "category_name": "snRNA-pre-mRNA regions",
       "color": "#0B6E2D",
+      "default_visible": true,
+      "feature": "U2_branchpoint_pairing_region",
       "index": 2,
+      "label_model_id": "371.2.2.1",
       "model_name": "label_02_U2_BP_pairing_res_34_41",
+      "selector_name": "U2_snRNP_7Q4P_U2_branchpoint_pairing_region",
       "text": "U2 BP pairing (res. 34-41)"
     },
     {
       "atomspec": "#371.1/2:55",
       "category_key": "internal_stem_loops",
+      "category_model_id": "371.2.3",
       "category_name": "internal stem loops",
       "color": "#167A38",
+      "default_visible": false,
+      "feature": "U2_stem_IIa",
       "index": 3,
+      "label_model_id": "371.2.3.1",
       "model_name": "label_03_U2_stem_IIa_res_46_64",
+      "selector_name": "U2_snRNP_7Q4P_U2_stem_IIa",
       "text": "U2 stem IIa (res. 46-64)"
     }
   ],

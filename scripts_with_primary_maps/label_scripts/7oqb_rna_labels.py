@@ -190,28 +190,43 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#365.1/I:257",
       "category_key": "pre_mRNA_features",
+      "category_model_id": "365.2.1",
       "category_name": "pre-mRNA features",
       "color": "#303030",
+      "default_visible": true,
+      "feature": "intron",
       "index": 1,
+      "label_model_id": "365.2.1.1",
       "model_name": "label_01_intron_res_246_268",
+      "selector_name": "U2_snRNP_7OQB_intron",
       "text": "intron (res. 246-268)"
     },
     {
       "atomspec": "#365.1/2:38",
       "category_key": "snRNA_pre_mRNA_regions",
+      "category_model_id": "365.2.2",
       "category_name": "snRNA-pre-mRNA regions",
       "color": "#0B6E2D",
+      "default_visible": true,
+      "feature": "U2_branchpoint_pairing_region",
       "index": 2,
+      "label_model_id": "365.2.2.1",
       "model_name": "label_02_U2_BP_pairing_res_33_42",
+      "selector_name": "U2_snRNP_7OQB_U2_branchpoint_pairing_region",
       "text": "U2 BP pairing (res. 33-42)"
     },
     {
       "atomspec": "#365.1/2:60",
       "category_key": "internal_stem_loops",
+      "category_model_id": "365.2.3",
       "category_name": "internal stem loops",
       "color": "#167A38",
+      "default_visible": false,
+      "feature": "U2_stem_IIa",
       "index": 3,
+      "label_model_id": "365.2.3.1",
       "model_name": "label_03_U2_stem_IIa_res_46_74_78_80",
+      "selector_name": "U2_snRNP_7OQB_U2_stem_IIa",
       "text": "U2 stem IIa (res. 46-74;78-80)"
     }
   ],

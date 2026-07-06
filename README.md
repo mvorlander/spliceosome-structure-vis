@@ -10,7 +10,7 @@ Lightweight static dashboard for copying ChimeraX scripts for spliceosome cryo-E
 - No mmCIF files, local CIF models, or large map binaries are included.
 - ChimeraX scripts use `open <pdb_id>` so ChimeraX downloads structures directly from the PDB.
 - Primary-map script variants use `open emdb:<id>` so ChimeraX can download deposited primary EMDB maps on demand.
-- GUI ChimeraX scripts fetch a small named-selection browser from GitHub for search, select, and zoom actions.
+- GUI ChimeraX scripts fetch a small named-selection browser from GitHub for search, select, zoom, and RNA-label toggle actions.
 
 Open `index.html` locally, or use the GitHub Pages dashboard:
 https://mvorlander.github.io/spliceosome-structure-vis/

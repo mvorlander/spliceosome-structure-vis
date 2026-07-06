@@ -141,7 +141,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "exon_5",
-      "color": "#FF8C00"
+      "color": "#FF8C00",
+      "label_model_id": "314.2.1.1",
+      "label_category_model_id": "314.2.1",
+      "label_group_model_id": "314.2",
+      "label_default_visible": "true"
     },
     {
       "name": "Cstar_5MQ0_substrate",
@@ -169,7 +173,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "intron",
-      "color": "#303030"
+      "color": "#303030",
+      "label_model_id": "314.2.1.2",
+      "label_category_model_id": "314.2.1",
+      "label_group_model_id": "314.2",
+      "label_default_visible": "true"
     },
     {
       "name": "Cstar_5MQ0_3SS",
@@ -183,7 +191,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "three_prime_splice_site",
-      "color": "#303030"
+      "color": "#303030",
+      "label_model_id": "314.2.1.3",
+      "label_category_model_id": "314.2.1",
+      "label_group_model_id": "314.2",
+      "label_default_visible": "true"
     },
     {
       "name": "Cstar_5MQ0_3exon",
@@ -197,7 +209,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "exon_3",
-      "color": "#D97706"
+      "color": "#D97706",
+      "label_model_id": "314.2.1.4",
+      "label_category_model_id": "314.2.1",
+      "label_group_model_id": "314.2",
+      "label_default_visible": "true"
     },
     {
       "name": "Cstar_5MQ0_branch_region",
@@ -211,7 +227,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "branch_point_region",
-      "color": "#303030"
+      "color": "#303030",
+      "label_model_id": "314.2.1.5",
+      "label_category_model_id": "314.2.1",
+      "label_group_model_id": "314.2",
+      "label_default_visible": "true"
     },
     {
       "name": "Cstar_5MQ0_PPT",
@@ -225,7 +245,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "polypyrimidine_tract",
-      "color": "#303030"
+      "color": "#303030",
+      "label_model_id": "314.2.1.6",
+      "label_category_model_id": "314.2.1",
+      "label_group_model_id": "314.2",
+      "label_default_visible": "true"
     },
     {
       "name": "Cstar_5MQ0_5SS",
@@ -239,7 +263,11 @@
       "group_key": "pre_mRNA_features",
       "kind": "rna_feature",
       "feature": "five_prime_splice_site",
-      "color": "#303030"
+      "color": "#303030",
+      "label_model_id": "314.2.1.7",
+      "label_category_model_id": "314.2.1",
+      "label_group_model_id": "314.2",
+      "label_default_visible": "true"
     }
   ]
 }

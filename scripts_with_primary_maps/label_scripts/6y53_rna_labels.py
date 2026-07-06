@@ -190,10 +190,15 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#350.1/2:71",
       "category_key": "internal_stem_loops",
+      "category_model_id": "350.2.1",
       "category_name": "internal stem loops",
       "color": "#167A38",
+      "default_visible": false,
+      "feature": "U2_stem_IIa",
       "index": 1,
+      "label_model_id": "350.2.1.1",
       "model_name": "label_01_U2_stem_IIa_res_69_73_81_82",
+      "selector_name": "U2_snRNP_6Y53_U2_stem_IIa",
       "text": "U2 stem IIa (res. 69-73;81-82)"
     }
   ],
