@@ -84,12 +84,15 @@
     .compare-toggle { border:1px solid var(--line); border-radius:6px; background:#fff; color:var(--ink); padding:3px 7px; font-size:12px; }
     .compare-toggle.active { background:#eaf4ff; border-color:#9fc6ef; color:#0b5cab; font-weight:700; }
     .badge-row { display:flex; flex-wrap:wrap; gap:5px; align-items:center; }
-    .filter-chips, .quick-filters { display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
+    .filter-chips, .quick-filters, .rna-feature-results { display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
     .filter-chip, .quick-filter { border:1px solid var(--line); border-radius:999px; background:#fff; color:var(--ink); padding:4px 9px; font-size:12px; min-height:26px; }
     .filter-chip { background:#eef6ff; border-color:#b8d7f4; color:#0b5cab; }
     .quick-filter.active { background:#e7f6ee; border-color:#acd9bf; color:var(--good); font-weight:700; }
     .rna-badge-cell { min-width:112px; }
-    .rna-feature-picker { display:grid; grid-template-columns:minmax(180px,.9fr) minmax(240px,1.1fr); gap:10px; align-items:end; margin-bottom:10px; }
+    .rna-feature-picker { display:grid; grid-template-columns:minmax(240px,560px) minmax(0,1fr); gap:10px; align-items:end; margin-bottom:10px; }
+    .rna-feature-results { max-height:124px; overflow:auto; padding:2px 0 10px; }
+    .rna-feature-result { border:1px solid var(--line); border-radius:999px; background:#fff; color:var(--ink); min-height:28px; padding:4px 10px; font:inherit; font-size:12px; cursor:pointer; max-width:260px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .rna-feature-result.active { background:#eef6ff; border-color:#9fc6ef; color:#0b5cab; font-weight:700; }
     details.detail-section { border:1px solid var(--line); border-radius:8px; background:#fff; margin-top:12px; }
     details.detail-section > summary { cursor:pointer; padding:9px 11px; font-weight:760; color:var(--ink); border-bottom:1px solid transparent; }
     details.detail-section[open] > summary { border-bottom-color:var(--line); }
@@ -145,9 +148,9 @@
         <section class="stats" id="stats"></section>
         <section class="panel"><div class="panel-head"><h2>Splicing Cycle</h2><span class="subtle">click a state to filter structures</span></div><div class="panel-body"><div class="cycle" id="cycle"></div></div></section>
         <section class="panel"><div class="panel-head"><h2>RNA Feature Filters</h2><span class="subtle">search annotated feature names or use presets</span></div><div class="panel-body"><div class="rna-feature-picker">
-          <div class="field"><label for="rnaFeatureQuickSearch">Find RNA Feature</label><input id="rnaFeatureQuickSearch" type="search" placeholder="5SS, branch, exon, U6"></div>
-          <div class="field"><label for="rnaFeatureQuickSelect">Filter By Feature</label><select id="rnaFeatureQuickSelect"></select></div>
-        </div><div class="quick-filters" id="rnaQuickFilters">
+          <div class="field"><label for="rnaFeatureQuickSearch">Search Or Choose RNA Feature</label><input id="rnaFeatureQuickSearch" type="search" placeholder="5SS, branch, exon, U6"></div>
+          <div class="subtle">Matching feature filters appear below; click one to apply it.</div>
+        </div><div class="rna-feature-results" id="rnaFeatureQuickResults"></div><div class="quick-filters" id="rnaQuickFilters">
           <button type="button" class="quick-filter" data-rna-feature="substrate">Substrate annotated</button>
           <button type="button" class="quick-filter" data-rna-feature="snrna">snRNA annotated</button>
           <button type="button" class="quick-filter" data-rna-feature="feature:exon_3">3' exon</button>
@@ -206,7 +209,7 @@
     let rnaFeatureConsistency = [];
     const state = { activeTab:"structures", query:"", mode:"all", family:"all", species:"all", components:"all", rnaFeature:"all", rnaFeatureSearch:"", rnaDefinitionQuery:"", proteinComplex:"all", sortBy:"pathway", selected: records[0]?.pdb_id || "", compareIds: [] };
     const els = {};
-    for (const id of ["search","searchMode","family","species","componentFilter","rnaFeatureFilter","rnaFeatureQuickSearch","rnaFeatureQuickSelect","rnaQuickFilters","activeFilterChips","rnaDefinitionSearch","rnaDefinitionRows","cycleStateGuide","rnaElementGuide","proteinComplexGuide","proteinComplexFilter","sortBy","reset","tabs","structuresView","rnaFeaturesView","cycleStatesView","rnaElementsView","complexesView","proteinsView","documentationView","helpView","stats","cycle","rows","detail","tableCount","resultSubtitle","selectedId","proteinRows","proteinCount"]) els[id] = document.getElementById(id);
+    for (const id of ["search","searchMode","family","species","componentFilter","rnaFeatureFilter","rnaFeatureQuickSearch","rnaFeatureQuickResults","rnaQuickFilters","activeFilterChips","rnaDefinitionSearch","rnaDefinitionRows","cycleStateGuide","rnaElementGuide","proteinComplexGuide","proteinComplexFilter","sortBy","reset","tabs","structuresView","rnaFeaturesView","cycleStatesView","rnaElementsView","complexesView","proteinsView","documentationView","helpView","stats","cycle","rows","detail","tableCount","resultSubtitle","selectedId","proteinRows","proteinCount"]) els[id] = document.getElementById(id);
     const STAGES = ["U2 snRNP","E complex","A complex","U5/tri-snRNP","pre-B","B","pre-Bact","Bact","B*","C","C*","P","ILS/disassembly","U5 recycling"];
     const ORDER = Object.fromEntries(STAGES.map((s,i)=>[s,i]));
     const NODE_POS = [[250,70],[105,180],[150,315],[320,265],[290,420],[455,430],[610,420],[750,385],[880,330],[980,255],[1040,165],[1000,75],[720,75],[430,75]];
@@ -250,7 +253,8 @@
       els.species.addEventListener("change",()=>{state.species=els.species.value; render();});
       els.rnaFeatureFilter.addEventListener("change",()=>{setRnaFeatureFilter(els.rnaFeatureFilter.value);});
       els.rnaFeatureQuickSearch.addEventListener("input",()=>{state.rnaFeatureSearch=els.rnaFeatureQuickSearch.value; renderRnaFeatureQuickSelect();});
-      els.rnaFeatureQuickSelect.addEventListener("change",()=>{setRnaFeatureFilter(els.rnaFeatureQuickSelect.value);});
+      els.rnaFeatureQuickSearch.addEventListener("keydown",event=>{if(event.key!=="Enter")return; const match=rnaFeatureOptionData(state.rnaFeatureSearch).find(x=>x.value!=="all"); if(!match)return; event.preventDefault(); setRnaFeatureFilter(match.value);});
+      els.rnaFeatureQuickResults.addEventListener("click",event=>{const b=event.target.closest("button[data-rna-feature-value]"); if(!b)return; setRnaFeatureFilter(b.dataset.rnaFeatureValue);});
       els.rnaQuickFilters.addEventListener("click",event=>{const b=event.target.closest("button[data-rna-feature]"); if(!b)return; setRnaFeatureFilter(state.rnaFeature===b.dataset.rnaFeature ? "all" : b.dataset.rnaFeature);});
       els.activeFilterChips.addEventListener("click",event=>{const b=event.target.closest("button[data-clear-filter]"); if(!b)return; clearFilter(b.dataset.clearFilter);});
       els.rnaDefinitionSearch.addEventListener("input",()=>{state.rnaDefinitionQuery=els.rnaDefinitionSearch.value.trim().toLowerCase(); renderRnaFeatureDefinitions();});
@@ -301,16 +305,20 @@
     }
     function renderRnaFeatureQuickSelect(){
       let options=rnaFeatureOptionData(state.rnaFeatureSearch);
-      if(!options.some(x=>x.value===state.rnaFeature)){
+      if(state.rnaFeature!=="all" && !options.some(x=>x.value===state.rnaFeature)){
         const current=rnaFeatureOptionData().find(x=>x.value===state.rnaFeature);
         if(current) options=[current,...options];
       }
-      els.rnaFeatureQuickSelect.innerHTML=options.map(x=>`<option value="${attr(x.value)}">${esc(x.label)}</option>`).join("");
-      els.rnaFeatureQuickSelect.value=state.rnaFeature;
+      const shown=options.slice(0,28);
+      els.rnaFeatureQuickResults.innerHTML = shown.length ? shown.map(x=>`<button type="button" class="rna-feature-result ${x.value===state.rnaFeature?"active":""}" data-rna-feature-value="${attr(x.value)}" title="${attr(x.label)}">${esc(x.label)}</button>`).join("") + (options.length>shown.length?`<span class="subtle">+${options.length-shown.length} more matches</span>`:"") : '<span class="subtle">No matching RNA feature filters.</span>';
     }
+    function rnaFeatureOptionByValue(value){ return rnaFeatureOptionData().find(x=>x.value===value); }
     function setRnaFeatureFilter(value){
       state.rnaFeature = value || "all";
       els.rnaFeatureFilter.value = state.rnaFeature;
+      const selected = rnaFeatureOptionByValue(state.rnaFeature);
+      state.rnaFeatureSearch = state.rnaFeature === "all" ? "" : (selected?.label || "");
+      els.rnaFeatureQuickSearch.value = state.rnaFeatureSearch;
       renderRnaFeatureQuickSelect();
       render();
     }
@@ -319,7 +327,7 @@
       else if(name==="family"){ state.family="all"; els.family.value="all"; }
       else if(name==="species"){ state.species="all"; els.species.value="all"; }
       else if(name==="components"){ state.components="all"; for(const x of els.componentFilter.querySelectorAll("button")) x.classList.toggle("active",x.dataset.value==="all"); }
-      else if(name==="rnaFeature"){ state.rnaFeature="all"; els.rnaFeatureFilter.value="all"; renderRnaFeatureQuickSelect(); }
+      else if(name==="rnaFeature"){ state.rnaFeature="all"; state.rnaFeatureSearch=""; els.rnaFeatureFilter.value="all"; els.rnaFeatureQuickSearch.value=""; renderRnaFeatureQuickSelect(); }
       render();
     }
     function rnaFeatureLabel(value){
