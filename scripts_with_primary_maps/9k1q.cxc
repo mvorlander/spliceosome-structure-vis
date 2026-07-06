@@ -53,5 +53,9 @@ color #421.1/H #303030
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 26-34; 31-52, component, medium confidence, validation not_applicable
 name U2_snRNP_9K1Q_substrate #421.1/G:31-52|#421.1/H:26-34
+# Searchable named selection browser.
+# In GUI ChimeraX this opens a small panel for selecting and zooming named selections.
+# Fetch and open the self-contained named selection browser from GitHub.
+open https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/selection_browser_scripts/9k1q_selection_browser.py
 view
 show nucleic

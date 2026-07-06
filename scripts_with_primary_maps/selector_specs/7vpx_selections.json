@@ -1,0 +1,87 @@
+{
+  "pdb_id": "7vpx",
+  "structure_model_id": "373.1",
+  "structure_group_id": "373",
+  "selectors": [
+    {
+      "name": "E_complex_7VPX_5exon",
+      "label": "5' exon",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "5' exon: residues -1-0; 27-41, five-ss-inference, medium confidence, validation not_applicable",
+      "atomspec": "#373.1/I:27-41|#373.1/K:-1-0"
+    },
+    {
+      "name": "E_complex_7VPX_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues -1-8; 27-41, component, medium confidence, validation not_applicable",
+      "atomspec": "#373.1/I:27-41|#373.1/K:-1-8"
+    },
+    {
+      "name": "E_complex_7VPX_5SS",
+      "label": "5' splice site",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "5' splice site: residues 1-6, sequence-motif, medium confidence, validation uncertain uncertain validation",
+      "atomspec": "#373.1/K:1-6"
+    },
+    {
+      "name": "E_complex_7VPX_intron",
+      "label": "intron from 5' splice site",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "intron from 5' splice site: residues 1-8, five-ss-inference, low confidence, validation not_applicable",
+      "atomspec": "#373.1/K:1-8"
+    },
+    {
+      "name": "E_complex_7VPX_U1_5_5SS_recognition",
+      "label": "U1 snRNA 5' splice-site recognition region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U1 snRNA 5' splice-site recognition region: residues 1-10, review-region, medium confidence",
+      "atomspec": "#373.1/L:1-10"
+    },
+    {
+      "name": "E_complex_7VPX_U1_SL1",
+      "label": "U1 snRNA stem-loop 1",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U1 snRNA stem-loop 1: residues 11-45, review-region, low confidence",
+      "atomspec": "#373.1/L:11-45"
+    },
+    {
+      "name": "E_complex_7VPX_U1_SL2",
+      "label": "U1 snRNA stem-loop 2",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U1 snRNA stem-loop 2: residues 46-95, review-region, low confidence",
+      "atomspec": "#373.1/L:46-95"
+    },
+    {
+      "name": "E_complex_7VPX_U2_branchpoint_pairing_region",
+      "label": "U2 snRNA branchpoint pairing region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA branchpoint pairing region: residues 34-41, sequence-motif-neighborhood, medium confidence",
+      "atomspec": "#373.1/H:34-41"
+    },
+    {
+      "name": "E_complex_7VPX_U2_stem_IIa",
+      "label": "U2 snRNA stem IIa",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA stem IIa: residues 46-65;69-73;81-82, review-region, low confidence",
+      "atomspec": "#373.1/H:46-65,69-73,81-82"
+    },
+    {
+      "name": "E_complex_7VPX_U2_Sm_site",
+      "label": "U2 snRNA Sm site",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA Sm site: residues 99-105, sequence-motif, medium confidence",
+      "atomspec": "#373.1/H:99-105"
+    }
+  ]
+}

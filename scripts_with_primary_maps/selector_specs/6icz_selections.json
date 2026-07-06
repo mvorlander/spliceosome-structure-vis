@@ -1,0 +1,135 @@
+{
+  "pdb_id": "6icz",
+  "structure_model_id": "337.1",
+  "structure_group_id": "337",
+  "selectors": [
+    {
+      "name": "P_6ICZ_5exon",
+      "label": "5' exon",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "5' exon: residues -12--1, splice-site-inference, medium confidence, validation not_applicable",
+      "atomspec": "#337.1/G:-12--1"
+    },
+    {
+      "name": "P_6ICZ_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues -12--1;1-31;116-150;162-167, component, medium confidence, validation not_applicable",
+      "atomspec": "#337.1/G:-12--1,1-31,116-150,162-167"
+    },
+    {
+      "name": "P_6ICZ_5SS",
+      "label": "5' splice site",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "5' splice site: residues 1-6, sequence-motif, medium confidence, validation uncertain uncertain validation",
+      "atomspec": "#337.1/G:1-6"
+    },
+    {
+      "name": "P_6ICZ_intron",
+      "label": "intron",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "intron: residues 1-31;116-150;162-167, splice-site-inference, medium confidence, validation not_applicable",
+      "atomspec": "#337.1/G:1-31,116-150,162-167"
+    },
+    {
+      "name": "P_6ICZ_PPT",
+      "label": "polypyrimidine tract",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "polypyrimidine tract: residues 150;162-163, sequence-motif, medium confidence, validation validated",
+      "atomspec": "#337.1/G:150,162-163"
+    },
+    {
+      "name": "P_6ICZ_U2_U6_helix_I_partner",
+      "label": "U2 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence",
+      "atomspec": "#337.1/H:26-30"
+    },
+    {
+      "name": "P_6ICZ_U2_branchpoint_pairing_region",
+      "label": "U2 snRNA branchpoint pairing region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence",
+      "atomspec": "#337.1/H:32-41"
+    },
+    {
+      "name": "P_6ICZ_U2_stem_IIa",
+      "label": "U2 snRNA stem IIa",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA stem IIa: residues 46-47;54-60;67-75;77-80, review-region, low confidence",
+      "atomspec": "#337.1/H:46-47,54-60,67-75,77-80"
+    },
+    {
+      "name": "P_6ICZ_U2_Sm_site",
+      "label": "U2 snRNA Sm site",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA Sm site: residues 99-105, sequence-motif, medium confidence",
+      "atomspec": "#337.1/H:99-105"
+    },
+    {
+      "name": "P_6ICZ_U5_loop_I",
+      "label": "U5 snRNA loop I",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence",
+      "atomspec": "#337.1/B:38-42"
+    },
+    {
+      "name": "P_6ICZ_U6_5_terminal_stem_loop",
+      "label": "U6 snRNA 5' terminal stem-loop",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA 5' terminal stem-loop: residues 1-30, reference-alignment, high confidence",
+      "atomspec": "#337.1/F:1-30"
+    },
+    {
+      "name": "P_6ICZ_U6_U2_helix_I_partner",
+      "label": "U6 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA U2/U6 helix I partner: residues 35-60, motif-neighborhood, medium confidence",
+      "atomspec": "#337.1/F:35-60"
+    },
+    {
+      "name": "P_6ICZ_U6_5SS_upstream_contact",
+      "label": "U6 snRNA 5' splice-site upstream contact",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA 5' splice-site upstream contact: residues 38-49, motif-neighborhood, medium confidence",
+      "atomspec": "#337.1/F:38-49"
+    },
+    {
+      "name": "P_6ICZ_U6_ACAGAGA_box",
+      "label": "U6 snRNA ACAGAGA box",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA ACAGAGA box: residues 41-47, sequence-motif, high confidence",
+      "atomspec": "#337.1/F:41-47"
+    },
+    {
+      "name": "P_6ICZ_U6_ISL",
+      "label": "U6 snRNA internal stem-loop",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA internal stem-loop: residues 79-97, motif-neighborhood, low confidence",
+      "atomspec": "#337.1/F:79-97"
+    },
+    {
+      "name": "P_6ICZ_U6_AGC_catalytic_triad",
+      "label": "U6 snRNA AGC catalytic triad",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA AGC catalytic triad: residues 92-94, sequence-motif, medium confidence",
+      "atomspec": "#337.1/F:92-94"
+    }
+  ]
+}

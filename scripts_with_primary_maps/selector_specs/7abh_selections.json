@@ -1,0 +1,55 @@
+{
+  "pdb_id": "7abh",
+  "structure_model_id": "357.1",
+  "structure_group_id": "357",
+  "selectors": [
+    {
+      "name": "pre_Bact_7ABH_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues 141-168, component, medium confidence, validation not_applicable",
+      "atomspec": "#357.1/Z:141-168"
+    },
+    {
+      "name": "pre_Bact_7ABH_intron",
+      "label": "intron",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "intron: residues 141-168, splice-site-inference, medium confidence, validation not_applicable",
+      "atomspec": "#357.1/Z:141-168"
+    },
+    {
+      "name": "pre_Bact_7ABH_PPT",
+      "label": "polypyrimidine tract",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "polypyrimidine tract: residues 161-168, sequence-motif, medium confidence, validation validated",
+      "atomspec": "#357.1/Z:161-168"
+    },
+    {
+      "name": "pre_Bact_7ABH_U2_U6_helix_I_partner",
+      "label": "U2 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA U2/U6 helix I partner: residues 29-30, review-region, high confidence",
+      "atomspec": "#357.1/2:29-30"
+    },
+    {
+      "name": "pre_Bact_7ABH_U2_branchpoint_pairing_region",
+      "label": "U2 snRNA branchpoint pairing region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence",
+      "atomspec": "#357.1/2:32-41"
+    },
+    {
+      "name": "pre_Bact_7ABH_U2_stem_IIa",
+      "label": "U2 snRNA stem IIa",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA stem IIa: residues 46-65, review-region, low confidence",
+      "atomspec": "#357.1/2:46-65"
+    }
+  ]
+}

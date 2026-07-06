@@ -1,0 +1,47 @@
+{
+  "pdb_id": "8y7e",
+  "structure_model_id": "417.1",
+  "structure_group_id": "417",
+  "selectors": [
+    {
+      "name": "pre_B_8Y7E_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues 193-222, component, medium confidence, validation not_applicable",
+      "atomspec": "#417.1/A:193-222"
+    },
+    {
+      "name": "pre_B_8Y7E_branch_region",
+      "label": "branch point region",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point region: residues 195-206, network-scored-motif, high confidence, validation validated",
+      "atomspec": "#417.1/A:195-206"
+    },
+    {
+      "name": "pre_B_8Y7E_branch_A",
+      "label": "branch point adenosine",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point adenosine: residues 203, network-scored-motif, high confidence, validation validated",
+      "atomspec": "#417.1/A:203"
+    },
+    {
+      "name": "pre_B_8Y7E_U12_branchpoint_pairing_region",
+      "label": "U12 snRNA branchpoint pairing region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U12 snRNA branchpoint pairing region: residues 16-26, reference-alignment, high confidence",
+      "atomspec": "#417.1/H:16-26"
+    },
+    {
+      "name": "pre_B_8Y7E_U12_Sm_site",
+      "label": "U12 snRNA Sm site",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U12 snRNA Sm site: residues 75-81, sequence-motif, medium confidence",
+      "atomspec": "#417.1/H:75-81"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "pdb_id": "7dvq",
+  "structure_model_id": "361.1",
+  "structure_group_id": "361",
+  "selectors": [
+    {
+      "name": "Bact_7DVQ_5exon",
+      "label": "5' exon",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "5' exon: residues -11-0, five-ss-inference, medium confidence, validation not_applicable",
+      "atomspec": "#361.1/G:-11-0"
+    },
+    {
+      "name": "Bact_7DVQ_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues -11-19;191-222, component, medium confidence, validation not_applicable",
+      "atomspec": "#361.1/G:-11-19,191-222"
+    },
+    {
+      "name": "Bact_7DVQ_5SS",
+      "label": "5' splice site",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "5' splice site: residues 1-9, minor-snrna-basepair, high confidence, validation validated",
+      "atomspec": "#361.1/G:1-9"
+    },
+    {
+      "name": "Bact_7DVQ_intron",
+      "label": "intron from 5' splice site",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "intron from 5' splice site: residues 1-19;191-222, five-ss-inference, medium confidence, validation not_applicable",
+      "atomspec": "#361.1/G:1-19,191-222"
+    },
+    {
+      "name": "Bact_7DVQ_branch_region",
+      "label": "branch point region",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point region: residues 195-206, network-scored-motif, high confidence, validation validated",
+      "atomspec": "#361.1/G:195-206"
+    },
+    {
+      "name": "Bact_7DVQ_branch_A",
+      "label": "branch point adenosine",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point adenosine: residues 203, network-scored-motif, high confidence, validation validated",
+      "atomspec": "#361.1/G:203"
+    },
+    {
+      "name": "Bact_7DVQ_U12_U6atac_helix_I_partner",
+      "label": "U12 snRNA U12/U6atac helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U12 snRNA U12/U6atac helix I partner: residues 2-11, reference-alignment, high confidence",
+      "atomspec": "#361.1/H:2-11"
+    },
+    {
+      "name": "Bact_7DVQ_U12_branchpoint_pairing_region",
+      "label": "U12 snRNA branchpoint pairing region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U12 snRNA branchpoint pairing region: residues 16-26, reference-alignment, high confidence",
+      "atomspec": "#361.1/H:16-26"
+    },
+    {
+      "name": "Bact_7DVQ_U12_Sm_site",
+      "label": "U12 snRNA Sm site",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U12 snRNA Sm site: residues 75-81, sequence-motif, medium confidence",
+      "atomspec": "#361.1/H:75-81"
+    },
+    {
+      "name": "Bact_7DVQ_U5_loop_I",
+      "label": "U5 snRNA loop I",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence",
+      "atomspec": "#361.1/B:38-42"
+    },
+    {
+      "name": "Bact_7DVQ_U6atac_5_5SS_recognition",
+      "label": "U6atac snRNA 5' splice-site recognition region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6atac snRNA 5' splice-site recognition region: residues 11-17, reference-alignment, high confidence",
+      "atomspec": "#361.1/F:11-17"
+    },
+    {
+      "name": "Bact_7DVQ_U6atac_U12_helix_I_partner",
+      "label": "U6atac snRNA U6atac/U12 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6atac snRNA U6atac/U12 helix I partner: residues 23-29, reference-alignment, high confidence",
+      "atomspec": "#361.1/F:23-29"
+    },
+    {
+      "name": "Bact_7DVQ_U6atac_AGC_catalytic_triad",
+      "label": "U6atac snRNA AGC catalytic triad",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6atac snRNA AGC catalytic triad: residues 26-28, reference-alignment, high confidence",
+      "atomspec": "#361.1/F:26-28"
+    },
+    {
+      "name": "Bact_7DVQ_U6atac_ISL",
+      "label": "U6atac snRNA internal stem-loop",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6atac snRNA internal stem-loop: residues 52-56;61-65, reference-alignment, medium confidence",
+      "atomspec": "#361.1/F:52-56,61-65"
+    }
+  ]
+}

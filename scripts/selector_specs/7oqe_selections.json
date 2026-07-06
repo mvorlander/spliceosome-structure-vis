@@ -1,0 +1,79 @@
+{
+  "pdb_id": "7oqe",
+  "structure_model_id": "366.1",
+  "structure_group_id": "366",
+  "selectors": [
+    {
+      "name": "E_complex_7OQE_5exon",
+      "label": "5' exon",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "5' exon: residues -2,-1,1,2,3,4,5,6,7,8, splice-site-inference, medium confidence, validation not_applicable",
+      "atomspec": "#366.1/I:-2,-1,1,2,3,4,5,6,7,8"
+    },
+    {
+      "name": "E_complex_7OQE_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues -2,-1,1,2,3,4,5,6,7,8;103-128;130-156;246-268, component, medium confidence, validation not_applicable",
+      "atomspec": "#366.1/I:-2,-1,1,2,3,4,5,6,7,8,103-128,130-156,246-268"
+    },
+    {
+      "name": "E_complex_7OQE_intron",
+      "label": "intron",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "intron: residues 103-128;130-156;246-268, splice-site-inference, medium confidence, validation not_applicable",
+      "atomspec": "#366.1/I:103-128,130-156,246-268"
+    },
+    {
+      "name": "E_complex_7OQE_U1_5_5SS_recognition",
+      "label": "U1 snRNA 5' splice-site recognition region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U1 snRNA 5' splice-site recognition region: residues 1-10, review-region, medium confidence",
+      "atomspec": "#366.1/1:1-10"
+    },
+    {
+      "name": "E_complex_7OQE_U1_SL1",
+      "label": "U1 snRNA stem-loop 1",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U1 snRNA stem-loop 1: residues 11-26;34-45, review-region, low confidence",
+      "atomspec": "#366.1/1:11-26,34-45"
+    },
+    {
+      "name": "E_complex_7OQE_U1_SL2",
+      "label": "U1 snRNA stem-loop 2",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U1 snRNA stem-loop 2: residues 46-95, review-region, low confidence",
+      "atomspec": "#366.1/1:46-95"
+    },
+    {
+      "name": "E_complex_7OQE_U1_Sm_site",
+      "label": "U1 snRNA Sm site",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U1 snRNA Sm site: residues 224-230; 241-247; 553-559, sequence-motif, medium confidence",
+      "atomspec": "#366.1/1:224-230|#366.1/1:241-247|#366.1/1:553-559"
+    },
+    {
+      "name": "E_complex_7OQE_U2_branchpoint_pairing_region",
+      "label": "U2 snRNA branchpoint pairing region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence",
+      "atomspec": "#366.1/2:33-42"
+    },
+    {
+      "name": "E_complex_7OQE_U2_stem_IIa",
+      "label": "U2 snRNA stem IIa",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA stem IIa: residues 46-74;78-80, review-region, low confidence",
+      "atomspec": "#366.1/2:46-74,78-80"
+    }
+  ]
+}

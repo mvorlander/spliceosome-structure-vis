@@ -1,0 +1,143 @@
+{
+  "pdb_id": "7qtt",
+  "structure_model_id": "372.1",
+  "structure_group_id": "372",
+  "selectors": [
+    {
+      "name": "Bact_7QTT_5exon",
+      "label": "5' exon",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "5' exon: residues -14--1, splice-site-inference, medium confidence, validation not_applicable",
+      "atomspec": "#372.1/g:-14--1"
+    },
+    {
+      "name": "Bact_7QTT_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues -14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27;130-164, component, medium confidence, validation not_applicable",
+      "atomspec": "#372.1/g:-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,130-164"
+    },
+    {
+      "name": "Bact_7QTT_5SS",
+      "label": "5' splice site",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "5' splice site: residues 1-6, sequence-motif, medium confidence, validation uncertain uncertain validation",
+      "atomspec": "#372.1/g:1-6"
+    },
+    {
+      "name": "Bact_7QTT_intron",
+      "label": "intron",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "intron: residues 1-27;130-164, splice-site-inference, medium confidence, validation not_applicable",
+      "atomspec": "#372.1/g:1-27,130-164"
+    },
+    {
+      "name": "Bact_7QTT_branch_region",
+      "label": "branch point region",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point region: residues 138-146, network-scored-motif, high confidence, validation validated",
+      "atomspec": "#372.1/g:138-146"
+    },
+    {
+      "name": "Bact_7QTT_branch_A",
+      "label": "branch point adenosine",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point adenosine: residues 144, network-scored-motif, high confidence, validation validated",
+      "atomspec": "#372.1/g:144"
+    },
+    {
+      "name": "Bact_7QTT_U2_U6_helix_I_partner",
+      "label": "U2 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence",
+      "atomspec": "#372.1/f:26-30"
+    },
+    {
+      "name": "Bact_7QTT_U2_branchpoint_pairing_region",
+      "label": "U2 snRNA branchpoint pairing region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence",
+      "atomspec": "#372.1/f:32-41"
+    },
+    {
+      "name": "Bact_7QTT_U2_stem_IIa",
+      "label": "U2 snRNA stem IIa",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA stem IIa: residues 46-65;68-74;78-80, review-region, low confidence",
+      "atomspec": "#372.1/f:46-65,68-74,78-80"
+    },
+    {
+      "name": "Bact_7QTT_U5_loop_I",
+      "label": "U5 snRNA loop I",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence",
+      "atomspec": "#372.1/e:38-42"
+    },
+    {
+      "name": "Bact_7QTT_U6_5_terminal_stem_loop",
+      "label": "U6 snRNA 5' terminal stem-loop",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA 5' terminal stem-loop: residues 1-30, reference-alignment, high confidence",
+      "atomspec": "#372.1/d:1-30"
+    },
+    {
+      "name": "Bact_7QTT_U6_U2_helix_I_partner",
+      "label": "U6 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA U2/U6 helix I partner: residues 35-60, motif-neighborhood, medium confidence",
+      "atomspec": "#372.1/d:35-60"
+    },
+    {
+      "name": "Bact_7QTT_U6_5SS_upstream_contact",
+      "label": "U6 snRNA 5' splice-site upstream contact",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA 5' splice-site upstream contact: residues 38-49, motif-neighborhood, medium confidence",
+      "atomspec": "#372.1/d:38-49"
+    },
+    {
+      "name": "Bact_7QTT_U6_ACAGAGA_box",
+      "label": "U6 snRNA ACAGAGA box",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA ACAGAGA box: residues 41-47, sequence-motif, high confidence",
+      "atomspec": "#372.1/d:41-47"
+    },
+    {
+      "name": "Bact_7QTT_U6_ISL",
+      "label": "U6 snRNA internal stem-loop",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA internal stem-loop: residues 79-81;86-97, motif-neighborhood, low confidence",
+      "atomspec": "#372.1/d:79-81,86-97"
+    },
+    {
+      "name": "Bact_7QTT_U6_AGC_catalytic_triad",
+      "label": "U6 snRNA AGC catalytic triad",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA AGC catalytic triad: residues 92-94, sequence-motif, medium confidence",
+      "atomspec": "#372.1/d:92-94"
+    },
+    {
+      "name": "Bact_7QTT_U6_LSm_site",
+      "label": "U6 snRNA LSm site",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA LSm site: residues 97, terminal-region, low confidence",
+      "atomspec": "#372.1/d:97"
+    }
+  ]
+}

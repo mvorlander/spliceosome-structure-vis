@@ -1,0 +1,95 @@
+{
+  "pdb_id": "9l5r",
+  "structure_model_id": "425.1",
+  "structure_group_id": "425",
+  "selectors": [
+    {
+      "name": "ILS_disassembly_9L5R_U2_U6_helix_I_partner",
+      "label": "U2 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence",
+      "atomspec": "#425.1/2:26-30"
+    },
+    {
+      "name": "ILS_disassembly_9L5R_U2_branchpoint_pairing_region",
+      "label": "U2 snRNA branchpoint pairing region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA branchpoint pairing region: residues 31-40, sequence-motif-neighborhood, medium confidence",
+      "atomspec": "#425.1/2:31-40"
+    },
+    {
+      "name": "ILS_disassembly_9L5R_U2_stem_IIa",
+      "label": "U2 snRNA stem IIa",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA stem IIa: residues 52-60, review-region, low confidence",
+      "atomspec": "#425.1/2:52-60"
+    },
+    {
+      "name": "ILS_disassembly_9L5R_U2_Sm_site",
+      "label": "U2 snRNA Sm site",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA Sm site: residues 98-104, sequence-motif, medium confidence",
+      "atomspec": "#425.1/2:98-104"
+    },
+    {
+      "name": "ILS_disassembly_9L5R_U5_loop_I",
+      "label": "U5 snRNA loop I",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U5 snRNA loop I: residues 37-41, sequence-motif, medium confidence",
+      "atomspec": "#425.1/5:37-41"
+    },
+    {
+      "name": "ILS_disassembly_9L5R_U6_U2_helix_I_partner",
+      "label": "U6 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA U2/U6 helix I partner: residues 28-53, motif-neighborhood, medium confidence",
+      "atomspec": "#425.1/6:28-53"
+    },
+    {
+      "name": "ILS_disassembly_9L5R_U6_5SS_upstream_contact",
+      "label": "U6 snRNA 5' splice-site upstream contact",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA 5' splice-site upstream contact: residues 31-42, motif-neighborhood, medium confidence",
+      "atomspec": "#425.1/6:31-42"
+    },
+    {
+      "name": "ILS_disassembly_9L5R_U6_ISL",
+      "label": "U6 snRNA internal stem-loop",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA internal stem-loop: residues 33-60, motif-neighborhood, low confidence",
+      "atomspec": "#425.1/6:33-60"
+    },
+    {
+      "name": "ILS_disassembly_9L5R_U6_ACAGAGA_box",
+      "label": "U6 snRNA ACAGAGA box",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA ACAGAGA box: residues 34-40, sequence-motif, high confidence",
+      "atomspec": "#425.1/6:34-40"
+    },
+    {
+      "name": "ILS_disassembly_9L5R_U6_AGC_catalytic_triad",
+      "label": "U6 snRNA AGC catalytic triad",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA AGC catalytic triad: residues 46-48, sequence-motif, medium confidence",
+      "atomspec": "#425.1/6:46-48"
+    },
+    {
+      "name": "ILS_disassembly_9L5R_U6_LSm_site",
+      "label": "U6 snRNA LSm site",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA LSm site: residues 92-98, terminal-region, low confidence",
+      "atomspec": "#425.1/6:92-98"
+    }
+  ]
+}

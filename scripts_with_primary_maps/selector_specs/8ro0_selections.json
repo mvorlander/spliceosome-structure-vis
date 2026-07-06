@@ -1,0 +1,87 @@
+{
+  "pdb_id": "8ro0",
+  "structure_model_id": "413.1",
+  "structure_group_id": "413",
+  "selectors": [
+    {
+      "name": "ILS_disassembly_8RO0_intron",
+      "label": "intron",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "intron: residues 10-28, component-name, high confidence, validation not_applicable",
+      "atomspec": "#413.1/In:10-28"
+    },
+    {
+      "name": "ILS_disassembly_8RO0_intron_lariat",
+      "label": "intron lariat",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "intron lariat: residues 10-28, component-name, high confidence, validation not_applicable",
+      "atomspec": "#413.1/In:10-28"
+    },
+    {
+      "name": "ILS_disassembly_8RO0_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues 10-28, component, medium confidence, validation not_applicable",
+      "atomspec": "#413.1/In:10-28"
+    },
+    {
+      "name": "ILS_disassembly_8RO0_U5_loop_I",
+      "label": "U5 snRNA loop I",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U5 snRNA loop I: residues 41-45, sequence-motif, medium confidence",
+      "atomspec": "#413.1/5:41-45"
+    },
+    {
+      "name": "ILS_disassembly_8RO0_U5_Sm_site",
+      "label": "U5 snRNA Sm site",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U5 snRNA Sm site: residues 93-99, sequence-motif, medium confidence",
+      "atomspec": "#413.1/5:93-99"
+    },
+    {
+      "name": "ILS_disassembly_8RO0_U6_U2_helix_I_partner",
+      "label": "U6 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA U2/U6 helix I partner: residues 30-55, motif-neighborhood, medium confidence",
+      "atomspec": "#413.1/6:30-55"
+    },
+    {
+      "name": "ILS_disassembly_8RO0_U6_5SS_upstream_contact",
+      "label": "U6 snRNA 5' splice-site upstream contact",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA 5' splice-site upstream contact: residues 33-44, motif-neighborhood, medium confidence",
+      "atomspec": "#413.1/6:33-44"
+    },
+    {
+      "name": "ILS_disassembly_8RO0_U6_ACAGAGA_box",
+      "label": "U6 snRNA ACAGAGA box",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA ACAGAGA box: residues 36-42, sequence-motif, high confidence",
+      "atomspec": "#413.1/6:36-42"
+    },
+    {
+      "name": "ILS_disassembly_8RO0_U6_ISL",
+      "label": "U6 snRNA internal stem-loop",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA internal stem-loop: residues 74-90, motif-neighborhood, low confidence",
+      "atomspec": "#413.1/6:74-90"
+    },
+    {
+      "name": "ILS_disassembly_8RO0_U6_AGC_catalytic_triad",
+      "label": "U6 snRNA AGC catalytic triad",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA AGC catalytic triad: residues 87-89, sequence-motif, medium confidence",
+      "atomspec": "#413.1/6:87-89"
+    }
+  ]
+}

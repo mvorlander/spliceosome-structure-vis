@@ -1,0 +1,63 @@
+{
+  "pdb_id": "3jb9",
+  "structure_model_id": "301.1",
+  "structure_group_id": "301",
+  "selectors": [
+    {
+      "name": "ILS_disassembly_3JB9_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues 100-107; 492-504, component, medium confidence, validation not_applicable",
+      "atomspec": "#301.1/O:100-107|#301.1/Q:492-504"
+    },
+    {
+      "name": "ILS_disassembly_3JB9_U2_U6_helix_I_partner",
+      "label": "U2 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence",
+      "atomspec": "#301.1/P:26-30"
+    },
+    {
+      "name": "ILS_disassembly_3JB9_U2_branchpoint_pairing_region",
+      "label": "U2 snRNA branchpoint pairing region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence",
+      "atomspec": "#301.1/P:32-41"
+    },
+    {
+      "name": "ILS_disassembly_3JB9_U5_loop_I",
+      "label": "U5 snRNA loop I",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U5 snRNA loop I: residues 47-51, sequence-motif, medium confidence",
+      "atomspec": "#301.1/C:47-51"
+    },
+    {
+      "name": "ILS_disassembly_3JB9_U6_U2_helix_I_partner",
+      "label": "U6 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA U2/U6 helix I partner: residues 29-54, motif-neighborhood, medium confidence",
+      "atomspec": "#301.1/N:29-54"
+    },
+    {
+      "name": "ILS_disassembly_3JB9_U6_5SS_upstream_contact",
+      "label": "U6 snRNA 5' splice-site upstream contact",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA 5' splice-site upstream contact: residues 32-43, motif-neighborhood, medium confidence",
+      "atomspec": "#301.1/N:32-43"
+    },
+    {
+      "name": "ILS_disassembly_3JB9_U6_ACAGAGA_box",
+      "label": "U6 snRNA ACAGAGA box",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA ACAGAGA box: residues 35-41, sequence-motif, high confidence",
+      "atomspec": "#301.1/N:35-41"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "pdb_id": "6bk8",
+  "structure_model_id": "332.1",
+  "structure_group_id": "332",
+  "selectors": [
+    {
+      "name": "P_6BK8_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues -13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21; 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,501,502,503,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,620,621,622,623,624,625,626,627,628,1001,1002,1003,1004,1005,1006,1007,1008,1110,1111,1112,1113,1114,1115,1116,1117,1118, component, medium confidence, validation not_applicable",
+      "atomspec": "#332.1/e:-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21|#332.1/i:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,501,502,503,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,620,621,622,623,624,625,626,627,628,1001,1002,1003,1004,1005,1006,1007,1008,1110,1111,1112,1113,1114,1115,1116,1117,1118"
+    },
+    {
+      "name": "P_6BK8_branch_region",
+      "label": "branch point region",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point region: residues 507-517, network-scored-motif, high confidence, validation validated",
+      "atomspec": "#332.1/i:507-517"
+    },
+    {
+      "name": "P_6BK8_branch_A",
+      "label": "branch point adenosine",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point adenosine: residues 515, network-scored-motif, high confidence, validation validated",
+      "atomspec": "#332.1/i:515"
+    },
+    {
+      "name": "P_6BK8_PPT",
+      "label": "polypyrimidine tract",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "polypyrimidine tract: residues 518,620,621,622,623,624,625,626,627,628, sequence-motif, medium confidence, validation uncertain uncertain validation",
+      "atomspec": "#332.1/i:518,620,621,622,623,624,625,626,627,628"
+    },
+    {
+      "name": "P_6BK8_3SS",
+      "label": "3' splice site",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "3' splice site: residues 1116-1118, sequence-motif, medium confidence, validation validated",
+      "atomspec": "#332.1/i:1116-1118"
+    },
+    {
+      "name": "P_6BK8_U2_U6_helix_I_partner",
+      "label": "U2 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence",
+      "atomspec": "#332.1/2:26-30"
+    },
+    {
+      "name": "P_6BK8_U2_branchpoint_pairing_region",
+      "label": "U2 snRNA branchpoint pairing region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence",
+      "atomspec": "#332.1/2:33-42"
+    },
+    {
+      "name": "P_6BK8_U2_stem_IIa",
+      "label": "U2 snRNA stem IIa",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA stem IIa: residues 46-47;55-64, review-region, low confidence",
+      "atomspec": "#332.1/2:46-47,55-64"
+    },
+    {
+      "name": "P_6BK8_U5_loop_I",
+      "label": "U5 snRNA loop I",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U5 snRNA loop I: residues 53-55, sequence-motif, medium confidence",
+      "atomspec": "#332.1/5:53-55"
+    },
+    {
+      "name": "P_6BK8_U6_5_terminal_stem_loop",
+      "label": "U6 snRNA 5' terminal stem-loop",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA 5' terminal stem-loop: residues 1-30, reference-alignment, high confidence",
+      "atomspec": "#332.1/6:1-30"
+    },
+    {
+      "name": "P_6BK8_U6_U2_helix_I_partner",
+      "label": "U6 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA U2/U6 helix I partner: residues 41-66, motif-neighborhood, medium confidence",
+      "atomspec": "#332.1/6:41-66"
+    },
+    {
+      "name": "P_6BK8_U6_5SS_upstream_contact",
+      "label": "U6 snRNA 5' splice-site upstream contact",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA 5' splice-site upstream contact: residues 44-55, motif-neighborhood, medium confidence",
+      "atomspec": "#332.1/6:44-55"
+    },
+    {
+      "name": "P_6BK8_U6_ISL",
+      "label": "U6 snRNA internal stem-loop",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA internal stem-loop: residues 46-73, motif-neighborhood, low confidence",
+      "atomspec": "#332.1/6:46-73"
+    },
+    {
+      "name": "P_6BK8_U6_ACAGAGA_box",
+      "label": "U6 snRNA ACAGAGA box",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA ACAGAGA box: residues 47-53, sequence-motif, high confidence",
+      "atomspec": "#332.1/6:47-53"
+    },
+    {
+      "name": "P_6BK8_U6_AGC_catalytic_triad",
+      "label": "U6 snRNA AGC catalytic triad",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA AGC catalytic triad: residues 59-61, sequence-motif, medium confidence",
+      "atomspec": "#332.1/6:59-61"
+    }
+  ]
+}

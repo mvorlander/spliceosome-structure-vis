@@ -1,0 +1,111 @@
+{
+  "pdb_id": "6ff7",
+  "structure_model_id": "335.1",
+  "structure_group_id": "335",
+  "selectors": [
+    {
+      "name": "Bact_6FF7_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues 233-262;380-397, component, medium confidence, validation not_applicable",
+      "atomspec": "#335.1/Z:233-262,380-397"
+    },
+    {
+      "name": "Bact_6FF7_branch_region",
+      "label": "branch point region",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point region: residues 386-395, network-scored-motif, high confidence, validation validated",
+      "atomspec": "#335.1/Z:386-395"
+    },
+    {
+      "name": "Bact_6FF7_branch_A",
+      "label": "branch point adenosine",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point adenosine: residues 394, network-scored-motif, high confidence, validation validated",
+      "atomspec": "#335.1/Z:394"
+    },
+    {
+      "name": "Bact_6FF7_U2_U6_helix_I_partner",
+      "label": "U2 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence",
+      "atomspec": "#335.1/2:26-30"
+    },
+    {
+      "name": "Bact_6FF7_U2_branchpoint_pairing_region",
+      "label": "U2 snRNA branchpoint pairing region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence",
+      "atomspec": "#335.1/2:32-41"
+    },
+    {
+      "name": "Bact_6FF7_U2_stem_IIa",
+      "label": "U2 snRNA stem IIa",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA stem IIa: residues 48-64, review-region, low confidence",
+      "atomspec": "#335.1/2:48-64"
+    },
+    {
+      "name": "Bact_6FF7_U5_loop_I",
+      "label": "U5 snRNA loop I",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence",
+      "atomspec": "#335.1/5:38-42"
+    },
+    {
+      "name": "Bact_6FF7_U6_5_terminal_stem_loop",
+      "label": "U6 snRNA 5' terminal stem-loop",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA 5' terminal stem-loop: residues 1-30, reference-alignment, high confidence",
+      "atomspec": "#335.1/6:1-30"
+    },
+    {
+      "name": "Bact_6FF7_U6_U2_helix_I_partner",
+      "label": "U6 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA U2/U6 helix I partner: residues 35-60, motif-neighborhood, medium confidence",
+      "atomspec": "#335.1/6:35-60"
+    },
+    {
+      "name": "Bact_6FF7_U6_5SS_upstream_contact",
+      "label": "U6 snRNA 5' splice-site upstream contact",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA 5' splice-site upstream contact: residues 38-49, motif-neighborhood, medium confidence",
+      "atomspec": "#335.1/6:38-49"
+    },
+    {
+      "name": "Bact_6FF7_U6_ACAGAGA_box",
+      "label": "U6 snRNA ACAGAGA box",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA ACAGAGA box: residues 41-47, sequence-motif, high confidence",
+      "atomspec": "#335.1/6:41-47"
+    },
+    {
+      "name": "Bact_6FF7_U6_ISL",
+      "label": "U6 snRNA internal stem-loop",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA internal stem-loop: residues 79-95, motif-neighborhood, low confidence",
+      "atomspec": "#335.1/6:79-95"
+    },
+    {
+      "name": "Bact_6FF7_U6_AGC_catalytic_triad",
+      "label": "U6 snRNA AGC catalytic triad",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA AGC catalytic triad: residues 92-94, sequence-motif, medium confidence",
+      "atomspec": "#335.1/6:92-94"
+    }
+  ]
+}

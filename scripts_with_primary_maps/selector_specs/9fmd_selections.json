@@ -1,0 +1,159 @@
+{
+  "pdb_id": "9fmd",
+  "structure_model_id": "419.1",
+  "structure_group_id": "419",
+  "selectors": [
+    {
+      "name": "P_9FMD_5exon",
+      "label": "5' exon",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "5' exon: residues -12--1, auth-residue-numbering, high confidence, validation not_applicable",
+      "atomspec": "#419.1/EX:-12--1"
+    },
+    {
+      "name": "P_9FMD_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues -12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2; 1-21;131-148;165-167, component, medium confidence, validation not_applicable",
+      "atomspec": "#419.1/EX:-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2|#419.1/IN:1-21,131-148,165-167"
+    },
+    {
+      "name": "P_9FMD_3exon",
+      "label": "3' exon",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "3' exon: residues 1-2, auth-residue-numbering, high confidence, validation not_applicable",
+      "atomspec": "#419.1/EX:1-2"
+    },
+    {
+      "name": "P_9FMD_intron",
+      "label": "intron",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "intron: residues 1-21;131-148;165-167, component-name, high confidence, validation not_applicable",
+      "atomspec": "#419.1/IN:1-21,131-148,165-167"
+    },
+    {
+      "name": "P_9FMD_branch_region",
+      "label": "branch point region",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point region: residues 139-145, network-scored-motif, high confidence, validation validated",
+      "atomspec": "#419.1/IN:139-145"
+    },
+    {
+      "name": "P_9FMD_branch_A",
+      "label": "branch point adenosine",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point adenosine: residues 144, network-scored-motif, high confidence, validation validated",
+      "atomspec": "#419.1/IN:144"
+    },
+    {
+      "name": "P_9FMD_3SS",
+      "label": "3' splice site",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "3' splice site: residues 165-167, sequence-motif, medium confidence, validation uncertain uncertain validation",
+      "atomspec": "#419.1/IN:165-167"
+    },
+    {
+      "name": "P_9FMD_U2_U6_helix_I_partner",
+      "label": "U2 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence",
+      "atomspec": "#419.1/2:26-30"
+    },
+    {
+      "name": "P_9FMD_U2_branchpoint_pairing_region",
+      "label": "U2 snRNA branchpoint pairing region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence",
+      "atomspec": "#419.1/2:32-41"
+    },
+    {
+      "name": "P_9FMD_U2_stem_IIa",
+      "label": "U2 snRNA stem IIa",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA stem IIa: residues 46-60, review-region, low confidence",
+      "atomspec": "#419.1/2:46-60"
+    },
+    {
+      "name": "P_9FMD_U2_Sm_site",
+      "label": "U2 snRNA Sm site",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA Sm site: residues 98-104, sequence-motif, medium confidence",
+      "atomspec": "#419.1/2:98-104"
+    },
+    {
+      "name": "P_9FMD_U5_loop_I",
+      "label": "U5 snRNA loop I",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence",
+      "atomspec": "#419.1/5:38-42"
+    },
+    {
+      "name": "P_9FMD_U6_5_terminal_stem_loop",
+      "label": "U6 snRNA 5' terminal stem-loop",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA 5' terminal stem-loop: residues 1-30, reference-alignment, high confidence",
+      "atomspec": "#419.1/6:1-30"
+    },
+    {
+      "name": "P_9FMD_U6_U2_helix_I_partner",
+      "label": "U6 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA U2/U6 helix I partner: residues 35-60, motif-neighborhood, medium confidence",
+      "atomspec": "#419.1/6:35-60"
+    },
+    {
+      "name": "P_9FMD_U6_5SS_upstream_contact",
+      "label": "U6 snRNA 5' splice-site upstream contact",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA 5' splice-site upstream contact: residues 38-49, motif-neighborhood, medium confidence",
+      "atomspec": "#419.1/6:38-49"
+    },
+    {
+      "name": "P_9FMD_U6_ACAGAGA_box",
+      "label": "U6 snRNA ACAGAGA box",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA ACAGAGA box: residues 41-47, sequence-motif, high confidence",
+      "atomspec": "#419.1/6:41-47"
+    },
+    {
+      "name": "P_9FMD_U6_ISL",
+      "label": "U6 snRNA internal stem-loop",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA internal stem-loop: residues 79-97, motif-neighborhood, low confidence",
+      "atomspec": "#419.1/6:79-97"
+    },
+    {
+      "name": "P_9FMD_U6_AGC_catalytic_triad",
+      "label": "U6 snRNA AGC catalytic triad",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA AGC catalytic triad: residues 92-94, sequence-motif, medium confidence",
+      "atomspec": "#419.1/6:92-94"
+    },
+    {
+      "name": "P_9FMD_U6_LSm_site",
+      "label": "U6 snRNA LSm site",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA LSm site: residues 97, terminal-region, low confidence",
+      "atomspec": "#419.1/6:97"
+    }
+  ]
+}

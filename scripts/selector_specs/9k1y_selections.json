@@ -1,0 +1,47 @@
+{
+  "pdb_id": "9k1y",
+  "structure_model_id": "424.1",
+  "structure_group_id": "424",
+  "selectors": [
+    {
+      "name": "U2_snRNP_9K1Y_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues 25-48, component, medium confidence, validation not_applicable",
+      "atomspec": "#424.1/G:25-48"
+    },
+    {
+      "name": "U2_snRNP_9K1Y_branch_region",
+      "label": "branch point region",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point region: residues 28-38, network-scored-motif, high confidence, validation validated",
+      "atomspec": "#424.1/G:28-38"
+    },
+    {
+      "name": "U2_snRNP_9K1Y_branch_A",
+      "label": "branch point adenosine",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point adenosine: residues 36, network-scored-motif, high confidence, validation validated",
+      "atomspec": "#424.1/G:36"
+    },
+    {
+      "name": "U2_snRNP_9K1Y_3SS",
+      "label": "3' splice site",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "3' splice site: residues 39-41, sequence-motif, medium confidence, validation uncertain uncertain validation",
+      "atomspec": "#424.1/G:39-41"
+    },
+    {
+      "name": "U2_snRNP_9K1Y_U2_branchpoint_pairing_region",
+      "label": "U2 snRNA branchpoint pairing region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA branchpoint pairing region: residues 2-11, sequence-motif-neighborhood, medium confidence",
+      "atomspec": "#424.1/H:2-11"
+    }
+  ]
+}

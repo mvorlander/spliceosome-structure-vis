@@ -1,0 +1,47 @@
+{
+  "pdb_id": "5zwn",
+  "structure_model_id": "327.1",
+  "structure_group_id": "327",
+  "selectors": [
+    {
+      "name": "pre_B_5ZWN_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues -9-12, component, medium confidence, validation not_applicable",
+      "atomspec": "#327.1/G:-9-12"
+    },
+    {
+      "name": "pre_B_5ZWN_U1_5_5SS_recognition",
+      "label": "U1 snRNA 5' splice-site recognition region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U1 snRNA 5' splice-site recognition region: residues 1-10, review-region, medium confidence",
+      "atomspec": "#327.1/P:1-10"
+    },
+    {
+      "name": "pre_B_5ZWN_U1_SL1",
+      "label": "U1 snRNA stem-loop 1",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U1 snRNA stem-loop 1: residues 11-25;33-45, review-region, low confidence",
+      "atomspec": "#327.1/P:11-25,33-45"
+    },
+    {
+      "name": "pre_B_5ZWN_U1_SL2",
+      "label": "U1 snRNA stem-loop 2",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U1 snRNA stem-loop 2: residues 46-95, review-region, low confidence",
+      "atomspec": "#327.1/P:46-95"
+    },
+    {
+      "name": "pre_B_5ZWN_U1_Sm_site",
+      "label": "U1 snRNA Sm site",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U1 snRNA Sm site: residues 228-230; 241-247; 553-559, sequence-motif, medium confidence",
+      "atomspec": "#327.1/P:228-230|#327.1/P:241-247|#327.1/P:553-559"
+    }
+  ]
+}

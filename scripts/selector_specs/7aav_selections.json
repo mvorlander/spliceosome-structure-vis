@@ -1,0 +1,87 @@
+{
+  "pdb_id": "7aav",
+  "structure_model_id": "354.1",
+  "structure_group_id": "354",
+  "selectors": [
+    {
+      "name": "pre_Bact_7AAV_5exon",
+      "label": "5' exon",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "5' exon: residues 50-58, splice-site-inference, medium confidence, validation not_applicable",
+      "atomspec": "#354.1/Z:50-58"
+    },
+    {
+      "name": "pre_Bact_7AAV_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues 50-78, component, medium confidence, validation not_applicable",
+      "atomspec": "#354.1/Z:50-78"
+    },
+    {
+      "name": "pre_Bact_7AAV_5SS",
+      "label": "5' splice site",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "5' splice site: residues 59-64, sequence-motif, medium confidence, validation uncertain uncertain validation",
+      "atomspec": "#354.1/Z:59-64"
+    },
+    {
+      "name": "pre_Bact_7AAV_intron",
+      "label": "intron",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "intron: residues 59-78, splice-site-inference, medium confidence, validation not_applicable",
+      "atomspec": "#354.1/Z:59-78"
+    },
+    {
+      "name": "pre_Bact_7AAV_U2_U6_helix_I_partner",
+      "label": "U2 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA U2/U6 helix I partner: residues 26-28, review-region, high confidence",
+      "atomspec": "#354.1/2:26-28"
+    },
+    {
+      "name": "pre_Bact_7AAV_U5_loop_I",
+      "label": "U5 snRNA loop I",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence",
+      "atomspec": "#354.1/5:38-42"
+    },
+    {
+      "name": "pre_Bact_7AAV_U6_5_terminal_stem_loop",
+      "label": "U6 snRNA 5' terminal stem-loop",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA 5' terminal stem-loop: residues 1-30, reference-alignment, high confidence",
+      "atomspec": "#354.1/6:1-30"
+    },
+    {
+      "name": "pre_Bact_7AAV_U6_U2_helix_I_partner",
+      "label": "U6 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA U2/U6 helix I partner: residues 35-57;60, motif-neighborhood, medium confidence",
+      "atomspec": "#354.1/6:35-57,60"
+    },
+    {
+      "name": "pre_Bact_7AAV_U6_5SS_upstream_contact",
+      "label": "U6 snRNA 5' splice-site upstream contact",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA 5' splice-site upstream contact: residues 38-49, motif-neighborhood, medium confidence",
+      "atomspec": "#354.1/6:38-49"
+    },
+    {
+      "name": "pre_Bact_7AAV_U6_ACAGAGA_box",
+      "label": "U6 snRNA ACAGAGA box",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA ACAGAGA box: residues 41-47, sequence-motif, high confidence",
+      "atomspec": "#354.1/6:41-47"
+    }
+  ]
+}

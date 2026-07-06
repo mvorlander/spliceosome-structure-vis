@@ -1,0 +1,135 @@
+{
+  "pdb_id": "6j6h",
+  "structure_model_id": "341.1",
+  "structure_group_id": "341",
+  "selectors": [
+    {
+      "name": "Bstar_6J6H_5exon",
+      "label": "5' exon",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "5' exon: residues -12-17, splice-site-inference, medium confidence, validation not_applicable",
+      "atomspec": "#341.1/B:-12-17"
+    },
+    {
+      "name": "Bstar_6J6H_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues -12-17;247-276, component, medium confidence, validation not_applicable",
+      "atomspec": "#341.1/B:-12-17,247-276"
+    },
+    {
+      "name": "Bstar_6J6H_intron",
+      "label": "intron",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "intron: residues 247-276, splice-site-inference, medium confidence, validation not_applicable",
+      "atomspec": "#341.1/B:247-276"
+    },
+    {
+      "name": "Bstar_6J6H_branch_region",
+      "label": "branch point region",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point region: residues 258-268, network-scored-motif, high confidence, validation validated",
+      "atomspec": "#341.1/B:258-268"
+    },
+    {
+      "name": "Bstar_6J6H_branch_A",
+      "label": "branch point adenosine",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point adenosine: residues 266, network-scored-motif, high confidence, validation validated",
+      "atomspec": "#341.1/B:266"
+    },
+    {
+      "name": "Bstar_6J6H_U2_U6_helix_I_partner",
+      "label": "U2 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence",
+      "atomspec": "#341.1/L:26-30"
+    },
+    {
+      "name": "Bstar_6J6H_U2_branchpoint_pairing_region",
+      "label": "U2 snRNA branchpoint pairing region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence",
+      "atomspec": "#341.1/L:33-42"
+    },
+    {
+      "name": "Bstar_6J6H_U2_stem_IIa",
+      "label": "U2 snRNA stem IIa",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA stem IIa: residues 46-63;66-75;78-80, review-region, low confidence",
+      "atomspec": "#341.1/L:46-63,66-75,78-80"
+    },
+    {
+      "name": "Bstar_6J6H_U5_loop_I",
+      "label": "U5 snRNA loop I",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U5 snRNA loop I: residues 53-55, sequence-motif, medium confidence",
+      "atomspec": "#341.1/D:53-55"
+    },
+    {
+      "name": "Bstar_6J6H_U6_5_terminal_stem_loop",
+      "label": "U6 snRNA 5' terminal stem-loop",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA 5' terminal stem-loop: residues 1-30, reference-alignment, high confidence",
+      "atomspec": "#341.1/E:1-30"
+    },
+    {
+      "name": "Bstar_6J6H_U6_U2_helix_I_partner",
+      "label": "U6 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA U2/U6 helix I partner: residues 41-66, motif-neighborhood, medium confidence",
+      "atomspec": "#341.1/E:41-66"
+    },
+    {
+      "name": "Bstar_6J6H_U6_5SS_upstream_contact",
+      "label": "U6 snRNA 5' splice-site upstream contact",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA 5' splice-site upstream contact: residues 44-55, motif-neighborhood, medium confidence",
+      "atomspec": "#341.1/E:44-55"
+    },
+    {
+      "name": "Bstar_6J6H_U6_ISL",
+      "label": "U6 snRNA internal stem-loop",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA internal stem-loop: residues 46-73, motif-neighborhood, low confidence",
+      "atomspec": "#341.1/E:46-73"
+    },
+    {
+      "name": "Bstar_6J6H_U6_ACAGAGA_box",
+      "label": "U6 snRNA ACAGAGA box",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA ACAGAGA box: residues 47-53, sequence-motif, high confidence",
+      "atomspec": "#341.1/E:47-53"
+    },
+    {
+      "name": "Bstar_6J6H_U6_AGC_catalytic_triad",
+      "label": "U6 snRNA AGC catalytic triad",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA AGC catalytic triad: residues 59-61, sequence-motif, medium confidence",
+      "atomspec": "#341.1/E:59-61"
+    },
+    {
+      "name": "Bstar_6J6H_U6_LSm_site",
+      "label": "U6 snRNA LSm site",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA LSm site: residues 103, terminal-region, low confidence",
+      "atomspec": "#341.1/E:103"
+    }
+  ]
+}

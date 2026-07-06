@@ -1,0 +1,63 @@
+{
+  "pdb_id": "5gm6",
+  "structure_model_id": "308.1",
+  "structure_group_id": "308",
+  "selectors": [
+    {
+      "name": "Bact_5GM6_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues 1-103; 28-55;60-127;163-183; 468-475;479-484;487-522; 90-114, component, medium confidence, validation not_applicable",
+      "atomspec": "#308.1/D:28-55,60-127,163-183|#308.1/E:1-103|#308.1/M:468-475,479-484,487-522|#308.1/N:90-114"
+    },
+    {
+      "name": "Bact_5GM6_branch_region",
+      "label": "branch point region",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point region: residues 493-503; 72-76, network-scored-motif, high/review confidence, validation uncertain/validated uncertain validation",
+      "atomspec": "#308.1/D:72-76|#308.1/M:493-503"
+    },
+    {
+      "name": "Bact_5GM6_PPT",
+      "label": "polypyrimidine tract",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "polypyrimidine tract: residues 94-99, sequence-motif, medium confidence, validation uncertain uncertain validation",
+      "atomspec": "#308.1/D:94-99"
+    },
+    {
+      "name": "Bact_5GM6_branch_A",
+      "label": "branch point adenosine",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point adenosine: residues 501, network-scored-motif, high confidence, validation validated",
+      "atomspec": "#308.1/M:501"
+    },
+    {
+      "name": "Bact_5GM6_U2_U6_helix_I_partner",
+      "label": "U2 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence",
+      "atomspec": "#308.1/L:26-30"
+    },
+    {
+      "name": "Bact_5GM6_U2_branchpoint_pairing_region",
+      "label": "U2 snRNA branchpoint pairing region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence",
+      "atomspec": "#308.1/L:33-42"
+    },
+    {
+      "name": "Bact_5GM6_U2_stem_IIa",
+      "label": "U2 snRNA stem IIa",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA stem IIa: residues 46-66, review-region, low confidence",
+      "atomspec": "#308.1/L:46-66"
+    }
+  ]
+}

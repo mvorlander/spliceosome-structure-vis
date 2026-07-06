@@ -1,0 +1,39 @@
+{
+  "pdb_id": "7onb",
+  "structure_model_id": "364.1",
+  "structure_group_id": "364",
+  "selectors": [
+    {
+      "name": "U2_snRNP_7ONB_5exon",
+      "label": "5' exon",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "5' exon: residues 129-142, five-ss-inference, medium confidence, validation not_applicable",
+      "atomspec": "#364.1/G:129-142"
+    },
+    {
+      "name": "U2_snRNP_7ONB_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues 129-142, component, medium confidence, validation not_applicable",
+      "atomspec": "#364.1/G:129-142"
+    },
+    {
+      "name": "U2_snRNP_7ONB_U2_branchpoint_pairing_region",
+      "label": "U2 snRNA branchpoint pairing region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA branchpoint pairing region: residues 34-41, sequence-motif-neighborhood, medium confidence",
+      "atomspec": "#364.1/H:34-41"
+    },
+    {
+      "name": "U2_snRNP_7ONB_U2_stem_IIa",
+      "label": "U2 snRNA stem IIa",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA stem IIa: residues 46-65, review-region, low confidence",
+      "atomspec": "#364.1/H:46-65"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "pdb_id": "9zec",
+  "structure_model_id": "435.1",
+  "structure_group_id": "435",
+  "selectors": [
+    {
+      "name": "U2_snRNP_9ZEC_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues -18-13, component, medium confidence, validation not_applicable",
+      "atomspec": "#435.1/R:-18-13"
+    },
+    {
+      "name": "U2_snRNP_9ZEC_U2_branchpoint_pairing_region",
+      "label": "U2 snRNA branchpoint pairing region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence",
+      "atomspec": "#435.1/2:32-41"
+    }
+  ]
+}

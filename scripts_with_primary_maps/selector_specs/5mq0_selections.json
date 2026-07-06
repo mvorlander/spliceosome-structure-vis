@@ -1,0 +1,71 @@
+{
+  "pdb_id": "5mq0",
+  "structure_model_id": "314.1",
+  "structure_group_id": "314",
+  "selectors": [
+    {
+      "name": "Cstar_5MQ0_5exon",
+      "label": "5' exon",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "5' exon: residues -16--1; 1-49;55-73;78-84;98-104;139-150, component-name/splice-site-inference, high/medium confidence, validation not_applicable",
+      "atomspec": "#314.1/2:1-49,55-73,78-84,98-104,139-150|#314.1/E:-16--1"
+    },
+    {
+      "name": "Cstar_5MQ0_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues -16--1; 1-10;16-104; 1-16;56-73; 1-3; 1-49;55-73;78-84;98-104;139-150;1089-1108;1117-1129;1138-1154;1159-1169; 4-53;62-145;167-173, component, medium confidence, validation not_applicable",
+      "atomspec": "#314.1/2:1-49,55-73,78-84,98-104,139-150,1089-1108,1117-1129,1138-1154,1159-1169|#314.1/3:1-3|#314.1/5:4-53,62-145,167-173|#314.1/6:1-10,16-104|#314.1/E:-16--1|#314.1/I:1-16,56-73"
+    },
+    {
+      "name": "Cstar_5MQ0_intron",
+      "label": "intron",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "intron: residues -16--1; 1089, five-ss-inference/splice-site-inference, low/medium confidence, validation not_applicable",
+      "atomspec": "#314.1/2:1089|#314.1/E:-16--1"
+    },
+    {
+      "name": "Cstar_5MQ0_3SS",
+      "label": "3' splice site",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "3' splice site: residues 1089; 133-135, sequence-motif, medium confidence, validation validated",
+      "atomspec": "#314.1/2:1089|#314.1/5:133-135"
+    },
+    {
+      "name": "Cstar_5MQ0_3exon",
+      "label": "3' exon",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "3' exon: residues 1-3; 1090-1108;1117-1129;1138-1154;1159-1169, component-name/splice-site-inference, high/medium confidence, validation not_applicable",
+      "atomspec": "#314.1/2:1090-1108,1117-1129,1138-1154,1159-1169|#314.1/3:1-3"
+    },
+    {
+      "name": "Cstar_5MQ0_branch_region",
+      "label": "branch point region",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point region: residues 65-71; 72-76, network-scored-motif, medium/review confidence, validation uncertain uncertain validation",
+      "atomspec": "#314.1/5:72-76|#314.1/I:65-71"
+    },
+    {
+      "name": "Cstar_5MQ0_PPT",
+      "label": "polypyrimidine tract",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "polypyrimidine tract: residues 94-99, sequence-motif, medium confidence, validation uncertain uncertain validation",
+      "atomspec": "#314.1/5:94-99"
+    },
+    {
+      "name": "Cstar_5MQ0_5SS",
+      "label": "5' splice site",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "5' splice site: residues -16--12, sequence-motif, medium confidence, validation uncertain uncertain validation",
+      "atomspec": "#314.1/E:-16--12"
+    }
+  ]
+}

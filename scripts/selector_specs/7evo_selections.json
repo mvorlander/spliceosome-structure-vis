@@ -1,0 +1,39 @@
+{
+  "pdb_id": "7evo",
+  "structure_model_id": "363.1",
+  "structure_group_id": "363",
+  "selectors": [
+    {
+      "name": "U2_snRNP_7EVO_U2_U6_helix_I_partner",
+      "label": "U2 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence",
+      "atomspec": "#363.1/H:26-30"
+    },
+    {
+      "name": "U2_snRNP_7EVO_U2_branchpoint_pairing_region",
+      "label": "U2 snRNA branchpoint pairing region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence",
+      "atomspec": "#363.1/H:32-41"
+    },
+    {
+      "name": "U2_snRNP_7EVO_U2_stem_IIa",
+      "label": "U2 snRNA stem IIa",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA stem IIa: residues 46-65;69-73;81-82, review-region, low confidence",
+      "atomspec": "#363.1/H:46-65,69-73,81-82"
+    },
+    {
+      "name": "U2_snRNP_7EVO_U2_Sm_site",
+      "label": "U2 snRNA Sm site",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA Sm site: residues 99-105, sequence-motif, medium confidence",
+      "atomspec": "#363.1/H:99-105"
+    }
+  ]
+}

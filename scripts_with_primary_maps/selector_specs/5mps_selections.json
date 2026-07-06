@@ -1,0 +1,79 @@
+{
+  "pdb_id": "5mps",
+  "structure_model_id": "313.1",
+  "structure_group_id": "313",
+  "selectors": [
+    {
+      "name": "Cstar_5MPS_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues -16--1; 1-10;16-104; 1-16;56-73, component, medium confidence, validation not_applicable",
+      "atomspec": "#313.1/6:1-10,16-104|#313.1/E:-16--1|#313.1/I:1-16,56-73"
+    },
+    {
+      "name": "Cstar_5MPS_5SS",
+      "label": "5' splice site",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "5' splice site: residues -16--12, sequence-motif, medium confidence, validation uncertain uncertain validation",
+      "atomspec": "#313.1/E:-16--12"
+    },
+    {
+      "name": "Cstar_5MPS_intron",
+      "label": "intron from 5' splice site",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "intron from 5' splice site: residues -16--1, five-ss-inference, low confidence, validation not_applicable",
+      "atomspec": "#313.1/E:-16--1"
+    },
+    {
+      "name": "Cstar_5MPS_branch_region",
+      "label": "branch point region",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point region: residues 62-72, network-scored-motif, high confidence, validation validated",
+      "atomspec": "#313.1/I:62-72"
+    },
+    {
+      "name": "Cstar_5MPS_branch_A",
+      "label": "branch point adenosine",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point adenosine: residues 70, network-scored-motif, high confidence, validation validated",
+      "atomspec": "#313.1/I:70"
+    },
+    {
+      "name": "Cstar_5MPS_U2_U6_helix_I_partner",
+      "label": "U2 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence",
+      "atomspec": "#313.1/2:26-30"
+    },
+    {
+      "name": "Cstar_5MPS_U2_branchpoint_pairing_region",
+      "label": "U2 snRNA branchpoint pairing region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence",
+      "atomspec": "#313.1/2:33-42"
+    },
+    {
+      "name": "Cstar_5MPS_U2_stem_IIa",
+      "label": "U2 snRNA stem IIa",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA stem IIa: residues 46-49, review-region, low confidence",
+      "atomspec": "#313.1/2:46-49"
+    },
+    {
+      "name": "Cstar_5MPS_U5_loop_I",
+      "label": "U5 snRNA loop I",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U5 snRNA loop I: residues 53, sequence-motif, medium confidence",
+      "atomspec": "#313.1/5:53"
+    }
+  ]
+}

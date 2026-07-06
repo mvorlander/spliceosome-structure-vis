@@ -1,0 +1,143 @@
+{
+  "pdb_id": "5mqf",
+  "structure_model_id": "315.1",
+  "structure_group_id": "315",
+  "selectors": [
+    {
+      "name": "Cstar_5MQF_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues 47-58; 59-67;135-157, component, medium confidence, validation not_applicable",
+      "atomspec": "#315.1/Y:59-67,135-157|#315.1/Z:47-58"
+    },
+    {
+      "name": "Cstar_5MQF_5SS",
+      "label": "5' splice site",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "5' splice site: residues 59-64, sequence-motif, medium confidence, validation uncertain uncertain validation",
+      "atomspec": "#315.1/Y:59-64"
+    },
+    {
+      "name": "Cstar_5MQF_intron",
+      "label": "intron",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "intron: residues 59-67;135-157, splice-site-inference, medium confidence, validation not_applicable",
+      "atomspec": "#315.1/Y:59-67,135-157"
+    },
+    {
+      "name": "Cstar_5MQF_branch_region",
+      "label": "branch point region",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point region: residues 150-156, network-scored-motif, high confidence, validation validated",
+      "atomspec": "#315.1/Y:150-156"
+    },
+    {
+      "name": "Cstar_5MQF_branch_A",
+      "label": "branch point adenosine",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point adenosine: residues 155, network-scored-motif, high confidence, validation validated",
+      "atomspec": "#315.1/Y:155"
+    },
+    {
+      "name": "Cstar_5MQF_5exon",
+      "label": "5' exon",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "5' exon: residues 47-58, splice-site-inference, medium confidence, validation not_applicable",
+      "atomspec": "#315.1/Z:47-58"
+    },
+    {
+      "name": "Cstar_5MQF_U2_U6_helix_I_partner",
+      "label": "U2 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence",
+      "atomspec": "#315.1/2:26-30"
+    },
+    {
+      "name": "Cstar_5MQF_U2_branchpoint_pairing_region",
+      "label": "U2 snRNA branchpoint pairing region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence",
+      "atomspec": "#315.1/2:32-41"
+    },
+    {
+      "name": "Cstar_5MQF_U2_stem_IIa",
+      "label": "U2 snRNA stem IIa",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA stem IIa: residues 46-60, review-region, low confidence",
+      "atomspec": "#315.1/2:46-60"
+    },
+    {
+      "name": "Cstar_5MQF_U2_Sm_site",
+      "label": "U2 snRNA Sm site",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA Sm site: residues 99-105, sequence-motif, medium confidence",
+      "atomspec": "#315.1/2:99-105"
+    },
+    {
+      "name": "Cstar_5MQF_U5_loop_I",
+      "label": "U5 snRNA loop I",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence",
+      "atomspec": "#315.1/5:38-42"
+    },
+    {
+      "name": "Cstar_5MQF_U6_5_terminal_stem_loop",
+      "label": "U6 snRNA 5' terminal stem-loop",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA 5' terminal stem-loop: residues 1-28, reference-alignment, high confidence",
+      "atomspec": "#315.1/6:1-28"
+    },
+    {
+      "name": "Cstar_5MQF_U6_U2_helix_I_partner",
+      "label": "U6 snRNA U2/U6 helix I partner",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA U2/U6 helix I partner: residues 36-60, motif-neighborhood, medium confidence",
+      "atomspec": "#315.1/6:36-60"
+    },
+    {
+      "name": "Cstar_5MQF_U6_5SS_upstream_contact",
+      "label": "U6 snRNA 5' splice-site upstream contact",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA 5' splice-site upstream contact: residues 38-49, motif-neighborhood, medium confidence",
+      "atomspec": "#315.1/6:38-49"
+    },
+    {
+      "name": "Cstar_5MQF_U6_ACAGAGA_box",
+      "label": "U6 snRNA ACAGAGA box",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA ACAGAGA box: residues 41-47, sequence-motif, high confidence",
+      "atomspec": "#315.1/6:41-47"
+    },
+    {
+      "name": "Cstar_5MQF_U6_ISL",
+      "label": "U6 snRNA internal stem-loop",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA internal stem-loop: residues 79-96, motif-neighborhood, low confidence",
+      "atomspec": "#315.1/6:79-96"
+    },
+    {
+      "name": "Cstar_5MQF_U6_AGC_catalytic_triad",
+      "label": "U6 snRNA AGC catalytic triad",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U6 snRNA AGC catalytic triad: residues 92-94, sequence-motif, medium confidence",
+      "atomspec": "#315.1/6:92-94"
+    }
+  ]
+}

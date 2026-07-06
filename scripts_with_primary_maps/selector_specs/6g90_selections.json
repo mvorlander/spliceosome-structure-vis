@@ -1,0 +1,55 @@
+{
+  "pdb_id": "6g90",
+  "structure_model_id": "336.1",
+  "structure_group_id": "336",
+  "selectors": [
+    {
+      "name": "A_complex_6G90_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues -1,0,1,2,3,4,5,6,7,8,9,10,51,52,53,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79, component, medium confidence, validation not_applicable",
+      "atomspec": "#336.1/I:-1,0,1,2,3,4,5,6,7,8,9,10,51,52,53,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79"
+    },
+    {
+      "name": "A_complex_6G90_U1_5_5SS_recognition",
+      "label": "U1 snRNA 5' splice-site recognition region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U1 snRNA 5' splice-site recognition region: residues 1-10, review-region, medium confidence",
+      "atomspec": "#336.1/1:1-10"
+    },
+    {
+      "name": "A_complex_6G90_U1_SL1",
+      "label": "U1 snRNA stem-loop 1",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U1 snRNA stem-loop 1: residues 11-45, review-region, low confidence",
+      "atomspec": "#336.1/1:11-45"
+    },
+    {
+      "name": "A_complex_6G90_U1_SL2",
+      "label": "U1 snRNA stem-loop 2",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U1 snRNA stem-loop 2: residues 46-61;67-95, review-region, low confidence",
+      "atomspec": "#336.1/1:46-61,67-95"
+    },
+    {
+      "name": "A_complex_6G90_U1_Sm_site",
+      "label": "U1 snRNA Sm site",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U1 snRNA Sm site: residues 241-247; 439,440,516,517,518,519,520, sequence-motif, medium confidence",
+      "atomspec": "#336.1/1:241-247|#336.1/1:439,440,516,517,518,519,520"
+    },
+    {
+      "name": "A_complex_6G90_U2_branchpoint_pairing_region",
+      "label": "U2 snRNA branchpoint pairing region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence",
+      "atomspec": "#336.1/2:33-42"
+    }
+  ]
+}

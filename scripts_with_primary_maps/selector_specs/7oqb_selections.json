@@ -1,0 +1,39 @@
+{
+  "pdb_id": "7oqb",
+  "structure_model_id": "365.1",
+  "structure_group_id": "365",
+  "selectors": [
+    {
+      "name": "U2_snRNP_7OQB_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues 246-268, component, medium confidence, validation not_applicable",
+      "atomspec": "#365.1/I:246-268"
+    },
+    {
+      "name": "U2_snRNP_7OQB_intron",
+      "label": "intron",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "intron: residues 246-268, splice-site-inference, medium confidence, validation not_applicable",
+      "atomspec": "#365.1/I:246-268"
+    },
+    {
+      "name": "U2_snRNP_7OQB_U2_branchpoint_pairing_region",
+      "label": "U2 snRNA branchpoint pairing region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence",
+      "atomspec": "#365.1/2:33-42"
+    },
+    {
+      "name": "U2_snRNP_7OQB_U2_stem_IIa",
+      "label": "U2 snRNA stem IIa",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA stem IIa: residues 46-74;78-80, review-region, low confidence",
+      "atomspec": "#365.1/2:46-74,78-80"
+    }
+  ]
+}

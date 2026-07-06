@@ -1,0 +1,23 @@
+{
+  "pdb_id": "6y53",
+  "structure_model_id": "350.1",
+  "structure_group_id": "350",
+  "selectors": [
+    {
+      "name": "U2_snRNP_6Y53_U2_stem_IIa",
+      "label": "U2 snRNA stem IIa",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA stem IIa: residues 69-73;81-82, review-region, low confidence",
+      "atomspec": "#350.1/2:69-73,81-82"
+    },
+    {
+      "name": "U2_snRNP_6Y53_U2_Sm_site",
+      "label": "U2 snRNA Sm site",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U2 snRNA Sm site: residues 99-105, sequence-motif, medium confidence",
+      "atomspec": "#350.1/2:99-105"
+    }
+  ]
+}

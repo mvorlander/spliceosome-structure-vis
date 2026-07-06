@@ -1,0 +1,47 @@
+{
+  "pdb_id": "6n7r",
+  "structure_model_id": "345.1",
+  "structure_group_id": "345",
+  "selectors": [
+    {
+      "name": "E_complex_6N7R_substrate",
+      "label": "substrate RNA",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "substrate RNA: residues -2,-1,1,2,3,4,5,6,7,8,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156, component, medium confidence, validation not_applicable",
+      "atomspec": "#345.1/r:-2,-1,1,2,3,4,5,6,7,8,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156"
+    },
+    {
+      "name": "E_complex_6N7R_U1_5_5SS_recognition",
+      "label": "U1 snRNA 5' splice-site recognition region",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U1 snRNA 5' splice-site recognition region: residues 1-10, review-region, medium confidence",
+      "atomspec": "#345.1/R:1-10"
+    },
+    {
+      "name": "E_complex_6N7R_U1_SL1",
+      "label": "U1 snRNA stem-loop 1",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U1 snRNA stem-loop 1: residues 11-25;33-45, review-region, low confidence",
+      "atomspec": "#345.1/R:11-25,33-45"
+    },
+    {
+      "name": "E_complex_6N7R_U1_SL2",
+      "label": "U1 snRNA stem-loop 2",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U1 snRNA stem-loop 2: residues 46-95, review-region, low confidence",
+      "atomspec": "#345.1/R:46-95"
+    },
+    {
+      "name": "E_complex_6N7R_U1_Sm_site",
+      "label": "U1 snRNA Sm site",
+      "category": "snRNA feature",
+      "section": "Named selections for resolved snRNA functional regions.",
+      "comment": "U1 snRNA Sm site: residues 224-230; 241-247; 553-559, sequence-motif, medium confidence",
+      "atomspec": "#345.1/R:224-230|#345.1/R:241-247|#345.1/R:553-559"
+    }
+  ]
+}
