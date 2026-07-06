@@ -1,0 +1,125 @@
+# Lightweight ChimeraX script for 9R3D
+# Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #428; target model: #428.1.
+
+open 8h6l id 428.9 name 8H6L_anchor
+open 9r3d id 428.1 name 9R3D
+open emdb:53554 id 428.2.1 name 9R3D_EMD-53554_primary_map
+rename #428 pre_Bact_9r3d_structure
+
+# Align on PRPF8.
+matchmaker #428.1/A to #428.9/5B bring #428.2.1
+close #428.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# U5 snRNA
+color #428.1/5 #0000CD
+# pre-mRNA
+color #428.1/Z #303030
+# UBL5
+color #428.1/q #DB7093
+# ZMAT2
+color #428.1/r #FFB6C1
+# PRPF17
+color #428.1/P7 #FFF7C9
+# PRPF8
+color #428.1/A #BFC3E8
+# RBM22
+color #428.1/P #DE9A52
+# PPIL2
+color #428.1/t #B12F50
+# SNW1
+color #428.1/S1 #D49F96
+# U6 snRNA
+color #428.1/6 #DC143C
+# SNRNP200
+color #428.1/B #AFEEEE
+# EFTUD2
+color #428.1/C #6495ED
+# PRPF38A
+color #428.1/I #F88379
+# MFAP1
+color #428.1/K #CD5C5C
+# BUD31
+color #428.1/Q #FFF584
+# CA150
+color #428.1/T #A2B8CD
+# NPWBP
+color #428.1/X #D8944F
+# Named selections for resolved substrate RNA features.
+# substrate RNA: residues 50-78, component, medium confidence, validation not_applicable
+name pre_Bact_9R3D_substrate #428.1/Z:50-78
+# Named selections for resolved snRNA functional regions.
+# U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence
+name pre_Bact_9R3D_U5_loop_I #428.1/5:38-42
+# U6 snRNA 5' terminal stem-loop: residues 1-30, reference-alignment, high confidence
+name pre_Bact_9R3D_U6_5_terminal_stem_loop #428.1/6:1-30
+# U6 snRNA U2/U6 helix I partner: residues 35-60, motif-neighborhood, medium confidence
+name pre_Bact_9R3D_U6_U2_helix_I_partner #428.1/6:35-60
+# U6 snRNA 5' splice-site upstream contact: residues 38-49, motif-neighborhood, medium confidence
+name pre_Bact_9R3D_U6_5SS_upstream_contact #428.1/6:38-49
+# U6 snRNA ACAGAGA box: residues 41-47, sequence-motif, high confidence
+name pre_Bact_9R3D_U6_ACAGAGA_box #428.1/6:41-47
+# RNA feature nucleotide display.
+select #428.1 & nucleic
+nucleotides sel atoms
+select clear
+# U5 loop I: residues 38-42
+color #428.1/5:38-42 #1B3CD0
+select #428.1/5:38-42
+nucleotides sel fill
+select clear
+# U6 5' terminal SL: residues 1-30
+color #428.1/6:1-30 #DC143C
+select #428.1/6:1-30
+nucleotides sel fill
+select clear
+# U2/U6 helix I: residues 35-60
+color #428.1/6:35-60 #D0183C
+select #428.1/6:35-60
+nucleotides sel fill
+select clear
+# U6 5'SS contact: residues 38-49
+color #428.1/6:38-49 #E01842
+select #428.1/6:38-49
+nucleotides sel fill
+select clear
+# U6 ACAGAGA: residues 41-47
+color #428.1/6:41-47 #DC143C
+select #428.1/6:41-47
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #428.1/5:40 residues text "U5 loop I 38-42" color #1B3CD0 height 5 bgColor transparent
+label #428.1/6:16 residues text "U6 5' terminal SL 1-30" color #DC143C height 5 bgColor transparent
+label #428.1/6:48 residues text "U2/U6 helix I 35-60" color #D0183C height 5 bgColor transparent
+label #428.1/6:44 residues text "U6 5'SS contact 38-49" color #E01842 height 5 bgColor transparent
+label #428.1/6:44 residues text "U6 ACAGAGA 41-47" color #DC143C height 5 bgColor transparent
+view
+show nucleic

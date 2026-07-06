@@ -1,5 +1,6 @@
 # Lightweight ChimeraX script for 7DVQ
 # Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
@@ -135,31 +136,56 @@ color #361.1/d #B0C4DE
 # SNRPD2
 color #361.1/k #B0C4DE
 # Named selections for resolved substrate RNA features.
+# 5' exon: residues -11-0, five-ss-inference, medium confidence, validation not_applicable
+name Bact_7DVQ_5exon #361.1/G:-11-0
 # substrate RNA: residues -11-19;191-222, component, medium confidence, validation not_applicable
 name Bact_7DVQ_substrate #361.1/G:-11-19,191-222
+# 5' splice site: residues 1-9, minor-snrna-basepair, high confidence, validation validated
+name Bact_7DVQ_5SS #361.1/G:1-9
+# intron from 5' splice site: residues 1-19;191-222, five-ss-inference, medium confidence, validation not_applicable
+name Bact_7DVQ_intron #361.1/G:1-19,191-222
+# branch point region: residues 195-206, network-scored-motif, high confidence, validation validated
+name Bact_7DVQ_branch_region #361.1/G:195-206
+# branch point adenosine: residues 203, network-scored-motif, high confidence, validation validated
+name Bact_7DVQ_branch_A #361.1/G:203
 # Named selections for resolved snRNA functional regions.
-# U12 snRNA branchpoint pairing region: residues 30-45, review-region, low confidence
-name Bact_7DVQ_U12_branchpoint_pairing_region #361.1/H:30-45
+# U12 snRNA U12/U6atac helix I partner: residues 2-11, reference-alignment, high confidence
+name Bact_7DVQ_U12_U6atac_helix_I_partner #361.1/H:2-11
+# U12 snRNA branchpoint pairing region: residues 16-26, reference-alignment, high confidence
+name Bact_7DVQ_U12_branchpoint_pairing_region #361.1/H:16-26
 # U12 snRNA Sm site: residues 75-81, sequence-motif, medium confidence
 name Bact_7DVQ_U12_Sm_site #361.1/H:75-81
 # U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence
 name Bact_7DVQ_U5_loop_I #361.1/B:38-42
-# U6atac snRNA internal stem-loop: residues 13-40, motif-neighborhood, low confidence
-name Bact_7DVQ_U6atac_ISL #361.1/F:13-40
-# U6atac snRNA AGC catalytic triad: residues 26-28, sequence-motif, medium confidence
+# U6atac snRNA 5' splice-site recognition region: residues 11-17, reference-alignment, high confidence
+name Bact_7DVQ_U6atac_5_5SS_recognition #361.1/F:11-17
+# U6atac snRNA U6atac/U12 helix I partner: residues 23-29, reference-alignment, high confidence
+name Bact_7DVQ_U6atac_U12_helix_I_partner #361.1/F:23-29
+# U6atac snRNA AGC catalytic triad: residues 26-28, reference-alignment, high confidence
 name Bact_7DVQ_U6atac_AGC_catalytic_triad #361.1/F:26-28
+# U6atac snRNA internal stem-loop: residues 52-56;61-65, reference-alignment, medium confidence
+name Bact_7DVQ_U6atac_ISL #361.1/F:52-56,61-65
 # RNA feature nucleotide display.
 select #361.1 & nucleic
 nucleotides sel atoms
 select clear
-# branchpoint pairing region: residues 30-45
-color #361.1/H:30-45 #F97316
-select #361.1/H:30-45
+# 5' exon: residues -11-0
+color #361.1/G:-11-0 #FF8C00
+select #361.1/G:-11-0
 nucleotides sel fill
 select clear
-# Sm site: residues 75-81
-color #361.1/H:75-81 #F97316
-select #361.1/H:75-81
+# 5'SS: residues 1-9
+# intron: residues 1-19;191-222
+# BP region: residues 195-206
+# BP-A: residues 203
+# U12/U6atac helix I: residues 2-11
+color #361.1/H:2-11 #047857
+select #361.1/H:2-11
+nucleotides sel fill
+select clear
+# U12 BP pairing: residues 16-26
+color #361.1/H:16-26 #0B6E2D
+select #361.1/H:16-26
 nucleotides sel fill
 select clear
 # U5 loop I: residues 38-42
@@ -167,21 +193,38 @@ color #361.1/B:38-42 #1B3CD0
 select #361.1/B:38-42
 nucleotides sel fill
 select clear
-# internal stem-loop: residues 13-40
-color #361.1/F:13-40 #F97316
-select #361.1/F:13-40
+# U6atac 5'SS recog.: residues 11-17
+color #361.1/F:11-17 #DC143C
+select #361.1/F:11-17
 nucleotides sel fill
 select clear
-# AGC catalytic triad: residues 26-28
-color #361.1/F:26-28 #F97316
+# U6atac/U12 helix I: residues 23-29
+color #361.1/F:23-29 #D0183C
+select #361.1/F:23-29
+nucleotides sel fill
+select clear
+# U6atac AGC triad: residues 26-28
+color #361.1/F:26-28 #C91236
 select #361.1/F:26-28
 nucleotides sel fill
 select clear
+# U6atac ISL: residues 52-56;61-65
+color #361.1/F:52-56,61-65 #D61A3D
+select #361.1/F:52-56,61-65
+nucleotides sel fill
+select clear
 # RNA feature 3D residue labels.
-label #361.1/H:38 residues text "branchpoint pairing region 30-45" color #F97316 height 5 bgColor transparent
-label #361.1/H:78 residues text "Sm site 75-81" color #F97316 height 5 bgColor transparent
+label #361.1/G:-6 residues text "5' exon -11-0" color #FF8C00 height 5 bgColor transparent
+label #361.1/G:5 residues text "5'SS 1-9" color #303030 height 5 bgColor transparent
+label #361.1/G:206 residues text "intron 1-19;191-222" color #303030 height 5 bgColor transparent
+label #361.1/G:200 residues text "BP region 195-206" color #303030 height 5 bgColor transparent
+label #361.1/G:203 residues text "BP-A 203" color #303030 height 5 bgColor transparent
+label #361.1/H:6 residues text "U12/U6atac helix I 2-11" color #047857 height 5 bgColor transparent
+label #361.1/H:21 residues text "U12 BP pairing 16-26" color #0B6E2D height 5 bgColor transparent
 label #361.1/B:40 residues text "U5 loop I 38-42" color #1B3CD0 height 5 bgColor transparent
-label #361.1/F:26 residues text "internal stem-loop 13-40" color #F97316 height 5 bgColor transparent
-label #361.1/F:27 residues text "AGC catalytic triad 26-28" color #F97316 height 5 bgColor transparent
+label #361.1/F:14 residues text "U6atac 5'SS recog. 11-17" color #DC143C height 5 bgColor transparent
+label #361.1/F:26 residues text "U6atac/U12 helix I 23-29" color #D0183C height 5 bgColor transparent
+label #361.1/F:27 residues text "U6atac AGC triad 26-28" color #C91236 height 5 bgColor transparent
+label #361.1/F:54 residues text "U6atac ISL 52-56;61-65" color #D61A3D height 5 bgColor transparent
 view
 show nucleic

@@ -1,5 +1,6 @@
 # Lightweight ChimeraX script for 8H6K
 # Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
@@ -163,17 +164,23 @@ color #381.1/4c #F7F0A6
 # U5-Sm SNRPD2
 color #381.1/5c #B0C4DE
 # Named selections for resolved substrate RNA features.
-# 5' exon: residues 7-48;98-107, five-ss-inference, medium confidence, validation not_applicable
-name B_8H6K_5exon #381.1/A:7-48,98-107
+# upstream intron: residues 7-48, exon-definition-inference, medium confidence, validation not_applicable
+name B_8H6K_intron #381.1/A:7-48
 # substrate RNA: residues 7-48;98-119, component, medium confidence, validation not_applicable
 name B_8H6K_substrate #381.1/A:7-48,98-119
+# branch point region: residues 24-30, network-scored-motif, high confidence, validation validated
+name B_8H6K_branch_region #381.1/A:24-30
+# branch point adenosine: residues 29, network-scored-motif, high confidence, validation validated
+name B_8H6K_branch_A #381.1/A:29
+# polypyrimidine tract: residues 35-48, sequence-motif, medium confidence, validation validated
+name B_8H6K_PPT #381.1/A:35-48
+# exon-defined exon: residues 98-107, exon-definition-inference, medium confidence, validation not_applicable
+name B_8H6K_exon #381.1/A:98-107
 # 5' splice site: residues 108-113, sequence-motif, medium confidence, validation uncertain uncertain validation
 name B_8H6K_5SS #381.1/A:108-113
-# intron from 5' splice site: residues 108-119, five-ss-inference, low confidence, validation not_applicable
-name B_8H6K_intron #381.1/A:108-119
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA U2/U6 helix I partner: residues 30-55, review-region, low confidence
-name B_8H6K_U2_U6_helix_I_partner #381.1/2A:30-55
+# U2 snRNA U2/U6 helix I partner: residues 30, review-region, high confidence
+name B_8H6K_U2_U6_helix_I_partner #381.1/2A:30
 # U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence
 name B_8H6K_U2_branchpoint_pairing_region #381.1/2A:32-41
 # U2 snRNA stem IIa: residues 46-65, review-region, low confidence
@@ -210,16 +217,19 @@ name B_8H6K_U6_LSm_site #381.1/6A:102-105
 select #381.1 & nucleic
 nucleotides sel atoms
 select clear
-# 5' exon: residues 7-48;98-107
-color #381.1/A:7-48,98-107 #FF8C00
-select #381.1/A:7-48,98-107
+# intron: residues 7-48
+# BP region: residues 24-30
+# BP-A: residues 29
+# PPT: residues 35-48
+# exon: residues 98-107
+color #381.1/A:98-107 #FF8C00
+select #381.1/A:98-107
 nucleotides sel fill
 select clear
 # 5'SS: residues 108-113
-# intron: residues 108-119
-# U2/U6 helix I: residues 30-55
-color #381.1/2A:30-55 #047857
-select #381.1/2A:30-55
+# U2/U6 helix I: residues 30
+color #381.1/2A:30 #047857
+select #381.1/2A:30
 nucleotides sel fill
 select clear
 # U2 BP pairing: residues 32-41
@@ -288,10 +298,13 @@ select #381.1/6A:92-94
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #381.1/A:28 residues text "5' exon 7-48;98-107" color #FF8C00 height 5 bgColor transparent
+label #381.1/A:28 residues text "intron 7-48" color #303030 height 5 bgColor transparent
+label #381.1/A:27 residues text "BP region 24-30" color #303030 height 5 bgColor transparent
+label #381.1/A:29 residues text "BP-A 29" color #303030 height 5 bgColor transparent
+label #381.1/A:42 residues text "PPT 35-48" color #303030 height 5 bgColor transparent
+label #381.1/A:102 residues text "exon 98-107" color #FF8C00 height 5 bgColor transparent
 label #381.1/A:110 residues text "? 5'SS 108-113" color #303030 height 5 bgColor transparent
-label #381.1/A:114 residues text "intron 108-119" color #303030 height 5 bgColor transparent
-label #381.1/2A:42 residues text "U2/U6 helix I 30-55" color #047857 height 5 bgColor transparent
+label #381.1/2A:30 residues text "U2/U6 helix I 30" color #047857 height 5 bgColor transparent
 label #381.1/2A:36 residues text "U2 BP pairing 32-41" color #0B6E2D height 5 bgColor transparent
 label #381.1/2A:56 residues text "U2 stem IIa 46-65" color #167A38 height 5 bgColor transparent
 label #381.1/4A:10 residues text "U4/U6 stem I 1-18" color #D8C800 height 5 bgColor transparent

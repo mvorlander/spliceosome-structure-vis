@@ -1,5 +1,6 @@
 # Lightweight ChimeraX script for 6EXN
 # Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
@@ -142,8 +143,8 @@ name P_6EXN_branch_A #333.1/I:70
 # 3' splice site: residues 93-95, sequence-motif, medium confidence, validation validated
 name P_6EXN_3SS #333.1/I:93-95
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA U2/U6 helix I partner: residues 25-48;54-55, review-region, low confidence
-name P_6EXN_U2_U6_helix_I_partner #333.1/2:25-48,54-55
+# U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
+name P_6EXN_U2_U6_helix_I_partner #333.1/2:26-30
 # U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence
 name P_6EXN_U2_branchpoint_pairing_region #333.1/2:33-42
 # U2 snRNA stem IIa: residues 46-48;54-60, review-region, low confidence
@@ -187,9 +188,9 @@ select clear
 # BP region: residues 62-72
 # BP-A: residues 70
 # 3'SS: residues 93-95
-# U2/U6 helix I: residues 25-48;54-55
-color #333.1/2:25-48,54-55 #047857
-select #333.1/2:25-48,54-55
+# U2/U6 helix I: residues 26-30
+color #333.1/2:26-30 #047857
+select #333.1/2:26-30
 nucleotides sel fill
 select clear
 # U2 BP pairing: residues 33-42
@@ -247,7 +248,7 @@ label #333.1/I:64 residues text "lariat 1-16;56-73;91-95" color #303030 height 5
 label #333.1/I:67 residues text "BP region 62-72" color #303030 height 5 bgColor transparent
 label #333.1/I:70 residues text "BP-A 70" color #303030 height 5 bgColor transparent
 label #333.1/I:94 residues text "3'SS 93-95" color #303030 height 5 bgColor transparent
-label #333.1/2:36 residues text "U2/U6 helix I 25-48;54-55" color #047857 height 5 bgColor transparent
+label #333.1/2:28 residues text "U2/U6 helix I 26-30" color #047857 height 5 bgColor transparent
 label #333.1/2:38 residues text "U2 BP pairing 33-42" color #0B6E2D height 5 bgColor transparent
 label #333.1/2:57 residues text "U2 stem IIa 46-48;54-60" color #167A38 height 5 bgColor transparent
 label #333.1/5:55 residues text "U5 loop I 53-57" color #1B3CD0 height 5 bgColor transparent

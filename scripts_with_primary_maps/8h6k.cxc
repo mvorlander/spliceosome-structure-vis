@@ -1,0 +1,323 @@
+# Lightweight ChimeraX script for 8H6K
+# Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #381; target model: #381.1.
+
+open 8h6l id 381.9 name 8H6L_anchor
+open 8h6k id 381.1 name 8H6K
+open emdb:34507 id 381.2.1 name 8H6K_EMD-34507_primary_map
+rename #381 B_8h6k_structure
+
+# Align on PRPF8.
+matchmaker #381.1/5B to #381.9/5B bring #381.2.1
+close #381.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# pre-mRNA
+color #381.1/A #303030
+# U2-Sm SNRPF
+color #381.1/2d #D5F5E3
+# U4-Sm SNRPF
+color #381.1/4d #F7F0A6
+# U5-Sm SNRPF
+color #381.1/5d #B0C4DE
+# U2-Sm SNRPE
+color #381.1/2e #D5F5E3
+# U4-Sm SNRPE
+color #381.1/4e #F7F0A6
+# U5-Sm SNRPE
+color #381.1/5e #B0C4DE
+# U2-Sm SNRPG
+color #381.1/2f #D5F5E3
+# U4-Sm SNRPG
+color #381.1/4f #F7F0A6
+# U5-Sm SNRPG
+color #381.1/5f #B0C4DE
+# U2-Sm SNRPD3
+color #381.1/2g #D5F5E3
+# U4-Sm SNRPD3
+color #381.1/4g #F7F0A6
+# U5-Sm SNRPD3
+color #381.1/5g #B0C4DE
+# U6 snRNA
+color #381.1/6A #DC143C
+# LSM2
+color #381.1/6a #F4A3A8
+# LSM3
+color #381.1/6b #F4A3A8
+# LSM4
+color #381.1/6c #F4A3A8
+# LSM5
+color #381.1/6d #F4A3A8
+# LSM6
+color #381.1/6e #F4A3A8
+# U5 snRNA
+color #381.1/5A #0000CD
+# LSM7
+color #381.1/6f #F4A3A8
+# LSM8
+color #381.1/6g #F4A3A8
+# U4 snRNA
+color #381.1/4A #E6D900
+# PRPF3
+color #381.1/4B #E1DD1B
+# PRPF4
+color #381.1/4C #E2C496
+# PRPF31
+color #381.1/4D #DFD570
+# NHP2L1
+color #381.1/4E #A89264
+# TXNL4A
+color #381.1/4F #C3BA7A
+# PRPF6
+color #381.1/4G #CFA785
+# CYP20
+color #381.1/4H #C9AC36
+# PRPF8
+color #381.1/5B #BFC3E8
+# FBP21
+color #381.1/4I #B03B66
+# SART1
+color #381.1/4J #D6937B
+# MFAP1
+color #381.1/4K #CD5C5C
+# PRPF38A
+color #381.1/4L #F88379
+# UBL5
+color #381.1/4M #DB7093
+# ZMAT2
+color #381.1/4N #FFB6C1
+# SMU1
+color #381.1/4Z #E0A3D2
+# U2 snRNA
+color #381.1/2A #006400
+# SNRPA1
+color #381.1/2B #58D68D
+# SNRPB2
+color #381.1/2C #DAF7A6
+# EFTUD2
+color #381.1/5C #6495ED
+# SF3A1
+color #381.1/2D #55947F
+# SF3A2
+color #381.1/2E #75A074
+# SF3A3
+color #381.1/2F #9BCF91
+# SF3B1
+color #381.1/2G #487957
+# SF3B2
+color #381.1/2H #49926C
+# SF3B3
+color #381.1/2I #6A9064
+# SF3B4
+color #381.1/2J #77B088
+# SF3B6
+color #381.1/2K #ADCEA0
+# PHF5A
+color #381.1/2L #375A40
+# SF3B5
+color #381.1/2M #92BB8F
+# SNRNP200
+color #381.1/5D #AFEEEE
+# PRP8BP
+color #381.1/5E #E2F3F4
+# U2-Sm SNRPB
+color #381.1/2a #D5F5E3
+# U4-Sm SNRPB
+color #381.1/4a #F7F0A6
+# U5-Sm SNRPB
+color #381.1/5a #B0C4DE
+# U2-Sm SNRPD1
+color #381.1/2b #D5F5E3
+# U4-Sm SNRPD1
+color #381.1/4b #F7F0A6
+# U5-Sm SNRPD1
+color #381.1/5b #B0C4DE
+# U2-Sm SNRPD2
+color #381.1/2c #D5F5E3
+# U4-Sm SNRPD2
+color #381.1/4c #F7F0A6
+# U5-Sm SNRPD2
+color #381.1/5c #B0C4DE
+# Named selections for resolved substrate RNA features.
+# upstream intron: residues 7-48, exon-definition-inference, medium confidence, validation not_applicable
+name B_8H6K_intron #381.1/A:7-48
+# substrate RNA: residues 7-48;98-119, component, medium confidence, validation not_applicable
+name B_8H6K_substrate #381.1/A:7-48,98-119
+# branch point region: residues 24-30, network-scored-motif, high confidence, validation validated
+name B_8H6K_branch_region #381.1/A:24-30
+# branch point adenosine: residues 29, network-scored-motif, high confidence, validation validated
+name B_8H6K_branch_A #381.1/A:29
+# polypyrimidine tract: residues 35-48, sequence-motif, medium confidence, validation validated
+name B_8H6K_PPT #381.1/A:35-48
+# exon-defined exon: residues 98-107, exon-definition-inference, medium confidence, validation not_applicable
+name B_8H6K_exon #381.1/A:98-107
+# 5' splice site: residues 108-113, sequence-motif, medium confidence, validation uncertain uncertain validation
+name B_8H6K_5SS #381.1/A:108-113
+# Named selections for resolved snRNA functional regions.
+# U2 snRNA U2/U6 helix I partner: residues 30, review-region, high confidence
+name B_8H6K_U2_U6_helix_I_partner #381.1/2A:30
+# U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence
+name B_8H6K_U2_branchpoint_pairing_region #381.1/2A:32-41
+# U2 snRNA stem IIa: residues 46-65, review-region, low confidence
+name B_8H6K_U2_stem_IIa #381.1/2A:46-65
+# U2 snRNA Sm site: residues 99-105, sequence-motif, medium confidence
+name B_8H6K_U2_Sm_site #381.1/2A:99-105
+# U4 snRNA U4/U6 stem I partner: residues 1-18, reference-alignment, high confidence
+name B_8H6K_U4_U6_stem_I_partner #381.1/4A:1-18
+# U4 snRNA U4/U6 stem II partner: residues 56-63, reference-alignment, high confidence
+name B_8H6K_U4_U6_stem_II_partner #381.1/4A:56-63
+# U4 snRNA Brr2 loading region: residues 59-63;70-76;83-94, review-region, low confidence
+name B_8H6K_U4_Brr2_loading_region #381.1/4A:59-63,70-76,83-94
+# U4 snRNA Sm site: residues 118-124, sequence-motif, medium confidence
+name B_8H6K_U4_Sm_site #381.1/4A:118-124
+# U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence
+name B_8H6K_U5_loop_I #381.1/5A:38-42
+# U6 snRNA U2/U6 helix I partner: residues 35-60, motif-neighborhood, medium confidence
+name B_8H6K_U6_U2_helix_I_partner #381.1/6A:35-60
+# U6 snRNA 5' splice-site upstream contact: residues 38-49, motif-neighborhood, medium confidence
+name B_8H6K_U6_5SS_upstream_contact #381.1/6A:38-49
+# U6 snRNA ACAGAGA box: residues 41-47, sequence-motif, high confidence
+name B_8H6K_U6_ACAGAGA_box #381.1/6A:41-47
+# U6 snRNA U4/U6 stem II partner: residues 52-61, reference-alignment, high confidence
+name B_8H6K_U6_U4_stem_II_partner #381.1/6A:52-61
+# U6 snRNA U4/U6 stem I partner: residues 63-74, reference-alignment, high confidence
+name B_8H6K_U6_U4_stem_I_partner #381.1/6A:63-74
+# U6 snRNA internal stem-loop: residues 85-96;102-105, motif-neighborhood, low confidence
+name B_8H6K_U6_ISL #381.1/6A:85-96,102-105
+# U6 snRNA AGC catalytic triad: residues 92-94, sequence-motif, medium confidence
+name B_8H6K_U6_AGC_catalytic_triad #381.1/6A:92-94
+# U6 snRNA LSm site: residues 102-105, terminal-region, low confidence
+name B_8H6K_U6_LSm_site #381.1/6A:102-105
+# RNA feature nucleotide display.
+select #381.1 & nucleic
+nucleotides sel atoms
+select clear
+# intron: residues 7-48
+# BP region: residues 24-30
+# BP-A: residues 29
+# PPT: residues 35-48
+# exon: residues 98-107
+color #381.1/A:98-107 #FF8C00
+select #381.1/A:98-107
+nucleotides sel fill
+select clear
+# 5'SS: residues 108-113
+# U2/U6 helix I: residues 30
+color #381.1/2A:30 #047857
+select #381.1/2A:30
+nucleotides sel fill
+select clear
+# U2 BP pairing: residues 32-41
+color #381.1/2A:32-41 #0B6E2D
+select #381.1/2A:32-41
+nucleotides sel fill
+select clear
+# U2 stem IIa: residues 46-65
+color #381.1/2A:46-65 #167A38
+select #381.1/2A:46-65
+nucleotides sel fill
+select clear
+# U4/U6 stem I: residues 1-18
+color #381.1/4A:1-18 #D8C800
+select #381.1/4A:1-18
+nucleotides sel fill
+select clear
+# U4/U6 stem II: residues 56-63
+color #381.1/4A:56-63 #E0CF1A
+select #381.1/4A:56-63
+nucleotides sel fill
+select clear
+# U4 Brr2 region: residues 59-63;70-76;83-94
+color #381.1/4A:59-63,70-76,83-94 #F0DF2E
+select #381.1/4A:59-63,70-76,83-94
+nucleotides sel fill
+select clear
+# U5 loop I: residues 38-42
+color #381.1/5A:38-42 #1B3CD0
+select #381.1/5A:38-42
+nucleotides sel fill
+select clear
+# U2/U6 helix I: residues 35-60
+color #381.1/6A:35-60 #D0183C
+select #381.1/6A:35-60
+nucleotides sel fill
+select clear
+# U6 5'SS contact: residues 38-49
+color #381.1/6A:38-49 #E01842
+select #381.1/6A:38-49
+nucleotides sel fill
+select clear
+# U6 ACAGAGA: residues 41-47
+color #381.1/6A:41-47 #DC143C
+select #381.1/6A:41-47
+nucleotides sel fill
+select clear
+# U4/U6 stem II: residues 52-61
+color #381.1/6A:52-61 #E01842
+select #381.1/6A:52-61
+nucleotides sel fill
+select clear
+# U4/U6 stem I: residues 63-74
+color #381.1/6A:63-74 #D9183E
+select #381.1/6A:63-74
+nucleotides sel fill
+select clear
+# U6 ISL: residues 85-96;102-105
+color #381.1/6A:85-96,102-105 #D61A3D
+select #381.1/6A:85-96,102-105
+nucleotides sel fill
+select clear
+# U6 AGC triad: residues 92-94
+color #381.1/6A:92-94 #C91236
+select #381.1/6A:92-94
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #381.1/A:28 residues text "intron 7-48" color #303030 height 5 bgColor transparent
+label #381.1/A:27 residues text "BP region 24-30" color #303030 height 5 bgColor transparent
+label #381.1/A:29 residues text "BP-A 29" color #303030 height 5 bgColor transparent
+label #381.1/A:42 residues text "PPT 35-48" color #303030 height 5 bgColor transparent
+label #381.1/A:102 residues text "exon 98-107" color #FF8C00 height 5 bgColor transparent
+label #381.1/A:110 residues text "? 5'SS 108-113" color #303030 height 5 bgColor transparent
+label #381.1/2A:30 residues text "U2/U6 helix I 30" color #047857 height 5 bgColor transparent
+label #381.1/2A:36 residues text "U2 BP pairing 32-41" color #0B6E2D height 5 bgColor transparent
+label #381.1/2A:56 residues text "U2 stem IIa 46-65" color #167A38 height 5 bgColor transparent
+label #381.1/4A:10 residues text "U4/U6 stem I 1-18" color #D8C800 height 5 bgColor transparent
+label #381.1/4A:60 residues text "U4/U6 stem II 56-63" color #E0CF1A height 5 bgColor transparent
+label #381.1/4A:88 residues text "U4 Brr2 region 59-63;70-76;83-94" color #F0DF2E height 5 bgColor transparent
+label #381.1/5A:40 residues text "U5 loop I 38-42" color #1B3CD0 height 5 bgColor transparent
+label #381.1/6A:48 residues text "U2/U6 helix I 35-60" color #D0183C height 5 bgColor transparent
+label #381.1/6A:44 residues text "U6 5'SS contact 38-49" color #E01842 height 5 bgColor transparent
+label #381.1/6A:44 residues text "U6 ACAGAGA 41-47" color #DC143C height 5 bgColor transparent
+label #381.1/6A:56 residues text "U4/U6 stem II 52-61" color #E01842 height 5 bgColor transparent
+label #381.1/6A:68 residues text "U4/U6 stem I 63-74" color #D9183E height 5 bgColor transparent
+label #381.1/6A:90 residues text "U6 ISL 85-96;102-105" color #D61A3D height 5 bgColor transparent
+label #381.1/6A:93 residues text "U6 AGC triad 92-94" color #C91236 height 5 bgColor transparent
+view
+show nucleic

@@ -1,5 +1,6 @@
 # Lightweight ChimeraX script for 7AAV
 # Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
@@ -80,8 +81,8 @@ name pre_Bact_7AAV_5SS #354.1/Z:59-64
 # intron: residues 59-78, splice-site-inference, medium confidence, validation not_applicable
 name pre_Bact_7AAV_intron #354.1/Z:59-78
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA U2/U6 helix I partner: residues 25-28, review-region, low confidence
-name pre_Bact_7AAV_U2_U6_helix_I_partner #354.1/2:25-28
+# U2 snRNA U2/U6 helix I partner: residues 26-28, review-region, high confidence
+name pre_Bact_7AAV_U2_U6_helix_I_partner #354.1/2:26-28
 # U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence
 name pre_Bact_7AAV_U5_loop_I #354.1/5:38-42
 # U6 snRNA 5' terminal stem-loop: residues 1-30, reference-alignment, high confidence
@@ -103,9 +104,9 @@ nucleotides sel fill
 select clear
 # 5'SS: residues 59-64
 # intron: residues 59-78
-# U2/U6 helix I: residues 25-28
-color #354.1/2:25-28 #047857
-select #354.1/2:25-28
+# U2/U6 helix I: residues 26-28
+color #354.1/2:26-28 #047857
+select #354.1/2:26-28
 nucleotides sel fill
 select clear
 # U5 loop I: residues 38-42
@@ -137,7 +138,7 @@ select clear
 label #354.1/Z:54 residues text "5' exon 50-58" color #FF8C00 height 5 bgColor transparent
 label #354.1/Z:62 residues text "? 5'SS 59-64" color #303030 height 5 bgColor transparent
 label #354.1/Z:68 residues text "intron 59-78" color #303030 height 5 bgColor transparent
-label #354.1/2:26 residues text "U2/U6 helix I 25-28" color #047857 height 5 bgColor transparent
+label #354.1/2:27 residues text "U2/U6 helix I 26-28" color #047857 height 5 bgColor transparent
 label #354.1/5:40 residues text "U5 loop I 38-42" color #1B3CD0 height 5 bgColor transparent
 label #354.1/6:16 residues text "U6 5' terminal SL 1-30" color #DC143C height 5 bgColor transparent
 label #354.1/6:46 residues text "U2/U6 helix I 35-57;60" color #D0183C height 5 bgColor transparent

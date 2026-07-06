@@ -1,5 +1,6 @@
 # Lightweight ChimeraX script for 7EVO
 # Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
@@ -79,8 +80,8 @@ color #363.1/A #55947F
 # SF3A2
 color #363.1/B #75A074
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA U2/U6 helix I partner: residues 25-55, review-region, low confidence
-name U2_snRNP_7EVO_U2_U6_helix_I_partner #363.1/H:25-55
+# U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
+name U2_snRNP_7EVO_U2_U6_helix_I_partner #363.1/H:26-30
 # U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence
 name U2_snRNP_7EVO_U2_branchpoint_pairing_region #363.1/H:32-41
 # U2 snRNA stem IIa: residues 46-65;69-73;81-82, review-region, low confidence
@@ -91,9 +92,9 @@ name U2_snRNP_7EVO_U2_Sm_site #363.1/H:99-105
 select #363.1 & nucleic
 nucleotides sel atoms
 select clear
-# U2/U6 helix I: residues 25-55
-color #363.1/H:25-55 #047857
-select #363.1/H:25-55
+# U2/U6 helix I: residues 26-30
+color #363.1/H:26-30 #047857
+select #363.1/H:26-30
 nucleotides sel fill
 select clear
 # U2 BP pairing: residues 32-41
@@ -107,7 +108,7 @@ select #363.1/H:46-65,69-73,81-82
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #363.1/H:40 residues text "U2/U6 helix I 25-55" color #047857 height 5 bgColor transparent
+label #363.1/H:28 residues text "U2/U6 helix I 26-30" color #047857 height 5 bgColor transparent
 label #363.1/H:36 residues text "U2 BP pairing 32-41" color #0B6E2D height 5 bgColor transparent
 label #363.1/H:56 residues text "U2 stem IIa 46-65;69-73;81-82" color #167A38 height 5 bgColor transparent
 view

@@ -1,0 +1,78 @@
+# Lightweight ChimeraX script for 5GAM
+# Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #304; target model: #304.1.
+
+open 8h6l id 304.9 name 8H6L_anchor
+open 5gam id 304.1 name 5GAM
+open emdb:8011 id 304.2.1 name 5GAM_EMD-8011_primary_map
+rename #304 tri_snRNP_5gam_structure
+
+# Align on PRPF8.
+matchmaker #304.1/A to #304.9/5B bring #304.2.1
+close #304.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# U5 snRNA
+color #304.1/U #0000CD
+# U5-Sm SNRPD3
+color #304.1/d #B0C4DE
+# U5-Sm SNRPD1
+color #304.1/h #B0C4DE
+# U5-Sm SNRPD2
+color #304.1/j #B0C4DE
+# PRPF8
+color #304.1/A #BFC3E8
+# EFTUD2
+color #304.1/C #6495ED
+# U6 snRNA
+color #304.1/W #DC143C
+# U5-Sm SNRPB
+color #304.1/b #B0C4DE
+# U5-Sm SNRPE
+color #304.1/e #B0C4DE
+# U5-Sm SNRPF
+color #304.1/f #B0C4DE
+# U5-Sm SNRPG
+color #304.1/g #B0C4DE
+# Named selections for resolved snRNA functional regions.
+# U5 snRNA loop I: residues 53, sequence-motif, medium confidence
+name U5_tri_snRNP_5GAM_U5_loop_I #304.1/U:53
+# RNA feature nucleotide display.
+select #304.1 & nucleic
+nucleotides sel atoms
+select clear
+# U5 loop I: residues 53
+color #304.1/U:53 #1B3CD0
+select #304.1/U:53
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #304.1/U:53 residues text "U5 loop I 53" color #1B3CD0 height 5 bgColor transparent
+view
+show nucleic

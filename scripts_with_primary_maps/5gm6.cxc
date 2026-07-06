@@ -1,0 +1,173 @@
+# Lightweight ChimeraX script for 5GM6
+# Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #308; target model: #308.1.
+
+open 8h6l id 308.9 name 8H6L_anchor
+open 5gm6 id 308.1 name 5GM6
+open emdb:9524 id 308.2.1 name 5GM6_EMD-9524_primary_map
+rename #308 Bact_5gm6_structure
+
+# Align on PRPF8.
+matchmaker #308.1/A to #308.9/5B bring #308.2.1
+close #308.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# PRPF8
+color #308.1/A #BFC3E8
+# SF3B5
+color #308.1/K #92BB8F
+# U2 snRNA
+color #308.1/L #006400
+# pre-mRNA
+color #308.1/N #303030
+# pre-mRNA
+color #308.1/M #303030
+# PLRG1
+color #308.1/O #F4A460
+# SNW1
+color #308.1/P #D49F96
+# RBM22
+color #308.1/Q #DE9A52
+# CWC2
+color #308.1/R #E6B566
+# CWC15
+color #308.1/S #FFDEAD
+# BUD31
+color #308.1/T #FFF584
+# SNRNP200
+color #308.1/B #AFEEEE
+# SNIP1
+color #308.1/U #89BFC8
+# CGI-79
+color #308.1/V #5FB491
+# BUD13
+color #308.1/W #459285
+# DBP2
+color #308.1/Y #E3B296
+# CWC22
+color #308.1/Z #2C54DD
+# CWC27
+color #308.1/b #806ED8
+# CDC5L
+color #308.1/c #DAA520
+# SF3B1
+color #308.1/G #487957
+# CRNKL1
+color #308.1/d #FFC388
+# EFTUD2
+color #308.1/C #6495ED
+# SYF1
+color #308.1/v #FF957B
+# SF3B4
+color #308.1/e #77B088
+# SYF2
+color #308.1/f #FF8C00
+# PRPF19
+color #308.1/o #FFFFAB
+# PRPF19
+color #308.1/p #FFFFAB
+# PRPF19
+color #308.1/q #FFFFAB
+# PRPF19
+color #308.1/r #FFFFAB
+# PRPF17
+color #308.1/n #FFF7C9
+# SNRPB
+color #308.1/k #B0C4DE
+# SNRPE
+color #308.1/i #B0C4DE
+# SNRPF
+color #308.1/h #B0C4DE
+# pre-mRNA
+color #308.1/D #303030
+# SNRPG
+color #308.1/j #B0C4DE
+# SNRPD3
+color #308.1/l #B0C4DE
+# SNRPD1
+color #308.1/m #B0C4DE
+# SNRPD2
+color #308.1/g #B0C4DE
+# pre-mRNA
+color #308.1/E #303030
+# SF3B3
+color #308.1/F #6A9064
+# SF3B2
+color #308.1/H #49926C
+# SF3A2
+color #308.1/I #75A074
+# PHF5A
+color #308.1/J #375A40
+# Named selections for resolved substrate RNA features.
+# substrate RNA: residues 1-103; 28-55;60-127;163-183; 468-475;479-484;487-522; 90-114, component, medium confidence, validation not_applicable
+name Bact_5GM6_substrate #308.1/D:28-55,60-127,163-183|#308.1/E:1-103|#308.1/M:468-475,479-484,487-522|#308.1/N:90-114
+# branch point region: residues 493-503; 72-76, network-scored-motif, high/review confidence, validation uncertain/validated uncertain validation
+name Bact_5GM6_branch_region #308.1/D:72-76|#308.1/M:493-503
+# polypyrimidine tract: residues 94-99, sequence-motif, medium confidence, validation uncertain uncertain validation
+name Bact_5GM6_PPT #308.1/D:94-99
+# branch point adenosine: residues 501, network-scored-motif, high confidence, validation validated
+name Bact_5GM6_branch_A #308.1/M:501
+# Named selections for resolved snRNA functional regions.
+# U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
+name Bact_5GM6_U2_U6_helix_I_partner #308.1/L:26-30
+# U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence
+name Bact_5GM6_U2_branchpoint_pairing_region #308.1/L:33-42
+# U2 snRNA stem IIa: residues 46-66, review-region, low confidence
+name Bact_5GM6_U2_stem_IIa #308.1/L:46-66
+# RNA feature nucleotide display.
+select #308.1 & nucleic
+nucleotides sel atoms
+select clear
+# BP region: residues 493-503; 72-76
+# PPT: residues 94-99
+# BP-A: residues 501
+# U2/U6 helix I: residues 26-30
+color #308.1/L:26-30 #047857
+select #308.1/L:26-30
+nucleotides sel fill
+select clear
+# U2 BP pairing: residues 33-42
+color #308.1/L:33-42 #0B6E2D
+select #308.1/L:33-42
+nucleotides sel fill
+select clear
+# U2 stem IIa: residues 46-66
+color #308.1/L:46-66 #167A38
+select #308.1/L:46-66
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #308.1/M:498 residues text "? BP region 493-503; 72-76" color #303030 height 5 bgColor transparent
+label #308.1/D:96 residues text "? PPT 94-99" color #303030 height 5 bgColor transparent
+label #308.1/M:501 residues text "BP-A 501" color #303030 height 5 bgColor transparent
+label #308.1/L:28 residues text "U2/U6 helix I 26-30" color #047857 height 5 bgColor transparent
+label #308.1/L:38 residues text "U2 BP pairing 33-42" color #0B6E2D height 5 bgColor transparent
+label #308.1/L:56 residues text "U2 stem IIa 46-66" color #167A38 height 5 bgColor transparent
+view
+show nucleic

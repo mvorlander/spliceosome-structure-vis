@@ -1,5 +1,6 @@
 # Lightweight ChimeraX script for 8RO1
 # Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
@@ -142,8 +143,8 @@ name ILS_disassembly_8RO1_intron_lariat #414.1/IN:1-2,10-28,40-51
 # substrate RNA: residues 1-2;10-28;40-51, component, medium confidence, validation not_applicable
 name ILS_disassembly_8RO1_substrate #414.1/IN:1-2,10-28,40-51
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA U2/U6 helix I partner: residues 25-42, review-region, low confidence
-name ILS_disassembly_8RO1_U2_U6_helix_I_partner #414.1/2:25-42
+# U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
+name ILS_disassembly_8RO1_U2_U6_helix_I_partner #414.1/2:26-30
 # U2 snRNA branchpoint pairing region: residues 34-42, sequence-motif-neighborhood, medium confidence
 name ILS_disassembly_8RO1_U2_branchpoint_pairing_region #414.1/2:34-42
 # U5 snRNA loop I: residues 41-45, sequence-motif, medium confidence
@@ -168,9 +169,9 @@ nucleotides sel atoms
 select clear
 # intron: residues 1-2;10-28;40-51
 # lariat: residues 1-2;10-28;40-51
-# U2/U6 helix I: residues 25-42
-color #414.1/2:25-42 #047857
-select #414.1/2:25-42
+# U2/U6 helix I: residues 26-30
+color #414.1/2:26-30 #047857
+select #414.1/2:26-30
 nucleotides sel fill
 select clear
 # U2 BP pairing: residues 34-42
@@ -216,7 +217,7 @@ select clear
 # RNA feature 3D residue labels.
 label #414.1/IN:19 residues text "intron 1-2;10-28;40-51" color #303030 height 5 bgColor transparent
 label #414.1/IN:19 residues text "lariat 1-2;10-28;40-51" color #303030 height 5 bgColor transparent
-label #414.1/2:34 residues text "U2/U6 helix I 25-42" color #047857 height 5 bgColor transparent
+label #414.1/2:28 residues text "U2/U6 helix I 26-30" color #047857 height 5 bgColor transparent
 label #414.1/2:38 residues text "U2 BP pairing 34-42" color #0B6E2D height 5 bgColor transparent
 label #414.1/5:43 residues text "U5 loop I 41-45" color #1B3CD0 height 5 bgColor transparent
 label #414.1/5:96 residues text "Sm site 93-99" color #F97316 height 5 bgColor transparent

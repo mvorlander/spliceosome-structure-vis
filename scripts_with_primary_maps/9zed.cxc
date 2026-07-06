@@ -1,0 +1,85 @@
+# Lightweight ChimeraX script for 9ZED
+# Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #436; target model: #436.1.
+
+open 8h6l id 436.9 name 8H6L_anchor
+open 9zed id 436.1 name 9ZED
+open emdb:74100 id 436.2.1 name 9ZED_EMD-74100_primary_map
+rename #436 U2_pre_A_A_9zed_structure
+
+# Align on SF3B1.
+matchmaker #436.1/B1 to #436.9/2G bring #436.2.1
+close #436.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# U2 snRNA
+color #436.1/2 #006400
+# SF3B5
+color #436.1/B5 #92BB8F
+# SF3B6
+color #436.1/B6 #ADCEA0
+# PHF5A
+color #436.1/H #375A40
+# pre-mRNA
+color #436.1/R #303030
+# NAM8
+color #436.1/A #C7A6BE
+# SF3A1
+color #436.1/A1 #55947F
+# SF3A2
+color #436.1/A2 #75A074
+# SF3A3
+color #436.1/A3 #9BCF91
+# SF3B1
+color #436.1/B1 #487957
+# SF3B2
+color #436.1/B2 #49926C
+# SF3B3
+color #436.1/B3 #6A9064
+# SF3B4
+color #436.1/B4 #77B088
+# Named selections for resolved substrate RNA features.
+# substrate RNA: residues -18-12, component, medium confidence, validation not_applicable
+name U2_snRNP_9ZED_substrate #436.1/R:-18-12
+# Named selections for resolved snRNA functional regions.
+# U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence
+name U2_snRNP_9ZED_U2_branchpoint_pairing_region #436.1/2:32-41
+# RNA feature nucleotide display.
+select #436.1 & nucleic
+nucleotides sel atoms
+select clear
+# U2 BP pairing: residues 32-41
+color #436.1/2:32-41 #0B6E2D
+select #436.1/2:32-41
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #436.1/2:36 residues text "U2 BP pairing 32-41" color #0B6E2D height 5 bgColor transparent
+view
+show nucleic

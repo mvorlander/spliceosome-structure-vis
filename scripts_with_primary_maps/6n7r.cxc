@@ -1,0 +1,118 @@
+# Lightweight ChimeraX script for 6N7R
+# Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #345; target model: #345.1.
+
+open 8h6l id 345.9 name 8H6L_anchor
+open 6n7r id 345.1 name 6N7R
+open emdb:0361 id 345.2.1 name 6N7R_EMD-0361_primary_map
+rename #345 spliceosome_6n7r_structure
+
+# No PRPF8 or SF3B1 chain was detected; anchor is closed without alignment.
+close #345.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# SNRNP70
+color #345.1/A #8C3D78
+# U1-Sm SNRPB
+color #345.1/K #EAD7E8
+# U1-Sm SNRPD1
+color #345.1/L #EAD7E8
+# U1-Sm SNRPD2
+color #345.1/M #EAD7E8
+# U1-Sm SNRPD3
+color #345.1/N #EAD7E8
+# U1-Sm SNRPE
+color #345.1/O #EAD7E8
+# U1-Sm SNRPF
+color #345.1/P #EAD7E8
+# U1-Sm SNRPG
+color #345.1/Q #EAD7E8
+# U1 snRNA
+color #345.1/R #B66AAE
+# pre-mRNA
+color #345.1/r #303030
+# SNRPC
+color #345.1/B #D7A3CF
+# SNRPA
+color #345.1/C #C07AB6
+# PRP42
+color #345.1/D #7F5BA6
+# PRPF39
+color #345.1/E #E1B8D9
+# NAM8
+color #345.1/F #C7A6BE
+# SNU56
+color #345.1/G #D65B96
+# SNU71
+color #345.1/H #A95A9B
+# LUC7L
+color #345.1/I #B03372
+# Named selections for resolved substrate RNA features.
+# substrate RNA: residues -2,-1,1,2,3,4,5,6,7,8,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156, component, medium confidence, validation not_applicable
+name E_complex_6N7R_substrate #345.1/r:-2,-1,1,2,3,4,5,6,7,8,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156
+# Named selections for resolved snRNA functional regions.
+# U1 snRNA 5' splice-site recognition region: residues 1-10, review-region, medium confidence
+name E_complex_6N7R_U1_5_5SS_recognition #345.1/R:1-10
+# U1 snRNA stem-loop 1: residues 11-25;33-45, review-region, low confidence
+name E_complex_6N7R_U1_SL1 #345.1/R:11-25,33-45
+# U1 snRNA stem-loop 2: residues 46-95, review-region, low confidence
+name E_complex_6N7R_U1_SL2 #345.1/R:46-95
+# U1 snRNA Sm site: residues 224-230; 241-247; 553-559, sequence-motif, medium confidence
+name E_complex_6N7R_U1_Sm_site #345.1/R:224-230|#345.1/R:241-247|#345.1/R:553-559
+# RNA feature nucleotide display.
+select #345.1 & nucleic
+nucleotides sel atoms
+select clear
+# U1 5'SS recog.: residues 1-10
+color #345.1/R:1-10 #B66AAE
+select #345.1/R:1-10
+nucleotides sel fill
+select clear
+# U1 SL1: residues 11-25;33-45
+color #345.1/R:11-25,33-45 #BF72B7
+select #345.1/R:11-25,33-45
+nucleotides sel fill
+select clear
+# U1 SL2: residues 46-95
+color #345.1/R:46-95 #AD62A6
+select #345.1/R:46-95
+nucleotides sel fill
+select clear
+# U1 Sm site: residues 224-230; 241-247; 553-559
+color #345.1/R:224-230|#345.1/R:241-247|#345.1/R:553-559 #C783BF
+select #345.1/R:224-230|#345.1/R:241-247|#345.1/R:553-559
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #345.1/R:6 residues text "U1 5'SS recog. 1-10" color #B66AAE height 5 bgColor transparent
+label #345.1/R:18 residues text "U1 SL1 11-25;33-45" color #BF72B7 height 5 bgColor transparent
+label #345.1/R:70 residues text "U1 SL2 46-95" color #AD62A6 height 5 bgColor transparent
+label #345.1/R:227 residues text "U1 Sm site 224-230; 241-247; 553-559" color #C783BF height 5 bgColor transparent
+view
+show nucleic

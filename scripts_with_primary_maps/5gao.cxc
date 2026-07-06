@@ -1,0 +1,67 @@
+# Lightweight ChimeraX script for 5GAO
+# Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #306; target model: #306.1.
+
+open 8h6l id 306.9 name 8H6L_anchor
+open 5gao id 306.1 name 5GAO
+open emdb:8013 id 306.2.1 name 5GAO_EMD-8013_primary_map
+rename #306 tri_snRNP_5gao_structure
+
+# Align on PRPF8.
+matchmaker #306.1/A to #306.9/5B bring #306.2.1
+close #306.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# SNRPB
+color #306.1/k #B0C4DE
+# pre-mRNA
+color #306.1/V #303030
+# PRPF8
+color #306.1/A #BFC3E8
+# SNRPD1
+color #306.1/l #B0C4DE
+# SNRPD2
+color #306.1/m #B0C4DE
+# SNRPD3
+color #306.1/n #B0C4DE
+# SNRPE
+color #306.1/p #B0C4DE
+# SNRPF
+color #306.1/q #B0C4DE
+# SNRPG
+color #306.1/r #B0C4DE
+# SART1
+color #306.1/E #D6937B
+# SNRNP200
+color #306.1/B #AFEEEE
+# Named selections for resolved substrate RNA features.
+# substrate RNA: residues 73-104;128-152, component, medium confidence, validation not_applicable
+name U5_tri_snRNP_5GAO_substrate #306.1/V:73-104,128-152
+view
+show nucleic

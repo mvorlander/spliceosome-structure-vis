@@ -1,0 +1,50 @@
+# Lightweight ChimeraX script for 5ZYA
+# Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #329; target model: #329.1.
+
+open 8h6l id 329.9 name 8H6L_anchor
+open 5zya id 329.1 name 5ZYA
+open emdb:6915 id 329.2.1 name 5ZYA_EMD-6915_primary_map
+rename #329 SF3B_U2_5zya_structure
+
+# Align on SF3B1.
+matchmaker #329.1/C to #329.9/2G bring #329.2.1
+close #329.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# SF3B5
+color #329.1/B #92BB8F
+# SF3B1
+color #329.1/C #487957
+# PHF5A
+color #329.1/D #375A40
+# SF3B3
+color #329.1/A #6A9064
+view
+show nucleic

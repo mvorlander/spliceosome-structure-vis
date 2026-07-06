@@ -1,5 +1,6 @@
 # Lightweight ChimeraX script for 7ONB
 # Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
@@ -62,8 +63,6 @@ name U2_snRNP_7ONB_5exon #364.1/G:129-142
 # substrate RNA: residues 129-142, component, medium confidence, validation not_applicable
 name U2_snRNP_7ONB_substrate #364.1/G:129-142
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA U2/U6 helix I partner: residues 34-55, review-region, low confidence
-name U2_snRNP_7ONB_U2_U6_helix_I_partner #364.1/H:34-55
 # U2 snRNA branchpoint pairing region: residues 34-41, sequence-motif-neighborhood, medium confidence
 name U2_snRNP_7ONB_U2_branchpoint_pairing_region #364.1/H:34-41
 # U2 snRNA stem IIa: residues 46-65, review-region, low confidence
@@ -75,11 +74,6 @@ select clear
 # 5' exon: residues 129-142
 color #364.1/G:129-142 #FF8C00
 select #364.1/G:129-142
-nucleotides sel fill
-select clear
-# U2/U6 helix I: residues 34-55
-color #364.1/H:34-55 #047857
-select #364.1/H:34-55
 nucleotides sel fill
 select clear
 # U2 BP pairing: residues 34-41
@@ -94,7 +88,6 @@ nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
 label #364.1/G:136 residues text "5' exon 129-142" color #FF8C00 height 5 bgColor transparent
-label #364.1/H:44 residues text "U2/U6 helix I 34-55" color #047857 height 5 bgColor transparent
 label #364.1/H:38 residues text "U2 BP pairing 34-41" color #0B6E2D height 5 bgColor transparent
 label #364.1/H:56 residues text "U2 stem IIa 46-65" color #167A38 height 5 bgColor transparent
 view

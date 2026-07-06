@@ -1,0 +1,103 @@
+# Lightweight ChimeraX script for 8Y7E
+# Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #417; target model: #417.1.
+
+open 8h6l id 417.9 name 8H6L_anchor
+open 8y7e id 417.1 name 8Y7E
+open emdb:39013 id 417.2.1 name 8Y7E_EMD-39013_primary_map
+rename #417 pre_B_8y7e_structure
+
+# Align on SF3B1.
+matchmaker #417.1/1 to #417.9/2G bring #417.2.1
+close #417.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# pre-mRNA
+color #417.1/A #303030
+# SNRPD3
+color #417.1/h #B0C4DE
+# SNRPB
+color #417.1/i #B0C4DE
+# SNRPD1
+color #417.1/j #B0C4DE
+# SNRPD2
+color #417.1/k #B0C4DE
+# SNRPE
+color #417.1/l #B0C4DE
+# SNRPF
+color #417.1/m #B0C4DE
+# SNRPG
+color #417.1/n #B0C4DE
+# SCNM1
+color #417.1/v #547083
+# SF3B1
+color #417.1/1 #487957
+# SF3B2
+color #417.1/2 #49926C
+# SF3B3
+color #417.1/3 #6A9064
+# SF3B4
+color #417.1/4 #77B088
+# SF3B6
+color #417.1/5 #ADCEA0
+# PHF5A
+color #417.1/6 #375A40
+# SF3B5
+color #417.1/7 #92BB8F
+# U2 snRNA
+color #417.1/H #006400
+# Named selections for resolved substrate RNA features.
+# substrate RNA: residues 193-222, component, medium confidence, validation not_applicable
+name pre_B_8Y7E_substrate #417.1/A:193-222
+# branch point region: residues 195-206, network-scored-motif, high confidence, validation validated
+name pre_B_8Y7E_branch_region #417.1/A:195-206
+# branch point adenosine: residues 203, network-scored-motif, high confidence, validation validated
+name pre_B_8Y7E_branch_A #417.1/A:203
+# Named selections for resolved snRNA functional regions.
+# U12 snRNA branchpoint pairing region: residues 16-26, reference-alignment, high confidence
+name pre_B_8Y7E_U12_branchpoint_pairing_region #417.1/H:16-26
+# U12 snRNA Sm site: residues 75-81, sequence-motif, medium confidence
+name pre_B_8Y7E_U12_Sm_site #417.1/H:75-81
+# RNA feature nucleotide display.
+select #417.1 & nucleic
+nucleotides sel atoms
+select clear
+# BP region: residues 195-206
+# BP-A: residues 203
+# U12 BP pairing: residues 16-26
+color #417.1/H:16-26 #0B6E2D
+select #417.1/H:16-26
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #417.1/A:200 residues text "BP region 195-206" color #303030 height 5 bgColor transparent
+label #417.1/A:203 residues text "BP-A 203" color #303030 height 5 bgColor transparent
+label #417.1/H:21 residues text "U12 BP pairing 16-26" color #0B6E2D height 5 bgColor transparent
+view
+show nucleic

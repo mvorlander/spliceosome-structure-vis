@@ -1,0 +1,48 @@
+# Lightweight ChimeraX script for 7PX3
+# Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #368; target model: #368.1.
+
+open 8h6l id 368.9 name 8H6L_anchor
+open 7px3 id 368.1 name 7PX3
+open emdb:13690 id 368.2.1 name 7PX3_EMD-13690_primary_map
+rename #368 U5_recycling_7px3_structure
+
+# Align on PRPF8.
+matchmaker #368.1/J to #368.9/5B bring #368.2.1
+close #368.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# SNRNP200
+color #368.1/B #AFEEEE
+# PRPF8
+color #368.1/J #BFC3E8
+# TSSC4
+color #368.1/T #800000
+view
+show nucleic

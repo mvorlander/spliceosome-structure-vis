@@ -1,0 +1,52 @@
+# Lightweight ChimeraX script for 7EVN
+# Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #362; target model: #362.1.
+
+open 8h6l id 362.9 name 8H6L_anchor
+open 7evn id 362.1 name 7EVN
+open emdb:31330 id 362.2.1 name 7EVN_EMD-31330_primary_map
+rename #362 SF3B_U2_7evn_structure
+
+# Align on SF3B1.
+matchmaker #362.1/C to #362.9/2G bring #362.2.1
+close #362.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# SF3B5
+color #362.1/B #92BB8F
+# SF3B1
+color #362.1/C #487957
+# PHF5A
+color #362.1/D #375A40
+# SF3B3
+color #362.1/A #6A9064
+# DDX42
+color #362.1/E #479061
+view
+show nucleic

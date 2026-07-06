@@ -1,5 +1,6 @@
 # Lightweight ChimeraX script for 9L5S
 # Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
@@ -113,8 +114,8 @@ color #426.1/F #FAEBD7
 # SYF1
 color #426.1/I #FF957B
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA U2/U6 helix I partner: residues 25-37, review-region, low confidence
-name Bstar_9L5S_U2_U6_helix_I_partner #426.1/2:25-37
+# U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
+name Bstar_9L5S_U2_U6_helix_I_partner #426.1/2:26-30
 # U2 snRNA branchpoint pairing region: residues 31-37, sequence-motif-neighborhood, medium confidence
 name Bstar_9L5S_U2_branchpoint_pairing_region #426.1/2:31-37
 # U5 snRNA loop I: residues 37-41, sequence-motif, medium confidence
@@ -135,9 +136,9 @@ name Bstar_9L5S_U6_LSm_site #426.1/6:92
 select #426.1 & nucleic
 nucleotides sel atoms
 select clear
-# U2/U6 helix I: residues 25-37
-color #426.1/2:25-37 #047857
-select #426.1/2:25-37
+# U2/U6 helix I: residues 26-30
+color #426.1/2:26-30 #047857
+select #426.1/2:26-30
 nucleotides sel fill
 select clear
 # U2 BP pairing: residues 31-37
@@ -176,7 +177,7 @@ select #426.1/6:46-48
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #426.1/2:31 residues text "U2/U6 helix I 25-37" color #047857 height 5 bgColor transparent
+label #426.1/2:28 residues text "U2/U6 helix I 26-30" color #047857 height 5 bgColor transparent
 label #426.1/2:34 residues text "U2 BP pairing 31-37" color #0B6E2D height 5 bgColor transparent
 label #426.1/5:39 residues text "U5 loop I 37-41" color #1B3CD0 height 5 bgColor transparent
 label #426.1/6:40 residues text "U2/U6 helix I 28-53" color #D0183C height 5 bgColor transparent

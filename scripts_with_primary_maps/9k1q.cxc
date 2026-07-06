@@ -1,0 +1,57 @@
+# Lightweight ChimeraX script for 9K1Q
+# Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #421; target model: #421.1.
+
+open 8h6l id 421.9 name 8H6L_anchor
+open 9k1q id 421.1 name 9K1Q
+open emdb:61978 id 421.2.1 name 9K1Q_EMD-61978_primary_map
+rename #421 SF3B_U2_9k1q_structure
+
+# Align on SF3B1.
+matchmaker #421.1/C to #421.9/2G bring #421.2.1
+close #421.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# SF3B1
+color #421.1/C #487957
+# PHF5A
+color #421.1/D #375A40
+# SF3B3
+color #421.1/A #6A9064
+# SF3B5
+color #421.1/B #92BB8F
+# pre-mRNA
+color #421.1/G #303030
+# pre-mRNA
+color #421.1/H #303030
+# Named selections for resolved substrate RNA features.
+# substrate RNA: residues 26-34; 31-52, component, medium confidence, validation not_applicable
+name U2_snRNP_9K1Q_substrate #421.1/G:31-52|#421.1/H:26-34
+view
+show nucleic

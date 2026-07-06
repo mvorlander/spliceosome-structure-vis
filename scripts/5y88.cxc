@@ -1,5 +1,6 @@
 # Lightweight ChimeraX script for 5Y88
 # Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
@@ -132,8 +133,8 @@ name ILS_disassembly_5Y88_branch_region #320.1/E:495-503
 # branch point adenosine: residues 501, network-scored-motif, high confidence, validation validated
 name ILS_disassembly_5Y88_branch_A #320.1/E:501
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA U2/U6 helix I partner: residues 25-43, review-region, low confidence
-name ILS_disassembly_5Y88_U2_U6_helix_I_partner #320.1/F:25-43
+# U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
+name ILS_disassembly_5Y88_U2_U6_helix_I_partner #320.1/F:26-30
 # U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence
 name ILS_disassembly_5Y88_U2_branchpoint_pairing_region #320.1/F:33-42
 # U5 snRNA loop I: residues 53-55, sequence-motif, medium confidence
@@ -158,9 +159,9 @@ select clear
 # lariat: residues 1-15;492-504
 # BP region: residues 495-503
 # BP-A: residues 501
-# U2/U6 helix I: residues 25-43
-color #320.1/F:25-43 #047857
-select #320.1/F:25-43
+# U2/U6 helix I: residues 26-30
+color #320.1/F:26-30 #047857
+select #320.1/F:26-30
 nucleotides sel fill
 select clear
 # U2 BP pairing: residues 33-42
@@ -208,7 +209,7 @@ label #320.1/E:8 residues text "intron 1-15;492-504" color #303030 height 5 bgCo
 label #320.1/E:8 residues text "lariat 1-15;492-504" color #303030 height 5 bgColor transparent
 label #320.1/E:499 residues text "BP region 495-503" color #303030 height 5 bgColor transparent
 label #320.1/E:501 residues text "BP-A 501" color #303030 height 5 bgColor transparent
-label #320.1/F:34 residues text "U2/U6 helix I 25-43" color #047857 height 5 bgColor transparent
+label #320.1/F:28 residues text "U2/U6 helix I 26-30" color #047857 height 5 bgColor transparent
 label #320.1/F:38 residues text "U2 BP pairing 33-42" color #0B6E2D height 5 bgColor transparent
 label #320.1/B:54 residues text "U5 loop I 53-55" color #1B3CD0 height 5 bgColor transparent
 label #320.1/D:16 residues text "U6 5' terminal SL 1-30" color #DC143C height 5 bgColor transparent

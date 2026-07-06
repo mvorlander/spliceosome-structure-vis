@@ -1,0 +1,120 @@
+# Lightweight ChimeraX script for 5ZWN
+# Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #327; target model: #327.1.
+
+open 8h6l id 327.9 name 8H6L_anchor
+open 5zwn id 327.1 name 5ZWN
+open emdb:6973 id 327.2.1 name 5ZWN_EMD-6973_primary_map
+rename #327 pre_B_5zwn_structure
+
+# No PRPF8 or SF3B1 chain was detected; anchor is closed without alignment.
+close #327.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# pre-mRNA
+color #327.1/G #303030
+# U1-Sm SNRPB
+color #327.1/a #EAD7E8
+# U1-Sm SNRPD1
+color #327.1/b #EAD7E8
+# U1-Sm SNRPD2
+color #327.1/c #EAD7E8
+# U1-Sm SNRPD3
+color #327.1/d #EAD7E8
+# U1-Sm SNRPE
+color #327.1/e #EAD7E8
+# U1-Sm SNRPF
+color #327.1/f #EAD7E8
+# U1-Sm SNRPG
+color #327.1/g #EAD7E8
+# SNU71
+color #327.1/X #A95A9B
+# LUC7L
+color #327.1/Y #B03372
+# U1 snRNA
+color #327.1/P #B66AAE
+# DDX23
+color #327.1/y #CA9982
+# SNRNP70
+color #327.1/Q #8C3D78
+# SNRPC
+color #327.1/R #D7A3CF
+# SNRPA
+color #327.1/S #C07AB6
+# PRP42
+color #327.1/T #7F5BA6
+# PRPF39
+color #327.1/U #E1B8D9
+# NAM8
+color #327.1/V #C7A6BE
+# SNU56
+color #327.1/W #D65B96
+# Named selections for resolved substrate RNA features.
+# substrate RNA: residues -9-12, component, medium confidence, validation not_applicable
+name pre_B_5ZWN_substrate #327.1/G:-9-12
+# Named selections for resolved snRNA functional regions.
+# U1 snRNA 5' splice-site recognition region: residues 1-10, review-region, medium confidence
+name pre_B_5ZWN_U1_5_5SS_recognition #327.1/P:1-10
+# U1 snRNA stem-loop 1: residues 11-25;33-45, review-region, low confidence
+name pre_B_5ZWN_U1_SL1 #327.1/P:11-25,33-45
+# U1 snRNA stem-loop 2: residues 46-95, review-region, low confidence
+name pre_B_5ZWN_U1_SL2 #327.1/P:46-95
+# U1 snRNA Sm site: residues 228-230; 241-247; 553-559, sequence-motif, medium confidence
+name pre_B_5ZWN_U1_Sm_site #327.1/P:228-230|#327.1/P:241-247|#327.1/P:553-559
+# RNA feature nucleotide display.
+select #327.1 & nucleic
+nucleotides sel atoms
+select clear
+# U1 5'SS recog.: residues 1-10
+color #327.1/P:1-10 #B66AAE
+select #327.1/P:1-10
+nucleotides sel fill
+select clear
+# U1 SL1: residues 11-25;33-45
+color #327.1/P:11-25,33-45 #BF72B7
+select #327.1/P:11-25,33-45
+nucleotides sel fill
+select clear
+# U1 SL2: residues 46-95
+color #327.1/P:46-95 #AD62A6
+select #327.1/P:46-95
+nucleotides sel fill
+select clear
+# U1 Sm site: residues 228-230; 241-247; 553-559
+color #327.1/P:228-230|#327.1/P:241-247|#327.1/P:553-559 #C783BF
+select #327.1/P:228-230|#327.1/P:241-247|#327.1/P:553-559
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #327.1/P:6 residues text "U1 5'SS recog. 1-10" color #B66AAE height 5 bgColor transparent
+label #327.1/P:18 residues text "U1 SL1 11-25;33-45" color #BF72B7 height 5 bgColor transparent
+label #327.1/P:70 residues text "U1 SL2 46-95" color #AD62A6 height 5 bgColor transparent
+label #327.1/P:244 residues text "U1 Sm site 228-230; 241-247; 553-559" color #C783BF height 5 bgColor transparent
+view
+show nucleic

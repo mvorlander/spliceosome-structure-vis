@@ -1,0 +1,170 @@
+# Lightweight ChimeraX script for 5MQ0
+# Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #314; target model: #314.1.
+
+open 8h6l id 314.9 name 8H6L_anchor
+open 5mq0 id 314.1 name 5MQ0
+open emdb:3541 id 314.2.1 name 5MQ0_EMD-3541_primary_map
+rename #314 Cstar_5mq0_structure
+
+# Align on PRPF8.
+matchmaker #314.1/A to #314.9/5B bring #314.2.1
+close #314.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# pre-mRNA
+color #314.1/I #303030
+# SNW1
+color #314.1/K #D49F96
+# BUD31
+color #314.1/L #FFF584
+# CWC2
+color #314.1/M #E6B566
+# RBM22
+color #314.1/N #DE9A52
+# CDC5L
+color #314.1/O #DAA520
+# CWC15
+color #314.1/P #FFDEAD
+# CRNKL1
+color #314.1/S #FFC388
+# SYF1
+color #314.1/T #FF957B
+# pre-mRNA
+color #314.1/E #303030
+# SLU7
+color #314.1/c #5A338B
+# PRPF17
+color #314.1/o #FFF7C9
+# SYF2
+color #314.1/y #FF8C00
+# SNRPB
+color #314.1/b #B0C4DE
+# SNRPB
+color #314.1/k #B0C4DE
+# SNRPD3
+color #314.1/d #B0C4DE
+# SNRPD3
+color #314.1/n #B0C4DE
+# SNRPE
+color #314.1/e #B0C4DE
+# SNRPE
+color #314.1/p #B0C4DE
+# SNRPF
+color #314.1/f #B0C4DE
+# SNRPF
+color #314.1/q #B0C4DE
+# SNRPG
+color #314.1/g #B0C4DE
+# SNRPG
+color #314.1/r #B0C4DE
+# SNRPD1
+color #314.1/h #B0C4DE
+# SNRPD1
+color #314.1/l #B0C4DE
+# pre-mRNA
+color #314.1/2 #303030
+# SNRPD2
+color #314.1/j #B0C4DE
+# SNRPD2
+color #314.1/m #B0C4DE
+# DHX8
+color #314.1/V #900C3F
+# SNRPA1
+color #314.1/W #58D68D
+# SNRPB2
+color #314.1/Y #DAF7A6
+# pre-mRNA
+color #314.1/3 #303030
+# PRPF19
+color #314.1/t #FFFFAB
+# PRPF19
+color #314.1/u #FFFFAB
+# PRPF19
+color #314.1/v #FFFFAB
+# PRPF19
+color #314.1/w #FFFFAB
+# pre-mRNA
+color #314.1/6 #303030
+# pre-mRNA
+color #314.1/5 #303030
+# PRPF8
+color #314.1/A #BFC3E8
+# EFTUD2
+color #314.1/C #6495ED
+# CWC22
+color #314.1/H #2C54DD
+# PLRG1
+color #314.1/J #F4A460
+# Named selections for resolved substrate RNA features.
+# 5' exon: residues -16--1; 1-49;55-73;78-84;98-104;139-150, component-name/splice-site-inference, high/medium confidence, validation not_applicable
+name Cstar_5MQ0_5exon #314.1/2:1-49,55-73,78-84,98-104,139-150|#314.1/E:-16--1
+# substrate RNA: residues -16--1; 1-10;16-104; 1-16;56-73; 1-3; 1-49;55-73;78-84;98-104;139-150;1089-1108;1117-1129;1138-1154;1159-1169; 4-53;62-145;167-173, component, medium confidence, validation not_applicable
+name Cstar_5MQ0_substrate #314.1/2:1-49,55-73,78-84,98-104,139-150,1089-1108,1117-1129,1138-1154,1159-1169|#314.1/3:1-3|#314.1/5:4-53,62-145,167-173|#314.1/6:1-10,16-104|#314.1/E:-16--1|#314.1/I:1-16,56-73
+# intron: residues -16--1; 1089, five-ss-inference/splice-site-inference, low/medium confidence, validation not_applicable
+name Cstar_5MQ0_intron #314.1/2:1089|#314.1/E:-16--1
+# 3' splice site: residues 1089; 133-135, sequence-motif, medium confidence, validation validated
+name Cstar_5MQ0_3SS #314.1/2:1089|#314.1/5:133-135
+# 3' exon: residues 1-3; 1090-1108;1117-1129;1138-1154;1159-1169, component-name/splice-site-inference, high/medium confidence, validation not_applicable
+name Cstar_5MQ0_3exon #314.1/2:1090-1108,1117-1129,1138-1154,1159-1169|#314.1/3:1-3
+# branch point region: residues 65-71; 72-76, network-scored-motif, medium/review confidence, validation uncertain uncertain validation
+name Cstar_5MQ0_branch_region #314.1/5:72-76|#314.1/I:65-71
+# polypyrimidine tract: residues 94-99, sequence-motif, medium confidence, validation uncertain uncertain validation
+name Cstar_5MQ0_PPT #314.1/5:94-99
+# 5' splice site: residues -16--12, sequence-motif, medium confidence, validation uncertain uncertain validation
+name Cstar_5MQ0_5SS #314.1/E:-16--12
+# RNA feature nucleotide display.
+select #314.1 & nucleic
+nucleotides sel atoms
+select clear
+# 5' exon: residues -16--1; 1-49;55-73;78-84;98-104;139-150
+color #314.1/2:1-49,55-73,78-84,98-104,139-150|#314.1/E:-16--1 #FF8C00
+select #314.1/2:1-49,55-73,78-84,98-104,139-150|#314.1/E:-16--1
+nucleotides sel fill
+select clear
+# intron: residues -16--1; 1089
+# 3'SS: residues 1089; 133-135
+# 3' exon: residues 1-3; 1090-1108;1117-1129;1138-1154;1159-1169
+color #314.1/2:1090-1108,1117-1129,1138-1154,1159-1169|#314.1/3:1-3 #D97706
+select #314.1/2:1090-1108,1117-1129,1138-1154,1159-1169|#314.1/3:1-3
+nucleotides sel fill
+select clear
+# BP region: residues 65-71; 72-76
+# PPT: residues 94-99
+# 5'SS: residues -16--12
+# RNA feature 3D residue labels.
+label #314.1/2:25 residues text "5' exon -16--1; 1-49;55-73;78-84;98-104;139-150" color #FF8C00 height 5 bgColor transparent
+label #314.1/E:-8 residues text "intron -16--1; 1089" color #303030 height 5 bgColor transparent
+label #314.1/5:134 residues text "3'SS 1089; 133-135" color #303030 height 5 bgColor transparent
+label #314.1/2:1099 residues text "3' exon 1-3; 1090-1108;1117-1129;1138-1154;1159-1169" color #D97706 height 5 bgColor transparent
+label #314.1/I:68 residues text "? BP region 65-71; 72-76" color #303030 height 5 bgColor transparent
+label #314.1/5:96 residues text "? PPT 94-99" color #303030 height 5 bgColor transparent
+label #314.1/E:-14 residues text "? 5'SS -16--12" color #303030 height 5 bgColor transparent
+view
+show nucleic

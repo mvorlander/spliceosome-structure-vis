@@ -1,0 +1,83 @@
+# Lightweight ChimeraX script for 9K1W
+# Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #423; target model: #423.1.
+
+open 8h6l id 423.9 name 8H6L_anchor
+open 9k1w id 423.1 name 9K1W
+open emdb:61982 id 423.2.1 name 9K1W_EMD-61982_primary_map
+rename #423 SF3B_U2_9k1w_structure
+
+# Align on SF3B1.
+matchmaker #423.1/C to #423.9/2G bring #423.2.1
+close #423.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# SF3B1
+color #423.1/C #487957
+# PHF5A
+color #423.1/D #375A40
+# SF3B3
+color #423.1/A #6A9064
+# SF3B5
+color #423.1/B #92BB8F
+# INTRON
+color #423.1/G #303030
+# U2 snRNA
+color #423.1/H #006400
+# Named selections for resolved substrate RNA features.
+# substrate RNA: residues 27-48, component, medium confidence, validation not_applicable
+name U2_snRNP_9K1W_substrate #423.1/G:27-48
+# branch point region: residues 28-38, network-scored-motif, high confidence, validation validated
+name U2_snRNP_9K1W_branch_region #423.1/G:28-38
+# branch point adenosine: residues 36, network-scored-motif, high confidence, validation validated
+name U2_snRNP_9K1W_branch_A #423.1/G:36
+# 3' splice site: residues 39-41, sequence-motif, medium confidence, validation uncertain uncertain validation
+name U2_snRNP_9K1W_3SS #423.1/G:39-41
+# Named selections for resolved snRNA functional regions.
+# U2 snRNA branchpoint pairing region: residues 2-11, sequence-motif-neighborhood, medium confidence
+name U2_snRNP_9K1W_U2_branchpoint_pairing_region #423.1/H:2-11
+# RNA feature nucleotide display.
+select #423.1 & nucleic
+nucleotides sel atoms
+select clear
+# BP region: residues 28-38
+# BP-A: residues 36
+# 3'SS: residues 39-41
+# U2 BP pairing: residues 2-11
+color #423.1/H:2-11 #0B6E2D
+select #423.1/H:2-11
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #423.1/G:33 residues text "BP region 28-38" color #303030 height 5 bgColor transparent
+label #423.1/G:36 residues text "BP-A 36" color #303030 height 5 bgColor transparent
+label #423.1/G:40 residues text "? 3'SS 39-41" color #303030 height 5 bgColor transparent
+label #423.1/H:6 residues text "U2 BP pairing 2-11" color #0B6E2D height 5 bgColor transparent
+view
+show nucleic

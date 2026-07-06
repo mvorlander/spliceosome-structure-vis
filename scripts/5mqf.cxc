@@ -1,5 +1,6 @@
 # Lightweight ChimeraX script for 5MQF
 # Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
@@ -142,8 +143,8 @@ name Cstar_5MQF_branch_A #315.1/Y:155
 # 5' exon: residues 47-58, splice-site-inference, medium confidence, validation not_applicable
 name Cstar_5MQF_5exon #315.1/Z:47-58
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA U2/U6 helix I partner: residues 25-55, review-region, low confidence
-name Cstar_5MQF_U2_U6_helix_I_partner #315.1/2:25-55
+# U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
+name Cstar_5MQF_U2_U6_helix_I_partner #315.1/2:26-30
 # U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence
 name Cstar_5MQF_U2_branchpoint_pairing_region #315.1/2:32-41
 # U2 snRNA stem IIa: residues 46-60, review-region, low confidence
@@ -177,9 +178,9 @@ color #315.1/Z:47-58 #FF8C00
 select #315.1/Z:47-58
 nucleotides sel fill
 select clear
-# U2/U6 helix I: residues 25-55
-color #315.1/2:25-55 #047857
-select #315.1/2:25-55
+# U2/U6 helix I: residues 26-30
+color #315.1/2:26-30 #047857
+select #315.1/2:26-30
 nucleotides sel fill
 select clear
 # U2 BP pairing: residues 32-41
@@ -233,7 +234,7 @@ label #315.1/Y:146 residues text "intron 59-67;135-157" color #303030 height 5 b
 label #315.1/Y:153 residues text "BP region 150-156" color #303030 height 5 bgColor transparent
 label #315.1/Y:155 residues text "BP-A 155" color #303030 height 5 bgColor transparent
 label #315.1/Z:52 residues text "5' exon 47-58" color #FF8C00 height 5 bgColor transparent
-label #315.1/2:40 residues text "U2/U6 helix I 25-55" color #047857 height 5 bgColor transparent
+label #315.1/2:28 residues text "U2/U6 helix I 26-30" color #047857 height 5 bgColor transparent
 label #315.1/2:36 residues text "U2 BP pairing 32-41" color #0B6E2D height 5 bgColor transparent
 label #315.1/2:53 residues text "U2 stem IIa 46-60" color #167A38 height 5 bgColor transparent
 label #315.1/5:40 residues text "U5 loop I 38-42" color #1B3CD0 height 5 bgColor transparent

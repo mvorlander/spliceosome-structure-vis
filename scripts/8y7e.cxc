@@ -1,5 +1,6 @@
 # Lightweight ChimeraX script for 8Y7E
 # Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
@@ -73,27 +74,29 @@ color #417.1/H #006400
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 193-222, component, medium confidence, validation not_applicable
 name pre_B_8Y7E_substrate #417.1/A:193-222
+# branch point region: residues 195-206, network-scored-motif, high confidence, validation validated
+name pre_B_8Y7E_branch_region #417.1/A:195-206
+# branch point adenosine: residues 203, network-scored-motif, high confidence, validation validated
+name pre_B_8Y7E_branch_A #417.1/A:203
 # Named selections for resolved snRNA functional regions.
-# U12 snRNA branchpoint pairing region: residues 30-45, review-region, low confidence
-name pre_B_8Y7E_U12_branchpoint_pairing_region #417.1/H:30-45
+# U12 snRNA branchpoint pairing region: residues 16-26, reference-alignment, high confidence
+name pre_B_8Y7E_U12_branchpoint_pairing_region #417.1/H:16-26
 # U12 snRNA Sm site: residues 75-81, sequence-motif, medium confidence
 name pre_B_8Y7E_U12_Sm_site #417.1/H:75-81
 # RNA feature nucleotide display.
 select #417.1 & nucleic
 nucleotides sel atoms
 select clear
-# branchpoint pairing region: residues 30-45
-color #417.1/H:30-45 #F97316
-select #417.1/H:30-45
-nucleotides sel fill
-select clear
-# Sm site: residues 75-81
-color #417.1/H:75-81 #F97316
-select #417.1/H:75-81
+# BP region: residues 195-206
+# BP-A: residues 203
+# U12 BP pairing: residues 16-26
+color #417.1/H:16-26 #0B6E2D
+select #417.1/H:16-26
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #417.1/H:38 residues text "branchpoint pairing region 30-45" color #F97316 height 5 bgColor transparent
-label #417.1/H:78 residues text "Sm site 75-81" color #F97316 height 5 bgColor transparent
+label #417.1/A:200 residues text "BP region 195-206" color #303030 height 5 bgColor transparent
+label #417.1/A:203 residues text "BP-A 203" color #303030 height 5 bgColor transparent
+label #417.1/H:21 residues text "U12 BP pairing 16-26" color #0B6E2D height 5 bgColor transparent
 view
 show nucleic

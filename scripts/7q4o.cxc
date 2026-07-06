@@ -1,5 +1,6 @@
 # Lightweight ChimeraX script for 7Q4O
 # Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
@@ -64,8 +65,8 @@ name U2_snRNP_7Q4O_branch_region #370.1/h:2-12
 # branch point adenosine: residues 10, network-scored-motif, high confidence, validation validated
 name U2_snRNP_7Q4O_branch_A #370.1/h:10
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA U2/U6 helix I partner: residues 29-55, review-region, low confidence
-name U2_snRNP_7Q4O_U2_U6_helix_I_partner #370.1/2:29-55
+# U2 snRNA U2/U6 helix I partner: residues 29-30, review-region, high confidence
+name U2_snRNP_7Q4O_U2_U6_helix_I_partner #370.1/2:29-30
 # U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence
 name U2_snRNP_7Q4O_U2_branchpoint_pairing_region #370.1/2:32-41
 # U2 snRNA stem IIa: residues 46-63, review-region, low confidence
@@ -76,9 +77,9 @@ nucleotides sel atoms
 select clear
 # BP region: residues 2-12
 # BP-A: residues 10
-# U2/U6 helix I: residues 29-55
-color #370.1/2:29-55 #047857
-select #370.1/2:29-55
+# U2/U6 helix I: residues 29-30
+color #370.1/2:29-30 #047857
+select #370.1/2:29-30
 nucleotides sel fill
 select clear
 # U2 BP pairing: residues 32-41
@@ -94,7 +95,7 @@ select clear
 # RNA feature 3D residue labels.
 label #370.1/h:7 residues text "BP region 2-12" color #303030 height 5 bgColor transparent
 label #370.1/h:10 residues text "BP-A 10" color #303030 height 5 bgColor transparent
-label #370.1/2:42 residues text "U2/U6 helix I 29-55" color #047857 height 5 bgColor transparent
+label #370.1/2:30 residues text "U2/U6 helix I 29-30" color #047857 height 5 bgColor transparent
 label #370.1/2:36 residues text "U2 BP pairing 32-41" color #0B6E2D height 5 bgColor transparent
 label #370.1/2:54 residues text "U2 stem IIa 46-63" color #167A38 height 5 bgColor transparent
 view

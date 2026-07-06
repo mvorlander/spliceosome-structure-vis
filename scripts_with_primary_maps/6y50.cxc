@@ -1,0 +1,90 @@
+# Lightweight ChimeraX script for 6Y50
+# Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #349; target model: #349.1.
+
+open 8h6l id 349.9 name 8H6L_anchor
+open 6y50 id 349.1 name 6Y50
+open emdb:10688 id 349.2.1 name 6Y50_EMD-10688_primary_map
+rename #349 SF3B_U2_6y50_structure
+
+# Align on SF3B1.
+matchmaker #349.1/u to #349.9/2G bring #349.2.1
+close #349.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# SF3A3
+color #349.1/9 #9BCF91
+# PHF5A
+color #349.1/y #375A40
+# SF3B5
+color #349.1/x #92BB8F
+# SF3B2
+color #349.1/8 #49926C
+# SF3B3
+color #349.1/v #6A9064
+# SF3B1
+color #349.1/u #487957
+# U2 snRNA
+color #349.1/2 #006400
+# HTATSF1
+color #349.1/q #7DBF82
+# DDX46
+color #349.1/p #5BAE8A
+# Named selections for resolved snRNA functional regions.
+# U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
+name U2_snRNP_6Y50_U2_U6_helix_I_partner #349.1/2:26-30
+# U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence
+name U2_snRNP_6Y50_U2_branchpoint_pairing_region #349.1/2:32-41
+# U2 snRNA stem IIa: residues 46-65, review-region, low confidence
+name U2_snRNP_6Y50_U2_stem_IIa #349.1/2:46-65
+# RNA feature nucleotide display.
+select #349.1 & nucleic
+nucleotides sel atoms
+select clear
+# U2/U6 helix I: residues 26-30
+color #349.1/2:26-30 #047857
+select #349.1/2:26-30
+nucleotides sel fill
+select clear
+# U2 BP pairing: residues 32-41
+color #349.1/2:32-41 #0B6E2D
+select #349.1/2:32-41
+nucleotides sel fill
+select clear
+# U2 stem IIa: residues 46-65
+color #349.1/2:46-65 #167A38
+select #349.1/2:46-65
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #349.1/2:28 residues text "U2/U6 helix I 26-30" color #047857 height 5 bgColor transparent
+label #349.1/2:36 residues text "U2 BP pairing 32-41" color #0B6E2D height 5 bgColor transparent
+label #349.1/2:56 residues text "U2 stem IIa 46-65" color #167A38 height 5 bgColor transparent
+view
+show nucleic

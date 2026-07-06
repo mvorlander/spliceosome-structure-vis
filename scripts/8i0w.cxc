@@ -1,5 +1,6 @@
 # Lightweight ChimeraX script for 8I0W
 # Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
@@ -160,8 +161,8 @@ name C_8I0W_branch_A #390.1/6:97
 # polypyrimidine tract: residues 103-107, sequence-motif, medium confidence, validation validated
 name C_8I0W_PPT #390.1/6:103-107
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA U2/U6 helix I partner: residues 25-47;54-55, review-region, low confidence
-name C_8I0W_U2_U6_helix_I_partner #390.1/H:25-47,54-55
+# U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
+name C_8I0W_U2_U6_helix_I_partner #390.1/H:26-30
 # U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence
 name C_8I0W_U2_branchpoint_pairing_region #390.1/H:32-41
 # U2 snRNA stem IIa: residues 46-47;54-60;68-75;77-80, review-region, low confidence
@@ -189,9 +190,9 @@ select clear
 # BP region: residues 92-99
 # BP-A: residues 97
 # PPT: residues 103-107
-# U2/U6 helix I: residues 25-47;54-55
-color #390.1/H:25-47,54-55 #047857
-select #390.1/H:25-47,54-55
+# U2/U6 helix I: residues 26-30
+color #390.1/H:26-30 #047857
+select #390.1/H:26-30
 nucleotides sel fill
 select clear
 # U2 BP pairing: residues 32-41
@@ -243,7 +244,7 @@ select clear
 label #390.1/6:96 residues text "BP region 92-99" color #303030 height 5 bgColor transparent
 label #390.1/6:97 residues text "BP-A 97" color #303030 height 5 bgColor transparent
 label #390.1/6:105 residues text "PPT 103-107" color #303030 height 5 bgColor transparent
-label #390.1/H:36 residues text "U2/U6 helix I 25-47;54-55" color #047857 height 5 bgColor transparent
+label #390.1/H:28 residues text "U2/U6 helix I 26-30" color #047857 height 5 bgColor transparent
 label #390.1/H:36 residues text "U2 BP pairing 32-41" color #0B6E2D height 5 bgColor transparent
 label #390.1/H:72 residues text "U2 stem IIa 46-47;54-60;68-75;77-80" color #167A38 height 5 bgColor transparent
 label #390.1/B:40 residues text "U5 loop I 38-42" color #1B3CD0 height 5 bgColor transparent

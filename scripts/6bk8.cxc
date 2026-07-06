@@ -1,5 +1,6 @@
 # Lightweight ChimeraX script for 6BK8
 # Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
@@ -130,8 +131,8 @@ name P_6BK8_PPT #332.1/i:518,620,621,622,623,624,625,626,627,628
 # 3' splice site: residues 1116-1118, sequence-motif, medium confidence, validation validated
 name P_6BK8_3SS #332.1/i:1116-1118
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA U2/U6 helix I partner: residues 25-47;55, review-region, low confidence
-name P_6BK8_U2_U6_helix_I_partner #332.1/2:25-47,55
+# U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
+name P_6BK8_U2_U6_helix_I_partner #332.1/2:26-30
 # U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence
 name P_6BK8_U2_branchpoint_pairing_region #332.1/2:33-42
 # U2 snRNA stem IIa: residues 46-47;55-64, review-region, low confidence
@@ -158,9 +159,9 @@ select clear
 # BP-A: residues 515
 # PPT: residues 518,620,621,622,623,624,625,626,627,628
 # 3'SS: residues 1116-1118
-# U2/U6 helix I: residues 25-47;55
-color #332.1/2:25-47,55 #047857
-select #332.1/2:25-47,55
+# U2/U6 helix I: residues 26-30
+color #332.1/2:26-30 #047857
+select #332.1/2:26-30
 nucleotides sel fill
 select clear
 # U2 BP pairing: residues 33-42
@@ -213,7 +214,7 @@ label #332.1/i:512 residues text "BP region 507-517" color #303030 height 5 bgCo
 label #332.1/i:515 residues text "BP-A 515" color #303030 height 5 bgColor transparent
 label #332.1/i:518 residues text "? PPT 518,620,621,622,623,624,625,626,627,628" color #303030 height 5 bgColor transparent
 label #332.1/i:1117 residues text "3'SS 1116-1118" color #303030 height 5 bgColor transparent
-label #332.1/2:36 residues text "U2/U6 helix I 25-47;55" color #047857 height 5 bgColor transparent
+label #332.1/2:28 residues text "U2/U6 helix I 26-30" color #047857 height 5 bgColor transparent
 label #332.1/2:38 residues text "U2 BP pairing 33-42" color #0B6E2D height 5 bgColor transparent
 label #332.1/2:60 residues text "U2 stem IIa 46-47;55-64" color #167A38 height 5 bgColor transparent
 label #332.1/5:54 residues text "U5 loop I 53-55" color #1B3CD0 height 5 bgColor transparent

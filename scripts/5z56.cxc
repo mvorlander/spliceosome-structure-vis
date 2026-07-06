@@ -1,5 +1,6 @@
 # Lightweight ChimeraX script for 5Z56
 # Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
@@ -170,8 +171,8 @@ name Bact_5Z56_branch_A #323.1/G:144
 # polypyrimidine tract: residues 150-163, sequence-motif, medium confidence, validation validated
 name Bact_5Z56_PPT #323.1/G:150-163
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA U2/U6 helix I partner: residues 25-55, review-region, low confidence
-name Bact_5Z56_U2_U6_helix_I_partner #323.1/H:25-55
+# U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
+name Bact_5Z56_U2_U6_helix_I_partner #323.1/H:26-30
 # U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence
 name Bact_5Z56_U2_branchpoint_pairing_region #323.1/H:32-41
 # U2 snRNA stem IIa: residues 46-65;68-74;78-80, review-region, low confidence
@@ -206,9 +207,9 @@ select clear
 # BP region: residues 138-146
 # BP-A: residues 144
 # PPT: residues 150-163
-# U2/U6 helix I: residues 25-55
-color #323.1/H:25-55 #047857
-select #323.1/H:25-55
+# U2/U6 helix I: residues 26-30
+color #323.1/H:26-30 #047857
+select #323.1/H:26-30
 nucleotides sel fill
 select clear
 # U2 BP pairing: residues 32-41
@@ -263,7 +264,7 @@ label #323.1/G:146 residues text "intron 1-31;130-163" color #303030 height 5 bg
 label #323.1/G:142 residues text "BP region 138-146" color #303030 height 5 bgColor transparent
 label #323.1/G:144 residues text "BP-A 144" color #303030 height 5 bgColor transparent
 label #323.1/G:156 residues text "PPT 150-163" color #303030 height 5 bgColor transparent
-label #323.1/H:40 residues text "U2/U6 helix I 25-55" color #047857 height 5 bgColor transparent
+label #323.1/H:28 residues text "U2/U6 helix I 26-30" color #047857 height 5 bgColor transparent
 label #323.1/H:36 residues text "U2 BP pairing 32-41" color #0B6E2D height 5 bgColor transparent
 label #323.1/H:56 residues text "U2 stem IIa 46-65;68-74;78-80" color #167A38 height 5 bgColor transparent
 label #323.1/B:40 residues text "U5 loop I 38-42" color #1B3CD0 height 5 bgColor transparent

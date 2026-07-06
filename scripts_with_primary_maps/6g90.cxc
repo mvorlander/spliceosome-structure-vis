@@ -1,0 +1,165 @@
+# Lightweight ChimeraX script for 6G90
+# Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
+# Original deposited chain identifiers are used.
+
+# Shared anchor frame: 8H6L
+# Structure group: #336; target model: #336.1.
+
+open 8h6l id 336.9 name 8H6L_anchor
+open 6g90 id 336.1 name 6G90
+open emdb:4364 id 336.2.1 name 6G90_EMD-4364_primary_map
+rename #336 U2_pre_A_A_6g90_structure
+
+# Align on SF3B1.
+matchmaker #336.1/O to #336.9/2G bring #336.2.1
+close #336.9
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+# window
+# windowsize 800 800
+
+# bg and model colors
+set bgColor white
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# U1 snRNA
+color #336.1/1 #B66AAE
+# LUC7L
+color #336.1/H #B03372
+# pre-mRNA
+color #336.1/I #303030
+# SNU71
+color #336.1/J #A95A9B
+# SF3B1
+color #336.1/O #487957
+# SF3B3
+color #336.1/P #6A9064
+# SF3B2
+color #336.1/Q #49926C
+# SF3B4
+color #336.1/R #77B088
+# PHF5A
+color #336.1/S #375A40
+# SF3A3
+color #336.1/T #9BCF91
+# SF3A2
+color #336.1/U #75A074
+# U2 snRNA
+color #336.1/2 #006400
+# SF3A1
+color #336.1/V #55947F
+# SNRPA1
+color #336.1/W #58D68D
+# SNRPB2
+color #336.1/Y #DAF7A6
+# SF3B5
+color #336.1/Z #92BB8F
+# U1-Sm SNRPB
+color #336.1/b #EAD7E8
+# U2-Sm SNRPB
+color #336.1/s #D5F5E3
+# U1-Sm SNRPD3
+color #336.1/d #EAD7E8
+# U2-Sm SNRPD3
+color #336.1/v #D5F5E3
+# U1-Sm SNRPE
+color #336.1/e #EAD7E8
+# U2-Sm SNRPE
+color #336.1/w #D5F5E3
+# U1-Sm SNRPF
+color #336.1/f #EAD7E8
+# U2-Sm SNRPF
+color #336.1/x #D5F5E3
+# U1-Sm SNRPG
+color #336.1/g #EAD7E8
+# U2-Sm SNRPG
+color #336.1/y #D5F5E3
+# SNRPA
+color #336.1/A #C07AB6
+# U1-Sm SNRPD1
+color #336.1/h #EAD7E8
+# U2-Sm SNRPD1
+color #336.1/t #D5F5E3
+# U1-Sm SNRPD2
+color #336.1/i #EAD7E8
+# U2-Sm SNRPD2
+color #336.1/u #D5F5E3
+# SNRNP70
+color #336.1/B #8C3D78
+# SNRPC
+color #336.1/C #D7A3CF
+# PRPF39
+color #336.1/D #E1B8D9
+# PRP42
+color #336.1/E #7F5BA6
+# NAM8
+color #336.1/F #C7A6BE
+# SNU56
+color #336.1/G #D65B96
+# Named selections for resolved substrate RNA features.
+# substrate RNA: residues -1,0,1,2,3,4,5,6,7,8,9,10,51,52,53,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79, component, medium confidence, validation not_applicable
+name A_complex_6G90_substrate #336.1/I:-1,0,1,2,3,4,5,6,7,8,9,10,51,52,53,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79
+# Named selections for resolved snRNA functional regions.
+# U1 snRNA 5' splice-site recognition region: residues 1-10, review-region, medium confidence
+name A_complex_6G90_U1_5_5SS_recognition #336.1/1:1-10
+# U1 snRNA stem-loop 1: residues 11-45, review-region, low confidence
+name A_complex_6G90_U1_SL1 #336.1/1:11-45
+# U1 snRNA stem-loop 2: residues 46-61;67-95, review-region, low confidence
+name A_complex_6G90_U1_SL2 #336.1/1:46-61,67-95
+# U1 snRNA Sm site: residues 241-247; 439,440,516,517,518,519,520, sequence-motif, medium confidence
+name A_complex_6G90_U1_Sm_site #336.1/1:241-247|#336.1/1:439,440,516,517,518,519,520
+# U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence
+name A_complex_6G90_U2_branchpoint_pairing_region #336.1/2:33-42
+# RNA feature nucleotide display.
+select #336.1 & nucleic
+nucleotides sel atoms
+select clear
+# U1 5'SS recog.: residues 1-10
+color #336.1/1:1-10 #B66AAE
+select #336.1/1:1-10
+nucleotides sel fill
+select clear
+# U1 SL1: residues 11-45
+color #336.1/1:11-45 #BF72B7
+select #336.1/1:11-45
+nucleotides sel fill
+select clear
+# U1 SL2: residues 46-61;67-95
+color #336.1/1:46-61,67-95 #AD62A6
+select #336.1/1:46-61,67-95
+nucleotides sel fill
+select clear
+# U1 Sm site: residues 241-247; 439,440,516,517,518,519,520
+color #336.1/1:241-247|#336.1/1:439,440,516,517,518,519,520 #C783BF
+select #336.1/1:241-247|#336.1/1:439,440,516,517,518,519,520
+nucleotides sel fill
+select clear
+# U2 BP pairing: residues 33-42
+color #336.1/2:33-42 #0B6E2D
+select #336.1/2:33-42
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #336.1/1:6 residues text "U1 5'SS recog. 1-10" color #B66AAE height 5 bgColor transparent
+label #336.1/1:28 residues text "U1 SL1 11-45" color #BF72B7 height 5 bgColor transparent
+label #336.1/1:81 residues text "U1 SL2 46-61;67-95" color #AD62A6 height 5 bgColor transparent
+label #336.1/1:244 residues text "U1 Sm site 241-247; 439,440,516,517,518,519,520" color #C783BF height 5 bgColor transparent
+label #336.1/2:38 residues text "U2 BP pairing 33-42" color #0B6E2D height 5 bgColor transparent
+view
+show nucleic

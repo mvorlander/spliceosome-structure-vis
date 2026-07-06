@@ -6,8 +6,10 @@ Lightweight static dashboard for copying ChimeraX scripts for spliceosome cryo-E
 
 - 134 deposited PDB entries.
 - Original deposited chain identifiers only.
-- Thumbnail PNGs are included; no maps, mmCIF files, local CIF models, or large binary assets are included.
+- Thumbnail PNGs and RNA 2D preview panels are included.
+- No mmCIF files, local CIF models, or large map binaries are included.
 - ChimeraX scripts use `open <pdb_id>` so ChimeraX downloads structures directly from the PDB.
+- Primary-map script variants use `open emdb:<id>` so ChimeraX can download deposited primary EMDB maps on demand.
 
 Open `index.html` locally, or use the GitHub Pages dashboard:
 https://mvorlander.github.io/spliceosome-structure-vis/
