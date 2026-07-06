@@ -97,7 +97,7 @@
     details.detail-section > summary { cursor:pointer; padding:9px 11px; font-weight:760; color:var(--ink); border-bottom:1px solid transparent; }
     details.detail-section[open] > summary { border-bottom-color:var(--line); }
     .detail-section-body { padding:0 11px 11px; }
-    .cycle { overflow-x:auto; height:clamp(360px,38vw,540px); }
+    .cycle { overflow-x:auto; height:clamp(430px,42vw,620px); }
     .cycle-svg { width:100%; min-width:0; height:100%; display:block; }
     .cycle-band { fill:none; stroke-linecap:round; stroke-linejoin:round; opacity:.9; }
     .cycle-flow { fill:none; stroke:#22272d; stroke-width:2.1; stroke-linecap:round; stroke-linejoin:round; }
@@ -116,8 +116,8 @@
     .cycle-region-label.release { fill:#b49a2b; }
     .cycle-region-label.catalytic { fill:#c54a54; }
     .cycle-note { fill:var(--muted); font-size:12px; font-weight:650; pointer-events:none; }
-    .cycle-helicase-label { fill:#1f2933; font-size:10.5px; font-weight:760; text-anchor:middle; dominant-baseline:central; pointer-events:none; }
-    .cycle-helicase-badge { fill:#fff8da; stroke:#d8bf58; stroke-width:1.2; pointer-events:none; filter:drop-shadow(0 1px 1px rgba(0,0,0,.12)); }
+    .cycle-helicase-label { fill:#d91b7e; font-size:12px; font-weight:820; text-anchor:middle; dominant-baseline:central; pointer-events:none; }
+    .cycle-helicase-human { fill:#6b7280; font-size:10px; font-weight:720; text-anchor:middle; dominant-baseline:central; pointer-events:none; }
     .cycle-rna-line { fill:none; stroke:#303030; stroke-width:2.4; stroke-linecap:round; pointer-events:none; }
     .protein-controls { padding:12px 14px; border-bottom:1px solid var(--line); display:grid; grid-template-columns:minmax(220px,340px) minmax(0,1fr); gap:12px; align-items:end; }
     .palette-row { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
@@ -215,7 +215,7 @@
     for (const id of ["search","searchMode","family","species","componentFilter","rnaFeatureFilter","rnaFeatureQuickSearch","rnaFeatureQuickResults","rnaQuickFilters","activeFilterChips","rnaDefinitionSearch","rnaDefinitionRows","cycleStateGuide","rnaElementGuide","proteinComplexGuide","proteinComplexFilter","sortBy","reset","tabs","structuresView","rnaFeaturesView","cycleStatesView","rnaElementsView","complexesView","proteinsView","documentationView","helpView","stats","cycle","rows","detail","tableCount","resultSubtitle","selectedId","proteinRows","proteinCount"]) els[id] = document.getElementById(id);
     const STAGES = ["U2 snRNP","E complex","A complex","U5/tri-snRNP","pre-B","B","pre-Bact","Bact","B*","C","C*","P","ILS/disassembly","U5 recycling"];
     const ORDER = Object.fromEntries(STAGES.map((s,i)=>[s,i]));
-    const NODE_POS = [[242,72],[105,210],[165,360],[342,255],[315,455],[485,455],[650,435],[790,390],[915,325],[1015,245],[1075,150],[1015,70],[720,75],[425,75]];
+    const NODE_POS = [[280,100],[130,250],[205,410],[400,292],[365,535],[540,535],[705,515],[850,465],[990,390],[1110,295],[1190,190],[1150,92],[880,100],[590,100]];
     const U = {u1:"#d8a3cf", u2:"#78c96b", u4:"#f2dc4e", u5:"#5da8d7", u6:"#ee5960", ntc:"#f2bd5c", mrna:"#22272d"};
     function esc(v){return String(v ?? "").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
     function attr(v){return esc(v);}
@@ -428,35 +428,35 @@
     function renderCycle(rows){
       const counts = Object.fromEntries(STAGES.map(s=>[s, rows.filter(r=>r.state===s).length]));
       const stagePaths = {
-        "U2 snRNP": "M258 96 C304 170 275 280 206 340",
-        "E complex": "M105 248 C111 288 132 326 150 339",
-        "A complex": "M205 380 C240 405 270 430 294 448",
-        "U5/tri-snRNP": "M351 294 C345 350 334 405 324 439",
-        "pre-B": "M368 455 C400 458 431 458 463 456",
-        "B": "M538 453 C570 449 604 443 630 438",
-        "pre-Bact": "M700 424 C735 414 760 404 775 396",
-        "Bact": "M840 372 C868 356 892 341 901 333",
-        "B*": "M960 300 C985 281 1002 262 1008 253",
-        "C": "M1045 214 C1063 187 1072 168 1074 160",
-        "C*": "M1061 116 C1051 94 1036 79 1026 74",
-        "P": "M962 69 C900 66 795 68 735 73",
-        "ILS/disassembly": "M669 76 C598 79 502 80 442 75",
-        "U5 recycling": "M369 74 C327 73 287 72 258 72"
+        "U2 snRNP": "M282 135 C260 235 238 335 216 384",
+        "E complex": "M138 288 C150 342 176 383 196 400",
+        "A complex": "M232 430 C274 478 321 515 344 529",
+        "U5/tri-snRNP": "M393 330 C388 405 377 487 369 520",
+        "pre-B": "M426 535 C459 539 494 539 512 536",
+        "B": "M600 532 C636 530 666 524 680 519",
+        "pre-Bact": "M764 501 C798 492 823 480 832 471",
+        "Bact": "M905 443 C937 424 963 404 973 395",
+        "B*": "M1039 360 C1072 333 1094 307 1102 300",
+        "C": "M1145 263 C1167 236 1180 211 1184 198",
+        "C*": "M1180 151 C1174 121 1164 104 1157 96",
+        "P": "M1088 91 C1030 88 955 92 900 97",
+        "ILS/disassembly": "M818 101 C755 105 674 105 612 101",
+        "U5 recycling": "M552 98 C500 115 452 196 418 264"
       };
       const nodes = STAGES.map((stage,i)=>cycleNode(stage,NODE_POS[i][0],NODE_POS[i][1],counts[stage]||0)).join("");
       const flow = STAGES.map(stage=>stagePaths[stage] ? `<path class="cycle-flow" d="${stagePaths[stage]}" marker-end="url(#cycleArrow)"/>` : "").join("");
       const badges = [
-        [145,292,120,"Prp5/DDX46","Sub2/DDX39B"],
-        [250,395,96,"Prp28","DDX23"],
-        [535,397,110,"Brr2","SNRNP200"],
-        [705,355,92,"Prp2","DHX16"],
-        [885,280,94,"Prp16","DHX38"],
-        [1010,195,90,"Prp22","DHX8"],
-        [650,112,206,"Prp43/DHX15","Ntr1/TFIP11 + Ntr2/GCFC"],
-      ].map(([x,y,w,label,label2])=>`<g><rect class="cycle-helicase-badge" x="${x-w/2}" y="${y-15}" width="${w}" height="30" rx="10"/><text class="cycle-helicase-label" x="${x}" y="${y-5}">${esc(label)}</text><text class="cycle-helicase-label" x="${x}" y="${y+7}">${esc(label2)}</text></g>`).join("");
-      const ntc = `<g class="cycle-module" aria-label="NTC/NTR joins during activation"><path d="M648 306 C606 292 608 245 653 235 C700 226 731 254 719 291 C709 321 678 323 648 306 Z" fill="#f4bf67" stroke="rgba(31,35,40,.55)" stroke-width="1.2"/><text class="cycle-particle-label" x="668" y="276">NTC/NTR</text></g>`;
-      const ntcArrow = `<path class="cycle-flow dashed" d="M666 306 C690 340 735 370 772 383" marker-end="url(#cycleArrowMuted)"/>`;
-      els.cycle.innerHTML = `<svg class="cycle-svg" viewBox="0 0 1120 520" role="img" aria-label="Splicing cycle filter"><defs><marker id="cycleArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#22272d"/></marker><marker id="cycleArrowMuted" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#aeb6bf"/></marker></defs><path class="cycle-band" d="M238 72 C120 98 75 160 105 210 C118 270 136 325 165 360" stroke="#d9f1f4" stroke-width="62"/><path class="cycle-band" d="M315 455 C520 495 870 398 1075 150" stroke="#fde3e5" stroke-width="62"/><path class="cycle-band" d="M1015 70 C880 45 620 48 425 75" stroke="#fff2b5" stroke-width="62"/>${flow}${ntcArrow}<text x="42" y="285" class="cycle-region-label" transform="rotate(-82 42 285)">Recognition and assembly</text><text x="570" y="505" class="cycle-region-label catalytic" transform="rotate(-4 570 505)">Catalytic stages</text><text x="800" y="23" class="cycle-region-label release" transform="rotate(-4 800 23)">Release and disassembly</text><text class="cycle-note" x="860" y="222">Step I / branching</text><text class="cycle-note" x="968" y="120">Step II / exon ligation</text><text class="cycle-note" x="76" y="125">pre-mRNA</text><text class="cycle-note" x="1044" y="35">mRNA + lariat</text>${ntc}${badges}${nodes}</svg>`;
+        [150,338,"Prp5","DDX46 / Sub2-DDX39B"],
+        [462,475,"Prp28","DDX23"],
+        [618,485,"Brr2","SNRNP200"],
+        [962,484,"Prp2","DHX16"],
+        [1082,365,"Prp16","DHX38"],
+        [1232,276,"Prp22","DHX8"],
+        [765,170,"Prp43","DHX15 / TFIP11-GCFC"],
+      ].map(([x,y,label,label2])=>`<g><text class="cycle-helicase-label" x="${x}" y="${y-7}">${esc(label)}</text><text class="cycle-helicase-human" x="${x}" y="${y+7}">${esc(label2)}</text></g>`).join("");
+      const ntc = `<g class="cycle-module" aria-label="NTC/NTR joins during activation"><path d="M658 355 C611 340 615 289 666 279 C718 269 754 299 741 339 C730 373 692 375 658 355 Z" fill="#f4bf67" stroke="rgba(31,35,40,.55)" stroke-width="1.2"/><text class="cycle-particle-label" x="684" y="326">NTC/NTR</text></g>`;
+      const ntcArrow = `<path class="cycle-flow dashed" d="M706 356 C750 407 806 445 834 458" marker-end="url(#cycleArrowMuted)"/>`;
+      els.cycle.innerHTML = `<svg class="cycle-svg" viewBox="0 0 1320 640" role="img" aria-label="Splicing cycle filter"><defs><marker id="cycleArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#22272d"/></marker><marker id="cycleArrowMuted" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#aeb6bf"/></marker></defs><path class="cycle-band" d="M280 100 C155 145 104 220 130 250 C138 326 169 374 205 410 C248 474 305 518 365 535" stroke="#d9f1f4" stroke-width="70"/><path class="cycle-band" d="M365 535 C570 585 850 515 990 390 C1062 334 1117 268 1190 190" stroke="#fde3e5" stroke-width="72"/><path class="cycle-band" d="M1190 190 C1222 125 1199 91 1150 92 C1062 78 970 88 880 100 C765 115 675 115 590 100" stroke="#fff2b5" stroke-width="72"/>${flow}${ntcArrow}<text x="54" y="392" class="cycle-region-label" transform="rotate(-77 54 392)">Recognition and assembly</text><text x="666" y="604" class="cycle-region-label catalytic" transform="rotate(-3 666 604)">Catalytic stages</text><text x="1106" y="492" class="cycle-region-label release" transform="rotate(-44 1106 492)">Release and disassembly</text><text x="745" y="44" class="cycle-region-label release">Recycling</text><text class="cycle-note" x="90" y="180">pre-mRNA</text><text class="cycle-note" x="1138" y="52">mRNA + lariat</text><text class="cycle-note" x="1005" y="458">Step I / branching</text><text class="cycle-note" x="1185" y="322">Step II / exon ligation</text>${ntc}${badges}${nodes}</svg>`;
     }
     function cycleNode(stage,x,y,count){
       const active = state.family===stage ? " active" : "";
@@ -477,12 +477,25 @@
           {dx:-24, dy:4, r:16, fill:U.u4, text:"U4"},
           {dx:0, dy:-12, r:15, fill:U.u6, text:"U6"},
           {dx:24, dy:10, r:19, fill:U.u5, text:"U5"}
+        ],
+        "pre-B": [
+          {dx:-27, dy:-7, r:16, fill:U.u1, text:"U1"},
+          {dx:0, dy:-15, r:18, fill:U.u2, text:"U2"},
+          {dx:26, dy:5, r:19, fill:U.u5, text:"U5"},
+          {dx:-4, dy:18, r:14, fill:U.u4, text:"U4"}
+        ],
+        "B": [
+          {dx:-18, dy:-13, r:18, fill:U.u2, text:"U2"},
+          {dx:10, dy:-11, r:16, fill:U.u6, text:"U6"},
+          {dx:27, dy:12, r:19, fill:U.u5, text:"U5"},
+          {dx:-25, dy:12, r:14, fill:U.u4, text:"U4"}
         ]
       };
       const ntcStages = new Set(["Bact","B*","C","C*","P","ILS/disassembly"]);
+      const hasActivatedU6 = new Set(["pre-Bact","Bact","B*","C","C*","P","ILS/disassembly"]);
       const defaultParticles = [
         {dx:-24, dy:-7, r:18, fill:U.u2, text:"U2"},
-        {dx:15, dy:-10, r:17, fill:stage.includes("B")||["C","C*","P","ILS/disassembly"].includes(stage)?U.u6:U.u4, text:stage.includes("B")||["C","C*","P","ILS/disassembly"].includes(stage)?"U6":"U4"},
+        {dx:15, dy:-10, r:17, fill:hasActivatedU6.has(stage)?U.u6:U.u4, text:hasActivatedU6.has(stage)?"U6":"U4"},
         {dx:25, dy:13, r:20, fill:U.u5, text:"U5"},
         ...(ntcStages.has(stage) ? [{dx:0, dy:18, r:12, fill:U.ntc, text:"NTC"}] : [])
       ];
