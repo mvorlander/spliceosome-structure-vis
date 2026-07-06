@@ -127,6 +127,46 @@ _EMBEDDED_SPEC = {
   "pdb_id": "8y7e",
   "selectors": [
     {
+      "atomspec": "#417.1/A",
+      "category": "subcomplex",
+      "comment": "RNA/substrate",
+      "label": "RNA/substrate",
+      "name": "pdb_8Y7E_RNA_substrate",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#417.1/h,i,j,k,l,m,n",
+      "category": "subcomplex",
+      "comment": "Sm ring",
+      "label": "Sm ring",
+      "name": "pdb_8Y7E_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#417.1/H",
+      "category": "subcomplex",
+      "comment": "U11/U12 snRNP",
+      "label": "U11/U12 snRNP",
+      "name": "pdb_8Y7E_U11_U12_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#417.1/1,2,3,4,5,6,7",
+      "category": "subcomplex",
+      "comment": "U2/SF3B",
+      "label": "U2/SF3B",
+      "name": "pdb_8Y7E_U2_SF3B",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#417.1/v",
+      "category": "subcomplex",
+      "comment": "other",
+      "label": "other",
+      "name": "pdb_8Y7E_other",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
       "atomspec": "#417.1/A:193-222",
       "category": "substrate RNA feature",
       "comment": "substrate RNA: residues 193-222, component, medium confidence, validation not_applicable",

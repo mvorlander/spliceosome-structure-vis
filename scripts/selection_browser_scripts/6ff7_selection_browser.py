@@ -127,6 +127,102 @@ _EMBEDDED_SPEC = {
   "pdb_id": "6ff7",
   "selectors": [
     {
+      "atomspec": "#335.1/T",
+      "category": "subcomplex",
+      "comment": "EJC/mRNP",
+      "label": "EJC/mRNP",
+      "name": "pdb_6FF7_EJC_mRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#335.1/C,M,O,P,Q,U,V,o,w",
+      "category": "subcomplex",
+      "comment": "NTC/NTR related",
+      "label": "NTC/NTR related",
+      "name": "pdb_6FF7_NTC_NTR_related",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#335.1/D,G,H,I,J,K,L,R",
+      "category": "subcomplex",
+      "comment": "NTC/PRP19",
+      "label": "NTC/PRP19",
+      "name": "pdb_6FF7_NTC_PRP19",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#335.1/Z",
+      "category": "subcomplex",
+      "comment": "RNA/substrate",
+      "label": "RNA/substrate",
+      "name": "pdb_6FF7_RNA_substrate",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#335.1/S",
+      "category": "subcomplex",
+      "comment": "SR proteins",
+      "label": "SR proteins",
+      "name": "pdb_6FF7_SR_proteins",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#335.1/E",
+      "category": "subcomplex",
+      "comment": "Second step factors",
+      "label": "Second step factors",
+      "name": "pdb_6FF7_Second_step_factors",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#335.1/a,b,c,d,e,f,g,h,i,j,k,l,m,n",
+      "category": "subcomplex",
+      "comment": "Sm ring",
+      "label": "Sm ring",
+      "name": "pdb_6FF7_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#335.1/2,W,X",
+      "category": "subcomplex",
+      "comment": "U2 snRNP",
+      "label": "U2 snRNP",
+      "name": "pdb_6FF7_U2_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#335.1/7,8,9,N,p,u,v,x,y,z",
+      "category": "subcomplex",
+      "comment": "U2/SF3B",
+      "label": "U2/SF3B",
+      "name": "pdb_6FF7_U2_SF3B",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#335.1/5,A,B,F,r",
+      "category": "subcomplex",
+      "comment": "U5 snRNP",
+      "label": "U5 snRNP",
+      "name": "pdb_6FF7_U5_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#335.1/6",
+      "category": "subcomplex",
+      "comment": "U6 snRNP",
+      "label": "U6 snRNP",
+      "name": "pdb_6FF7_U6_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#335.1/0,1,3,Y,q,s,t",
+      "category": "subcomplex",
+      "comment": "other",
+      "label": "other",
+      "name": "pdb_6FF7_other",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
       "atomspec": "#335.1/Z:233-262,380-397",
       "category": "substrate RNA feature",
       "comment": "substrate RNA: residues 233-262;380-397, component, medium confidence, validation not_applicable",

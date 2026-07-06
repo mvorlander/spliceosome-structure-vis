@@ -127,6 +127,102 @@ _EMBEDDED_SPEC = {
   "pdb_id": "5zwo",
   "selectors": [
     {
+      "atomspec": "#328.1/G",
+      "category": "subcomplex",
+      "comment": "RNA/substrate",
+      "label": "RNA/substrate",
+      "name": "pdb_5ZWO_RNA_substrate",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#328.1/h,i,j,k,l,m,n",
+      "category": "subcomplex",
+      "comment": "U2 Sm ring",
+      "label": "U2 Sm ring",
+      "name": "pdb_5ZWO_U2_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#328.1/H,o,p",
+      "category": "subcomplex",
+      "comment": "U2 snRNP",
+      "label": "U2 snRNP",
+      "name": "pdb_5ZWO_U2_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#328.1/1,2,3,4,5,6,u,v,w",
+      "category": "subcomplex",
+      "comment": "U2/SF3B",
+      "label": "U2/SF3B",
+      "name": "pdb_5ZWO_U2_SF3B",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#328.1/P,Q,R,S,T,U,V",
+      "category": "subcomplex",
+      "comment": "U4 Sm ring",
+      "label": "U4 Sm ring",
+      "name": "pdb_5ZWO_U4_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#328.1/I",
+      "category": "subcomplex",
+      "comment": "U4 snRNP",
+      "label": "U4 snRNP",
+      "name": "pdb_5ZWO_U4_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#328.1/E,J,K,L,M",
+      "category": "subcomplex",
+      "comment": "U4/U6 snRNP",
+      "label": "U4/U6 snRNP",
+      "name": "pdb_5ZWO_U4_U6_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#328.1/a,b,c,d,e,f,g",
+      "category": "subcomplex",
+      "comment": "U5 Sm ring",
+      "label": "U5 Sm ring",
+      "name": "pdb_5ZWO_U5_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#328.1/A,B,C,D,N,O,W",
+      "category": "subcomplex",
+      "comment": "U5 snRNP",
+      "label": "U5 snRNP",
+      "name": "pdb_5ZWO_U5_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#328.1/q,r,s,t,x,y,z",
+      "category": "subcomplex",
+      "comment": "U6 LSm",
+      "label": "U6 LSm",
+      "name": "pdb_5ZWO_U6_LSm",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#328.1/F",
+      "category": "subcomplex",
+      "comment": "U6 snRNP",
+      "label": "U6 snRNP",
+      "name": "pdb_5ZWO_U6_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#328.1/0,9,X,Y,Z",
+      "category": "subcomplex",
+      "comment": "other",
+      "label": "other",
+      "name": "pdb_5ZWO_other",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
       "atomspec": "#328.1/G:463-522",
       "category": "substrate RNA feature",
       "comment": "substrate RNA: residues 463-522, component, medium confidence, validation not_applicable",

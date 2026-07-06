@@ -127,6 +127,118 @@ _EMBEDDED_SPEC = {
   "pdb_id": "8r08",
   "selectors": [
     {
+      "atomspec": "#407.1/R",
+      "category": "subcomplex",
+      "comment": "RNA-binding",
+      "label": "RNA-binding",
+      "name": "pdb_8R08_RNA_binding",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#407.1/Z,Z1",
+      "category": "subcomplex",
+      "comment": "RNA/substrate",
+      "label": "RNA/substrate",
+      "name": "pdb_8R08_RNA_substrate",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#407.1/1b,1e,1f,1g,11,12,13",
+      "category": "subcomplex",
+      "comment": "U1 Sm ring",
+      "label": "U1 Sm ring",
+      "name": "pdb_8R08_U1_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#407.1/1,1K",
+      "category": "subcomplex",
+      "comment": "U1 snRNP",
+      "label": "U1 snRNP",
+      "name": "pdb_8R08_U1_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#407.1/2b,2e,2f,2g,21,22,23",
+      "category": "subcomplex",
+      "comment": "U2 Sm ring",
+      "label": "U2 Sm ring",
+      "name": "pdb_8R08_U2_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#407.1/2,2A,2B",
+      "category": "subcomplex",
+      "comment": "U2 snRNP",
+      "label": "U2 snRNP",
+      "name": "pdb_8R08_U2_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#407.1/7,8,9,B1,B2,B3,B4,B5,B6,BP",
+      "category": "subcomplex",
+      "comment": "U2/SF3B",
+      "label": "U2/SF3B",
+      "name": "pdb_8R08_U2_SF3B",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#407.1/4b,4e,4f,4g,41,42,43",
+      "category": "subcomplex",
+      "comment": "U4 Sm ring",
+      "label": "U4 Sm ring",
+      "name": "pdb_8R08_U4_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#407.1/4",
+      "category": "subcomplex",
+      "comment": "U4 snRNP",
+      "label": "U4 snRNP",
+      "name": "pdb_8R08_U4_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#407.1/4B,D,G,J,K,L,M,U",
+      "category": "subcomplex",
+      "comment": "U4/U6 snRNP",
+      "label": "U4/U6 snRNP",
+      "name": "pdb_8R08_U4_U6_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#407.1/5b,5e,5f,5g,51,52,53",
+      "category": "subcomplex",
+      "comment": "U5 Sm ring",
+      "label": "U5 Sm ring",
+      "name": "pdb_8R08_U5_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#407.1/5,A,B,C,E,N,S,X",
+      "category": "subcomplex",
+      "comment": "U5 snRNP",
+      "label": "U5 snRNP",
+      "name": "pdb_8R08_U5_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#407.1/62,63,64,65,66,67,68",
+      "category": "subcomplex",
+      "comment": "U6 LSm",
+      "label": "U6 LSm",
+      "name": "pdb_8R08_U6_LSm",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#407.1/6",
+      "category": "subcomplex",
+      "comment": "U6 snRNP",
+      "label": "U6 snRNP",
+      "name": "pdb_8R08_U6_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
       "atomspec": "#407.1/Z:29-43|#407.1/Z1:3-7",
       "category": "substrate RNA feature",
       "comment": "substrate RNA: residues 29-43; 3-7, component, medium confidence, validation not_applicable",

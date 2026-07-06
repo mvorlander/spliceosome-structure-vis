@@ -4,6 +4,38 @@
   "structure_group_id": "304",
   "selectors": [
     {
+      "name": "pdb_5GAM_U5_Sm_ring",
+      "label": "U5 Sm ring",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U5 Sm ring",
+      "atomspec": "#304.1/b,d,e,f,g,h,j"
+    },
+    {
+      "name": "pdb_5GAM_U5_snRNP",
+      "label": "U5 snRNP",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U5 snRNP",
+      "atomspec": "#304.1/A,C,U"
+    },
+    {
+      "name": "pdb_5GAM_U6_snRNP",
+      "label": "U6 snRNP",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U6 snRNP",
+      "atomspec": "#304.1/W"
+    },
+    {
+      "name": "pdb_5GAM_other",
+      "label": "other",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "other",
+      "atomspec": "#304.1/x"
+    },
+    {
       "name": "U5_tri_snRNP_5GAM_U5_loop_I",
       "label": "U5 snRNA loop I",
       "category": "snRNA feature",

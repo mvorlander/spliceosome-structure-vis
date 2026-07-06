@@ -74,6 +74,17 @@ color #327.1/U #E1B8D9
 color #327.1/V #C7A6BE
 # SNU56
 color #327.1/W #D65B96
+# Named selections for subcomplexes using original deposited chain IDs.
+# RNA/substrate
+name pdb_5ZWN_RNA_substrate #327.1/G
+# U1 Sm ring
+name pdb_5ZWN_U1_Sm_ring #327.1/a,b,c,d,e,f,g
+# U1 snRNP
+name pdb_5ZWN_U1_snRNP #327.1/P,Q,R,S,T,U,V,W,X,Y
+# U4/U6 snRNP
+name pdb_5ZWN_U4_U6_snRNP #327.1/y
+# other
+name pdb_5ZWN_other #327.1/x
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues -9-12, component, medium confidence, validation not_applicable
 name pre_B_5ZWN_substrate #327.1/G:-9-12

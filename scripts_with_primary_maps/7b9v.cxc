@@ -118,6 +118,29 @@ color #359.1/D #CE4678
 color #359.1/E #303030
 # CCDC49
 color #359.1/F #2F4DB1
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_7B9V_EJC_mRNP #359.1/H
+# NTC/NTR related
+name pdb_7B9V_NTC_NTR_related #359.1/G,L,M,N,S,T,y
+# NTC/PRP19
+name pdb_7B9V_NTC_PRP19 #359.1/P,t,u,v,w
+# RNA/substrate
+name pdb_7B9V_RNA_substrate #359.1/E,I
+# Second step factors
+name pdb_7B9V_Second_step_factors #359.1/c,o
+# U2 Sm ring
+name pdb_7B9V_U2_Sm_ring #359.1/k,l,m,n,p,q,r
+# U2 snRNP
+name pdb_7B9V_U2_snRNP #359.1/2,D
+# U5 Sm ring
+name pdb_7B9V_U5_Sm_ring #359.1/b,d,e,f,g,h,j
+# U5 snRNP
+name pdb_7B9V_U5_snRNP #359.1/5,A,B,C
+# U6 snRNP
+name pdb_7B9V_U6_snRNP #359.1/6
+# other
+name pdb_7B9V_other #359.1/F,J,K,O,Q,R,W,X,Y,Z,a,s
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -14--1, component-name, high confidence, validation not_applicable
 name C_7B9V_5exon #359.1/E:-14--1

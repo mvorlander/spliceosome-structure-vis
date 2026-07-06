@@ -127,6 +127,22 @@ _EMBEDDED_SPEC = {
   "pdb_id": "8q7v",
   "selectors": [
     {
+      "atomspec": "#393.1/a,b,c,d,e,f,g",
+      "category": "subcomplex",
+      "comment": "U5 Sm ring",
+      "label": "U5 Sm ring",
+      "name": "pdb_8Q7V_U5_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#393.1/5,A,B,C,D,F,G,H",
+      "category": "subcomplex",
+      "comment": "U5 snRNP",
+      "label": "U5 snRNP",
+      "name": "pdb_8Q7V_U5_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
       "atomspec": "#393.1/5:38",
       "category": "snRNA feature",
       "comment": "U5 snRNA loop I: residues 38, sequence-motif, medium confidence",

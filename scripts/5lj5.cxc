@@ -121,6 +121,27 @@ color #311.1/B #AFEEEE
 color #311.1/D #CE4678
 # CCDC49
 color #311.1/F #2F4DB1
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_5LJ5_EJC_mRNP #311.1/H
+# NTC/NTR related
+name pdb_5LJ5_NTC_NTR_related #311.1/G,K,L,M,N,S,T
+# NTC/PRP19
+name pdb_5LJ5_NTC_PRP19 #311.1/J,O,P,t,u,v,w
+# RNA/substrate
+name pdb_5LJ5_RNA_substrate #311.1/E,I
+# U2 Sm ring
+name pdb_5LJ5_U2_Sm_ring #311.1/k,l,m,n,p,q,r
+# U2 snRNP
+name pdb_5LJ5_U2_snRNP #311.1/D,W,Y,Z
+# U5 Sm ring
+name pdb_5LJ5_U5_Sm_ring #311.1/b,d,e,f,g,h,j
+# U5 snRNP
+name pdb_5LJ5_U5_snRNP #311.1/A,B,C,U
+# U6 snRNP
+name pdb_5LJ5_U6_snRNP #311.1/V
+# other
+name pdb_5LJ5_other #311.1/F,Q,R,s,x
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -16--1, component-name, high confidence, validation not_applicable
 name C_5LJ5_5exon #311.1/E:-16--1

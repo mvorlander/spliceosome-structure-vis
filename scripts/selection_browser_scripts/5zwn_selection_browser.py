@@ -127,6 +127,46 @@ _EMBEDDED_SPEC = {
   "pdb_id": "5zwn",
   "selectors": [
     {
+      "atomspec": "#327.1/G",
+      "category": "subcomplex",
+      "comment": "RNA/substrate",
+      "label": "RNA/substrate",
+      "name": "pdb_5ZWN_RNA_substrate",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#327.1/a,b,c,d,e,f,g",
+      "category": "subcomplex",
+      "comment": "U1 Sm ring",
+      "label": "U1 Sm ring",
+      "name": "pdb_5ZWN_U1_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#327.1/P,Q,R,S,T,U,V,W,X,Y",
+      "category": "subcomplex",
+      "comment": "U1 snRNP",
+      "label": "U1 snRNP",
+      "name": "pdb_5ZWN_U1_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#327.1/y",
+      "category": "subcomplex",
+      "comment": "U4/U6 snRNP",
+      "label": "U4/U6 snRNP",
+      "name": "pdb_5ZWN_U4_U6_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#327.1/x",
+      "category": "subcomplex",
+      "comment": "other",
+      "label": "other",
+      "name": "pdb_5ZWN_other",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
       "atomspec": "#327.1/G:-9-12",
       "category": "substrate RNA feature",
       "comment": "substrate RNA: residues -9-12, component, medium confidence, validation not_applicable",

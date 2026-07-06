@@ -127,6 +127,62 @@ _EMBEDDED_SPEC = {
   "pdb_id": "8qpe",
   "selectors": [
     {
+      "atomspec": "#403.1/z1,z2",
+      "category": "subcomplex",
+      "comment": "RNA/substrate",
+      "label": "RNA/substrate",
+      "name": "pdb_8QPE_RNA_substrate",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#403.1/7",
+      "category": "subcomplex",
+      "comment": "U2/SF3B",
+      "label": "U2/SF3B",
+      "name": "pdb_8QPE_U2_SF3B",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#403.1/4",
+      "category": "subcomplex",
+      "comment": "U4 snRNP",
+      "label": "U4 snRNP",
+      "name": "pdb_8QPE_U4_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#403.1/D,F,J,L,M,U",
+      "category": "subcomplex",
+      "comment": "U4/U6 snRNP",
+      "label": "U4/U6 snRNP",
+      "name": "pdb_8QPE_U4_U6_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#403.1/5,A,C,N,S",
+      "category": "subcomplex",
+      "comment": "U5 snRNP",
+      "label": "U5 snRNP",
+      "name": "pdb_8QPE_U5_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#403.1/6",
+      "category": "subcomplex",
+      "comment": "U6 snRNP",
+      "label": "U6 snRNP",
+      "name": "pdb_8QPE_U6_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#403.1/I,K,X,r",
+      "category": "subcomplex",
+      "comment": "other",
+      "label": "other",
+      "name": "pdb_8QPE_other",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
       "atomspec": "#403.1/z1:-3--1",
       "category": "substrate RNA feature",
       "comment": "5' exon: residues -3--1, five-ss-inference, medium confidence, validation not_applicable",

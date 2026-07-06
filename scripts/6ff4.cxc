@@ -93,6 +93,27 @@ color #334.1/8 #49926C
 color #334.1/A #BFC3E8
 # EFTUD2
 color #334.1/B #6495ED
+# Named selections for subcomplexes using original deposited chain IDs.
+# NTC/NTR related
+name pdb_6FF4_NTC_NTR_related #334.1/C,O,P,Q,V
+# NTC/PRP19
+name pdb_6FF4_NTC_PRP19 #334.1/D,L,R
+# RNA/substrate
+name pdb_6FF4_RNA_substrate #334.1/Z
+# SR proteins
+name pdb_6FF4_SR_proteins #334.1/S
+# Second step factors
+name pdb_6FF4_Second_step_factors #334.1/E
+# U2 snRNP
+name pdb_6FF4_U2_snRNP #334.1/2
+# U2/SF3B
+name pdb_6FF4_U2_SF3B #334.1/7,8,u,v,x,y,z
+# U5 snRNP
+name pdb_6FF4_U5_snRNP #334.1/5,A,B
+# U6 snRNP
+name pdb_6FF4_U6_snRNP #334.1/6
+# other
+name pdb_6FF4_other #334.1/1,3,Y,s,t
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 233-262;380-397, component, medium confidence, validation not_applicable
 name Bact_6FF4_substrate #334.1/Z:233-262,380-397

@@ -150,6 +150,33 @@ color #387.1/G #303030
 color #387.1/H #006400
 # SYF1
 color #387.1/I #FF957B
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_8I0T_EJC_mRNP #387.1/V
+# NTC/NTR related
+name pdb_8I0T_NTC_NTR_related #387.1/I,J,N,O,Q,R,S,y
+# NTC/PRP19
+name pdb_8I0T_NTC_PRP19 #387.1/L,P,T,Z,q,r,s,t
+# RNA/substrate
+name pdb_8I0T_RNA_substrate #387.1/G
+# SR proteins
+name pdb_8I0T_SR_proteins #387.1/U
+# Second step factors
+name pdb_8I0T_Second_step_factors #387.1/W
+# U2 Sm ring
+name pdb_8I0T_U2_Sm_ring #387.1/h,i,j,k,l,m,n
+# U2 snRNP
+name pdb_8I0T_U2_snRNP #387.1/H,o,p
+# U2/SF3B
+name pdb_8I0T_U2_SF3B #387.1/1,2,3,4,5,7,u,v,w
+# U5 Sm ring
+name pdb_8I0T_U5_Sm_ring #387.1/a,b,c,d,e,f,g
+# U5 snRNP
+name pdb_8I0T_U5_snRNP #387.1/A,B,C,D,E
+# U6 snRNP
+name pdb_8I0T_U6_snRNP #387.1/F
+# other
+name pdb_8I0T_other #387.1/9,K,X,Y
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -12-0, splice-site-inference, medium confidence, validation not_applicable
 name Bact_8I0T_5exon #387.1/G:-12-0

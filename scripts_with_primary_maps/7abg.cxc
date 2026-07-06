@@ -154,6 +154,29 @@ color #356.1/B #DAF7A6
 color #356.1/s #AFEEEE
 # BUD31
 color #356.1/Q #FFF584
+# Named selections for subcomplexes using original deposited chain IDs.
+# NTC/NTR related
+name pdb_7ABG_NTC_NTR_related #356.1/P,Q,v
+# NTC/PRP19
+name pdb_7ABG_NTC_PRP19 #356.1/G,L,R
+# RNA/substrate
+name pdb_7ABG_RNA_substrate #356.1/Z
+# U2 Sm ring
+name pdb_7ABG_U2_Sm_ring #356.1/h,i,j,k,l,m,n
+# U2 snRNP
+name pdb_7ABG_U2_snRNP #356.1/2,B,W
+# U2/SF3B
+name pdb_7ABG_U2_SF3B #356.1/4,E,F,T,p,u,w,x,y,z
+# U5 Sm ring
+name pdb_7ABG_U5_Sm_ring #356.1/a,b,c,d,e,f,g
+# U5 snRNP
+name pdb_7ABG_U5_snRNP #356.1/5,A,D,r,s
+# U6 LSm
+name pdb_7ABG_U6_LSm #356.1/9,A2,A3,C,H,J,V
+# U6 snRNP
+name pdb_7ABG_U6_snRNP #356.1/6
+# other
+name pdb_7ABG_other #356.1/0,A1,A4,A5,A6,I,K,N,X,Y,q
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues 50-58, splice-site-inference, medium confidence, validation not_applicable
 name pre_Bact_7ABG_5exon #356.1/Z:50-58

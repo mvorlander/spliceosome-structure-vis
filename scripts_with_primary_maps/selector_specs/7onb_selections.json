@@ -4,6 +4,38 @@
   "structure_group_id": "364",
   "selectors": [
     {
+      "name": "pdb_7ONB_RNA_substrate",
+      "label": "RNA/substrate",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "RNA/substrate",
+      "atomspec": "#364.1/G"
+    },
+    {
+      "name": "pdb_7ONB_U2_snRNP",
+      "label": "U2 snRNP",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U2 snRNP",
+      "atomspec": "#364.1/H"
+    },
+    {
+      "name": "pdb_7ONB_U2_SF3B",
+      "label": "U2/SF3B",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U2/SF3B",
+      "atomspec": "#364.1/A,B,C,D,I,K,M,N"
+    },
+    {
+      "name": "pdb_7ONB_other",
+      "label": "other",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "other",
+      "atomspec": "#364.1/F"
+    },
+    {
       "name": "U2_snRNP_7ONB_5exon",
       "label": "5' exon",
       "category": "substrate RNA feature",

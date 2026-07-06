@@ -55,6 +55,11 @@ color #349.1/2 #006400
 color #349.1/q #7DBF82
 # DDX46
 color #349.1/p #5BAE8A
+# Named selections for subcomplexes using original deposited chain IDs.
+# U2 snRNP
+name pdb_6Y50_U2_snRNP #349.1/2,p,q
+# U2/SF3B
+name pdb_6Y50_U2_SF3B #349.1/8,9,u,v,x,y
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
 name U2_snRNP_6Y50_U2_U6_helix_I_partner #349.1/2:26-30

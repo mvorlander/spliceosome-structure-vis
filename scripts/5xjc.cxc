@@ -137,6 +137,29 @@ color #319.1/G #303030
 color #319.1/H #006400
 # SYF1
 color #319.1/I #FF957B
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_5XJC_EJC_mRNP #319.1/V,u,v,w,x
+# NTC/NTR related
+name pdb_5XJC_NTC_NTR_related #319.1/I,J,M,N,O,Q,R,S
+# NTC/PRP19
+name pdb_5XJC_NTC_PRP19 #319.1/K,L,P,T,q,r,s,t
+# RNA/substrate
+name pdb_5XJC_RNA_substrate #319.1/G
+# SR proteins
+name pdb_5XJC_SR_proteins #319.1/U
+# Second step factors
+name pdb_5XJC_Second_step_factors #319.1/W,Y,Z
+# Sm ring
+name pdb_5XJC_Sm_ring #319.1/h,i,j,k,l,m,n
+# U2 snRNP
+name pdb_5XJC_U2_snRNP #319.1/H,X,o,p
+# U5 Sm ring
+name pdb_5XJC_U5_Sm_ring #319.1/a,b,c,d,e,f,g
+# U5 snRNP
+name pdb_5XJC_U5_snRNP #319.1/A,B,C,D,E
+# U6 snRNP
+name pdb_5XJC_U6_snRNP #319.1/F
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -23--18;-12--1, splice-site-inference, medium confidence, validation not_applicable
 name Cstar_5XJC_5exon #319.1/G:-23--18,-12--1

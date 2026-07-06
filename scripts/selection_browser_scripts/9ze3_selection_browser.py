@@ -127,6 +127,46 @@ _EMBEDDED_SPEC = {
   "pdb_id": "9ze3",
   "selectors": [
     {
+      "atomspec": "#434.1/R",
+      "category": "subcomplex",
+      "comment": "RNA/substrate",
+      "label": "RNA/substrate",
+      "name": "pdb_9ZE3_RNA_substrate",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#434.1/A",
+      "category": "subcomplex",
+      "comment": "U1 snRNP",
+      "label": "U1 snRNP",
+      "name": "pdb_9ZE3_U1_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#434.1/2,B",
+      "category": "subcomplex",
+      "comment": "U2 snRNP",
+      "label": "U2 snRNP",
+      "name": "pdb_9ZE3_U2_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#434.1/A1,A2,A3,B1,B2,B3,B4,B5,B6,H",
+      "category": "subcomplex",
+      "comment": "U2/SF3B",
+      "label": "U2/SF3B",
+      "name": "pdb_9ZE3_U2_SF3B",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#434.1/C",
+      "category": "subcomplex",
+      "comment": "other",
+      "label": "other",
+      "name": "pdb_9ZE3_other",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
       "atomspec": "#434.1/R:-18-25",
       "category": "substrate RNA feature",
       "comment": "substrate RNA: residues -18-25, component, medium confidence, validation not_applicable",

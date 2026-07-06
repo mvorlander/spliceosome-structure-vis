@@ -71,6 +71,17 @@ color #417.1/6 #375A40
 color #417.1/7 #92BB8F
 # U2 snRNA
 color #417.1/H #006400
+# Named selections for subcomplexes using original deposited chain IDs.
+# RNA/substrate
+name pdb_8Y7E_RNA_substrate #417.1/A
+# Sm ring
+name pdb_8Y7E_Sm_ring #417.1/h,i,j,k,l,m,n
+# U11/U12 snRNP
+name pdb_8Y7E_U11_U12_snRNP #417.1/H
+# U2/SF3B
+name pdb_8Y7E_U2_SF3B #417.1/1,2,3,4,5,6,7
+# other
+name pdb_8Y7E_other #417.1/v
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 193-222, component, medium confidence, validation not_applicable
 name pre_B_8Y7E_substrate #417.1/A:193-222

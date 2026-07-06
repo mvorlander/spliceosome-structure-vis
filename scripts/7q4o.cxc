@@ -57,6 +57,13 @@ color #370.1/E #92BB8F
 color #370.1/F #ADCEA0
 # PHF5A
 color #370.1/G #375A40
+# Named selections for subcomplexes using original deposited chain IDs.
+# RNA/substrate
+name pdb_7Q4O_RNA_substrate #370.1/h
+# U2 snRNP
+name pdb_7Q4O_U2_snRNP #370.1/2
+# U2/SF3B
+name pdb_7Q4O_U2_SF3B #370.1/1,9,A,B,C,E,F,G
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 1-13, component, medium confidence, validation not_applicable
 name U2_snRNP_7Q4O_substrate #370.1/h:1-13

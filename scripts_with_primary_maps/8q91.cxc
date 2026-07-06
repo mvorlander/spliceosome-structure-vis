@@ -66,6 +66,13 @@ color #396.1/B #AFEEEE
 color #396.1/m #B0C4DE
 # U5-Sm SNRPG
 color #396.1/n #B0C4DE
+# Named selections for subcomplexes using original deposited chain IDs.
+# U4/U6 snRNP
+name pdb_8Q91_U4_U6_snRNP #396.1/D
+# U5 Sm ring
+name pdb_8Q91_U5_Sm_ring #396.1/h,i,j,k,l,m,n
+# U5 snRNP
+name pdb_8Q91_U5_snRNP #396.1/5,A,B,C,E,F
 # Named selections for resolved snRNA functional regions.
 # U5 snRNA loop I: residues 38, sequence-motif, medium confidence
 name U5_tri_snRNP_8Q91_U5_loop_I #396.1/5:38

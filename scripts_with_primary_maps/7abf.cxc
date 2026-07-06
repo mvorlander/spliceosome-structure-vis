@@ -68,6 +68,19 @@ color #355.1/R #FFDEAD
 color #355.1/5 #0000CD
 # U6 snRNA
 color #355.1/6 #DC143C
+# Named selections for subcomplexes using original deposited chain IDs.
+# NTC/NTR related
+name pdb_7ABF_NTC_NTR_related #355.1/Q,v
+# NTC/PRP19
+name pdb_7ABF_NTC_PRP19 #355.1/G,R
+# RNA/substrate
+name pdb_7ABF_RNA_substrate #355.1/Z
+# U5 snRNP
+name pdb_7ABF_U5_snRNP #355.1/5,A,r
+# U6 snRNP
+name pdb_7ABF_U6_snRNP #355.1/6
+# other
+name pdb_7ABF_other #355.1/A4,I,K,N,X,q
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues 50-58, splice-site-inference, medium confidence, validation not_applicable
 name pre_Bact_7ABF_5exon #355.1/Z:50-58

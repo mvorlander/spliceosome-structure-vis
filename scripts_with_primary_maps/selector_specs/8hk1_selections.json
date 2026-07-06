@@ -4,6 +4,30 @@
   "structure_group_id": "383",
   "selectors": [
     {
+      "name": "pdb_8HK1_U2_Sm_ring",
+      "label": "U2 Sm ring",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U2 Sm ring",
+      "atomspec": "#383.1/a,b,c,d,e,f,g"
+    },
+    {
+      "name": "pdb_8HK1_U2_snRNP",
+      "label": "U2 snRNP",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U2 snRNP",
+      "atomspec": "#383.1/D,E,F,G,H"
+    },
+    {
+      "name": "pdb_8HK1_U2_SF3B",
+      "label": "U2/SF3B",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U2/SF3B",
+      "atomspec": "#383.1/1,2,3,4,5,6,A,B,C"
+    },
+    {
       "name": "U2_snRNP_8HK1_U2_U6_helix_I_partner",
       "label": "U2 snRNA U2/U6 helix I partner",
       "category": "snRNA feature",

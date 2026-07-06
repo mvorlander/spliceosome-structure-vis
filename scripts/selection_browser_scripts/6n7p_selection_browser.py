@@ -127,6 +127,38 @@ _EMBEDDED_SPEC = {
   "pdb_id": "6n7p",
   "selectors": [
     {
+      "atomspec": "#344.1/r",
+      "category": "subcomplex",
+      "comment": "RNA/substrate",
+      "label": "RNA/substrate",
+      "name": "pdb_6N7P_RNA_substrate",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#344.1/K,L,M,N,O,P,Q",
+      "category": "subcomplex",
+      "comment": "U1 Sm ring",
+      "label": "U1 Sm ring",
+      "name": "pdb_6N7P_U1_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#344.1/A,B,C,D,E,F,G,H,I,J,R",
+      "category": "subcomplex",
+      "comment": "U1 snRNP",
+      "label": "U1 snRNP",
+      "name": "pdb_6N7P_U1_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#344.1/X,Y",
+      "category": "subcomplex",
+      "comment": "other",
+      "label": "other",
+      "name": "pdb_6N7P_other",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
       "atomspec": "#344.1/r:-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13",
       "category": "substrate RNA feature",
       "comment": "substrate RNA: residues -9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13, component, medium confidence, validation not_applicable",

@@ -80,6 +80,15 @@ color #365.1/Q #49926C
 color #365.1/P #6A9064
 # SF3B4
 color #365.1/R #77B088
+# Named selections for subcomplexes using original deposited chain IDs.
+# RNA/substrate
+name pdb_7OQB_RNA_substrate #365.1/I
+# U2 Sm ring
+name pdb_7OQB_U2_Sm_ring #365.1/s,t,u,v,w,x,y
+# U2 snRNP
+name pdb_7OQB_U2_snRNP #365.1/2,W,Y,p
+# U2/SF3B
+name pdb_7OQB_U2_SF3B #365.1/O,P,Q,R,S,T,U,V,Z
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 246-268, component, medium confidence, validation not_applicable
 name U2_snRNP_7OQB_substrate #365.1/I:246-268

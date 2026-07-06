@@ -4,6 +4,46 @@
   "structure_group_id": "357",
   "selectors": [
     {
+      "name": "pdb_7ABH_NTC_PRP19",
+      "label": "NTC/PRP19",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "NTC/PRP19",
+      "atomspec": "#357.1/L"
+    },
+    {
+      "name": "pdb_7ABH_RNA_substrate",
+      "label": "RNA/substrate",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "RNA/substrate",
+      "atomspec": "#357.1/Z"
+    },
+    {
+      "name": "pdb_7ABH_U2_snRNP",
+      "label": "U2 snRNP",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U2 snRNP",
+      "atomspec": "#357.1/2"
+    },
+    {
+      "name": "pdb_7ABH_U2_SF3B",
+      "label": "U2/SF3B",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U2/SF3B",
+      "atomspec": "#357.1/4,E,F,T,u,w,x,y,z"
+    },
+    {
+      "name": "pdb_7ABH_other",
+      "label": "other",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "other",
+      "atomspec": "#357.1/0,1,7,Y"
+    },
+    {
       "name": "pre_Bact_7ABH_substrate",
       "label": "substrate RNA",
       "category": "substrate RNA feature",

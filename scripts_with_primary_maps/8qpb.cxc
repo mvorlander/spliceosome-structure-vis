@@ -72,6 +72,19 @@ color #402.1/A #BFC3E8
 color #402.1/U #B37E6A
 # SART1
 color #402.1/S #D6937B
+# Named selections for subcomplexes using original deposited chain IDs.
+# RNA/substrate
+name pdb_8QPB_RNA_substrate #402.1/z
+# U2/SF3B
+name pdb_8QPB_U2_SF3B #402.1/7
+# U4 snRNP
+name pdb_8QPB_U4_snRNP #402.1/4
+# U4/U6 snRNP
+name pdb_8QPB_U4_U6_snRNP #402.1/D,F,G,J,L,M,U
+# U5 snRNP
+name pdb_8QPB_U5_snRNP #402.1/5,A,B,C,N,S
+# U6 snRNP
+name pdb_8QPB_U6_snRNP #402.1/6
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -5--1, five-ss-inference, medium confidence, validation not_applicable
 name pre_B_8QPB_5exon #402.1/z:-5--1

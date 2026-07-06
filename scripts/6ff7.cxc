@@ -159,6 +159,31 @@ color #335.1/8 #49926C
 color #335.1/A #BFC3E8
 # EFTUD2
 color #335.1/B #6495ED
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_6FF7_EJC_mRNP #335.1/T
+# NTC/NTR related
+name pdb_6FF7_NTC_NTR_related #335.1/C,M,O,P,Q,U,V,o,w
+# NTC/PRP19
+name pdb_6FF7_NTC_PRP19 #335.1/D,G,H,I,J,K,L,R
+# RNA/substrate
+name pdb_6FF7_RNA_substrate #335.1/Z
+# SR proteins
+name pdb_6FF7_SR_proteins #335.1/S
+# Second step factors
+name pdb_6FF7_Second_step_factors #335.1/E
+# Sm ring
+name pdb_6FF7_Sm_ring #335.1/a,b,c,d,e,f,g,h,i,j,k,l,m,n
+# U2 snRNP
+name pdb_6FF7_U2_snRNP #335.1/2,W,X
+# U2/SF3B
+name pdb_6FF7_U2_SF3B #335.1/7,8,9,N,p,u,v,x,y,z
+# U5 snRNP
+name pdb_6FF7_U5_snRNP #335.1/5,A,B,F,r
+# U6 snRNP
+name pdb_6FF7_U6_snRNP #335.1/6
+# other
+name pdb_6FF7_other #335.1/0,1,3,Y,q,s,t
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 233-262;380-397, component, medium confidence, validation not_applicable
 name Bact_6FF7_substrate #335.1/Z:233-262,380-397

@@ -76,6 +76,13 @@ color #350.1/9 #9BCF91
 color #350.1/o #77B088
 # U2-Sm SNRPB
 color #350.1/m #D5F5E3
+# Named selections for subcomplexes using original deposited chain IDs.
+# U2 Sm ring
+name pdb_6Y53_U2_Sm_ring #350.1/h,i,j,k,l,m,n
+# U2 snRNP
+name pdb_6Y53_U2_snRNP #350.1/2,a,b,p,q
+# U2/SF3B
+name pdb_6Y53_U2_SF3B #350.1/6,7,8,9,o,u,z
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA stem IIa: residues 69-73;81-82, review-region, low confidence
 name U2_snRNP_6Y53_U2_stem_IIa #350.1/2:69-73,81-82

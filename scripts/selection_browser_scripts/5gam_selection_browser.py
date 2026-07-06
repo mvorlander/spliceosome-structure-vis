@@ -127,6 +127,38 @@ _EMBEDDED_SPEC = {
   "pdb_id": "5gam",
   "selectors": [
     {
+      "atomspec": "#304.1/b,d,e,f,g,h,j",
+      "category": "subcomplex",
+      "comment": "U5 Sm ring",
+      "label": "U5 Sm ring",
+      "name": "pdb_5GAM_U5_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#304.1/A,C,U",
+      "category": "subcomplex",
+      "comment": "U5 snRNP",
+      "label": "U5 snRNP",
+      "name": "pdb_5GAM_U5_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#304.1/W",
+      "category": "subcomplex",
+      "comment": "U6 snRNP",
+      "label": "U6 snRNP",
+      "name": "pdb_5GAM_U6_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#304.1/x",
+      "category": "subcomplex",
+      "comment": "other",
+      "label": "other",
+      "name": "pdb_5GAM_other",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
       "atomspec": "#304.1/U:53",
       "category": "snRNA feature",
       "comment": "U5 snRNA loop I: residues 53, sequence-motif, medium confidence",

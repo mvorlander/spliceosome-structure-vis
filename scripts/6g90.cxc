@@ -111,6 +111,21 @@ color #336.1/E #7F5BA6
 color #336.1/F #C7A6BE
 # SNU56
 color #336.1/G #D65B96
+# Named selections for subcomplexes using original deposited chain IDs.
+# RNA/substrate
+name pdb_6G90_RNA_substrate #336.1/I
+# U1 Sm ring
+name pdb_6G90_U1_Sm_ring #336.1/b,d,e,f,g,h,i
+# U1 snRNP
+name pdb_6G90_U1_snRNP #336.1/1,A,B,C,D,E,F,G,H,J
+# U2 Sm ring
+name pdb_6G90_U2_Sm_ring #336.1/s,t,u,v,w,x,y
+# U2 snRNP
+name pdb_6G90_U2_snRNP #336.1/2,W,Y
+# U2/SF3B
+name pdb_6G90_U2_SF3B #336.1/O,P,Q,R,S,T,U,V,Z
+# other
+name pdb_6G90_other #336.1/X
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues -1,0,1,2,3,4,5,6,7,8,9,10,51,52,53,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79, component, medium confidence, validation not_applicable
 name A_complex_6G90_substrate #336.1/I:-1,0,1,2,3,4,5,6,7,8,9,10,51,52,53,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79

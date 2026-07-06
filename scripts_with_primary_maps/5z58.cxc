@@ -130,6 +130,29 @@ color #325.1/j #D5F5E3
 color #325.1/d #B0C4DE
 # U2-Sm SNRPD2
 color #325.1/k #D5F5E3
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_5Z58_EJC_mRNP #325.1/V
+# NTC/NTR related
+name pdb_5Z58_NTC_NTR_related #325.1/J,R
+# NTC/PRP19
+name pdb_5Z58_NTC_PRP19 #325.1/L,P,T
+# RNA/substrate
+name pdb_5Z58_RNA_substrate #325.1/G
+# U2 Sm ring
+name pdb_5Z58_U2_Sm_ring #325.1/h,i,j,k,l,m,n
+# U2 snRNP
+name pdb_5Z58_U2_snRNP #325.1/H,o,p
+# U2/SF3B
+name pdb_5Z58_U2_SF3B #325.1/1,2,3,4,5,6,7,u,v,w
+# U5 Sm ring
+name pdb_5Z58_U5_Sm_ring #325.1/a,b,c,d,e,f,g
+# U5 snRNP
+name pdb_5Z58_U5_snRNP #325.1/A,B,C,D,E
+# U6 snRNP
+name pdb_5Z58_U6_snRNP #325.1/F
+# other
+name pdb_5Z58_other #325.1/M,X,Y,Z,x,z
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -12--1, splice-site-inference, medium confidence, validation not_applicable
 name Bact_5Z58_5exon #325.1/G:-12--1

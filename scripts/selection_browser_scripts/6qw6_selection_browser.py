@@ -127,6 +127,70 @@ _EMBEDDED_SPEC = {
   "pdb_id": "6qw6",
   "selectors": [
     {
+      "atomspec": "#347.1/R",
+      "category": "subcomplex",
+      "comment": "RNA-binding",
+      "label": "RNA-binding",
+      "name": "pdb_6QW6_RNA_binding",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#347.1/4b,4e,4f,4g,41,42,43",
+      "category": "subcomplex",
+      "comment": "U4 Sm ring",
+      "label": "U4 Sm ring",
+      "name": "pdb_6QW6_U4_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#347.1/4",
+      "category": "subcomplex",
+      "comment": "U4 snRNP",
+      "label": "U4 snRNP",
+      "name": "pdb_6QW6_U4_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#347.1/4A,4B,4C,4D,5D,5X,U",
+      "category": "subcomplex",
+      "comment": "U4/U6 snRNP",
+      "label": "U4/U6 snRNP",
+      "name": "pdb_6QW6_U4_U6_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#347.1/5b,5e,5f,5g,51,52,53",
+      "category": "subcomplex",
+      "comment": "U5 Sm ring",
+      "label": "U5 Sm ring",
+      "name": "pdb_6QW6_U5_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#347.1/5,5A,5B,5C,5J,5O,S,X",
+      "category": "subcomplex",
+      "comment": "U5 snRNP",
+      "label": "U5 snRNP",
+      "name": "pdb_6QW6_U5_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#347.1/62,63,64,65,66,67,68",
+      "category": "subcomplex",
+      "comment": "U6 LSm",
+      "label": "U6 LSm",
+      "name": "pdb_6QW6_U6_LSm",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#347.1/6",
+      "category": "subcomplex",
+      "comment": "U6 snRNP",
+      "label": "U6 snRNP",
+      "name": "pdb_6QW6_U6_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
       "atomspec": "#347.1/4:1-18",
       "category": "snRNA feature",
       "comment": "U4 snRNA U4/U6 stem I partner: residues 1-18, reference-alignment, high confidence",

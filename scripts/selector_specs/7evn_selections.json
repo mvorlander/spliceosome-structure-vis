@@ -1,0 +1,23 @@
+{
+  "pdb_id": "7evn",
+  "structure_model_id": "362.1",
+  "structure_group_id": "362",
+  "selectors": [
+    {
+      "name": "pdb_7EVN_U2_snRNP",
+      "label": "U2 snRNP",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U2 snRNP",
+      "atomspec": "#362.1/E"
+    },
+    {
+      "name": "pdb_7EVN_U2_SF3B",
+      "label": "U2/SF3B",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U2/SF3B",
+      "atomspec": "#362.1/A,B,C,D"
+    }
+  ]
+}

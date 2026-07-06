@@ -70,6 +70,19 @@ color #400.1/R #44A0A7
 color #400.1/S #D6937B
 # USP39
 color #400.1/U #B37E6A
+# Named selections for subcomplexes using original deposited chain IDs.
+# RNA-binding
+name pdb_8QP9_RNA_binding #400.1/R
+# U2/SF3B
+name pdb_8QP9_U2_SF3B #400.1/7
+# U4 snRNP
+name pdb_8QP9_U4_snRNP #400.1/4
+# U4/U6 snRNP
+name pdb_8QP9_U4_U6_snRNP #400.1/D,G,J,L,U
+# U5 snRNP
+name pdb_8QP9_U5_snRNP #400.1/5,A,B,C,N,S,X
+# U6 snRNP
+name pdb_8QP9_U6_snRNP #400.1/6
 # Named selections for resolved snRNA functional regions.
 # U4 snRNA U4/U6 stem I partner: residues 1-18, reference-alignment, high confidence
 name pre_B_8QP9_U4_U6_stem_I_partner #400.1/4:1-18

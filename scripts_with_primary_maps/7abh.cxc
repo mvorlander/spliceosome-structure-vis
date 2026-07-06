@@ -70,6 +70,17 @@ color #357.1/T #49926C
 color #357.1/E #6A9064
 # SF3B4
 color #357.1/w #77B088
+# Named selections for subcomplexes using original deposited chain IDs.
+# NTC/PRP19
+name pdb_7ABH_NTC_PRP19 #357.1/L
+# RNA/substrate
+name pdb_7ABH_RNA_substrate #357.1/Z
+# U2 snRNP
+name pdb_7ABH_U2_snRNP #357.1/2
+# U2/SF3B
+name pdb_7ABH_U2_SF3B #357.1/4,E,F,T,u,w,x,y,z
+# other
+name pdb_7ABH_other #357.1/0,1,7,Y
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 141-168, component, medium confidence, validation not_applicable
 name pre_Bact_7ABH_substrate #357.1/Z:141-168

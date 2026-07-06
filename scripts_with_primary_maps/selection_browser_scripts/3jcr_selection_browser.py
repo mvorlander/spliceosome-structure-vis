@@ -127,6 +127,62 @@ _EMBEDDED_SPEC = {
   "pdb_id": "3jcr",
   "selectors": [
     {
+      "atomspec": "#303.1/o,p,q,r,s,t,u",
+      "category": "subcomplex",
+      "comment": "U4 Sm ring",
+      "label": "U4 Sm ring",
+      "name": "pdb_3JCR_U4_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#303.1/M",
+      "category": "subcomplex",
+      "comment": "U4 snRNP",
+      "label": "U4 snRNP",
+      "name": "pdb_3JCR_U4_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#303.1/E,F,I,J,K,L,V",
+      "category": "subcomplex",
+      "comment": "U4/U6 snRNP",
+      "label": "U4/U6 snRNP",
+      "name": "pdb_3JCR_U4_U6_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#303.1/O,P,Q,R,S,T,U",
+      "category": "subcomplex",
+      "comment": "U5 Sm ring",
+      "label": "U5 Sm ring",
+      "name": "pdb_3JCR_U5_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#303.1/A,B,C,D,G,H",
+      "category": "subcomplex",
+      "comment": "U5 snRNP",
+      "label": "U5 snRNP",
+      "name": "pdb_3JCR_U5_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#303.1/2,3,4,5,6,7,8",
+      "category": "subcomplex",
+      "comment": "U6 LSm",
+      "label": "U6 LSm",
+      "name": "pdb_3JCR_U6_LSm",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#303.1/N",
+      "category": "subcomplex",
+      "comment": "U6 snRNP",
+      "label": "U6 snRNP",
+      "name": "pdb_3JCR_U6_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
       "atomspec": "#303.1/M:1-16",
       "category": "snRNA feature",
       "comment": "U4 snRNA U4/U6 stem I partner: residues 1-16, reference-alignment, high confidence",

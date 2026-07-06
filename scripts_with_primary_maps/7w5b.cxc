@@ -148,6 +148,31 @@ color #376.1/4 #303030
 color #376.1/G #303030
 # U2 snRNA
 color #376.1/H #006400
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_7W5B_EJC_mRNP #376.1/V,u,v,w,x
+# NTC/NTR related
+name pdb_7W5B_NTC_NTR_related #376.1/I,J,M,N,O,Q,R,S,y
+# NTC/PRP19
+name pdb_7W5B_NTC_PRP19 #376.1/K,L,P,T,q,r,s,t
+# RNA/substrate
+name pdb_7W5B_RNA_substrate #376.1/4,G
+# SR proteins
+name pdb_7W5B_SR_proteins #376.1/U
+# Second step factors
+name pdb_7W5B_Second_step_factors #376.1/1,W,Y
+# U2 Sm ring
+name pdb_7W5B_U2_Sm_ring #376.1/h,i,j,k,l,m,n
+# U2 snRNP
+name pdb_7W5B_U2_snRNP #376.1/2,H,o,p
+# U5 Sm ring
+name pdb_7W5B_U5_Sm_ring #376.1/a,b,c,d,e,f,g
+# U5 snRNP
+name pdb_7W5B_U5_snRNP #376.1/A,B,C,D,E
+# U6 snRNP
+name pdb_7W5B_U6_snRNP #376.1/F
+# other
+name pdb_7W5B_other #376.1/3,Z,z
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues -13--1; 1-31;116-150;164-179, component, medium confidence, validation not_applicable
 name Cstar_7W5B_substrate #376.1/4:-13--1|#376.1/G:1-31,116-150,164-179

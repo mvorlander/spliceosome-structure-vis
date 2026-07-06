@@ -127,6 +127,30 @@ _EMBEDDED_SPEC = {
   "pdb_id": "6y53",
   "selectors": [
     {
+      "atomspec": "#350.1/h,i,j,k,l,m,n",
+      "category": "subcomplex",
+      "comment": "U2 Sm ring",
+      "label": "U2 Sm ring",
+      "name": "pdb_6Y53_U2_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#350.1/2,a,b,p,q",
+      "category": "subcomplex",
+      "comment": "U2 snRNP",
+      "label": "U2 snRNP",
+      "name": "pdb_6Y53_U2_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#350.1/6,7,8,9,o,u,z",
+      "category": "subcomplex",
+      "comment": "U2/SF3B",
+      "label": "U2/SF3B",
+      "name": "pdb_6Y53_U2_SF3B",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
       "atomspec": "#350.1/2:69-73,81-82",
       "category": "snRNA feature",
       "comment": "U2 snRNA stem IIa: residues 69-73;81-82, review-region, low confidence",

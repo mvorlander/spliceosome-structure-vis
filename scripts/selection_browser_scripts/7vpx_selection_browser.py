@@ -127,6 +127,62 @@ _EMBEDDED_SPEC = {
   "pdb_id": "7vpx",
   "selectors": [
     {
+      "atomspec": "#373.1/I,K",
+      "category": "subcomplex",
+      "comment": "RNA/substrate",
+      "label": "RNA/substrate",
+      "name": "pdb_7VPX_RNA_substrate",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#373.1/h,i,j,k,l,m,n",
+      "category": "subcomplex",
+      "comment": "U1 Sm ring",
+      "label": "U1 Sm ring",
+      "name": "pdb_7VPX_U1_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#373.1/L,M,N,O",
+      "category": "subcomplex",
+      "comment": "U1 snRNP",
+      "label": "U1 snRNP",
+      "name": "pdb_7VPX_U1_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#373.1/a,b,c,d,e,f,g",
+      "category": "subcomplex",
+      "comment": "U2 Sm ring",
+      "label": "U2 Sm ring",
+      "name": "pdb_7VPX_U2_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#373.1/E,F,G,H",
+      "category": "subcomplex",
+      "comment": "U2 snRNP",
+      "label": "U2 snRNP",
+      "name": "pdb_7VPX_U2_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#373.1/1,2,3,4,5,6,A,B,C",
+      "category": "subcomplex",
+      "comment": "U2/SF3B",
+      "label": "U2/SF3B",
+      "name": "pdb_7VPX_U2_SF3B",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#373.1/D,J",
+      "category": "subcomplex",
+      "comment": "other",
+      "label": "other",
+      "name": "pdb_7VPX_other",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
       "atomspec": "#373.1/I:27-41|#373.1/K:-1-0",
       "category": "substrate RNA feature",
       "comment": "5' exon: residues -1-0; 27-41, five-ss-inference, medium confidence, validation not_applicable",

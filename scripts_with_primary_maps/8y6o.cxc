@@ -130,6 +130,25 @@ color #416.1/G #CFA785
 color #416.1/H #6A90A0
 # DDX23
 color #416.1/I #CA9982
+# Named selections for subcomplexes using original deposited chain IDs.
+# RNA-binding
+name pdb_8Y6O_RNA_binding #416.1/V
+# RNA/substrate
+name pdb_8Y6O_RNA_substrate #416.1/A
+# Sm ring
+name pdb_8Y6O_Sm_ring #416.1/h,i,j,k,l,m,n,o,p,q,r,s,t,u
+# U11/U12 snRNP
+name pdb_8Y6O_U11_U12_snRNP #416.1/P
+# U4/U6 snRNP
+name pdb_8Y6O_U4_U6_snRNP #416.1/I,L,M,N,O,Q,U
+# U4atac/U6atac snRNP
+name pdb_8Y6O_U4atac_U6atac_snRNP #416.1/J,K
+# U5 Sm ring
+name pdb_8Y6O_U5_Sm_ring #416.1/a,b,c,d,e,f,g
+# U5 snRNP
+name pdb_8Y6O_U5_snRNP #416.1/B,C,D,E,F,G,S
+# other
+name pdb_8Y6O_other #416.1/H,R,W,X,Y,Z
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -1-0, five-ss-inference, medium confidence, validation not_applicable
 name pre_B_8Y6O_5exon #416.1/A:-1-0

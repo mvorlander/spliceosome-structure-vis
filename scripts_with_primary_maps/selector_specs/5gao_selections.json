@@ -4,6 +4,30 @@
   "structure_group_id": "306",
   "selectors": [
     {
+      "name": "pdb_5GAO_RNA_substrate",
+      "label": "RNA/substrate",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "RNA/substrate",
+      "atomspec": "#306.1/V"
+    },
+    {
+      "name": "pdb_5GAO_Sm_ring",
+      "label": "Sm ring",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "Sm ring",
+      "atomspec": "#306.1/k,l,m,n,p,q,r"
+    },
+    {
+      "name": "pdb_5GAO_U5_snRNP",
+      "label": "U5 snRNP",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U5 snRNP",
+      "atomspec": "#306.1/A,B,E"
+    },
+    {
       "name": "U5_tri_snRNP_5GAO_substrate",
       "label": "substrate RNA",
       "category": "substrate RNA feature",

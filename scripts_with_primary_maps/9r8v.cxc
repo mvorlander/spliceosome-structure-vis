@@ -162,6 +162,31 @@ color #429.1/L #DAA520
 color #429.1/C #6495ED
 # PRP8BP
 color #429.1/E #E2F3F4
+# Named selections for subcomplexes using original deposited chain IDs.
+# NTC/NTR related
+name pdb_9R8V_NTC_NTR_related #429.1/P,Q,S1
+# NTC/PRP19
+name pdb_9R8V_NTC_PRP19 #429.1/G,L,R
+# RNA/substrate
+name pdb_9R8V_RNA_substrate #429.1/Z
+# Second step factors
+name pdb_9R8V_Second_step_factors #429.1/P7
+# U2 Sm ring
+name pdb_9R8V_U2_Sm_ring #429.1/2b,2e,2f,2g,21,22,23
+# U2 snRNP
+name pdb_9R8V_U2_snRNP #429.1/2,2A,2B,DH
+# U2/SF3B
+name pdb_9R8V_U2_SF3B #429.1/5A,7,8,9,B1,B2,B3,B4,B5,B6
+# U5 Sm ring
+name pdb_9R8V_U5_Sm_ring #429.1/5b,5e,5f,5g,51,52,53
+# U5 snRNP
+name pdb_9R8V_U5_snRNP #429.1/5,B,C,E
+# U6 LSm
+name pdb_9R8V_U6_LSm #429.1/62,63,64,65,66,67,68
+# U6 snRNP
+name pdb_9R8V_U6_snRNP #429.1/6
+# other
+name pdb_9R8V_other #429.1/A,A6,BL,I,K,SR,T,X,q,r,t,v,w,x,y
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 234-262;382-396, component, medium confidence, validation not_applicable
 name pre_Bact_9R8V_substrate #429.1/Z:234-262,382-396

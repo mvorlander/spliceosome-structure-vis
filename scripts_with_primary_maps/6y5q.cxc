@@ -82,6 +82,13 @@ color #351.1/a #58D68D
 color #351.1/b #DAF7A6
 # SF3B6
 color #351.1/z #ADCEA0
+# Named selections for subcomplexes using original deposited chain IDs.
+# U2 Sm ring
+name pdb_6Y5Q_U2_Sm_ring #351.1/h,i,j,k,l,m,n
+# U2 snRNP
+name pdb_6Y5Q_U2_snRNP #351.1/2,a,b,p,q
+# U2/SF3B
+name pdb_6Y5Q_U2_SF3B #351.1/6,7,8,9,o,u,v,x,y,z
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
 name U2_snRNP_6Y5Q_U2_U6_helix_I_partner #351.1/2:26-30

@@ -127,6 +127,30 @@ _EMBEDDED_SPEC = {
   "pdb_id": "7evo",
   "selectors": [
     {
+      "atomspec": "#363.1/a,b,c,d,e,f,g",
+      "category": "subcomplex",
+      "comment": "U2 Sm ring",
+      "label": "U2 Sm ring",
+      "name": "pdb_7EVO_U2_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#363.1/D,E,F,G,H",
+      "category": "subcomplex",
+      "comment": "U2 snRNP",
+      "label": "U2 snRNP",
+      "name": "pdb_7EVO_U2_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#363.1/1,2,3,4,5,6,A,B,C",
+      "category": "subcomplex",
+      "comment": "U2/SF3B",
+      "label": "U2/SF3B",
+      "name": "pdb_7EVO_U2_SF3B",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
       "atomspec": "#363.1/H:26-30",
       "category": "snRNA feature",
       "comment": "U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence",

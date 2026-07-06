@@ -136,6 +136,29 @@ color #414.1/DX #663399
 color #414.1/E #E2F3F4
 # SYF1
 color #414.1/I #FF957B
+# Named selections for subcomplexes using original deposited chain IDs.
+# Disassembly factors
+name pdb_8RO1_Disassembly_factors #414.1/PX,TF
+# NTC/NTR related
+name pdb_8RO1_NTC_NTR_related #414.1/D,I,J,L2,M,N,O,Q,R,S,y
+# NTC/PRP19
+name pdb_8RO1_NTC_PRP19 #414.1/K,L,P,T,q,r,s,t
+# RNA/substrate
+name pdb_8RO1_RNA_substrate #414.1/IN
+# Second step factors
+name pdb_8RO1_Second_step_factors #414.1/W
+# U2 Sm ring
+name pdb_8RO1_U2_Sm_ring #414.1/h,i,j,k,l,m,n
+# U2 snRNP
+name pdb_8RO1_U2_snRNP #414.1/2,DX,o,p
+# U5 Sm ring
+name pdb_8RO1_U5_Sm_ring #414.1/a,b,c,d,e,f,g
+# U5 snRNP
+name pdb_8RO1_U5_snRNP #414.1/5,A,C,E
+# U6 snRNP
+name pdb_8RO1_U6_snRNP #414.1/6
+# other
+name pdb_8RO1_other #414.1/L1,X,Z
 # Named selections for resolved substrate RNA features.
 # intron: residues 1-2;10-28;40-51, component-name, high confidence, validation not_applicable
 name ILS_disassembly_8RO1_intron #414.1/IN:1-2,10-28,40-51

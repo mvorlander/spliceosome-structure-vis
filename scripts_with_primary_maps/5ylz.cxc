@@ -118,6 +118,29 @@ color #321.1/F #006400
 color #321.1/H #FF957B
 # CRNKL1
 color #321.1/I #FFC388
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_5YLZ_EJC_mRNP #321.1/S
+# NTC/NTR related
+name pdb_5YLZ_NTC_NTR_related #321.1/H,I,K,L,M,N,Q
+# NTC/PRP19
+name pdb_5YLZ_NTC_PRP19 #321.1/J,O,P,q,r,s,t
+# RNA/substrate
+name pdb_5YLZ_RNA_substrate #321.1/E
+# Second step factors
+name pdb_5YLZ_Second_step_factors #321.1/T,V,W
+# U2 Sm ring
+name pdb_5YLZ_U2_Sm_ring #321.1/h,i,j,k,l,m,n
+# U2 snRNP
+name pdb_5YLZ_U2_snRNP #321.1/F,o,p
+# U5 Sm ring
+name pdb_5YLZ_U5_Sm_ring #321.1/a,b,c,d,e,f,g
+# U5 snRNP
+name pdb_5YLZ_U5_snRNP #321.1/A,B,C
+# U6 snRNP
+name pdb_5YLZ_U6_snRNP #321.1/D
+# other
+name pdb_5YLZ_other #321.1/G,R,U
 # Named selections for resolved substrate RNA features.
 # intron: residues -13--1;1-15;282-304;345-355, component-name, high confidence, validation not_applicable
 name P_5YLZ_intron #321.1/E:-13--1,1-15,282-304,345-355

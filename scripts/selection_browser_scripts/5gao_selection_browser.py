@@ -127,6 +127,30 @@ _EMBEDDED_SPEC = {
   "pdb_id": "5gao",
   "selectors": [
     {
+      "atomspec": "#306.1/V",
+      "category": "subcomplex",
+      "comment": "RNA/substrate",
+      "label": "RNA/substrate",
+      "name": "pdb_5GAO_RNA_substrate",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#306.1/k,l,m,n,p,q,r",
+      "category": "subcomplex",
+      "comment": "Sm ring",
+      "label": "Sm ring",
+      "name": "pdb_5GAO_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#306.1/A,B,E",
+      "category": "subcomplex",
+      "comment": "U5 snRNP",
+      "label": "U5 snRNP",
+      "name": "pdb_5GAO_U5_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
       "atomspec": "#306.1/V:73-104,128-152",
       "category": "substrate RNA feature",
       "comment": "substrate RNA: residues 73-104;128-152, component, medium confidence, validation not_applicable",

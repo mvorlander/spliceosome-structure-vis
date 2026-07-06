@@ -120,6 +120,29 @@ color #332.1/B #6495ED
 color #332.1/D #F4A460
 # SNW1
 color #332.1/E #D49F96
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_6BK8_EJC_mRNP #332.1/L
+# NTC/NTR related
+name pdb_6BK8_NTC_NTR_related #332.1/E,F,G,I,R,T,U
+# NTC/PRP19
+name pdb_6BK8_NTC_PRP19 #332.1/D,H,S,u,v,w,x
+# RNA/substrate
+name pdb_6BK8_RNA_substrate #332.1/e,i
+# Second step factors
+name pdb_6BK8_Second_step_factors #332.1/M,O,P
+# U2 Sm ring
+name pdb_6BK8_U2_Sm_ring #332.1/k,l,m,n,o,p,q
+# U2 snRNP
+name pdb_6BK8_U2_snRNP #332.1/2,r,s
+# U5 Sm ring
+name pdb_6BK8_U5_Sm_ring #332.1/a,b,c,d,f,g,h
+# U5 snRNP
+name pdb_6BK8_U5_snRNP #332.1/5,A,B
+# U6 snRNP
+name pdb_6BK8_U6_snRNP #332.1/6
+# other
+name pdb_6BK8_other #332.1/K,N,X,Y,y
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues -13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21; 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,501,502,503,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,620,621,622,623,624,625,626,627,628,1001,1002,1003,1004,1005,1006,1007,1008,1110,1111,1112,1113,1114,1115,1116,1117,1118, component, medium confidence, validation not_applicable
 name P_6BK8_substrate #332.1/e:-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21|#332.1/i:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,501,502,503,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,620,621,622,623,624,625,626,627,628,1001,1002,1003,1004,1005,1006,1007,1008,1110,1111,1112,1113,1114,1115,1116,1117,1118

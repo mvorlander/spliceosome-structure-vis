@@ -4,6 +4,22 @@
   "structure_group_id": "420",
   "selectors": [
     {
+      "name": "pdb_9K1O_RNA_substrate",
+      "label": "RNA/substrate",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "RNA/substrate",
+      "atomspec": "#420.1/G,H"
+    },
+    {
+      "name": "pdb_9K1O_U2_SF3B",
+      "label": "U2/SF3B",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U2/SF3B",
+      "atomspec": "#420.1/A,B,C,D"
+    },
+    {
       "name": "U2_snRNP_9K1O_substrate",
       "label": "substrate RNA",
       "category": "substrate RNA feature",

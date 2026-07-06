@@ -106,6 +106,23 @@ color #305.1/F #DFD570
 color #305.1/G #E1DD1B
 # SNRNP200
 color #305.1/B #AFEEEE
+# Named selections for subcomplexes using original deposited chain IDs.
+# U4 Sm ring
+name pdb_5GAN_U4_Sm_ring #305.1/k,l,m,n,p,q,r
+# U4 snRNP
+name pdb_5GAN_U4_snRNP #305.1/V
+# U4/U6 snRNP
+name pdb_5GAN_U4_U6_snRNP #305.1/D,F,G,H,K
+# U5 Sm ring
+name pdb_5GAN_U5_Sm_ring #305.1/b,d,e,f,g,h,j
+# U5 snRNP
+name pdb_5GAN_U5_snRNP #305.1/A,B,C,E,J,U
+# U6 LSm
+name pdb_5GAN_U6_LSm #305.1/2,3,4,5,6,7,8
+# U6 snRNP
+name pdb_5GAN_U6_snRNP #305.1/W
+# other
+name pdb_5GAN_other #305.1/x
 # Named selections for resolved snRNA functional regions.
 # U4 snRNA U4/U6 stem I partner: residues 1-18, reference-alignment, high confidence
 name U5_tri_snRNP_5GAN_U4_U6_stem_I_partner #305.1/V:1-18

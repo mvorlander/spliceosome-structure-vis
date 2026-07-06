@@ -157,6 +157,31 @@ color #412.1/65 #F4A3A8
 color #412.1/E #E2F3F4
 # SF3B4
 color #412.1/B4 #77B088
+# Named selections for subcomplexes using original deposited chain IDs.
+# RNA/substrate
+name pdb_8RM5_RNA_substrate #412.1/Z,z
+# U2 Sm ring
+name pdb_8RM5_U2_Sm_ring #412.1/2b,2e,2f,2g,21,22,23
+# U2 snRNP
+name pdb_8RM5_U2_snRNP #412.1/2,2A,2B
+# U2/SF3B
+name pdb_8RM5_U2_SF3B #412.1/7,8,9,B1,B2,B3,B4,B5,B6,BP
+# U4 Sm ring
+name pdb_8RM5_U4_Sm_ring #412.1/4b,4e,4f,4g,41,42,43
+# U4 snRNP
+name pdb_8RM5_U4_snRNP #412.1/4
+# U4/U6 snRNP
+name pdb_8RM5_U4_U6_snRNP #412.1/D,F,G,J,L,M,U
+# U5 Sm ring
+name pdb_8RM5_U5_Sm_ring #412.1/5b,5e,5f,5g,51,52,53
+# U5 snRNP
+name pdb_8RM5_U5_snRNP #412.1/5,A,B,C,E,N,S
+# U6 LSm
+name pdb_8RM5_U6_LSm #412.1/62,63,64,65,66,67,68
+# U6 snRNP
+name pdb_8RM5_U6_snRNP #412.1/6
+# other
+name pdb_8RM5_other #412.1/W
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues -3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15; 29-43, component, medium confidence, validation not_applicable
 name pre_B_8RM5_substrate #412.1/Z:29-43|#412.1/z:-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15

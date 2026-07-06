@@ -43,5 +43,14 @@ color #367.1/B #AFEEEE
 color #367.1/C #D9CCFF
 # PRPF8
 color #367.1/J #BFC3E8
+# Named selections for subcomplexes using original deposited chain IDs.
+# U5 snRNP
+name pdb_7OS2_U5_snRNP #367.1/B,J
+# other
+name pdb_7OS2_other #367.1/C
+# Searchable named selection browser.
+# In GUI ChimeraX this opens a small panel for selecting and zooming named selections.
+# Fetch and open the self-contained named selection browser from GitHub.
+open https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/selection_browser_scripts/7os2_selection_browser.py
 view
 show nucleic

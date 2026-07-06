@@ -60,6 +60,13 @@ color #306.1/r #B0C4DE
 color #306.1/E #D6937B
 # SNRNP200
 color #306.1/B #AFEEEE
+# Named selections for subcomplexes using original deposited chain IDs.
+# RNA/substrate
+name pdb_5GAO_RNA_substrate #306.1/V
+# Sm ring
+name pdb_5GAO_Sm_ring #306.1/k,l,m,n,p,q,r
+# U5 snRNP
+name pdb_5GAO_U5_snRNP #306.1/A,B,E
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 73-104;128-152, component, medium confidence, validation not_applicable
 name U5_tri_snRNP_5GAO_substrate #306.1/V:73-104,128-152

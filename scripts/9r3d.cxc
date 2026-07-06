@@ -71,6 +71,19 @@ color #428.1/Q #FFF584
 color #428.1/T #A2B8CD
 # NPWBP
 color #428.1/X #D8944F
+# Named selections for subcomplexes using original deposited chain IDs.
+# NTC/NTR related
+name pdb_9R3D_NTC_NTR_related #428.1/P,Q,S1
+# RNA/substrate
+name pdb_9R3D_RNA_substrate #428.1/Z
+# Second step factors
+name pdb_9R3D_Second_step_factors #428.1/P7
+# U5 snRNP
+name pdb_9R3D_U5_snRNP #428.1/5,A,B,C
+# U6 snRNP
+name pdb_9R3D_U6_snRNP #428.1/6
+# other
+name pdb_9R3D_other #428.1/I,K,T,X,q,r,t
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 50-78, component, medium confidence, validation not_applicable
 name pre_Bact_9R3D_substrate #428.1/Z:50-78

@@ -4,6 +4,62 @@
   "structure_group_id": "336",
   "selectors": [
     {
+      "name": "pdb_6G90_RNA_substrate",
+      "label": "RNA/substrate",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "RNA/substrate",
+      "atomspec": "#336.1/I"
+    },
+    {
+      "name": "pdb_6G90_U1_Sm_ring",
+      "label": "U1 Sm ring",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U1 Sm ring",
+      "atomspec": "#336.1/b,d,e,f,g,h,i"
+    },
+    {
+      "name": "pdb_6G90_U1_snRNP",
+      "label": "U1 snRNP",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U1 snRNP",
+      "atomspec": "#336.1/1,A,B,C,D,E,F,G,H,J"
+    },
+    {
+      "name": "pdb_6G90_U2_Sm_ring",
+      "label": "U2 Sm ring",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U2 Sm ring",
+      "atomspec": "#336.1/s,t,u,v,w,x,y"
+    },
+    {
+      "name": "pdb_6G90_U2_snRNP",
+      "label": "U2 snRNP",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U2 snRNP",
+      "atomspec": "#336.1/2,W,Y"
+    },
+    {
+      "name": "pdb_6G90_U2_SF3B",
+      "label": "U2/SF3B",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U2/SF3B",
+      "atomspec": "#336.1/O,P,Q,R,S,T,U,V,Z"
+    },
+    {
+      "name": "pdb_6G90_other",
+      "label": "other",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "other",
+      "atomspec": "#336.1/X"
+    },
+    {
       "name": "A_complex_6G90_substrate",
       "label": "substrate RNA",
       "category": "substrate RNA feature",

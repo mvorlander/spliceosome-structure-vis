@@ -121,6 +121,29 @@ color #301.1/m #D5F5E3
 color #301.1/I #B0C4DE
 # U2-Sm SNRPF
 color #301.1/n #D5F5E3
+# Named selections for subcomplexes using original deposited chain IDs.
+# NTC/NTR related
+name pdb_3JB9_NTC_NTR_related #301.1/M,R,X,a,c,d,e,r
+# NTC/PRP19
+name pdb_3JB9_NTC_PRP19 #301.1/S,T,U,V,W,h,i
+# RNA/substrate
+name pdb_3JB9_RNA_substrate #301.1/O,Q
+# Second step factors
+name pdb_3JB9_Second_step_factors #301.1/g
+# U2 Sm ring
+name pdb_3JB9_U2_Sm_ring #301.1/Z,b,f,l,m,n,o
+# U2 snRNP
+name pdb_3JB9_U2_snRNP #301.1/K,P,j,k
+# U4/U6 snRNP
+name pdb_3JB9_U4_U6_snRNP #301.1/Y
+# U5 Sm ring
+name pdb_3JB9_U5_Sm_ring #301.1/D,E,F,G,H,I,J
+# U5 snRNP
+name pdb_3JB9_U5_snRNP #301.1/A,B,C,L
+# U6 snRNP
+name pdb_3JB9_U6_snRNP #301.1/N
+# other
+name pdb_3JB9_other #301.1/x
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 100-107; 492-504, component, medium confidence, validation not_applicable
 name ILS_disassembly_3JB9_substrate #301.1/O:100-107|#301.1/Q:492-504

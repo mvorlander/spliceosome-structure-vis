@@ -136,6 +136,31 @@ color #361.1/j #B0C4DE
 color #361.1/d #B0C4DE
 # SNRPD2
 color #361.1/k #B0C4DE
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_7DVQ_EJC_mRNP #361.1/V
+# NTC/NTR related
+name pdb_7DVQ_NTC_NTR_related #361.1/J,R
+# NTC/PRP19
+name pdb_7DVQ_NTC_PRP19 #361.1/L,P,T
+# RNA/substrate
+name pdb_7DVQ_RNA_substrate #361.1/G
+# SR proteins
+name pdb_7DVQ_SR_proteins #361.1/U
+# Sm ring
+name pdb_7DVQ_Sm_ring #361.1/h,i,j,k,l,m,n
+# U11/U12 snRNP
+name pdb_7DVQ_U11_U12_snRNP #361.1/H
+# U2/SF3B
+name pdb_7DVQ_U2_SF3B #361.1/1,2,3,4,5,6,7
+# U4atac/U6atac snRNP
+name pdb_7DVQ_U4atac_U6atac_snRNP #361.1/F
+# U5 Sm ring
+name pdb_7DVQ_U5_Sm_ring #361.1/a,b,c,d,e,f,g
+# U5 snRNP
+name pdb_7DVQ_U5_snRNP #361.1/A,B,C,D,E
+# other
+name pdb_7DVQ_other #361.1/0,8,9,I,K,M,X,Y,Z,v,x,y,z
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -11-0, five-ss-inference, medium confidence, validation not_applicable
 name Bact_7DVQ_5exon #361.1/G:-11-0

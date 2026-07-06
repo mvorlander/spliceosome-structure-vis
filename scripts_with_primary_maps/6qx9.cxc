@@ -180,6 +180,35 @@ color #348.1/5e #B0C4DE
 color #348.1/I #303030
 # SNRNP70
 color #348.1/1K #8C3D78
+# Named selections for subcomplexes using original deposited chain IDs.
+# RNA-binding
+name pdb_6QX9_RNA_binding #348.1/R
+# RNA/substrate
+name pdb_6QX9_RNA_substrate #348.1/I
+# U1 Sm ring
+name pdb_6QX9_U1_Sm_ring #348.1/1b,1e,1f,1g,11,12,13
+# U1 snRNP
+name pdb_6QX9_U1_snRNP #348.1/1,1A,1C,1K
+# U2 Sm ring
+name pdb_6QX9_U2_Sm_ring #348.1/2b,2e,2f,2g,21,22,23
+# U2 snRNP
+name pdb_6QX9_U2_snRNP #348.1/2,2A,2B
+# U2/SF3B
+name pdb_6QX9_U2_SF3B #348.1/A1,A2,A3,B1,B2,B3,B4,B5,BP
+# U4 Sm ring
+name pdb_6QX9_U4_Sm_ring #348.1/4b,4e,4f,4g,41,42,43
+# U4 snRNP
+name pdb_6QX9_U4_snRNP #348.1/4
+# U4/U6 snRNP
+name pdb_6QX9_U4_U6_snRNP #348.1/4A,4B,4C,4D,5D,5X,K,U
+# U5 Sm ring
+name pdb_6QX9_U5_Sm_ring #348.1/5b,5e,5f,5g,51,52,53
+# U5 snRNP
+name pdb_6QX9_U5_snRNP #348.1/5,5A,5B,5C,5J,5O,S,X
+# U6 LSm
+name pdb_6QX9_U6_LSm #348.1/62,63,64,65,66,67,68
+# U6 snRNP
+name pdb_6QX9_U6_snRNP #348.1/6
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -1-0, five-ss-inference, medium confidence, validation not_applicable
 name pre_B_6QX9_5exon #348.1/I:-1-0

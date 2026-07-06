@@ -100,6 +100,27 @@ color #312.1/H #2C54DD
 color #312.1/J #5FB491
 # PLRG1
 color #312.1/K #F4A460
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_5LQW_EJC_mRNP #312.1/H
+# NTC/NTR related
+name pdb_5LQW_NTC_NTR_related #312.1/D,E,F,M,P,R
+# NTC/PRP19
+name pdb_5LQW_NTC_PRP19 #312.1/K,W
+# RNA/substrate
+name pdb_5LQW_RNA_substrate #312.1/9
+# U2 snRNP
+name pdb_5LQW_U2_snRNP #312.1/2
+# U2/SF3B
+name pdb_5LQW_U2_SF3B #312.1/Q,X,Y,Z
+# U5 Sm ring
+name pdb_5LQW_U5_Sm_ring #312.1/b,d,e,f,g,h,j
+# U5 snRNP
+name pdb_5LQW_U5_snRNP #312.1/5,A,B,C
+# U6 snRNP
+name pdb_5LQW_U6_snRNP #312.1/6
+# other
+name pdb_5LQW_other #312.1/J,L,N,O
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues 2-30, splice-site-inference, medium confidence, validation not_applicable
 name Bact_5LQW_5exon #312.1/9:2-30

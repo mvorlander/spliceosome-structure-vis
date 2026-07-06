@@ -67,6 +67,11 @@ color #392.1/G #FF4500
 color #392.1/H #800000
 # U5-Sm SNRPD1
 color #392.1/a #B0C4DE
+# Named selections for subcomplexes using original deposited chain IDs.
+# U5 Sm ring
+name pdb_8Q7Q_U5_Sm_ring #392.1/a,b,c,d,e,f,g
+# U5 snRNP
+name pdb_8Q7Q_U5_snRNP #392.1/5,A,B,C,D,F,G,H
 # Named selections for resolved snRNA functional regions.
 # U5 snRNA loop I: residues 38, sequence-motif, medium confidence
 name U5_recycling_8Q7Q_U5_loop_I #392.1/5:38

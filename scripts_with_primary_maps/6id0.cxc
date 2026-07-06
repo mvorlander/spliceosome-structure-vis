@@ -122,6 +122,25 @@ color #338.1/L #DAA520
 color #338.1/M #FF8C00
 # BUD31
 color #338.1/N #FFF584
+# Named selections for subcomplexes using original deposited chain IDs.
+# NTC/NTR related
+name pdb_6ID0_NTC_NTR_related #338.1/I,J,M,N,O,Q,R,S,U,y
+# NTC/PRP19
+name pdb_6ID0_NTC_PRP19 #338.1/K,L,P,T,q,r,s,t
+# RNA/substrate
+name pdb_6ID0_RNA_substrate #338.1/G
+# Second step factors
+name pdb_6ID0_Second_step_factors #338.1/W
+# U2 Sm ring
+name pdb_6ID0_U2_Sm_ring #338.1/h,i,j,k,l,m,n
+# U2 snRNP
+name pdb_6ID0_U2_snRNP #338.1/H,o,p
+# U5 Sm ring
+name pdb_6ID0_U5_Sm_ring #338.1/a,b,c,d,e,f,g
+# U5 snRNP
+name pdb_6ID0_U5_snRNP #338.1/A,B,C,E
+# U6 snRNP
+name pdb_6ID0_U6_snRNP #338.1/F
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 1-31;116-154, component, medium confidence, validation not_applicable
 name ILS_disassembly_6ID0_substrate #338.1/G:1-31,116-154

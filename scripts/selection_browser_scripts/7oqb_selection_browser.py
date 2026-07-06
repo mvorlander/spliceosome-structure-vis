@@ -127,6 +127,38 @@ _EMBEDDED_SPEC = {
   "pdb_id": "7oqb",
   "selectors": [
     {
+      "atomspec": "#365.1/I",
+      "category": "subcomplex",
+      "comment": "RNA/substrate",
+      "label": "RNA/substrate",
+      "name": "pdb_7OQB_RNA_substrate",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#365.1/s,t,u,v,w,x,y",
+      "category": "subcomplex",
+      "comment": "U2 Sm ring",
+      "label": "U2 Sm ring",
+      "name": "pdb_7OQB_U2_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#365.1/2,W,Y,p",
+      "category": "subcomplex",
+      "comment": "U2 snRNP",
+      "label": "U2 snRNP",
+      "name": "pdb_7OQB_U2_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#365.1/O,P,Q,R,S,T,U,V,Z",
+      "category": "subcomplex",
+      "comment": "U2/SF3B",
+      "label": "U2/SF3B",
+      "name": "pdb_7OQB_U2_SF3B",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
       "atomspec": "#365.1/I:246-268",
       "category": "substrate RNA feature",
       "comment": "substrate RNA: residues 246-268, component, medium confidence, validation not_applicable",

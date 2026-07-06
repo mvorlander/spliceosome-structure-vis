@@ -159,6 +159,31 @@ color #379.1/6e #F4A3A8
 color #379.1/6f #F4A3A8
 # LSM8
 color #379.1/6g #F4A3A8
+# Named selections for subcomplexes using original deposited chain IDs.
+# RNA-binding
+name pdb_8H6E_RNA_binding #379.1/4R
+# RNA/substrate
+name pdb_8H6E_RNA_substrate #379.1/A
+# U2 Sm ring
+name pdb_8H6E_U2_Sm_ring #379.1/2a,2b,2c,2d,2e,2f,2g
+# U2 snRNP
+name pdb_8H6E_U2_snRNP #379.1/2A,2B,2C
+# U2/SF3B
+name pdb_8H6E_U2_SF3B #379.1/2D,2E,2F,2G,2H,2I,2J,2K,2L,2M
+# U4 Sm ring
+name pdb_8H6E_U4_Sm_ring #379.1/4a,4b,4c,4d,4e,4f,4g
+# U4 snRNP
+name pdb_8H6E_U4_snRNP #379.1/4A
+# U4/U6 snRNP
+name pdb_8H6E_U4_U6_snRNP #379.1/4B,4C,4D,4E,4F,4T,4U,4Y
+# U5 Sm ring
+name pdb_8H6E_U5_Sm_ring #379.1/5a,5b,5c,5d,5e,5f,5g
+# U5 snRNP
+name pdb_8H6E_U5_snRNP #379.1/4G,4S,4X,5A,5B,5C,5D,5E
+# U6 LSm
+name pdb_8H6E_U6_LSm #379.1/6a,6b,6c,6d,6e,6f,6g
+# U6 snRNP
+name pdb_8H6E_U6_snRNP #379.1/6A
 # Named selections for resolved substrate RNA features.
 # upstream intron: residues 7-48, exon-definition-inference, medium confidence, validation not_applicable
 name pre_B_8H6E_intron #379.1/A:7-48

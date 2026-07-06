@@ -127,6 +127,62 @@ _EMBEDDED_SPEC = {
   "pdb_id": "6g90",
   "selectors": [
     {
+      "atomspec": "#336.1/I",
+      "category": "subcomplex",
+      "comment": "RNA/substrate",
+      "label": "RNA/substrate",
+      "name": "pdb_6G90_RNA_substrate",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#336.1/b,d,e,f,g,h,i",
+      "category": "subcomplex",
+      "comment": "U1 Sm ring",
+      "label": "U1 Sm ring",
+      "name": "pdb_6G90_U1_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#336.1/1,A,B,C,D,E,F,G,H,J",
+      "category": "subcomplex",
+      "comment": "U1 snRNP",
+      "label": "U1 snRNP",
+      "name": "pdb_6G90_U1_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#336.1/s,t,u,v,w,x,y",
+      "category": "subcomplex",
+      "comment": "U2 Sm ring",
+      "label": "U2 Sm ring",
+      "name": "pdb_6G90_U2_Sm_ring",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#336.1/2,W,Y",
+      "category": "subcomplex",
+      "comment": "U2 snRNP",
+      "label": "U2 snRNP",
+      "name": "pdb_6G90_U2_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#336.1/O,P,Q,R,S,T,U,V,Z",
+      "category": "subcomplex",
+      "comment": "U2/SF3B",
+      "label": "U2/SF3B",
+      "name": "pdb_6G90_U2_SF3B",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#336.1/X",
+      "category": "subcomplex",
+      "comment": "other",
+      "label": "other",
+      "name": "pdb_6G90_other",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
       "atomspec": "#336.1/I:-1,0,1,2,3,4,5,6,7,8,9,10,51,52,53,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79",
       "category": "substrate RNA feature",
       "comment": "substrate RNA: residues -1,0,1,2,3,4,5,6,7,8,9,10,51,52,53,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79, component, medium confidence, validation not_applicable",

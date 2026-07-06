@@ -91,6 +91,25 @@ color #313.1/C #6495ED
 color #313.1/H #2C54DD
 # PLRG1
 color #313.1/J #F4A460
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_5MPS_EJC_mRNP #313.1/H
+# NTC/NTR related
+name pdb_5MPS_NTC_NTR_related #313.1/K,L,M,N,S,T,y
+# NTC/PRP19
+name pdb_5MPS_NTC_PRP19 #313.1/J,O,P
+# RNA/substrate
+name pdb_5MPS_RNA_substrate #313.1/6,E,I
+# Second step factors
+name pdb_5MPS_Second_step_factors #313.1/c,o
+# U2 snRNP
+name pdb_5MPS_U2_snRNP #313.1/2
+# U5 Sm ring
+name pdb_5MPS_U5_Sm_ring #313.1/b,d,e,f,g,h,j
+# U5 snRNP
+name pdb_5MPS_U5_snRNP #313.1/5,A,C
+# other
+name pdb_5MPS_other #313.1/R,X,a
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues -16--1; 1-10;16-104; 1-16;56-73, component, medium confidence, validation not_applicable
 name Cstar_5MPS_substrate #313.1/6:1-10,16-104|#313.1/E:-16--1|#313.1/I:1-16,56-73

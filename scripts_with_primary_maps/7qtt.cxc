@@ -112,6 +112,29 @@ color #372.1/G #BFC4EE
 color #372.1/I #75A074
 # SF3A3
 color #372.1/J #9BCF91
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_7QTT_EJC_mRNP #372.1/W
+# NTC/NTR related
+name pdb_7QTT_NTC_NTR_related #372.1/T,U,X,Y,p
+# NTC/PRP19
+name pdb_7QTT_NTC_PRP19 #372.1/O,P,Q
+# RNA/substrate
+name pdb_7QTT_RNA_substrate #372.1/g
+# SR proteins
+name pdb_7QTT_SR_proteins #372.1/q
+# U2 snRNP
+name pdb_7QTT_U2_snRNP #372.1/f
+# U2/SF3B
+name pdb_7QTT_U2_SF3B #372.1/A,B,C,D,E,F,I,J
+# U5 Sm ring
+name pdb_7QTT_U5_Sm_ring #372.1/h,i,j,k,l,m,n
+# U5 snRNP
+name pdb_7QTT_U5_snRNP #372.1/a,b,e
+# U6 snRNP
+name pdb_7QTT_U6_snRNP #372.1/d
+# other
+name pdb_7QTT_other #372.1/G,L,N,V,Z,u
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -14--1, splice-site-inference, medium confidence, validation not_applicable
 name Bact_7QTT_5exon #372.1/g:-14--1

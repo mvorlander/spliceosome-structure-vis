@@ -118,6 +118,27 @@ color #415.1/J #FFC388
 color #415.1/K #FFDAB9
 # CWF19L1
 color #415.1/L1 #DDA0DD
+# Named selections for subcomplexes using original deposited chain IDs.
+# Disassembly factors
+name pdb_8RO2_Disassembly_factors #415.1/PX,TF
+# NTC/NTR related
+name pdb_8RO2_NTC_NTR_related #415.1/D,I,J,L2,M,N,O,Q,R,S
+# NTC/PRP19
+name pdb_8RO2_NTC_PRP19 #415.1/K,L,P,T,q,r,s,t
+# RNA/substrate
+name pdb_8RO2_RNA_substrate #415.1/IN
+# Second step factors
+name pdb_8RO2_Second_step_factors #415.1/W
+# U2 snRNP
+name pdb_8RO2_U2_snRNP #415.1/2,DX
+# U5 Sm ring
+name pdb_8RO2_U5_Sm_ring #415.1/a,b,c,d,e,f,g
+# U5 snRNP
+name pdb_8RO2_U5_snRNP #415.1/5,A,C,E
+# U6 snRNP
+name pdb_8RO2_U6_snRNP #415.1/6
+# other
+name pdb_8RO2_other #415.1/3,L1,Z,z
 # Named selections for resolved substrate RNA features.
 # intron: residues 1-24;138-154, component-name, high confidence, validation not_applicable
 name ILS_disassembly_8RO2_intron #415.1/IN:1-24,138-154

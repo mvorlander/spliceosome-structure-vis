@@ -4,6 +4,22 @@
   "structure_group_id": "371",
   "selectors": [
     {
+      "name": "pdb_7Q4P_U2_snRNP",
+      "label": "U2 snRNP",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U2 snRNP",
+      "atomspec": "#371.1/2"
+    },
+    {
+      "name": "pdb_7Q4P_U2_SF3B",
+      "label": "U2/SF3B",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U2/SF3B",
+      "atomspec": "#371.1/1,9,A,B,C,E,G"
+    },
+    {
       "name": "U2_snRNP_7Q4P_U2_U6_helix_I_partner",
       "label": "U2 snRNA U2/U6 helix I partner",
       "category": "snRNA feature",

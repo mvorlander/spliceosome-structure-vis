@@ -146,6 +146,31 @@ color #346.1/A #BFC3E8
 color #346.1/B #AFEEEE
 # EFTUD2
 color #346.1/C #6495ED
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_6QDV_EJC_mRNP #346.1/7,8,9,H
+# NTC/NTR related
+name pdb_6QDV_NTC_NTR_related #346.1/K,L,M,S,T,U,i,y
+# NTC/PRP19
+name pdb_6QDV_NTC_PRP19 #346.1/J,O,P,s,t,u,v,w
+# RNA/substrate
+name pdb_6QDV_RNA_substrate #346.1/E,I
+# SR proteins
+name pdb_6QDV_SR_proteins #346.1/R
+# Second step factors
+name pdb_6QDV_Second_step_factors #346.1/V,c,o
+# U2 Sm ring
+name pdb_6QDV_U2_Sm_ring #346.1/k,l,m,n,p,q,r
+# U2 snRNP
+name pdb_6QDV_U2_snRNP #346.1/2,D,W,Y
+# U5 Sm ring
+name pdb_6QDV_U5_Sm_ring #346.1/b,d,e,f,g,h,j
+# U5 snRNP
+name pdb_6QDV_U5_snRNP #346.1/5,A,B,C,N
+# U6 snRNP
+name pdb_6QDV_U6_snRNP #346.1/6
+# other
+name pdb_6QDV_other #346.1/F,G,Z,z
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -12--1, auth-residue-numbering, high confidence, validation not_applicable
 name P_6QDV_5exon #346.1/E:-12--1

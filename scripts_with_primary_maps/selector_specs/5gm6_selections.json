@@ -4,6 +4,86 @@
   "structure_group_id": "308",
   "selectors": [
     {
+      "name": "pdb_5GM6_EJC_mRNP",
+      "label": "EJC/mRNP",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "EJC/mRNP",
+      "atomspec": "#308.1/Z"
+    },
+    {
+      "name": "pdb_5GM6_NTC_NTR_related",
+      "label": "NTC/NTR related",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "NTC/NTR related",
+      "atomspec": "#308.1/P,Q,R,T,d,f,v"
+    },
+    {
+      "name": "pdb_5GM6_NTC_PRP19",
+      "label": "NTC/PRP19",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "NTC/PRP19",
+      "atomspec": "#308.1/O,S,c,o,p,q,r"
+    },
+    {
+      "name": "pdb_5GM6_RNA_substrate",
+      "label": "RNA/substrate",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "RNA/substrate",
+      "atomspec": "#308.1/D,E,M,N"
+    },
+    {
+      "name": "pdb_5GM6_Second_step_factors",
+      "label": "Second step factors",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "Second step factors",
+      "atomspec": "#308.1/n"
+    },
+    {
+      "name": "pdb_5GM6_Sm_ring",
+      "label": "Sm ring",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "Sm ring",
+      "atomspec": "#308.1/g,h,i,j,k,l,m"
+    },
+    {
+      "name": "pdb_5GM6_U2_snRNP",
+      "label": "U2 snRNP",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U2 snRNP",
+      "atomspec": "#308.1/L"
+    },
+    {
+      "name": "pdb_5GM6_U2_SF3B",
+      "label": "U2/SF3B",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U2/SF3B",
+      "atomspec": "#308.1/F,G,H,I,J,K,e"
+    },
+    {
+      "name": "pdb_5GM6_U5_snRNP",
+      "label": "U5 snRNP",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U5 snRNP",
+      "atomspec": "#308.1/A,B,C"
+    },
+    {
+      "name": "pdb_5GM6_other",
+      "label": "other",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "other",
+      "atomspec": "#308.1/U,V,W,X,Y,a,b,t"
+    },
+    {
       "name": "Bact_5GM6_substrate",
       "label": "substrate RNA",
       "category": "substrate RNA feature",

@@ -110,6 +110,27 @@ color #310.1/D #CE4678
 color #310.1/F #2F4DB1
 # EFTUD2
 color #310.1/C #6495ED
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_5LJ3_EJC_mRNP #310.1/H
+# NTC/NTR related
+name pdb_5LJ3_NTC_NTR_related #310.1/G,K,L,M,N,S,T
+# NTC/PRP19
+name pdb_5LJ3_NTC_PRP19 #310.1/J,O,P
+# RNA/substrate
+name pdb_5LJ3_RNA_substrate #310.1/E,I
+# U2 Sm ring
+name pdb_5LJ3_U2_Sm_ring #310.1/k,l,m,n,p,q,r
+# U2 snRNP
+name pdb_5LJ3_U2_snRNP #310.1/D,W,Y,Z
+# U5 Sm ring
+name pdb_5LJ3_U5_Sm_ring #310.1/b,d,e,f,g,h,j
+# U5 snRNP
+name pdb_5LJ3_U5_snRNP #310.1/A,C,U
+# U6 snRNP
+name pdb_5LJ3_U6_snRNP #310.1/V
+# other
+name pdb_5LJ3_other #310.1/F,R,x
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -16--1, component-name, high confidence, validation not_applicable
 name C_5LJ3_5exon #310.1/E:-16--1

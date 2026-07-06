@@ -4,6 +4,86 @@
   "structure_group_id": "415",
   "selectors": [
     {
+      "name": "pdb_8RO2_Disassembly_factors",
+      "label": "Disassembly factors",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "Disassembly factors",
+      "atomspec": "#415.1/PX,TF"
+    },
+    {
+      "name": "pdb_8RO2_NTC_NTR_related",
+      "label": "NTC/NTR related",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "NTC/NTR related",
+      "atomspec": "#415.1/D,I,J,L2,M,N,O,Q,R,S"
+    },
+    {
+      "name": "pdb_8RO2_NTC_PRP19",
+      "label": "NTC/PRP19",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "NTC/PRP19",
+      "atomspec": "#415.1/K,L,P,T,q,r,s,t"
+    },
+    {
+      "name": "pdb_8RO2_RNA_substrate",
+      "label": "RNA/substrate",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "RNA/substrate",
+      "atomspec": "#415.1/IN"
+    },
+    {
+      "name": "pdb_8RO2_Second_step_factors",
+      "label": "Second step factors",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "Second step factors",
+      "atomspec": "#415.1/W"
+    },
+    {
+      "name": "pdb_8RO2_U2_snRNP",
+      "label": "U2 snRNP",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U2 snRNP",
+      "atomspec": "#415.1/2,DX"
+    },
+    {
+      "name": "pdb_8RO2_U5_Sm_ring",
+      "label": "U5 Sm ring",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U5 Sm ring",
+      "atomspec": "#415.1/a,b,c,d,e,f,g"
+    },
+    {
+      "name": "pdb_8RO2_U5_snRNP",
+      "label": "U5 snRNP",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U5 snRNP",
+      "atomspec": "#415.1/5,A,C,E"
+    },
+    {
+      "name": "pdb_8RO2_U6_snRNP",
+      "label": "U6 snRNP",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U6 snRNP",
+      "atomspec": "#415.1/6"
+    },
+    {
+      "name": "pdb_8RO2_other",
+      "label": "other",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "other",
+      "atomspec": "#415.1/3,L1,Z,z"
+    },
+    {
       "name": "ILS_disassembly_8RO2_intron",
       "label": "intron",
       "category": "substrate RNA feature",

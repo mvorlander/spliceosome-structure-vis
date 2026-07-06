@@ -113,6 +113,29 @@ color #426.1/E #E2F3F4
 color #426.1/F #FAEBD7
 # SYF1
 color #426.1/I #FF957B
+# Named selections for subcomplexes using original deposited chain IDs.
+# Disassembly factors
+name pdb_9L5S_Disassembly_factors #426.1/1,Cb,Ck,z
+# EJC/mRNP
+name pdb_9L5S_EJC_mRNP #426.1/Z
+# NTC/NTR related
+name pdb_9L5S_NTC_NTR_related #426.1/0,B,I,J,M,N,R,S,Y
+# NTC/PRP19
+name pdb_9L5S_NTC_PRP19 #426.1/K,L,P,T,q,r,s,t
+# RNA/substrate
+name pdb_9L5S_RNA_substrate #426.1/8
+# Second step factors
+name pdb_9L5S_Second_step_factors #426.1/W
+# U2 snRNP
+name pdb_9L5S_U2_snRNP #426.1/2
+# U5 Sm ring
+name pdb_9L5S_U5_Sm_ring #426.1/j,k,l,m,o,p,u
+# U5 snRNP
+name pdb_9L5S_U5_snRNP #426.1/5,A,C,E
+# U6 snRNP
+name pdb_9L5S_U6_snRNP #426.1/6
+# other
+name pdb_9L5S_other #426.1/CV,CY,F,V
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
 name Bstar_9L5S_U2_U6_helix_I_partner #426.1/2:26-30

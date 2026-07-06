@@ -164,6 +164,31 @@ color #377.1/9 #EAA439
 color #377.1/A #BFC3E8
 # SNRNP200
 color #377.1/B #AFEEEE
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_8C6J_EJC_mRNP #377.1/7,8,9,H
+# NTC/NTR related
+name pdb_8C6J_NTC_NTR_related #377.1/CE,CI,K,L,M,S,T,U,i,y
+# NTC/PRP19
+name pdb_8C6J_NTC_PRP19 #377.1/J,O,P,s,t,u,v,w
+# RNA/substrate
+name pdb_8C6J_RNA_substrate #377.1/E,I
+# SR proteins
+name pdb_8C6J_SR_proteins #377.1/R
+# Second step factors
+name pdb_8C6J_Second_step_factors #377.1/V,h,o
+# U2 Sm ring
+name pdb_8C6J_U2_Sm_ring #377.1/k,l,m,n,p,q,r
+# U2 snRNP
+name pdb_8C6J_U2_snRNP #377.1/2,D,W,Y
+# U5 Sm ring
+name pdb_8C6J_U5_Sm_ring #377.1/a,b,c,d,e,f,g
+# U5 snRNP
+name pdb_8C6J_U5_snRNP #377.1/5,A,B,C,N
+# U6 snRNP
+name pdb_8C6J_U6_snRNP #377.1/6
+# other
+name pdb_8C6J_other #377.1/4,C3,CD,CF,CN,CT,F,G,Z,j,z
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -24--1, component-name, high confidence, validation not_applicable
 name Cstar_8C6J_5exon #377.1/E:-24--1

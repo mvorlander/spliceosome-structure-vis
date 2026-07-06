@@ -53,6 +53,11 @@ color #371.1/C #6A9064
 color #371.1/E #92BB8F
 # PHF5A
 color #371.1/G #375A40
+# Named selections for subcomplexes using original deposited chain IDs.
+# U2 snRNP
+name pdb_7Q4P_U2_snRNP #371.1/2
+# U2/SF3B
+name pdb_7Q4P_U2_SF3B #371.1/1,9,A,B,C,E,G
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA U2/U6 helix I partner: residues 26-27, review-region, high confidence
 name U2_snRNP_7Q4P_U2_U6_helix_I_partner #371.1/2:26-27

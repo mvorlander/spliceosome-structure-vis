@@ -80,6 +80,13 @@ color #363.1/6 #375A40
 color #363.1/A #55947F
 # SF3A2
 color #363.1/B #75A074
+# Named selections for subcomplexes using original deposited chain IDs.
+# U2 Sm ring
+name pdb_7EVO_U2_Sm_ring #363.1/a,b,c,d,e,f,g
+# U2 snRNP
+name pdb_7EVO_U2_snRNP #363.1/D,E,F,G,H
+# U2/SF3B
+name pdb_7EVO_U2_SF3B #363.1/1,2,3,4,5,6,A,B,C
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
 name U2_snRNP_7EVO_U2_U6_helix_I_partner #363.1/H:26-30

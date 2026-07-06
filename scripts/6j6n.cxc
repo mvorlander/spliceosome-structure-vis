@@ -115,6 +115,29 @@ color #342.1/R #E6B566
 color #342.1/S #FFDEAD
 # BUD31
 color #342.1/T #FFF584
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_6J6N_EJC_mRNP #342.1/Z
+# NTC/NTR related
+name pdb_6J6N_NTC_NTR_related #342.1/H,I,P,Q,R,T,d,v
+# NTC/PRP19
+name pdb_6J6N_NTC_PRP19 #342.1/O,S,c,o,p,q,r
+# RNA/substrate
+name pdb_6J6N_RNA_substrate #342.1/B
+# Second step factors
+name pdb_6J6N_Second_step_factors #342.1/n
+# U2 Sm ring
+name pdb_6J6N_U2_Sm_ring #342.1/e,s,u,w,x,y,z
+# U2 snRNP
+name pdb_6J6N_U2_snRNP #342.1/L,a,b
+# U5 Sm ring
+name pdb_6J6N_U5_Sm_ring #342.1/g,h,i,j,k,l,m
+# U5 snRNP
+name pdb_6J6N_U5_snRNP #342.1/A,C,D
+# U6 snRNP
+name pdb_6J6N_U6_snRNP #342.1/E
+# other
+name pdb_6J6N_other #342.1/J,t
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues -12-15;51-79, component, medium confidence, validation not_applicable
 name Bstar_6J6N_substrate #342.1/B:-12-15,51-79

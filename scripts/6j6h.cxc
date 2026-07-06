@@ -115,6 +115,29 @@ color #341.1/R #E6B566
 color #341.1/S #FFDEAD
 # BUD31
 color #341.1/T #FFF584
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_6J6H_EJC_mRNP #341.1/Z
+# NTC/NTR related
+name pdb_6J6H_NTC_NTR_related #341.1/H,I,P,Q,R,T,d,v
+# NTC/PRP19
+name pdb_6J6H_NTC_PRP19 #341.1/O,S,c,o,p,q,r
+# RNA/substrate
+name pdb_6J6H_RNA_substrate #341.1/B
+# Second step factors
+name pdb_6J6H_Second_step_factors #341.1/n
+# U2 Sm ring
+name pdb_6J6H_U2_Sm_ring #341.1/e,s,u,w,x,y,z
+# U2 snRNP
+name pdb_6J6H_U2_snRNP #341.1/L,a,b
+# U5 Sm ring
+name pdb_6J6H_U5_Sm_ring #341.1/g,h,i,j,k,l,m
+# U5 snRNP
+name pdb_6J6H_U5_snRNP #341.1/A,C,D
+# U6 snRNP
+name pdb_6J6H_U6_snRNP #341.1/E
+# other
+name pdb_6J6H_other #341.1/J,t
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -12-17, splice-site-inference, medium confidence, validation not_applicable
 name Bstar_6J6H_5exon #341.1/B:-12-17

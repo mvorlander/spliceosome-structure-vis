@@ -59,6 +59,15 @@ color #304.1/e #B0C4DE
 color #304.1/f #B0C4DE
 # U5-Sm SNRPG
 color #304.1/g #B0C4DE
+# Named selections for subcomplexes using original deposited chain IDs.
+# U5 Sm ring
+name pdb_5GAM_U5_Sm_ring #304.1/b,d,e,f,g,h,j
+# U5 snRNP
+name pdb_5GAM_U5_snRNP #304.1/A,C,U
+# U6 snRNP
+name pdb_5GAM_U6_snRNP #304.1/W
+# other
+name pdb_5GAM_other #304.1/x
 # Named selections for resolved snRNA functional regions.
 # U5 snRNA loop I: residues 53, sequence-motif, medium confidence
 name U5_tri_snRNP_5GAM_U5_loop_I #304.1/U:53

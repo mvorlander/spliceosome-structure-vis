@@ -122,6 +122,29 @@ color #333.1/E #303030
 color #333.1/H #2C54DD
 # INTRON
 color #333.1/I #303030
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_6EXN_EJC_mRNP #333.1/H
+# NTC/NTR related
+name pdb_6EXN_NTC_NTR_related #333.1/K,L,M,N,S,T,y
+# NTC/PRP19
+name pdb_6EXN_NTC_PRP19 #333.1/J,O,P,t,u,v,w
+# RNA/substrate
+name pdb_6EXN_RNA_substrate #333.1/E,I
+# Second step factors
+name pdb_6EXN_Second_step_factors #333.1/V,c,o
+# U2 Sm ring
+name pdb_6EXN_U2_Sm_ring #333.1/k,l,m,n,p,q,r
+# U2 snRNP
+name pdb_6EXN_U2_snRNP #333.1/2,D,W,Y
+# U5 Sm ring
+name pdb_6EXN_U5_Sm_ring #333.1/b,d,e,f,g,h,j
+# U5 snRNP
+name pdb_6EXN_U5_snRNP #333.1/5,A,C
+# U6 snRNP
+name pdb_6EXN_U6_snRNP #333.1/6
+# other
+name pdb_6EXN_other #333.1/R,X,a,s
 # Named selections for resolved substrate RNA features.
 # ligated exons: residues -14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13;15-19, component-name, high confidence, validation not_applicable
 name P_6EXN_ligated_exons #333.1/E:-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,15-19

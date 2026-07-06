@@ -124,6 +124,27 @@ color #308.1/H #49926C
 color #308.1/I #75A074
 # PHF5A
 color #308.1/J #375A40
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_5GM6_EJC_mRNP #308.1/Z
+# NTC/NTR related
+name pdb_5GM6_NTC_NTR_related #308.1/P,Q,R,T,d,f,v
+# NTC/PRP19
+name pdb_5GM6_NTC_PRP19 #308.1/O,S,c,o,p,q,r
+# RNA/substrate
+name pdb_5GM6_RNA_substrate #308.1/D,E,M,N
+# Second step factors
+name pdb_5GM6_Second_step_factors #308.1/n
+# Sm ring
+name pdb_5GM6_Sm_ring #308.1/g,h,i,j,k,l,m
+# U2 snRNP
+name pdb_5GM6_U2_snRNP #308.1/L
+# U2/SF3B
+name pdb_5GM6_U2_SF3B #308.1/F,G,H,I,J,K,e
+# U5 snRNP
+name pdb_5GM6_U5_snRNP #308.1/A,B,C
+# other
+name pdb_5GM6_other #308.1/U,V,W,X,Y,a,b,t
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 1-103; 28-55;60-127;163-183; 468-475;479-484;487-522; 90-114, component, medium confidence, validation not_applicable
 name Bact_5GM6_substrate #308.1/D:28-55,60-127,163-183|#308.1/E:1-103|#308.1/M:468-475,479-484,487-522|#308.1/N:90-114

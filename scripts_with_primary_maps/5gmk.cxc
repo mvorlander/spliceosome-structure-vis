@@ -124,6 +124,29 @@ color #309.1/M #303030
 color #309.1/B #303030
 # pre-mRNA
 color #309.1/N #303030
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_5GMK_EJC_mRNP #309.1/Z
+# NTC/NTR related
+name pdb_5GMK_NTC_NTR_related #309.1/H,I,P,Q,R,T,d,v
+# NTC/PRP19
+name pdb_5GMK_NTC_PRP19 #309.1/O,S,c,o,p,q,r
+# RNA/substrate
+name pdb_5GMK_RNA_substrate #309.1/B,M,N
+# Second step factors
+name pdb_5GMK_Second_step_factors #309.1/n
+# U2 Sm ring
+name pdb_5GMK_U2_Sm_ring #309.1/e,s,u,w,x,y,z
+# U2 snRNP
+name pdb_5GMK_U2_snRNP #309.1/F,L,a,b
+# U5 Sm ring
+name pdb_5GMK_U5_Sm_ring #309.1/g,h,i,j,k,l,m
+# U5 snRNP
+name pdb_5GMK_U5_snRNP #309.1/A,C,D
+# U6 snRNP
+name pdb_5GMK_U6_snRNP #309.1/E
+# other
+name pdb_5GMK_other #309.1/G,J,t
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues 87-99, component-name, high confidence, validation not_applicable
 name C_5GMK_5exon #309.1/B:87-99

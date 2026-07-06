@@ -90,6 +90,27 @@ color #352.1/C #D49F96
 color #352.1/D #F4A460
 # PRPF17
 color #352.1/E #FFF7C9
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_6ZYM_EJC_mRNP #352.1/T
+# NTC/NTR related
+name pdb_6ZYM_NTC_NTR_related #352.1/C,O,P,Q,V,s
+# NTC/PRP19
+name pdb_6ZYM_NTC_PRP19 #352.1/D,L,R
+# RNA/substrate
+name pdb_6ZYM_RNA_substrate #352.1/Y,Z
+# SR proteins
+name pdb_6ZYM_SR_proteins #352.1/S
+# Second step factors
+name pdb_6ZYM_Second_step_factors #352.1/E
+# U2 snRNP
+name pdb_6ZYM_U2_snRNP #352.1/2,u
+# U5 snRNP
+name pdb_6ZYM_U5_snRNP #352.1/5,A,B,F
+# U6 snRNP
+name pdb_6ZYM_U6_snRNP #352.1/6
+# other
+name pdb_6ZYM_other #352.1/9,p,r,t,x
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 46-58; 59-79;141-160, component, medium confidence, validation not_applicable
 name C_6ZYM_substrate #352.1/Y:59-79,141-160|#352.1/Z:46-58

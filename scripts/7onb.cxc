@@ -57,6 +57,15 @@ color #364.1/H #006400
 color #364.1/I #49926C
 # SF3A2
 color #364.1/M #75A074
+# Named selections for subcomplexes using original deposited chain IDs.
+# RNA/substrate
+name pdb_7ONB_RNA_substrate #364.1/G
+# U2 snRNP
+name pdb_7ONB_U2_snRNP #364.1/H
+# U2/SF3B
+name pdb_7ONB_U2_SF3B #364.1/A,B,C,D,I,K,M,N
+# other
+name pdb_7ONB_other #364.1/F
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues 129-142, five-ss-inference, medium confidence, validation not_applicable
 name U2_snRNP_7ONB_5exon #364.1/G:129-142

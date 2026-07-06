@@ -127,6 +127,30 @@ _EMBEDDED_SPEC = {
   "pdb_id": "9k1y",
   "selectors": [
     {
+      "atomspec": "#424.1/G",
+      "category": "subcomplex",
+      "comment": "RNA/substrate",
+      "label": "RNA/substrate",
+      "name": "pdb_9K1Y_RNA_substrate",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#424.1/H",
+      "category": "subcomplex",
+      "comment": "U2 snRNP",
+      "label": "U2 snRNP",
+      "name": "pdb_9K1Y_U2_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#424.1/A,B,C,D",
+      "category": "subcomplex",
+      "comment": "U2/SF3B",
+      "label": "U2/SF3B",
+      "name": "pdb_9K1Y_U2_SF3B",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
       "atomspec": "#424.1/G:25-48",
       "category": "substrate RNA feature",
       "comment": "substrate RNA: residues 25-48, component, medium confidence, validation not_applicable",

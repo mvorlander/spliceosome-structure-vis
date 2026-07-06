@@ -61,6 +61,15 @@ color #433.1/B3 #6A9064
 color #433.1/B4 #77B088
 # SF3B5
 color #433.1/B5 #92BB8F
+# Named selections for subcomplexes using original deposited chain IDs.
+# RNA/substrate
+name pdb_9ZE2_RNA_substrate #433.1/R
+# U1 snRNP
+name pdb_9ZE2_U1_snRNP #433.1/A
+# U2 snRNP
+name pdb_9ZE2_U2_snRNP #433.1/2
+# U2/SF3B
+name pdb_9ZE2_U2_SF3B #433.1/A2,A3,B1,B2,B3,B4,B5,B6,H
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues -18-13, component, medium confidence, validation not_applicable
 name U2_snRNP_9ZE2_substrate #433.1/R:-18-13

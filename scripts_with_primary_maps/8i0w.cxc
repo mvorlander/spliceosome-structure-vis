@@ -152,6 +152,31 @@ color #390.1/G #303030
 color #390.1/6 #303030
 # U2 snRNA
 color #390.1/H #006400
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_8I0W_EJC_mRNP #390.1/V,u,v,w,x
+# NTC/NTR related
+name pdb_8I0W_NTC_NTR_related #390.1/I,J,M,N,O,Q,R,S,y,z
+# NTC/PRP19
+name pdb_8I0W_NTC_PRP19 #390.1/K,L,P,T,q,r,s,t
+# RNA/substrate
+name pdb_8I0W_RNA_substrate #390.1/6,G
+# SR proteins
+name pdb_8I0W_SR_proteins #390.1/U
+# Second step factors
+name pdb_8I0W_Second_step_factors #390.1/W
+# U2 Sm ring
+name pdb_8I0W_U2_Sm_ring #390.1/h,i,j,k,l,m,n
+# U2 snRNP
+name pdb_8I0W_U2_snRNP #390.1/H,Y,o,p
+# U5 Sm ring
+name pdb_8I0W_U5_Sm_ring #390.1/a,b,c,d,e,f,g
+# U5 snRNP
+name pdb_8I0W_U5_snRNP #390.1/A,B,C,D,E
+# U6 snRNP
+name pdb_8I0W_U6_snRNP #390.1/F
+# other
+name pdb_8I0W_other #390.1/1,2,3,4,5,X,Z
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues -23--18;-12--1; 1-31;69-107, component, medium confidence, validation not_applicable
 name C_8I0W_substrate #390.1/6:1-31,69-107|#390.1/G:-23--18,-12--1

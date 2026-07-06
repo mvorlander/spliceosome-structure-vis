@@ -50,6 +50,13 @@ color #423.1/B #92BB8F
 color #423.1/G #303030
 # U2 snRNA
 color #423.1/H #006400
+# Named selections for subcomplexes using original deposited chain IDs.
+# RNA/substrate
+name pdb_9K1W_RNA_substrate #423.1/G
+# U2 snRNP
+name pdb_9K1W_U2_snRNP #423.1/H
+# U2/SF3B
+name pdb_9K1W_U2_SF3B #423.1/A,B,C,D
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 27-48, component, medium confidence, validation not_applicable
 name U2_snRNP_9K1W_substrate #423.1/G:27-48

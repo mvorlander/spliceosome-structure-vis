@@ -127,6 +127,22 @@ _EMBEDDED_SPEC = {
   "pdb_id": "6y50",
   "selectors": [
     {
+      "atomspec": "#349.1/2,p,q",
+      "category": "subcomplex",
+      "comment": "U2 snRNP",
+      "label": "U2 snRNP",
+      "name": "pdb_6Y50_U2_snRNP",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
+      "atomspec": "#349.1/8,9,u,v,x,y",
+      "category": "subcomplex",
+      "comment": "U2/SF3B",
+      "label": "U2/SF3B",
+      "name": "pdb_6Y50_U2_SF3B",
+      "section": "Named selections for subcomplexes using original deposited chain IDs."
+    },
+    {
       "atomspec": "#349.1/2:26-30",
       "category": "snRNA feature",
       "comment": "U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence",

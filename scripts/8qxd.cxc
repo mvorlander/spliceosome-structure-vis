@@ -159,6 +159,31 @@ color #405.1/7 #55947F
 color #405.1/8 #75A074
 # EFTUD2
 color #405.1/C #6495ED
+# Named selections for subcomplexes using original deposited chain IDs.
+# RNA-binding
+name pdb_8QXD_RNA_binding #405.1/R
+# RNA/substrate
+name pdb_8QXD_RNA_substrate #405.1/Z
+# U2 Sm ring
+name pdb_8QXD_U2_Sm_ring #405.1/2b,2e,2f,2g,21,22,23
+# U2 snRNP
+name pdb_8QXD_U2_snRNP #405.1/2,2A,2B
+# U2/SF3B
+name pdb_8QXD_U2_SF3B #405.1/7,8,9,B1,B2,B3,B4,B5,B6,BP
+# U4 Sm ring
+name pdb_8QXD_U4_Sm_ring #405.1/4b,4e,4f,4g,41,42,43
+# U4 snRNP
+name pdb_8QXD_U4_snRNP #405.1/4
+# U4/U6 snRNP
+name pdb_8QXD_U4_U6_snRNP #405.1/D,F,G,J,K,L,M,U
+# U5 Sm ring
+name pdb_8QXD_U5_Sm_ring #405.1/5b,5e,5f,5g,51,52,53
+# U5 snRNP
+name pdb_8QXD_U5_snRNP #405.1/5,A,B,C,E,N,S,X
+# U6 LSm
+name pdb_8QXD_U6_LSm #405.1/62,63,64,65,66,67,68
+# U6 snRNP
+name pdb_8QXD_U6_snRNP #405.1/6
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 29-43, component, medium confidence, validation not_applicable
 name pre_B_8QXD_substrate #405.1/Z:29-43

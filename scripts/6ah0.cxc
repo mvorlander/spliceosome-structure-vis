@@ -151,6 +151,29 @@ color #330.1/U #F7F0A6
 color #330.1/f #B0C4DE
 # U2-Sm SNRPB
 color #330.1/i #D5F5E3
+# Named selections for subcomplexes using original deposited chain IDs.
+# RNA/substrate
+name pdb_6AH0_RNA_substrate #330.1/G
+# U2 Sm ring
+name pdb_6AH0_U2_Sm_ring #330.1/h,i,j,k,l,m,n
+# U2 snRNP
+name pdb_6AH0_U2_snRNP #330.1/H,o,p
+# U2/SF3B
+name pdb_6AH0_U2_SF3B #330.1/1,2,3,4,5,6,7,u,v,w
+# U4 Sm ring
+name pdb_6AH0_U4_Sm_ring #330.1/P,Q,R,S,T,U,V
+# U4 snRNP
+name pdb_6AH0_U4_snRNP #330.1/I
+# U4/U6 snRNP
+name pdb_6AH0_U4_U6_snRNP #330.1/J,K,L,M,O,W,X
+# U5 Sm ring
+name pdb_6AH0_U5_Sm_ring #330.1/a,b,c,d,e,f,g
+# U5 snRNP
+name pdb_6AH0_U5_snRNP #330.1/A,B,C,D,E,N
+# U6 LSm
+name pdb_6AH0_U6_LSm #330.1/q,r,s,t,x,y,z
+# U6 snRNP
+name pdb_6AH0_U6_snRNP #330.1/F
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 122-163, component, medium confidence, validation not_applicable
 name pre_B_6AH0_substrate #330.1/G:122-163

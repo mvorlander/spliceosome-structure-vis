@@ -154,6 +154,31 @@ color #328.1/M #A89264
 color #328.1/C #6495ED
 # LSM8
 color #328.1/z #F4A3A8
+# Named selections for subcomplexes using original deposited chain IDs.
+# RNA/substrate
+name pdb_5ZWO_RNA_substrate #328.1/G
+# U2 Sm ring
+name pdb_5ZWO_U2_Sm_ring #328.1/h,i,j,k,l,m,n
+# U2 snRNP
+name pdb_5ZWO_U2_snRNP #328.1/H,o,p
+# U2/SF3B
+name pdb_5ZWO_U2_SF3B #328.1/1,2,3,4,5,6,u,v,w
+# U4 Sm ring
+name pdb_5ZWO_U4_Sm_ring #328.1/P,Q,R,S,T,U,V
+# U4 snRNP
+name pdb_5ZWO_U4_snRNP #328.1/I
+# U4/U6 snRNP
+name pdb_5ZWO_U4_U6_snRNP #328.1/E,J,K,L,M
+# U5 Sm ring
+name pdb_5ZWO_U5_Sm_ring #328.1/a,b,c,d,e,f,g
+# U5 snRNP
+name pdb_5ZWO_U5_snRNP #328.1/A,B,C,D,N,O,W
+# U6 LSm
+name pdb_5ZWO_U6_LSm #328.1/q,r,s,t,x,y,z
+# U6 snRNP
+name pdb_5ZWO_U6_snRNP #328.1/F
+# other
+name pdb_5ZWO_other #328.1/0,9,X,Y,Z
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 463-522, component, medium confidence, validation not_applicable
 name B_5ZWO_substrate #328.1/G:463-522

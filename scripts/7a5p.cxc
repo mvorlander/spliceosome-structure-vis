@@ -131,6 +131,31 @@ color #353.1/I #FFFFAB
 color #353.1/J #FFFFAB
 # BCAS2
 color #353.1/K #FFDAB9
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_7A5P_EJC_mRNP #353.1/T,v,w,y
+# NTC/NTR related
+name pdb_7A5P_NTC_NTR_related #353.1/C,M,N,O,P,U,o,s
+# NTC/PRP19
+name pdb_7A5P_NTC_PRP19 #353.1/G,H,I,J,K,L
+# RNA/substrate
+name pdb_7A5P_RNA_substrate #353.1/Y
+# SR proteins
+name pdb_7A5P_SR_proteins #353.1/S
+# Second step factors
+name pdb_7A5P_Second_step_factors #353.1/E
+# U2 Sm ring
+name pdb_7A5P_U2_Sm_ring #353.1/h,i,j,k,l,m,n
+# U2 snRNP
+name pdb_7A5P_U2_snRNP #353.1/2,W,X,u
+# U5 Sm ring
+name pdb_7A5P_U5_Sm_ring #353.1/a,b,c,d,e,f,g
+# U5 snRNP
+name pdb_7A5P_U5_snRNP #353.1/5,A,q
+# U6 snRNP
+name pdb_7A5P_U6_snRNP #353.1/6
+# other
+name pdb_7A5P_other #353.1/8,p,r,x,z
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 80-94;127-140, component, medium confidence, validation not_applicable
 name C_7A5P_substrate #353.1/Y:80-94,127-140

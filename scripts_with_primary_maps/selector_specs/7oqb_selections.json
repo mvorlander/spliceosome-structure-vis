@@ -4,6 +4,38 @@
   "structure_group_id": "365",
   "selectors": [
     {
+      "name": "pdb_7OQB_RNA_substrate",
+      "label": "RNA/substrate",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "RNA/substrate",
+      "atomspec": "#365.1/I"
+    },
+    {
+      "name": "pdb_7OQB_U2_Sm_ring",
+      "label": "U2 Sm ring",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U2 Sm ring",
+      "atomspec": "#365.1/s,t,u,v,w,x,y"
+    },
+    {
+      "name": "pdb_7OQB_U2_snRNP",
+      "label": "U2 snRNP",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U2 snRNP",
+      "atomspec": "#365.1/2,W,Y,p"
+    },
+    {
+      "name": "pdb_7OQB_U2_SF3B",
+      "label": "U2/SF3B",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U2/SF3B",
+      "atomspec": "#365.1/O,P,Q,R,S,T,U,V,Z"
+    },
+    {
       "name": "U2_snRNP_7OQB_substrate",
       "label": "substrate RNA",
       "category": "substrate RNA feature",

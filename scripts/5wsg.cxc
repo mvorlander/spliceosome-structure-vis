@@ -121,6 +121,29 @@ color #318.1/R #E6B566
 color #318.1/S #FFDEAD
 # BUD31
 color #318.1/T #FFF584
+# Named selections for subcomplexes using original deposited chain IDs.
+# EJC/mRNP
+name pdb_5WSG_EJC_mRNP #318.1/Z
+# NTC/NTR related
+name pdb_5WSG_NTC_NTR_related #318.1/I,P,Q,R,T,d,v
+# NTC/PRP19
+name pdb_5WSG_NTC_PRP19 #318.1/O,S,c,o,p,q,r
+# RNA/substrate
+name pdb_5WSG_RNA_substrate #318.1/B,L,M,N,b
+# Second step factors
+name pdb_5WSG_Second_step_factors #318.1/n
+# Sm ring
+name pdb_5WSG_Sm_ring #318.1/F,G,H,K,U,V,W
+# U2 snRNP
+name pdb_5WSG_U2_snRNP #318.1/X,Y
+# U5 Sm ring
+name pdb_5WSG_U5_Sm_ring #318.1/g,h,i,j,k,l,m
+# U5 snRNP
+name pdb_5WSG_U5_snRNP #318.1/A,C,D
+# U6 snRNP
+name pdb_5WSG_U6_snRNP #318.1/E
+# other
+name pdb_5WSG_other #318.1/J,e,f,t
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues 1-52;110-123; 87-99, component-name/splice-site-inference, high/medium confidence, validation not_applicable
 name Cstar_5WSG_5exon #318.1/B:87-99|#318.1/L:1-52,110-123
