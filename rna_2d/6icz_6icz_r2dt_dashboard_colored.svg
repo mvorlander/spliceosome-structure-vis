@@ -880,6 +880,9 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <circle cx="1673.7" cy="988.8" r="9.2" fill="#303030" opacity="0.22"><title>polypyrimidine tract; confidence medium</title></circle>
 <circle cx="1682.2" cy="988.8" r="9.2" fill="#303030" opacity="0.22"><title>polypyrimidine tract; confidence medium</title></circle>
 <circle cx="1690.8" cy="988.8" r="9.2" fill="#303030" opacity="0.22"><title>polypyrimidine tract; confidence medium</title></circle>
+<circle cx="1707.9" cy="988.8" r="9.2" fill="#303030" opacity="0.22"><title>3&#x27; splice site; confidence medium</title></circle>
+<circle cx="1716.4" cy="988.8" r="9.2" fill="#303030" opacity="0.22"><title>3&#x27; splice site; confidence medium</title></circle>
+<circle cx="1725.0" cy="988.8" r="9.2" fill="#303030" opacity="0.22"><title>3&#x27; splice site; confidence medium</title></circle>
 <text x="1015.0" y="988.8" class="base" fill="#303030"><title>/G seq 48 auth -12</title>G</text>
 <text x="1023.6" y="988.8" class="base" fill="#303030"><title>/G seq 49 auth -11</title>G</text>
 <text x="1032.1" y="988.8" class="base" fill="#303030"><title>/G seq 50 auth -10</title>C</text>
@@ -978,6 +981,8 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <text x="1182.5" y="1009.1" class="feature-label" text-anchor="start" fill="#303030">? 5&#x27;SS nt 1-6</text>
 <path d="M1682.2,988.8 L1661.9,1032.3" class="feature-callout" stroke="#303030" opacity="0.54"/>
 <text x="1661.9" y="1032.3" class="feature-label" text-anchor="end" fill="#303030">PPT nt 150,162-163</text>
+<path d="M1716.4,988.8 L1674.9,964.8" class="feature-callout" stroke="#303030" opacity="0.54"/>
+<text x="1674.9" y="964.8" class="feature-label" text-anchor="end" fill="#303030">? 3&#x27;SS nt 165-167</text>
 <path d="M1318.6,325.3 Q1203.1,280.3 1087.7,988.8" class="inter" stroke-width="1.5"><title>B:42-43 to G:56-57; 2 FR3D interactions; cWW</title></path>
 <path d="M297.8,1034.4 Q765.5,943.8 1233.1,988.8" class="inter" stroke-width="2.0"><title>F:30-33 to G:73-76; 4 FR3D interactions; cWW,tHS</title></path>
 <path d="M373.9,1034.4 Q780.0,943.8 1186.1,988.8" class="inter" stroke-width="1.3"><title>F:38-38 to G:69-69; 1 FR3D interactions; cWW</title></path>
@@ -1001,36 +1006,39 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <path d="M496.5,442.9 Q1040.2,397.9 1583.9,988.8" class="inter" stroke-width="1.5"><title>H:37-38 to G:199-200; 2 FR3D interactions; cWW</title></path>
 <path d="M567.7,442.9 Q1045.8,397.9 1524.0,988.8" class="inter" stroke-width="1.5"><title>H:44-45 to G:192-193; 2 FR3D interactions; cWW</title></path>
 <text x="70" y="1364.0" class="label" style="font-size:15px">Feature overlays</text>
-<circle cx="77.0" cy="1386.0" r="7" fill="#FF8C00" opacity="0.28"/>
-<text x="90.0" y="1390.0" class="small">exon 5</text>
-<circle cx="287.0" cy="1386.0" r="7" fill="#303030" opacity="0.28"/>
-<text x="300.0" y="1390.0" class="small">substrate</text>
-<circle cx="497.0" cy="1386.0" r="7" fill="#303030" opacity="0.28"/>
-<text x="510.0" y="1390.0" class="small">five prime splice site</text>
-<circle cx="707.0" cy="1386.0" r="7" fill="#303030" opacity="0.28"/>
-<text x="720.0" y="1390.0" class="small">intron</text>
-<circle cx="917.0" cy="1386.0" r="7" fill="#303030" opacity="0.28"/>
-<text x="930.0" y="1390.0" class="small">polypyrimidine tract</text>
-<circle cx="1127.0" cy="1386.0" r="7" fill="#047857" opacity="0.28"/>
-<text x="1140.0" y="1390.0" class="small">U2 U6 helix I partner</text>
-<circle cx="1337.0" cy="1386.0" r="7" fill="#0b6e2d" opacity="0.28"/>
-<text x="1350.0" y="1390.0" class="small">U2 branchpoint pairing region</text>
-<circle cx="1547.0" cy="1386.0" r="7" fill="#167a38" opacity="0.28"/>
-<text x="1560.0" y="1390.0" class="small">U2 stem IIa</text>
-<circle cx="77.0" cy="1409.0" r="7" fill="#2f8b4d" opacity="0.28"/>
-<text x="90.0" y="1413.0" class="small">U2 Sm site</text>
-<circle cx="287.0" cy="1409.0" r="7" fill="#1b3cd0" opacity="0.28"/>
-<text x="300.0" y="1413.0" class="small">U5 loop I</text>
-<circle cx="497.0" cy="1409.0" r="7" fill="#dc143c" opacity="0.28"/>
-<text x="510.0" y="1413.0" class="small">U6 5prime terminal stem loop</text>
-<circle cx="707.0" cy="1409.0" r="7" fill="#d0183c" opacity="0.28"/>
-<text x="720.0" y="1413.0" class="small">U6 U2 helix I partner</text>
-<circle cx="917.0" cy="1409.0" r="7" fill="#e01842" opacity="0.28"/>
-<text x="930.0" y="1413.0" class="small">U6 5SS upstream contact</text>
-<circle cx="1127.0" cy="1409.0" r="7" fill="#dc143c" opacity="0.28"/>
-<text x="1140.0" y="1413.0" class="small">U6 ACAGAGA box</text>
-<circle cx="1337.0" cy="1409.0" r="7" fill="#d61a3d" opacity="0.28"/>
-<text x="1350.0" y="1413.0" class="small">U6 ISL</text>
-<circle cx="1547.0" cy="1409.0" r="7" fill="#c91236" opacity="0.28"/>
-<text x="1560.0" y="1413.0" class="small">U6 AGC catalytic triad</text>
+<text x="70.0" y="1390.0" class="small">? label prefix = uncertain RNA-feature assignment; inspect validation notes before interpretation.</text>
+<circle cx="77.0" cy="1410.0" r="7" fill="#FF8C00" opacity="0.28"/>
+<text x="90.0" y="1414.0" class="small">exon 5</text>
+<circle cx="287.0" cy="1410.0" r="7" fill="#303030" opacity="0.28"/>
+<text x="300.0" y="1414.0" class="small">substrate</text>
+<circle cx="497.0" cy="1410.0" r="7" fill="#303030" opacity="0.28"/>
+<text x="510.0" y="1414.0" class="small">five prime splice site</text>
+<circle cx="707.0" cy="1410.0" r="7" fill="#303030" opacity="0.28"/>
+<text x="720.0" y="1414.0" class="small">intron</text>
+<circle cx="917.0" cy="1410.0" r="7" fill="#303030" opacity="0.28"/>
+<text x="930.0" y="1414.0" class="small">polypyrimidine tract</text>
+<circle cx="1127.0" cy="1410.0" r="7" fill="#303030" opacity="0.28"/>
+<text x="1140.0" y="1414.0" class="small">three prime splice site</text>
+<circle cx="1337.0" cy="1410.0" r="7" fill="#047857" opacity="0.28"/>
+<text x="1350.0" y="1414.0" class="small">U2 U6 helix I partner</text>
+<circle cx="1547.0" cy="1410.0" r="7" fill="#0b6e2d" opacity="0.28"/>
+<text x="1560.0" y="1414.0" class="small">U2 branchpoint pairing region</text>
+<circle cx="77.0" cy="1433.0" r="7" fill="#167a38" opacity="0.28"/>
+<text x="90.0" y="1437.0" class="small">U2 stem IIa</text>
+<circle cx="287.0" cy="1433.0" r="7" fill="#2f8b4d" opacity="0.28"/>
+<text x="300.0" y="1437.0" class="small">U2 Sm site</text>
+<circle cx="497.0" cy="1433.0" r="7" fill="#1b3cd0" opacity="0.28"/>
+<text x="510.0" y="1437.0" class="small">U5 loop I</text>
+<circle cx="707.0" cy="1433.0" r="7" fill="#dc143c" opacity="0.28"/>
+<text x="720.0" y="1437.0" class="small">U6 5prime terminal stem loop</text>
+<circle cx="917.0" cy="1433.0" r="7" fill="#d0183c" opacity="0.28"/>
+<text x="930.0" y="1437.0" class="small">U6 U2 helix I partner</text>
+<circle cx="1127.0" cy="1433.0" r="7" fill="#e01842" opacity="0.28"/>
+<text x="1140.0" y="1437.0" class="small">U6 5SS upstream contact</text>
+<circle cx="1337.0" cy="1433.0" r="7" fill="#dc143c" opacity="0.28"/>
+<text x="1350.0" y="1437.0" class="small">U6 ACAGAGA box</text>
+<circle cx="1547.0" cy="1433.0" r="7" fill="#d61a3d" opacity="0.28"/>
+<text x="1560.0" y="1437.0" class="small">U6 ISL</text>
+<circle cx="77.0" cy="1456.0" r="7" fill="#c91236" opacity="0.28"/>
+<text x="90.0" y="1460.0" class="small">U6 AGC catalytic triad</text>
 </svg>

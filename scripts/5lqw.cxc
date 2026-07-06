@@ -131,15 +131,18 @@ name pdb_5LQW_U6_snRNP #312.1/6
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_5LQW_other #312.1/J,L,N,O
 # Named selections for resolved substrate RNA features.
-# 5' exon: residues 2-30, splice-site-inference, medium confidence, validation not_applicable
+# 5' exon: residues 2-22, splice-site-inference, medium confidence, validation not_applicable
 # selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
-name Bact_5LQW_5exon #312.1/9:2-30
+name Bact_5LQW_5exon #312.1/9:2-22
 # substrate RNA: residues 2-30;494-518, component, medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name Bact_5LQW_substrate #312.1/9:2-30,494-518
-# intron: residues 494-518, splice-site-inference, medium confidence, validation not_applicable
+# 5' splice site: residues 23-28, network-scored-motif, high confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name Bact_5LQW_5SS #312.1/9:23-28
+# intron: residues 23-30;494-518, splice-site-inference, medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
-name Bact_5LQW_intron #312.1/9:494-518
+name Bact_5LQW_intron #312.1/9:23-30,494-518
 # branch point region: residues 496-502, network-scored-motif, high confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"branch_point_region","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name Bact_5LQW_branch_region #312.1/9:496-502
@@ -181,12 +184,13 @@ name Bact_5LQW_U6_AGC_catalytic_triad #312.1/6:59-61
 select #312.1 & nucleic
 nucleotides sel atoms
 select clear
-# 5' exon: residues 2-30
-color #312.1/9:2-30 #FF8C00
-select #312.1/9:2-30
+# 5' exon: residues 2-22
+color #312.1/9:2-22 #FF8C00
+select #312.1/9:2-22
 nucleotides sel fill
 select clear
-# intron: residues 494-518
+# 5'SS: residues 23-28
+# intron: residues 23-30;494-518
 # BP region: residues 496-502
 # BP-A: residues 501
 # U2/U6 helix I: residues 26-30

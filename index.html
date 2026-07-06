@@ -603,6 +603,9 @@
       const net = i => {
         if(!i.network_support) return "";
         const bits=[`network ${i.network_support}`];
+        if(i.expected_snrna_features) bits.push(`expected ${i.expected_snrna_features}`);
+        if(i.snrna_basepair_count !== "") bits.push(`snRNA bp ${i.snrna_basepair_count}`);
+        if(i.snrna_min_distance_a !== "") bits.push(`snRNA d ${i.snrna_min_distance_a} A`);
         if(i.u2_basepair_count !== "") bits.push(`U2 bp ${i.u2_basepair_count}`);
         if(i.u2_min_distance_a !== "") bits.push(`d ${i.u2_min_distance_a} A`);
         if(i.discontinuity_breaks !== "") bits.push(`breaks ${i.discontinuity_breaks}`);

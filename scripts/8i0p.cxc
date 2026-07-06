@@ -175,7 +175,7 @@ name pre_Bact_8I0P_5exon #384.1/G:-8-0
 # substrate RNA: residues -8-20;83-116, component, medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_Bact_8I0P_substrate #384.1/G:-8-20,83-116
-# 5' splice site: residues 1-6, sequence-motif, medium confidence, validation uncertain uncertain validation
+# 5' splice site: residues 1-6, network-scored-motif, high confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_Bact_8I0P_5SS #384.1/G:1-6
 # intron: residues 1-20;83-116, splice-site-inference, medium confidence, validation not_applicable

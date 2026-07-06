@@ -167,7 +167,7 @@ name P_6BK8_branch_A #332.1/i:515
 # polypyrimidine tract: residues 518,620,621,622,623,624,625,626,627,628, sequence-motif, medium confidence, validation uncertain uncertain validation
 # selector_meta {"color":"#303030","family":"RNA","feature":"polypyrimidine_tract","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_6BK8_PPT #332.1/i:518,620,621,622,623,624,625,626,627,628
-# 3' splice site: residues 1116-1118, sequence-motif, medium confidence, validation validated
+# 3' splice site: residues 1116-1118, network-scored-motif, medium confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"three_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_6BK8_3SS #332.1/i:1116-1118
 # Named selections for resolved snRNA functional regions.

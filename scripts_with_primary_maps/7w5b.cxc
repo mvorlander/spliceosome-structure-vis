@@ -198,6 +198,9 @@ name Cstar_7W5B_branch_A #376.1/G:144
 # polypyrimidine tract: residues 150, sequence-motif, medium confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"polypyrimidine_tract","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name Cstar_7W5B_PPT #376.1/G:150
+# 3' splice site: residues 165-167, network-scored-motif, medium confidence, validation uncertain uncertain validation
+# selector_meta {"color":"#303030","family":"RNA","feature":"three_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name Cstar_7W5B_3SS #376.1/G:165-167
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
 # selector_meta {"color":"#047857","family":"RNA","feature":"U2_U6_helix_I_partner","group":"snRNA-snRNA interacting regions","group_key":"snRNA_snRNA_regions","kind":"rna_feature"}
@@ -239,6 +242,7 @@ select clear
 # BP region: residues 140-146
 # BP-A: residues 144
 # PPT: residues 150
+# 3'SS: residues 165-167
 # U2/U6 helix I: residues 26-30
 color #376.1/H:26-30 #047857
 select #376.1/H:26-30

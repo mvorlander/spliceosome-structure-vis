@@ -205,7 +205,7 @@ name pre_B_8RM5_intron #412.1/Z:29-43|#412.1/z:1-15
 # 5' exon: residues -3--1, five-ss-inference, medium confidence, validation not_applicable
 # selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_B_8RM5_5exon #412.1/z:-3--1
-# 5' splice site: residues 1-6, sequence-motif, medium confidence, validation uncertain uncertain validation
+# 5' splice site: residues 1-6, network-scored-motif, medium confidence, validation uncertain uncertain validation
 # selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_B_8RM5_5SS #412.1/z:1-6
 # Named selections for resolved snRNA functional regions.

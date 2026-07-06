@@ -152,15 +152,21 @@ name pdb_5YLZ_U6_snRNP #321.1/D
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_5YLZ_other #321.1/G,R,U
 # Named selections for resolved substrate RNA features.
-# intron: residues -13--1;1-15;282-304;345-355, component-name, high confidence, validation not_applicable
+# 5' exon: residues -13--1, splice-site-inference, medium confidence, validation not_applicable
+# selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name P_5YLZ_5exon #321.1/E:-13--1
+# intron: residues -13--1;1-15;282-304;345-355; 1-15;282-304;345-350, component-name/splice-site-inference, high/medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
-name P_5YLZ_intron #321.1/E:-13--1,1-15,282-304,345-355
+name P_5YLZ_intron #321.1/E:-13--1,1-15,282-304,345-355|#321.1/E:1-15,282-304,345-350
 # intron lariat: residues -13--1;1-15;282-304;345-355, component-name, high confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"intron_lariat","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_5YLZ_intron_lariat #321.1/E:-13--1,1-15,282-304,345-355
 # substrate RNA: residues -13--1;1-15;282-304;345-355, component, medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_5YLZ_substrate #321.1/E:-13--1,1-15,282-304,345-355
+# 5' splice site: residues 1-6, network-scored-motif, medium confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name P_5YLZ_5SS #321.1/E:1-6
 # branch point region: residues 294-303, network-scored-motif, high confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"branch_point_region","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_5YLZ_branch_region #321.1/E:294-303
@@ -170,9 +176,12 @@ name P_5YLZ_branch_A #321.1/E:301
 # polypyrimidine tract: residues 304, sequence-motif, medium confidence, validation uncertain uncertain validation
 # selector_meta {"color":"#303030","family":"RNA","feature":"polypyrimidine_tract","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_5YLZ_PPT #321.1/E:304
-# 3' splice site: residues 348-350, sequence-motif, medium confidence, validation validated
+# 3' splice site: residues 348-350, network-scored-motif, medium confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"three_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_5YLZ_3SS #321.1/E:348-350
+# 3' exon: residues 351-355, splice-site-inference, medium confidence, validation not_applicable
+# selector_meta {"color":"#D97706","family":"RNA","feature":"exon_3","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name P_5YLZ_3exon #321.1/E:351-355
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
 # selector_meta {"color":"#047857","family":"RNA","feature":"U2_U6_helix_I_partner","group":"snRNA-snRNA interacting regions","group_key":"snRNA_snRNA_regions","kind":"rna_feature"}
@@ -211,12 +220,23 @@ name P_5YLZ_U6_LSm_site #321.1/D:103
 select #321.1 & nucleic
 nucleotides sel atoms
 select clear
-# intron: residues -13--1;1-15;282-304;345-355
+# 5' exon: residues -13--1
+color #321.1/E:-13--1 #FF8C00
+select #321.1/E:-13--1
+nucleotides sel fill
+select clear
+# intron: residues -13--1;1-15;282-304;345-355; 1-15;282-304;345-350
 # lariat: residues -13--1;1-15;282-304;345-355
+# 5'SS: residues 1-6
 # BP region: residues 294-303
 # BP-A: residues 301
 # PPT: residues 304
 # 3'SS: residues 348-350
+# 3' exon: residues 351-355
+color #321.1/E:351-355 #D97706
+select #321.1/E:351-355
+nucleotides sel fill
+select clear
 # U2/U6 helix I: residues 26-30
 color #321.1/F:26-30 #047857
 select #321.1/F:26-30

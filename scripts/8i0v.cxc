@@ -186,7 +186,7 @@ name C_8I0V_5exon #389.1/G:-12-0
 # substrate RNA: residues -12-31;83-117, component, medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name C_8I0V_substrate #389.1/G:-12-31,83-117
-# 5' splice site: residues 1-6, sequence-motif, medium confidence, validation uncertain uncertain validation
+# 5' splice site: residues 1-6, network-scored-motif, high confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name C_8I0V_5SS #389.1/G:1-6
 # intron: residues 1-31;83-117, splice-site-inference, medium confidence, validation not_applicable

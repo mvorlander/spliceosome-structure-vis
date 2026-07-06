@@ -129,9 +129,18 @@ name pdb_3JCM_U6_LSm #302.1/b,c,d,e,f,g,h
 # selector_meta {"color":"#DC143C","family":"Protein/RNP groups","group":"U6 snRNP groups","kind":"subcomplex"}
 name pdb_3JCM_U6_snRNP #302.1/D
 # Named selections for resolved substrate RNA features.
+# 5' exon: residues -6-4, five-ss-inference, medium confidence, validation not_applicable
+# selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name U5_tri_snRNP_3JCM_5exon #302.1/C:-6-4
 # substrate RNA: residues -6-13, component, medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name U5_tri_snRNP_3JCM_substrate #302.1/C:-6-13
+# 5' splice site: residues 5-10, network-scored-motif, medium confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name U5_tri_snRNP_3JCM_5SS #302.1/C:5-10
+# intron from 5' splice site: residues 5-13, five-ss-inference, low confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name U5_tri_snRNP_3JCM_intron #302.1/C:5-13
 # Named selections for resolved snRNA functional regions.
 # U4 snRNA U4/U6 stem I partner: residues 1-18, reference-alignment, high confidence
 # selector_meta {"color":"#D8C800","family":"RNA","feature":"U4_U6_stem_I_partner","group":"snRNA-snRNA interacting regions","group_key":"snRNA_snRNA_regions","kind":"rna_feature"}
@@ -176,6 +185,13 @@ name U5_tri_snRNP_3JCM_U6_LSm_site #302.1/D:108-111
 select #302.1 & nucleic
 nucleotides sel atoms
 select clear
+# 5' exon: residues -6-4
+color #302.1/C:-6-4 #FF8C00
+select #302.1/C:-6-4
+nucleotides sel fill
+select clear
+# 5'SS: residues 5-10
+# intron: residues 5-13
 # U4/U6 stem I: residues 1-18
 color #302.1/E:1-18 #D8C800
 select #302.1/E:1-18

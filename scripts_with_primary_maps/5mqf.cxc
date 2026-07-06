@@ -168,7 +168,7 @@ name pdb_5MQF_U6_snRNP #315.1/6
 # substrate RNA: residues 47-58; 59-67;135-157, component, medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name Cstar_5MQF_substrate #315.1/Y:59-67,135-157|#315.1/Z:47-58
-# 5' splice site: residues 59-64, sequence-motif, medium confidence, validation uncertain uncertain validation
+# 5' splice site: residues 59-64, network-scored-motif, medium confidence, validation uncertain uncertain validation
 # selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name Cstar_5MQF_5SS #315.1/Y:59-64
 # intron: residues 59-67;135-157, splice-site-inference, medium confidence, validation not_applicable

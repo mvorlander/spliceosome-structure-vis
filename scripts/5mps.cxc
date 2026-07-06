@@ -123,7 +123,7 @@ name pdb_5MPS_other #313.1/R,X,a
 # substrate RNA: residues -16--1; 1-10;16-104; 1-16;56-73, component, medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name Cstar_5MPS_substrate #313.1/6:1-10,16-104|#313.1/E:-16--1|#313.1/I:1-16,56-73
-# 5' splice site: residues -16--12, sequence-motif, medium confidence, validation uncertain uncertain validation
+# 5' splice site: residues -16--12, network-scored-motif, medium confidence, validation uncertain uncertain validation
 # selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name Cstar_5MPS_5SS #313.1/E:-16--12
 # intron from 5' splice site: residues -16--1, five-ss-inference, low confidence, validation not_applicable

@@ -216,7 +216,7 @@ name pre_B_8H6E_PPT #379.1/A:35-48
 # exon-defined exon: residues 103-107, exon-definition-inference, medium confidence, validation not_applicable
 # selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_defined_exon","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_B_8H6E_exon #379.1/A:103-107
-# 5' splice site: residues 108-113, sequence-motif, medium confidence, validation uncertain uncertain validation
+# 5' splice site: residues 108-113, network-scored-motif, medium confidence, validation uncertain uncertain validation
 # selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_B_8H6E_5SS #379.1/A:108-113
 # Named selections for resolved snRNA functional regions.

@@ -153,7 +153,7 @@ name pdb_6ID0_U6_snRNP #338.1/F
 # substrate RNA: residues 1-31;116-154, component, medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name ILS_disassembly_6ID0_substrate #338.1/G:1-31,116-154
-# 5' splice site: residues 1-6, sequence-motif, medium confidence, validation uncertain uncertain validation
+# 5' splice site: residues 1-6, network-scored-motif, medium confidence, validation uncertain uncertain validation
 # selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name ILS_disassembly_6ID0_5SS #338.1/G:1-6
 # intron: residues 1-31;116-154, splice-site-inference, medium confidence, validation not_applicable

@@ -796,12 +796,12 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <circle cx="1708.7" cy="988.8" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
 <circle cx="1716.8" cy="988.8" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
 <circle cx="1725.0" cy="988.8" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
-<circle cx="1161.9" cy="988.8" r="9.2" fill="#303030" opacity="0.22"><title>5&#x27; splice site; confidence medium</title></circle>
-<circle cx="1170.1" cy="988.8" r="9.2" fill="#303030" opacity="0.22"><title>5&#x27; splice site; confidence medium</title></circle>
-<circle cx="1178.2" cy="988.8" r="9.2" fill="#303030" opacity="0.22"><title>5&#x27; splice site; confidence medium</title></circle>
-<circle cx="1186.4" cy="988.8" r="9.2" fill="#303030" opacity="0.22"><title>5&#x27; splice site; confidence medium</title></circle>
-<circle cx="1194.5" cy="988.8" r="9.2" fill="#303030" opacity="0.22"><title>5&#x27; splice site; confidence medium</title></circle>
-<circle cx="1202.7" cy="988.8" r="9.2" fill="#303030" opacity="0.22"><title>5&#x27; splice site; confidence medium</title></circle>
+<circle cx="1161.9" cy="988.8" r="9.2" fill="#303030" opacity="0.28"><title>5&#x27; splice site; confidence high</title></circle>
+<circle cx="1170.1" cy="988.8" r="9.2" fill="#303030" opacity="0.28"><title>5&#x27; splice site; confidence high</title></circle>
+<circle cx="1178.2" cy="988.8" r="9.2" fill="#303030" opacity="0.28"><title>5&#x27; splice site; confidence high</title></circle>
+<circle cx="1186.4" cy="988.8" r="9.2" fill="#303030" opacity="0.28"><title>5&#x27; splice site; confidence high</title></circle>
+<circle cx="1194.5" cy="988.8" r="9.2" fill="#303030" opacity="0.28"><title>5&#x27; splice site; confidence high</title></circle>
+<circle cx="1202.7" cy="988.8" r="9.2" fill="#303030" opacity="0.28"><title>5&#x27; splice site; confidence high</title></circle>
 <circle cx="1161.9" cy="988.8" r="9.2" fill="#303030" opacity="0.22"><title>intron; confidence medium</title></circle>
 <circle cx="1170.1" cy="988.8" r="9.2" fill="#303030" opacity="0.22"><title>intron; confidence medium</title></circle>
 <circle cx="1178.2" cy="988.8" r="9.2" fill="#303030" opacity="0.22"><title>intron; confidence medium</title></circle>
@@ -985,8 +985,8 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <text x="1725.0" y="988.8" class="base" fill="#303030"><title>/G seq 216 auth 154</title>U</text>
 <path d="M1084.4,988.8 L1127.9,968.6" class="feature-callout" stroke="#FF8C00" opacity="0.54"/>
 <text x="1127.9" y="968.6" class="feature-label" text-anchor="start" fill="#FF8C00">5&#x27; exon nt -23--18,-12--1</text>
-<path d="M1182.3,988.8 L1225.8,1009.1" class="feature-callout" stroke="#303030" opacity="0.54"/>
-<text x="1225.8" y="1009.1" class="feature-label" text-anchor="start" fill="#303030">? 5&#x27;SS nt 1-6</text>
+<path d="M1182.3,988.8 L1225.8,1009.1" class="feature-callout" stroke="#303030" opacity="0.60"/>
+<text x="1225.8" y="1009.1" class="feature-label" text-anchor="start" fill="#303030">5&#x27;SS nt 1-6</text>
 <path d="M1627.1,988.8 L1606.8,1032.3" class="feature-callout" stroke="#303030" opacity="0.60"/>
 <text x="1606.8" y="1032.3" class="feature-label" text-anchor="end" fill="#303030">BP region nt 139-145</text>
 <path d="M1643.4,988.8 L1686.9,968.6" class="feature-callout" stroke="#303030" opacity="0.60"/>

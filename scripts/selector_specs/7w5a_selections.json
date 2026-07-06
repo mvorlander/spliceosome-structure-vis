@@ -240,6 +240,24 @@
       "label_default_visible": "true"
     },
     {
+      "name": "Cstar_7W5A_3SS",
+      "label": "3' splice site",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "3' splice site: residues 118-120, network-scored-motif, medium confidence, validation uncertain uncertain validation",
+      "atomspec": "#375.1/G:118-120",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "pre_mRNA_features",
+      "kind": "rna_feature",
+      "feature": "three_prime_splice_site",
+      "color": "#303030",
+      "label_model_id": "375.2.1.4",
+      "label_category_model_id": "375.2.1",
+      "label_group_model_id": "375.2",
+      "label_default_visible": "true"
+    },
+    {
       "name": "Cstar_7W5A_U2_U6_helix_I_partner",
       "label": "U2 snRNA U2/U6 helix I partner",
       "category": "snRNA feature",

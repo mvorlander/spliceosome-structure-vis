@@ -136,9 +136,9 @@ name E_complex_7VPX_5exon #373.1/I:27-41|#373.1/K:-1-0
 # substrate RNA: residues -1-8; 27-41, component, medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name E_complex_7VPX_substrate #373.1/I:27-41|#373.1/K:-1-8
-# 5' splice site: residues 1-6, sequence-motif, medium confidence, validation uncertain uncertain validation
+# 5' splice site: residues -1-8; 1-6, component-name/network-scored-motif, high/medium confidence, validation uncertain/validated uncertain validation
 # selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
-name E_complex_7VPX_5SS #373.1/K:1-6
+name E_complex_7VPX_5SS #373.1/K:-1-8|#373.1/K:1-6
 # intron from 5' splice site: residues 1-8, five-ss-inference, low confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name E_complex_7VPX_intron #373.1/K:1-8
@@ -170,7 +170,7 @@ color #373.1/I:27-41|#373.1/K:-1-0 #FF8C00
 select #373.1/I:27-41|#373.1/K:-1-0
 nucleotides sel fill
 select clear
-# 5'SS: residues 1-6
+# 5'SS: residues -1-8; 1-6
 # intron: residues 1-8
 # U1 5'SS recog.: residues 1-10
 color #373.1/L:1-10 #B66AAE

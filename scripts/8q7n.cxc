@@ -111,7 +111,7 @@ name B_8Q7N_5exon #391.1/Z:49-58
 # substrate RNA: residues 49-79, component, medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name B_8Q7N_substrate #391.1/Z:49-79
-# 5' splice site: residues 59-64, sequence-motif, medium confidence, validation uncertain uncertain validation
+# 5' splice site: residues 59-64, network-scored-motif, high confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name B_8Q7N_5SS #391.1/Z:59-64
 # intron: residues 59-79, splice-site-inference, medium confidence, validation not_applicable

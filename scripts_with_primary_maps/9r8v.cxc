@@ -200,9 +200,18 @@ name pdb_9R8V_U6_snRNP #429.1/6
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_9R8V_other #429.1/A,A6,BL,I,K,SR,T,X,q,r,t,v,w,x,y
 # Named selections for resolved substrate RNA features.
+# 5' exon: residues 234-242, five-ss-inference, medium confidence, validation not_applicable
+# selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name pre_Bact_9R8V_5exon #429.1/Z:234-242
 # substrate RNA: residues 234-262;382-396, component, medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_Bact_9R8V_substrate #429.1/Z:234-262,382-396
+# 5' splice site: residues 243-248, network-scored-motif, high confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name pre_Bact_9R8V_5SS #429.1/Z:243-248
+# intron from 5' splice site: residues 243-262;382-396, five-ss-inference, low confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name pre_Bact_9R8V_intron #429.1/Z:243-262,382-396
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA U2/U6 helix I partner: residues 29-30, review-region, high confidence
 # selector_meta {"color":"#047857","family":"RNA","feature":"U2_U6_helix_I_partner","group":"snRNA-snRNA interacting regions","group_key":"snRNA_snRNA_regions","kind":"rna_feature"}
@@ -244,6 +253,13 @@ name pre_Bact_9R8V_U6_LSm_site #429.1/6:102-105
 select #429.1 & nucleic
 nucleotides sel atoms
 select clear
+# 5' exon: residues 234-242
+color #429.1/Z:234-242 #FF8C00
+select #429.1/Z:234-242
+nucleotides sel fill
+select clear
+# 5'SS: residues 243-248
+# intron: residues 243-262;382-396
 # U2/U6 helix I: residues 29-30
 color #429.1/2:29-30 #047857
 select #429.1/2:29-30

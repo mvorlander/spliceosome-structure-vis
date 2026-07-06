@@ -197,9 +197,18 @@ name pdb_6FF7_U6_snRNP #335.1/6
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_6FF7_other #335.1/0,1,3,Y,q,s,t
 # Named selections for resolved substrate RNA features.
+# 5' exon: residues 233-242, five-ss-inference, medium confidence, validation not_applicable
+# selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name Bact_6FF7_5exon #335.1/Z:233-242
 # substrate RNA: residues 233-262;380-397, component, medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name Bact_6FF7_substrate #335.1/Z:233-262,380-397
+# 5' splice site: residues 243-248, network-scored-motif, high confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name Bact_6FF7_5SS #335.1/Z:243-248
+# intron from 5' splice site: residues 243-262;380-397, five-ss-inference, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name Bact_6FF7_intron #335.1/Z:243-262,380-397
 # branch point region: residues 386-395, network-scored-motif, high confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"branch_point_region","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name Bact_6FF7_branch_region #335.1/Z:386-395
@@ -241,6 +250,13 @@ name Bact_6FF7_U6_AGC_catalytic_triad #335.1/6:92-94
 select #335.1 & nucleic
 nucleotides sel atoms
 select clear
+# 5' exon: residues 233-242
+color #335.1/Z:233-242 #FF8C00
+select #335.1/Z:233-242
+nucleotides sel fill
+select clear
+# 5'SS: residues 243-248
+# intron: residues 243-262;380-397
 # BP region: residues 386-395
 # BP-A: residues 394
 # U2/U6 helix I: residues 26-30

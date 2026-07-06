@@ -125,7 +125,7 @@ name pdb_6ZYM_other #352.1/9,p,r,t,x
 # substrate RNA: residues 46-58; 59-79;141-160, component, medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name C_6ZYM_substrate #352.1/Y:59-79,141-160|#352.1/Z:46-58
-# 5' splice site: residues 59-64, sequence-motif, medium confidence, validation uncertain uncertain validation
+# 5' splice site: residues 59-64, network-scored-motif, high confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name C_6ZYM_5SS #352.1/Y:59-64
 # intron: residues 59-79;141-160, splice-site-inference, medium confidence, validation not_applicable

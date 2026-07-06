@@ -919,12 +919,12 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <circle cx="1583.0" cy="1612.6" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
 <circle cx="1654.0" cy="1612.6" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
 <circle cx="1725.0" cy="1612.6" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
-<circle cx="1228.0" cy="1612.6" r="9.2" fill="#303030" opacity="0.22"><title>5&#x27; splice site; confidence medium</title></circle>
-<circle cx="1299.0" cy="1612.6" r="9.2" fill="#303030" opacity="0.22"><title>5&#x27; splice site; confidence medium</title></circle>
-<circle cx="1370.0" cy="1612.6" r="9.2" fill="#303030" opacity="0.22"><title>5&#x27; splice site; confidence medium</title></circle>
-<circle cx="1441.0" cy="1612.6" r="9.2" fill="#303030" opacity="0.22"><title>5&#x27; splice site; confidence medium</title></circle>
-<circle cx="1512.0" cy="1612.6" r="9.2" fill="#303030" opacity="0.22"><title>5&#x27; splice site; confidence medium</title></circle>
-<circle cx="1583.0" cy="1612.6" r="9.2" fill="#303030" opacity="0.22"><title>5&#x27; splice site; confidence medium</title></circle>
+<circle cx="1228.0" cy="1612.6" r="9.2" fill="#303030" opacity="0.28"><title>5&#x27; splice site; confidence high</title></circle>
+<circle cx="1299.0" cy="1612.6" r="9.2" fill="#303030" opacity="0.28"><title>5&#x27; splice site; confidence high</title></circle>
+<circle cx="1370.0" cy="1612.6" r="9.2" fill="#303030" opacity="0.28"><title>5&#x27; splice site; confidence high</title></circle>
+<circle cx="1441.0" cy="1612.6" r="9.2" fill="#303030" opacity="0.28"><title>5&#x27; splice site; confidence high</title></circle>
+<circle cx="1512.0" cy="1612.6" r="9.2" fill="#303030" opacity="0.28"><title>5&#x27; splice site; confidence high</title></circle>
+<circle cx="1583.0" cy="1612.6" r="9.2" fill="#303030" opacity="0.28"><title>5&#x27; splice site; confidence high</title></circle>
 <circle cx="1228.0" cy="1612.6" r="9.2" fill="#303030" opacity="0.14"><title>intron from 5&#x27; splice site; confidence low</title></circle>
 <circle cx="1299.0" cy="1612.6" r="9.2" fill="#303030" opacity="0.14"><title>intron from 5&#x27; splice site; confidence low</title></circle>
 <circle cx="1370.0" cy="1612.6" r="9.2" fill="#303030" opacity="0.14"><title>intron from 5&#x27; splice site; confidence low</title></circle>
@@ -947,8 +947,8 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <text x="1725.0" y="1612.6" class="base" fill="#303030"><title>/z1 seq 11 auth 8</title>U</text>
 <path d="M1086.0,1612.6 L1106.3,1569.1" class="feature-callout" stroke="#FF8C00" opacity="0.54"/>
 <text x="1106.3" y="1569.1" class="feature-label" text-anchor="start" fill="#FF8C00">5&#x27; exon nt -3--1</text>
-<path d="M1405.5,1612.6 L1385.2,1569.1" class="feature-callout" stroke="#303030" opacity="0.54"/>
-<text x="1385.2" y="1569.1" class="feature-label" text-anchor="end" fill="#303030">? 5&#x27;SS nt 1-6</text>
+<path d="M1405.5,1612.6 L1385.2,1569.1" class="feature-callout" stroke="#303030" opacity="0.60"/>
+<text x="1385.2" y="1569.1" class="feature-label" text-anchor="end" fill="#303030">5&#x27;SS nt 1-6</text>
 <rect x="70.0" y="1967.0" width="820.0" height="520.0" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
 <text x="88.0" y="1995.0" class="label" style="font-size:16px;fill:#303030">mRNA /z2 -&gt; MC</text>
 <polyline points="125.0,2234.3 361.7,2234.3 598.3,2234.3 835.0,2234.3" class="backbone"/>

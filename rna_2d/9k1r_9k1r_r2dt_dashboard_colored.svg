@@ -121,14 +121,15 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <path d="M1241.1,363.4 Q849.7,318.0 458.3,363.0" class="inter" stroke-width="4.2"><title>G:1-16 to H:1-15; 14 FR3D interactions; cWW</title></path>
 <path d="M458.3,363.0 Q849.7,318.0 1241.1,363.4" class="inter" stroke-width="4.2"><title>H:1-15 to G:1-16; 14 FR3D interactions; cWW</title></path>
 <text x="70" y="739.0" class="label" style="font-size:15px">Feature overlays</text>
-<circle cx="77.0" cy="761.0" r="7" fill="#303030" opacity="0.28"/>
-<text x="90.0" y="765.0" class="small">substrate</text>
-<circle cx="287.0" cy="761.0" r="7" fill="#303030" opacity="0.28"/>
-<text x="300.0" y="765.0" class="small">branch point region</text>
-<circle cx="497.0" cy="761.0" r="7" fill="#303030" opacity="0.28"/>
-<text x="510.0" y="765.0" class="small">branch point adenosine</text>
-<circle cx="707.0" cy="761.0" r="7" fill="#303030" opacity="0.28"/>
-<text x="720.0" y="765.0" class="small">three prime splice site</text>
-<circle cx="917.0" cy="761.0" r="7" fill="#0b6e2d" opacity="0.28"/>
-<text x="930.0" y="765.0" class="small">U2 branchpoint pairing region</text>
+<text x="70.0" y="765.0" class="small">? label prefix = uncertain RNA-feature assignment; inspect validation notes before interpretation.</text>
+<circle cx="77.0" cy="785.0" r="7" fill="#303030" opacity="0.28"/>
+<text x="90.0" y="789.0" class="small">substrate</text>
+<circle cx="287.0" cy="785.0" r="7" fill="#303030" opacity="0.28"/>
+<text x="300.0" y="789.0" class="small">branch point region</text>
+<circle cx="497.0" cy="785.0" r="7" fill="#303030" opacity="0.28"/>
+<text x="510.0" y="789.0" class="small">branch point adenosine</text>
+<circle cx="707.0" cy="785.0" r="7" fill="#303030" opacity="0.28"/>
+<text x="720.0" y="789.0" class="small">three prime splice site</text>
+<circle cx="917.0" cy="785.0" r="7" fill="#0b6e2d" opacity="0.28"/>
+<text x="930.0" y="789.0" class="small">U2 branchpoint pairing region</text>
 </svg>
