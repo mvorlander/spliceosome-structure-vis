@@ -215,17 +215,31 @@ select #361.1/F:52-56,61-65
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #361.1/G:-6 residues text "5' exon -11-0" color #FF8C00 height 5 bgColor transparent
-label #361.1/G:5 residues text "5'SS 1-9" color #303030 height 5 bgColor transparent
-label #361.1/G:206 residues text "intron 1-19;191-222" color #303030 height 5 bgColor transparent
-label #361.1/G:200 residues text "BP region 195-206" color #303030 height 5 bgColor transparent
-label #361.1/G:203 residues text "BP-A 203" color #303030 height 5 bgColor transparent
-label #361.1/H:6 residues text "U12/U6atac helix I 2-11" color #047857 height 5 bgColor transparent
-label #361.1/H:21 residues text "U12 BP pairing 16-26" color #0B6E2D height 5 bgColor transparent
-label #361.1/B:40 residues text "U5 loop I 38-42" color #1B3CD0 height 5 bgColor transparent
-label #361.1/F:14 residues text "U6atac 5'SS recog. 11-17" color #DC143C height 5 bgColor transparent
-label #361.1/F:26 residues text "U6atac/U12 helix I 23-29" color #D0183C height 5 bgColor transparent
-label #361.1/F:27 residues text "U6atac AGC triad 26-28" color #C91236 height 5 bgColor transparent
-label #361.1/F:54 residues text "U6atac ISL 52-56;61-65" color #D61A3D height 5 bgColor transparent
+# Each label is moved into #361.1.90 as an independently togglable model.
+label #361.1/G:-6 residues text "5' exon -11-0" color #FF8C00 height 3 bgColor white
+rename #361.1.1 label_01_5_exon_11_0 id #361.1.90.1
+rename #361.1.90 RNA_feature_labels
+label #361.1/G:5 residues text "5'SS 1-9" color #303030 height 3 bgColor white
+rename #361.1.1 label_02_5_SS_1_9 id #361.1.90.2
+label #361.1/G:206 residues text "intron 1-19;191-222" color #303030 height 3 bgColor white
+rename #361.1.1 label_03_intron_1_19_191_222 id #361.1.90.3
+label #361.1/G:200 residues text "BP region 195-206" color #303030 height 3 bgColor white
+rename #361.1.1 label_04_BP_region_195_206 id #361.1.90.4
+label #361.1/G:203 residues text "BP-A 203" color #303030 height 3 bgColor white
+rename #361.1.1 label_05_BP_A_203 id #361.1.90.5
+label #361.1/H:6 residues text "U12/U6atac helix I 2-11" color #047857 height 3 bgColor white
+rename #361.1.1 label_06_U12_U6atac_helix_I_2_11 id #361.1.90.6
+label #361.1/H:21 residues text "U12 BP pairing 16-26" color #0B6E2D height 3 bgColor white
+rename #361.1.1 label_07_U12_BP_pairing_16_26 id #361.1.90.7
+label #361.1/B:40 residues text "U5 loop I 38-42" color #1B3CD0 height 3 bgColor white
+rename #361.1.1 label_08_U5_loop_I_38_42 id #361.1.90.8
+label #361.1/F:14 residues text "U6atac 5'SS recog. 11-17" color #DC143C height 3 bgColor white
+rename #361.1.1 label_09_U6atac_5_SS_recog_11_17 id #361.1.90.9
+label #361.1/F:26 residues text "U6atac/U12 helix I 23-29" color #D0183C height 3 bgColor white
+rename #361.1.1 label_10_U6atac_U12_helix_I_23_29 id #361.1.90.10
+label #361.1/F:27 residues text "U6atac AGC triad 26-28" color #C91236 height 3 bgColor white
+rename #361.1.1 label_11_U6atac_AGC_triad_26_28 id #361.1.90.11
+label #361.1/F:54 residues text "U6atac ISL 52-56;61-65" color #D61A3D height 3 bgColor white
+rename #361.1.1 label_12_U6atac_ISL_52_56_61_65 id #361.1.90.12
 view
 show nucleic

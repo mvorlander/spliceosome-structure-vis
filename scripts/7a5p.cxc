@@ -159,8 +159,13 @@ select #353.1/6:92-94
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #353.1/Y:87 residues text "intron 80-94;127-140" color #303030 height 5 bgColor transparent
-label #353.1/6:88 residues text "U6 ISL 80-95" color #D61A3D height 5 bgColor transparent
-label #353.1/6:93 residues text "U6 AGC triad 92-94" color #C91236 height 5 bgColor transparent
+# Each label is moved into #353.1.90 as an independently togglable model.
+label #353.1/Y:87 residues text "intron 80-94;127-140" color #303030 height 3 bgColor white
+rename #353.1.1 label_01_intron_80_94_127_140 id #353.1.90.1
+rename #353.1.90 RNA_feature_labels
+label #353.1/6:88 residues text "U6 ISL 80-95" color #D61A3D height 3 bgColor white
+rename #353.1.1 label_02_U6_ISL_80_95 id #353.1.90.2
+label #353.1/6:93 residues text "U6 AGC triad 92-94" color #C91236 height 3 bgColor white
+rename #353.1.1 label_03_U6_AGC_triad_92_94 id #353.1.90.3
 view
 show nucleic

@@ -202,17 +202,31 @@ select #342.1/E:59-61
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #342.1/B:67 residues text "BP region 62-72" color #303030 height 5 bgColor transparent
-label #342.1/B:70 residues text "BP-A 70" color #303030 height 5 bgColor transparent
-label #342.1/L:28 residues text "U2/U6 helix I 26-30" color #047857 height 5 bgColor transparent
-label #342.1/L:38 residues text "U2 BP pairing 33-42" color #0B6E2D height 5 bgColor transparent
-label #342.1/L:57 residues text "U2 stem IIa 51-63;66-75;78-80" color #167A38 height 5 bgColor transparent
-label #342.1/D:54 residues text "U5 loop I 53-55" color #1B3CD0 height 5 bgColor transparent
-label #342.1/E:16 residues text "U6 5' terminal SL 1-30" color #DC143C height 5 bgColor transparent
-label #342.1/E:54 residues text "U2/U6 helix I 41-66" color #D0183C height 5 bgColor transparent
-label #342.1/E:50 residues text "U6 5'SS contact 44-55" color #E01842 height 5 bgColor transparent
-label #342.1/E:60 residues text "U6 ISL 46-73" color #D61A3D height 5 bgColor transparent
-label #342.1/E:50 residues text "U6 ACAGAGA 47-53" color #DC143C height 5 bgColor transparent
-label #342.1/E:60 residues text "U6 AGC triad 59-61" color #C91236 height 5 bgColor transparent
+# Each label is moved into #342.1.90 as an independently togglable model.
+label #342.1/B:67 residues text "BP region 62-72" color #303030 height 3 bgColor white
+rename #342.1.1 label_01_BP_region_62_72 id #342.1.90.1
+rename #342.1.90 RNA_feature_labels
+label #342.1/B:70 residues text "BP-A 70" color #303030 height 3 bgColor white
+rename #342.1.1 label_02_BP_A_70 id #342.1.90.2
+label #342.1/L:28 residues text "U2/U6 helix I 26-30" color #047857 height 3 bgColor white
+rename #342.1.1 label_03_U2_U6_helix_I_26_30 id #342.1.90.3
+label #342.1/L:38 residues text "U2 BP pairing 33-42" color #0B6E2D height 3 bgColor white
+rename #342.1.1 label_04_U2_BP_pairing_33_42 id #342.1.90.4
+label #342.1/L:57 residues text "U2 stem IIa 51-63;66-75;78-80" color #167A38 height 3 bgColor white
+rename #342.1.1 label_05_U2_stem_IIa_51_63_66_75_78_80 id #342.1.90.5
+label #342.1/D:54 residues text "U5 loop I 53-55" color #1B3CD0 height 3 bgColor white
+rename #342.1.1 label_06_U5_loop_I_53_55 id #342.1.90.6
+label #342.1/E:16 residues text "U6 5' terminal SL 1-30" color #DC143C height 3 bgColor white
+rename #342.1.1 label_07_U6_5_terminal_SL_1_30 id #342.1.90.7
+label #342.1/E:54 residues text "U2/U6 helix I 41-66" color #D0183C height 3 bgColor white
+rename #342.1.1 label_08_U2_U6_helix_I_41_66 id #342.1.90.8
+label #342.1/E:50 residues text "U6 5'SS contact 44-55" color #E01842 height 3 bgColor white
+rename #342.1.1 label_09_U6_5_SS_contact_44_55 id #342.1.90.9
+label #342.1/E:60 residues text "U6 ISL 46-73" color #D61A3D height 3 bgColor white
+rename #342.1.1 label_10_U6_ISL_46_73 id #342.1.90.10
+label #342.1/E:50 residues text "U6 ACAGAGA 47-53" color #DC143C height 3 bgColor white
+rename #342.1.1 label_11_U6_ACAGAGA_47_53 id #342.1.90.11
+label #342.1/E:60 residues text "U6 AGC triad 59-61" color #C91236 height 3 bgColor white
+rename #342.1.1 label_12_U6_AGC_triad_59_61 id #342.1.90.12
 view
 show nucleic

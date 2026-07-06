@@ -78,6 +78,9 @@ select #433.1/2:32-41
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #433.1/2:36 residues text "U2 BP pairing 32-41" color #0B6E2D height 5 bgColor transparent
+# Each label is moved into #433.1.90 as an independently togglable model.
+label #433.1/2:36 residues text "U2 BP pairing 32-41" color #0B6E2D height 3 bgColor white
+rename #433.1.1 label_01_U2_BP_pairing_32_41 id #433.1.90.1
+rename #433.1.90 RNA_feature_labels
 view
 show nucleic

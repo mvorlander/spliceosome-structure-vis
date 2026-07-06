@@ -173,11 +173,19 @@ select #301.1/N:35-41
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #301.1/P:28 residues text "U2/U6 helix I 26-30" color #047857 height 5 bgColor transparent
-label #301.1/P:36 residues text "U2 BP pairing 32-41" color #0B6E2D height 5 bgColor transparent
-label #301.1/C:49 residues text "U5 loop I 47-51" color #1B3CD0 height 5 bgColor transparent
-label #301.1/N:42 residues text "U2/U6 helix I 29-54" color #D0183C height 5 bgColor transparent
-label #301.1/N:38 residues text "U6 5'SS contact 32-43" color #E01842 height 5 bgColor transparent
-label #301.1/N:38 residues text "U6 ACAGAGA 35-41" color #DC143C height 5 bgColor transparent
+# Each label is moved into #301.1.90 as an independently togglable model.
+label #301.1/P:28 residues text "U2/U6 helix I 26-30" color #047857 height 3 bgColor white
+rename #301.1.1 label_01_U2_U6_helix_I_26_30 id #301.1.90.1
+rename #301.1.90 RNA_feature_labels
+label #301.1/P:36 residues text "U2 BP pairing 32-41" color #0B6E2D height 3 bgColor white
+rename #301.1.1 label_02_U2_BP_pairing_32_41 id #301.1.90.2
+label #301.1/C:49 residues text "U5 loop I 47-51" color #1B3CD0 height 3 bgColor white
+rename #301.1.1 label_03_U5_loop_I_47_51 id #301.1.90.3
+label #301.1/N:42 residues text "U2/U6 helix I 29-54" color #D0183C height 3 bgColor white
+rename #301.1.1 label_04_U2_U6_helix_I_29_54 id #301.1.90.4
+label #301.1/N:38 residues text "U6 5'SS contact 32-43" color #E01842 height 3 bgColor white
+rename #301.1.1 label_05_U6_5_SS_contact_32_43 id #301.1.90.5
+label #301.1/N:38 residues text "U6 ACAGAGA 35-41" color #DC143C height 3 bgColor white
+rename #301.1.1 label_06_U6_ACAGAGA_35_41 id #301.1.90.6
 view
 show nucleic

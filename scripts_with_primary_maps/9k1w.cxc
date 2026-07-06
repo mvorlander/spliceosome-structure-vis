@@ -75,9 +75,15 @@ select #423.1/H:2-11
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #423.1/G:33 residues text "BP region 28-38" color #303030 height 5 bgColor transparent
-label #423.1/G:36 residues text "BP-A 36" color #303030 height 5 bgColor transparent
-label #423.1/G:40 residues text "? 3'SS 39-41" color #303030 height 5 bgColor transparent
-label #423.1/H:6 residues text "U2 BP pairing 2-11" color #0B6E2D height 5 bgColor transparent
+# Each label is moved into #423.1.90 as an independently togglable model.
+label #423.1/G:33 residues text "BP region 28-38" color #303030 height 3 bgColor white
+rename #423.1.1 label_01_BP_region_28_38 id #423.1.90.1
+rename #423.1.90 RNA_feature_labels
+label #423.1/G:36 residues text "BP-A 36" color #303030 height 3 bgColor white
+rename #423.1.1 label_02_BP_A_36 id #423.1.90.2
+label #423.1/G:40 residues text "? 3'SS 39-41" color #303030 height 3 bgColor white
+rename #423.1.1 label_03_3_SS_39_41 id #423.1.90.3
+label #423.1/H:6 residues text "U2 BP pairing 2-11" color #0B6E2D height 3 bgColor white
+rename #423.1.1 label_04_U2_BP_pairing_2_11 id #423.1.90.4
 view
 show nucleic

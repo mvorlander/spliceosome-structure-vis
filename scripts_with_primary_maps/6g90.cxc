@@ -156,10 +156,17 @@ select #336.1/2:33-42
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #336.1/1:6 residues text "U1 5'SS recog. 1-10" color #B66AAE height 5 bgColor transparent
-label #336.1/1:28 residues text "U1 SL1 11-45" color #BF72B7 height 5 bgColor transparent
-label #336.1/1:81 residues text "U1 SL2 46-61;67-95" color #AD62A6 height 5 bgColor transparent
-label #336.1/1:244 residues text "U1 Sm site 241-247; 439,440,516,517,518,519,520" color #C783BF height 5 bgColor transparent
-label #336.1/2:38 residues text "U2 BP pairing 33-42" color #0B6E2D height 5 bgColor transparent
+# Each label is moved into #336.1.90 as an independently togglable model.
+label #336.1/1:6 residues text "U1 5'SS recog. 1-10" color #B66AAE height 3 bgColor white
+rename #336.1.1 label_01_U1_5_SS_recog_1_10 id #336.1.90.1
+rename #336.1.90 RNA_feature_labels
+label #336.1/1:28 residues text "U1 SL1 11-45" color #BF72B7 height 3 bgColor white
+rename #336.1.1 label_02_U1_SL1_11_45 id #336.1.90.2
+label #336.1/1:81 residues text "U1 SL2 46-61;67-95" color #AD62A6 height 3 bgColor white
+rename #336.1.1 label_03_U1_SL2_46_61_67_95 id #336.1.90.3
+label #336.1/1:244 residues text "U1 Sm site 241-247; 439,440,516,517,518,519,520" color #C783BF height 3 bgColor white
+rename #336.1.1 label_04_U1_Sm_site_241_247_439_440_516_517_518_519_520 id #336.1.90.4
+label #336.1/2:38 residues text "U2 BP pairing 33-42" color #0B6E2D height 3 bgColor white
+rename #336.1.1 label_05_U2_BP_pairing_33_42 id #336.1.90.5
 view
 show nucleic

@@ -115,10 +115,17 @@ select #428.1/6:41-47
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #428.1/5:40 residues text "U5 loop I 38-42" color #1B3CD0 height 5 bgColor transparent
-label #428.1/6:16 residues text "U6 5' terminal SL 1-30" color #DC143C height 5 bgColor transparent
-label #428.1/6:48 residues text "U2/U6 helix I 35-60" color #D0183C height 5 bgColor transparent
-label #428.1/6:44 residues text "U6 5'SS contact 38-49" color #E01842 height 5 bgColor transparent
-label #428.1/6:44 residues text "U6 ACAGAGA 41-47" color #DC143C height 5 bgColor transparent
+# Each label is moved into #428.1.90 as an independently togglable model.
+label #428.1/5:40 residues text "U5 loop I 38-42" color #1B3CD0 height 3 bgColor white
+rename #428.1.1 label_01_U5_loop_I_38_42 id #428.1.90.1
+rename #428.1.90 RNA_feature_labels
+label #428.1/6:16 residues text "U6 5' terminal SL 1-30" color #DC143C height 3 bgColor white
+rename #428.1.1 label_02_U6_5_terminal_SL_1_30 id #428.1.90.2
+label #428.1/6:48 residues text "U2/U6 helix I 35-60" color #D0183C height 3 bgColor white
+rename #428.1.1 label_03_U2_U6_helix_I_35_60 id #428.1.90.3
+label #428.1/6:44 residues text "U6 5'SS contact 38-49" color #E01842 height 3 bgColor white
+rename #428.1.1 label_04_U6_5_SS_contact_38_49 id #428.1.90.4
+label #428.1/6:44 residues text "U6 ACAGAGA 41-47" color #DC143C height 3 bgColor white
+rename #428.1.1 label_05_U6_ACAGAGA_41_47 id #428.1.90.5
 view
 show nucleic

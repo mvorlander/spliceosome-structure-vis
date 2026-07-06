@@ -106,8 +106,13 @@ select #365.1/2:46-74,78-80
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #365.1/I:257 residues text "intron 246-268" color #303030 height 5 bgColor transparent
-label #365.1/2:38 residues text "U2 BP pairing 33-42" color #0B6E2D height 5 bgColor transparent
-label #365.1/2:60 residues text "U2 stem IIa 46-74;78-80" color #167A38 height 5 bgColor transparent
+# Each label is moved into #365.1.90 as an independently togglable model.
+label #365.1/I:257 residues text "intron 246-268" color #303030 height 3 bgColor white
+rename #365.1.1 label_01_intron_246_268 id #365.1.90.1
+rename #365.1.90 RNA_feature_labels
+label #365.1/2:38 residues text "U2 BP pairing 33-42" color #0B6E2D height 3 bgColor white
+rename #365.1.1 label_02_U2_BP_pairing_33_42 id #365.1.90.2
+label #365.1/2:60 residues text "U2 stem IIa 46-74;78-80" color #167A38 height 3 bgColor white
+rename #365.1.1 label_03_U2_stem_IIa_46_74_78_80 id #365.1.90.3
 view
 show nucleic

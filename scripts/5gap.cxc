@@ -128,14 +128,25 @@ select #307.1/W:70-80
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #307.1/V:10 residues text "U4/U6 stem I 1-18" color #D8C800 height 5 bgColor transparent
-label #307.1/W:28 residues text "U6 5' terminal SL 26-30" color #DC143C height 5 bgColor transparent
-label #307.1/W:60 residues text "U2/U6 helix I 44-51;55-66" color #D0183C height 5 bgColor transparent
-label #307.1/W:48 residues text "U6 5'SS contact 44-51;55" color #E01842 height 5 bgColor transparent
-label #307.1/W:64 residues text "U6 ISL 46-51;55-73" color #D61A3D height 5 bgColor transparent
-label #307.1/W:49 residues text "U6 ACAGAGA 47-51" color #DC143C height 5 bgColor transparent
-label #307.1/W:62 residues text "U4/U6 stem II 55-68" color #E01842 height 5 bgColor transparent
-label #307.1/W:60 residues text "U6 AGC triad 59-61" color #C91236 height 5 bgColor transparent
-label #307.1/W:75 residues text "U4/U6 stem I 70-80" color #D9183E height 5 bgColor transparent
+# Each label is moved into #307.1.90 as an independently togglable model.
+label #307.1/V:10 residues text "U4/U6 stem I 1-18" color #D8C800 height 3 bgColor white
+rename #307.1.1 label_01_U4_U6_stem_I_1_18 id #307.1.90.1
+rename #307.1.90 RNA_feature_labels
+label #307.1/W:28 residues text "U6 5' terminal SL 26-30" color #DC143C height 3 bgColor white
+rename #307.1.1 label_02_U6_5_terminal_SL_26_30 id #307.1.90.2
+label #307.1/W:60 residues text "U2/U6 helix I 44-51;55-66" color #D0183C height 3 bgColor white
+rename #307.1.1 label_03_U2_U6_helix_I_44_51_55_66 id #307.1.90.3
+label #307.1/W:48 residues text "U6 5'SS contact 44-51;55" color #E01842 height 3 bgColor white
+rename #307.1.1 label_04_U6_5_SS_contact_44_51_55 id #307.1.90.4
+label #307.1/W:64 residues text "U6 ISL 46-51;55-73" color #D61A3D height 3 bgColor white
+rename #307.1.1 label_05_U6_ISL_46_51_55_73 id #307.1.90.5
+label #307.1/W:49 residues text "U6 ACAGAGA 47-51" color #DC143C height 3 bgColor white
+rename #307.1.1 label_06_U6_ACAGAGA_47_51 id #307.1.90.6
+label #307.1/W:62 residues text "U4/U6 stem II 55-68" color #E01842 height 3 bgColor white
+rename #307.1.1 label_07_U4_U6_stem_II_55_68 id #307.1.90.7
+label #307.1/W:60 residues text "U6 AGC triad 59-61" color #C91236 height 3 bgColor white
+rename #307.1.1 label_08_U6_AGC_triad_59_61 id #307.1.90.8
+label #307.1/W:75 residues text "U4/U6 stem I 70-80" color #D9183E height 3 bgColor white
+rename #307.1.1 label_09_U4_U6_stem_I_70_80 id #307.1.90.9
 view
 show nucleic

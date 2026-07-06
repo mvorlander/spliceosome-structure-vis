@@ -176,13 +176,23 @@ select #303.1/N:79-84,103-106
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #303.1/M:8 residues text "U4/U6 stem I 1-16" color #D8C800 height 5 bgColor transparent
-label #303.1/M:59 residues text "U4/U6 stem II 56-62" color #E0CF1A height 5 bgColor transparent
-label #303.1/M:92 residues text "U4 Brr2 region 60-62;86-88;89-95" color #F0DF2E height 5 bgColor transparent
-label #303.1/H:40 residues text "U5 loop I 38-42" color #1B3CD0 height 5 bgColor transparent
-label #303.1/N:53 residues text "U2/U6 helix I 50-56;59-60" color #D0183C height 5 bgColor transparent
-label #303.1/N:54 residues text "U4/U6 stem II 52-56;59-61" color #E01842 height 5 bgColor transparent
-label #303.1/N:68 residues text "U4/U6 stem I 63-74" color #D9183E height 5 bgColor transparent
-label #303.1/N:82 residues text "U6 ISL 79-84;103-106" color #D61A3D height 5 bgColor transparent
+# Each label is moved into #303.1.90 as an independently togglable model.
+label #303.1/M:8 residues text "U4/U6 stem I 1-16" color #D8C800 height 3 bgColor white
+rename #303.1.1 label_01_U4_U6_stem_I_1_16 id #303.1.90.1
+rename #303.1.90 RNA_feature_labels
+label #303.1/M:59 residues text "U4/U6 stem II 56-62" color #E0CF1A height 3 bgColor white
+rename #303.1.1 label_02_U4_U6_stem_II_56_62 id #303.1.90.2
+label #303.1/M:92 residues text "U4 Brr2 region 60-62;86-88;89-95" color #F0DF2E height 3 bgColor white
+rename #303.1.1 label_03_U4_Brr2_region_60_62_86_88_89_95 id #303.1.90.3
+label #303.1/H:40 residues text "U5 loop I 38-42" color #1B3CD0 height 3 bgColor white
+rename #303.1.1 label_04_U5_loop_I_38_42 id #303.1.90.4
+label #303.1/N:53 residues text "U2/U6 helix I 50-56;59-60" color #D0183C height 3 bgColor white
+rename #303.1.1 label_05_U2_U6_helix_I_50_56_59_60 id #303.1.90.5
+label #303.1/N:54 residues text "U4/U6 stem II 52-56;59-61" color #E01842 height 3 bgColor white
+rename #303.1.1 label_06_U4_U6_stem_II_52_56_59_61 id #303.1.90.6
+label #303.1/N:68 residues text "U4/U6 stem I 63-74" color #D9183E height 3 bgColor white
+rename #303.1.1 label_07_U4_U6_stem_I_63_74 id #303.1.90.7
+label #303.1/N:82 residues text "U6 ISL 79-84;103-106" color #D61A3D height 3 bgColor white
+rename #303.1.1 label_08_U6_ISL_79_84_103_106 id #303.1.90.8
 view
 show nucleic

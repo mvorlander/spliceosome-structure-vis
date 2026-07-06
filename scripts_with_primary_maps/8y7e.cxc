@@ -96,8 +96,13 @@ select #417.1/H:16-26
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.
-label #417.1/A:200 residues text "BP region 195-206" color #303030 height 5 bgColor transparent
-label #417.1/A:203 residues text "BP-A 203" color #303030 height 5 bgColor transparent
-label #417.1/H:21 residues text "U12 BP pairing 16-26" color #0B6E2D height 5 bgColor transparent
+# Each label is moved into #417.1.90 as an independently togglable model.
+label #417.1/A:200 residues text "BP region 195-206" color #303030 height 3 bgColor white
+rename #417.1.1 label_01_BP_region_195_206 id #417.1.90.1
+rename #417.1.90 RNA_feature_labels
+label #417.1/A:203 residues text "BP-A 203" color #303030 height 3 bgColor white
+rename #417.1.1 label_02_BP_A_203 id #417.1.90.2
+label #417.1/H:21 residues text "U12 BP pairing 16-26" color #0B6E2D height 3 bgColor white
+rename #417.1.1 label_03_U12_BP_pairing_16_26 id #417.1.90.3
 view
 show nucleic
