@@ -71026,7 +71026,7 @@
       "color_key": "MFAP1",
       "color_hex": "#CD5C5C",
       "color_note": "SYF2 | SNW1 | B-complex/trans-spliceosome | PRP38 | MFAP1",
-      "source": "9s2e_ils_aqr",
+      "source": "curated local example",
       "seen_in_pdb_ids": [
         "5o9z",
         "6ahd",
@@ -71092,7 +71092,7 @@
       "color_key": "PRPF38A",
       "color_hex": "#F88379",
       "color_note": "CRNL1 or SYF3 | SYF2 | SNW1 | B-complex/trans-spliceosome | PRP38",
-      "source": "9s2e_ils_aqr",
+      "source": "curated local example",
       "seen_in_pdb_ids": [
         "5o9z",
         "6ahd",
@@ -71207,7 +71207,7 @@
       "color_key": "ZMAT2",
       "color_hex": "#FFB6C1",
       "color_note": "SNW1 | B-complex/trans-spliceosome | PRP38 | MFAP1 | ZMAT2",
-      "source": "9s2e_ils_aqr",
+      "source": "curated local example",
       "seen_in_pdb_ids": [
         "5o9z",
         "6ahd",
@@ -72191,7 +72191,7 @@
       "color_key": "LENG1",
       "color_hex": "#9966CC",
       "color_note": "WDR83 | YJU2B | ESS2 - check colour!!! | LENG1",
-      "source": "9s2f_dis",
+      "source": "curated local example",
       "seen_in_pdb_ids": []
     },
     {
@@ -72528,7 +72528,7 @@
       "color_key": "WDR83",
       "color_hex": "#ED6983",
       "color_note": "IntronBP | DHX35 | GPATCH1 | WDR83",
-      "source": "9s2f_dis",
+      "source": "curated local example",
       "seen_in_pdb_ids": []
     },
     {
@@ -73017,7 +73017,7 @@
       "color_key": "DHX35",
       "color_hex": "#78184A",
       "color_note": "Colors | specific proteins | IntronBP | DHX35",
-      "source": "9s2f_dis",
+      "source": "curated local example",
       "seen_in_pdb_ids": []
     },
     {
@@ -73035,7 +73035,7 @@
       "color_key": "GPATCH1",
       "color_hex": "#E52B75",
       "color_note": "specific proteins | IntronBP | DHX35 | GPATCH1",
-      "source": "9s2f_dis",
+      "source": "curated local example",
       "seen_in_pdb_ids": []
     },
     {
@@ -73875,7 +73875,7 @@
       "color_key": "UBL5",
       "color_hex": "#DB7093",
       "color_note": "B-complex/trans-spliceosome | PRP38 | MFAP1 | ZMAT2 | UBL5",
-      "source": "9s2e_ils_aqr",
+      "source": "curated local example",
       "seen_in_pdb_ids": [
         "6ahd",
         "7aav",
@@ -74364,7 +74364,7 @@
       "color_key": "DBR1",
       "color_hex": "#48D1CC",
       "color_note": "LENG1 | SRRM2 | CWC22 | DBR1",
-      "source": "9s2f_dis",
+      "source": "curated local example",
       "seen_in_pdb_ids": []
     },
     {
@@ -74719,7 +74719,7 @@
       "color_key": "CMTR1",
       "color_hex": "#EE82EE",
       "color_note": "PRP38 | MFAP1 | ZMAT2 | UBL5 | CMTR1",
-      "source": "9s2e_ils_aqr",
+      "source": "curated local example",
       "seen_in_pdb_ids": []
     },
     {
@@ -74897,7 +74897,7 @@
       "color_key": "MPLKIP",
       "color_hex": "#8FBC8F",
       "color_note": "SRRM2 | CWC22 | DBR1 | MPLKIP",
-      "source": "9s2f_dis",
+      "source": "curated local example",
       "seen_in_pdb_ids": []
     },
     {
@@ -75144,7 +75144,7 @@
       "color_key": "YJU2B",
       "color_hex": "#DA70D6",
       "color_note": "DHX35 | GPATCH1 | WDR83 | YJU2B",
-      "source": "9s2f_dis",
+      "source": "curated local example",
       "seen_in_pdb_ids": []
     }
   ],
@@ -78272,11 +78272,11 @@
         "notes": "P complex is post-catalytic and retains the intron lariat spliceosome before disassembly."
       },
       {
-        "name": "ILS, DIS, and recycling",
-        "stage": "Disassembly and snRNP recycling",
-        "composition": "The intron-lariat spliceosome retains U2/U5/U6 components and disassembly factors before dismantling.",
+        "name": "ILS and recycling",
+        "stage": "Intron-lariat spliceosome and snRNP recycling",
+        "composition": "The intron-lariat spliceosome retains U2/U5/U6 components and disassembly factors before dismantling and U5 recycling.",
         "transition": "Prp43/DHX15 with Ntr1/TFIP11 and Ntr2/GCFC promotes spliceosome disassembly and recycling.",
-        "notes": "DIS and U5 recycling states are shown as separate bins when deposited structures capture those late states."
+        "notes": "The public pathway cartoon shows deposited ILS and U5 recycling bins; unpublished local late-state bins are omitted."
       }
     ]
   }
