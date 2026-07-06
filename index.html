@@ -94,7 +94,7 @@
     details.detail-section > summary { cursor:pointer; padding:9px 11px; font-weight:760; color:var(--ink); border-bottom:1px solid transparent; }
     details.detail-section[open] > summary { border-bottom-color:var(--line); }
     .detail-section-body { padding:0 11px 11px; }
-    .cycle { overflow-x:auto; height:clamp(220px,22vw,330px); }
+    .cycle { overflow-x:auto; height:clamp(360px,38vw,540px); }
     .cycle-svg { width:100%; min-width:0; height:100%; display:block; }
     .cycle-band { fill:none; stroke-linecap:round; stroke-linejoin:round; opacity:.9; }
     .cycle-flow { fill:none; stroke:#22272d; stroke-width:2.1; stroke-linecap:round; stroke-linejoin:round; }
@@ -112,7 +112,8 @@
     .cycle-region-label { fill:#64808b; font-size:13px; font-weight:760; pointer-events:none; }
     .cycle-region-label.release { fill:#b49a2b; }
     .cycle-region-label.catalytic { fill:#c54a54; }
-    .cycle-helicase-label { fill:#4b5965; font-size:9px; font-weight:720; text-anchor:middle; pointer-events:none; }
+    .cycle-helicase-label { fill:#1f2933; font-size:12px; font-weight:760; text-anchor:middle; pointer-events:none; }
+    .cycle-helicase-badge { fill:#fff8da; stroke:#d8bf58; stroke-width:1.2; pointer-events:none; filter:drop-shadow(0 1px 1px rgba(0,0,0,.12)); }
     .protein-controls { padding:12px 14px; border-bottom:1px solid var(--line); display:grid; grid-template-columns:minmax(220px,340px) minmax(0,1fr); gap:12px; align-items:end; }
     .palette-row { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
     .palette-chip { display:inline-flex; align-items:center; gap:4px; border:1px solid var(--line); border-radius:999px; padding:3px 8px; background:#fff; font-size:12px; max-width:190px; }
@@ -138,7 +139,7 @@
     <main>
       <div class="topbar">
         <div><h1>Deposited Spliceosome Structures</h1><div class="subtle" id="resultSubtitle"></div></div>
-        <div class="tabs" id="tabs"><button type="button" class="tab-button active" data-tab="structures">Structures</button><button type="button" class="tab-button" data-tab="rnaElements">RNA Elements</button><button type="button" class="tab-button" data-tab="complexes">Complexes</button><button type="button" class="tab-button" data-tab="proteins">Protein Colors</button><button type="button" class="tab-button" data-tab="documentation">Documentation</button><button type="button" class="tab-button" data-tab="help">Help</button></div>
+        <div class="tabs" id="tabs"><button type="button" class="tab-button active" data-tab="structures">Structures</button><button type="button" class="tab-button" data-tab="cycleStates">Cycle States</button><button type="button" class="tab-button" data-tab="rnaElements">RNA Elements</button><button type="button" class="tab-button" data-tab="complexes">Complexes</button><button type="button" class="tab-button" data-tab="proteins">Protein Colors</button><button type="button" class="tab-button" data-tab="documentation">Documentation</button><button type="button" class="tab-button" data-tab="help">Help</button></div>
       </div>
       <div id="structuresView">
         <section class="stats" id="stats"></section>
@@ -162,6 +163,9 @@
       <div id="rnaFeaturesView" hidden>
         <section class="panel"><div class="panel-head"><h2>RNA Feature Definitions</h2><span class="subtle">selector vocabulary</span></div><div class="panel-body"><div class="field"><label for="rnaDefinitionSearch">Find Feature</label><input id="rnaDefinitionSearch" type="search" placeholder="5' splice site, branch, U6 ACAGAGA"></div><div class="mini-table"><table><thead><tr><th>Feature</th><th>Definition</th><th>Method</th><th>Notes</th></tr></thead><tbody id="rnaDefinitionRows"></tbody></table></div></div></section>
       </div>
+      <div id="cycleStatesView" hidden>
+        <section class="panel"><div class="panel-head"><h2>Splicing Cycle State Guide</h2><span class="subtle">stage composition and transition remodelers</span></div><div class="panel-body"><div class="doc-grid" id="cycleStateGuide"></div></div></section>
+      </div>
       <div id="rnaElementsView" hidden>
         <section class="panel"><div class="panel-head"><h2>RNA Element Guide</h2><span class="subtle">functions, interactors, remodeling, and helicases</span></div><div class="panel-body"><div class="doc-grid" id="rnaElementGuide"></div></div></section>
       </div>
@@ -169,7 +173,7 @@
         <section class="panel"><div class="panel-head"><h2>Protein Complex Guide</h2><span class="subtle">when complexes join, leave, and remodel the spliceosome</span></div><div class="panel-body"><div class="doc-grid" id="proteinComplexGuide"></div></div></section>
       </div>
       <div id="proteinsView" hidden>
-        <section class="panel"><div class="panel-head"><h2>Protein Color And Homolog Lookup</h2><span class="subtle" id="proteinCount"></span></div><div class="protein-controls"><div class="field"><label for="proteinComplexFilter">Complex Association</label><select id="proteinComplexFilter"></select></div><div class="subtle">Filter by class/family labels and canonical subcomplex associations used for coloring.</div></div><div class="protein-table-wrap"><table><thead><tr><th>Protein</th><th>Class / Family</th><th>Aliases</th><th>Color</th><th>Model-species homologs</th><th>Seen in</th></tr></thead><tbody id="proteinRows"></tbody></table></div></section>
+        <section class="panel"><div class="panel-head"><h2>Protein Color And Homolog Lookup</h2><span class="subtle" id="proteinCount"></span></div><div class="panel-body"><p class="subtle">Protein class/family labels, aliases, and homolog annotations were cross-checked against <a href="https://spliceosomedb.ucsc.edu/" target="_blank" rel="noreferrer">SpliceosomeDB</a> and its associated database paper (Cvitkovic and Jurica, <em>Nucleic Acids Research</em> 2013, 41:D132-D141, doi:10.1093/nar/gks999; <a href="https://pubmed.ncbi.nlm.nih.gov/23118483/" target="_blank" rel="noreferrer">PubMed 23118483</a>).</p></div><div class="protein-controls"><div class="field"><label for="proteinComplexFilter">Complex Association</label><select id="proteinComplexFilter"></select></div><div class="subtle">Filter by class/family labels and canonical subcomplex associations used for coloring.</div></div><div class="protein-table-wrap"><table><thead><tr><th>Protein</th><th>Class / Family</th><th>Aliases</th><th>Color</th><th>Model-species homologs</th><th>Seen in</th></tr></thead><tbody id="proteinRows"></tbody></table></div></section>
       </div>
       <div id="documentationView" hidden>
         <section class="panel"><div class="panel-head"><h2>Dashboard Documentation</h2><span class="subtle">features, UI, and curation methodology</span></div><div class="panel-body"><div class="doc-grid">
@@ -195,17 +199,17 @@
     </main>
   </div>
   <script>
-    const DATA = { records: [], protein_lookup: [], primary_map_scripts: {}, guides: {rna_elements: [], protein_complexes: []}, scriptCache: {} };
+    const DATA = { records: [], protein_lookup: [], primary_map_scripts: {}, guides: {rna_elements: [], protein_complexes: [], splicing_cycle: []}, scriptCache: {} };
     let records = [];
     let proteinLookup = [];
     let rnaFeatureDefinitions = [];
     let rnaFeatureConsistency = [];
     const state = { activeTab:"structures", query:"", mode:"all", family:"all", species:"all", components:"all", rnaFeature:"all", rnaFeatureSearch:"", rnaDefinitionQuery:"", proteinComplex:"all", sortBy:"pathway", selected: records[0]?.pdb_id || "", compareIds: [] };
     const els = {};
-    for (const id of ["search","searchMode","family","species","componentFilter","rnaFeatureFilter","rnaFeatureQuickSearch","rnaFeatureQuickSelect","rnaQuickFilters","activeFilterChips","rnaDefinitionSearch","rnaDefinitionRows","rnaElementGuide","proteinComplexGuide","proteinComplexFilter","sortBy","reset","tabs","structuresView","rnaFeaturesView","rnaElementsView","complexesView","proteinsView","documentationView","helpView","stats","cycle","rows","detail","tableCount","resultSubtitle","selectedId","proteinRows","proteinCount"]) els[id] = document.getElementById(id);
+    for (const id of ["search","searchMode","family","species","componentFilter","rnaFeatureFilter","rnaFeatureQuickSearch","rnaFeatureQuickSelect","rnaQuickFilters","activeFilterChips","rnaDefinitionSearch","rnaDefinitionRows","cycleStateGuide","rnaElementGuide","proteinComplexGuide","proteinComplexFilter","sortBy","reset","tabs","structuresView","rnaFeaturesView","cycleStatesView","rnaElementsView","complexesView","proteinsView","documentationView","helpView","stats","cycle","rows","detail","tableCount","resultSubtitle","selectedId","proteinRows","proteinCount"]) els[id] = document.getElementById(id);
     const STAGES = ["U2 snRNP","E complex","A complex","U5/tri-snRNP","pre-B","B","pre-Bact","Bact","B*","C","C*","P","ILS/disassembly","U5 recycling"];
     const ORDER = Object.fromEntries(STAGES.map((s,i)=>[s,i]));
-    const NODE_POS = [[232,54],[122,126],[150,222],[305,200],[188,318],[350,334],[492,334],[630,324],[765,294],[890,238],[1000,170],[1024,86],[795,54],[535,66]];
+    const NODE_POS = [[250,70],[105,180],[150,315],[320,265],[290,420],[455,430],[610,420],[750,385],[880,330],[980,255],[1040,165],[1000,75],[720,75],[430,75]];
     const U = {u1:"#d8a3cf", u2:"#78c96b", u4:"#f2dc4e", u5:"#5da8d7", u6:"#ee5960", ntc:"#f2bd5c", mrna:"#22272d"};
     function esc(v){return String(v ?? "").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
     function attr(v){return esc(v);}
@@ -217,7 +221,7 @@
       DATA.records = payload.records || payload;
       DATA.protein_lookup = payload.protein_lookup || [];
       DATA.primary_map_scripts = payload.primary_map_scripts || {};
-      DATA.guides = payload.guides || {rna_elements: [], protein_complexes: []};
+      DATA.guides = payload.guides || {rna_elements: [], protein_complexes: [], splicing_cycle: []};
       rnaFeatureDefinitions = payload.rna_feature_definitions || [];
       rnaFeatureConsistency = payload.rna_feature_consistency || [];
       records = DATA.records;
@@ -360,6 +364,7 @@
     function render(){
       els.structuresView.hidden = state.activeTab !== "structures";
       els.rnaFeaturesView.hidden = state.activeTab !== "rnaFeatures";
+      els.cycleStatesView.hidden = state.activeTab !== "cycleStates";
       els.rnaElementsView.hidden = state.activeTab !== "rnaElements";
       els.complexesView.hidden = state.activeTab !== "complexes";
       els.proteinsView.hidden = state.activeTab !== "proteins";
@@ -369,6 +374,11 @@
       if(state.activeTab === "rnaFeatures") {
         renderRnaFeatureDefinitions();
         els.resultSubtitle.textContent = `${rnaFeatureDefinitions.length} RNA feature definitions`;
+        return;
+      }
+      if(state.activeTab === "cycleStates") {
+        renderGuideCards(els.cycleStateGuide, DATA.guides.splicing_cycle || [], "name", ["stage","composition","transition","notes"]);
+        els.resultSubtitle.textContent = `${(DATA.guides.splicing_cycle || []).length} splicing-cycle state explanations`;
         return;
       }
       if(state.activeTab === "rnaElements") {
@@ -407,7 +417,16 @@
     function renderCycle(rows){
       const counts = Object.fromEntries(STAGES.map(s=>[s, rows.filter(r=>r.state===s).length]));
       const nodes = STAGES.map((stage,i)=>cycleNode(stage,NODE_POS[i][0],NODE_POS[i][1],counts[stage]||0)).join("");
-      els.cycle.innerHTML = `<svg class="cycle-svg" viewBox="0 0 1120 410" role="img" aria-label="Splicing cycle filter"><path class="cycle-band" d="M230 54 C110 95 92 210 180 318" stroke="#d9f1f4" stroke-width="50"/><path class="cycle-band" d="M200 326 C420 392 810 340 1010 170" stroke="#fde3e5" stroke-width="50"/><path class="cycle-band" d="M1025 86 C900 35 665 43 535 66" stroke="#fff2b5" stroke-width="50"/><path class="cycle-flow" d="M195 77 C160 88 135 105 126 126"/><path class="cycle-flow" d="M126 163 C126 181 134 197 144 207"/><path class="cycle-flow" d="M162 242 C167 269 176 293 184 309"/><path class="cycle-flow" d="M275 279 C248 295 220 305 199 315"/><path class="cycle-flow" d="M230 324 C263 329 303 333 333 334 C386 334 430 335 476 334 C557 329 589 326 613 324 C695 310 729 302 749 296 C830 270 862 252 878 241 C952 207 981 188 994 171 C1018 120 1020 105 1022 91"/><path class="cycle-flow" d="M988 71 C930 48 850 52 807 54 C727 56 603 61 548 65"/><path class="cycle-flow dashed" d="M535 96 C465 143 385 190 310 236"/><text x="58" y="205" class="cycle-region-label" transform="rotate(-80 58 205)">Early assembly</text><text x="560" y="402" class="cycle-region-label catalytic" transform="rotate(-4 560 402)">Catalytic stages</text><text x="820" y="140" class="cycle-region-label release" transform="rotate(-8 820 140)">Release / disassembly</text><text class="cycle-helicase-label" x="118" y="190">Prp5 + Sub2/UAP56</text><text class="cycle-helicase-label" x="206" y="293">Prp28</text><text class="cycle-helicase-label" x="420" y="316">Brr2</text><text class="cycle-helicase-label" x="602" y="299">Prp2</text><text class="cycle-helicase-label" x="792" y="250">Prp16</text><text class="cycle-helicase-label" x="965" y="198">Prp22</text><text class="cycle-helicase-label" x="722" y="33">Prp43/Ntr1-Ntr2</text>${nodes}</svg>`;
+      const badges = [
+        [123,258,126,"Prp5 + Sub2/UAP56"],
+        [250,365,64,"Prp28"],
+        [515,397,56,"Brr2"],
+        [690,350,54,"Prp2"],
+        [860,280,58,"Prp16"],
+        [1005,205,58,"Prp22"],
+        [650,42,112,"Prp43/Ntr1-Ntr2"],
+      ].map(([x,y,w,label])=>`<g><rect class="cycle-helicase-badge" x="${x-w/2}" y="${y-12}" width="${w}" height="24" rx="12"/><text class="cycle-helicase-label" x="${x}" y="${y}">${esc(label)}</text></g>`).join("");
+      els.cycle.innerHTML = `<svg class="cycle-svg" viewBox="0 0 1120 520" role="img" aria-label="Splicing cycle filter"><path class="cycle-band" d="M250 70 C95 112 72 284 270 420" stroke="#d9f1f4" stroke-width="58"/><path class="cycle-band" d="M285 425 C505 492 882 394 1040 165" stroke="#fde3e5" stroke-width="58"/><path class="cycle-band" d="M1000 75 C875 31 590 40 430 75" stroke="#fff2b5" stroke-width="58"/><path class="cycle-flow" d="M207 92 C151 112 117 141 107 174"/><path class="cycle-flow" d="M105 218 C105 253 122 286 145 305"/><path class="cycle-flow" d="M181 339 C212 367 247 395 278 413"/><path class="cycle-flow" d="M331 303 C323 346 308 386 296 410"/><path class="cycle-flow" d="M348 425 C380 431 412 432 439 431 C543 429 575 426 597 422 C694 405 722 395 739 388 C835 360 860 344 870 335 C953 292 971 273 977 263 C1032 208 1038 189 1040 176 C1026 108 1017 91 1008 82"/><path class="cycle-flow" d="M944 72 C918 70 893 69 873 69 C776 70 750 72 733 74 C637 78 611 79 593 80 C497 77 466 76 443 75 C327 75 286 72 263 69"/><path class="cycle-flow dashed" d="M720 115 C635 185 520 235 352 265"/><path class="cycle-flow dashed" d="M430 116 C390 160 360 205 326 252"/><text x="44" y="276" class="cycle-region-label" transform="rotate(-82 44 276)">Recognition and assembly</text><text x="560" y="495" class="cycle-region-label catalytic" transform="rotate(-4 560 495)">Catalytic stages</text><text x="790" y="24" class="cycle-region-label release" transform="rotate(-5 790 24)">Release and disassembly</text>${badges}${nodes}</svg>`;
     }
     function cycleNode(stage,x,y,count){
       const active = state.family===stage ? " active" : "";

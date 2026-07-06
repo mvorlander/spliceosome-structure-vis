@@ -78220,6 +78220,64 @@
         "remodeling": "Release lariat intron and recycle U2/U5/U6 components.",
         "key_factors": "Prp43/DHX15, TFIP11/Ntr1, GCFC/Ntr2, PAXBP1, GPATCH1, C19L1/C19L2, DHX35."
       }
+    ],
+    "splicing_cycle": [
+      {
+        "name": "E complex",
+        "stage": "Early recognition",
+        "composition": "U1 snRNP recognizes the 5' splice site while SF1/BBP and U2AF define the branch region, polypyrimidine tract, and 3' splice site.",
+        "transition": "Prp5 and Sub2/UAP56 help convert this early recognition state into a U2-containing prespliceosome.",
+        "notes": "U2 is not yet stably incorporated in the canonical E complex; this is why the cycle cartoon shows U1 and substrate, but not U2, at this stage."
+      },
+      {
+        "name": "A complex",
+        "stage": "Prespliceosome",
+        "composition": "U2 snRNP joins and pairs with the branch site, with the branch-point adenosine bulged from the U2-branch helix.",
+        "transition": "The preassembled U4/U6.U5 tri-snRNP is recruited to form pre-B.",
+        "notes": "This is the first major stage in the diagram where U2 is shown as part of the assembling spliceosome."
+      },
+      {
+        "name": "pre-B complex",
+        "stage": "Tri-snRNP recruitment",
+        "composition": "U1, U2, U4/U6, and U5 are present; U6 remains sequestered by U4.",
+        "transition": "Prp28/DDX23 promotes transfer of the 5' splice site from U1 to U6.",
+        "notes": "The complex is fully assembled but not catalytically active."
+      },
+      {
+        "name": "B complex",
+        "stage": "Pre-catalytic spliceosome",
+        "composition": "U2, U5, U4/U6, and the transferred 5' splice-site/U6 interaction are present after U1 release.",
+        "transition": "Brr2/SNRNP200 unwinds U4/U6 to release U4 and enable U2/U6 catalytic RNA network formation.",
+        "notes": "B complex precedes activation and still lacks the mature catalytic RNA core."
+      },
+      {
+        "name": "Bact complex",
+        "stage": "Activated spliceosome",
+        "composition": "U4 has left; U2/U6 and U5 form the activated RNA-protein core with NTC/NTR factors.",
+        "transition": "Prp2/DHX16 remodels the branch region and licenses first-step catalysis.",
+        "notes": "Bact and pre-Bact entries are separated in the database when depositions support that distinction."
+      },
+      {
+        "name": "B* and C complex",
+        "stage": "First catalytic step",
+        "composition": "The branch point is positioned for attack on the 5' splice site, producing the cleaved 5' exon and intron lariat intermediate.",
+        "transition": "Prp16/DHX38 remodels the spliceosome after branching toward the second-step conformation.",
+        "notes": "C complex denotes the post-branching, pre-exon-ligation catalytic state."
+      },
+      {
+        "name": "C* and P complex",
+        "stage": "Second catalytic step and products",
+        "composition": "The 3' splice site and exons are positioned for exon ligation, yielding spliced mRNA and a lariat intron product.",
+        "transition": "Prp22/DHX8 acts around exon ligation and mRNA release.",
+        "notes": "P complex is post-catalytic and retains the intron lariat spliceosome before disassembly."
+      },
+      {
+        "name": "ILS, DIS, and recycling",
+        "stage": "Disassembly and snRNP recycling",
+        "composition": "The intron-lariat spliceosome retains U2/U5/U6 components and disassembly factors before dismantling.",
+        "transition": "Prp43/DHX15 with Ntr1/TFIP11 and Ntr2/GCFC promotes spliceosome disassembly and recycling.",
+        "notes": "DIS and U5 recycling states are shown as separate bins when deposited structures capture those late states."
+      }
     ]
   }
 }
