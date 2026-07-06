@@ -121,33 +121,29 @@ color #320.1/H #FF957B
 # CRNKL1
 color #320.1/I #FFC388
 # Named selections for resolved substrate RNA features.
-# intron: residues 1-15;492-504, component-name, high confidence
+# intron: residues 1-15;492-504, component-name, high confidence, validation not_applicable
 name ILS_disassembly_5Y88_intron #320.1/E:1-15,492-504
-# intron lariat: residues 1-15;492-504, component-name, high confidence
+# intron lariat: residues 1-15;492-504, component-name, high confidence, validation not_applicable
 name ILS_disassembly_5Y88_intron_lariat #320.1/E:1-15,492-504
-# substrate RNA: residues 1-15;492-504, component, medium confidence
+# substrate RNA: residues 1-15;492-504, component, medium confidence, validation not_applicable
 name ILS_disassembly_5Y88_substrate #320.1/E:1-15,492-504
-# branch helix substrate strand: residues 496-502, sequence-motif, medium confidence
-name ILS_disassembly_5Y88_branch_helix #320.1/E:496-502
-# branch point region: residues 496-502, sequence-motif, medium confidence
-name ILS_disassembly_5Y88_branch_region #320.1/E:496-502
-# branch point adenosine: residues 501, sequence-motif, medium confidence
+# branch helix substrate strand: residues 495-503, network-scored-motif, high confidence, validation validated
+name ILS_disassembly_5Y88_branch_helix #320.1/E:495-503
+# branch point region: residues 495-503, network-scored-motif, high confidence, validation validated
+name ILS_disassembly_5Y88_branch_region #320.1/E:495-503
+# branch point adenosine: residues 501, network-scored-motif, high confidence, validation validated
 name ILS_disassembly_5Y88_branch_A #320.1/E:501
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA U2/U6 helix I partner: residues 25-43, review-region, low confidence
 name ILS_disassembly_5Y88_U2_U6_helix_I_partner #320.1/F:25-43
-# U2 snRNA branchpoint pairing region: residues 34-39, sequence-motif, medium confidence
-name ILS_disassembly_5Y88_U2_branchpoint_pairing_region #320.1/F:34-39
-# U5 snRNA loop I 5' exon contact side: residues 35-42, review-region, low confidence
-name ILS_disassembly_5Y88_U5_loop_I_5exon_contact #320.1/B:35-42
-# U5 snRNA loop I 3' exon contact side: residues 43-50, review-region, low confidence
-name ILS_disassembly_5Y88_U5_loop_I_3exon_contact #320.1/B:43-50
+# U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence
+name ILS_disassembly_5Y88_U2_branchpoint_pairing_region #320.1/F:33-42
 # U5 snRNA loop I: residues 53-55, sequence-motif, medium confidence
 name ILS_disassembly_5Y88_U5_loop_I #320.1/B:53-55
-# U6 snRNA U4/U6 stem I partner: residues 1-30; 1-9, review-region, low confidence
-name ILS_disassembly_5Y88_U6_U4_stem_I_partner #320.1/D:1-30|#320.1/x:1-9
-# U6 snRNA U2/U6 helix I partner: residues 35-60, review-region, low confidence
-name ILS_disassembly_5Y88_U6_U2_helix_I_partner #320.1/D:35-60
+# U6 snRNA 5' terminal stem-loop: residues 1-30, reference-alignment, high confidence
+name ILS_disassembly_5Y88_U6_5_terminal_stem_loop #320.1/D:1-30
+# U6 snRNA U2/U6 helix I partner: residues 41-66, motif-neighborhood, medium confidence
+name ILS_disassembly_5Y88_U6_U2_helix_I_partner #320.1/D:41-66
 # U6 snRNA 5' splice-site upstream contact: residues 44-55, motif-neighborhood, medium confidence
 name ILS_disassembly_5Y88_U6_5SS_upstream_contact #320.1/D:44-55
 # U6 snRNA internal stem-loop: residues 46-73, motif-neighborhood, low confidence
@@ -156,7 +152,74 @@ name ILS_disassembly_5Y88_U6_ISL #320.1/D:46-73
 name ILS_disassembly_5Y88_U6_ACAGAGA_box #320.1/D:47-53
 # U6 snRNA AGC catalytic triad: residues 59-61, sequence-motif, medium confidence
 name ILS_disassembly_5Y88_U6_AGC_catalytic_triad #320.1/D:59-61
-# U6 snRNA LSm site: residues 1-9, terminal-region, low confidence
-name ILS_disassembly_5Y88_U6_LSm_site #320.1/x:1-9
+# RNA feature nucleotide display.
+select #320.1 & nucleic
+nucleotides sel atoms
+select clear
+# intron: residues 1-15;492-504
+# lariat: residues 1-15;492-504
+# branch helix: residues 495-503
+# BP region: residues 495-503
+# BP-A: residues 501
+# U2/U6 helix I: residues 25-43
+color #320.1/F:25-43 #047857
+select #320.1/F:25-43
+nucleotides sel fill
+select clear
+# U2 BP pairing: residues 33-42
+color #320.1/F:33-42 #0B6E2D
+select #320.1/F:33-42
+nucleotides sel fill
+select clear
+# U5 loop I: residues 53-55
+color #320.1/B:53-55 #1B3CD0
+select #320.1/B:53-55
+nucleotides sel fill
+select clear
+# U6 5' terminal SL: residues 1-30
+color #320.1/D:1-30 #DC143C
+select #320.1/D:1-30
+nucleotides sel fill
+select clear
+# U2/U6 helix I: residues 41-66
+color #320.1/D:41-66 #D0183C
+select #320.1/D:41-66
+nucleotides sel fill
+select clear
+# U6 5'SS contact: residues 44-55
+color #320.1/D:44-55 #E01842
+select #320.1/D:44-55
+nucleotides sel fill
+select clear
+# U6 ISL: residues 46-73
+color #320.1/D:46-73 #D61A3D
+select #320.1/D:46-73
+nucleotides sel fill
+select clear
+# U6 ACAGAGA: residues 47-53
+color #320.1/D:47-53 #DC143C
+select #320.1/D:47-53
+nucleotides sel fill
+select clear
+# U6 AGC triad: residues 59-61
+color #320.1/D:59-61 #C91236
+select #320.1/D:59-61
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #320.1/E:8 residues text "intron 1-15;492-504" color #303030 height 5 bgColor transparent
+label #320.1/E:8 residues text "lariat 1-15;492-504" color #303030 height 5 bgColor transparent
+label #320.1/E:499 residues text "branch helix 495-503" color #303030 height 5 bgColor transparent
+label #320.1/E:499 residues text "BP region 495-503" color #303030 height 5 bgColor transparent
+label #320.1/E:501 residues text "BP-A 501" color #303030 height 5 bgColor transparent
+label #320.1/F:34 residues text "U2/U6 helix I 25-43" color #047857 height 5 bgColor transparent
+label #320.1/F:38 residues text "U2 BP pairing 33-42" color #0B6E2D height 5 bgColor transparent
+label #320.1/B:54 residues text "U5 loop I 53-55" color #1B3CD0 height 5 bgColor transparent
+label #320.1/D:16 residues text "U6 5' terminal SL 1-30" color #DC143C height 5 bgColor transparent
+label #320.1/D:54 residues text "U2/U6 helix I 41-66" color #D0183C height 5 bgColor transparent
+label #320.1/D:50 residues text "U6 5'SS contact 44-55" color #E01842 height 5 bgColor transparent
+label #320.1/D:60 residues text "U6 ISL 46-73" color #D61A3D height 5 bgColor transparent
+label #320.1/D:50 residues text "U6 ACAGAGA 47-53" color #DC143C height 5 bgColor transparent
+label #320.1/D:60 residues text "U6 AGC triad 59-61" color #C91236 height 5 bgColor transparent
 view
 show nucleic

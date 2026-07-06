@@ -69,24 +69,57 @@ color #357.1/E #6A9064
 # SF3B4
 color #357.1/w #77B088
 # Named selections for resolved substrate RNA features.
-# substrate RNA: residues 141-168, component, medium confidence
+# substrate RNA: residues 141-168, component, medium confidence, validation not_applicable
 name pre_Bact_7ABH_substrate #357.1/Z:141-168
-# intron: residues 141-168, splice-site-inference, medium confidence
+# intron: residues 141-168, splice-site-inference, medium confidence, validation not_applicable
 name pre_Bact_7ABH_intron #357.1/Z:141-168
-# branch helix substrate strand: residues 150-156, sequence-motif, medium confidence
+# branch helix substrate strand: residues 150-156, network-scored-motif, high confidence, validation validated
 name pre_Bact_7ABH_branch_helix #357.1/Z:150-156
-# branch point region: residues 150-156, sequence-motif, medium confidence
+# branch point region: residues 150-156, network-scored-motif, high confidence, validation validated
 name pre_Bact_7ABH_branch_region #357.1/Z:150-156
-# branch point adenosine: residues 155, sequence-motif, medium confidence
+# branch point adenosine: residues 155, network-scored-motif, high confidence, validation validated
 name pre_Bact_7ABH_branch_A #357.1/Z:155
-# polypyrimidine tract: residues 161-168, sequence-motif, medium confidence
+# polypyrimidine tract: residues 161-168, sequence-motif, medium confidence, validation validated
 name pre_Bact_7ABH_PPT #357.1/Z:161-168
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA U2/U6 helix I partner: residues 29-55, review-region, low confidence
 name pre_Bact_7ABH_U2_U6_helix_I_partner #357.1/2:29-55
-# U2 snRNA branchpoint pairing region: residues 33-38, sequence-motif, medium confidence
-name pre_Bact_7ABH_U2_branchpoint_pairing_region #357.1/2:33-38
+# U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence
+name pre_Bact_7ABH_U2_branchpoint_pairing_region #357.1/2:32-41
 # U2 snRNA stem IIa: residues 46-65, review-region, low confidence
 name pre_Bact_7ABH_U2_stem_IIa #357.1/2:46-65
+# RNA feature nucleotide display.
+select #357.1 & nucleic
+nucleotides sel atoms
+select clear
+# intron: residues 141-168
+# branch helix: residues 150-156
+# BP region: residues 150-156
+# BP-A: residues 155
+# PPT: residues 161-168
+# U2/U6 helix I: residues 29-55
+color #357.1/2:29-55 #047857
+select #357.1/2:29-55
+nucleotides sel fill
+select clear
+# U2 BP pairing: residues 32-41
+color #357.1/2:32-41 #0B6E2D
+select #357.1/2:32-41
+nucleotides sel fill
+select clear
+# U2 stem IIa: residues 46-65
+color #357.1/2:46-65 #167A38
+select #357.1/2:46-65
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #357.1/Z:154 residues text "intron 141-168" color #303030 height 5 bgColor transparent
+label #357.1/Z:153 residues text "branch helix 150-156" color #303030 height 5 bgColor transparent
+label #357.1/Z:153 residues text "BP region 150-156" color #303030 height 5 bgColor transparent
+label #357.1/Z:155 residues text "BP-A 155" color #303030 height 5 bgColor transparent
+label #357.1/Z:164 residues text "PPT 161-168" color #303030 height 5 bgColor transparent
+label #357.1/2:42 residues text "U2/U6 helix I 29-55" color #047857 height 5 bgColor transparent
+label #357.1/2:36 residues text "U2 BP pairing 32-41" color #0B6E2D height 5 bgColor transparent
+label #357.1/2:56 residues text "U2 stem IIa 46-65" color #167A38 height 5 bgColor transparent
 view
 show nucleic

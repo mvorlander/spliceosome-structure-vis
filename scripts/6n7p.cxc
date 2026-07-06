@@ -78,7 +78,7 @@ color #344.1/H #A95A9B
 # LUC7L
 color #344.1/I #B03372
 # Named selections for resolved substrate RNA features.
-# substrate RNA: residues -9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13, component, medium confidence
+# substrate RNA: residues -9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13, component, medium confidence, validation not_applicable
 name E_complex_6N7P_substrate #344.1/r:-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13
 # Named selections for resolved snRNA functional regions.
 # U1 snRNA 5' splice-site recognition region: residues 1-10, review-region, medium confidence
@@ -89,5 +89,34 @@ name E_complex_6N7P_U1_SL1 #344.1/R:11-26,34-45
 name E_complex_6N7P_U1_SL2 #344.1/R:46-95
 # U1 snRNA Sm site: residues 224-230; 241-247; 553-559, sequence-motif, medium confidence
 name E_complex_6N7P_U1_Sm_site #344.1/R:224-230|#344.1/R:241-247|#344.1/R:553-559
+# RNA feature nucleotide display.
+select #344.1 & nucleic
+nucleotides sel atoms
+select clear
+# U1 5'SS recog.: residues 1-10
+color #344.1/R:1-10 #B66AAE
+select #344.1/R:1-10
+nucleotides sel fill
+select clear
+# U1 SL1: residues 11-26;34-45
+color #344.1/R:11-26,34-45 #BF72B7
+select #344.1/R:11-26,34-45
+nucleotides sel fill
+select clear
+# U1 SL2: residues 46-95
+color #344.1/R:46-95 #AD62A6
+select #344.1/R:46-95
+nucleotides sel fill
+select clear
+# U1 Sm site: residues 224-230; 241-247; 553-559
+color #344.1/R:224-230|#344.1/R:241-247|#344.1/R:553-559 #C783BF
+select #344.1/R:224-230|#344.1/R:241-247|#344.1/R:553-559
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #344.1/R:6 residues text "U1 5'SS recog. 1-10" color #B66AAE height 5 bgColor transparent
+label #344.1/R:18 residues text "U1 SL1 11-26;34-45" color #BF72B7 height 5 bgColor transparent
+label #344.1/R:70 residues text "U1 SL2 46-95" color #AD62A6 height 5 bgColor transparent
+label #344.1/R:227 residues text "U1 Sm site 224-230; 241-247; 553-559" color #C783BF height 5 bgColor transparent
 view
 show nucleic

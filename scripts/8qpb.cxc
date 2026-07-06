@@ -71,32 +71,101 @@ color #402.1/U #B37E6A
 # SART1
 color #402.1/S #D6937B
 # Named selections for resolved substrate RNA features.
-# 5' exon: residues -5--1, five-ss-inference, medium confidence
+# 5' exon: residues -5--1, five-ss-inference, medium confidence, validation not_applicable
 name pre_B_8QPB_5exon #402.1/z:-5--1
-# 5' splice site: residues -5,-4,-3,-2,-1,1,2,3,4,5,6,7,8; 1-6, component-name/sequence-motif, high/medium confidence
-name pre_B_8QPB_5SS #402.1/z:-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8|#402.1/z:1-6
-# substrate RNA: residues -5,-4,-3,-2,-1,1,2,3,4,5,6,7,8, component, medium confidence
+# substrate RNA: residues -5,-4,-3,-2,-1,1,2,3,4,5,6,7,8, component, medium confidence, validation not_applicable
 name pre_B_8QPB_substrate #402.1/z:-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8
-# intron from 5' splice site: residues 1-8, five-ss-inference, low confidence
+# 5' splice site: residues 1-6, sequence-motif, medium confidence, validation uncertain uncertain validation
+name pre_B_8QPB_5SS #402.1/z:1-6
+# intron from 5' splice site: residues 1-8, five-ss-inference, low confidence, validation not_applicable
 name pre_B_8QPB_intron #402.1/z:1-8
 # Named selections for resolved snRNA functional regions.
-# U4 snRNA U4/U6 stem I partner: residues 1-25, review-region, low confidence
-name pre_B_8QPB_U4_U6_stem_I_partner #402.1/4:1-25
-# U4 snRNA U4/U6 stem II partner: residues 45-75, review-region, low confidence
-name pre_B_8QPB_U4_U6_stem_II_partner #402.1/4:45-75
+# U4 snRNA U4/U6 stem I partner: residues 1-18, reference-alignment, high confidence
+name pre_B_8QPB_U4_U6_stem_I_partner #402.1/4:1-18
+# U4 snRNA U4/U6 stem II partner: residues 56-64, reference-alignment, high confidence
+name pre_B_8QPB_U4_U6_stem_II_partner #402.1/4:56-64
 # U4 snRNA Brr2 loading region: residues 60-80, review-region, low confidence
 name pre_B_8QPB_U4_Brr2_loading_region #402.1/4:60-80
-# U5 snRNA loop I 5' exon contact side: residues 35-42, review-region, low confidence
-name pre_B_8QPB_U5_loop_I_5exon_contact #402.1/5:35-42
 # U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence
 name pre_B_8QPB_U5_loop_I #402.1/5:38-42
-# U5 snRNA loop I 3' exon contact side: residues 43-50, review-region, low confidence
-name pre_B_8QPB_U5_loop_I_3exon_contact #402.1/5:43-50
-# U6 snRNA U2/U6 helix I partner: residues 35-60, review-region, low confidence
+# U6 snRNA U2/U6 helix I partner: residues 35-60, motif-neighborhood, medium confidence
 name pre_B_8QPB_U6_U2_helix_I_partner #402.1/6:35-60
 # U6 snRNA 5' splice-site upstream contact: residues 38-49, motif-neighborhood, medium confidence
 name pre_B_8QPB_U6_5SS_upstream_contact #402.1/6:38-49
 # U6 snRNA ACAGAGA box: residues 41-47, sequence-motif, high confidence
 name pre_B_8QPB_U6_ACAGAGA_box #402.1/6:41-47
+# U6 snRNA U4/U6 stem II partner: residues 52-61, reference-alignment, high confidence
+name pre_B_8QPB_U6_U4_stem_II_partner #402.1/6:52-61
+# U6 snRNA U4/U6 stem I partner: residues 63-74, reference-alignment, high confidence
+name pre_B_8QPB_U6_U4_stem_I_partner #402.1/6:63-74
+# RNA feature nucleotide display.
+select #402.1 & nucleic
+nucleotides sel atoms
+select clear
+# 5' exon: residues -5--1
+color #402.1/z:-5--1 #FF8C00
+select #402.1/z:-5--1
+nucleotides sel fill
+select clear
+# 5'SS: residues 1-6
+# intron: residues 1-8
+# U4/U6 stem I: residues 1-18
+color #402.1/4:1-18 #D8C800
+select #402.1/4:1-18
+nucleotides sel fill
+select clear
+# U4/U6 stem II: residues 56-64
+color #402.1/4:56-64 #E0CF1A
+select #402.1/4:56-64
+nucleotides sel fill
+select clear
+# U4 Brr2 region: residues 60-80
+color #402.1/4:60-80 #F0DF2E
+select #402.1/4:60-80
+nucleotides sel fill
+select clear
+# U5 loop I: residues 38-42
+color #402.1/5:38-42 #1B3CD0
+select #402.1/5:38-42
+nucleotides sel fill
+select clear
+# U2/U6 helix I: residues 35-60
+color #402.1/6:35-60 #D0183C
+select #402.1/6:35-60
+nucleotides sel fill
+select clear
+# U6 5'SS contact: residues 38-49
+color #402.1/6:38-49 #E01842
+select #402.1/6:38-49
+nucleotides sel fill
+select clear
+# U6 ACAGAGA: residues 41-47
+color #402.1/6:41-47 #DC143C
+select #402.1/6:41-47
+nucleotides sel fill
+select clear
+# U4/U6 stem II: residues 52-61
+color #402.1/6:52-61 #E01842
+select #402.1/6:52-61
+nucleotides sel fill
+select clear
+# U4/U6 stem I: residues 63-74
+color #402.1/6:63-74 #D9183E
+select #402.1/6:63-74
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #402.1/z:-3 residues text "5' exon -5--1" color #FF8C00 height 5 bgColor transparent
+label #402.1/z:4 residues text "? 5'SS 1-6" color #303030 height 5 bgColor transparent
+label #402.1/z:4 residues text "intron 1-8" color #303030 height 5 bgColor transparent
+label #402.1/4:10 residues text "U4/U6 stem I 1-18" color #D8C800 height 5 bgColor transparent
+label #402.1/4:60 residues text "U4/U6 stem II 56-64" color #E0CF1A height 5 bgColor transparent
+label #402.1/4:70 residues text "U4 Brr2 region 60-80" color #F0DF2E height 5 bgColor transparent
+label #402.1/5:40 residues text "U5 loop I 38-42" color #1B3CD0 height 5 bgColor transparent
+label #402.1/6:48 residues text "U2/U6 helix I 35-60" color #D0183C height 5 bgColor transparent
+label #402.1/6:44 residues text "U6 5'SS contact 38-49" color #E01842 height 5 bgColor transparent
+label #402.1/6:44 residues text "U6 ACAGAGA 41-47" color #DC143C height 5 bgColor transparent
+label #402.1/6:56 residues text "U4/U6 stem II 52-61" color #E01842 height 5 bgColor transparent
+label #402.1/6:68 residues text "U4/U6 stem I 63-74" color #D9183E height 5 bgColor transparent
 view
 show nucleic

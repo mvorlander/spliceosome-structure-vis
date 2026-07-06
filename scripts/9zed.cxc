@@ -63,12 +63,21 @@ color #436.1/B3 #6A9064
 # SF3B4
 color #436.1/B4 #77B088
 # Named selections for resolved substrate RNA features.
-# substrate RNA: residues -18-12, component, medium confidence
+# substrate RNA: residues -18-12, component, medium confidence, validation not_applicable
 name U2_snRNP_9ZED_substrate #436.1/R:-18-12
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA branchpoint pairing region: residues 33-38, sequence-motif, medium confidence
-name U2_snRNP_9ZED_U2_branchpoint_pairing_region #436.1/2:33-38
-# U2 snRNA U2/U6 helix I partner: residues 53-65, review-region, low confidence
-name U2_snRNP_9ZED_U2_U6_helix_I_partner #436.1/2:53-65
+# U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence
+name U2_snRNP_9ZED_U2_branchpoint_pairing_region #436.1/2:32-41
+# RNA feature nucleotide display.
+select #436.1 & nucleic
+nucleotides sel atoms
+select clear
+# U2 BP pairing: residues 32-41
+color #436.1/2:32-41 #0B6E2D
+select #436.1/2:32-41
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #436.1/2:36 residues text "U2 BP pairing 32-41" color #0B6E2D height 5 bgColor transparent
 view
 show nucleic

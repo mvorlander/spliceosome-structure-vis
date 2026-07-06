@@ -135,31 +135,25 @@ color #414.1/E #E2F3F4
 # SYF1
 color #414.1/I #FF957B
 # Named selections for resolved substrate RNA features.
-# intron: residues 1-2;10-28;40-51, component-name, high confidence
+# intron: residues 1-2;10-28;40-51, component-name, high confidence, validation not_applicable
 name ILS_disassembly_8RO1_intron #414.1/IN:1-2,10-28,40-51
-# intron lariat: residues 1-2;10-28;40-51, component-name, high confidence
+# intron lariat: residues 1-2;10-28;40-51, component-name, high confidence, validation not_applicable
 name ILS_disassembly_8RO1_intron_lariat #414.1/IN:1-2,10-28,40-51
-# substrate RNA: residues 1-2;10-28;40-51, component, medium confidence
+# substrate RNA: residues 1-2;10-28;40-51, component, medium confidence, validation not_applicable
 name ILS_disassembly_8RO1_substrate #414.1/IN:1-2,10-28,40-51
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA U2/U6 helix I partner: residues 25-42, review-region, low confidence
 name ILS_disassembly_8RO1_U2_U6_helix_I_partner #414.1/2:25-42
-# U2 snRNA branchpoint pairing region: residues 35-40, sequence-motif, medium confidence
-name ILS_disassembly_8RO1_U2_branchpoint_pairing_region #414.1/2:35-40
-# U5 snRNA loop I 5' exon contact side: residues 37-44, review-region, low confidence
-name ILS_disassembly_8RO1_U5_loop_I_5exon_contact #414.1/5:37-44
+# U2 snRNA branchpoint pairing region: residues 34-42, sequence-motif-neighborhood, medium confidence
+name ILS_disassembly_8RO1_U2_branchpoint_pairing_region #414.1/2:34-42
 # U5 snRNA loop I: residues 41-45, sequence-motif, medium confidence
 name ILS_disassembly_8RO1_U5_loop_I #414.1/5:41-45
-# U5 snRNA loop I 3' exon contact side: residues 45-52, review-region, low confidence
-name ILS_disassembly_8RO1_U5_loop_I_3exon_contact #414.1/5:45-52
 # U5 snRNA Sm site: residues 93-99, sequence-motif, medium confidence
 name ILS_disassembly_8RO1_U5_Sm_site #414.1/5:93-99
-# U6 snRNA U4/U6 stem I partner: residues 1-30, review-region, low confidence
-name ILS_disassembly_8RO1_U6_U4_stem_I_partner #414.1/6:1-30
+# U6 snRNA U2/U6 helix I partner: residues 30-55, motif-neighborhood, medium confidence
+name ILS_disassembly_8RO1_U6_U2_helix_I_partner #414.1/6:30-55
 # U6 snRNA 5' splice-site upstream contact: residues 33-44, motif-neighborhood, medium confidence
 name ILS_disassembly_8RO1_U6_5SS_upstream_contact #414.1/6:33-44
-# U6 snRNA U2/U6 helix I partner: residues 35-60, review-region, low confidence
-name ILS_disassembly_8RO1_U6_U2_helix_I_partner #414.1/6:35-60
 # U6 snRNA ACAGAGA box: residues 36-42, sequence-motif, high confidence
 name ILS_disassembly_8RO1_U6_ACAGAGA_box #414.1/6:36-42
 # U6 snRNA internal stem-loop: residues 74-101, motif-neighborhood, low confidence
@@ -168,5 +162,68 @@ name ILS_disassembly_8RO1_U6_ISL #414.1/6:74-101
 name ILS_disassembly_8RO1_U6_AGC_catalytic_triad #414.1/6:87-89
 # U6 snRNA LSm site: residues 92-101, terminal-region, low confidence
 name ILS_disassembly_8RO1_U6_LSm_site #414.1/6:92-101
+# RNA feature nucleotide display.
+select #414.1 & nucleic
+nucleotides sel atoms
+select clear
+# intron: residues 1-2;10-28;40-51
+# lariat: residues 1-2;10-28;40-51
+# U2/U6 helix I: residues 25-42
+color #414.1/2:25-42 #047857
+select #414.1/2:25-42
+nucleotides sel fill
+select clear
+# U2 BP pairing: residues 34-42
+color #414.1/2:34-42 #0B6E2D
+select #414.1/2:34-42
+nucleotides sel fill
+select clear
+# U5 loop I: residues 41-45
+color #414.1/5:41-45 #1B3CD0
+select #414.1/5:41-45
+nucleotides sel fill
+select clear
+# Sm site: residues 93-99
+color #414.1/5:93-99 #F97316
+select #414.1/5:93-99
+nucleotides sel fill
+select clear
+# U2/U6 helix I: residues 30-55
+color #414.1/6:30-55 #D0183C
+select #414.1/6:30-55
+nucleotides sel fill
+select clear
+# U6 5'SS contact: residues 33-44
+color #414.1/6:33-44 #E01842
+select #414.1/6:33-44
+nucleotides sel fill
+select clear
+# U6 ACAGAGA: residues 36-42
+color #414.1/6:36-42 #DC143C
+select #414.1/6:36-42
+nucleotides sel fill
+select clear
+# U6 ISL: residues 74-101
+color #414.1/6:74-101 #D61A3D
+select #414.1/6:74-101
+nucleotides sel fill
+select clear
+# U6 AGC triad: residues 87-89
+color #414.1/6:87-89 #C91236
+select #414.1/6:87-89
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #414.1/IN:19 residues text "intron 1-2;10-28;40-51" color #303030 height 5 bgColor transparent
+label #414.1/IN:19 residues text "lariat 1-2;10-28;40-51" color #303030 height 5 bgColor transparent
+label #414.1/2:34 residues text "U2/U6 helix I 25-42" color #047857 height 5 bgColor transparent
+label #414.1/2:38 residues text "U2 BP pairing 34-42" color #0B6E2D height 5 bgColor transparent
+label #414.1/5:43 residues text "U5 loop I 41-45" color #1B3CD0 height 5 bgColor transparent
+label #414.1/5:96 residues text "Sm site 93-99" color #F97316 height 5 bgColor transparent
+label #414.1/6:42 residues text "U2/U6 helix I 30-55" color #D0183C height 5 bgColor transparent
+label #414.1/6:38 residues text "U6 5'SS contact 33-44" color #E01842 height 5 bgColor transparent
+label #414.1/6:39 residues text "U6 ACAGAGA 36-42" color #DC143C height 5 bgColor transparent
+label #414.1/6:88 residues text "U6 ISL 74-101" color #D61A3D height 5 bgColor transparent
+label #414.1/6:88 residues text "U6 AGC triad 87-89" color #C91236 height 5 bgColor transparent
 view
 show nucleic

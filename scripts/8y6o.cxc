@@ -129,7 +129,7 @@ color #416.1/H #6A90A0
 # DDX23
 color #416.1/I #CA9982
 # Named selections for resolved substrate RNA features.
-# substrate RNA: residues -1-11, component, medium confidence
+# substrate RNA: residues -1-11, component, medium confidence, validation not_applicable
 name pre_B_8Y6O_substrate #416.1/A:-1-11
 # Named selections for resolved snRNA functional regions.
 # U11 snRNA 5' splice-site recognition region: residues 1-10, review-region, medium confidence
@@ -146,19 +146,76 @@ name pre_B_8Y6O_U4atac_U6_stem_II_partner #416.1/J:44-65
 name pre_B_8Y6O_U4atac_Brr2_loading_region #416.1/J:59-65,82-94
 # U4atac snRNA Sm site: residues 116-122, sequence-motif, medium confidence
 name pre_B_8Y6O_U4atac_Sm_site #416.1/J:116-122
-# U5 snRNA loop I 5' exon contact side: residues 35-42, review-region, low confidence
-name pre_B_8Y6O_U5_loop_I_5exon_contact #416.1/B:35-42
 # U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence
 name pre_B_8Y6O_U5_loop_I #416.1/B:38-42
-# U5 snRNA loop I 3' exon contact side: residues 43-50, review-region, low confidence
-name pre_B_8Y6O_U5_loop_I_3exon_contact #416.1/B:43-50
-# U6atac snRNA U4/U6 stem I partner: residues 23-30, review-region, low confidence
-name pre_B_8Y6O_U6atac_U4_stem_I_partner #416.1/K:23-30
 # U6atac snRNA internal stem-loop: residues 23-40, motif-neighborhood, low confidence
 name pre_B_8Y6O_U6atac_ISL #416.1/K:23-40
 # U6atac snRNA AGC catalytic triad: residues 26-28, sequence-motif, medium confidence
 name pre_B_8Y6O_U6atac_AGC_catalytic_triad #416.1/K:26-28
-# U6atac snRNA U2/U6 helix I partner: residues 35-58;60, review-region, low confidence
-name pre_B_8Y6O_U6atac_U2_helix_I_partner #416.1/K:35-58,60
+# RNA feature nucleotide display.
+select #416.1 & nucleic
+nucleotides sel atoms
+select clear
+# U11 5'SS recog.: residues 1-10
+color #416.1/P:1-10 #B66AAE
+select #416.1/P:1-10
+nucleotides sel fill
+select clear
+# U11 SL1: residues 11-39;43-45
+color #416.1/P:11-39,43-45 #BF72B7
+select #416.1/P:11-39,43-45
+nucleotides sel fill
+select clear
+# U11 SL2: residues 46-95
+color #416.1/P:46-95 #AD62A6
+select #416.1/P:46-95
+nucleotides sel fill
+select clear
+# U4/U6 stem I partner: residues 0-22
+color #416.1/J:0-22 #F97316
+select #416.1/J:0-22
+nucleotides sel fill
+select clear
+# U4/U6 stem II partner: residues 44-65
+color #416.1/J:44-65 #F97316
+select #416.1/J:44-65
+nucleotides sel fill
+select clear
+# Brr2 loading region: residues 59-65;82-94
+color #416.1/J:59-65,82-94 #F97316
+select #416.1/J:59-65,82-94
+nucleotides sel fill
+select clear
+# Sm site: residues 116-122
+color #416.1/J:116-122 #F97316
+select #416.1/J:116-122
+nucleotides sel fill
+select clear
+# U5 loop I: residues 38-42
+color #416.1/B:38-42 #1B3CD0
+select #416.1/B:38-42
+nucleotides sel fill
+select clear
+# internal stem-loop: residues 23-40
+color #416.1/K:23-40 #F97316
+select #416.1/K:23-40
+nucleotides sel fill
+select clear
+# AGC catalytic triad: residues 26-28
+color #416.1/K:26-28 #F97316
+select #416.1/K:26-28
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #416.1/P:6 residues text "U11 5'SS recog. 1-10" color #B66AAE height 5 bgColor transparent
+label #416.1/P:25 residues text "U11 SL1 11-39;43-45" color #BF72B7 height 5 bgColor transparent
+label #416.1/P:70 residues text "U11 SL2 46-95" color #AD62A6 height 5 bgColor transparent
+label #416.1/J:11 residues text "U4/U6 stem I partner 0-22" color #F97316 height 5 bgColor transparent
+label #416.1/J:54 residues text "U4/U6 stem II partner 44-65" color #F97316 height 5 bgColor transparent
+label #416.1/J:88 residues text "Brr2 loading region 59-65;82-94" color #F97316 height 5 bgColor transparent
+label #416.1/J:119 residues text "Sm site 116-122" color #F97316 height 5 bgColor transparent
+label #416.1/B:40 residues text "U5 loop I 38-42" color #1B3CD0 height 5 bgColor transparent
+label #416.1/K:32 residues text "internal stem-loop 23-40" color #F97316 height 5 bgColor transparent
+label #416.1/K:27 residues text "AGC catalytic triad 26-28" color #F97316 height 5 bgColor transparent
 view
 show nucleic

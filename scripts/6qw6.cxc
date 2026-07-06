@@ -115,31 +115,84 @@ color #347.1/4C #DFD570
 # NHP2L1
 color #347.1/4D #A89264
 # Named selections for resolved snRNA functional regions.
-# U4 snRNA U4/U6 stem I partner: residues 0-24, review-region, low confidence
-name U5_tri_snRNP_6QW6_U4_U6_stem_I_partner #347.1/4:0-24
-# U4 snRNA U4/U6 stem II partner: residues 44-52;55-70;73-74, review-region, low confidence
-name U5_tri_snRNP_6QW6_U4_U6_stem_II_partner #347.1/4:44-52,55-70,73-74
+# U4 snRNA U4/U6 stem I partner: residues 1-18, reference-alignment, high confidence
+name U5_tri_snRNP_6QW6_U4_U6_stem_I_partner #347.1/4:1-18
+# U4 snRNA U4/U6 stem II partner: residues 56-64, reference-alignment, high confidence
+name U5_tri_snRNP_6QW6_U4_U6_stem_II_partner #347.1/4:56-64
 # U4 snRNA Brr2 loading region: residues 59-70;73-80;85-94, review-region, low confidence
 name U5_tri_snRNP_6QW6_U4_Brr2_loading_region #347.1/4:59-70,73-80,85-94
 # U4 snRNA Sm site: residues 118-124, sequence-motif, medium confidence
 name U5_tri_snRNP_6QW6_U4_Sm_site #347.1/4:118-124
-# U5 snRNA loop I 5' exon contact side: residues 35-38, review-region, low confidence
-name U5_tri_snRNP_6QW6_U5_loop_I_5exon_contact #347.1/5:35-38
 # U5 snRNA loop I: residues 38, sequence-motif, medium confidence
 name U5_tri_snRNP_6QW6_U5_loop_I #347.1/5:38
-# U5 snRNA loop I 3' exon contact side: residues 44-50, review-region, low confidence
-name U5_tri_snRNP_6QW6_U5_loop_I_3exon_contact #347.1/5:44-50
-# U6 snRNA U2/U6 helix I partner: residues 35-36;47-60, review-region, low confidence
+# U6 snRNA U2/U6 helix I partner: residues 35-36;47-60, motif-neighborhood, medium confidence
 name U5_tri_snRNP_6QW6_U6_U2_helix_I_partner #347.1/6:35-36,47-60
 # U6 snRNA 5' splice-site upstream contact: residues 47-49, motif-neighborhood, medium confidence
 name U5_tri_snRNP_6QW6_U6_5SS_upstream_contact #347.1/6:47-49
-# U6 snRNA internal stem-loop: residues 47-67, motif-neighborhood, low confidence
-name U5_tri_snRNP_6QW6_U6_ISL #347.1/6:47-67
 # U6 snRNA ACAGAGA box: residues 47, sequence-motif, high confidence
 name U5_tri_snRNP_6QW6_U6_ACAGAGA_box #347.1/6:47
-# U6 snRNA AGC catalytic triad: residues 53-55, sequence-motif, medium confidence
-name U5_tri_snRNP_6QW6_U6_AGC_catalytic_triad #347.1/6:53-55
-# U6 snRNA LSm site: residues 102-106, terminal-region, low confidence
-name U5_tri_snRNP_6QW6_U6_LSm_site #347.1/6:102-106
+# U6 snRNA U4/U6 stem II partner: residues 52-61, reference-alignment, high confidence
+name U5_tri_snRNP_6QW6_U6_U4_stem_II_partner #347.1/6:52-61
+# U6 snRNA U4/U6 stem I partner: residues 63-74, reference-alignment, high confidence
+name U5_tri_snRNP_6QW6_U6_U4_stem_I_partner #347.1/6:63-74
+# RNA feature nucleotide display.
+select #347.1 & nucleic
+nucleotides sel atoms
+select clear
+# U4/U6 stem I: residues 1-18
+color #347.1/4:1-18 #D8C800
+select #347.1/4:1-18
+nucleotides sel fill
+select clear
+# U4/U6 stem II: residues 56-64
+color #347.1/4:56-64 #E0CF1A
+select #347.1/4:56-64
+nucleotides sel fill
+select clear
+# U4 Brr2 region: residues 59-70;73-80;85-94
+color #347.1/4:59-70,73-80,85-94 #F0DF2E
+select #347.1/4:59-70,73-80,85-94
+nucleotides sel fill
+select clear
+# U5 loop I: residues 38
+color #347.1/5:38 #1B3CD0
+select #347.1/5:38
+nucleotides sel fill
+select clear
+# U2/U6 helix I: residues 35-36;47-60
+color #347.1/6:35-36,47-60 #D0183C
+select #347.1/6:35-36,47-60
+nucleotides sel fill
+select clear
+# U6 5'SS contact: residues 47-49
+color #347.1/6:47-49 #E01842
+select #347.1/6:47-49
+nucleotides sel fill
+select clear
+# U6 ACAGAGA: residues 47
+color #347.1/6:47 #DC143C
+select #347.1/6:47
+nucleotides sel fill
+select clear
+# U4/U6 stem II: residues 52-61
+color #347.1/6:52-61 #E01842
+select #347.1/6:52-61
+nucleotides sel fill
+select clear
+# U4/U6 stem I: residues 63-74
+color #347.1/6:63-74 #D9183E
+select #347.1/6:63-74
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #347.1/4:10 residues text "U4/U6 stem I 1-18" color #D8C800 height 5 bgColor transparent
+label #347.1/4:60 residues text "U4/U6 stem II 56-64" color #E0CF1A height 5 bgColor transparent
+label #347.1/4:64 residues text "U4 Brr2 region 59-70;73-80;85-94" color #F0DF2E height 5 bgColor transparent
+label #347.1/5:38 residues text "U5 loop I 38" color #1B3CD0 height 5 bgColor transparent
+label #347.1/6:54 residues text "U2/U6 helix I 35-36;47-60" color #D0183C height 5 bgColor transparent
+label #347.1/6:48 residues text "U6 5'SS contact 47-49" color #E01842 height 5 bgColor transparent
+label #347.1/6:47 residues text "U6 ACAGAGA 47" color #DC143C height 5 bgColor transparent
+label #347.1/6:56 residues text "U4/U6 stem II 52-61" color #E01842 height 5 bgColor transparent
+label #347.1/6:68 residues text "U4/U6 stem I 63-74" color #D9183E height 5 bgColor transparent
 view
 show nucleic

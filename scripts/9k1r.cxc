@@ -49,10 +49,37 @@ color #422.1/G #303030
 # U2 snRNA
 color #422.1/H #006400
 # Named selections for resolved substrate RNA features.
-# substrate RNA: residues 24-48, component, medium confidence
+# substrate RNA: residues 24-48, component, medium confidence, validation not_applicable
 name U2_snRNP_9K1R_substrate #422.1/G:24-48
+# branch helix substrate strand: residues 28-38, network-scored-motif, high confidence, validation validated
+name U2_snRNP_9K1R_branch_helix #422.1/G:28-38
+# branch point region: residues 28-38, network-scored-motif, high confidence, validation validated
+name U2_snRNP_9K1R_branch_region #422.1/G:28-38
+# branch point adenosine: residues 36, network-scored-motif, high confidence, validation validated
+name U2_snRNP_9K1R_branch_A #422.1/G:36
+# 3' splice site: residues 39-41, sequence-motif, medium confidence, validation uncertain uncertain validation
+name U2_snRNP_9K1R_3SS #422.1/G:39-41
 # Named selections for resolved snRNA functional regions.
-# U2 snRNA branchpoint pairing region: residues 3-8, sequence-motif, medium confidence
-name U2_snRNP_9K1R_U2_branchpoint_pairing_region #422.1/H:3-8
+# U2 snRNA branchpoint pairing region: residues 2-11, sequence-motif-neighborhood, medium confidence
+name U2_snRNP_9K1R_U2_branchpoint_pairing_region #422.1/H:2-11
+# RNA feature nucleotide display.
+select #422.1 & nucleic
+nucleotides sel atoms
+select clear
+# branch helix: residues 28-38
+# BP region: residues 28-38
+# BP-A: residues 36
+# 3'SS: residues 39-41
+# U2 BP pairing: residues 2-11
+color #422.1/H:2-11 #0B6E2D
+select #422.1/H:2-11
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #422.1/G:33 residues text "branch helix 28-38" color #303030 height 5 bgColor transparent
+label #422.1/G:33 residues text "BP region 28-38" color #303030 height 5 bgColor transparent
+label #422.1/G:36 residues text "BP-A 36" color #303030 height 5 bgColor transparent
+label #422.1/G:40 residues text "? 3'SS 39-41" color #303030 height 5 bgColor transparent
+label #422.1/H:6 residues text "U2 BP pairing 2-11" color #0B6E2D height 5 bgColor transparent
 view
 show nucleic

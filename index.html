@@ -491,7 +491,17 @@
     }
     function substratePanel(items){
       if(!items.length) return "";
-      return `<h3>Substrate RNA Features (${items.length})</h3><div class="mini-list">${items.map(i=>`<div><strong>${esc(i.label||i.feature)}</strong> <span class="subtle">chain ${esc(i.original_chain_id||"")} (${esc(i.canonical_chain_id||"renamed n/a")}), seq ${esc(i.seq_start)}-${esc(i.seq_end)}, residues ${esc(i.auth_residue_ranges||"n/a")}</span><br><code>${esc(i.feature_sequence||i.notes||"")}</code></div>`).join("")}</div>`;
+      const net = i => {
+        if(!i.network_support) return "";
+        const bits=[`network ${i.network_support}`];
+        if(i.u2_basepair_count !== "") bits.push(`U2 bp ${i.u2_basepair_count}`);
+        if(i.u2_min_distance_a !== "") bits.push(`d ${i.u2_min_distance_a} A`);
+        if(i.discontinuity_breaks !== "") bits.push(`breaks ${i.discontinuity_breaks}`);
+        if(i.network_score !== "") bits.push(`score ${i.network_score}`);
+        if(i.changed_from_legacy === "True" || i.changed_from_legacy === true) bits.push("changed");
+        return ` <span class="subtle">(${esc(bits.join("; "))})</span>`;
+      };
+      return `<h3>Substrate RNA Features (${items.length})</h3><div class="mini-list">${items.map(i=>`<div><strong>${esc(i.label||i.feature)}</strong>${net(i)} <span class="subtle">chain ${esc(i.original_chain_id||"")} (${esc(i.canonical_chain_id||"renamed n/a")}), seq ${esc(i.seq_start)}-${esc(i.seq_end)}, residues ${esc(i.auth_residue_ranges||"n/a")}</span><br><code>${esc(i.feature_sequence||i.notes||"")}</code></div>`).join("")}</div>`;
     }
     function snrnaPanel(items){
       if(!items.length) return "";

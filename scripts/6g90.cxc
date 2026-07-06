@@ -111,14 +111,14 @@ color #336.1/F #C7A6BE
 # SNU56
 color #336.1/G #D65B96
 # Named selections for resolved substrate RNA features.
-# substrate RNA: residues -1,0,1,2,3,4,5,6,7,8,9,10,51,52,53,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79, component, medium confidence
+# substrate RNA: residues -1,0,1,2,3,4,5,6,7,8,9,10,51,52,53,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79, component, medium confidence, validation not_applicable
 name A_complex_6G90_substrate #336.1/I:-1,0,1,2,3,4,5,6,7,8,9,10,51,52,53,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79
-# branch helix substrate strand: residues 7,8,9,10,51, sequence-motif, medium confidence
-name A_complex_6G90_branch_helix #336.1/I:7,8,9,10,51
-# branch point region: residues 7,8,9,10,51, sequence-motif, medium confidence
-name A_complex_6G90_branch_region #336.1/I:7,8,9,10,51
-# branch point adenosine: residues 10, sequence-motif, medium confidence
-name A_complex_6G90_branch_A #336.1/I:10
+# branch helix substrate strand: residues 62-72, network-scored-motif, high confidence, validation validated
+name A_complex_6G90_branch_helix #336.1/I:62-72
+# branch point region: residues 62-72, network-scored-motif, high confidence, validation validated
+name A_complex_6G90_branch_region #336.1/I:62-72
+# branch point adenosine: residues 70, network-scored-motif, high confidence, validation validated
+name A_complex_6G90_branch_A #336.1/I:70
 # Named selections for resolved snRNA functional regions.
 # U1 snRNA 5' splice-site recognition region: residues 1-10, review-region, medium confidence
 name A_complex_6G90_U1_5_5SS_recognition #336.1/1:1-10
@@ -128,11 +128,48 @@ name A_complex_6G90_U1_SL1 #336.1/1:11-45
 name A_complex_6G90_U1_SL2 #336.1/1:46-61,67-95
 # U1 snRNA Sm site: residues 241-247; 439,440,516,517,518,519,520, sequence-motif, medium confidence
 name A_complex_6G90_U1_Sm_site #336.1/1:241-247|#336.1/1:439,440,516,517,518,519,520
-# U2 snRNA branchpoint pairing region: residues 34-39, sequence-motif, medium confidence
-name A_complex_6G90_U2_branchpoint_pairing_region #336.1/2:34-39
-# U2 snRNA U2/U6 helix I partner: residues 54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,79,80,81,82,83,84,85,86,108,109,110, review-region, low confidence
-name A_complex_6G90_U2_U6_helix_I_partner #336.1/2:54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,79,80,81,82,83,84,85,86,108,109,110
-# U2 snRNA stem IIa: residues 80,81,82,83,84,85,86,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,139,140,141,142,143,144,145,146,147,148,149,150,1089, review-region, low confidence
-name A_complex_6G90_U2_stem_IIa #336.1/2:80,81,82,83,84,85,86,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,139,140,141,142,143,144,145,146,147,148,149,150,1089
+# U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence
+name A_complex_6G90_U2_branchpoint_pairing_region #336.1/2:33-42
+# RNA feature nucleotide display.
+select #336.1 & nucleic
+nucleotides sel atoms
+select clear
+# branch helix: residues 62-72
+# BP region: residues 62-72
+# BP-A: residues 70
+# U1 5'SS recog.: residues 1-10
+color #336.1/1:1-10 #B66AAE
+select #336.1/1:1-10
+nucleotides sel fill
+select clear
+# U1 SL1: residues 11-45
+color #336.1/1:11-45 #BF72B7
+select #336.1/1:11-45
+nucleotides sel fill
+select clear
+# U1 SL2: residues 46-61;67-95
+color #336.1/1:46-61,67-95 #AD62A6
+select #336.1/1:46-61,67-95
+nucleotides sel fill
+select clear
+# U1 Sm site: residues 241-247; 439,440,516,517,518,519,520
+color #336.1/1:241-247|#336.1/1:439,440,516,517,518,519,520 #C783BF
+select #336.1/1:241-247|#336.1/1:439,440,516,517,518,519,520
+nucleotides sel fill
+select clear
+# U2 BP pairing: residues 33-42
+color #336.1/2:33-42 #0B6E2D
+select #336.1/2:33-42
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #336.1/I:67 residues text "branch helix 62-72" color #303030 height 5 bgColor transparent
+label #336.1/I:67 residues text "BP region 62-72" color #303030 height 5 bgColor transparent
+label #336.1/I:70 residues text "BP-A 70" color #303030 height 5 bgColor transparent
+label #336.1/1:6 residues text "U1 5'SS recog. 1-10" color #B66AAE height 5 bgColor transparent
+label #336.1/1:28 residues text "U1 SL1 11-45" color #BF72B7 height 5 bgColor transparent
+label #336.1/1:81 residues text "U1 SL2 46-61;67-95" color #AD62A6 height 5 bgColor transparent
+label #336.1/1:244 residues text "U1 Sm site 241-247; 439,440,516,517,518,519,520" color #C783BF height 5 bgColor transparent
+label #336.1/2:38 residues text "U2 BP pairing 33-42" color #0B6E2D height 5 bgColor transparent
 view
 show nucleic

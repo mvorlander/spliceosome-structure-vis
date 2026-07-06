@@ -115,11 +115,11 @@ color #366.1/b #EAD7E8
 # U2-Sm SNRPB
 color #366.1/s #D5F5E3
 # Named selections for resolved substrate RNA features.
-# 5' exon: residues -2,-1,1,2,3,4,5,6,7,8, splice-site-inference, medium confidence
+# 5' exon: residues -2,-1,1,2,3,4,5,6,7,8, splice-site-inference, medium confidence, validation not_applicable
 name E_complex_7OQE_5exon #366.1/I:-2,-1,1,2,3,4,5,6,7,8
-# substrate RNA: residues -2,-1,1,2,3,4,5,6,7,8;103-128;130-156;246-268, component, medium confidence
+# substrate RNA: residues -2,-1,1,2,3,4,5,6,7,8;103-128;130-156;246-268, component, medium confidence, validation not_applicable
 name E_complex_7OQE_substrate #366.1/I:-2,-1,1,2,3,4,5,6,7,8,103-128,130-156,246-268
-# intron: residues 103-128;130-156;246-268, splice-site-inference, medium confidence
+# intron: residues 103-128;130-156;246-268, splice-site-inference, medium confidence, validation not_applicable
 name E_complex_7OQE_intron #366.1/I:103-128,130-156,246-268
 # Named selections for resolved snRNA functional regions.
 # U1 snRNA 5' splice-site recognition region: residues 1-10, review-region, medium confidence
@@ -132,9 +132,64 @@ name E_complex_7OQE_U1_SL2 #366.1/1:46-95
 name E_complex_7OQE_U1_Sm_site #366.1/1:224-230|#366.1/1:241-247|#366.1/1:553-559
 # U2 snRNA U2/U6 helix I partner: residues 32-55, review-region, low confidence
 name E_complex_7OQE_U2_U6_helix_I_partner #366.1/2:32-55
-# U2 snRNA branchpoint pairing region: residues 34-39, sequence-motif, medium confidence
-name E_complex_7OQE_U2_branchpoint_pairing_region #366.1/2:34-39
+# U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence
+name E_complex_7OQE_U2_branchpoint_pairing_region #366.1/2:33-42
 # U2 snRNA stem IIa: residues 46-74;78-80, review-region, low confidence
 name E_complex_7OQE_U2_stem_IIa #366.1/2:46-74,78-80
+# RNA feature nucleotide display.
+select #366.1 & nucleic
+nucleotides sel atoms
+select clear
+# 5' exon: residues -2,-1,1,2,3,4,5,6,7,8
+color #366.1/I:-2,-1,1,2,3,4,5,6,7,8 #FF8C00
+select #366.1/I:-2,-1,1,2,3,4,5,6,7,8
+nucleotides sel fill
+select clear
+# intron: residues 103-128;130-156;246-268
+# U1 5'SS recog.: residues 1-10
+color #366.1/1:1-10 #B66AAE
+select #366.1/1:1-10
+nucleotides sel fill
+select clear
+# U1 SL1: residues 11-26;34-45
+color #366.1/1:11-26,34-45 #BF72B7
+select #366.1/1:11-26,34-45
+nucleotides sel fill
+select clear
+# U1 SL2: residues 46-95
+color #366.1/1:46-95 #AD62A6
+select #366.1/1:46-95
+nucleotides sel fill
+select clear
+# U1 Sm site: residues 224-230; 241-247; 553-559
+color #366.1/1:224-230|#366.1/1:241-247|#366.1/1:553-559 #C783BF
+select #366.1/1:224-230|#366.1/1:241-247|#366.1/1:553-559
+nucleotides sel fill
+select clear
+# U2/U6 helix I: residues 32-55
+color #366.1/2:32-55 #047857
+select #366.1/2:32-55
+nucleotides sel fill
+select clear
+# U2 BP pairing: residues 33-42
+color #366.1/2:33-42 #0B6E2D
+select #366.1/2:33-42
+nucleotides sel fill
+select clear
+# U2 stem IIa: residues 46-74;78-80
+color #366.1/2:46-74,78-80 #167A38
+select #366.1/2:46-74,78-80
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #366.1/I:-2 residues text "5' exon -2,-1,1,2,3,4,5,6,7,8" color #FF8C00 height 5 bgColor transparent
+label #366.1/I:143 residues text "intron 103-128;130-156;246-268" color #303030 height 5 bgColor transparent
+label #366.1/1:6 residues text "U1 5'SS recog. 1-10" color #B66AAE height 5 bgColor transparent
+label #366.1/1:18 residues text "U1 SL1 11-26;34-45" color #BF72B7 height 5 bgColor transparent
+label #366.1/1:70 residues text "U1 SL2 46-95" color #AD62A6 height 5 bgColor transparent
+label #366.1/1:227 residues text "U1 Sm site 224-230; 241-247; 553-559" color #C783BF height 5 bgColor transparent
+label #366.1/2:44 residues text "U2/U6 helix I 32-55" color #047857 height 5 bgColor transparent
+label #366.1/2:38 residues text "U2 BP pairing 33-42" color #0B6E2D height 5 bgColor transparent
+label #366.1/2:60 residues text "U2 stem IIa 46-74;78-80" color #167A38 height 5 bgColor transparent
 view
 show nucleic

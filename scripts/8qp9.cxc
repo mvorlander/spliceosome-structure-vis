@@ -69,23 +69,82 @@ color #400.1/S #D6937B
 # USP39
 color #400.1/U #B37E6A
 # Named selections for resolved snRNA functional regions.
-# U4 snRNA U4/U6 stem I partner: residues 1-25, review-region, low confidence
-name pre_B_8QP9_U4_U6_stem_I_partner #400.1/4:1-25
-# U4 snRNA U4/U6 stem II partner: residues 45-52;55-70;73-75, review-region, low confidence
-name pre_B_8QP9_U4_U6_stem_II_partner #400.1/4:45-52,55-70,73-75
+# U4 snRNA U4/U6 stem I partner: residues 1-18, reference-alignment, high confidence
+name pre_B_8QP9_U4_U6_stem_I_partner #400.1/4:1-18
+# U4 snRNA U4/U6 stem II partner: residues 56-64, reference-alignment, high confidence
+name pre_B_8QP9_U4_U6_stem_II_partner #400.1/4:56-64
 # U4 snRNA Brr2 loading region: residues 60-70;73-80, review-region, low confidence
 name pre_B_8QP9_U4_Brr2_loading_region #400.1/4:60-70,73-80
-# U5 snRNA loop I 5' exon contact side: residues 35-38, review-region, low confidence
-name pre_B_8QP9_U5_loop_I_5exon_contact #400.1/5:35-38
 # U5 snRNA loop I: residues 38, sequence-motif, medium confidence
 name pre_B_8QP9_U5_loop_I #400.1/5:38
-# U5 snRNA loop I 3' exon contact side: residues 44-50, review-region, low confidence
-name pre_B_8QP9_U5_loop_I_3exon_contact #400.1/5:44-50
-# U6 snRNA U2/U6 helix I partner: residues 35-36;47-60, review-region, low confidence
+# U6 snRNA U2/U6 helix I partner: residues 35-36;47-60, motif-neighborhood, medium confidence
 name pre_B_8QP9_U6_U2_helix_I_partner #400.1/6:35-36,47-60
 # U6 snRNA 5' splice-site upstream contact: residues 47-49, motif-neighborhood, medium confidence
 name pre_B_8QP9_U6_5SS_upstream_contact #400.1/6:47-49
 # U6 snRNA ACAGAGA box: residues 47, sequence-motif, high confidence
 name pre_B_8QP9_U6_ACAGAGA_box #400.1/6:47
+# U6 snRNA U4/U6 stem II partner: residues 52-61, reference-alignment, high confidence
+name pre_B_8QP9_U6_U4_stem_II_partner #400.1/6:52-61
+# U6 snRNA U4/U6 stem I partner: residues 63-74, reference-alignment, high confidence
+name pre_B_8QP9_U6_U4_stem_I_partner #400.1/6:63-74
+# RNA feature nucleotide display.
+select #400.1 & nucleic
+nucleotides sel atoms
+select clear
+# U4/U6 stem I: residues 1-18
+color #400.1/4:1-18 #D8C800
+select #400.1/4:1-18
+nucleotides sel fill
+select clear
+# U4/U6 stem II: residues 56-64
+color #400.1/4:56-64 #E0CF1A
+select #400.1/4:56-64
+nucleotides sel fill
+select clear
+# U4 Brr2 region: residues 60-70;73-80
+color #400.1/4:60-70,73-80 #F0DF2E
+select #400.1/4:60-70,73-80
+nucleotides sel fill
+select clear
+# U5 loop I: residues 38
+color #400.1/5:38 #1B3CD0
+select #400.1/5:38
+nucleotides sel fill
+select clear
+# U2/U6 helix I: residues 35-36;47-60
+color #400.1/6:35-36,47-60 #D0183C
+select #400.1/6:35-36,47-60
+nucleotides sel fill
+select clear
+# U6 5'SS contact: residues 47-49
+color #400.1/6:47-49 #E01842
+select #400.1/6:47-49
+nucleotides sel fill
+select clear
+# U6 ACAGAGA: residues 47
+color #400.1/6:47 #DC143C
+select #400.1/6:47
+nucleotides sel fill
+select clear
+# U4/U6 stem II: residues 52-61
+color #400.1/6:52-61 #E01842
+select #400.1/6:52-61
+nucleotides sel fill
+select clear
+# U4/U6 stem I: residues 63-74
+color #400.1/6:63-74 #D9183E
+select #400.1/6:63-74
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #400.1/4:10 residues text "U4/U6 stem I 1-18" color #D8C800 height 5 bgColor transparent
+label #400.1/4:60 residues text "U4/U6 stem II 56-64" color #E0CF1A height 5 bgColor transparent
+label #400.1/4:65 residues text "U4 Brr2 region 60-70;73-80" color #F0DF2E height 5 bgColor transparent
+label #400.1/5:38 residues text "U5 loop I 38" color #1B3CD0 height 5 bgColor transparent
+label #400.1/6:54 residues text "U2/U6 helix I 35-36;47-60" color #D0183C height 5 bgColor transparent
+label #400.1/6:48 residues text "U6 5'SS contact 47-49" color #E01842 height 5 bgColor transparent
+label #400.1/6:47 residues text "U6 ACAGAGA 47" color #DC143C height 5 bgColor transparent
+label #400.1/6:56 residues text "U4/U6 stem II 52-61" color #E01842 height 5 bgColor transparent
+label #400.1/6:68 residues text "U4/U6 stem I 63-74" color #D9183E height 5 bgColor transparent
 view
 show nucleic

@@ -65,11 +65,18 @@ color #396.1/m #B0C4DE
 # U5-Sm SNRPG
 color #396.1/n #B0C4DE
 # Named selections for resolved snRNA functional regions.
-# U5 snRNA loop I 5' exon contact side: residues 35-38, review-region, low confidence
-name U5_tri_snRNP_8Q91_U5_loop_I_5exon_contact #396.1/5:35-38
 # U5 snRNA loop I: residues 38, sequence-motif, medium confidence
 name U5_tri_snRNP_8Q91_U5_loop_I #396.1/5:38
-# U5 snRNA loop I 3' exon contact side: residues 44-50, review-region, low confidence
-name U5_tri_snRNP_8Q91_U5_loop_I_3exon_contact #396.1/5:44-50
+# RNA feature nucleotide display.
+select #396.1 & nucleic
+nucleotides sel atoms
+select clear
+# U5 loop I: residues 38
+color #396.1/5:38 #1B3CD0
+select #396.1/5:38
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #396.1/5:38 residues text "U5 loop I 38" color #1B3CD0 height 5 bgColor transparent
 view
 show nucleic

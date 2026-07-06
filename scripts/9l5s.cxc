@@ -115,27 +115,74 @@ color #426.1/I #FF957B
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA U2/U6 helix I partner: residues 25-37, review-region, low confidence
 name Bstar_9L5S_U2_U6_helix_I_partner #426.1/2:25-37
-# U2 snRNA branchpoint pairing region: residues 32-37, sequence-motif, medium confidence
-name Bstar_9L5S_U2_branchpoint_pairing_region #426.1/2:32-37
-# U5 snRNA loop I 5' exon contact side: residues 35-42, review-region, low confidence
-name Bstar_9L5S_U5_loop_I_5exon_contact #426.1/5:35-42
+# U2 snRNA branchpoint pairing region: residues 31-37, sequence-motif-neighborhood, medium confidence
+name Bstar_9L5S_U2_branchpoint_pairing_region #426.1/2:31-37
 # U5 snRNA loop I: residues 37-41, sequence-motif, medium confidence
 name Bstar_9L5S_U5_loop_I #426.1/5:37-41
-# U5 snRNA loop I 3' exon contact side: residues 43-50, review-region, low confidence
-name Bstar_9L5S_U5_loop_I_3exon_contact #426.1/5:43-50
-# U6 snRNA U4/U6 stem I partner: residues 1-30, review-region, low confidence
-name Bstar_9L5S_U6_U4_stem_I_partner #426.1/6:1-30
+# U6 snRNA U2/U6 helix I partner: residues 28-53, motif-neighborhood, medium confidence
+name Bstar_9L5S_U6_U2_helix_I_partner #426.1/6:28-53
 # U6 snRNA 5' splice-site upstream contact: residues 31-42, motif-neighborhood, medium confidence
 name Bstar_9L5S_U6_5SS_upstream_contact #426.1/6:31-42
 # U6 snRNA internal stem-loop: residues 33-60, motif-neighborhood, low confidence
 name Bstar_9L5S_U6_ISL #426.1/6:33-60
 # U6 snRNA ACAGAGA box: residues 34-40, sequence-motif, high confidence
 name Bstar_9L5S_U6_ACAGAGA_box #426.1/6:34-40
-# U6 snRNA U2/U6 helix I partner: residues 35-60, review-region, low confidence
-name Bstar_9L5S_U6_U2_helix_I_partner #426.1/6:35-60
 # U6 snRNA AGC catalytic triad: residues 46-48, sequence-motif, medium confidence
 name Bstar_9L5S_U6_AGC_catalytic_triad #426.1/6:46-48
 # U6 snRNA LSm site: residues 92, terminal-region, low confidence
 name Bstar_9L5S_U6_LSm_site #426.1/6:92
+# RNA feature nucleotide display.
+select #426.1 & nucleic
+nucleotides sel atoms
+select clear
+# U2/U6 helix I: residues 25-37
+color #426.1/2:25-37 #047857
+select #426.1/2:25-37
+nucleotides sel fill
+select clear
+# U2 BP pairing: residues 31-37
+color #426.1/2:31-37 #0B6E2D
+select #426.1/2:31-37
+nucleotides sel fill
+select clear
+# U5 loop I: residues 37-41
+color #426.1/5:37-41 #1B3CD0
+select #426.1/5:37-41
+nucleotides sel fill
+select clear
+# U2/U6 helix I: residues 28-53
+color #426.1/6:28-53 #D0183C
+select #426.1/6:28-53
+nucleotides sel fill
+select clear
+# U6 5'SS contact: residues 31-42
+color #426.1/6:31-42 #E01842
+select #426.1/6:31-42
+nucleotides sel fill
+select clear
+# U6 ISL: residues 33-60
+color #426.1/6:33-60 #D61A3D
+select #426.1/6:33-60
+nucleotides sel fill
+select clear
+# U6 ACAGAGA: residues 34-40
+color #426.1/6:34-40 #DC143C
+select #426.1/6:34-40
+nucleotides sel fill
+select clear
+# U6 AGC triad: residues 46-48
+color #426.1/6:46-48 #C91236
+select #426.1/6:46-48
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #426.1/2:31 residues text "U2/U6 helix I 25-37" color #047857 height 5 bgColor transparent
+label #426.1/2:34 residues text "U2 BP pairing 31-37" color #0B6E2D height 5 bgColor transparent
+label #426.1/5:39 residues text "U5 loop I 37-41" color #1B3CD0 height 5 bgColor transparent
+label #426.1/6:40 residues text "U2/U6 helix I 28-53" color #D0183C height 5 bgColor transparent
+label #426.1/6:36 residues text "U6 5'SS contact 31-42" color #E01842 height 5 bgColor transparent
+label #426.1/6:46 residues text "U6 ISL 33-60" color #D61A3D height 5 bgColor transparent
+label #426.1/6:37 residues text "U6 ACAGAGA 34-40" color #DC143C height 5 bgColor transparent
+label #426.1/6:47 residues text "U6 AGC triad 46-48" color #C91236 height 5 bgColor transparent
 view
 show nucleic

@@ -59,23 +59,82 @@ color #307.1/D #C3BA7A
 # PRPF31
 color #307.1/F #DFD570
 # Named selections for resolved snRNA functional regions.
-# U4 snRNA U4/U6 stem I partner: residues 1-25, review-region, low confidence
-name U5_tri_snRNP_5GAP_U4_U6_stem_I_partner #307.1/V:1-25
-# U4 snRNA U4/U6 stem II partner: residues 45-67, review-region, low confidence
-name U5_tri_snRNP_5GAP_U4_U6_stem_II_partner #307.1/V:45-67
-# U4 snRNA Brr2 loading region: residues 60-67, review-region, low confidence
-name U5_tri_snRNP_5GAP_U4_Brr2_loading_region #307.1/V:60-67
-# U6 snRNA U4/U6 stem I partner: residues 26-30, review-region, low confidence
-name U5_tri_snRNP_5GAP_U6_U4_stem_I_partner #307.1/W:26-30
-# U6 snRNA U2/U6 helix I partner: residues 35-39;44-51;55-60, review-region, low confidence
-name U5_tri_snRNP_5GAP_U6_U2_helix_I_partner #307.1/W:35-39,44-51,55-60
+# U4 snRNA U4/U6 stem I partner: residues 1-18, reference-alignment, high confidence
+name U5_tri_snRNP_5GAP_U4_U6_stem_I_partner #307.1/V:1-18
+# U6 snRNA 5' terminal stem-loop: residues 26-30, reference-alignment, high confidence
+name U5_tri_snRNP_5GAP_U6_5_terminal_stem_loop #307.1/W:26-30
+# U6 snRNA U2/U6 helix I partner: residues 44-51;55-66, motif-neighborhood, medium confidence
+name U5_tri_snRNP_5GAP_U6_U2_helix_I_partner #307.1/W:44-51,55-66
 # U6 snRNA 5' splice-site upstream contact: residues 44-51;55, motif-neighborhood, medium confidence
 name U5_tri_snRNP_5GAP_U6_5SS_upstream_contact #307.1/W:44-51,55
 # U6 snRNA internal stem-loop: residues 46-51;55-73, motif-neighborhood, low confidence
 name U5_tri_snRNP_5GAP_U6_ISL #307.1/W:46-51,55-73
 # U6 snRNA ACAGAGA box: residues 47-51, sequence-motif, high confidence
 name U5_tri_snRNP_5GAP_U6_ACAGAGA_box #307.1/W:47-51
+# U6 snRNA U4/U6 stem II partner: residues 55-68, reference-alignment, high confidence
+name U5_tri_snRNP_5GAP_U6_U4_stem_II_partner #307.1/W:55-68
 # U6 snRNA AGC catalytic triad: residues 59-61, sequence-motif, medium confidence
 name U5_tri_snRNP_5GAP_U6_AGC_catalytic_triad #307.1/W:59-61
+# U6 snRNA U4/U6 stem I partner: residues 70-80, reference-alignment, high confidence
+name U5_tri_snRNP_5GAP_U6_U4_stem_I_partner #307.1/W:70-80
+# RNA feature nucleotide display.
+select #307.1 & nucleic
+nucleotides sel atoms
+select clear
+# U4/U6 stem I: residues 1-18
+color #307.1/V:1-18 #D8C800
+select #307.1/V:1-18
+nucleotides sel fill
+select clear
+# U6 5' terminal SL: residues 26-30
+color #307.1/W:26-30 #DC143C
+select #307.1/W:26-30
+nucleotides sel fill
+select clear
+# U2/U6 helix I: residues 44-51;55-66
+color #307.1/W:44-51,55-66 #D0183C
+select #307.1/W:44-51,55-66
+nucleotides sel fill
+select clear
+# U6 5'SS contact: residues 44-51;55
+color #307.1/W:44-51,55 #E01842
+select #307.1/W:44-51,55
+nucleotides sel fill
+select clear
+# U6 ISL: residues 46-51;55-73
+color #307.1/W:46-51,55-73 #D61A3D
+select #307.1/W:46-51,55-73
+nucleotides sel fill
+select clear
+# U6 ACAGAGA: residues 47-51
+color #307.1/W:47-51 #DC143C
+select #307.1/W:47-51
+nucleotides sel fill
+select clear
+# U4/U6 stem II: residues 55-68
+color #307.1/W:55-68 #E01842
+select #307.1/W:55-68
+nucleotides sel fill
+select clear
+# U6 AGC triad: residues 59-61
+color #307.1/W:59-61 #C91236
+select #307.1/W:59-61
+nucleotides sel fill
+select clear
+# U4/U6 stem I: residues 70-80
+color #307.1/W:70-80 #D9183E
+select #307.1/W:70-80
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #307.1/V:10 residues text "U4/U6 stem I 1-18" color #D8C800 height 5 bgColor transparent
+label #307.1/W:28 residues text "U6 5' terminal SL 26-30" color #DC143C height 5 bgColor transparent
+label #307.1/W:60 residues text "U2/U6 helix I 44-51;55-66" color #D0183C height 5 bgColor transparent
+label #307.1/W:48 residues text "U6 5'SS contact 44-51;55" color #E01842 height 5 bgColor transparent
+label #307.1/W:64 residues text "U6 ISL 46-51;55-73" color #D61A3D height 5 bgColor transparent
+label #307.1/W:49 residues text "U6 ACAGAGA 47-51" color #DC143C height 5 bgColor transparent
+label #307.1/W:62 residues text "U4/U6 stem II 55-68" color #E01842 height 5 bgColor transparent
+label #307.1/W:60 residues text "U6 AGC triad 59-61" color #C91236 height 5 bgColor transparent
+label #307.1/W:75 residues text "U4/U6 stem I 70-80" color #D9183E height 5 bgColor transparent
 view
 show nucleic

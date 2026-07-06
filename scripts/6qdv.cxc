@@ -145,44 +145,40 @@ color #346.1/B #AFEEEE
 # EFTUD2
 color #346.1/C #6495ED
 # Named selections for resolved substrate RNA features.
-# 5' exon: residues -12--1, auth-residue-numbering, high confidence
+# 5' exon: residues -12--1, auth-residue-numbering, high confidence, validation not_applicable
 name P_6QDV_5exon #346.1/E:-12--1
-# ligated exons: residues -12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2, component-name, high confidence
+# ligated exons: residues -12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2, component-name, high confidence, validation not_applicable
 name P_6QDV_ligated_exons #346.1/E:-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2
-# substrate RNA: residues -12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2; 1-20;83-101;111-113, component, medium confidence
+# substrate RNA: residues -12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2; 1-20;83-101;111-113, component, medium confidence, validation not_applicable
 name P_6QDV_substrate #346.1/E:-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2|#346.1/I:1-20,83-101,111-113
-# 3' exon: residues 1-2, auth-residue-numbering, high confidence
+# 3' exon: residues 1-2, auth-residue-numbering, high confidence, validation not_applicable
 name P_6QDV_3exon #346.1/E:1-2
-# intron: residues 1-20;83-101;111-113, component-name, high confidence
+# intron: residues 1-20;83-101;111-113, component-name, high confidence, validation not_applicable
 name P_6QDV_intron #346.1/I:1-20,83-101,111-113
-# intron lariat: residues 1-20;83-101;111-113, component-name, high confidence
+# intron lariat: residues 1-20;83-101;111-113, component-name, high confidence, validation not_applicable
 name P_6QDV_intron_lariat #346.1/I:1-20,83-101,111-113
-# branch helix substrate strand: residues 92-98, sequence-motif, medium confidence
-name P_6QDV_branch_helix #346.1/I:92-98
-# branch point region: residues 92-98, sequence-motif, medium confidence
-name P_6QDV_branch_region #346.1/I:92-98
-# branch point adenosine: residues 97, sequence-motif, medium confidence
+# branch helix substrate strand: residues 93-99, network-scored-motif, high confidence, validation validated
+name P_6QDV_branch_helix #346.1/I:93-99
+# branch point region: residues 93-99, network-scored-motif, high confidence, validation validated
+name P_6QDV_branch_region #346.1/I:93-99
+# branch point adenosine: residues 97, network-scored-motif, high confidence, validation validated
 name P_6QDV_branch_A #346.1/I:97
-# 3' splice site: residues 111-113, sequence-motif, medium confidence
+# 3' splice site: residues 111-113, sequence-motif, medium confidence, validation uncertain uncertain validation
 name P_6QDV_3SS #346.1/I:111-113
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA U2/U6 helix I partner: residues 25-55, review-region, low confidence
 name P_6QDV_U2_U6_helix_I_partner #346.1/2:25-55
-# U2 snRNA branchpoint pairing region: residues 33-38, sequence-motif, medium confidence
-name P_6QDV_U2_branchpoint_pairing_region #346.1/2:33-38
+# U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence
+name P_6QDV_U2_branchpoint_pairing_region #346.1/2:32-41
 # U2 snRNA stem IIa: residues 46-60, review-region, low confidence
 name P_6QDV_U2_stem_IIa #346.1/2:46-60
 # U2 snRNA Sm site: residues 98-104, sequence-motif, medium confidence
 name P_6QDV_U2_Sm_site #346.1/2:98-104
-# U5 snRNA loop I 5' exon contact side: residues 35-42, review-region, low confidence
-name P_6QDV_U5_loop_I_5exon_contact #346.1/5:35-42
 # U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence
 name P_6QDV_U5_loop_I #346.1/5:38-42
-# U5 snRNA loop I 3' exon contact side: residues 43-50, review-region, low confidence
-name P_6QDV_U5_loop_I_3exon_contact #346.1/5:43-50
-# U6 snRNA U4/U6 stem I partner: residues 1-30, review-region, low confidence
-name P_6QDV_U6_U4_stem_I_partner #346.1/6:1-30
-# U6 snRNA U2/U6 helix I partner: residues 35-60, review-region, low confidence
+# U6 snRNA 5' terminal stem-loop: residues 1-30, reference-alignment, high confidence
+name P_6QDV_U6_5_terminal_stem_loop #346.1/6:1-30
+# U6 snRNA U2/U6 helix I partner: residues 35-60, motif-neighborhood, medium confidence
 name P_6QDV_U6_U2_helix_I_partner #346.1/6:35-60
 # U6 snRNA 5' splice-site upstream contact: residues 38-49, motif-neighborhood, medium confidence
 name P_6QDV_U6_5SS_upstream_contact #346.1/6:38-49
@@ -194,5 +190,100 @@ name P_6QDV_U6_ISL #346.1/6:79-97
 name P_6QDV_U6_AGC_catalytic_triad #346.1/6:92-94
 # U6 snRNA LSm site: residues 97, terminal-region, low confidence
 name P_6QDV_U6_LSm_site #346.1/6:97
+# RNA feature nucleotide display.
+select #346.1 & nucleic
+nucleotides sel atoms
+select clear
+# 5' exon: residues -12--1
+color #346.1/E:-12--1 #FF8C00
+select #346.1/E:-12--1
+nucleotides sel fill
+select clear
+# ligated exons: residues -12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2
+color #346.1/E:-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2 #FF8C00
+select #346.1/E:-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2
+nucleotides sel fill
+select clear
+# 3' exon: residues 1-2
+color #346.1/E:1-2 #D97706
+select #346.1/E:1-2
+nucleotides sel fill
+select clear
+# intron: residues 1-20;83-101;111-113
+# lariat: residues 1-20;83-101;111-113
+# branch helix: residues 93-99
+# BP region: residues 93-99
+# BP-A: residues 97
+# 3'SS: residues 111-113
+# U2/U6 helix I: residues 25-55
+color #346.1/2:25-55 #047857
+select #346.1/2:25-55
+nucleotides sel fill
+select clear
+# U2 BP pairing: residues 32-41
+color #346.1/2:32-41 #0B6E2D
+select #346.1/2:32-41
+nucleotides sel fill
+select clear
+# U2 stem IIa: residues 46-60
+color #346.1/2:46-60 #167A38
+select #346.1/2:46-60
+nucleotides sel fill
+select clear
+# U5 loop I: residues 38-42
+color #346.1/5:38-42 #1B3CD0
+select #346.1/5:38-42
+nucleotides sel fill
+select clear
+# U6 5' terminal SL: residues 1-30
+color #346.1/6:1-30 #DC143C
+select #346.1/6:1-30
+nucleotides sel fill
+select clear
+# U2/U6 helix I: residues 35-60
+color #346.1/6:35-60 #D0183C
+select #346.1/6:35-60
+nucleotides sel fill
+select clear
+# U6 5'SS contact: residues 38-49
+color #346.1/6:38-49 #E01842
+select #346.1/6:38-49
+nucleotides sel fill
+select clear
+# U6 ACAGAGA: residues 41-47
+color #346.1/6:41-47 #DC143C
+select #346.1/6:41-47
+nucleotides sel fill
+select clear
+# U6 ISL: residues 79-97
+color #346.1/6:79-97 #D61A3D
+select #346.1/6:79-97
+nucleotides sel fill
+select clear
+# U6 AGC triad: residues 92-94
+color #346.1/6:92-94 #C91236
+select #346.1/6:92-94
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #346.1/E:-6 residues text "5' exon -12--1" color #FF8C00 height 5 bgColor transparent
+label #346.1/E:-12 residues text "ligated exons -12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2" color #FF8C00 height 5 bgColor transparent
+label #346.1/E:2 residues text "3' exon 1-2" color #D97706 height 5 bgColor transparent
+label #346.1/I:10 residues text "intron 1-20;83-101;111-113" color #303030 height 5 bgColor transparent
+label #346.1/I:10 residues text "lariat 1-20;83-101;111-113" color #303030 height 5 bgColor transparent
+label #346.1/I:96 residues text "branch helix 93-99" color #303030 height 5 bgColor transparent
+label #346.1/I:96 residues text "BP region 93-99" color #303030 height 5 bgColor transparent
+label #346.1/I:97 residues text "BP-A 97" color #303030 height 5 bgColor transparent
+label #346.1/I:112 residues text "? 3'SS 111-113" color #303030 height 5 bgColor transparent
+label #346.1/2:40 residues text "U2/U6 helix I 25-55" color #047857 height 5 bgColor transparent
+label #346.1/2:36 residues text "U2 BP pairing 32-41" color #0B6E2D height 5 bgColor transparent
+label #346.1/2:53 residues text "U2 stem IIa 46-60" color #167A38 height 5 bgColor transparent
+label #346.1/5:40 residues text "U5 loop I 38-42" color #1B3CD0 height 5 bgColor transparent
+label #346.1/6:16 residues text "U6 5' terminal SL 1-30" color #DC143C height 5 bgColor transparent
+label #346.1/6:48 residues text "U2/U6 helix I 35-60" color #D0183C height 5 bgColor transparent
+label #346.1/6:44 residues text "U6 5'SS contact 38-49" color #E01842 height 5 bgColor transparent
+label #346.1/6:44 residues text "U6 ACAGAGA 41-47" color #DC143C height 5 bgColor transparent
+label #346.1/6:88 residues text "U6 ISL 79-97" color #D61A3D height 5 bgColor transparent
+label #346.1/6:93 residues text "U6 AGC triad 92-94" color #C91236 height 5 bgColor transparent
 view
 show nucleic

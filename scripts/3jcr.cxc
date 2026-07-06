@@ -109,25 +109,78 @@ color #303.1/P #B0C4DE
 # U4-Sm SNRPD1
 color #303.1/p #F7F0A6
 # Named selections for resolved snRNA functional regions.
-# U4 snRNA U4/U6 stem I partner: residues 1-16;21-25, review-region, low confidence
-name U5_tri_snRNP_3JCR_U4_U6_stem_I_partner #303.1/M:1-16,21-25
-# U4 snRNA U4/U6 stem II partner: residues 45-50;51,52,56,57,58,59,60,61,62, review-region, low confidence
-name U5_tri_snRNP_3JCR_U4_U6_stem_II_partner #303.1/M:45-50,51,52,56,57,58,59,60,61,62
+# U4 snRNA U4/U6 stem I partner: residues 1-16, reference-alignment, high confidence
+name U5_tri_snRNP_3JCR_U4_U6_stem_I_partner #303.1/M:1-16
+# U4 snRNA U4/U6 stem II partner: residues 56-62, reference-alignment, high confidence
+name U5_tri_snRNP_3JCR_U4_U6_stem_II_partner #303.1/M:56-62
 # U4 snRNA Brr2 loading region: residues 60-62;86-88;89-95, review-region, low confidence
 name U5_tri_snRNP_3JCR_U4_Brr2_loading_region #303.1/M:60-62,86-88,89-95
 # U4 snRNA Sm site: residues 119-125, sequence-motif, medium confidence
 name U5_tri_snRNP_3JCR_U4_Sm_site #303.1/M:119-125
-# U5 snRNA loop I 5' exon contact side: residues 35-42, review-region, low confidence
-name U5_tri_snRNP_3JCR_U5_loop_I_5exon_contact #303.1/H:35-42
 # U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence
 name U5_tri_snRNP_3JCR_U5_loop_I #303.1/H:38-42
-# U5 snRNA loop I 3' exon contact side: residues 43-50, review-region, low confidence
-name U5_tri_snRNP_3JCR_U5_loop_I_3exon_contact #303.1/H:43-50
-# U6 snRNA U2/U6 helix I partner: residues 50-56;59-60, review-region, low confidence
+# U6 snRNA U2/U6 helix I partner: residues 50-56;59-60, motif-neighborhood, medium confidence
 name U5_tri_snRNP_3JCR_U6_U2_helix_I_partner #303.1/N:50-56,59-60
+# U6 snRNA U4/U6 stem II partner: residues 52-56;59-61, reference-alignment, high confidence
+name U5_tri_snRNP_3JCR_U6_U4_stem_II_partner #303.1/N:52-56,59-61
+# U6 snRNA U4/U6 stem I partner: residues 63-74, reference-alignment, high confidence
+name U5_tri_snRNP_3JCR_U6_U4_stem_I_partner #303.1/N:63-74
 # U6 snRNA internal stem-loop: residues 79-84;103-106, motif-neighborhood, low confidence
 name U5_tri_snRNP_3JCR_U6_ISL #303.1/N:79-84,103-106
 # U6 snRNA LSm site: residues 103-106, terminal-region, low confidence
 name U5_tri_snRNP_3JCR_U6_LSm_site #303.1/N:103-106
+# RNA feature nucleotide display.
+select #303.1 & nucleic
+nucleotides sel atoms
+select clear
+# U4/U6 stem I: residues 1-16
+color #303.1/M:1-16 #D8C800
+select #303.1/M:1-16
+nucleotides sel fill
+select clear
+# U4/U6 stem II: residues 56-62
+color #303.1/M:56-62 #E0CF1A
+select #303.1/M:56-62
+nucleotides sel fill
+select clear
+# U4 Brr2 region: residues 60-62;86-88;89-95
+color #303.1/M:60-62,86-88,89-95 #F0DF2E
+select #303.1/M:60-62,86-88,89-95
+nucleotides sel fill
+select clear
+# U5 loop I: residues 38-42
+color #303.1/H:38-42 #1B3CD0
+select #303.1/H:38-42
+nucleotides sel fill
+select clear
+# U2/U6 helix I: residues 50-56;59-60
+color #303.1/N:50-56,59-60 #D0183C
+select #303.1/N:50-56,59-60
+nucleotides sel fill
+select clear
+# U4/U6 stem II: residues 52-56;59-61
+color #303.1/N:52-56,59-61 #E01842
+select #303.1/N:52-56,59-61
+nucleotides sel fill
+select clear
+# U4/U6 stem I: residues 63-74
+color #303.1/N:63-74 #D9183E
+select #303.1/N:63-74
+nucleotides sel fill
+select clear
+# U6 ISL: residues 79-84;103-106
+color #303.1/N:79-84,103-106 #D61A3D
+select #303.1/N:79-84,103-106
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #303.1/M:8 residues text "U4/U6 stem I 1-16" color #D8C800 height 5 bgColor transparent
+label #303.1/M:59 residues text "U4/U6 stem II 56-62" color #E0CF1A height 5 bgColor transparent
+label #303.1/M:92 residues text "U4 Brr2 region 60-62;86-88;89-95" color #F0DF2E height 5 bgColor transparent
+label #303.1/H:40 residues text "U5 loop I 38-42" color #1B3CD0 height 5 bgColor transparent
+label #303.1/N:53 residues text "U2/U6 helix I 50-56;59-60" color #D0183C height 5 bgColor transparent
+label #303.1/N:54 residues text "U4/U6 stem II 52-56;59-61" color #E01842 height 5 bgColor transparent
+label #303.1/N:68 residues text "U4/U6 stem I 63-74" color #D9183E height 5 bgColor transparent
+label #303.1/N:82 residues text "U6 ISL 79-84;103-106" color #D61A3D height 5 bgColor transparent
 view
 show nucleic

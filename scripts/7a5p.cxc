@@ -131,9 +131,9 @@ color #353.1/J #FFFFAB
 # BCAS2
 color #353.1/K #FFDAB9
 # Named selections for resolved substrate RNA features.
-# substrate RNA: residues 80-94;127-140, component, medium confidence
+# substrate RNA: residues 80-94;127-140, component, medium confidence, validation not_applicable
 name C_7A5P_substrate #353.1/Y:80-94,127-140
-# intron: residues 80-94;127-140, splice-site-inference, medium confidence
+# intron: residues 80-94;127-140, splice-site-inference, medium confidence, validation not_applicable
 name C_7A5P_intron #353.1/Y:80-94,127-140
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA Sm site: residues 99-105, sequence-motif, medium confidence
@@ -142,5 +142,24 @@ name C_7A5P_U2_Sm_site #353.1/2:99-105
 name C_7A5P_U6_ISL #353.1/6:80-95
 # U6 snRNA AGC catalytic triad: residues 92-94, sequence-motif, medium confidence
 name C_7A5P_U6_AGC_catalytic_triad #353.1/6:92-94
+# RNA feature nucleotide display.
+select #353.1 & nucleic
+nucleotides sel atoms
+select clear
+# intron: residues 80-94;127-140
+# U6 ISL: residues 80-95
+color #353.1/6:80-95 #D61A3D
+select #353.1/6:80-95
+nucleotides sel fill
+select clear
+# U6 AGC triad: residues 92-94
+color #353.1/6:92-94 #C91236
+select #353.1/6:92-94
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #353.1/Y:87 residues text "intron 80-94;127-140" color #303030 height 5 bgColor transparent
+label #353.1/6:88 residues text "U6 ISL 80-95" color #D61A3D height 5 bgColor transparent
+label #353.1/6:93 residues text "U6 AGC triad 92-94" color #C91236 height 5 bgColor transparent
 view
 show nucleic

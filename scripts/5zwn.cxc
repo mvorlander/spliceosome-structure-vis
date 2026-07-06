@@ -74,7 +74,7 @@ color #327.1/V #C7A6BE
 # SNU56
 color #327.1/W #D65B96
 # Named selections for resolved substrate RNA features.
-# substrate RNA: residues -9-12, component, medium confidence
+# substrate RNA: residues -9-12, component, medium confidence, validation not_applicable
 name pre_B_5ZWN_substrate #327.1/G:-9-12
 # Named selections for resolved snRNA functional regions.
 # U1 snRNA 5' splice-site recognition region: residues 1-10, review-region, medium confidence
@@ -85,5 +85,34 @@ name pre_B_5ZWN_U1_SL1 #327.1/P:11-25,33-45
 name pre_B_5ZWN_U1_SL2 #327.1/P:46-95
 # U1 snRNA Sm site: residues 228-230; 241-247; 553-559, sequence-motif, medium confidence
 name pre_B_5ZWN_U1_Sm_site #327.1/P:228-230|#327.1/P:241-247|#327.1/P:553-559
+# RNA feature nucleotide display.
+select #327.1 & nucleic
+nucleotides sel atoms
+select clear
+# U1 5'SS recog.: residues 1-10
+color #327.1/P:1-10 #B66AAE
+select #327.1/P:1-10
+nucleotides sel fill
+select clear
+# U1 SL1: residues 11-25;33-45
+color #327.1/P:11-25,33-45 #BF72B7
+select #327.1/P:11-25,33-45
+nucleotides sel fill
+select clear
+# U1 SL2: residues 46-95
+color #327.1/P:46-95 #AD62A6
+select #327.1/P:46-95
+nucleotides sel fill
+select clear
+# U1 Sm site: residues 228-230; 241-247; 553-559
+color #327.1/P:228-230|#327.1/P:241-247|#327.1/P:553-559 #C783BF
+select #327.1/P:228-230|#327.1/P:241-247|#327.1/P:553-559
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #327.1/P:6 residues text "U1 5'SS recog. 1-10" color #B66AAE height 5 bgColor transparent
+label #327.1/P:18 residues text "U1 SL1 11-25;33-45" color #BF72B7 height 5 bgColor transparent
+label #327.1/P:70 residues text "U1 SL2 46-95" color #AD62A6 height 5 bgColor transparent
+label #327.1/P:244 residues text "U1 Sm site 228-230; 241-247; 553-559" color #C783BF height 5 bgColor transparent
 view
 show nucleic

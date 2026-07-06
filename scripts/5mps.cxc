@@ -91,26 +91,65 @@ color #313.1/H #2C54DD
 # PLRG1
 color #313.1/J #F4A460
 # Named selections for resolved substrate RNA features.
-# substrate RNA: residues -16--1; 1-10;16-104; 1-16;56-73, component, medium confidence
+# substrate RNA: residues -16--1; 1-10;16-104; 1-16;56-73, component, medium confidence, validation not_applicable
 name Cstar_5MPS_substrate #313.1/6:1-10,16-104|#313.1/E:-16--1|#313.1/I:1-16,56-73
-# 5' splice site: residues -16--12, sequence-motif, medium confidence
+# 5' splice site: residues -16--12, sequence-motif, medium confidence, validation uncertain uncertain validation
 name Cstar_5MPS_5SS #313.1/E:-16--12
-# intron from 5' splice site: residues -16--1, five-ss-inference, low confidence
+# intron from 5' splice site: residues -16--1, five-ss-inference, low confidence, validation not_applicable
 name Cstar_5MPS_intron #313.1/E:-16--1
-# polypyrimidine tract: residues 57-61, sequence-motif, medium confidence
-name Cstar_5MPS_PPT #313.1/I:57-61
+# branch helix substrate strand: residues 62-72, network-scored-motif, high confidence, validation validated
+name Cstar_5MPS_branch_helix #313.1/I:62-72
+# branch point region: residues 62-72, network-scored-motif, high confidence, validation validated
+name Cstar_5MPS_branch_region #313.1/I:62-72
+# branch point adenosine: residues 70, network-scored-motif, high confidence, validation validated
+name Cstar_5MPS_branch_A #313.1/I:70
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA U2/U6 helix I partner: residues 25-49, review-region, low confidence
 name Cstar_5MPS_U2_U6_helix_I_partner #313.1/2:25-49
-# U2 snRNA branchpoint pairing region: residues 34-39, sequence-motif, medium confidence
-name Cstar_5MPS_U2_branchpoint_pairing_region #313.1/2:34-39
+# U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence
+name Cstar_5MPS_U2_branchpoint_pairing_region #313.1/2:33-42
 # U2 snRNA stem IIa: residues 46-49, review-region, low confidence
 name Cstar_5MPS_U2_stem_IIa #313.1/2:46-49
-# U5 snRNA loop I 5' exon contact side: residues 35-42, review-region, low confidence
-name Cstar_5MPS_U5_loop_I_5exon_contact #313.1/5:35-42
-# U5 snRNA loop I 3' exon contact side: residues 43-50, review-region, low confidence
-name Cstar_5MPS_U5_loop_I_3exon_contact #313.1/5:43-50
 # U5 snRNA loop I: residues 53, sequence-motif, medium confidence
 name Cstar_5MPS_U5_loop_I #313.1/5:53
+# RNA feature nucleotide display.
+select #313.1 & nucleic
+nucleotides sel atoms
+select clear
+# 5'SS: residues -16--12
+# intron: residues -16--1
+# branch helix: residues 62-72
+# BP region: residues 62-72
+# BP-A: residues 70
+# U2/U6 helix I: residues 25-49
+color #313.1/2:25-49 #047857
+select #313.1/2:25-49
+nucleotides sel fill
+select clear
+# U2 BP pairing: residues 33-42
+color #313.1/2:33-42 #0B6E2D
+select #313.1/2:33-42
+nucleotides sel fill
+select clear
+# U2 stem IIa: residues 46-49
+color #313.1/2:46-49 #167A38
+select #313.1/2:46-49
+nucleotides sel fill
+select clear
+# U5 loop I: residues 53
+color #313.1/5:53 #1B3CD0
+select #313.1/5:53
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+label #313.1/E:-14 residues text "? 5'SS -16--12" color #303030 height 5 bgColor transparent
+label #313.1/E:-8 residues text "intron -16--1" color #303030 height 5 bgColor transparent
+label #313.1/I:67 residues text "branch helix 62-72" color #303030 height 5 bgColor transparent
+label #313.1/I:67 residues text "BP region 62-72" color #303030 height 5 bgColor transparent
+label #313.1/I:70 residues text "BP-A 70" color #303030 height 5 bgColor transparent
+label #313.1/2:37 residues text "U2/U6 helix I 25-49" color #047857 height 5 bgColor transparent
+label #313.1/2:38 residues text "U2 BP pairing 33-42" color #0B6E2D height 5 bgColor transparent
+label #313.1/2:48 residues text "U2 stem IIa 46-49" color #167A38 height 5 bgColor transparent
+label #313.1/5:53 residues text "U5 loop I 53" color #1B3CD0 height 5 bgColor transparent
 view
 show nucleic
