@@ -9,7 +9,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "RNA/substrate",
-      "atomspec": "#421.1/G,H"
+      "atomspec": "#421.1/G,H",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#303030"
     },
     {
       "name": "pdb_9K1Q_U2_SF3B",
@@ -17,7 +23,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U2/SF3B",
-      "atomspec": "#421.1/A,B,C,D"
+      "atomspec": "#421.1/A,B,C,D",
+      "family": "Protein/RNP groups",
+      "group": "U2/SF3B groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#6DBE70"
     },
     {
       "name": "U2_snRNP_9K1Q_substrate",
@@ -25,7 +37,13 @@
       "category": "substrate RNA feature",
       "section": "Named selections for resolved substrate RNA features.",
       "comment": "substrate RNA: residues 26-34; 31-52, component, medium confidence, validation not_applicable",
-      "atomspec": "#421.1/G:31-52|#421.1/H:26-34"
+      "atomspec": "#421.1/G:31-52|#421.1/H:26-34",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "pre_mRNA_features",
+      "kind": "rna_feature",
+      "feature": "substrate",
+      "color": "#303030"
     }
   ]
 }

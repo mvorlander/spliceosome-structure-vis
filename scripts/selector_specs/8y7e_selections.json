@@ -9,7 +9,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "RNA/substrate",
-      "atomspec": "#417.1/A"
+      "atomspec": "#417.1/A",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#303030"
     },
     {
       "name": "pdb_8Y7E_Sm_ring",
@@ -17,7 +23,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "Sm ring",
-      "atomspec": "#417.1/h,i,j,k,l,m,n"
+      "atomspec": "#417.1/h,i,j,k,l,m,n",
+      "family": "Protein/RNP groups",
+      "group": "other protein/RNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#9CA3AF"
     },
     {
       "name": "pdb_8Y7E_U11_U12_snRNP",
@@ -25,7 +37,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U11/U12 snRNP",
-      "atomspec": "#417.1/H"
+      "atomspec": "#417.1/H",
+      "family": "Protein/RNP groups",
+      "group": "U1 snRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#B66AAE"
     },
     {
       "name": "pdb_8Y7E_U2_SF3B",
@@ -33,7 +51,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U2/SF3B",
-      "atomspec": "#417.1/1,2,3,4,5,6,7"
+      "atomspec": "#417.1/1,2,3,4,5,6,7",
+      "family": "Protein/RNP groups",
+      "group": "U2/SF3B groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#6DBE70"
     },
     {
       "name": "pdb_8Y7E_other",
@@ -41,7 +65,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "other",
-      "atomspec": "#417.1/v"
+      "atomspec": "#417.1/v",
+      "family": "Protein/RNP groups",
+      "group": "other protein/RNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#9CA3AF"
     },
     {
       "name": "pre_B_8Y7E_substrate",
@@ -49,7 +79,13 @@
       "category": "substrate RNA feature",
       "section": "Named selections for resolved substrate RNA features.",
       "comment": "substrate RNA: residues 193-222, component, medium confidence, validation not_applicable",
-      "atomspec": "#417.1/A:193-222"
+      "atomspec": "#417.1/A:193-222",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "pre_mRNA_features",
+      "kind": "rna_feature",
+      "feature": "substrate",
+      "color": "#303030"
     },
     {
       "name": "pre_B_8Y7E_branch_region",
@@ -57,7 +93,13 @@
       "category": "substrate RNA feature",
       "section": "Named selections for resolved substrate RNA features.",
       "comment": "branch point region: residues 195-206, network-scored-motif, high confidence, validation validated",
-      "atomspec": "#417.1/A:195-206"
+      "atomspec": "#417.1/A:195-206",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "pre_mRNA_features",
+      "kind": "rna_feature",
+      "feature": "branch_point_region",
+      "color": "#303030"
     },
     {
       "name": "pre_B_8Y7E_branch_A",
@@ -65,7 +107,13 @@
       "category": "substrate RNA feature",
       "section": "Named selections for resolved substrate RNA features.",
       "comment": "branch point adenosine: residues 203, network-scored-motif, high confidence, validation validated",
-      "atomspec": "#417.1/A:203"
+      "atomspec": "#417.1/A:203",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "pre_mRNA_features",
+      "kind": "rna_feature",
+      "feature": "branch_point_adenosine",
+      "color": "#303030"
     },
     {
       "name": "pre_B_8Y7E_U12_branchpoint_pairing_region",
@@ -73,7 +121,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U12 snRNA branchpoint pairing region: residues 16-26, reference-alignment, high confidence",
-      "atomspec": "#417.1/H:16-26"
+      "atomspec": "#417.1/H:16-26",
+      "family": "RNA",
+      "group": "snRNA-pre-mRNA regions",
+      "group_key": "snRNA_pre_mRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U12_branchpoint_pairing_region",
+      "color": "#0B6E2D"
     },
     {
       "name": "pre_B_8Y7E_U12_Sm_site",
@@ -81,7 +135,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U12 snRNA Sm site: residues 75-81, sequence-motif, medium confidence",
-      "atomspec": "#417.1/H:75-81"
+      "atomspec": "#417.1/H:75-81",
+      "family": "RNA",
+      "group": "other snRNA regions",
+      "group_key": "other_snRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U12_Sm_site",
+      "color": "#2F8B4D"
     }
   ]
 }

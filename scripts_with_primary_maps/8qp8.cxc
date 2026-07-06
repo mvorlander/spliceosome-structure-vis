@@ -70,35 +70,50 @@ color #399.1/U #B37E6A
 color #399.1/A #BFC3E8
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA-binding
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_8QP8_RNA_binding #399.1/R
 # U2/SF3B
+# selector_meta {"color":"#6DBE70","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_8QP8_U2_SF3B #399.1/7
 # U4 snRNP
+# selector_meta {"color":"#D8C800","family":"Protein/RNP groups","group":"U4 snRNP groups","kind":"subcomplex"}
 name pdb_8QP8_U4_snRNP #399.1/4
 # U4/U6 snRNP
+# selector_meta {"color":"#C3BA7A","family":"Protein/RNP groups","group":"U4/U6 groups","kind":"subcomplex"}
 name pdb_8QP8_U4_U6_snRNP #399.1/D,G,J,L,U
 # U5 snRNP
+# selector_meta {"color":"#0000CD","family":"Protein/RNP groups","group":"U5 snRNP groups","kind":"subcomplex"}
 name pdb_8QP8_U5_snRNP #399.1/5,A,C,N,S,X
 # U6 snRNP
+# selector_meta {"color":"#DC143C","family":"Protein/RNP groups","group":"U6 snRNP groups","kind":"subcomplex"}
 name pdb_8QP8_U6_snRNP #399.1/6
 # Named selections for resolved snRNA functional regions.
 # U4 snRNA U4/U6 stem I partner: residues 1-18, reference-alignment, high confidence
+# selector_meta {"color":"#D8C800","family":"RNA","feature":"U4_U6_stem_I_partner","group":"snRNA-snRNA interacting regions","group_key":"snRNA_snRNA_regions","kind":"rna_feature"}
 name pre_B_8QP8_U4_U6_stem_I_partner #399.1/4:1-18
 # U4 snRNA U4/U6 stem II partner: residues 56-64, reference-alignment, high confidence
+# selector_meta {"color":"#E0CF1A","family":"RNA","feature":"U4_U6_stem_II_partner","group":"snRNA-snRNA interacting regions","group_key":"snRNA_snRNA_regions","kind":"rna_feature"}
 name pre_B_8QP8_U4_U6_stem_II_partner #399.1/4:56-64
 # U4 snRNA Brr2 loading region: residues 60-70;73-80, review-region, low confidence
+# selector_meta {"color":"#F0DF2E","family":"RNA","feature":"U4_Brr2_loading_region","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
 name pre_B_8QP8_U4_Brr2_loading_region #399.1/4:60-70,73-80
 # U5 snRNA loop I: residues 38, sequence-motif, medium confidence
+# selector_meta {"color":"#1B3CD0","family":"RNA","feature":"U5_loop_I","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name pre_B_8QP8_U5_loop_I #399.1/5:38
 # U6 snRNA U2/U6 helix I partner: residues 35-36;47-60, motif-neighborhood, medium confidence
+# selector_meta {"color":"#D0183C","family":"RNA","feature":"U6_U2_helix_I_partner","group":"snRNA-snRNA interacting regions","group_key":"snRNA_snRNA_regions","kind":"rna_feature"}
 name pre_B_8QP8_U6_U2_helix_I_partner #399.1/6:35-36,47-60
 # U6 snRNA 5' splice-site upstream contact: residues 47-49, motif-neighborhood, medium confidence
+# selector_meta {"color":"#E01842","family":"RNA","feature":"U6_5SS_upstream_contact","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
 name pre_B_8QP8_U6_5SS_upstream_contact #399.1/6:47-49
 # U6 snRNA ACAGAGA box: residues 47, sequence-motif, high confidence
+# selector_meta {"color":"#DC143C","family":"RNA","feature":"U6_ACAGAGA_box","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
 name pre_B_8QP8_U6_ACAGAGA_box #399.1/6:47
 # U6 snRNA U4/U6 stem II partner: residues 52-61, reference-alignment, high confidence
+# selector_meta {"color":"#E01842","family":"RNA","feature":"U6_U4_stem_II_partner","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
 name pre_B_8QP8_U6_U4_stem_II_partner #399.1/6:52-61
 # U6 snRNA U4/U6 stem I partner: residues 63-74, reference-alignment, high confidence
+# selector_meta {"color":"#D9183E","family":"RNA","feature":"U6_U4_stem_I_partner","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
 name pre_B_8QP8_U6_U4_stem_I_partner #399.1/6:63-74
 # RNA feature nucleotide display.
 select #399.1 & nucleic

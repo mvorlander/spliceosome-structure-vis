@@ -60,24 +60,33 @@ color #370.1/F #ADCEA0
 color #370.1/G #375A40
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA/substrate
+# selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_7Q4O_RNA_substrate #370.1/h
 # U2 snRNP
+# selector_meta {"color":"#2F8B4D","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_7Q4O_U2_snRNP #370.1/2
 # U2/SF3B
+# selector_meta {"color":"#6DBE70","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_7Q4O_U2_SF3B #370.1/1,9,A,B,C,E,F,G
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 1-13, component, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name U2_snRNP_7Q4O_substrate #370.1/h:1-13
 # branch point region: residues 2-12, network-scored-motif, high confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"branch_point_region","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name U2_snRNP_7Q4O_branch_region #370.1/h:2-12
 # branch point adenosine: residues 10, network-scored-motif, high confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"branch_point_adenosine","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name U2_snRNP_7Q4O_branch_A #370.1/h:10
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA U2/U6 helix I partner: residues 29-30, review-region, high confidence
+# selector_meta {"color":"#047857","family":"RNA","feature":"U2_U6_helix_I_partner","group":"snRNA-snRNA interacting regions","group_key":"snRNA_snRNA_regions","kind":"rna_feature"}
 name U2_snRNP_7Q4O_U2_U6_helix_I_partner #370.1/2:29-30
 # U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence
+# selector_meta {"color":"#0B6E2D","family":"RNA","feature":"U2_branchpoint_pairing_region","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name U2_snRNP_7Q4O_U2_branchpoint_pairing_region #370.1/2:32-41
 # U2 snRNA stem IIa: residues 46-63, review-region, low confidence
+# selector_meta {"color":"#167A38","family":"RNA","feature":"U2_stem_IIa","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
 name U2_snRNP_7Q4O_U2_stem_IIa #370.1/2:46-63
 # RNA feature nucleotide display.
 select #370.1 & nucleic

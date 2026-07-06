@@ -61,13 +61,17 @@ color #306.1/E #D6937B
 color #306.1/B #AFEEEE
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA/substrate
+# selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_5GAO_RNA_substrate #306.1/V
 # Sm ring
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_5GAO_Sm_ring #306.1/k,l,m,n,p,q,r
 # U5 snRNP
+# selector_meta {"color":"#0000CD","family":"Protein/RNP groups","group":"U5 snRNP groups","kind":"subcomplex"}
 name pdb_5GAO_U5_snRNP #306.1/A,B,E
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 73-104;128-152, component, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name U5_tri_snRNP_5GAO_substrate #306.1/V:73-104,128-152
 # Searchable named selection browser.
 # In GUI ChimeraX this opens a small panel for selecting and zooming named selections.

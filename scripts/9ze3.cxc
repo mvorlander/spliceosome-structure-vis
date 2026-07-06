@@ -69,20 +69,27 @@ color #434.1/B2 #49926C
 color #434.1/B3 #6A9064
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA/substrate
+# selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_9ZE3_RNA_substrate #434.1/R
 # U1 snRNP
+# selector_meta {"color":"#B66AAE","family":"Protein/RNP groups","group":"U1 snRNP groups","kind":"subcomplex"}
 name pdb_9ZE3_U1_snRNP #434.1/A
 # U2 snRNP
+# selector_meta {"color":"#2F8B4D","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_9ZE3_U2_snRNP #434.1/2,B
 # U2/SF3B
+# selector_meta {"color":"#6DBE70","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_9ZE3_U2_SF3B #434.1/A1,A2,A3,B1,B2,B3,B4,B5,B6,H
 # other
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_9ZE3_other #434.1/C
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues -18-25, component, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name U2_snRNP_9ZE3_substrate #434.1/R:-18-25
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence
+# selector_meta {"color":"#0B6E2D","family":"RNA","feature":"U2_branchpoint_pairing_region","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name U2_snRNP_9ZE3_U2_branchpoint_pairing_region #434.1/2:32-41
 # RNA feature nucleotide display.
 select #434.1 & nucleic

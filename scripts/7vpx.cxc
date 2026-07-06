@@ -109,40 +109,57 @@ color #373.1/4 #77B088
 color #373.1/5 #92BB8F
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA/substrate
+# selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_7VPX_RNA_substrate #373.1/I,K
 # U1 Sm ring
+# selector_meta {"color":"#B66AAE","family":"Protein/RNP groups","group":"U1 snRNP groups","kind":"subcomplex"}
 name pdb_7VPX_U1_Sm_ring #373.1/h,i,j,k,l,m,n
 # U1 snRNP
+# selector_meta {"color":"#B66AAE","family":"Protein/RNP groups","group":"U1 snRNP groups","kind":"subcomplex"}
 name pdb_7VPX_U1_snRNP #373.1/L,M,N,O
 # U2 Sm ring
+# selector_meta {"color":"#BFE6BF","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_7VPX_U2_Sm_ring #373.1/a,b,c,d,e,f,g
 # U2 snRNP
+# selector_meta {"color":"#2F8B4D","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_7VPX_U2_snRNP #373.1/E,F,G,H
 # U2/SF3B
+# selector_meta {"color":"#6DBE70","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_7VPX_U2_SF3B #373.1/1,2,3,4,5,6,A,B,C
 # other
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_7VPX_other #373.1/D,J
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -1-0; 27-41, five-ss-inference, medium confidence, validation not_applicable
+# selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name E_complex_7VPX_5exon #373.1/I:27-41|#373.1/K:-1-0
 # substrate RNA: residues -1-8; 27-41, component, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name E_complex_7VPX_substrate #373.1/I:27-41|#373.1/K:-1-8
 # 5' splice site: residues 1-6, sequence-motif, medium confidence, validation uncertain uncertain validation
+# selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name E_complex_7VPX_5SS #373.1/K:1-6
 # intron from 5' splice site: residues 1-8, five-ss-inference, low confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name E_complex_7VPX_intron #373.1/K:1-8
 # Named selections for resolved snRNA functional regions.
 # U1 snRNA 5' splice-site recognition region: residues 1-10, review-region, medium confidence
+# selector_meta {"color":"#B66AAE","family":"RNA","feature":"U1_5prime_5SS_recognition","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name E_complex_7VPX_U1_5_5SS_recognition #373.1/L:1-10
 # U1 snRNA stem-loop 1: residues 11-45, review-region, low confidence
+# selector_meta {"color":"#BF72B7","family":"RNA","feature":"U1_SL1","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
 name E_complex_7VPX_U1_SL1 #373.1/L:11-45
 # U1 snRNA stem-loop 2: residues 46-95, review-region, low confidence
+# selector_meta {"color":"#AD62A6","family":"RNA","feature":"U1_SL2","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
 name E_complex_7VPX_U1_SL2 #373.1/L:46-95
 # U2 snRNA branchpoint pairing region: residues 34-41, sequence-motif-neighborhood, medium confidence
+# selector_meta {"color":"#0B6E2D","family":"RNA","feature":"U2_branchpoint_pairing_region","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name E_complex_7VPX_U2_branchpoint_pairing_region #373.1/H:34-41
 # U2 snRNA stem IIa: residues 46-65;69-73;81-82, review-region, low confidence
+# selector_meta {"color":"#167A38","family":"RNA","feature":"U2_stem_IIa","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
 name E_complex_7VPX_U2_stem_IIa #373.1/H:46-65,69-73,81-82
 # U2 snRNA Sm site: residues 99-105, sequence-motif, medium confidence
+# selector_meta {"color":"#2F8B4D","family":"RNA","feature":"U2_Sm_site","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
 name E_complex_7VPX_U2_Sm_site #373.1/H:99-105
 # RNA feature nucleotide display.
 select #373.1 & nucleic

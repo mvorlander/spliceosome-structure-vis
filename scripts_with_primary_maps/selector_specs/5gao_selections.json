@@ -9,7 +9,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "RNA/substrate",
-      "atomspec": "#306.1/V"
+      "atomspec": "#306.1/V",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#303030"
     },
     {
       "name": "pdb_5GAO_Sm_ring",
@@ -17,7 +23,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "Sm ring",
-      "atomspec": "#306.1/k,l,m,n,p,q,r"
+      "atomspec": "#306.1/k,l,m,n,p,q,r",
+      "family": "Protein/RNP groups",
+      "group": "other protein/RNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#9CA3AF"
     },
     {
       "name": "pdb_5GAO_U5_snRNP",
@@ -25,7 +37,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U5 snRNP",
-      "atomspec": "#306.1/A,B,E"
+      "atomspec": "#306.1/A,B,E",
+      "family": "Protein/RNP groups",
+      "group": "U5 snRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#0000CD"
     },
     {
       "name": "U5_tri_snRNP_5GAO_substrate",
@@ -33,7 +51,13 @@
       "category": "substrate RNA feature",
       "section": "Named selections for resolved substrate RNA features.",
       "comment": "substrate RNA: residues 73-104;128-152, component, medium confidence, validation not_applicable",
-      "atomspec": "#306.1/V:73-104,128-152"
+      "atomspec": "#306.1/V:73-104,128-152",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "pre_mRNA_features",
+      "kind": "rna_feature",
+      "feature": "substrate",
+      "color": "#303030"
     }
   ]
 }

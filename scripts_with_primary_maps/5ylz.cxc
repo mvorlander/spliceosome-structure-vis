@@ -120,64 +120,93 @@ color #321.1/H #FF957B
 color #321.1/I #FFC388
 # Named selections for subcomplexes using original deposited chain IDs.
 # EJC/mRNP
+# selector_meta {"color":"#EAA439","family":"Protein/RNP groups","group":"EJC/mRNP groups","kind":"subcomplex"}
 name pdb_5YLZ_EJC_mRNP #321.1/S
 # NTC/NTR related
+# selector_meta {"color":"#F4BF67","family":"Protein/RNP groups","group":"NTC/NTR groups","kind":"subcomplex"}
 name pdb_5YLZ_NTC_NTR_related #321.1/H,I,K,L,M,N,Q
 # NTC/PRP19
+# selector_meta {"color":"#F4BF67","family":"Protein/RNP groups","group":"NTC/NTR groups","kind":"subcomplex"}
 name pdb_5YLZ_NTC_PRP19 #321.1/J,O,P,q,r,s,t
 # RNA/substrate
+# selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_5YLZ_RNA_substrate #321.1/E
 # Second step factors
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_5YLZ_Second_step_factors #321.1/T,V,W
 # U2 Sm ring
+# selector_meta {"color":"#BFE6BF","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_5YLZ_U2_Sm_ring #321.1/h,i,j,k,l,m,n
 # U2 snRNP
+# selector_meta {"color":"#2F8B4D","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_5YLZ_U2_snRNP #321.1/F,o,p
 # U5 Sm ring
+# selector_meta {"color":"#BFC3E8","family":"Protein/RNP groups","group":"U5 snRNP groups","kind":"subcomplex"}
 name pdb_5YLZ_U5_Sm_ring #321.1/a,b,c,d,e,f,g
 # U5 snRNP
+# selector_meta {"color":"#0000CD","family":"Protein/RNP groups","group":"U5 snRNP groups","kind":"subcomplex"}
 name pdb_5YLZ_U5_snRNP #321.1/A,B,C
 # U6 snRNP
+# selector_meta {"color":"#DC143C","family":"Protein/RNP groups","group":"U6 snRNP groups","kind":"subcomplex"}
 name pdb_5YLZ_U6_snRNP #321.1/D
 # other
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_5YLZ_other #321.1/G,R,U
 # Named selections for resolved substrate RNA features.
 # intron: residues -13--1;1-15;282-304;345-355, component-name, high confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_5YLZ_intron #321.1/E:-13--1,1-15,282-304,345-355
 # intron lariat: residues -13--1;1-15;282-304;345-355, component-name, high confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"intron_lariat","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_5YLZ_intron_lariat #321.1/E:-13--1,1-15,282-304,345-355
 # substrate RNA: residues -13--1;1-15;282-304;345-355, component, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_5YLZ_substrate #321.1/E:-13--1,1-15,282-304,345-355
 # branch point region: residues 294-303, network-scored-motif, high confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"branch_point_region","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_5YLZ_branch_region #321.1/E:294-303
 # branch point adenosine: residues 301, network-scored-motif, high confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"branch_point_adenosine","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_5YLZ_branch_A #321.1/E:301
 # polypyrimidine tract: residues 304, sequence-motif, medium confidence, validation uncertain uncertain validation
+# selector_meta {"color":"#303030","family":"RNA","feature":"polypyrimidine_tract","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_5YLZ_PPT #321.1/E:304
 # 3' splice site: residues 348-350, sequence-motif, medium confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"three_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_5YLZ_3SS #321.1/E:348-350
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
+# selector_meta {"color":"#047857","family":"RNA","feature":"U2_U6_helix_I_partner","group":"snRNA-snRNA interacting regions","group_key":"snRNA_snRNA_regions","kind":"rna_feature"}
 name P_5YLZ_U2_U6_helix_I_partner #321.1/F:26-30
 # U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence
+# selector_meta {"color":"#0B6E2D","family":"RNA","feature":"U2_branchpoint_pairing_region","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name P_5YLZ_U2_branchpoint_pairing_region #321.1/F:33-42
 # U2 snRNA stem IIa: residues 46-52, review-region, low confidence
+# selector_meta {"color":"#167A38","family":"RNA","feature":"U2_stem_IIa","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
 name P_5YLZ_U2_stem_IIa #321.1/F:46-52
 # U5 snRNA loop I: residues 53-55, sequence-motif, medium confidence
+# selector_meta {"color":"#1B3CD0","family":"RNA","feature":"U5_loop_I","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name P_5YLZ_U5_loop_I #321.1/B:53-55
 # U6 snRNA 5' terminal stem-loop: residues 1-30, reference-alignment, high confidence
+# selector_meta {"color":"#DC143C","family":"RNA","feature":"U6_5prime_terminal_stem_loop","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
 name P_5YLZ_U6_5_terminal_stem_loop #321.1/D:1-30
 # U6 snRNA U2/U6 helix I partner: residues 41-66, motif-neighborhood, medium confidence
+# selector_meta {"color":"#D0183C","family":"RNA","feature":"U6_U2_helix_I_partner","group":"snRNA-snRNA interacting regions","group_key":"snRNA_snRNA_regions","kind":"rna_feature"}
 name P_5YLZ_U6_U2_helix_I_partner #321.1/D:41-66
 # U6 snRNA 5' splice-site upstream contact: residues 44-55, motif-neighborhood, medium confidence
+# selector_meta {"color":"#E01842","family":"RNA","feature":"U6_5SS_upstream_contact","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
 name P_5YLZ_U6_5SS_upstream_contact #321.1/D:44-55
 # U6 snRNA internal stem-loop: residues 46-73, motif-neighborhood, low confidence
+# selector_meta {"color":"#D61A3D","family":"RNA","feature":"U6_ISL","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
 name P_5YLZ_U6_ISL #321.1/D:46-73
 # U6 snRNA ACAGAGA box: residues 47-53, sequence-motif, high confidence
+# selector_meta {"color":"#DC143C","family":"RNA","feature":"U6_ACAGAGA_box","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
 name P_5YLZ_U6_ACAGAGA_box #321.1/D:47-53
 # U6 snRNA AGC catalytic triad: residues 59-61, sequence-motif, medium confidence
+# selector_meta {"color":"#C91236","family":"RNA","feature":"U6_AGC_catalytic_triad","group":"catalytic core regions","group_key":"catalytic_core_regions","kind":"rna_feature"}
 name P_5YLZ_U6_AGC_catalytic_triad #321.1/D:59-61
 # U6 snRNA LSm site: residues 103, terminal-region, low confidence
+# selector_meta {"color":"#E33A55","family":"RNA","feature":"U6_LSm_site","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
 name P_5YLZ_U6_LSm_site #321.1/D:103
 # RNA feature nucleotide display.
 select #321.1 & nucleic

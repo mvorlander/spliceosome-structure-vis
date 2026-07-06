@@ -59,22 +59,30 @@ color #364.1/I #49926C
 color #364.1/M #75A074
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA/substrate
+# selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_7ONB_RNA_substrate #364.1/G
 # U2 snRNP
+# selector_meta {"color":"#2F8B4D","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_7ONB_U2_snRNP #364.1/H
 # U2/SF3B
+# selector_meta {"color":"#6DBE70","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_7ONB_U2_SF3B #364.1/A,B,C,D,I,K,M,N
 # other
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_7ONB_other #364.1/F
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues 129-142, five-ss-inference, medium confidence, validation not_applicable
+# selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name U2_snRNP_7ONB_5exon #364.1/G:129-142
 # substrate RNA: residues 129-142, component, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name U2_snRNP_7ONB_substrate #364.1/G:129-142
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA branchpoint pairing region: residues 34-41, sequence-motif-neighborhood, medium confidence
+# selector_meta {"color":"#0B6E2D","family":"RNA","feature":"U2_branchpoint_pairing_region","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name U2_snRNP_7ONB_U2_branchpoint_pairing_region #364.1/H:34-41
 # U2 snRNA stem IIa: residues 46-65, review-region, low confidence
+# selector_meta {"color":"#167A38","family":"RNA","feature":"U2_stem_IIa","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
 name U2_snRNP_7ONB_U2_stem_IIa #364.1/H:46-65
 # RNA feature nucleotide display.
 select #364.1 & nucleic

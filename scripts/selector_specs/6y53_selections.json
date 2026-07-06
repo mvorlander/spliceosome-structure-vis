@@ -9,7 +9,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U2 Sm ring",
-      "atomspec": "#350.1/h,i,j,k,l,m,n"
+      "atomspec": "#350.1/h,i,j,k,l,m,n",
+      "family": "Protein/RNP groups",
+      "group": "U2/SF3B groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#BFE6BF"
     },
     {
       "name": "pdb_6Y53_U2_snRNP",
@@ -17,7 +23,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U2 snRNP",
-      "atomspec": "#350.1/2,a,b,p,q"
+      "atomspec": "#350.1/2,a,b,p,q",
+      "family": "Protein/RNP groups",
+      "group": "U2/SF3B groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#2F8B4D"
     },
     {
       "name": "pdb_6Y53_U2_SF3B",
@@ -25,7 +37,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U2/SF3B",
-      "atomspec": "#350.1/6,7,8,9,o,u,z"
+      "atomspec": "#350.1/6,7,8,9,o,u,z",
+      "family": "Protein/RNP groups",
+      "group": "U2/SF3B groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#6DBE70"
     },
     {
       "name": "U2_snRNP_6Y53_U2_stem_IIa",
@@ -33,7 +51,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U2 snRNA stem IIa: residues 69-73;81-82, review-region, low confidence",
-      "atomspec": "#350.1/2:69-73,81-82"
+      "atomspec": "#350.1/2:69-73,81-82",
+      "family": "RNA",
+      "group": "internal stem loops",
+      "group_key": "internal_stem_loops",
+      "kind": "rna_feature",
+      "feature": "U2_stem_IIa",
+      "color": "#167A38"
     },
     {
       "name": "U2_snRNP_6Y53_U2_Sm_site",
@@ -41,7 +65,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U2 snRNA Sm site: residues 99-105, sequence-motif, medium confidence",
-      "atomspec": "#350.1/2:99-105"
+      "atomspec": "#350.1/2:99-105",
+      "family": "RNA",
+      "group": "other snRNA regions",
+      "group_key": "other_snRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U2_Sm_site",
+      "color": "#2F8B4D"
     }
   ]
 }

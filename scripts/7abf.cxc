@@ -69,36 +69,51 @@ color #355.1/5 #0000CD
 color #355.1/6 #DC143C
 # Named selections for subcomplexes using original deposited chain IDs.
 # NTC/NTR related
+# selector_meta {"color":"#F4BF67","family":"Protein/RNP groups","group":"NTC/NTR groups","kind":"subcomplex"}
 name pdb_7ABF_NTC_NTR_related #355.1/Q,v
 # NTC/PRP19
+# selector_meta {"color":"#F4BF67","family":"Protein/RNP groups","group":"NTC/NTR groups","kind":"subcomplex"}
 name pdb_7ABF_NTC_PRP19 #355.1/G,R
 # RNA/substrate
+# selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_7ABF_RNA_substrate #355.1/Z
 # U5 snRNP
+# selector_meta {"color":"#0000CD","family":"Protein/RNP groups","group":"U5 snRNP groups","kind":"subcomplex"}
 name pdb_7ABF_U5_snRNP #355.1/5,A,r
 # U6 snRNP
+# selector_meta {"color":"#DC143C","family":"Protein/RNP groups","group":"U6 snRNP groups","kind":"subcomplex"}
 name pdb_7ABF_U6_snRNP #355.1/6
 # other
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_7ABF_other #355.1/A4,I,K,N,X,q
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues 50-58, splice-site-inference, medium confidence, validation not_applicable
+# selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_Bact_7ABF_5exon #355.1/Z:50-58
 # substrate RNA: residues 50-78, component, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_Bact_7ABF_substrate #355.1/Z:50-78
 # 5' splice site: residues 59-64, sequence-motif, medium confidence, validation uncertain uncertain validation
+# selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_Bact_7ABF_5SS #355.1/Z:59-64
 # intron: residues 59-78, splice-site-inference, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_Bact_7ABF_intron #355.1/Z:59-78
 # Named selections for resolved snRNA functional regions.
 # U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence
+# selector_meta {"color":"#1B3CD0","family":"RNA","feature":"U5_loop_I","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name pre_Bact_7ABF_U5_loop_I #355.1/5:38-42
 # U6 snRNA 5' terminal stem-loop: residues 1-30, reference-alignment, high confidence
+# selector_meta {"color":"#DC143C","family":"RNA","feature":"U6_5prime_terminal_stem_loop","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
 name pre_Bact_7ABF_U6_5_terminal_stem_loop #355.1/6:1-30
 # U6 snRNA U2/U6 helix I partner: residues 35-46;58-60, motif-neighborhood, medium confidence
+# selector_meta {"color":"#D0183C","family":"RNA","feature":"U6_U2_helix_I_partner","group":"snRNA-snRNA interacting regions","group_key":"snRNA_snRNA_regions","kind":"rna_feature"}
 name pre_Bact_7ABF_U6_U2_helix_I_partner #355.1/6:35-46,58-60
 # U6 snRNA 5' splice-site upstream contact: residues 38-46, motif-neighborhood, medium confidence
+# selector_meta {"color":"#E01842","family":"RNA","feature":"U6_5SS_upstream_contact","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
 name pre_Bact_7ABF_U6_5SS_upstream_contact #355.1/6:38-46
 # U6 snRNA ACAGAGA box: residues 41-46, sequence-motif, high confidence
+# selector_meta {"color":"#DC143C","family":"RNA","feature":"U6_ACAGAGA_box","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
 name pre_Bact_7ABF_U6_ACAGAGA_box #355.1/6:41-46
 # RNA feature nucleotide display.
 select #355.1 & nucleic

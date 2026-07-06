@@ -9,7 +9,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "NTC/NTR related",
-      "atomspec": "#301.1/M,R,X,a,c,d,e,r"
+      "atomspec": "#301.1/M,R,X,a,c,d,e,r",
+      "family": "Protein/RNP groups",
+      "group": "NTC/NTR groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#F4BF67"
     },
     {
       "name": "pdb_3JB9_NTC_PRP19",
@@ -17,7 +23,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "NTC/PRP19",
-      "atomspec": "#301.1/S,T,U,V,W,h,i"
+      "atomspec": "#301.1/S,T,U,V,W,h,i",
+      "family": "Protein/RNP groups",
+      "group": "NTC/NTR groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#F4BF67"
     },
     {
       "name": "pdb_3JB9_RNA_substrate",
@@ -25,7 +37,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "RNA/substrate",
-      "atomspec": "#301.1/O,Q"
+      "atomspec": "#301.1/O,Q",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#303030"
     },
     {
       "name": "pdb_3JB9_Second_step_factors",
@@ -33,7 +51,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "Second step factors",
-      "atomspec": "#301.1/g"
+      "atomspec": "#301.1/g",
+      "family": "Protein/RNP groups",
+      "group": "other protein/RNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#9CA3AF"
     },
     {
       "name": "pdb_3JB9_U2_Sm_ring",
@@ -41,7 +65,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U2 Sm ring",
-      "atomspec": "#301.1/Z,b,f,l,m,n,o"
+      "atomspec": "#301.1/Z,b,f,l,m,n,o",
+      "family": "Protein/RNP groups",
+      "group": "U2/SF3B groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#BFE6BF"
     },
     {
       "name": "pdb_3JB9_U2_snRNP",
@@ -49,7 +79,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U2 snRNP",
-      "atomspec": "#301.1/K,P,j,k"
+      "atomspec": "#301.1/K,P,j,k",
+      "family": "Protein/RNP groups",
+      "group": "U2/SF3B groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#2F8B4D"
     },
     {
       "name": "pdb_3JB9_U4_U6_snRNP",
@@ -57,7 +93,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U4/U6 snRNP",
-      "atomspec": "#301.1/Y"
+      "atomspec": "#301.1/Y",
+      "family": "Protein/RNP groups",
+      "group": "U4/U6 groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#C3BA7A"
     },
     {
       "name": "pdb_3JB9_U5_Sm_ring",
@@ -65,7 +107,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U5 Sm ring",
-      "atomspec": "#301.1/D,E,F,G,H,I,J"
+      "atomspec": "#301.1/D,E,F,G,H,I,J",
+      "family": "Protein/RNP groups",
+      "group": "U5 snRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#BFC3E8"
     },
     {
       "name": "pdb_3JB9_U5_snRNP",
@@ -73,7 +121,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U5 snRNP",
-      "atomspec": "#301.1/A,B,C,L"
+      "atomspec": "#301.1/A,B,C,L",
+      "family": "Protein/RNP groups",
+      "group": "U5 snRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#0000CD"
     },
     {
       "name": "pdb_3JB9_U6_snRNP",
@@ -81,7 +135,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U6 snRNP",
-      "atomspec": "#301.1/N"
+      "atomspec": "#301.1/N",
+      "family": "Protein/RNP groups",
+      "group": "U6 snRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#DC143C"
     },
     {
       "name": "pdb_3JB9_other",
@@ -89,7 +149,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "other",
-      "atomspec": "#301.1/x"
+      "atomspec": "#301.1/x",
+      "family": "Protein/RNP groups",
+      "group": "other protein/RNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#9CA3AF"
     },
     {
       "name": "ILS_disassembly_3JB9_substrate",
@@ -97,7 +163,13 @@
       "category": "substrate RNA feature",
       "section": "Named selections for resolved substrate RNA features.",
       "comment": "substrate RNA: residues 100-107; 492-504, component, medium confidence, validation not_applicable",
-      "atomspec": "#301.1/O:100-107|#301.1/Q:492-504"
+      "atomspec": "#301.1/O:100-107|#301.1/Q:492-504",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "pre_mRNA_features",
+      "kind": "rna_feature",
+      "feature": "substrate",
+      "color": "#303030"
     },
     {
       "name": "ILS_disassembly_3JB9_U2_U6_helix_I_partner",
@@ -105,7 +177,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence",
-      "atomspec": "#301.1/P:26-30"
+      "atomspec": "#301.1/P:26-30",
+      "family": "RNA",
+      "group": "snRNA-snRNA interacting regions",
+      "group_key": "snRNA_snRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U2_U6_helix_I_partner",
+      "color": "#047857"
     },
     {
       "name": "ILS_disassembly_3JB9_U2_branchpoint_pairing_region",
@@ -113,7 +191,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence",
-      "atomspec": "#301.1/P:32-41"
+      "atomspec": "#301.1/P:32-41",
+      "family": "RNA",
+      "group": "snRNA-pre-mRNA regions",
+      "group_key": "snRNA_pre_mRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U2_branchpoint_pairing_region",
+      "color": "#0B6E2D"
     },
     {
       "name": "ILS_disassembly_3JB9_U5_loop_I",
@@ -121,7 +205,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U5 snRNA loop I: residues 47-51, sequence-motif, medium confidence",
-      "atomspec": "#301.1/C:47-51"
+      "atomspec": "#301.1/C:47-51",
+      "family": "RNA",
+      "group": "snRNA-pre-mRNA regions",
+      "group_key": "snRNA_pre_mRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U5_loop_I",
+      "color": "#1B3CD0"
     },
     {
       "name": "ILS_disassembly_3JB9_U6_U2_helix_I_partner",
@@ -129,7 +219,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U6 snRNA U2/U6 helix I partner: residues 29-54, motif-neighborhood, medium confidence",
-      "atomspec": "#301.1/N:29-54"
+      "atomspec": "#301.1/N:29-54",
+      "family": "RNA",
+      "group": "snRNA-snRNA interacting regions",
+      "group_key": "snRNA_snRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U6_U2_helix_I_partner",
+      "color": "#D0183C"
     },
     {
       "name": "ILS_disassembly_3JB9_U6_5SS_upstream_contact",
@@ -137,7 +233,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U6 snRNA 5' splice-site upstream contact: residues 32-43, motif-neighborhood, medium confidence",
-      "atomspec": "#301.1/N:32-43"
+      "atomspec": "#301.1/N:32-43",
+      "family": "RNA",
+      "group": "other snRNA regions",
+      "group_key": "other_snRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U6_5SS_upstream_contact",
+      "color": "#E01842"
     },
     {
       "name": "ILS_disassembly_3JB9_U6_ACAGAGA_box",
@@ -145,7 +247,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U6 snRNA ACAGAGA box: residues 35-41, sequence-motif, high confidence",
-      "atomspec": "#301.1/N:35-41"
+      "atomspec": "#301.1/N:35-41",
+      "family": "RNA",
+      "group": "other snRNA regions",
+      "group_key": "other_snRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U6_ACAGAGA_box",
+      "color": "#DC143C"
     }
   ]
 }

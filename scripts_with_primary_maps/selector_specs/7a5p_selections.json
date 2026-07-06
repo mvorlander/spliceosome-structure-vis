@@ -9,7 +9,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "EJC/mRNP",
-      "atomspec": "#353.1/T,v,w,y"
+      "atomspec": "#353.1/T,v,w,y",
+      "family": "Protein/RNP groups",
+      "group": "EJC/mRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#EAA439"
     },
     {
       "name": "pdb_7A5P_NTC_NTR_related",
@@ -17,7 +23,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "NTC/NTR related",
-      "atomspec": "#353.1/C,M,N,O,P,U,o,s"
+      "atomspec": "#353.1/C,M,N,O,P,U,o,s",
+      "family": "Protein/RNP groups",
+      "group": "NTC/NTR groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#F4BF67"
     },
     {
       "name": "pdb_7A5P_NTC_PRP19",
@@ -25,7 +37,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "NTC/PRP19",
-      "atomspec": "#353.1/G,H,I,J,K,L"
+      "atomspec": "#353.1/G,H,I,J,K,L",
+      "family": "Protein/RNP groups",
+      "group": "NTC/NTR groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#F4BF67"
     },
     {
       "name": "pdb_7A5P_RNA_substrate",
@@ -33,7 +51,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "RNA/substrate",
-      "atomspec": "#353.1/Y"
+      "atomspec": "#353.1/Y",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#303030"
     },
     {
       "name": "pdb_7A5P_SR_proteins",
@@ -41,7 +65,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "SR proteins",
-      "atomspec": "#353.1/S"
+      "atomspec": "#353.1/S",
+      "family": "Protein/RNP groups",
+      "group": "other protein/RNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#9CA3AF"
     },
     {
       "name": "pdb_7A5P_Second_step_factors",
@@ -49,7 +79,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "Second step factors",
-      "atomspec": "#353.1/E"
+      "atomspec": "#353.1/E",
+      "family": "Protein/RNP groups",
+      "group": "other protein/RNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#9CA3AF"
     },
     {
       "name": "pdb_7A5P_U2_Sm_ring",
@@ -57,7 +93,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U2 Sm ring",
-      "atomspec": "#353.1/h,i,j,k,l,m,n"
+      "atomspec": "#353.1/h,i,j,k,l,m,n",
+      "family": "Protein/RNP groups",
+      "group": "U2/SF3B groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#BFE6BF"
     },
     {
       "name": "pdb_7A5P_U2_snRNP",
@@ -65,7 +107,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U2 snRNP",
-      "atomspec": "#353.1/2,W,X,u"
+      "atomspec": "#353.1/2,W,X,u",
+      "family": "Protein/RNP groups",
+      "group": "U2/SF3B groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#2F8B4D"
     },
     {
       "name": "pdb_7A5P_U5_Sm_ring",
@@ -73,7 +121,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U5 Sm ring",
-      "atomspec": "#353.1/a,b,c,d,e,f,g"
+      "atomspec": "#353.1/a,b,c,d,e,f,g",
+      "family": "Protein/RNP groups",
+      "group": "U5 snRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#BFC3E8"
     },
     {
       "name": "pdb_7A5P_U5_snRNP",
@@ -81,7 +135,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U5 snRNP",
-      "atomspec": "#353.1/5,A,q"
+      "atomspec": "#353.1/5,A,q",
+      "family": "Protein/RNP groups",
+      "group": "U5 snRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#0000CD"
     },
     {
       "name": "pdb_7A5P_U6_snRNP",
@@ -89,7 +149,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U6 snRNP",
-      "atomspec": "#353.1/6"
+      "atomspec": "#353.1/6",
+      "family": "Protein/RNP groups",
+      "group": "U6 snRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#DC143C"
     },
     {
       "name": "pdb_7A5P_other",
@@ -97,7 +163,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "other",
-      "atomspec": "#353.1/8,p,r,x,z"
+      "atomspec": "#353.1/8,p,r,x,z",
+      "family": "Protein/RNP groups",
+      "group": "other protein/RNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#9CA3AF"
     },
     {
       "name": "C_7A5P_substrate",
@@ -105,7 +177,13 @@
       "category": "substrate RNA feature",
       "section": "Named selections for resolved substrate RNA features.",
       "comment": "substrate RNA: residues 80-94;127-140, component, medium confidence, validation not_applicable",
-      "atomspec": "#353.1/Y:80-94,127-140"
+      "atomspec": "#353.1/Y:80-94,127-140",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "pre_mRNA_features",
+      "kind": "rna_feature",
+      "feature": "substrate",
+      "color": "#303030"
     },
     {
       "name": "C_7A5P_intron",
@@ -113,7 +191,13 @@
       "category": "substrate RNA feature",
       "section": "Named selections for resolved substrate RNA features.",
       "comment": "intron: residues 80-94;127-140, splice-site-inference, medium confidence, validation not_applicable",
-      "atomspec": "#353.1/Y:80-94,127-140"
+      "atomspec": "#353.1/Y:80-94,127-140",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "pre_mRNA_features",
+      "kind": "rna_feature",
+      "feature": "intron",
+      "color": "#303030"
     },
     {
       "name": "C_7A5P_U2_Sm_site",
@@ -121,7 +205,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U2 snRNA Sm site: residues 99-105, sequence-motif, medium confidence",
-      "atomspec": "#353.1/2:99-105"
+      "atomspec": "#353.1/2:99-105",
+      "family": "RNA",
+      "group": "other snRNA regions",
+      "group_key": "other_snRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U2_Sm_site",
+      "color": "#2F8B4D"
     },
     {
       "name": "C_7A5P_U6_ISL",
@@ -129,7 +219,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U6 snRNA internal stem-loop: residues 80-95, motif-neighborhood, low confidence",
-      "atomspec": "#353.1/6:80-95"
+      "atomspec": "#353.1/6:80-95",
+      "family": "RNA",
+      "group": "internal stem loops",
+      "group_key": "internal_stem_loops",
+      "kind": "rna_feature",
+      "feature": "U6_ISL",
+      "color": "#D61A3D"
     },
     {
       "name": "C_7A5P_U6_AGC_catalytic_triad",
@@ -137,7 +233,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U6 snRNA AGC catalytic triad: residues 92-94, sequence-motif, medium confidence",
-      "atomspec": "#353.1/6:92-94"
+      "atomspec": "#353.1/6:92-94",
+      "family": "RNA",
+      "group": "catalytic core regions",
+      "group_key": "catalytic_core_regions",
+      "kind": "rna_feature",
+      "feature": "U6_AGC_catalytic_triad",
+      "color": "#C91236"
     }
   ]
 }

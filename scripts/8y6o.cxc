@@ -131,54 +131,78 @@ color #416.1/H #6A90A0
 color #416.1/I #CA9982
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA-binding
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_8Y6O_RNA_binding #416.1/V
 # RNA/substrate
+# selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_8Y6O_RNA_substrate #416.1/A
 # Sm ring
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_8Y6O_Sm_ring #416.1/h,i,j,k,l,m,n,o,p,q,r,s,t,u
 # U11/U12 snRNP
+# selector_meta {"color":"#B66AAE","family":"Protein/RNP groups","group":"U1 snRNP groups","kind":"subcomplex"}
 name pdb_8Y6O_U11_U12_snRNP #416.1/P
 # U4/U6 snRNP
+# selector_meta {"color":"#C3BA7A","family":"Protein/RNP groups","group":"U4/U6 groups","kind":"subcomplex"}
 name pdb_8Y6O_U4_U6_snRNP #416.1/I,L,M,N,O,Q,U
 # U4atac/U6atac snRNP
+# selector_meta {"color":"#D8C800","family":"Protein/RNP groups","group":"U4/U6 groups","kind":"subcomplex"}
 name pdb_8Y6O_U4atac_U6atac_snRNP #416.1/J,K
 # U5 Sm ring
+# selector_meta {"color":"#BFC3E8","family":"Protein/RNP groups","group":"U5 snRNP groups","kind":"subcomplex"}
 name pdb_8Y6O_U5_Sm_ring #416.1/a,b,c,d,e,f,g
 # U5 snRNP
+# selector_meta {"color":"#0000CD","family":"Protein/RNP groups","group":"U5 snRNP groups","kind":"subcomplex"}
 name pdb_8Y6O_U5_snRNP #416.1/B,C,D,E,F,G,S
 # other
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_8Y6O_other #416.1/H,R,W,X,Y,Z
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -1-0, five-ss-inference, medium confidence, validation not_applicable
+# selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_B_8Y6O_5exon #416.1/A:-1-0
 # substrate RNA: residues -1-11, component, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_B_8Y6O_substrate #416.1/A:-1-11
 # 5' splice site: residues 1-10, minor-snrna-basepair, high confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_B_8Y6O_5SS #416.1/A:1-10
 # intron from 5' splice site: residues 1-11, five-ss-inference, low confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_B_8Y6O_intron #416.1/A:1-11
 # Named selections for resolved snRNA functional regions.
 # U11 snRNA 5' splice-site recognition region: residues 1-7, reference-alignment, high confidence
+# selector_meta {"color":"#B66AAE","family":"RNA","feature":"U11_5prime_5SS_recognition","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name pre_B_8Y6O_U11_5_5SS_recognition #416.1/P:1-7
 # U11 snRNA stem-loop 1: residues 11-39;43-45, review-region, low confidence
+# selector_meta {"color":"#BF72B7","family":"RNA","feature":"U11_SL1","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
 name pre_B_8Y6O_U11_SL1 #416.1/P:11-39,43-45
 # U11 snRNA stem-loop 2: residues 46-95, review-region, low confidence
+# selector_meta {"color":"#AD62A6","family":"RNA","feature":"U11_SL2","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
 name pre_B_8Y6O_U11_SL2 #416.1/P:46-95
 # U4atac snRNA U4atac/U6atac stem I partner: residues 3-18, reference-alignment, medium confidence
+# selector_meta {"color":"#D8C800","family":"RNA","feature":"U4atac_U6_stem_I_partner","group":"snRNA-snRNA interacting regions","group_key":"snRNA_snRNA_regions","kind":"rna_feature"}
 name pre_B_8Y6O_U4atac_U6_stem_I_partner #416.1/J:3-18
 # U4atac snRNA U4atac/U6atac stem II partner: residues 60-64, reference-alignment, medium confidence
+# selector_meta {"color":"#E0CF1A","family":"RNA","feature":"U4atac_U6_stem_II_partner","group":"snRNA-snRNA interacting regions","group_key":"snRNA_snRNA_regions","kind":"rna_feature"}
 name pre_B_8Y6O_U4atac_U6_stem_II_partner #416.1/J:60-64
 # U4atac snRNA Brr2 loading region: residues 83-96, review-region, low confidence
+# selector_meta {"color":"#F0DF2E","family":"RNA","feature":"U4atac_Brr2_loading_region","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
 name pre_B_8Y6O_U4atac_Brr2_loading_region #416.1/J:83-96
 # U4atac snRNA Sm site: residues 116-122, sequence-motif, medium confidence
+# selector_meta {"color":"#F5E85A","family":"RNA","feature":"U4atac_Sm_site","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
 name pre_B_8Y6O_U4atac_Sm_site #416.1/J:116-122
 # U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence
+# selector_meta {"color":"#1B3CD0","family":"RNA","feature":"U5_loop_I","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name pre_B_8Y6O_U5_loop_I #416.1/B:38-42
 # U6atac snRNA U6atac/U12 helix I partner: residues 23-29, reference-alignment, high confidence
+# selector_meta {"color":"#D0183C","family":"RNA","feature":"U6atac_U12_helix_I_partner","group":"snRNA-snRNA interacting regions","group_key":"snRNA_snRNA_regions","kind":"rna_feature"}
 name pre_B_8Y6O_U6atac_U12_helix_I_partner #416.1/K:23-29
 # U6atac snRNA AGC catalytic triad: residues 26-28, reference-alignment, high confidence
+# selector_meta {"color":"#C91236","family":"RNA","feature":"U6atac_AGC_catalytic_triad","group":"catalytic core regions","group_key":"catalytic_core_regions","kind":"rna_feature"}
 name pre_B_8Y6O_U6atac_AGC_catalytic_triad #416.1/K:26-28
 # U6atac snRNA internal stem-loop: residues 52-58;60-65, reference-alignment, medium confidence
+# selector_meta {"color":"#D61A3D","family":"RNA","feature":"U6atac_ISL","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
 name pre_B_8Y6O_U6atac_ISL #416.1/K:52-58,60-65
 # RNA feature nucleotide display.
 select #416.1 & nucleic

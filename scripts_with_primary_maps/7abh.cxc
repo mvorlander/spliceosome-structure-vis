@@ -72,28 +72,39 @@ color #357.1/E #6A9064
 color #357.1/w #77B088
 # Named selections for subcomplexes using original deposited chain IDs.
 # NTC/PRP19
+# selector_meta {"color":"#F4BF67","family":"Protein/RNP groups","group":"NTC/NTR groups","kind":"subcomplex"}
 name pdb_7ABH_NTC_PRP19 #357.1/L
 # RNA/substrate
+# selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_7ABH_RNA_substrate #357.1/Z
 # U2 snRNP
+# selector_meta {"color":"#2F8B4D","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_7ABH_U2_snRNP #357.1/2
 # U2/SF3B
+# selector_meta {"color":"#6DBE70","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_7ABH_U2_SF3B #357.1/4,E,F,T,u,w,x,y,z
 # other
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_7ABH_other #357.1/0,1,7,Y
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 141-168, component, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_Bact_7ABH_substrate #357.1/Z:141-168
 # intron: residues 141-168, splice-site-inference, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_Bact_7ABH_intron #357.1/Z:141-168
 # polypyrimidine tract: residues 161-168, sequence-motif, medium confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"polypyrimidine_tract","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_Bact_7ABH_PPT #357.1/Z:161-168
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA U2/U6 helix I partner: residues 29-30, review-region, high confidence
+# selector_meta {"color":"#047857","family":"RNA","feature":"U2_U6_helix_I_partner","group":"snRNA-snRNA interacting regions","group_key":"snRNA_snRNA_regions","kind":"rna_feature"}
 name pre_Bact_7ABH_U2_U6_helix_I_partner #357.1/2:29-30
 # U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence
+# selector_meta {"color":"#0B6E2D","family":"RNA","feature":"U2_branchpoint_pairing_region","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name pre_Bact_7ABH_U2_branchpoint_pairing_region #357.1/2:32-41
 # U2 snRNA stem IIa: residues 46-65, review-region, low confidence
+# selector_meta {"color":"#167A38","family":"RNA","feature":"U2_stem_IIa","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
 name pre_Bact_7ABH_U2_stem_IIa #357.1/2:46-65
 # RNA feature nucleotide display.
 select #357.1 & nucleic

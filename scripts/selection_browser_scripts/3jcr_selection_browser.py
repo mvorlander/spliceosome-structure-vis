@@ -30,16 +30,15 @@ def open_selection_browser(session, spec_path: str) -> None:
     from chimerax.core.tools import ToolInstance
     from chimerax.ui import MainToolWindow
     from Qt.QtCore import Qt
+    from Qt.QtGui import QColor, QBrush, QFont
     from Qt.QtWidgets import (
-        QAbstractItemView,
         QHBoxLayout,
         QLabel,
         QLineEdit,
-        QListWidget,
-        QListWidgetItem,
         QPushButton,
+        QTreeWidget,
+        QTreeWidgetItem,
         QVBoxLayout,
-        QWidget,
     )
 
     class SpliceosomeSelectionBrowser(ToolInstance):
@@ -62,9 +61,13 @@ def open_selection_browser(session, spec_path: str) -> None:
             self.search = QLineEdit(parent)
             self.search.setPlaceholderText("Search selector, label, category, residues, or atomspec")
             layout.addWidget(self.search)
-            self.list_widget = QListWidget(parent)
-            self.list_widget.setSelectionMode(QAbstractItemView.SingleSelection)
-            layout.addWidget(self.list_widget)
+            self.tree = QTreeWidget(parent)
+            self.tree.setColumnCount(3)
+            self.tree.setHeaderLabels(["Selection", "Target", "Selector"])
+            self.tree.setAlternatingRowColors(True)
+            self.tree.setRootIsDecorated(True)
+            self.tree.setUniformRowHeights(False)
+            layout.addWidget(self.tree)
             buttons = QHBoxLayout()
             self.select_button = QPushButton("Select + Zoom", parent)
             self.clear_button = QPushButton("Clear", parent)
@@ -73,8 +76,8 @@ def open_selection_browser(session, spec_path: str) -> None:
             layout.addLayout(buttons)
 
             self.search.textChanged.connect(self._filter)
-            self.list_widget.itemClicked.connect(self._activate_item)
-            self.list_widget.itemDoubleClicked.connect(self._activate_item)
+            self.tree.itemClicked.connect(self._activate_item)
+            self.tree.itemDoubleClicked.connect(self._activate_item)
             self.select_button.clicked.connect(self._activate_current)
             self.clear_button.clicked.connect(lambda: run(self.session, "select clear"))
             self._populate()
@@ -94,23 +97,71 @@ def open_selection_browser(session, spec_path: str) -> None:
             self._populate()
 
         def _populate(self):
-            self.list_widget.clear()
+            self.tree.clear()
+            grouped = {}
             for item in self.filtered:
-                label = item.get("label") or item.get("name")
-                category = item.get("category") or "selection"
-                selector = item.get("name", "")
-                atomspec = item.get("atomspec", "")
-                row = QListWidgetItem(f"{label}   [{category}]\n{selector}  ->  {atomspec}")
-                row.setData(Qt.UserRole, item)
-                self.list_widget.addItem(row)
+                family = item.get("family") or (
+                    "RNA" if "RNA" in item.get("category", "") else "Protein/RNP groups"
+                )
+                group = item.get("group") or item.get("category") or "other selections"
+                grouped.setdefault(family, {}).setdefault(group, []).append(item)
+
+            family_order = ["RNA", "Protein/RNP groups", "Other"]
+            for family in sorted(grouped, key=lambda value: (family_order.index(value) if value in family_order else 99, value)):
+                family_count = sum(len(items) for items in grouped[family].values())
+                family_item = QTreeWidgetItem([f"{family} ({family_count})", "", ""])
+                self._style_group_item(family_item, family)
+                self.tree.addTopLevelItem(family_item)
+                for group in sorted(grouped[family]):
+                    rows = sorted(grouped[family][group], key=lambda value: (value.get("label") or value.get("name", "")).lower())
+                    group_item = QTreeWidgetItem([f"{group} ({len(rows)})", "", ""])
+                    self._style_group_item(group_item, group)
+                    family_item.addChild(group_item)
+                    for data in rows:
+                        label = data.get("label") or data.get("name")
+                        atomspec = data.get("atomspec", "")
+                        selector = data.get("name", "")
+                        row = QTreeWidgetItem([f"  {label}", atomspec, selector])
+                        row.setData(0, Qt.UserRole, data)
+                        self._style_leaf_item(row, data)
+                        group_item.addChild(row)
+            self.tree.expandAll()
+            for column in range(3):
+                self.tree.resizeColumnToContents(column)
+
+        def _style_group_item(self, item, label):
+            font = item.font(0)
+            font.setBold(True)
+            item.setFont(0, font)
+            item.setForeground(0, QBrush(QColor("#20242a")))
+            item.setBackground(0, QBrush(QColor("#eef2f7")))
+
+        def _style_leaf_item(self, item, data):
+            color = QColor(data.get("color") or "#9CA3AF")
+            pale = QColor(color)
+            pale.setAlpha(45)
+            for column in range(3):
+                item.setBackground(column, QBrush(pale))
+            item.setForeground(0, QBrush(color))
+            font = item.font(0)
+            font.setBold(True)
+            item.setFont(0, font)
+            item.setToolTip(
+                0,
+                f"{data.get('label') or data.get('name')}\n"
+                f"{data.get('category', '')} / {data.get('group', '')}\n"
+                f"{data.get('comment', '')}",
+            )
 
         def _activate_current(self):
-            item = self.list_widget.currentItem()
+            item = self.tree.currentItem()
             if item is not None:
                 self._activate_item(item)
 
-        def _activate_item(self, item):
-            data = item.data(Qt.UserRole)
+        def _activate_item(self, item, column=0):
+            data = item.data(0, Qt.UserRole)
+            if not data:
+                return
             selector = data.get("name", "")
             if not selector:
                 return
@@ -129,7 +180,13 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#303.1/o,p,q,r,s,t,u",
       "category": "subcomplex",
+      "color": "#F5E85A",
       "comment": "U4 Sm ring",
+      "family": "Protein/RNP groups",
+      "feature": "",
+      "group": "U4 snRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
       "label": "U4 Sm ring",
       "name": "pdb_3JCR_U4_Sm_ring",
       "section": "Named selections for subcomplexes using original deposited chain IDs."
@@ -137,7 +194,13 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#303.1/M",
       "category": "subcomplex",
+      "color": "#D8C800",
       "comment": "U4 snRNP",
+      "family": "Protein/RNP groups",
+      "feature": "",
+      "group": "U4 snRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
       "label": "U4 snRNP",
       "name": "pdb_3JCR_U4_snRNP",
       "section": "Named selections for subcomplexes using original deposited chain IDs."
@@ -145,7 +208,13 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#303.1/E,F,I,J,K,L,V",
       "category": "subcomplex",
+      "color": "#C3BA7A",
       "comment": "U4/U6 snRNP",
+      "family": "Protein/RNP groups",
+      "feature": "",
+      "group": "U4/U6 groups",
+      "group_key": "",
+      "kind": "subcomplex",
       "label": "U4/U6 snRNP",
       "name": "pdb_3JCR_U4_U6_snRNP",
       "section": "Named selections for subcomplexes using original deposited chain IDs."
@@ -153,7 +222,13 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#303.1/O,P,Q,R,S,T,U",
       "category": "subcomplex",
+      "color": "#BFC3E8",
       "comment": "U5 Sm ring",
+      "family": "Protein/RNP groups",
+      "feature": "",
+      "group": "U5 snRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
       "label": "U5 Sm ring",
       "name": "pdb_3JCR_U5_Sm_ring",
       "section": "Named selections for subcomplexes using original deposited chain IDs."
@@ -161,7 +236,13 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#303.1/A,B,C,D,G,H",
       "category": "subcomplex",
+      "color": "#0000CD",
       "comment": "U5 snRNP",
+      "family": "Protein/RNP groups",
+      "feature": "",
+      "group": "U5 snRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
       "label": "U5 snRNP",
       "name": "pdb_3JCR_U5_snRNP",
       "section": "Named selections for subcomplexes using original deposited chain IDs."
@@ -169,7 +250,13 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#303.1/2,3,4,5,6,7,8",
       "category": "subcomplex",
+      "color": "#FECACA",
       "comment": "U6 LSm",
+      "family": "Protein/RNP groups",
+      "feature": "",
+      "group": "U6 snRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
       "label": "U6 LSm",
       "name": "pdb_3JCR_U6_LSm",
       "section": "Named selections for subcomplexes using original deposited chain IDs."
@@ -177,7 +264,13 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#303.1/N",
       "category": "subcomplex",
+      "color": "#DC143C",
       "comment": "U6 snRNP",
+      "family": "Protein/RNP groups",
+      "feature": "",
+      "group": "U6 snRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
       "label": "U6 snRNP",
       "name": "pdb_3JCR_U6_snRNP",
       "section": "Named selections for subcomplexes using original deposited chain IDs."
@@ -185,7 +278,13 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#303.1/M:1-16",
       "category": "snRNA feature",
+      "color": "#D8C800",
       "comment": "U4 snRNA U4/U6 stem I partner: residues 1-16, reference-alignment, high confidence",
+      "family": "RNA",
+      "feature": "U4_U6_stem_I_partner",
+      "group": "snRNA-snRNA interacting regions",
+      "group_key": "snRNA_snRNA_regions",
+      "kind": "rna_feature",
       "label": "U4 snRNA U4/U6 stem I partner",
       "name": "U5_tri_snRNP_3JCR_U4_U6_stem_I_partner",
       "section": "Named selections for resolved snRNA functional regions."
@@ -193,7 +292,13 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#303.1/M:56-62",
       "category": "snRNA feature",
+      "color": "#E0CF1A",
       "comment": "U4 snRNA U4/U6 stem II partner: residues 56-62, reference-alignment, high confidence",
+      "family": "RNA",
+      "feature": "U4_U6_stem_II_partner",
+      "group": "snRNA-snRNA interacting regions",
+      "group_key": "snRNA_snRNA_regions",
+      "kind": "rna_feature",
       "label": "U4 snRNA U4/U6 stem II partner",
       "name": "U5_tri_snRNP_3JCR_U4_U6_stem_II_partner",
       "section": "Named selections for resolved snRNA functional regions."
@@ -201,7 +306,13 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#303.1/M:60-62,86-88,89-95",
       "category": "snRNA feature",
+      "color": "#F0DF2E",
       "comment": "U4 snRNA Brr2 loading region: residues 60-62;86-88;89-95, review-region, low confidence",
+      "family": "RNA",
+      "feature": "U4_Brr2_loading_region",
+      "group": "other snRNA regions",
+      "group_key": "other_snRNA_regions",
+      "kind": "rna_feature",
       "label": "U4 snRNA Brr2 loading region",
       "name": "U5_tri_snRNP_3JCR_U4_Brr2_loading_region",
       "section": "Named selections for resolved snRNA functional regions."
@@ -209,7 +320,13 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#303.1/M:119-125",
       "category": "snRNA feature",
+      "color": "#F5E85A",
       "comment": "U4 snRNA Sm site: residues 119-125, sequence-motif, medium confidence",
+      "family": "RNA",
+      "feature": "U4_Sm_site",
+      "group": "other snRNA regions",
+      "group_key": "other_snRNA_regions",
+      "kind": "rna_feature",
       "label": "U4 snRNA Sm site",
       "name": "U5_tri_snRNP_3JCR_U4_Sm_site",
       "section": "Named selections for resolved snRNA functional regions."
@@ -217,7 +334,13 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#303.1/H:38-42",
       "category": "snRNA feature",
+      "color": "#1B3CD0",
       "comment": "U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence",
+      "family": "RNA",
+      "feature": "U5_loop_I",
+      "group": "snRNA-pre-mRNA regions",
+      "group_key": "snRNA_pre_mRNA_regions",
+      "kind": "rna_feature",
       "label": "U5 snRNA loop I",
       "name": "U5_tri_snRNP_3JCR_U5_loop_I",
       "section": "Named selections for resolved snRNA functional regions."
@@ -225,7 +348,13 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#303.1/N:50-56,59-60",
       "category": "snRNA feature",
+      "color": "#D0183C",
       "comment": "U6 snRNA U2/U6 helix I partner: residues 50-56;59-60, motif-neighborhood, medium confidence",
+      "family": "RNA",
+      "feature": "U6_U2_helix_I_partner",
+      "group": "snRNA-snRNA interacting regions",
+      "group_key": "snRNA_snRNA_regions",
+      "kind": "rna_feature",
       "label": "U6 snRNA U2/U6 helix I partner",
       "name": "U5_tri_snRNP_3JCR_U6_U2_helix_I_partner",
       "section": "Named selections for resolved snRNA functional regions."
@@ -233,7 +362,13 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#303.1/N:52-56,59-61",
       "category": "snRNA feature",
+      "color": "#E01842",
       "comment": "U6 snRNA U4/U6 stem II partner: residues 52-56;59-61, reference-alignment, high confidence",
+      "family": "RNA",
+      "feature": "U6_U4_stem_II_partner",
+      "group": "other snRNA regions",
+      "group_key": "other_snRNA_regions",
+      "kind": "rna_feature",
       "label": "U6 snRNA U4/U6 stem II partner",
       "name": "U5_tri_snRNP_3JCR_U6_U4_stem_II_partner",
       "section": "Named selections for resolved snRNA functional regions."
@@ -241,7 +376,13 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#303.1/N:63-74",
       "category": "snRNA feature",
+      "color": "#D9183E",
       "comment": "U6 snRNA U4/U6 stem I partner: residues 63-74, reference-alignment, high confidence",
+      "family": "RNA",
+      "feature": "U6_U4_stem_I_partner",
+      "group": "other snRNA regions",
+      "group_key": "other_snRNA_regions",
+      "kind": "rna_feature",
       "label": "U6 snRNA U4/U6 stem I partner",
       "name": "U5_tri_snRNP_3JCR_U6_U4_stem_I_partner",
       "section": "Named selections for resolved snRNA functional regions."
@@ -249,7 +390,13 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#303.1/N:79-84,103-106",
       "category": "snRNA feature",
+      "color": "#D61A3D",
       "comment": "U6 snRNA internal stem-loop: residues 79-84;103-106, motif-neighborhood, low confidence",
+      "family": "RNA",
+      "feature": "U6_ISL",
+      "group": "internal stem loops",
+      "group_key": "internal_stem_loops",
+      "kind": "rna_feature",
       "label": "U6 snRNA internal stem-loop",
       "name": "U5_tri_snRNP_3JCR_U6_ISL",
       "section": "Named selections for resolved snRNA functional regions."
@@ -257,7 +404,13 @@ _EMBEDDED_SPEC = {
     {
       "atomspec": "#303.1/N:103-106",
       "category": "snRNA feature",
+      "color": "#E33A55",
       "comment": "U6 snRNA LSm site: residues 103-106, terminal-region, low confidence",
+      "family": "RNA",
+      "feature": "U6_LSm_site",
+      "group": "other snRNA regions",
+      "group_key": "other_snRNA_regions",
+      "kind": "rna_feature",
       "label": "U6 snRNA LSm site",
       "name": "U5_tri_snRNP_3JCR_U6_LSm_site",
       "section": "Named selections for resolved snRNA functional regions."

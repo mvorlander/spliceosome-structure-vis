@@ -76,26 +76,36 @@ color #327.1/V #C7A6BE
 color #327.1/W #D65B96
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA/substrate
+# selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_5ZWN_RNA_substrate #327.1/G
 # U1 Sm ring
+# selector_meta {"color":"#B66AAE","family":"Protein/RNP groups","group":"U1 snRNP groups","kind":"subcomplex"}
 name pdb_5ZWN_U1_Sm_ring #327.1/a,b,c,d,e,f,g
 # U1 snRNP
+# selector_meta {"color":"#B66AAE","family":"Protein/RNP groups","group":"U1 snRNP groups","kind":"subcomplex"}
 name pdb_5ZWN_U1_snRNP #327.1/P,Q,R,S,T,U,V,W,X,Y
 # U4/U6 snRNP
+# selector_meta {"color":"#C3BA7A","family":"Protein/RNP groups","group":"U4/U6 groups","kind":"subcomplex"}
 name pdb_5ZWN_U4_U6_snRNP #327.1/y
 # other
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_5ZWN_other #327.1/x
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues -9-12, component, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_B_5ZWN_substrate #327.1/G:-9-12
 # Named selections for resolved snRNA functional regions.
 # U1 snRNA 5' splice-site recognition region: residues 1-10, review-region, medium confidence
+# selector_meta {"color":"#B66AAE","family":"RNA","feature":"U1_5prime_5SS_recognition","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name pre_B_5ZWN_U1_5_5SS_recognition #327.1/P:1-10
 # U1 snRNA stem-loop 1: residues 11-25;33-45, review-region, low confidence
+# selector_meta {"color":"#BF72B7","family":"RNA","feature":"U1_SL1","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
 name pre_B_5ZWN_U1_SL1 #327.1/P:11-25,33-45
 # U1 snRNA stem-loop 2: residues 46-95, review-region, low confidence
+# selector_meta {"color":"#AD62A6","family":"RNA","feature":"U1_SL2","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
 name pre_B_5ZWN_U1_SL2 #327.1/P:46-95
 # U1 snRNA Sm site: residues 228-230; 241-247; 553-559, sequence-motif, medium confidence
+# selector_meta {"color":"#C783BF","family":"RNA","feature":"U1_Sm_site","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
 name pre_B_5ZWN_U1_Sm_site #327.1/P:228-230|#327.1/P:241-247|#327.1/P:553-559
 # RNA feature nucleotide display.
 select #327.1 & nucleic

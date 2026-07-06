@@ -118,36 +118,51 @@ color #366.1/b #EAD7E8
 color #366.1/s #D5F5E3
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA/substrate
+# selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_7OQE_RNA_substrate #366.1/I
 # U1 Sm ring
+# selector_meta {"color":"#B66AAE","family":"Protein/RNP groups","group":"U1 snRNP groups","kind":"subcomplex"}
 name pdb_7OQE_U1_Sm_ring #366.1/b,d,e,f,g,h,i
 # U1 snRNP
+# selector_meta {"color":"#B66AAE","family":"Protein/RNP groups","group":"U1 snRNP groups","kind":"subcomplex"}
 name pdb_7OQE_U1_snRNP #366.1/1,A,B,C,D,E,F,G,H,J,K
 # U2 Sm ring
+# selector_meta {"color":"#BFE6BF","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_7OQE_U2_Sm_ring #366.1/s,t,u,v,w,x,y
 # U2 snRNP
+# selector_meta {"color":"#2F8B4D","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_7OQE_U2_snRNP #366.1/2,W,Y,p
 # U2/SF3B
+# selector_meta {"color":"#6DBE70","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_7OQE_U2_SF3B #366.1/O,P,Q,R,S,T,U,V,Z
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -2,-1,1,2,3,4,5,6,7,8, splice-site-inference, medium confidence, validation not_applicable
+# selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name E_complex_7OQE_5exon #366.1/I:-2,-1,1,2,3,4,5,6,7,8
 # substrate RNA: residues -2,-1,1,2,3,4,5,6,7,8;103-128;130-156;246-268, component, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name E_complex_7OQE_substrate #366.1/I:-2,-1,1,2,3,4,5,6,7,8,103-128,130-156,246-268
 # intron: residues 103-128;130-156;246-268, splice-site-inference, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name E_complex_7OQE_intron #366.1/I:103-128,130-156,246-268
 # Named selections for resolved snRNA functional regions.
 # U1 snRNA 5' splice-site recognition region: residues 1-10, review-region, medium confidence
+# selector_meta {"color":"#B66AAE","family":"RNA","feature":"U1_5prime_5SS_recognition","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name E_complex_7OQE_U1_5_5SS_recognition #366.1/1:1-10
 # U1 snRNA stem-loop 1: residues 11-26;34-45, review-region, low confidence
+# selector_meta {"color":"#BF72B7","family":"RNA","feature":"U1_SL1","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
 name E_complex_7OQE_U1_SL1 #366.1/1:11-26,34-45
 # U1 snRNA stem-loop 2: residues 46-95, review-region, low confidence
+# selector_meta {"color":"#AD62A6","family":"RNA","feature":"U1_SL2","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
 name E_complex_7OQE_U1_SL2 #366.1/1:46-95
 # U1 snRNA Sm site: residues 224-230; 241-247; 553-559, sequence-motif, medium confidence
+# selector_meta {"color":"#C783BF","family":"RNA","feature":"U1_Sm_site","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
 name E_complex_7OQE_U1_Sm_site #366.1/1:224-230|#366.1/1:241-247|#366.1/1:553-559
 # U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence
+# selector_meta {"color":"#0B6E2D","family":"RNA","feature":"U2_branchpoint_pairing_region","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name E_complex_7OQE_U2_branchpoint_pairing_region #366.1/2:33-42
 # U2 snRNA stem IIa: residues 46-74;78-80, review-region, low confidence
+# selector_meta {"color":"#167A38","family":"RNA","feature":"U2_stem_IIa","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
 name E_complex_7OQE_U2_stem_IIa #366.1/2:46-74,78-80
 # RNA feature nucleotide display.
 select #366.1 & nucleic

@@ -123,42 +123,60 @@ color #301.1/I #B0C4DE
 color #301.1/n #D5F5E3
 # Named selections for subcomplexes using original deposited chain IDs.
 # NTC/NTR related
+# selector_meta {"color":"#F4BF67","family":"Protein/RNP groups","group":"NTC/NTR groups","kind":"subcomplex"}
 name pdb_3JB9_NTC_NTR_related #301.1/M,R,X,a,c,d,e,r
 # NTC/PRP19
+# selector_meta {"color":"#F4BF67","family":"Protein/RNP groups","group":"NTC/NTR groups","kind":"subcomplex"}
 name pdb_3JB9_NTC_PRP19 #301.1/S,T,U,V,W,h,i
 # RNA/substrate
+# selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_3JB9_RNA_substrate #301.1/O,Q
 # Second step factors
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_3JB9_Second_step_factors #301.1/g
 # U2 Sm ring
+# selector_meta {"color":"#BFE6BF","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_3JB9_U2_Sm_ring #301.1/Z,b,f,l,m,n,o
 # U2 snRNP
+# selector_meta {"color":"#2F8B4D","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_3JB9_U2_snRNP #301.1/K,P,j,k
 # U4/U6 snRNP
+# selector_meta {"color":"#C3BA7A","family":"Protein/RNP groups","group":"U4/U6 groups","kind":"subcomplex"}
 name pdb_3JB9_U4_U6_snRNP #301.1/Y
 # U5 Sm ring
+# selector_meta {"color":"#BFC3E8","family":"Protein/RNP groups","group":"U5 snRNP groups","kind":"subcomplex"}
 name pdb_3JB9_U5_Sm_ring #301.1/D,E,F,G,H,I,J
 # U5 snRNP
+# selector_meta {"color":"#0000CD","family":"Protein/RNP groups","group":"U5 snRNP groups","kind":"subcomplex"}
 name pdb_3JB9_U5_snRNP #301.1/A,B,C,L
 # U6 snRNP
+# selector_meta {"color":"#DC143C","family":"Protein/RNP groups","group":"U6 snRNP groups","kind":"subcomplex"}
 name pdb_3JB9_U6_snRNP #301.1/N
 # other
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_3JB9_other #301.1/x
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 100-107; 492-504, component, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name ILS_disassembly_3JB9_substrate #301.1/O:100-107|#301.1/Q:492-504
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
+# selector_meta {"color":"#047857","family":"RNA","feature":"U2_U6_helix_I_partner","group":"snRNA-snRNA interacting regions","group_key":"snRNA_snRNA_regions","kind":"rna_feature"}
 name ILS_disassembly_3JB9_U2_U6_helix_I_partner #301.1/P:26-30
 # U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence
+# selector_meta {"color":"#0B6E2D","family":"RNA","feature":"U2_branchpoint_pairing_region","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name ILS_disassembly_3JB9_U2_branchpoint_pairing_region #301.1/P:32-41
 # U5 snRNA loop I: residues 47-51, sequence-motif, medium confidence
+# selector_meta {"color":"#1B3CD0","family":"RNA","feature":"U5_loop_I","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name ILS_disassembly_3JB9_U5_loop_I #301.1/C:47-51
 # U6 snRNA U2/U6 helix I partner: residues 29-54, motif-neighborhood, medium confidence
+# selector_meta {"color":"#D0183C","family":"RNA","feature":"U6_U2_helix_I_partner","group":"snRNA-snRNA interacting regions","group_key":"snRNA_snRNA_regions","kind":"rna_feature"}
 name ILS_disassembly_3JB9_U6_U2_helix_I_partner #301.1/N:29-54
 # U6 snRNA 5' splice-site upstream contact: residues 32-43, motif-neighborhood, medium confidence
+# selector_meta {"color":"#E01842","family":"RNA","feature":"U6_5SS_upstream_contact","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
 name ILS_disassembly_3JB9_U6_5SS_upstream_contact #301.1/N:32-43
 # U6 snRNA ACAGAGA box: residues 35-41, sequence-motif, high confidence
+# selector_meta {"color":"#DC143C","family":"RNA","feature":"U6_ACAGAGA_box","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
 name ILS_disassembly_3JB9_U6_ACAGAGA_box #301.1/N:35-41
 # RNA feature nucleotide display.
 select #301.1 & nucleic

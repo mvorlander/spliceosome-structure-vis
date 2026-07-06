@@ -70,11 +70,14 @@ color #393.1/H #800000
 color #393.1/a #B0C4DE
 # Named selections for subcomplexes using original deposited chain IDs.
 # U5 Sm ring
+# selector_meta {"color":"#BFC3E8","family":"Protein/RNP groups","group":"U5 snRNP groups","kind":"subcomplex"}
 name pdb_8Q7V_U5_Sm_ring #393.1/a,b,c,d,e,f,g
 # U5 snRNP
+# selector_meta {"color":"#0000CD","family":"Protein/RNP groups","group":"U5 snRNP groups","kind":"subcomplex"}
 name pdb_8Q7V_U5_snRNP #393.1/5,A,B,C,D,F,G,H
 # Named selections for resolved snRNA functional regions.
 # U5 snRNA loop I: residues 38, sequence-motif, medium confidence
+# selector_meta {"color":"#1B3CD0","family":"RNA","feature":"U5_loop_I","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name U5_recycling_8Q7V_U5_loop_I #393.1/5:38
 # RNA feature nucleotide display.
 select #393.1 & nucleic

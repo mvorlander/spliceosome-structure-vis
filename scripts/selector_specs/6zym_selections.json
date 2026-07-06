@@ -9,7 +9,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "EJC/mRNP",
-      "atomspec": "#352.1/T"
+      "atomspec": "#352.1/T",
+      "family": "Protein/RNP groups",
+      "group": "EJC/mRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#EAA439"
     },
     {
       "name": "pdb_6ZYM_NTC_NTR_related",
@@ -17,7 +23,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "NTC/NTR related",
-      "atomspec": "#352.1/C,O,P,Q,V,s"
+      "atomspec": "#352.1/C,O,P,Q,V,s",
+      "family": "Protein/RNP groups",
+      "group": "NTC/NTR groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#F4BF67"
     },
     {
       "name": "pdb_6ZYM_NTC_PRP19",
@@ -25,7 +37,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "NTC/PRP19",
-      "atomspec": "#352.1/D,L,R"
+      "atomspec": "#352.1/D,L,R",
+      "family": "Protein/RNP groups",
+      "group": "NTC/NTR groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#F4BF67"
     },
     {
       "name": "pdb_6ZYM_RNA_substrate",
@@ -33,7 +51,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "RNA/substrate",
-      "atomspec": "#352.1/Y,Z"
+      "atomspec": "#352.1/Y,Z",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#303030"
     },
     {
       "name": "pdb_6ZYM_SR_proteins",
@@ -41,7 +65,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "SR proteins",
-      "atomspec": "#352.1/S"
+      "atomspec": "#352.1/S",
+      "family": "Protein/RNP groups",
+      "group": "other protein/RNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#9CA3AF"
     },
     {
       "name": "pdb_6ZYM_Second_step_factors",
@@ -49,7 +79,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "Second step factors",
-      "atomspec": "#352.1/E"
+      "atomspec": "#352.1/E",
+      "family": "Protein/RNP groups",
+      "group": "other protein/RNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#9CA3AF"
     },
     {
       "name": "pdb_6ZYM_U2_snRNP",
@@ -57,7 +93,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U2 snRNP",
-      "atomspec": "#352.1/2,u"
+      "atomspec": "#352.1/2,u",
+      "family": "Protein/RNP groups",
+      "group": "U2/SF3B groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#2F8B4D"
     },
     {
       "name": "pdb_6ZYM_U5_snRNP",
@@ -65,7 +107,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U5 snRNP",
-      "atomspec": "#352.1/5,A,B,F"
+      "atomspec": "#352.1/5,A,B,F",
+      "family": "Protein/RNP groups",
+      "group": "U5 snRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#0000CD"
     },
     {
       "name": "pdb_6ZYM_U6_snRNP",
@@ -73,7 +121,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U6 snRNP",
-      "atomspec": "#352.1/6"
+      "atomspec": "#352.1/6",
+      "family": "Protein/RNP groups",
+      "group": "U6 snRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#DC143C"
     },
     {
       "name": "pdb_6ZYM_other",
@@ -81,7 +135,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "other",
-      "atomspec": "#352.1/9,p,r,t,x"
+      "atomspec": "#352.1/9,p,r,t,x",
+      "family": "Protein/RNP groups",
+      "group": "other protein/RNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#9CA3AF"
     },
     {
       "name": "C_6ZYM_substrate",
@@ -89,7 +149,13 @@
       "category": "substrate RNA feature",
       "section": "Named selections for resolved substrate RNA features.",
       "comment": "substrate RNA: residues 46-58; 59-79;141-160, component, medium confidence, validation not_applicable",
-      "atomspec": "#352.1/Y:59-79,141-160|#352.1/Z:46-58"
+      "atomspec": "#352.1/Y:59-79,141-160|#352.1/Z:46-58",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "pre_mRNA_features",
+      "kind": "rna_feature",
+      "feature": "substrate",
+      "color": "#303030"
     },
     {
       "name": "C_6ZYM_5SS",
@@ -97,7 +163,13 @@
       "category": "substrate RNA feature",
       "section": "Named selections for resolved substrate RNA features.",
       "comment": "5' splice site: residues 59-64, sequence-motif, medium confidence, validation uncertain uncertain validation",
-      "atomspec": "#352.1/Y:59-64"
+      "atomspec": "#352.1/Y:59-64",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "pre_mRNA_features",
+      "kind": "rna_feature",
+      "feature": "five_prime_splice_site",
+      "color": "#303030"
     },
     {
       "name": "C_6ZYM_intron",
@@ -105,7 +177,13 @@
       "category": "substrate RNA feature",
       "section": "Named selections for resolved substrate RNA features.",
       "comment": "intron: residues 59-79;141-160, splice-site-inference, medium confidence, validation not_applicable",
-      "atomspec": "#352.1/Y:59-79,141-160"
+      "atomspec": "#352.1/Y:59-79,141-160",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "pre_mRNA_features",
+      "kind": "rna_feature",
+      "feature": "intron",
+      "color": "#303030"
     },
     {
       "name": "C_6ZYM_branch_region",
@@ -113,7 +191,13 @@
       "category": "substrate RNA feature",
       "section": "Named selections for resolved substrate RNA features.",
       "comment": "branch point region: residues 145-156, network-scored-motif, high confidence, validation validated",
-      "atomspec": "#352.1/Y:145-156"
+      "atomspec": "#352.1/Y:145-156",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "pre_mRNA_features",
+      "kind": "rna_feature",
+      "feature": "branch_point_region",
+      "color": "#303030"
     },
     {
       "name": "C_6ZYM_branch_A",
@@ -121,7 +205,13 @@
       "category": "substrate RNA feature",
       "section": "Named selections for resolved substrate RNA features.",
       "comment": "branch point adenosine: residues 155, network-scored-motif, high confidence, validation validated",
-      "atomspec": "#352.1/Y:155"
+      "atomspec": "#352.1/Y:155",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "pre_mRNA_features",
+      "kind": "rna_feature",
+      "feature": "branch_point_adenosine",
+      "color": "#303030"
     },
     {
       "name": "C_6ZYM_5exon",
@@ -129,7 +219,13 @@
       "category": "substrate RNA feature",
       "section": "Named selections for resolved substrate RNA features.",
       "comment": "5' exon: residues 46-58, splice-site-inference, medium confidence, validation not_applicable",
-      "atomspec": "#352.1/Z:46-58"
+      "atomspec": "#352.1/Z:46-58",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "pre_mRNA_features",
+      "kind": "rna_feature",
+      "feature": "exon_5",
+      "color": "#FF8C00"
     },
     {
       "name": "C_6ZYM_U2_U6_helix_I_partner",
@@ -137,7 +233,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence",
-      "atomspec": "#352.1/2:26-30"
+      "atomspec": "#352.1/2:26-30",
+      "family": "RNA",
+      "group": "snRNA-snRNA interacting regions",
+      "group_key": "snRNA_snRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U2_U6_helix_I_partner",
+      "color": "#047857"
     },
     {
       "name": "C_6ZYM_U2_branchpoint_pairing_region",
@@ -145,7 +247,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence",
-      "atomspec": "#352.1/2:32-41"
+      "atomspec": "#352.1/2:32-41",
+      "family": "RNA",
+      "group": "snRNA-pre-mRNA regions",
+      "group_key": "snRNA_pre_mRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U2_branchpoint_pairing_region",
+      "color": "#0B6E2D"
     },
     {
       "name": "C_6ZYM_U5_loop_I",
@@ -153,7 +261,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence",
-      "atomspec": "#352.1/5:38-42"
+      "atomspec": "#352.1/5:38-42",
+      "family": "RNA",
+      "group": "snRNA-pre-mRNA regions",
+      "group_key": "snRNA_pre_mRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U5_loop_I",
+      "color": "#1B3CD0"
     },
     {
       "name": "C_6ZYM_U6_5_terminal_stem_loop",
@@ -161,7 +275,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U6 snRNA 5' terminal stem-loop: residues 1-30, reference-alignment, high confidence",
-      "atomspec": "#352.1/6:1-30"
+      "atomspec": "#352.1/6:1-30",
+      "family": "RNA",
+      "group": "internal stem loops",
+      "group_key": "internal_stem_loops",
+      "kind": "rna_feature",
+      "feature": "U6_5prime_terminal_stem_loop",
+      "color": "#DC143C"
     },
     {
       "name": "C_6ZYM_U6_U2_helix_I_partner",
@@ -169,7 +289,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U6 snRNA U2/U6 helix I partner: residues 35-60, motif-neighborhood, medium confidence",
-      "atomspec": "#352.1/6:35-60"
+      "atomspec": "#352.1/6:35-60",
+      "family": "RNA",
+      "group": "snRNA-snRNA interacting regions",
+      "group_key": "snRNA_snRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U6_U2_helix_I_partner",
+      "color": "#D0183C"
     },
     {
       "name": "C_6ZYM_U6_5SS_upstream_contact",
@@ -177,7 +303,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U6 snRNA 5' splice-site upstream contact: residues 38-49, motif-neighborhood, medium confidence",
-      "atomspec": "#352.1/6:38-49"
+      "atomspec": "#352.1/6:38-49",
+      "family": "RNA",
+      "group": "other snRNA regions",
+      "group_key": "other_snRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U6_5SS_upstream_contact",
+      "color": "#E01842"
     },
     {
       "name": "C_6ZYM_U6_ACAGAGA_box",
@@ -185,7 +317,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U6 snRNA ACAGAGA box: residues 41-47, sequence-motif, high confidence",
-      "atomspec": "#352.1/6:41-47"
+      "atomspec": "#352.1/6:41-47",
+      "family": "RNA",
+      "group": "other snRNA regions",
+      "group_key": "other_snRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U6_ACAGAGA_box",
+      "color": "#DC143C"
     }
   ]
 }

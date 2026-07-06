@@ -50,8 +50,10 @@ color #362.1/A #6A9064
 color #362.1/E #479061
 # Named selections for subcomplexes using original deposited chain IDs.
 # U2 snRNP
+# selector_meta {"color":"#2F8B4D","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_7EVN_U2_snRNP #362.1/E
 # U2/SF3B
+# selector_meta {"color":"#6DBE70","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_7EVN_U2_SF3B #362.1/A,B,C,D
 # Searchable named selection browser.
 # In GUI ChimeraX this opens a small panel for selecting and zooming named selections.

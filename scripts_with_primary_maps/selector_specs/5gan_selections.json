@@ -9,7 +9,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U4 Sm ring",
-      "atomspec": "#305.1/k,l,m,n,p,q,r"
+      "atomspec": "#305.1/k,l,m,n,p,q,r",
+      "family": "Protein/RNP groups",
+      "group": "U4 snRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#F5E85A"
     },
     {
       "name": "pdb_5GAN_U4_snRNP",
@@ -17,7 +23,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U4 snRNP",
-      "atomspec": "#305.1/V"
+      "atomspec": "#305.1/V",
+      "family": "Protein/RNP groups",
+      "group": "U4 snRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#D8C800"
     },
     {
       "name": "pdb_5GAN_U4_U6_snRNP",
@@ -25,7 +37,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U4/U6 snRNP",
-      "atomspec": "#305.1/D,F,G,H,K"
+      "atomspec": "#305.1/D,F,G,H,K",
+      "family": "Protein/RNP groups",
+      "group": "U4/U6 groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#C3BA7A"
     },
     {
       "name": "pdb_5GAN_U5_Sm_ring",
@@ -33,7 +51,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U5 Sm ring",
-      "atomspec": "#305.1/b,d,e,f,g,h,j"
+      "atomspec": "#305.1/b,d,e,f,g,h,j",
+      "family": "Protein/RNP groups",
+      "group": "U5 snRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#BFC3E8"
     },
     {
       "name": "pdb_5GAN_U5_snRNP",
@@ -41,7 +65,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U5 snRNP",
-      "atomspec": "#305.1/A,B,C,E,J,U"
+      "atomspec": "#305.1/A,B,C,E,J,U",
+      "family": "Protein/RNP groups",
+      "group": "U5 snRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#0000CD"
     },
     {
       "name": "pdb_5GAN_U6_LSm",
@@ -49,7 +79,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U6 LSm",
-      "atomspec": "#305.1/2,3,4,5,6,7,8"
+      "atomspec": "#305.1/2,3,4,5,6,7,8",
+      "family": "Protein/RNP groups",
+      "group": "U6 snRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#FECACA"
     },
     {
       "name": "pdb_5GAN_U6_snRNP",
@@ -57,7 +93,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "U6 snRNP",
-      "atomspec": "#305.1/W"
+      "atomspec": "#305.1/W",
+      "family": "Protein/RNP groups",
+      "group": "U6 snRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#DC143C"
     },
     {
       "name": "pdb_5GAN_other",
@@ -65,7 +107,13 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "other",
-      "atomspec": "#305.1/x"
+      "atomspec": "#305.1/x",
+      "family": "Protein/RNP groups",
+      "group": "other protein/RNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#9CA3AF"
     },
     {
       "name": "U5_tri_snRNP_5GAN_U4_U6_stem_I_partner",
@@ -73,7 +121,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U4 snRNA U4/U6 stem I partner: residues 1-18, reference-alignment, high confidence",
-      "atomspec": "#305.1/V:1-18"
+      "atomspec": "#305.1/V:1-18",
+      "family": "RNA",
+      "group": "snRNA-snRNA interacting regions",
+      "group_key": "snRNA_snRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U4_U6_stem_I_partner",
+      "color": "#D8C800"
     },
     {
       "name": "U5_tri_snRNP_5GAN_U4_U6_stem_II_partner",
@@ -81,7 +135,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U4 snRNA U4/U6 stem II partner: residues 57-64, reference-alignment, high confidence",
-      "atomspec": "#305.1/V:57-64"
+      "atomspec": "#305.1/V:57-64",
+      "family": "RNA",
+      "group": "snRNA-snRNA interacting regions",
+      "group_key": "snRNA_snRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U4_U6_stem_II_partner",
+      "color": "#E0CF1A"
     },
     {
       "name": "U5_tri_snRNP_5GAN_U4_Brr2_loading_region",
@@ -89,7 +149,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U4 snRNA Brr2 loading region: residues 60-67;73-95, review-region, low confidence",
-      "atomspec": "#305.1/V:60-67,73-95"
+      "atomspec": "#305.1/V:60-67,73-95",
+      "family": "RNA",
+      "group": "other snRNA regions",
+      "group_key": "other_snRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U4_Brr2_loading_region",
+      "color": "#F0DF2E"
     },
     {
       "name": "U5_tri_snRNP_5GAN_U4_Sm_site",
@@ -97,7 +163,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U4 snRNA Sm site: residues 144-150, sequence-motif, medium confidence",
-      "atomspec": "#305.1/V:144-150"
+      "atomspec": "#305.1/V:144-150",
+      "family": "RNA",
+      "group": "other snRNA regions",
+      "group_key": "other_snRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U4_Sm_site",
+      "color": "#F5E85A"
     },
     {
       "name": "U5_tri_snRNP_5GAN_U5_loop_I",
@@ -105,7 +177,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U5 snRNA loop I: residues 53, sequence-motif, medium confidence",
-      "atomspec": "#305.1/U:53"
+      "atomspec": "#305.1/U:53",
+      "family": "RNA",
+      "group": "snRNA-pre-mRNA regions",
+      "group_key": "snRNA_pre_mRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U5_loop_I",
+      "color": "#1B3CD0"
     },
     {
       "name": "U5_tri_snRNP_5GAN_U6_5_terminal_stem_loop",
@@ -113,7 +191,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U6 snRNA 5' terminal stem-loop: residues 1-9;16-30, reference-alignment, high confidence",
-      "atomspec": "#305.1/W:1-9,16-30"
+      "atomspec": "#305.1/W:1-9,16-30",
+      "family": "RNA",
+      "group": "internal stem loops",
+      "group_key": "internal_stem_loops",
+      "kind": "rna_feature",
+      "feature": "U6_5prime_terminal_stem_loop",
+      "color": "#DC143C"
     },
     {
       "name": "U5_tri_snRNP_5GAN_U6_U2_helix_I_partner",
@@ -121,7 +205,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U6 snRNA U2/U6 helix I partner: residues 44-51;55-66, motif-neighborhood, medium confidence",
-      "atomspec": "#305.1/W:44-51,55-66"
+      "atomspec": "#305.1/W:44-51,55-66",
+      "family": "RNA",
+      "group": "snRNA-snRNA interacting regions",
+      "group_key": "snRNA_snRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U6_U2_helix_I_partner",
+      "color": "#D0183C"
     },
     {
       "name": "U5_tri_snRNP_5GAN_U6_5SS_upstream_contact",
@@ -129,7 +219,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U6 snRNA 5' splice-site upstream contact: residues 44-51;55, motif-neighborhood, medium confidence",
-      "atomspec": "#305.1/W:44-51,55"
+      "atomspec": "#305.1/W:44-51,55",
+      "family": "RNA",
+      "group": "other snRNA regions",
+      "group_key": "other_snRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U6_5SS_upstream_contact",
+      "color": "#E01842"
     },
     {
       "name": "U5_tri_snRNP_5GAN_U6_ISL",
@@ -137,7 +233,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U6 snRNA internal stem-loop: residues 46-51;55-73, motif-neighborhood, low confidence",
-      "atomspec": "#305.1/W:46-51,55-73"
+      "atomspec": "#305.1/W:46-51,55-73",
+      "family": "RNA",
+      "group": "internal stem loops",
+      "group_key": "internal_stem_loops",
+      "kind": "rna_feature",
+      "feature": "U6_ISL",
+      "color": "#D61A3D"
     },
     {
       "name": "U5_tri_snRNP_5GAN_U6_ACAGAGA_box",
@@ -145,7 +247,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U6 snRNA ACAGAGA box: residues 47-51, sequence-motif, high confidence",
-      "atomspec": "#305.1/W:47-51"
+      "atomspec": "#305.1/W:47-51",
+      "family": "RNA",
+      "group": "other snRNA regions",
+      "group_key": "other_snRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U6_ACAGAGA_box",
+      "color": "#DC143C"
     },
     {
       "name": "U5_tri_snRNP_5GAN_U6_U4_stem_II_partner",
@@ -153,7 +261,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U6 snRNA U4/U6 stem II partner: residues 55-68, reference-alignment, high confidence",
-      "atomspec": "#305.1/W:55-68"
+      "atomspec": "#305.1/W:55-68",
+      "family": "RNA",
+      "group": "other snRNA regions",
+      "group_key": "other_snRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U6_U4_stem_II_partner",
+      "color": "#E01842"
     },
     {
       "name": "U5_tri_snRNP_5GAN_U6_AGC_catalytic_triad",
@@ -161,7 +275,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U6 snRNA AGC catalytic triad: residues 59-61, sequence-motif, medium confidence",
-      "atomspec": "#305.1/W:59-61"
+      "atomspec": "#305.1/W:59-61",
+      "family": "RNA",
+      "group": "catalytic core regions",
+      "group_key": "catalytic_core_regions",
+      "kind": "rna_feature",
+      "feature": "U6_AGC_catalytic_triad",
+      "color": "#C91236"
     },
     {
       "name": "U5_tri_snRNP_5GAN_U6_U4_stem_I_partner",
@@ -169,7 +289,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U6 snRNA U4/U6 stem I partner: residues 70-80, reference-alignment, high confidence",
-      "atomspec": "#305.1/W:70-80"
+      "atomspec": "#305.1/W:70-80",
+      "family": "RNA",
+      "group": "other snRNA regions",
+      "group_key": "other_snRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U6_U4_stem_I_partner",
+      "color": "#D9183E"
     },
     {
       "name": "U5_tri_snRNP_5GAN_U6_LSm_site",
@@ -177,7 +303,13 @@
       "category": "snRNA feature",
       "section": "Named selections for resolved snRNA functional regions.",
       "comment": "U6 snRNA LSm site: residues 108-112, terminal-region, low confidence",
-      "atomspec": "#305.1/W:108-112"
+      "atomspec": "#305.1/W:108-112",
+      "family": "RNA",
+      "group": "other snRNA regions",
+      "group_key": "other_snRNA_regions",
+      "kind": "rna_feature",
+      "feature": "U6_LSm_site",
+      "color": "#E33A55"
     }
   ]
 }

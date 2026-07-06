@@ -82,19 +82,26 @@ color #363.1/A #55947F
 color #363.1/B #75A074
 # Named selections for subcomplexes using original deposited chain IDs.
 # U2 Sm ring
+# selector_meta {"color":"#BFE6BF","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_7EVO_U2_Sm_ring #363.1/a,b,c,d,e,f,g
 # U2 snRNP
+# selector_meta {"color":"#2F8B4D","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_7EVO_U2_snRNP #363.1/D,E,F,G,H
 # U2/SF3B
+# selector_meta {"color":"#6DBE70","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_7EVO_U2_SF3B #363.1/1,2,3,4,5,6,A,B,C
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
+# selector_meta {"color":"#047857","family":"RNA","feature":"U2_U6_helix_I_partner","group":"snRNA-snRNA interacting regions","group_key":"snRNA_snRNA_regions","kind":"rna_feature"}
 name U2_snRNP_7EVO_U2_U6_helix_I_partner #363.1/H:26-30
 # U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence
+# selector_meta {"color":"#0B6E2D","family":"RNA","feature":"U2_branchpoint_pairing_region","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name U2_snRNP_7EVO_U2_branchpoint_pairing_region #363.1/H:32-41
 # U2 snRNA stem IIa: residues 46-65;69-73;81-82, review-region, low confidence
+# selector_meta {"color":"#167A38","family":"RNA","feature":"U2_stem_IIa","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
 name U2_snRNP_7EVO_U2_stem_IIa #363.1/H:46-65,69-73,81-82
 # U2 snRNA Sm site: residues 99-105, sequence-motif, medium confidence
+# selector_meta {"color":"#2F8B4D","family":"RNA","feature":"U2_Sm_site","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
 name U2_snRNP_7EVO_U2_Sm_site #363.1/H:99-105
 # RNA feature nucleotide display.
 select #363.1 & nucleic

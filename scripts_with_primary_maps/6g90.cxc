@@ -114,32 +114,45 @@ color #336.1/F #C7A6BE
 color #336.1/G #D65B96
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA/substrate
+# selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_6G90_RNA_substrate #336.1/I
 # U1 Sm ring
+# selector_meta {"color":"#B66AAE","family":"Protein/RNP groups","group":"U1 snRNP groups","kind":"subcomplex"}
 name pdb_6G90_U1_Sm_ring #336.1/b,d,e,f,g,h,i
 # U1 snRNP
+# selector_meta {"color":"#B66AAE","family":"Protein/RNP groups","group":"U1 snRNP groups","kind":"subcomplex"}
 name pdb_6G90_U1_snRNP #336.1/1,A,B,C,D,E,F,G,H,J
 # U2 Sm ring
+# selector_meta {"color":"#BFE6BF","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_6G90_U2_Sm_ring #336.1/s,t,u,v,w,x,y
 # U2 snRNP
+# selector_meta {"color":"#2F8B4D","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_6G90_U2_snRNP #336.1/2,W,Y
 # U2/SF3B
+# selector_meta {"color":"#6DBE70","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_6G90_U2_SF3B #336.1/O,P,Q,R,S,T,U,V,Z
 # other
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_6G90_other #336.1/X
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues -1,0,1,2,3,4,5,6,7,8,9,10,51,52,53,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79, component, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name A_complex_6G90_substrate #336.1/I:-1,0,1,2,3,4,5,6,7,8,9,10,51,52,53,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79
 # Named selections for resolved snRNA functional regions.
 # U1 snRNA 5' splice-site recognition region: residues 1-10, review-region, medium confidence
+# selector_meta {"color":"#B66AAE","family":"RNA","feature":"U1_5prime_5SS_recognition","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name A_complex_6G90_U1_5_5SS_recognition #336.1/1:1-10
 # U1 snRNA stem-loop 1: residues 11-45, review-region, low confidence
+# selector_meta {"color":"#BF72B7","family":"RNA","feature":"U1_SL1","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
 name A_complex_6G90_U1_SL1 #336.1/1:11-45
 # U1 snRNA stem-loop 2: residues 46-61;67-95, review-region, low confidence
+# selector_meta {"color":"#AD62A6","family":"RNA","feature":"U1_SL2","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
 name A_complex_6G90_U1_SL2 #336.1/1:46-61,67-95
 # U1 snRNA Sm site: residues 241-247; 439,440,516,517,518,519,520, sequence-motif, medium confidence
+# selector_meta {"color":"#C783BF","family":"RNA","feature":"U1_Sm_site","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
 name A_complex_6G90_U1_Sm_site #336.1/1:241-247|#336.1/1:439,440,516,517,518,519,520
 # U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence
+# selector_meta {"color":"#0B6E2D","family":"RNA","feature":"U2_branchpoint_pairing_region","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name A_complex_6G90_U2_branchpoint_pairing_region #336.1/2:33-42
 # RNA feature nucleotide display.
 select #336.1 & nucleic

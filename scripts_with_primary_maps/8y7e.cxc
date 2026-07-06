@@ -74,26 +74,36 @@ color #417.1/7 #92BB8F
 color #417.1/H #006400
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA/substrate
+# selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_8Y7E_RNA_substrate #417.1/A
 # Sm ring
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_8Y7E_Sm_ring #417.1/h,i,j,k,l,m,n
 # U11/U12 snRNP
+# selector_meta {"color":"#B66AAE","family":"Protein/RNP groups","group":"U1 snRNP groups","kind":"subcomplex"}
 name pdb_8Y7E_U11_U12_snRNP #417.1/H
 # U2/SF3B
+# selector_meta {"color":"#6DBE70","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_8Y7E_U2_SF3B #417.1/1,2,3,4,5,6,7
 # other
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_8Y7E_other #417.1/v
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 193-222, component, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_B_8Y7E_substrate #417.1/A:193-222
 # branch point region: residues 195-206, network-scored-motif, high confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"branch_point_region","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_B_8Y7E_branch_region #417.1/A:195-206
 # branch point adenosine: residues 203, network-scored-motif, high confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"branch_point_adenosine","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_B_8Y7E_branch_A #417.1/A:203
 # Named selections for resolved snRNA functional regions.
 # U12 snRNA branchpoint pairing region: residues 16-26, reference-alignment, high confidence
+# selector_meta {"color":"#0B6E2D","family":"RNA","feature":"U12_branchpoint_pairing_region","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name pre_B_8Y7E_U12_branchpoint_pairing_region #417.1/H:16-26
 # U12 snRNA Sm site: residues 75-81, sequence-motif, medium confidence
+# selector_meta {"color":"#2F8B4D","family":"RNA","feature":"U12_Sm_site","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
 name pre_B_8Y7E_U12_Sm_site #417.1/H:75-81
 # RNA feature nucleotide display.
 select #417.1 & nucleic

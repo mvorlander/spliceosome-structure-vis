@@ -81,22 +81,30 @@ color #365.1/P #6A9064
 color #365.1/R #77B088
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA/substrate
+# selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_7OQB_RNA_substrate #365.1/I
 # U2 Sm ring
+# selector_meta {"color":"#BFE6BF","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_7OQB_U2_Sm_ring #365.1/s,t,u,v,w,x,y
 # U2 snRNP
+# selector_meta {"color":"#2F8B4D","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_7OQB_U2_snRNP #365.1/2,W,Y,p
 # U2/SF3B
+# selector_meta {"color":"#6DBE70","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_7OQB_U2_SF3B #365.1/O,P,Q,R,S,T,U,V,Z
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 246-268, component, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name U2_snRNP_7OQB_substrate #365.1/I:246-268
 # intron: residues 246-268, splice-site-inference, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name U2_snRNP_7OQB_intron #365.1/I:246-268
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence
+# selector_meta {"color":"#0B6E2D","family":"RNA","feature":"U2_branchpoint_pairing_region","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name U2_snRNP_7OQB_U2_branchpoint_pairing_region #365.1/2:33-42
 # U2 snRNA stem IIa: residues 46-74;78-80, review-region, low confidence
+# selector_meta {"color":"#167A38","family":"RNA","feature":"U2_stem_IIa","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
 name U2_snRNP_7OQB_U2_stem_IIa #365.1/2:46-74,78-80
 # RNA feature nucleotide display.
 select #365.1 & nucleic
