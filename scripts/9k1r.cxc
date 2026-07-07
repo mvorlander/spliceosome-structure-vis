@@ -14,6 +14,10 @@ rename #422 SF3B_U2_9k1r_structure
 matchmaker #422.1/C to #422.9/2G
 close #422.9
 
+# Remove implausibly long deposited covalent bonds before styling.
+# Fetch and run the implausible-bond pruning helper from GitHub.
+open https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/prune_implausible_bonds.py
+
 hide atoms
 cartoon
 # Default display style.
@@ -27,8 +31,6 @@ lighting simple
 camera ortho
 lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
 lighting soft
-# window
-# windowsize 800 800
 
 # bg and model colors
 set bgColor white
