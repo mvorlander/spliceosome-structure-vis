@@ -40,7 +40,23 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # U2 snRNA
-color #332.1/2 #006400
+color #332.1/2 #71C562
+# U5 snRNA
+color #332.1/5 #4F9FD3
+# U6 snRNA
+color #332.1/6 #EF4444
+# mRNA
+color #332.1/e #303030
+# mRNA
+color #332.1/i #303030
+# PRPF8
+color #332.1/A #BFC3E8
+# EFTUD2
+color #332.1/B #6495ED
+# PLRG1
+color #332.1/D #F4A460
+# SNW1
+color #332.1/E #D49F96
 # RBM22
 color #332.1/F #DE9A52
 # CWC2
@@ -57,8 +73,6 @@ color #332.1/M #FFF7C9
 color #332.1/O #5A338B
 # DHX8
 color #332.1/P #900C3F
-# U5 snRNA
-color #332.1/5 #0000CD
 # SYF2
 color #332.1/R #FF8C00
 # CDC5L
@@ -83,8 +97,6 @@ color #332.1/l #D5F5E3
 color #332.1/d #B0C4DE
 # U2-Sm SNRPG
 color #332.1/n #D5F5E3
-# U6 snRNA
-color #332.1/6 #DC143C
 # U5-Sm SNRPB
 color #332.1/f #B0C4DE
 # U2-Sm SNRPB
@@ -109,18 +121,6 @@ color #332.1/v #FFFFAB
 color #332.1/w #FFFFAB
 # PRPF19
 color #332.1/x #FFFFAB
-# pre-mRNA
-color #332.1/e #303030
-# pre-mRNA
-color #332.1/i #303030
-# PRPF8
-color #332.1/A #BFC3E8
-# EFTUD2
-color #332.1/B #6495ED
-# PLRG1
-color #332.1/D #F4A460
-# SNW1
-color #332.1/E #D49F96
 # Named selections for subcomplexes using original deposited chain IDs.
 # EJC/mRNP
 # selector_meta {"color":"#EAA439","family":"Protein/RNP groups","group":"EJC/mRNP groups","kind":"subcomplex"}
@@ -159,15 +159,18 @@ name pdb_6BK8_other #332.1/K,N,X,Y,y
 # substrate RNA: residues -13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21; 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,501,502,503,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,620,621,622,623,624,625,626,627,628,1001,1002,1003,1004,1005,1006,1007,1008,1110,1111,1112,1113,1114,1115,1116,1117,1118, component, medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_6BK8_substrate #332.1/e:-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21|#332.1/i:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,501,502,503,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,620,621,622,623,624,625,626,627,628,1001,1002,1003,1004,1005,1006,1007,1008,1110,1111,1112,1113,1114,1115,1116,1117,1118
+# 5' splice site: residues 1-6, network-scored-motif, medium confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name P_6BK8_5SS #332.1/i:1-6
+# intron: residues 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,501,502,503,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,620,621,622,623,624,625,626,627,628,1001,1002,1003,1004,1005,1006,1007,1008,1110,1111,1112,1113,1114,1115,1116,1117,1118, splice-site-inference, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name P_6BK8_intron #332.1/i:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,501,502,503,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,620,621,622,623,624,625,626,627,628,1001,1002,1003,1004,1005,1006,1007,1008,1110,1111,1112,1113,1114,1115,1116,1117,1118
 # branch point region: residues 507-517, network-scored-motif, high confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"branch_point_region","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_6BK8_branch_region #332.1/i:507-517
 # branch point adenosine: residues 515, network-scored-motif, high confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"branch_point_adenosine","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_6BK8_branch_A #332.1/i:515
-# polypyrimidine tract: residues 518,620,621,622,623,624,625,626,627,628, sequence-motif, medium confidence, validation uncertain uncertain validation
-# selector_meta {"color":"#303030","family":"RNA","feature":"polypyrimidine_tract","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
-name P_6BK8_PPT #332.1/i:518,620,621,622,623,624,625,626,627,628
 # 3' splice site: residues 1116-1118, network-scored-motif, medium confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"three_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_6BK8_3SS #332.1/i:1116-1118
@@ -206,9 +209,10 @@ name P_6BK8_U6_AGC_catalytic_triad #332.1/6:59-61
 select #332.1 & nucleic
 nucleotides sel atoms
 select clear
+# 5'SS: residues 1-6
+# intron: residues 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,501,502,503,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,620,621,622,623,624,625,626,627,628,1001,1002,1003,1004,1005,1006,1007,1008,1110,1111,1112,1113,1114,1115,1116,1117,1118
 # BP region: residues 507-517
 # BP-A: residues 515
-# PPT: residues 518,620,621,622,623,624,625,626,627,628
 # 3'SS: residues 1116-1118
 # U2/U6 helix I: residues 26-30
 color #332.1/2:26-30 #047857

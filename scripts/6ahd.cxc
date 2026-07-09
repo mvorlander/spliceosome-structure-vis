@@ -41,6 +41,22 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # PRPF8
 color #331.1/A #BFC3E8
+# U4 snRNA
+color #331.1/I #F2D94E
+# U5 snRNA
+color #331.1/B #4F9FD3
+# U6 snRNA
+color #331.1/F #EF4444
+# mRNA
+color #331.1/G #303030
+# TXNL4A
+color #331.1/O #C3BA7A
+# EFTUD2
+color #331.1/C #6495ED
+# PRPF6
+color #331.1/N #CFA785
+# NHP2L1
+color #331.1/M #A89264
 # PRPF31
 color #331.1/L #DFD570
 # SART1
@@ -89,8 +105,6 @@ color #331.1/T #F7F0A6
 color #331.1/g #B0C4DE
 # U2-Sm SNRPD3
 color #331.1/h #D5F5E3
-# U4 snRNA
-color #331.1/I #E6D900
 # PRP8BP
 color #331.1/E #E2F3F4
 # FBP21
@@ -108,11 +122,9 @@ color #331.1/8 #FFB6C1
 # SMU1
 color #331.1/Y #E0A3D2
 # U2 snRNA
-color #331.1/H #006400
+color #331.1/H #71C562
 # SNRPA1
 color #331.1/o #58D68D
-# U5 snRNA
-color #331.1/B #0000CD
 # SNRPB2
 color #331.1/p #DAF7A6
 # SF3A1
@@ -133,8 +145,6 @@ color #331.1/t #F4A3A8
 color #331.1/x #F4A3A8
 # LSM7
 color #331.1/y #F4A3A8
-# U6 snRNA
-color #331.1/F #DC143C
 # LSM8
 color #331.1/z #F4A3A8
 # PRPF4
@@ -155,16 +165,6 @@ color #331.1/2 #49926C
 color #331.1/4 #77B088
 # SNRNP200
 color #331.1/D #AFEEEE
-# pre-mRNA
-color #331.1/G #303030
-# TXNL4A
-color #331.1/O #C3BA7A
-# EFTUD2
-color #331.1/C #6495ED
-# PRPF6
-color #331.1/N #CFA785
-# NHP2L1
-color #331.1/M #A89264
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}

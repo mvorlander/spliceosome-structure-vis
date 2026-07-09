@@ -41,33 +41,11 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # U4 snRNA
-color #403.1/4 #E6D900
-# USP39
-color #403.1/U #B37E6A
-# FBP21
-color #403.1/X #B03B66
-# ZMAT2
-color #403.1/r #FFB6C1
-# pre-mRNA
-color #403.1/z1 #303030
-# pre-mRNA
-color #403.1/z2 #303030
-# PRPF3
-color #403.1/J #E1DD1B
-# PRPF31
-color #403.1/L #DFD570
-# PRPF4
-color #403.1/F #E2C496
-# PRPF6
-color #403.1/N #CFA785
-# PRPF8
-color #403.1/A #BFC3E8
+color #403.1/4 #F2D94E
 # U5 snRNA
-color #403.1/5 #0000CD
-# SART1
-color #403.1/S #D6937B
+color #403.1/5 #4F9FD3
 # U6 snRNA
-color #403.1/6 #DC143C
+color #403.1/6 #EF4444
 # SF3A1
 color #403.1/7 #55947F
 # EFTUD2
@@ -80,6 +58,28 @@ color #403.1/I #F88379
 color #403.1/K #CD5C5C
 # NHP2L1
 color #403.1/M #A89264
+# USP39
+color #403.1/U #B37E6A
+# FBP21
+color #403.1/X #B03B66
+# ZMAT2
+color #403.1/r #FFB6C1
+# mRNA
+color #403.1/z1 #303030
+# mRNA
+color #403.1/z2 #303030
+# PRPF3
+color #403.1/J #E1DD1B
+# PRPF31
+color #403.1/L #DFD570
+# PRPF4
+color #403.1/F #E2C496
+# PRPF6
+color #403.1/N #CFA785
+# PRPF8
+color #403.1/A #BFC3E8
+# SART1
+color #403.1/S #D6937B
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}

@@ -40,7 +40,23 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # U2 snRNA
-color #333.1/2 #006400
+color #333.1/2 #71C562
+# U5 snRNA
+color #333.1/5 #4F9FD3
+# U6 snRNA
+color #333.1/6 #EF4444
+# PRPF8
+color #333.1/A #BFC3E8
+# EFTUD2
+color #333.1/C #6495ED
+# CCDC94
+color #333.1/D #CE4678
+# EXON
+color #333.1/E #303030
+# CWC22
+color #333.1/H #2C54DD
+# INTRON
+color #333.1/I #303030
 # PLRG1
 color #333.1/J #F4A460
 # SNW1
@@ -59,8 +75,6 @@ color #333.1/P #FFDEAD
 color #333.1/S #FFC388
 # SYF1
 color #333.1/T #FF957B
-# U5 snRNA
-color #333.1/5 #0000CD
 # DHX8
 color #333.1/V #900C3F
 # SNRPA1
@@ -85,8 +99,6 @@ color #333.1/p #D5F5E3
 color #333.1/f #B0C4DE
 # U2-Sm SNRPF
 color #333.1/q #D5F5E3
-# U6 snRNA
-color #333.1/6 #DC143C
 # U5-Sm SNRPG
 color #333.1/g #B0C4DE
 # U2-Sm SNRPG
@@ -111,18 +123,6 @@ color #333.1/v #FFFFAB
 color #333.1/w #FFFFAB
 # SYF2
 color #333.1/y #FF8C00
-# PRPF8
-color #333.1/A #BFC3E8
-# EFTUD2
-color #333.1/C #6495ED
-# CCDC94
-color #333.1/D #CE4678
-# pre-mRNA
-color #333.1/E #303030
-# CWC22
-color #333.1/H #2C54DD
-# INTRON
-color #333.1/I #303030
 # Named selections for subcomplexes using original deposited chain IDs.
 # EJC/mRNP
 # selector_meta {"color":"#EAA439","family":"Protein/RNP groups","group":"EJC/mRNP groups","kind":"subcomplex"}
@@ -164,18 +164,18 @@ name P_6EXN_ligated_exons #333.1/E:-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-
 # substrate RNA: residues -14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13;15-19; 1-16;56-73;91-95, component, medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_6EXN_substrate #333.1/E:-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,15-19|#333.1/I:1-16,56-73,91-95
-# 5' splice site: residues -14--12, network-scored-motif, medium confidence, validation uncertain uncertain validation
-# selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
-name P_6EXN_5SS #333.1/E:-14--12
-# intron from 5' splice site: residues -14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13;15-19; 1-16;56-73;91-95, component-name/five-ss-inference, high/low confidence, validation not_applicable
-# selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
-name P_6EXN_intron #333.1/E:-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,15-19|#333.1/I:1-16,56-73,91-95
 # 5' exon: residues -14--1, auth-residue-numbering, high confidence, validation not_applicable
 # selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_6EXN_5exon #333.1/E:-14--1
 # 3' exon: residues 1-13;15-19, auth-residue-numbering, high confidence, validation not_applicable
 # selector_meta {"color":"#D97706","family":"RNA","feature":"exon_3","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_6EXN_3exon #333.1/E:1-13,15-19
+# 5' splice site: residues 1-6, network-scored-motif, medium confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name P_6EXN_5SS #333.1/I:1-6
+# intron: residues 1-16;56-73;91-95, component-name, high confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name P_6EXN_intron #333.1/I:1-16,56-73,91-95
 # intron lariat: residues 1-16;56-73;91-95, component-name, high confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"intron_lariat","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_6EXN_intron_lariat #333.1/I:1-16,56-73,91-95
@@ -228,8 +228,6 @@ color #333.1/E:-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,
 select #333.1/E:-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,15-19
 nucleotides sel fill
 select clear
-# 5'SS: residues -14--12
-# intron: residues -14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13;15-19; 1-16;56-73;91-95
 # 5' exon: residues -14--1
 color #333.1/E:-14--1 #FF8C00
 select #333.1/E:-14--1
@@ -240,6 +238,8 @@ color #333.1/E:1-13,15-19 #D97706
 select #333.1/E:1-13,15-19
 nucleotides sel fill
 select clear
+# 5'SS: residues 1-6
+# intron: residues 1-16;56-73;91-95
 # lariat: residues 1-16;56-73;91-95
 # BP region: residues 62-72
 # BP-A: residues 70

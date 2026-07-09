@@ -42,18 +42,6 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # BUD31
 color #355.1/Q #FFF584
-# NPWBP
-color #355.1/X #D8944F
-# SNW1
-color #355.1/v #D49F96
-# PLRG1
-color #355.1/G #F4A460
-# pre-mRNA
-color #355.1/Z #303030
-# MFAP1
-color #355.1/K #CD5C5C
-# CA150
-color #355.1/A4 #A2B8CD
 # PRPF38A
 color #355.1/I #F88379
 # PRPF8
@@ -67,9 +55,21 @@ color #355.1/q #DB7093
 # CWC15
 color #355.1/R #FFDEAD
 # U5 snRNA
-color #355.1/5 #0000CD
+color #355.1/5 #4F9FD3
 # U6 snRNA
-color #355.1/6 #DC143C
+color #355.1/6 #EF4444
+# NPWBP
+color #355.1/X #D8944F
+# SNW1
+color #355.1/v #D49F96
+# PLRG1
+color #355.1/G #F4A460
+# mRNA
+color #355.1/Z #303030
+# MFAP1
+color #355.1/K #CD5C5C
+# CA150
+color #355.1/A4 #A2B8CD
 # Named selections for subcomplexes using original deposited chain IDs.
 # NTC/NTR related
 # selector_meta {"color":"#F4BF67","family":"Protein/RNP groups","group":"NTC/NTR groups","kind":"subcomplex"}

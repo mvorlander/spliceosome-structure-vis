@@ -1,0 +1,560 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1850" height="1489" viewBox="0 0 1850 1489">
+<style>
+text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:700;text-anchor:middle;dominant-baseline:middle}
+.label{font-size:20px;font-weight:700;fill:#111827}.small{font-size:12px;fill:#475569}.feature-label{font-size:12px;font-weight:700;paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.feature-callout{stroke-width:1;stroke-dasharray:2 3;fill:none}.bp{stroke:#111827;stroke-width:1.4}.backbone{stroke:#cbd5e1;stroke-width:3;fill:none}.missing{stroke:#94a3b8;stroke-width:3;stroke-dasharray:6 7;fill:none}.inter{stroke:#64748b;stroke-dasharray:5 5;fill:none;opacity:.42}
+</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="70" y="40" class="label">9ESH RNA 2D panel using R2DT layouts</text>
+<text x="70" y="63" class="small">stage DIS; S. pombe; 3.2 A; 2025</text>
+<text x="70" y="80" class="small">Per-chain R2DT/RNApuzzler layouts; dashed backbones mark unresolved sequence-record residues; inter-RNA base pairs are clustered from FR3D output.</text>
+<rect x="70.0" y="92.0" width="820.0" height="520.0" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="88.0" y="120.0" class="label" style="font-size:16px;fill:#71C562">U2 snRNA /2 -&gt; 2</text>
+<polyline points="125.0,363.4 155.9,363.4 186.7,363.4 217.6,363.4 248.5,363.4 279.3,363.4 310.2,363.4 341.1,363.4 372.0,363.4 402.8,363.4 433.7,363.4 464.6,363.4 495.4,363.4 526.3,363.4 557.2,363.4 588.0,363.4 618.9,363.4 649.8,363.4 680.7,363.4 711.5,363.4 742.4,363.4 773.3,363.4 804.1,363.4 835.0,363.4" class="backbone"/>
+<path d="M95.0,363.4 L125.0,363.4" class="missing"><title>missing 5-prime /2 sequence residues 1-2 (2 nt)</title></path>
+<text x="95.0" y="355.4" text-anchor="start" class="small" fill="#64748b">missing 5-prime 2 nt</text>
+<path d="M835.0,363.4 L872.0,363.4" class="missing"><title>missing 3-prime /2 sequence residues 31-186 (156 nt)</title></path>
+<text x="872.0" y="355.4" text-anchor="end" class="small" fill="#64748b">missing 3-prime 156 nt</text>
+<path d="M464.6,363.4 Q480.0,327.4 495.4,363.4" class="missing"><title>missing /2 sequence residues 15-18 (4 nt)</title></path>
+<circle cx="711.5" cy="363.4" r="9.2" fill="#047857" opacity="0.28"><title>U2/U6 helix I partner; confidence high</title></circle>
+<circle cx="742.4" cy="363.4" r="9.2" fill="#047857" opacity="0.28"><title>U2/U6 helix I partner; confidence high</title></circle>
+<circle cx="773.3" cy="363.4" r="9.2" fill="#047857" opacity="0.28"><title>U2/U6 helix I partner; confidence high</title></circle>
+<circle cx="804.1" cy="363.4" r="9.2" fill="#047857" opacity="0.28"><title>U2/U6 helix I partner; confidence high</title></circle>
+<circle cx="835.0" cy="363.4" r="9.2" fill="#047857" opacity="0.28"><title>U2/U6 helix I partner; confidence high</title></circle>
+<text x="125.0" y="363.4" class="base" fill="#71C562"><title>/2 seq 3 auth 3</title>U</text>
+<text x="155.9" y="363.4" class="base" fill="#71C562"><title>/2 seq 4 auth 4</title>C</text>
+<text x="186.7" y="363.4" class="base" fill="#71C562"><title>/2 seq 5 auth 5</title>U</text>
+<text x="217.6" y="363.4" class="base" fill="#71C562"><title>/2 seq 6 auth 6</title>C</text>
+<text x="248.5" y="363.4" class="base" fill="#71C562"><title>/2 seq 7 auth 7</title>U</text>
+<text x="279.3" y="363.4" class="base" fill="#71C562"><title>/2 seq 8 auth 8</title>C</text>
+<text x="310.2" y="363.4" class="base" fill="#71C562"><title>/2 seq 9 auth 9</title>U</text>
+<text x="341.1" y="363.4" class="base" fill="#71C562"><title>/2 seq 10 auth 10</title>U</text>
+<text x="351.1" y="351.4" class="small" fill="#94a3b8">10</text>
+<text x="372.0" y="363.4" class="base" fill="#71C562"><title>/2 seq 11 auth 11</title>U</text>
+<text x="402.8" y="363.4" class="base" fill="#71C562"><title>/2 seq 12 auth 12</title>G</text>
+<text x="433.7" y="363.4" class="base" fill="#71C562"><title>/2 seq 13 auth 13</title>C</text>
+<text x="464.6" y="363.4" class="base" fill="#71C562"><title>/2 seq 14 auth 14</title>C</text>
+<text x="495.4" y="363.4" class="base" fill="#71C562"><title>/2 seq 19 auth 19</title>G</text>
+<text x="526.3" y="363.4" class="base" fill="#71C562"><title>/2 seq 20 auth 20</title>G</text>
+<text x="536.3" y="351.4" class="small" fill="#94a3b8">20</text>
+<text x="557.2" y="363.4" class="base" fill="#71C562"><title>/2 seq 21 auth 21</title>C</text>
+<text x="588.0" y="363.4" class="base" fill="#71C562"><title>/2 seq 22 auth 22</title>U</text>
+<text x="618.9" y="363.4" class="base" fill="#71C562"><title>/2 seq 23 auth 23</title>U</text>
+<text x="649.8" y="363.4" class="base" fill="#71C562"><title>/2 seq 24 auth 24</title>A</text>
+<text x="680.7" y="363.4" class="base" fill="#71C562"><title>/2 seq 25 auth 25</title>G</text>
+<text x="711.5" y="363.4" class="base" fill="#71C562"><title>/2 seq 26 auth 26</title>A</text>
+<text x="742.4" y="363.4" class="base" fill="#71C562"><title>/2 seq 27 auth 27</title>U</text>
+<text x="773.3" y="363.4" class="base" fill="#71C562"><title>/2 seq 28 auth 28</title>C</text>
+<text x="804.1" y="363.4" class="base" fill="#71C562"><title>/2 seq 29 auth 29</title>A</text>
+<text x="835.0" y="363.4" class="base" fill="#71C562"><title>/2 seq 30 auth 30</title>A</text>
+<text x="845.0" y="351.4" class="small" fill="#94a3b8">30</text>
+<path d="M773.3,363.4 L731.7,339.4" class="feature-callout" stroke="#047857" opacity="0.60"/>
+<text x="731.7" y="339.4" class="feature-label" text-anchor="end" fill="#047857">U2/U6 helix I nt 26-30</text>
+<rect x="960.0" y="92.0" width="820.0" height="520.0" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="978.0" y="120.0" class="label" style="font-size:16px;fill:#4F9FD3">U5 snRNA /5 -&gt; 5</text>
+<polyline points="1336.7,564.0 1336.7,544.1 1336.7,524.1 1336.7,504.2 1336.7,484.3 1336.7,464.3 1336.7,444.4 1322.5,430.4 1302.5,430.9 1282.6,431.4 1262.7,431.9 1242.8,432.4 1222.8,432.8 1202.9,433.3 1183.0,433.8 1163.0,434.3 1143.1,434.7 1123.2,435.2 1103.2,435.7 1090.7,451.2 1071.8,457.4 1052.5,452.1 1039.3,437.2 1036.4,417.5 1044.8,399.4 1061.7,388.9 1064.6,369.1 1053.9,352.3 1056.8,332.6 1071.8,319.5 1091.7,319.3 1106.7,306.2 1121.8,293.0 1136.8,279.9 1151.8,266.8 1166.8,253.7 1181.8,240.6 1196.8,227.5 1211.9,214.4 1226.9,201.3 1228.7,181.4 1242.4,166.9 1262.1,164.0 1279.4,173.9 1286.9,192.4 1281.4,211.5 1265.2,223.2 1245.2,222.3 1230.2,235.4 1215.2,248.5 1200.2,261.6 1185.2,274.7 1170.1,287.8 1155.1,301.0 1140.1,314.1 1125.1,327.2 1110.1,340.3 1107.2,360.0 1092.2,373.1 1089.3,392.9 1102.6,407.8 1122.5,407.3 1142.4,406.8 1162.4,406.4 1182.3,405.9 1202.2,405.4 1222.2,404.9 1242.1,404.5 1262.0,404.0 1281.9,403.5 1301.9,403.0 1321.8,402.5 1335.4,387.9 1355.0,384.3 1372.9,393.1 1382.1,410.8 1378.9,430.4 1364.7,444.4 1364.7,464.3 1364.7,484.3 1364.7,504.2 1364.7,524.1 1364.7,544.1 1381.9,554.0 1364.7,564.0 1384.6,564.0 1404.5,564.0 1424.5,564.0 1444.4,564.0 1464.3,564.0 1484.3,564.0 1504.2,564.0 1524.2,564.0 1544.1,564.0 1564.0,564.0 1584.0,564.0 1603.9,564.0 1623.8,564.0 1643.8,564.0 1663.7,564.0 1683.7,564.0 1703.6,564.0" class="backbone"/>
+<path d="M1336.7,594.0 L1336.7,564.0" class="missing"><title>missing 5-prime /5 sequence residues 1-6 (6 nt)</title></path>
+<text x="1336.7" y="586.0" text-anchor="start" class="small" fill="#64748b">missing 5-prime 6 nt</text>
+<path d="M1703.6,564.0 L1762.0,564.0" class="missing"><title>missing 3-prime /5 sequence residues 109-120 (12 nt)</title></path>
+<text x="1762.0" y="556.0" text-anchor="end" class="small" fill="#64748b">missing 3-prime 12 nt</text>
+<line x1="1336.7" y1="564.0" x2="1364.7" y2="564.0" class="bp"><title>cWW auth 7-91; seq 7-91</title></line>
+<line x1="1336.7" y1="544.1" x2="1364.7" y2="544.1" class="bp"><title>cWW auth 8-89; seq 8-89</title></line>
+<line x1="1336.7" y1="524.1" x2="1364.7" y2="524.1" class="bp"><title>cWW auth 9-88; seq 9-88</title></line>
+<line x1="1336.7" y1="504.2" x2="1364.7" y2="504.2" class="bp"><title>cWW auth 10-87; seq 10-87</title></line>
+<line x1="1336.7" y1="484.3" x2="1364.7" y2="484.3" class="bp"><title>cWW auth 11-86; seq 11-86</title></line>
+<line x1="1336.7" y1="464.3" x2="1364.7" y2="464.3" class="bp"><title>cWW auth 12-85; seq 12-85</title></line>
+<line x1="1336.7" y1="444.4" x2="1364.7" y2="444.4" class="bp"><title>cWW auth 13-84; seq 13-84</title></line>
+<line x1="1322.5" y1="430.4" x2="1321.8" y2="402.5" class="bp"><title>cWW auth 14-78; seq 14-78</title></line>
+<line x1="1322.5" y1="430.4" x2="1378.9" y2="430.4" class="bp"><title>tSS auth 14-83; seq 14-83</title></line>
+<line x1="1302.5" y1="430.9" x2="1301.9" y2="403.0" class="bp"><title>cWW auth 15-77; seq 15-77</title></line>
+<line x1="1282.6" y1="431.4" x2="1281.9" y2="403.5" class="bp"><title>cWW auth 16-76; seq 16-76</title></line>
+<line x1="1262.7" y1="431.9" x2="1262.0" y2="404.0" class="bp"><title>cWW auth 17-75; seq 17-75</title></line>
+<line x1="1242.8" y1="432.4" x2="1242.1" y2="404.5" class="bp"><title>cWW auth 18-74; seq 18-74</title></line>
+<line x1="1222.8" y1="432.8" x2="1222.2" y2="404.9" class="bp"><title>cWW auth 19-73; seq 19-73</title></line>
+<line x1="1202.9" y1="433.3" x2="1202.2" y2="405.4" class="bp"><title>cWW auth 20-72; seq 20-72</title></line>
+<line x1="1183.0" y1="433.8" x2="1182.3" y2="405.9" class="bp"><title>cWW auth 21-71; seq 21-71</title></line>
+<line x1="1163.0" y1="434.3" x2="1162.4" y2="406.4" class="bp"><title>cWW auth 22-70; seq 22-70</title></line>
+<line x1="1143.1" y1="434.7" x2="1142.4" y2="406.8" class="bp"><title>cWW auth 23-69; seq 23-69</title></line>
+<line x1="1123.2" y1="435.2" x2="1122.5" y2="407.3" class="bp"><title>cWW auth 24-68; seq 24-68</title></line>
+<line x1="1103.2" y1="435.7" x2="1102.6" y2="407.8" class="bp"><title>cWW auth 25-67; seq 25-67</title></line>
+<line x1="1061.7" y1="388.9" x2="1089.3" y2="392.9" class="bp"><title>cWW auth 32-66; seq 32-66</title></line>
+<line x1="1064.6" y1="369.1" x2="1092.2" y2="373.1" class="bp"><title>cWW auth 33-65; seq 33-65</title></line>
+<line x1="1091.7" y1="319.3" x2="1110.1" y2="340.3" class="bp"><title>cWW auth 37-63; seq 37-63</title></line>
+<line x1="1106.7" y1="306.2" x2="1125.1" y2="327.2" class="bp"><title>cWW auth 38-62; seq 38-62</title></line>
+<line x1="1121.8" y1="293.0" x2="1140.1" y2="314.1" class="bp"><title>cWW auth 39-61; seq 39-61</title></line>
+<line x1="1136.8" y1="279.9" x2="1155.1" y2="301.0" class="bp"><title>cWW auth 40-60; seq 40-60</title></line>
+<line x1="1151.8" y1="266.8" x2="1170.1" y2="287.8" class="bp"><title>cWW auth 41-59; seq 41-59</title></line>
+<line x1="1166.8" y1="253.7" x2="1185.2" y2="274.7" class="bp"><title>cWW auth 42-58; seq 42-58</title></line>
+<line x1="1181.8" y1="240.6" x2="1200.2" y2="261.6" class="bp"><title>cWW auth 43-57; seq 43-57</title></line>
+<line x1="1196.8" y1="227.5" x2="1215.2" y2="248.5" class="bp"><title>cWW auth 44-56; seq 44-56</title></line>
+<line x1="1211.9" y1="214.4" x2="1230.2" y2="235.4" class="bp"><title>cWW auth 45-55; seq 45-55</title></line>
+<line x1="1226.9" y1="201.3" x2="1245.2" y2="222.3" class="bp"><title>cWW auth 46-54; seq 46-54</title></line>
+<line x1="1245.2" y1="222.3" x2="1226.9" y2="201.3" class="bp"><title>cWW auth 54-46; seq 54-46</title></line>
+<line x1="1230.2" y1="235.4" x2="1211.9" y2="214.4" class="bp"><title>cWW auth 55-45; seq 55-45</title></line>
+<line x1="1215.2" y1="248.5" x2="1196.8" y2="227.5" class="bp"><title>cWW auth 56-44; seq 56-44</title></line>
+<line x1="1200.2" y1="261.6" x2="1181.8" y2="240.6" class="bp"><title>cWW auth 57-43; seq 57-43</title></line>
+<line x1="1185.2" y1="274.7" x2="1166.8" y2="253.7" class="bp"><title>cWW auth 58-42; seq 58-42</title></line>
+<line x1="1170.1" y1="287.8" x2="1151.8" y2="266.8" class="bp"><title>cWW auth 59-41; seq 59-41</title></line>
+<line x1="1155.1" y1="301.0" x2="1136.8" y2="279.9" class="bp"><title>cWW auth 60-40; seq 60-40</title></line>
+<line x1="1140.1" y1="314.1" x2="1121.8" y2="293.0" class="bp"><title>cWW auth 61-39; seq 61-39</title></line>
+<line x1="1125.1" y1="327.2" x2="1106.7" y2="306.2" class="bp"><title>cWW auth 62-38; seq 62-38</title></line>
+<line x1="1110.1" y1="340.3" x2="1091.7" y2="319.3" class="bp"><title>cWW auth 63-37; seq 63-37</title></line>
+<line x1="1092.2" y1="373.1" x2="1064.6" y2="369.1" class="bp"><title>cWW auth 65-33; seq 65-33</title></line>
+<line x1="1089.3" y1="392.9" x2="1061.7" y2="388.9" class="bp"><title>cWW auth 66-32; seq 66-32</title></line>
+<line x1="1102.6" y1="407.8" x2="1103.2" y2="435.7" class="bp"><title>cWW auth 67-25; seq 67-25</title></line>
+<line x1="1122.5" y1="407.3" x2="1123.2" y2="435.2" class="bp"><title>cWW auth 68-24; seq 68-24</title></line>
+<line x1="1142.4" y1="406.8" x2="1143.1" y2="434.7" class="bp"><title>cWW auth 69-23; seq 69-23</title></line>
+<line x1="1162.4" y1="406.4" x2="1163.0" y2="434.3" class="bp"><title>cWW auth 70-22; seq 70-22</title></line>
+<line x1="1182.3" y1="405.9" x2="1183.0" y2="433.8" class="bp"><title>cWW auth 71-21; seq 71-21</title></line>
+<line x1="1202.2" y1="405.4" x2="1202.9" y2="433.3" class="bp"><title>cWW auth 72-20; seq 72-20</title></line>
+<line x1="1222.2" y1="404.9" x2="1222.8" y2="432.8" class="bp"><title>cWW auth 73-19; seq 73-19</title></line>
+<line x1="1242.1" y1="404.5" x2="1242.8" y2="432.4" class="bp"><title>cWW auth 74-18; seq 74-18</title></line>
+<line x1="1262.0" y1="404.0" x2="1262.7" y2="431.9" class="bp"><title>cWW auth 75-17; seq 75-17</title></line>
+<line x1="1281.9" y1="403.5" x2="1282.6" y2="431.4" class="bp"><title>cWW auth 76-16; seq 76-16</title></line>
+<line x1="1301.9" y1="403.0" x2="1302.5" y2="430.9" class="bp"><title>cWW auth 77-15; seq 77-15</title></line>
+<line x1="1321.8" y1="402.5" x2="1322.5" y2="430.4" class="bp"><title>cWW auth 78-14; seq 78-14</title></line>
+<line x1="1378.9" y1="430.4" x2="1322.5" y2="430.4" class="bp"><title>tSS auth 83-14; seq 83-14</title></line>
+<line x1="1364.7" y1="444.4" x2="1336.7" y2="444.4" class="bp"><title>cWW auth 84-13; seq 84-13</title></line>
+<line x1="1364.7" y1="464.3" x2="1336.7" y2="464.3" class="bp"><title>cWW auth 85-12; seq 85-12</title></line>
+<line x1="1364.7" y1="484.3" x2="1336.7" y2="484.3" class="bp"><title>cWW auth 86-11; seq 86-11</title></line>
+<line x1="1364.7" y1="504.2" x2="1336.7" y2="504.2" class="bp"><title>cWW auth 87-10; seq 87-10</title></line>
+<line x1="1364.7" y1="524.1" x2="1336.7" y2="524.1" class="bp"><title>cWW auth 88-9; seq 88-9</title></line>
+<line x1="1364.7" y1="544.1" x2="1336.7" y2="544.1" class="bp"><title>cWW auth 89-8; seq 89-8</title></line>
+<line x1="1364.7" y1="564.0" x2="1336.7" y2="564.0" class="bp"><title>cWW auth 91-7; seq 91-7</title></line>
+<circle cx="1228.7" cy="181.4" r="9.2" fill="#1b3cd0" opacity="0.22"><title>loop I; confidence medium</title></circle>
+<circle cx="1242.4" cy="166.9" r="9.2" fill="#1b3cd0" opacity="0.22"><title>loop I; confidence medium</title></circle>
+<circle cx="1262.1" cy="164.0" r="9.2" fill="#1b3cd0" opacity="0.22"><title>loop I; confidence medium</title></circle>
+<circle cx="1279.4" cy="173.9" r="9.2" fill="#1b3cd0" opacity="0.22"><title>loop I; confidence medium</title></circle>
+<circle cx="1286.9" cy="192.4" r="9.2" fill="#1b3cd0" opacity="0.22"><title>loop I; confidence medium</title></circle>
+<text x="1336.7" y="564.0" class="base" fill="#4F9FD3"><title>/5 seq 7 auth 7</title>C</text>
+<text x="1336.7" y="544.1" class="base" fill="#4F9FD3"><title>/5 seq 8 auth 8</title>G</text>
+<text x="1336.7" y="524.1" class="base" fill="#4F9FD3"><title>/5 seq 9 auth 9</title>U</text>
+<text x="1336.7" y="504.2" class="base" fill="#4F9FD3"><title>/5 seq 10 auth 10</title>C</text>
+<text x="1346.7" y="492.2" class="small" fill="#94a3b8">10</text>
+<text x="1336.7" y="484.3" class="base" fill="#4F9FD3"><title>/5 seq 11 auth 11</title>A</text>
+<text x="1336.7" y="464.3" class="base" fill="#4F9FD3"><title>/5 seq 12 auth 12</title>A</text>
+<text x="1336.7" y="444.4" class="base" fill="#4F9FD3"><title>/5 seq 13 auth 13</title>A</text>
+<text x="1322.5" y="430.4" class="base" fill="#4F9FD3"><title>/5 seq 14 auth 14</title>G</text>
+<text x="1302.5" y="430.9" class="base" fill="#4F9FD3"><title>/5 seq 15 auth 15</title>C</text>
+<text x="1282.6" y="431.4" class="base" fill="#4F9FD3"><title>/5 seq 16 auth 16</title>A</text>
+<text x="1262.7" y="431.9" class="base" fill="#4F9FD3"><title>/5 seq 17 auth 17</title>C</text>
+<text x="1242.8" y="432.4" class="base" fill="#4F9FD3"><title>/5 seq 18 auth 18</title>U</text>
+<text x="1222.8" y="432.8" class="base" fill="#4F9FD3"><title>/5 seq 19 auth 19</title>U</text>
+<text x="1202.9" y="433.3" class="base" fill="#4F9FD3"><title>/5 seq 20 auth 20</title>U</text>
+<text x="1212.9" y="421.3" class="small" fill="#94a3b8">20</text>
+<text x="1183.0" y="433.8" class="base" fill="#4F9FD3"><title>/5 seq 21 auth 21</title>G</text>
+<text x="1163.0" y="434.3" class="base" fill="#4F9FD3"><title>/5 seq 22 auth 22</title>C</text>
+<text x="1143.1" y="434.7" class="base" fill="#4F9FD3"><title>/5 seq 23 auth 23</title>A</text>
+<text x="1123.2" y="435.2" class="base" fill="#4F9FD3"><title>/5 seq 24 auth 24</title>A</text>
+<text x="1103.2" y="435.7" class="base" fill="#4F9FD3"><title>/5 seq 25 auth 25</title>A</text>
+<text x="1090.7" y="451.2" class="base" fill="#4F9FD3"><title>/5 seq 26 auth 26</title>A</text>
+<text x="1071.8" y="457.4" class="base" fill="#4F9FD3"><title>/5 seq 27 auth 27</title>G</text>
+<text x="1052.5" y="452.1" class="base" fill="#4F9FD3"><title>/5 seq 28 auth 28</title>C</text>
+<text x="1039.3" y="437.2" class="base" fill="#4F9FD3"><title>/5 seq 29 auth 29</title>U</text>
+<text x="1036.4" y="417.5" class="base" fill="#4F9FD3"><title>/5 seq 30 auth 30</title>A</text>
+<text x="1046.4" y="405.5" class="small" fill="#94a3b8">30</text>
+<text x="1044.8" y="399.4" class="base" fill="#4F9FD3"><title>/5 seq 31 auth 31</title>A</text>
+<text x="1061.7" y="388.9" class="base" fill="#4F9FD3"><title>/5 seq 32 auth 32</title>C</text>
+<text x="1064.6" y="369.1" class="base" fill="#4F9FD3"><title>/5 seq 33 auth 33</title>G</text>
+<text x="1053.9" y="352.3" class="base" fill="#4F9FD3"><title>/5 seq 34 auth 34</title>U</text>
+<text x="1056.8" y="332.6" class="base" fill="#4F9FD3"><title>/5 seq 35 auth 35</title>A</text>
+<text x="1071.8" y="319.5" class="base" fill="#4F9FD3"><title>/5 seq 36 auth 36</title>U</text>
+<text x="1091.7" y="319.3" class="base" fill="#4F9FD3"><title>/5 seq 37 auth 37</title>C</text>
+<text x="1106.7" y="306.2" class="base" fill="#4F9FD3"><title>/5 seq 38 auth 38</title>U</text>
+<text x="1121.8" y="293.0" class="base" fill="#4F9FD3"><title>/5 seq 39 auth 39</title>G</text>
+<text x="1136.8" y="279.9" class="base" fill="#4F9FD3"><title>/5 seq 40 auth 40</title>U</text>
+<text x="1146.8" y="267.9" class="small" fill="#94a3b8">40</text>
+<text x="1151.8" y="266.8" class="base" fill="#4F9FD3"><title>/5 seq 41 auth 41</title>U</text>
+<text x="1166.8" y="253.7" class="base" fill="#4F9FD3"><title>/5 seq 42 auth 42</title>U</text>
+<text x="1181.8" y="240.6" class="base" fill="#4F9FD3"><title>/5 seq 43 auth 43</title>C</text>
+<text x="1196.8" y="227.5" class="base" fill="#4F9FD3"><title>/5 seq 44 auth 44</title>U</text>
+<text x="1211.9" y="214.4" class="base" fill="#4F9FD3"><title>/5 seq 45 auth 45</title>U</text>
+<text x="1226.9" y="201.3" class="base" fill="#4F9FD3"><title>/5 seq 46 auth 46</title>G</text>
+<text x="1228.7" y="181.4" class="base" fill="#4F9FD3"><title>/5 seq 47 auth 47</title>C</text>
+<text x="1242.4" y="166.9" class="base" fill="#4F9FD3"><title>/5 seq 48 auth 48</title>C</text>
+<text x="1262.1" y="164.0" class="base" fill="#4F9FD3"><title>/5 seq 49 auth 49</title>U</text>
+<text x="1279.4" y="173.9" class="base" fill="#4F9FD3"><title>/5 seq 50 auth 50</title>U</text>
+<text x="1289.4" y="161.9" class="small" fill="#94a3b8">50</text>
+<text x="1286.9" y="192.4" class="base" fill="#4F9FD3"><title>/5 seq 51 auth 51</title>U</text>
+<text x="1281.4" y="211.5" class="base" fill="#4F9FD3"><title>/5 seq 52 auth 52</title>U</text>
+<text x="1265.2" y="223.2" class="base" fill="#4F9FD3"><title>/5 seq 53 auth 53</title>A</text>
+<text x="1245.2" y="222.3" class="base" fill="#4F9FD3"><title>/5 seq 54 auth 54</title>C</text>
+<text x="1230.2" y="235.4" class="base" fill="#4F9FD3"><title>/5 seq 55 auth 55</title>C</text>
+<text x="1215.2" y="248.5" class="base" fill="#4F9FD3"><title>/5 seq 56 auth 56</title>A</text>
+<text x="1200.2" y="261.6" class="base" fill="#4F9FD3"><title>/5 seq 57 auth 57</title>G</text>
+<text x="1185.2" y="274.7" class="base" fill="#4F9FD3"><title>/5 seq 58 auth 58</title>A</text>
+<text x="1170.1" y="287.8" class="base" fill="#4F9FD3"><title>/5 seq 59 auth 59</title>A</text>
+<text x="1155.1" y="301.0" class="base" fill="#4F9FD3"><title>/5 seq 60 auth 60</title>A</text>
+<text x="1165.1" y="289.0" class="small" fill="#94a3b8">60</text>
+<text x="1140.1" y="314.1" class="base" fill="#4F9FD3"><title>/5 seq 61 auth 61</title>C</text>
+<text x="1125.1" y="327.2" class="base" fill="#4F9FD3"><title>/5 seq 62 auth 62</title>A</text>
+<text x="1110.1" y="340.3" class="base" fill="#4F9FD3"><title>/5 seq 63 auth 63</title>G</text>
+<text x="1107.2" y="360.0" class="base" fill="#4F9FD3"><title>/5 seq 64 auth 64</title>C</text>
+<text x="1092.2" y="373.1" class="base" fill="#4F9FD3"><title>/5 seq 65 auth 65</title>C</text>
+<text x="1089.3" y="392.9" class="base" fill="#4F9FD3"><title>/5 seq 66 auth 66</title>G</text>
+<text x="1102.6" y="407.8" class="base" fill="#4F9FD3"><title>/5 seq 67 auth 67</title>U</text>
+<text x="1122.5" y="407.3" class="base" fill="#4F9FD3"><title>/5 seq 68 auth 68</title>U</text>
+<text x="1142.4" y="406.8" class="base" fill="#4F9FD3"><title>/5 seq 69 auth 69</title>U</text>
+<text x="1162.4" y="406.4" class="base" fill="#4F9FD3"><title>/5 seq 70 auth 70</title>G</text>
+<text x="1172.4" y="394.4" class="small" fill="#94a3b8">70</text>
+<text x="1182.3" y="405.9" class="base" fill="#4F9FD3"><title>/5 seq 71 auth 71</title>U</text>
+<text x="1202.2" y="405.4" class="base" fill="#4F9FD3"><title>/5 seq 72 auth 72</title>A</text>
+<text x="1222.2" y="404.9" class="base" fill="#4F9FD3"><title>/5 seq 73 auth 73</title>A</text>
+<text x="1242.1" y="404.5" class="base" fill="#4F9FD3"><title>/5 seq 74 auth 74</title>G</text>
+<text x="1262.0" y="404.0" class="base" fill="#4F9FD3"><title>/5 seq 75 auth 75</title>G</text>
+<text x="1281.9" y="403.5" class="base" fill="#4F9FD3"><title>/5 seq 76 auth 76</title>U</text>
+<text x="1301.9" y="403.0" class="base" fill="#4F9FD3"><title>/5 seq 77 auth 77</title>G</text>
+<text x="1321.8" y="402.5" class="base" fill="#4F9FD3"><title>/5 seq 78 auth 78</title>U</text>
+<text x="1335.4" y="387.9" class="base" fill="#4F9FD3"><title>/5 seq 79 auth 79</title>G</text>
+<text x="1355.0" y="384.3" class="base" fill="#4F9FD3"><title>/5 seq 80 auth 80</title>C</text>
+<text x="1365.0" y="372.3" class="small" fill="#94a3b8">80</text>
+<text x="1372.9" y="393.1" class="base" fill="#4F9FD3"><title>/5 seq 81 auth 81</title>U</text>
+<text x="1382.1" y="410.8" class="base" fill="#4F9FD3"><title>/5 seq 82 auth 82</title>A</text>
+<text x="1378.9" y="430.4" class="base" fill="#4F9FD3"><title>/5 seq 83 auth 83</title>A</text>
+<text x="1364.7" y="444.4" class="base" fill="#4F9FD3"><title>/5 seq 84 auth 84</title>U</text>
+<text x="1364.7" y="464.3" class="base" fill="#4F9FD3"><title>/5 seq 85 auth 85</title>U</text>
+<text x="1364.7" y="484.3" class="base" fill="#4F9FD3"><title>/5 seq 86 auth 86</title>U</text>
+<text x="1364.7" y="504.2" class="base" fill="#4F9FD3"><title>/5 seq 87 auth 87</title>G</text>
+<text x="1364.7" y="524.1" class="base" fill="#4F9FD3"><title>/5 seq 88 auth 88</title>A</text>
+<text x="1364.7" y="544.1" class="base" fill="#4F9FD3"><title>/5 seq 89 auth 89</title>C</text>
+<text x="1381.9" y="554.0" class="base" fill="#4F9FD3"><title>/5 seq 90 auth 90</title>U</text>
+<text x="1391.9" y="542.0" class="small" fill="#94a3b8">90</text>
+<text x="1364.7" y="564.0" class="base" fill="#4F9FD3"><title>/5 seq 91 auth 91</title>G</text>
+<text x="1384.6" y="564.0" class="base" fill="#4F9FD3"><title>/5 seq 92 auth 92</title>U</text>
+<text x="1404.5" y="564.0" class="base" fill="#4F9FD3"><title>/5 seq 93 auth 93</title>A</text>
+<text x="1424.5" y="564.0" class="base" fill="#4F9FD3"><title>/5 seq 94 auth 94</title>U</text>
+<text x="1444.4" y="564.0" class="base" fill="#4F9FD3"><title>/5 seq 95 auth 95</title>A</text>
+<text x="1464.3" y="564.0" class="base" fill="#4F9FD3"><title>/5 seq 96 auth 96</title>G</text>
+<text x="1484.3" y="564.0" class="base" fill="#4F9FD3"><title>/5 seq 97 auth 97</title>U</text>
+<text x="1504.2" y="564.0" class="base" fill="#4F9FD3"><title>/5 seq 98 auth 98</title>U</text>
+<text x="1524.2" y="564.0" class="base" fill="#4F9FD3"><title>/5 seq 99 auth 99</title>U</text>
+<text x="1544.1" y="564.0" class="base" fill="#4F9FD3"><title>/5 seq 100 auth 100</title>U</text>
+<text x="1554.1" y="552.0" class="small" fill="#94a3b8">100</text>
+<text x="1564.0" y="564.0" class="base" fill="#4F9FD3"><title>/5 seq 101 auth 101</title>U</text>
+<text x="1584.0" y="564.0" class="base" fill="#4F9FD3"><title>/5 seq 102 auth 102</title>G</text>
+<text x="1603.9" y="564.0" class="base" fill="#4F9FD3"><title>/5 seq 103 auth 103</title>U</text>
+<text x="1623.8" y="564.0" class="base" fill="#4F9FD3"><title>/5 seq 104 auth 104</title>A</text>
+<text x="1643.8" y="564.0" class="base" fill="#4F9FD3"><title>/5 seq 105 auth 105</title>A</text>
+<text x="1663.7" y="564.0" class="base" fill="#4F9FD3"><title>/5 seq 106 auth 106</title>U</text>
+<text x="1683.7" y="564.0" class="base" fill="#4F9FD3"><title>/5 seq 107 auth 107</title>C</text>
+<text x="1703.6" y="564.0" class="base" fill="#4F9FD3"><title>/5 seq 108 auth 108</title>U</text>
+<path d="M1259.9,175.7 L1303.4,155.4" class="feature-callout" stroke="#1b3cd0" opacity="0.54"/>
+<text x="1303.4" y="155.4" class="feature-label" text-anchor="start" fill="#1b3cd0">loop I nt 47-51</text>
+<rect x="70.0" y="717.0" width="820.0" height="520.0" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="88.0" y="745.0" class="label" style="font-size:16px;fill:#EF4444">U6 snRNA /6 -&gt; 6</text>
+<polyline points="129.2,1031.9 129.2,1020.5 129.2,1009.1 129.2,997.6 125.0,987.0 131.4,977.6 142.9,977.6 149.3,987.0 145.1,997.6 145.1,1009.1 145.1,1020.5 145.1,1031.9 156.6,1031.9 168.0,1031.9 179.4,1031.9 190.8,1031.9 202.3,1031.9 213.7,1031.9 225.1,1031.9 236.5,1031.9 247.9,1031.9 259.4,1031.9 270.8,1031.9 282.2,1031.9 293.6,1031.9 305.0,1031.9 316.5,1031.9 327.9,1031.9 339.3,1031.9 350.7,1031.9 362.2,1031.9 373.6,1031.9 385.0,1031.9 396.4,1031.9 407.8,1031.9 419.3,1031.9 430.7,1031.9 442.1,1031.9 453.5,1031.9 464.9,1031.9 476.4,1031.9 487.8,1031.9 499.2,1031.9 510.6,1031.9 522.1,1031.9 533.5,1031.9 544.9,1031.9 556.3,1031.9 567.7,1031.9 579.2,1031.9 590.6,1031.9 590.6,1020.5 590.6,1009.1 580.7,1003.4 590.6,997.6 585.6,987.4 576.6,980.4 567.5,973.3 556.2,971.9 549.7,962.5 552.4,951.4 562.5,946.1 573.2,950.1 577.4,960.7 586.4,967.7 595.4,974.8 606.6,977.1 611.6,987.4 606.6,997.6 606.6,1009.1 606.6,1020.5 606.6,1031.9 618.0,1031.9 629.4,1031.9 640.8,1031.9 652.3,1031.9 663.7,1031.9 675.1,1031.9 686.5,1031.9 697.9,1031.9 709.4,1031.9 720.8,1031.9 732.2,1031.9 743.6,1031.9 755.1,1031.9 766.5,1031.9 777.9,1031.9 789.3,1031.9 800.7,1031.9 812.2,1031.9 823.6,1031.9 835.0,1031.9" class="backbone"/>
+<path d="M835.0,1031.9 L872.0,1031.9" class="missing"><title>missing 3-prime /6 sequence residues 93-99 (7 nt)</title></path>
+<text x="872.0" y="1023.9" text-anchor="end" class="small" fill="#64748b">missing 3-prime 7 nt</text>
+<line x1="129.2" y1="1031.9" x2="145.1" y2="1031.9" class="bp"><title>cWW auth 1-12; seq 1-12</title></line>
+<line x1="129.2" y1="1020.5" x2="145.1" y2="1020.5" class="bp"><title>cWW auth 2-11; seq 2-11</title></line>
+<line x1="129.2" y1="1009.1" x2="145.1" y2="1009.1" class="bp"><title>cWW auth 3-10; seq 3-10</title></line>
+<line x1="129.2" y1="997.6" x2="145.1" y2="997.6" class="bp"><title>cWW auth 4-9; seq 4-9</title></line>
+<line x1="125.0" y1="987.0" x2="142.9" y2="977.6" class="bp"><title>cWW auth 5-7; seq 5-7</title></line>
+<line x1="142.9" y1="977.6" x2="125.0" y2="987.0" class="bp"><title>cWW auth 7-5; seq 7-5</title></line>
+<line x1="145.1" y1="997.6" x2="129.2" y2="997.6" class="bp"><title>cWW auth 9-4; seq 9-4</title></line>
+<line x1="145.1" y1="1009.1" x2="129.2" y2="1009.1" class="bp"><title>cWW auth 10-3; seq 10-3</title></line>
+<line x1="145.1" y1="1020.5" x2="129.2" y2="1020.5" class="bp"><title>cWW auth 11-2; seq 11-2</title></line>
+<line x1="145.1" y1="1031.9" x2="129.2" y2="1031.9" class="bp"><title>cWW auth 12-1; seq 12-1</title></line>
+<line x1="464.9" y1="1031.9" x2="556.3" y2="1031.9" class="bp"><title>tWH auth 40-48; seq 40-48</title></line>
+<line x1="476.4" y1="1031.9" x2="544.9" y2="1031.9" class="bp"><title>tWH auth 41-47; seq 41-47</title></line>
+<line x1="544.9" y1="1031.9" x2="476.4" y2="1031.9" class="bp"><title>tHW auth 47-41; seq 47-41</title></line>
+<line x1="556.3" y1="1031.9" x2="464.9" y2="1031.9" class="bp"><title>tHW auth 48-40; seq 48-40</title></line>
+<line x1="567.7" y1="1031.9" x2="611.6" y2="987.4" class="bp"><title>cHS auth 49-68; seq 49-68</title></line>
+<line x1="590.6" y1="1031.9" x2="606.6" y2="1031.9" class="bp"><title>cWW auth 51-72; seq 51-72</title></line>
+<line x1="590.6" y1="1020.5" x2="606.6" y2="1020.5" class="bp"><title>cWW auth 52-71; seq 52-71</title></line>
+<line x1="590.6" y1="1009.1" x2="606.6" y2="1009.1" class="bp"><title>cWW auth 53-70; seq 53-70</title></line>
+<line x1="590.6" y1="997.6" x2="606.6" y2="997.6" class="bp"><title>cWW auth 55-69; seq 55-69</title></line>
+<line x1="585.6" y1="987.4" x2="595.4" y2="974.8" class="bp"><title>cWW auth 56-66; seq 56-66</title></line>
+<line x1="576.6" y1="980.4" x2="586.4" y2="967.7" class="bp"><title>cWW auth 57-65; seq 57-65</title></line>
+<line x1="567.5" y1="973.3" x2="577.4" y2="960.7" class="bp"><title>cWW auth 58-64; seq 58-64</title></line>
+<line x1="577.4" y1="960.7" x2="567.5" y2="973.3" class="bp"><title>cWW auth 64-58; seq 64-58</title></line>
+<line x1="586.4" y1="967.7" x2="576.6" y2="980.4" class="bp"><title>cWW auth 65-57; seq 65-57</title></line>
+<line x1="595.4" y1="974.8" x2="585.6" y2="987.4" class="bp"><title>cWW auth 66-56; seq 66-56</title></line>
+<line x1="611.6" y1="987.4" x2="567.7" y2="1031.9" class="bp"><title>cSH auth 68-49; seq 68-49</title></line>
+<line x1="606.6" y1="997.6" x2="590.6" y2="997.6" class="bp"><title>cWW auth 69-55; seq 69-55</title></line>
+<line x1="606.6" y1="1009.1" x2="590.6" y2="1009.1" class="bp"><title>cWW auth 70-53; seq 70-53</title></line>
+<line x1="606.6" y1="1020.5" x2="590.6" y2="1020.5" class="bp"><title>cWW auth 71-52; seq 71-52</title></line>
+<line x1="606.6" y1="1031.9" x2="590.6" y2="1031.9" class="bp"><title>cWW auth 72-51; seq 72-51</title></line>
+<circle cx="339.3" cy="1031.9" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="350.7" cy="1031.9" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="362.2" cy="1031.9" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="373.6" cy="1031.9" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="385.0" cy="1031.9" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="396.4" cy="1031.9" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="407.8" cy="1031.9" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="419.3" cy="1031.9" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="430.7" cy="1031.9" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="442.1" cy="1031.9" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="453.5" cy="1031.9" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="464.9" cy="1031.9" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="476.4" cy="1031.9" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="487.8" cy="1031.9" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="499.2" cy="1031.9" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="510.6" cy="1031.9" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="522.1" cy="1031.9" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="533.5" cy="1031.9" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="544.9" cy="1031.9" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="556.3" cy="1031.9" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="567.7" cy="1031.9" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="579.2" cy="1031.9" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="590.6" cy="1031.9" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="590.6" cy="1020.5" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="590.6" cy="1009.1" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="580.7" cy="1003.4" r="9.2" fill="#d0183c" opacity="0.22"><title>U2/U6 helix I partner; confidence medium</title></circle>
+<circle cx="373.6" cy="1031.9" r="9.2" fill="#e01842" opacity="0.22"><title>5&#x27; splice-site upstream contact; confidence medium</title></circle>
+<circle cx="385.0" cy="1031.9" r="9.2" fill="#e01842" opacity="0.22"><title>5&#x27; splice-site upstream contact; confidence medium</title></circle>
+<circle cx="396.4" cy="1031.9" r="9.2" fill="#e01842" opacity="0.22"><title>5&#x27; splice-site upstream contact; confidence medium</title></circle>
+<circle cx="407.8" cy="1031.9" r="9.2" fill="#e01842" opacity="0.22"><title>5&#x27; splice-site upstream contact; confidence medium</title></circle>
+<circle cx="419.3" cy="1031.9" r="9.2" fill="#e01842" opacity="0.22"><title>5&#x27; splice-site upstream contact; confidence medium</title></circle>
+<circle cx="430.7" cy="1031.9" r="9.2" fill="#e01842" opacity="0.22"><title>5&#x27; splice-site upstream contact; confidence medium</title></circle>
+<circle cx="442.1" cy="1031.9" r="9.2" fill="#e01842" opacity="0.22"><title>5&#x27; splice-site upstream contact; confidence medium</title></circle>
+<circle cx="453.5" cy="1031.9" r="9.2" fill="#e01842" opacity="0.22"><title>5&#x27; splice-site upstream contact; confidence medium</title></circle>
+<circle cx="464.9" cy="1031.9" r="9.2" fill="#e01842" opacity="0.22"><title>5&#x27; splice-site upstream contact; confidence medium</title></circle>
+<circle cx="476.4" cy="1031.9" r="9.2" fill="#e01842" opacity="0.22"><title>5&#x27; splice-site upstream contact; confidence medium</title></circle>
+<circle cx="487.8" cy="1031.9" r="9.2" fill="#e01842" opacity="0.22"><title>5&#x27; splice-site upstream contact; confidence medium</title></circle>
+<circle cx="499.2" cy="1031.9" r="9.2" fill="#e01842" opacity="0.22"><title>5&#x27; splice-site upstream contact; confidence medium</title></circle>
+<circle cx="407.8" cy="1031.9" r="9.2" fill="#dc143c" opacity="0.28"><title>ACAGAGA box; confidence high</title></circle>
+<circle cx="419.3" cy="1031.9" r="9.2" fill="#dc143c" opacity="0.28"><title>ACAGAGA box; confidence high</title></circle>
+<circle cx="430.7" cy="1031.9" r="9.2" fill="#dc143c" opacity="0.28"><title>ACAGAGA box; confidence high</title></circle>
+<circle cx="442.1" cy="1031.9" r="9.2" fill="#dc143c" opacity="0.28"><title>ACAGAGA box; confidence high</title></circle>
+<circle cx="453.5" cy="1031.9" r="9.2" fill="#dc143c" opacity="0.28"><title>ACAGAGA box; confidence high</title></circle>
+<circle cx="464.9" cy="1031.9" r="9.2" fill="#dc143c" opacity="0.28"><title>ACAGAGA box; confidence high</title></circle>
+<circle cx="476.4" cy="1031.9" r="9.2" fill="#dc143c" opacity="0.28"><title>ACAGAGA box; confidence high</title></circle>
+<text x="129.2" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 1 auth 1</title>G</text>
+<text x="129.2" y="1020.5" class="base" fill="#EF4444"><title>/6 seq 2 auth 2</title>A</text>
+<text x="129.2" y="1009.1" class="base" fill="#EF4444"><title>/6 seq 3 auth 3</title>U</text>
+<text x="129.2" y="997.6" class="base" fill="#EF4444"><title>/6 seq 4 auth 4</title>C</text>
+<text x="125.0" y="987.0" class="base" fill="#EF4444"><title>/6 seq 5 auth 5</title>U</text>
+<text x="131.4" y="977.6" class="base" fill="#EF4444"><title>/6 seq 6 auth 6</title>U</text>
+<text x="142.9" y="977.6" class="base" fill="#EF4444"><title>/6 seq 7 auth 7</title>C</text>
+<text x="149.3" y="987.0" class="base" fill="#EF4444"><title>/6 seq 8 auth 8</title>G</text>
+<text x="145.1" y="997.6" class="base" fill="#EF4444"><title>/6 seq 9 auth 9</title>G</text>
+<text x="145.1" y="1009.1" class="base" fill="#EF4444"><title>/6 seq 10 auth 10</title>A</text>
+<text x="155.1" y="997.1" class="small" fill="#94a3b8">10</text>
+<text x="145.1" y="1020.5" class="base" fill="#EF4444"><title>/6 seq 11 auth 11</title>U</text>
+<text x="145.1" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 12 auth 12</title>C</text>
+<text x="156.6" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 13 auth 13</title>A</text>
+<text x="168.0" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 14 auth 14</title>C</text>
+<text x="179.4" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 15 auth 15</title>U</text>
+<text x="190.8" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 16 auth 16</title>U</text>
+<text x="202.3" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 17 auth 17</title>U</text>
+<text x="213.7" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 18 auth 18</title>G</text>
+<text x="225.1" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 19 auth 19</title>G</text>
+<text x="236.5" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 20 auth 20</title>U</text>
+<text x="246.5" y="1019.9" class="small" fill="#94a3b8">20</text>
+<text x="247.9" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 21 auth 21</title>C</text>
+<text x="259.4" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 22 auth 22</title>A</text>
+<text x="270.8" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 23 auth 23</title>A</text>
+<text x="282.2" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 24 auth 24</title>A</text>
+<text x="293.6" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 25 auth 25</title>U</text>
+<text x="305.0" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 26 auth 26</title>U</text>
+<text x="316.5" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 27 auth 27</title>G</text>
+<text x="327.9" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 28 auth 28</title>A</text>
+<text x="339.3" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 29 auth 29</title>A</text>
+<text x="350.7" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 30 auth 30</title>A</text>
+<text x="360.7" y="1019.9" class="small" fill="#94a3b8">30</text>
+<text x="362.2" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 31 auth 31</title>C</text>
+<text x="373.6" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 32 auth 32</title>G</text>
+<text x="385.0" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 33 auth 33</title>A</text>
+<text x="396.4" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 34 auth 34</title>U</text>
+<text x="407.8" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 35 auth 35</title>A</text>
+<text x="419.3" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 36 auth 36</title>C</text>
+<text x="430.7" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 37 auth 37</title>A</text>
+<text x="442.1" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 38 auth 38</title>G</text>
+<text x="453.5" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 39 auth 39</title>A</text>
+<text x="464.9" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 40 auth 40</title>G</text>
+<text x="474.9" y="1019.9" class="small" fill="#94a3b8">40</text>
+<text x="476.4" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 41 auth 41</title>A</text>
+<text x="487.8" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 42 auth 42</title>A</text>
+<text x="499.2" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 43 auth 43</title>G</text>
+<text x="510.6" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 44 auth 44</title>A</text>
+<text x="522.1" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 45 auth 45</title>U</text>
+<text x="533.5" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 46 auth 46</title>U</text>
+<text x="544.9" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 47 auth 47</title>A</text>
+<text x="556.3" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 48 auth 48</title>G</text>
+<text x="567.7" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 49 auth 49</title>C</text>
+<text x="579.2" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 50 auth 50</title>A</text>
+<text x="589.2" y="1019.9" class="small" fill="#94a3b8">50</text>
+<text x="590.6" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 51 auth 51</title>U</text>
+<text x="590.6" y="1020.5" class="base" fill="#EF4444"><title>/6 seq 52 auth 52</title>G</text>
+<text x="590.6" y="1009.1" class="base" fill="#EF4444"><title>/6 seq 53 auth 53</title>G</text>
+<text x="580.7" y="1003.4" class="base" fill="#EF4444"><title>/6 seq 54 auth 54</title>C</text>
+<text x="590.6" y="997.6" class="base" fill="#EF4444"><title>/6 seq 55 auth 55</title>C</text>
+<text x="585.6" y="987.4" class="base" fill="#EF4444"><title>/6 seq 56 auth 56</title>C</text>
+<text x="576.6" y="980.4" class="base" fill="#EF4444"><title>/6 seq 57 auth 57</title>C</text>
+<text x="567.5" y="973.3" class="base" fill="#EF4444"><title>/6 seq 58 auth 58</title>U</text>
+<text x="556.2" y="971.9" class="base" fill="#EF4444"><title>/6 seq 59 auth 59</title>G</text>
+<text x="549.7" y="962.5" class="base" fill="#EF4444"><title>/6 seq 60 auth 60</title>C</text>
+<text x="559.7" y="950.5" class="small" fill="#94a3b8">60</text>
+<text x="552.4" y="951.4" class="base" fill="#EF4444"><title>/6 seq 61 auth 61</title>A</text>
+<text x="562.5" y="946.1" class="base" fill="#EF4444"><title>/6 seq 62 auth 62</title>C</text>
+<text x="573.2" y="950.1" class="base" fill="#EF4444"><title>/6 seq 63 auth 63</title>A</text>
+<text x="577.4" y="960.7" class="base" fill="#EF4444"><title>/6 seq 64 auth 64</title>A</text>
+<text x="586.4" y="967.7" class="base" fill="#EF4444"><title>/6 seq 65 auth 65</title>G</text>
+<text x="595.4" y="974.8" class="base" fill="#EF4444"><title>/6 seq 66 auth 66</title>G</text>
+<text x="606.6" y="977.1" class="base" fill="#EF4444"><title>/6 seq 67 auth 67</title>A</text>
+<text x="611.6" y="987.4" class="base" fill="#EF4444"><title>/6 seq 68 auth 68</title>U</text>
+<text x="606.6" y="997.6" class="base" fill="#EF4444"><title>/6 seq 69 auth 69</title>G</text>
+<text x="606.6" y="1009.1" class="base" fill="#EF4444"><title>/6 seq 70 auth 70</title>A</text>
+<text x="616.6" y="997.1" class="small" fill="#94a3b8">70</text>
+<text x="606.6" y="1020.5" class="base" fill="#EF4444"><title>/6 seq 71 auth 71</title>C</text>
+<text x="606.6" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 72 auth 72</title>A</text>
+<text x="618.0" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 73 auth 73</title>C</text>
+<text x="629.4" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 74 auth 74</title>U</text>
+<text x="640.8" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 75 auth 75</title>G</text>
+<text x="652.3" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 76 auth 76</title>C</text>
+<text x="663.7" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 77 auth 77</title>G</text>
+<text x="675.1" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 78 auth 78</title>A</text>
+<text x="686.5" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 79 auth 79</title>C</text>
+<text x="697.9" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 80 auth 80</title>A</text>
+<text x="707.9" y="1019.9" class="small" fill="#94a3b8">80</text>
+<text x="709.4" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 81 auth 81</title>U</text>
+<text x="720.8" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 82 auth 82</title>U</text>
+<text x="732.2" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 83 auth 83</title>G</text>
+<text x="743.6" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 84 auth 84</title>A</text>
+<text x="755.1" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 85 auth 85</title>G</text>
+<text x="766.5" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 86 auth 86</title>A</text>
+<text x="777.9" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 87 auth 87</title>G</text>
+<text x="789.3" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 88 auth 88</title>A</text>
+<text x="800.7" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 89 auth 89</title>A</text>
+<text x="812.2" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 90 auth 90</title>A</text>
+<text x="822.2" y="1019.9" class="small" fill="#94a3b8">90</text>
+<text x="823.6" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 91 auth 91</title>A</text>
+<text x="835.0" y="1031.9" class="base" fill="#EF4444"><title>/6 seq 92 auth 92</title>C</text>
+<path d="M479.1,1029.5 L499.3,1073.0" class="feature-callout" stroke="#d0183c" opacity="0.54"/>
+<text x="499.3" y="1073.0" class="feature-label" text-anchor="start" fill="#d0183c">U2/U6 helix I nt 29-54</text>
+<path d="M436.4,1031.9 L416.1,1075.4" class="feature-callout" stroke="#e01842" opacity="0.54"/>
+<text x="416.1" y="1075.4" class="feature-label" text-anchor="end" fill="#e01842">5&#x27;SS contact nt 32-43</text>
+<path d="M442.1,1031.9 L400.5,1007.9" class="feature-callout" stroke="#dc143c" opacity="0.60"/>
+<text x="400.5" y="1007.9" class="feature-label" text-anchor="end" fill="#dc143c">ACAGAGA nt 35-41</text>
+<rect x="960.0" y="717.0" width="820.0" height="520.0" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="978.0" y="745.0" class="label" style="font-size:16px;fill:#303030">mRNA /1 -&gt; M</text>
+<polyline points="1015.0,988.5 1040.4,988.5 1065.7,988.5 1091.1,988.5 1116.4,988.5 1141.8,988.5 1167.1,988.5 1192.5,988.5 1217.9,988.5 1243.2,988.5 1268.6,988.5 1293.9,988.5 1319.3,988.5 1344.6,988.5 1370.0,988.5 1395.4,988.5 1420.7,988.5 1446.1,988.5 1471.4,988.5 1496.8,988.5 1522.1,988.5 1547.5,988.5 1572.9,988.5 1598.2,988.5 1623.6,988.5 1648.9,988.5 1674.3,988.5 1699.6,988.5 1725.0,988.5" class="backbone"/>
+<circle cx="1015.0" cy="988.5" r="9.2" fill="#FF8C00" opacity="0.22"><title>5&#x27; exon; confidence medium</title></circle>
+<circle cx="1040.4" cy="988.5" r="9.2" fill="#FF8C00" opacity="0.22"><title>5&#x27; exon; confidence medium</title></circle>
+<circle cx="1065.7" cy="988.5" r="9.2" fill="#FF8C00" opacity="0.22"><title>5&#x27; exon; confidence medium</title></circle>
+<circle cx="1091.1" cy="988.5" r="9.2" fill="#FF8C00" opacity="0.22"><title>5&#x27; exon; confidence medium</title></circle>
+<circle cx="1116.4" cy="988.5" r="9.2" fill="#FF8C00" opacity="0.22"><title>5&#x27; exon; confidence medium</title></circle>
+<circle cx="1141.8" cy="988.5" r="9.2" fill="#FF8C00" opacity="0.22"><title>5&#x27; exon; confidence medium</title></circle>
+<circle cx="1167.1" cy="988.5" r="9.2" fill="#FF8C00" opacity="0.22"><title>5&#x27; exon; confidence medium</title></circle>
+<circle cx="1192.5" cy="988.5" r="9.2" fill="#FF8C00" opacity="0.22"><title>5&#x27; exon; confidence medium</title></circle>
+<circle cx="1217.9" cy="988.5" r="9.2" fill="#FF8C00" opacity="0.22"><title>5&#x27; exon; confidence medium</title></circle>
+<circle cx="1243.2" cy="988.5" r="9.2" fill="#FF8C00" opacity="0.22"><title>5&#x27; exon; confidence medium</title></circle>
+<circle cx="1268.6" cy="988.5" r="9.2" fill="#FF8C00" opacity="0.22"><title>5&#x27; exon; confidence medium</title></circle>
+<circle cx="1293.9" cy="988.5" r="9.2" fill="#FF8C00" opacity="0.22"><title>5&#x27; exon; confidence medium</title></circle>
+<circle cx="1319.3" cy="988.5" r="9.2" fill="#FF8C00" opacity="0.22"><title>5&#x27; exon; confidence medium</title></circle>
+<circle cx="1344.6" cy="988.5" r="9.2" fill="#FF8C00" opacity="0.22"><title>5&#x27; exon; confidence medium</title></circle>
+<circle cx="1370.0" cy="988.5" r="9.2" fill="#FF8C00" opacity="0.22"><title>5&#x27; exon; confidence medium</title></circle>
+<circle cx="1395.4" cy="988.5" r="9.2" fill="#FF8C00" opacity="0.22"><title>5&#x27; exon; confidence medium</title></circle>
+<circle cx="1015.0" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1040.4" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1065.7" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1091.1" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1116.4" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1141.8" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1167.1" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1192.5" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1217.9" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1243.2" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1268.6" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1293.9" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1319.3" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1344.6" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1370.0" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1395.4" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1420.7" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1446.1" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1471.4" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1496.8" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1522.1" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1547.5" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1572.9" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1598.2" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1623.6" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1648.9" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1674.3" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1699.6" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1725.0" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="1420.7" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>5&#x27; splice site; confidence high</title></circle>
+<circle cx="1446.1" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>5&#x27; splice site; confidence high</title></circle>
+<circle cx="1471.4" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>5&#x27; splice site; confidence high</title></circle>
+<circle cx="1496.8" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>5&#x27; splice site; confidence high</title></circle>
+<circle cx="1522.1" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>5&#x27; splice site; confidence high</title></circle>
+<circle cx="1547.5" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>5&#x27; splice site; confidence high</title></circle>
+<circle cx="1420.7" cy="988.5" r="9.2" fill="#303030" opacity="0.14"><title>intron from 5&#x27; splice site; confidence low</title></circle>
+<circle cx="1446.1" cy="988.5" r="9.2" fill="#303030" opacity="0.14"><title>intron from 5&#x27; splice site; confidence low</title></circle>
+<circle cx="1471.4" cy="988.5" r="9.2" fill="#303030" opacity="0.14"><title>intron from 5&#x27; splice site; confidence low</title></circle>
+<circle cx="1496.8" cy="988.5" r="9.2" fill="#303030" opacity="0.14"><title>intron from 5&#x27; splice site; confidence low</title></circle>
+<circle cx="1522.1" cy="988.5" r="9.2" fill="#303030" opacity="0.14"><title>intron from 5&#x27; splice site; confidence low</title></circle>
+<circle cx="1547.5" cy="988.5" r="9.2" fill="#303030" opacity="0.14"><title>intron from 5&#x27; splice site; confidence low</title></circle>
+<circle cx="1572.9" cy="988.5" r="9.2" fill="#303030" opacity="0.14"><title>intron from 5&#x27; splice site; confidence low</title></circle>
+<circle cx="1598.2" cy="988.5" r="9.2" fill="#303030" opacity="0.14"><title>intron from 5&#x27; splice site; confidence low</title></circle>
+<circle cx="1623.6" cy="988.5" r="9.2" fill="#303030" opacity="0.14"><title>intron from 5&#x27; splice site; confidence low</title></circle>
+<circle cx="1648.9" cy="988.5" r="9.2" fill="#303030" opacity="0.14"><title>intron from 5&#x27; splice site; confidence low</title></circle>
+<circle cx="1674.3" cy="988.5" r="9.2" fill="#303030" opacity="0.14"><title>intron from 5&#x27; splice site; confidence low</title></circle>
+<circle cx="1699.6" cy="988.5" r="9.2" fill="#303030" opacity="0.14"><title>intron from 5&#x27; splice site; confidence low</title></circle>
+<circle cx="1725.0" cy="988.5" r="9.2" fill="#303030" opacity="0.14"><title>intron from 5&#x27; splice site; confidence low</title></circle>
+<text x="1015.0" y="988.5" class="base" fill="#303030"><title>/1 seq 1 auth -15</title>U</text>
+<text x="1040.4" y="988.5" class="base" fill="#303030"><title>/1 seq 2 auth -14</title>U</text>
+<text x="1065.7" y="988.5" class="base" fill="#303030"><title>/1 seq 3 auth -13</title>U</text>
+<text x="1091.1" y="988.5" class="base" fill="#303030"><title>/1 seq 4 auth -12</title>U</text>
+<text x="1116.4" y="988.5" class="base" fill="#303030"><title>/1 seq 5 auth -11</title>U</text>
+<text x="1141.8" y="988.5" class="base" fill="#303030"><title>/1 seq 6 auth -10</title>A</text>
+<text x="1167.1" y="988.5" class="base" fill="#303030"><title>/1 seq 7 auth -9</title>U</text>
+<text x="1192.5" y="988.5" class="base" fill="#303030"><title>/1 seq 8 auth -8</title>U</text>
+<text x="1217.9" y="988.5" class="base" fill="#303030"><title>/1 seq 9 auth -7</title>A</text>
+<text x="1243.2" y="988.5" class="base" fill="#303030"><title>/1 seq 10 auth -6</title>A</text>
+<text x="1253.2" y="976.5" class="small" fill="#94a3b8">10</text>
+<text x="1268.6" y="988.5" class="base" fill="#303030"><title>/1 seq 11 auth -5</title>A</text>
+<text x="1293.9" y="988.5" class="base" fill="#303030"><title>/1 seq 12 auth -4</title>A</text>
+<text x="1319.3" y="988.5" class="base" fill="#303030"><title>/1 seq 13 auth -3</title>A</text>
+<text x="1344.6" y="988.5" class="base" fill="#303030"><title>/1 seq 14 auth -2</title>A</text>
+<text x="1370.0" y="988.5" class="base" fill="#303030"><title>/1 seq 15 auth -1</title>U</text>
+<text x="1395.4" y="988.5" class="base" fill="#303030"><title>/1 seq 16 auth 0</title>G</text>
+<text x="1420.7" y="988.5" class="base" fill="#303030"><title>/1 seq 17 auth 1</title>G</text>
+<text x="1446.1" y="988.5" class="base" fill="#303030"><title>/1 seq 18 auth 2</title>U</text>
+<text x="1471.4" y="988.5" class="base" fill="#303030"><title>/1 seq 19 auth 3</title>A</text>
+<text x="1496.8" y="988.5" class="base" fill="#303030"><title>/1 seq 20 auth 4</title>U</text>
+<text x="1506.8" y="976.5" class="small" fill="#94a3b8">20</text>
+<text x="1522.1" y="988.5" class="base" fill="#303030"><title>/1 seq 21 auth 5</title>G</text>
+<text x="1547.5" y="988.5" class="base" fill="#303030"><title>/1 seq 22 auth 6</title>U</text>
+<text x="1572.9" y="988.5" class="base" fill="#303030"><title>/1 seq 23 auth 7</title>U</text>
+<text x="1598.2" y="988.5" class="base" fill="#303030"><title>/1 seq 24 auth 8</title>U</text>
+<text x="1623.6" y="988.5" class="base" fill="#303030"><title>/1 seq 25 auth 9</title>U</text>
+<text x="1648.9" y="988.5" class="base" fill="#303030"><title>/1 seq 26 auth 10</title>U</text>
+<text x="1674.3" y="988.5" class="base" fill="#303030"><title>/1 seq 27 auth 11</title>U</text>
+<text x="1699.6" y="988.5" class="base" fill="#303030"><title>/1 seq 28 auth 12</title>U</text>
+<text x="1725.0" y="988.5" class="base" fill="#303030"><title>/1 seq 29 auth 13</title>U</text>
+<path d="M1205.2,988.5 L1248.7,968.2" class="feature-callout" stroke="#FF8C00" opacity="0.54"/>
+<text x="1248.7" y="968.2" class="feature-label" text-anchor="start" fill="#FF8C00">5&#x27; exon nt -15-0</text>
+<path d="M1484.1,988.5 L1527.6,968.2" class="feature-callout" stroke="#303030" opacity="0.60"/>
+<text x="1527.6" y="968.2" class="feature-label" text-anchor="start" fill="#303030">5&#x27;SS nt 1-6</text>
+<path d="M1319.3,988.5 Q1300.9,147.6 1282.6,192.6" class="inter" stroke-width="1.8"><title>1:12-14 to 5:50-52; 3 FR3D interactions; cWW</title></path>
+<path d="M125.0,363.4 Q457.2,318.4 789.3,1031.9" class="inter" stroke-width="1.3"><title>2:3-3 to 6:88-88; 1 FR3D interactions; cWW</title></path>
+<path d="M330.8,363.4 Q520.1,318.4 709.4,1031.9" class="inter" stroke-width="1.8"><title>2:8-11 to 6:79-83; 3 FR3D interactions; cSW,cWW</title></path>
+<path d="M541.7,363.4 Q551.9,318.4 562.0,1031.9" class="inter" stroke-width="2.0"><title>2:19-22 to 6:47-50; 4 FR3D interactions; cWW</title></path>
+<path d="M727.0,363.4 Q621.6,318.4 516.3,1031.9" class="inter" stroke-width="2.0"><title>2:25-28 to 6:43-46; 4 FR3D interactions; cWW</title></path>
+<path d="M1282.6,192.6 Q1300.9,147.6 1319.3,988.5" class="inter" stroke-width="1.8"><title>5:50-52 to 1:12-14; 3 FR3D interactions; cWW</title></path>
+<path d="M516.3,1031.9 Q621.6,318.4 727.0,363.4" class="inter" stroke-width="2.0"><title>6:43-46 to 2:25-28; 4 FR3D interactions; cWW</title></path>
+<path d="M562.0,1031.9 Q551.9,318.4 541.7,363.4" class="inter" stroke-width="2.0"><title>6:47-50 to 2:19-22; 4 FR3D interactions; cWW</title></path>
+<path d="M709.4,1031.9 Q520.1,318.4 330.8,363.4" class="inter" stroke-width="1.8"><title>6:79-83 to 2:8-11; 3 FR3D interactions; cWS,cWW</title></path>
+<path d="M789.3,1031.9 Q457.2,318.4 125.0,363.4" class="inter" stroke-width="1.3"><title>6:88-88 to 2:3-3; 1 FR3D interactions; cWW</title></path>
+<text x="70" y="1364.0" class="label" style="font-size:15px">Feature overlays</text>
+<circle cx="77.0" cy="1386.0" r="7" fill="#FF8C00" opacity="0.28"/>
+<text x="90.0" y="1390.0" class="small">exon 5</text>
+<circle cx="287.0" cy="1386.0" r="7" fill="#303030" opacity="0.28"/>
+<text x="300.0" y="1390.0" class="small">substrate</text>
+<circle cx="497.0" cy="1386.0" r="7" fill="#303030" opacity="0.28"/>
+<text x="510.0" y="1390.0" class="small">five prime splice site</text>
+<circle cx="707.0" cy="1386.0" r="7" fill="#303030" opacity="0.28"/>
+<text x="720.0" y="1390.0" class="small">intron</text>
+<circle cx="917.0" cy="1386.0" r="7" fill="#047857" opacity="0.28"/>
+<text x="930.0" y="1390.0" class="small">U2 U6 helix I partner</text>
+<circle cx="1127.0" cy="1386.0" r="7" fill="#1b3cd0" opacity="0.28"/>
+<text x="1140.0" y="1390.0" class="small">U5 loop I</text>
+<circle cx="1337.0" cy="1386.0" r="7" fill="#d0183c" opacity="0.28"/>
+<text x="1350.0" y="1390.0" class="small">U6 U2 helix I partner</text>
+<circle cx="1547.0" cy="1386.0" r="7" fill="#e01842" opacity="0.28"/>
+<text x="1560.0" y="1390.0" class="small">U6 5SS upstream contact</text>
+<circle cx="77.0" cy="1409.0" r="7" fill="#dc143c" opacity="0.28"/>
+<text x="90.0" y="1413.0" class="small">U6 ACAGAGA box</text>
+</svg>

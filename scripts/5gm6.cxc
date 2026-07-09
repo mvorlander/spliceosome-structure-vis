@@ -41,13 +41,29 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # PRPF8
 color #308.1/A #BFC3E8
+# SNRNP200
+color #308.1/B #AFEEEE
+# EFTUD2
+color #308.1/C #6495ED
+# mRNA
+color #308.1/D #303030
+# mRNA
+color #308.1/E #303030
+# SF3B3
+color #308.1/F #6A9064
+# SF3B2
+color #308.1/H #49926C
+# SF3A2
+color #308.1/I #75A074
+# PHF5A
+color #308.1/J #375A40
 # SF3B5
 color #308.1/K #92BB8F
 # U2 snRNA
-color #308.1/L #006400
-# pre-mRNA
+color #308.1/L #71C562
+# mRNA
 color #308.1/N #303030
-# pre-mRNA
+# mRNA
 color #308.1/M #303030
 # PLRG1
 color #308.1/O #F4A460
@@ -61,8 +77,6 @@ color #308.1/R #E6B566
 color #308.1/S #FFDEAD
 # BUD31
 color #308.1/T #FFF584
-# SNRNP200
-color #308.1/B #AFEEEE
 # SNIP1
 color #308.1/U #89BFC8
 # CGI-79
@@ -81,8 +95,6 @@ color #308.1/c #DAA520
 color #308.1/G #487957
 # CRNKL1
 color #308.1/d #FFC388
-# EFTUD2
-color #308.1/C #6495ED
 # SYF1
 color #308.1/v #FF957B
 # SF3B4
@@ -105,8 +117,6 @@ color #308.1/k #B0C4DE
 color #308.1/i #B0C4DE
 # SNRPF
 color #308.1/h #B0C4DE
-# pre-mRNA
-color #308.1/D #303030
 # SNRPG
 color #308.1/j #B0C4DE
 # SNRPD3
@@ -115,16 +125,6 @@ color #308.1/l #B0C4DE
 color #308.1/m #B0C4DE
 # SNRPD2
 color #308.1/g #B0C4DE
-# pre-mRNA
-color #308.1/E #303030
-# SF3B3
-color #308.1/F #6A9064
-# SF3B2
-color #308.1/H #49926C
-# SF3A2
-color #308.1/I #75A074
-# PHF5A
-color #308.1/J #375A40
 # Named selections for subcomplexes using original deposited chain IDs.
 # EJC/mRNP
 # selector_meta {"color":"#EAA439","family":"Protein/RNP groups","group":"EJC/mRNP groups","kind":"subcomplex"}
@@ -163,9 +163,6 @@ name Bact_5GM6_substrate #308.1/D:28-55,60-127,163-183|#308.1/E:1-103|#308.1/M:4
 # branch point region: residues 493-503; 72-76, network-scored-motif, high/review confidence, validation uncertain/validated uncertain validation
 # selector_meta {"color":"#303030","family":"RNA","feature":"branch_point_region","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name Bact_5GM6_branch_region #308.1/D:72-76|#308.1/M:493-503
-# polypyrimidine tract: residues 94-99, sequence-motif, medium confidence, validation uncertain uncertain validation
-# selector_meta {"color":"#303030","family":"RNA","feature":"polypyrimidine_tract","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
-name Bact_5GM6_PPT #308.1/D:94-99
 # branch point adenosine: residues 501, network-scored-motif, high confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"branch_point_adenosine","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name Bact_5GM6_branch_A #308.1/M:501
@@ -193,7 +190,6 @@ select #308.1 & nucleic
 nucleotides sel atoms
 select clear
 # BP region: residues 493-503; 72-76
-# PPT: residues 94-99
 # BP-A: residues 501
 # 5' exon: residues 90-99
 color #308.1/N:90-99 #FF8C00

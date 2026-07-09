@@ -42,7 +42,23 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # LSM6
 color #408.1/66 #F4A3A8
-# pre-mRNA
+# LSM7
+color #408.1/67 #F4A3A8
+# LSM2
+color #408.1/62 #F4A3A8
+# LSM3
+color #408.1/63 #F4A3A8
+# LSM8
+color #408.1/68 #F4A3A8
+# LSM4
+color #408.1/64 #F4A3A8
+# LSM5
+color #408.1/65 #F4A3A8
+# PRP8BP
+color #408.1/E #E2F3F4
+# SF3B4
+color #408.1/B4 #77B088
+# mRNA
 color #408.1/Z #303030
 # SF3A2
 color #408.1/8 #75A074
@@ -53,7 +69,7 @@ color #408.1/B2 #49926C
 # SF3B5
 color #408.1/B5 #92BB8F
 # U2 snRNA
-color #408.1/2 #006400
+color #408.1/2 #71C562
 # SF3B3
 color #408.1/B3 #6A9064
 # PHF5A
@@ -62,8 +78,6 @@ color #408.1/BP #375A40
 color #408.1/B1 #487957
 # SF3B6
 color #408.1/B6 #ADCEA0
-# LSM7
-color #408.1/67 #F4A3A8
 # U2-Sm SNRPD2
 color #408.1/22 #D5F5E3
 # U4-Sm SNRPD2
@@ -112,8 +126,6 @@ color #408.1/51 #B0C4DE
 color #408.1/2A #58D68D
 # SNRNP200
 color #408.1/B #AFEEEE
-# LSM2
-color #408.1/62 #F4A3A8
 # CYP20
 color #408.1/W #C9AC36
 # DDX23
@@ -134,32 +146,20 @@ color #408.1/U #B37E6A
 color #408.1/S #D6937B
 # EFTUD2
 color #408.1/C #6495ED
-# LSM3
-color #408.1/63 #F4A3A8
 # NHP2L1
 color #408.1/M #A89264
 # TXNL4A
 color #408.1/D #C3BA7A
 # U5 snRNA
-color #408.1/5 #0000CD
-# pre-mRNA
+color #408.1/5 #4F9FD3
+# mRNA
 color #408.1/z #303030
 # SF3A1
 color #408.1/7 #55947F
 # U4 snRNA
-color #408.1/4 #E6D900
+color #408.1/4 #F2D94E
 # U6 snRNA
-color #408.1/6 #DC143C
-# LSM8
-color #408.1/68 #F4A3A8
-# LSM4
-color #408.1/64 #F4A3A8
-# LSM5
-color #408.1/65 #F4A3A8
-# PRP8BP
-color #408.1/E #E2F3F4
-# SF3B4
-color #408.1/B4 #77B088
+color #408.1/6 #EF4444
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}

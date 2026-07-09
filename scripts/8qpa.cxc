@@ -41,22 +41,6 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # SNRNP200
 color #401.1/B #AFEEEE
-# EFTUD2
-color #401.1/C #6495ED
-# NHP2L1
-color #401.1/M #A89264
-# TXNL4A
-color #401.1/D #C3BA7A
-# U5 snRNA
-color #401.1/5 #0000CD
-# pre-mRNA
-color #401.1/z #303030
-# SF3A1
-color #401.1/7 #55947F
-# U4 snRNA
-color #401.1/4 #E6D900
-# U6 snRNA
-color #401.1/6 #DC143C
 # DDX23
 color #401.1/G #CA9982
 # PRPF3
@@ -73,6 +57,22 @@ color #401.1/A #BFC3E8
 color #401.1/U #B37E6A
 # SART1
 color #401.1/S #D6937B
+# EFTUD2
+color #401.1/C #6495ED
+# NHP2L1
+color #401.1/M #A89264
+# TXNL4A
+color #401.1/D #C3BA7A
+# U5 snRNA
+color #401.1/5 #4F9FD3
+# mRNA
+color #401.1/z #303030
+# SF3A1
+color #401.1/7 #55947F
+# U4 snRNA
+color #401.1/4 #F2D94E
+# U6 snRNA
+color #401.1/6 #EF4444
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}

@@ -41,10 +41,26 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # CBP80
 color #356.1/A5 #B29876
+# LSM7
+color #356.1/A2 #F4A3A8
+# SF3B6
+color #356.1/z #ADCEA0
+# SF3A2
+color #356.1/F #75A074
+# PRP8BP
+color #356.1/D #E2F3F4
+# SNRPA1
+color #356.1/W #58D68D
+# SNRPB2
+color #356.1/B #DAF7A6
+# SNRNP200
+color #356.1/s #AFEEEE
+# BUD31
+color #356.1/Q #FFF584
 # CBP20
 color #356.1/A1 #547596
 # U5 snRNA
-color #356.1/5 #0000CD
+color #356.1/5 #4F9FD3
 # CDC5L
 color #356.1/L #DAA520
 # CWC15
@@ -60,9 +76,7 @@ color #356.1/H #F4A3A8
 # LSM6
 color #356.1/J #F4A3A8
 # U2 snRNA
-color #356.1/2 #006400
-# LSM7
-color #356.1/A2 #F4A3A8
+color #356.1/2 #71C562
 # LSM8
 color #356.1/A3 #F4A3A8
 # MFAP1
@@ -71,7 +85,7 @@ color #356.1/K #CD5C5C
 color #356.1/y #375A40
 # PLRG1
 color #356.1/G #F4A460
-# pre-mRNA
+# mRNA
 color #356.1/Z #303030
 # PRPF8
 color #356.1/A #BFC3E8
@@ -83,8 +97,6 @@ color #356.1/P #DE9A52
 color #356.1/p #55947F
 # SF3A3
 color #356.1/4 #9BCF91
-# SF3B6
-color #356.1/z #ADCEA0
 # CA150
 color #356.1/A4 #A2B8CD
 # SF3B1
@@ -105,12 +117,10 @@ color #356.1/0 #89BFC8
 color #356.1/N #FFB6C1
 # EFTUD2
 color #356.1/r #6495ED
-# SF3A2
-color #356.1/F #75A074
 # SRM160
 color #356.1/Y #6E96C4
 # U6 snRNA
-color #356.1/6 #DC143C
+color #356.1/6 #EF4444
 # ASF
 color #356.1/A6 #CC3E8E
 # U5-Sm SNRPD2
@@ -141,20 +151,10 @@ color #356.1/j #D5F5E3
 color #356.1/g #B0C4DE
 # U2-Sm SNRPD1
 color #356.1/n #D5F5E3
-# PRP8BP
-color #356.1/D #E2F3F4
 # UBL5
 color #356.1/q #DB7093
 # NPWBP
 color #356.1/X #D8944F
-# SNRPA1
-color #356.1/W #58D68D
-# SNRPB2
-color #356.1/B #DAF7A6
-# SNRNP200
-color #356.1/s #AFEEEE
-# BUD31
-color #356.1/Q #FFF584
 # Named selections for subcomplexes using original deposited chain IDs.
 # NTC/NTR related
 # selector_meta {"color":"#F4BF67","family":"Protein/RNP groups","group":"NTC/NTR groups","kind":"subcomplex"}

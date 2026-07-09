@@ -41,20 +41,6 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # DDX23
 color #404.1/G #CA9982
-# U4 snRNA
-color #404.1/4 #E6D900
-# SNRNP27
-color #404.1/X #F4E7D2
-# pre-mRNA
-color #404.1/z #303030
-# U6 snRNA
-color #404.1/6 #DC143C
-# PRPF6
-color #404.1/N #CFA785
-# SNRNP200
-color #404.1/B #AFEEEE
-# SF3A1
-color #404.1/7 #55947F
 # TXNL4A
 color #404.1/D #C3BA7A
 # PRPF31
@@ -70,7 +56,21 @@ color #404.1/S #D6937B
 # EFTUD2
 color #404.1/C #6495ED
 # U5 snRNA
-color #404.1/5 #0000CD
+color #404.1/5 #4F9FD3
+# U4 snRNA
+color #404.1/4 #F2D94E
+# SNRNP27
+color #404.1/X #F4E7D2
+# mRNA
+color #404.1/z #303030
+# U6 snRNA
+color #404.1/6 #EF4444
+# PRPF6
+color #404.1/N #CFA785
+# SNRNP200
+color #404.1/B #AFEEEE
+# SF3A1
+color #404.1/7 #55947F
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA-binding
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}

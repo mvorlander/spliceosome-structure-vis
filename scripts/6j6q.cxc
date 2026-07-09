@@ -41,6 +41,20 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # PRPF8
 color #343.1/A #BFC3E8
+# EFTUD2
+color #343.1/C #6495ED
+# PLRG1
+color #343.1/O #F4A460
+# SNW1
+color #343.1/P #D49F96
+# RBM22
+color #343.1/Q #DE9A52
+# CWC2
+color #343.1/R #E6B566
+# CWC15
+color #343.1/S #FFDEAD
+# BUD31
+color #343.1/T #FFF584
 # CWC22
 color #343.1/Z #2C54DD
 # CDC5L
@@ -53,16 +67,14 @@ color #343.1/I #FF8C00
 color #343.1/n #FFF7C9
 # ISY1
 color #343.1/H #FFEF8C
-# pre-mRNA
+# mRNA
 color #343.1/B #303030
 # U5 snRNA
-color #343.1/D #0000CD
+color #343.1/D #4F9FD3
 # U6 snRNA
-color #343.1/E #DC143C
+color #343.1/E #EF4444
 # U2 snRNA
-color #343.1/L #006400
-# EFTUD2
-color #343.1/C #6495ED
+color #343.1/L #71C562
 # SYF1
 color #343.1/v #FF957B
 # SNRPB2
@@ -107,18 +119,6 @@ color #343.1/q #FFFFAB
 color #343.1/r #FFFFAB
 # CCDC94
 color #343.1/F #CE4678
-# PLRG1
-color #343.1/O #F4A460
-# SNW1
-color #343.1/P #D49F96
-# RBM22
-color #343.1/Q #DE9A52
-# CWC2
-color #343.1/R #E6B566
-# CWC15
-color #343.1/S #FFDEAD
-# BUD31
-color #343.1/T #FFF584
 # Named selections for subcomplexes using original deposited chain IDs.
 # EJC/mRNP
 # selector_meta {"color":"#EAA439","family":"Protein/RNP groups","group":"EJC/mRNP groups","kind":"subcomplex"}

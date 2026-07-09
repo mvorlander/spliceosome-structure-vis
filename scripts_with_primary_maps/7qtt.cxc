@@ -42,6 +42,22 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # SF3B3
 color #372.1/A #6A9064
+# SF3B5
+color #372.1/B #92BB8F
+# SF3B1
+color #372.1/C #487957
+# PHF5A
+color #372.1/D #375A40
+# SF3B2
+color #372.1/E #49926C
+# SF3B4
+color #372.1/F #77B088
+# GPATC5
+color #372.1/G #BFC4EE
+# SF3A2
+color #372.1/I #75A074
+# SF3A3
+color #372.1/J #9BCF91
 # BUD13
 color #372.1/L #459285
 # DBP2
@@ -62,8 +78,6 @@ color #372.1/V #CFC7DB
 color #372.1/W #2C54DD
 # CRNKL1
 color #372.1/X #FFC388
-# SF3B5
-color #372.1/B #92BB8F
 # SNW1
 color #372.1/Y #D49F96
 # RNF113
@@ -73,19 +87,17 @@ color #372.1/a #BFC3E8
 # EFTUD2
 color #372.1/b #6495ED
 # U6 snRNA
-color #372.1/d #DC143C
+color #372.1/d #EF4444
 # U5 snRNA
-color #372.1/e #0000CD
+color #372.1/e #4F9FD3
 # U2 snRNA
-color #372.1/f #006400
-# pre-mRNA
+color #372.1/f #71C562
+# mRNA
 color #372.1/g #303030
 # U5-Sm SNRPF
 color #372.1/h #B0C4DE
 # U5-Sm SNRPE
 color #372.1/i #B0C4DE
-# SF3B1
-color #372.1/C #487957
 # U5-Sm SNRPD3
 color #372.1/j #B0C4DE
 # U5-Sm SNRPD1
@@ -102,18 +114,6 @@ color #372.1/p #EEE8AA
 color #372.1/q #BDD6F0
 # PPIL2
 color #372.1/u #B12F50
-# PHF5A
-color #372.1/D #375A40
-# SF3B2
-color #372.1/E #49926C
-# SF3B4
-color #372.1/F #77B088
-# GPATC5
-color #372.1/G #BFC4EE
-# SF3A2
-color #372.1/I #75A074
-# SF3A3
-color #372.1/J #9BCF91
 # Named selections for subcomplexes using original deposited chain IDs.
 # EJC/mRNP
 # selector_meta {"color":"#EAA439","family":"Protein/RNP groups","group":"EJC/mRNP groups","kind":"subcomplex"}

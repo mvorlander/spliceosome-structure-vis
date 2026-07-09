@@ -40,10 +40,26 @@ graphics silhouettes true
 cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
-# pre-mRNA
+# mRNA
 color #379.1/A #303030
+# U6 snRNA
+color #379.1/6A #EF4444
+# LSM2
+color #379.1/6a #F4A3A8
+# LSM3
+color #379.1/6b #F4A3A8
+# LSM4
+color #379.1/6c #F4A3A8
+# LSM5
+color #379.1/6d #F4A3A8
+# LSM6
+color #379.1/6e #F4A3A8
+# LSM7
+color #379.1/6f #F4A3A8
+# LSM8
+color #379.1/6g #F4A3A8
 # U5 snRNA
-color #379.1/5A #0000CD
+color #379.1/5A #4F9FD3
 # PRPF8
 color #379.1/5B #BFC3E8
 # EFTUD2
@@ -82,8 +98,6 @@ color #379.1/2e #D5F5E3
 color #379.1/4e #F7F0A6
 # U5-Sm SNRPE
 color #379.1/5e #B0C4DE
-# U6 snRNA
-color #379.1/6A #DC143C
 # U2-Sm SNRPG
 color #379.1/2f #D5F5E3
 # U4-Sm SNRPG
@@ -97,7 +111,7 @@ color #379.1/4g #F7F0A6
 # U5-Sm SNRPD3
 color #379.1/5g #B0C4DE
 # U4 snRNA
-color #379.1/4A #E6D900
+color #379.1/4A #F2D94E
 # PRPF3
 color #379.1/4B #E1DD1B
 # PRPF4
@@ -112,8 +126,6 @@ color #379.1/4F #C3BA7A
 color #379.1/4G #CFA785
 # RBM42
 color #379.1/4R #44A0A7
-# LSM2
-color #379.1/6a #F4A3A8
 # SART1
 color #379.1/4S #D6937B
 # USP39
@@ -125,7 +137,7 @@ color #379.1/4X #F4E7D2
 # PRPF4
 color #379.1/4Y #E2C496
 # U2 snRNA
-color #379.1/2A #006400
+color #379.1/2A #71C562
 # SNRPA1
 color #379.1/2B #58D68D
 # SNRPB2
@@ -134,8 +146,6 @@ color #379.1/2C #DAF7A6
 color #379.1/2D #55947F
 # SF3A2
 color #379.1/2E #75A074
-# LSM3
-color #379.1/6b #F4A3A8
 # SF3A3
 color #379.1/2F #9BCF91
 # SF3B1
@@ -152,16 +162,6 @@ color #379.1/2K #ADCEA0
 color #379.1/2L #375A40
 # SF3B5
 color #379.1/2M #92BB8F
-# LSM4
-color #379.1/6c #F4A3A8
-# LSM5
-color #379.1/6d #F4A3A8
-# LSM6
-color #379.1/6e #F4A3A8
-# LSM7
-color #379.1/6f #F4A3A8
-# LSM8
-color #379.1/6g #F4A3A8
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA-binding
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}

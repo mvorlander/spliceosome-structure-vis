@@ -42,6 +42,22 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # PRPF8
 color #376.1/A #BFC3E8
+# U5 snRNA
+color #376.1/B #4F9FD3
+# EFTUD2
+color #376.1/C #6495ED
+# SNRNP200
+color #376.1/D #AFEEEE
+# PRP8BP
+color #376.1/E #E2F3F4
+# U6 snRNA
+color #376.1/F #EF4444
+# mRNA
+color #376.1/4 #303030
+# mRNA
+color #376.1/G #303030
+# U2 snRNA
+color #376.1/H #71C562
 # SYF1
 color #376.1/I #FF957B
 # CRNKL1
@@ -62,8 +78,6 @@ color #376.1/P #FFDEAD
 color #376.1/Q #FFDAB9
 # SNW1
 color #376.1/R #D49F96
-# U5 snRNA
-color #376.1/B #0000CD
 # PPIL1
 color #376.1/S #EEE8AA
 # PLRG1
@@ -86,8 +100,6 @@ color #376.1/z #F2CCFF
 color #376.1/b #B0C4DE
 # U2-Sm SNRPB
 color #376.1/i #D5F5E3
-# EFTUD2
-color #376.1/C #6495ED
 # PPIE
 color #376.1/y #FFFFE0
 # U5-Sm SNRPD3
@@ -126,8 +138,6 @@ color #376.1/t #FFFFAB
 color #376.1/o #58D68D
 # SNRPB2
 color #376.1/p #DAF7A6
-# SNRNP200
-color #376.1/D #AFEEEE
 # SLU7
 color #376.1/1 #5A338B
 # MAGOH
@@ -140,16 +150,6 @@ color #376.1/u #F1D8BC
 color #376.1/x #CB8548
 # NKAP
 color #376.1/3 #9370DB
-# PRP8BP
-color #376.1/E #E2F3F4
-# U6 snRNA
-color #376.1/F #DC143C
-# pre-mRNA
-color #376.1/4 #303030
-# pre-mRNA
-color #376.1/G #303030
-# U2 snRNA
-color #376.1/H #006400
 # Named selections for subcomplexes using original deposited chain IDs.
 # EJC/mRNP
 # selector_meta {"color":"#EAA439","family":"Protein/RNP groups","group":"EJC/mRNP groups","kind":"subcomplex"}
@@ -191,6 +191,12 @@ name pdb_7W5B_other #376.1/3,Z,z
 # substrate RNA: residues -13--1; 1-31;116-150;164-179, component, medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name Cstar_7W5B_substrate #376.1/4:-13--1|#376.1/G:1-31,116-150,164-179
+# 5' splice site: residues 1-6, network-scored-motif, medium confidence, validation uncertain uncertain validation
+# selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name Cstar_7W5B_5SS #376.1/G:1-6
+# intron: residues 1-31;116-150;164-167, splice-site-inference, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name Cstar_7W5B_intron #376.1/G:1-31,116-150,164-167
 # branch point region: residues 140-146, network-scored-motif, high confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"branch_point_region","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name Cstar_7W5B_branch_region #376.1/G:140-146
@@ -203,6 +209,9 @@ name Cstar_7W5B_PPT #376.1/G:150
 # 3' splice site: residues 165-167, network-scored-motif, medium confidence, validation uncertain uncertain validation
 # selector_meta {"color":"#303030","family":"RNA","feature":"three_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name Cstar_7W5B_3SS #376.1/G:165-167
+# 3' exon: residues 168-179, splice-site-inference, medium confidence, validation not_applicable
+# selector_meta {"color":"#D97706","family":"RNA","feature":"exon_3","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name Cstar_7W5B_3exon #376.1/G:168-179
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
 # selector_meta {"color":"#047857","family":"RNA","feature":"U2_U6_helix_I_partner","group":"snRNA-snRNA interacting regions","group_key":"snRNA_snRNA_regions","kind":"rna_feature"}
@@ -241,10 +250,17 @@ name Cstar_7W5B_U6_AGC_catalytic_triad #376.1/F:92-94
 select #376.1 & nucleic
 nucleotides sel atoms
 select clear
+# 5'SS: residues 1-6
+# intron: residues 1-31;116-150;164-167
 # BP region: residues 140-146
 # BP-A: residues 144
 # PPT: residues 150
 # 3'SS: residues 165-167
+# 3' exon: residues 168-179
+color #376.1/G:168-179 #D97706
+select #376.1/G:168-179
+nucleotides sel fill
+select clear
 # U2/U6 helix I: residues 26-30
 color #376.1/H:26-30 #047857
 select #376.1/H:26-30

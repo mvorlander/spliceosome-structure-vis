@@ -42,6 +42,26 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # PRP8BP
 color #358.1/D #E2F3F4
+# SF3B3
+color #358.1/E #6A9064
+# U5-Sm SNRPF
+color #358.1/b #B0C4DE
+# U2-Sm SNRPF
+color #358.1/i #D5F5E3
+# SNRPA1
+color #358.1/W #58D68D
+# SF3B4
+color #358.1/w #77B088
+# U5-Sm SNRPG
+color #358.1/d #B0C4DE
+# U2-Sm SNRPG
+color #358.1/k #D5F5E3
+# AQR
+color #358.1/U #FFDAB9
+# SF3B5
+color #358.1/x #92BB8F
+# U6 snRNA
+color #358.1/6 #EF4444
 # SNRPB2
 color #358.1/B #DAF7A6
 # SF3B6
@@ -62,8 +82,6 @@ color #358.1/Q #FFF584
 color #358.1/1 #5FB491
 # CDC5L
 color #358.1/L #DAA520
-# SF3B3
-color #358.1/E #6A9064
 # ZMAT2
 color #358.1/N #FFB6C1
 # C20ORF33
@@ -84,12 +102,8 @@ color #358.1/K #CD5C5C
 color #358.1/O #FFC388
 # PHF5A
 color #358.1/y #375A40
-# U5-Sm SNRPF
-color #358.1/b #B0C4DE
-# U2-Sm SNRPF
-color #358.1/i #D5F5E3
 # U2 snRNA
-color #358.1/2 #006400
+color #358.1/2 #71C562
 # PLRG1
 color #358.1/G #F4A460
 # U5-Sm SNRPD2
@@ -104,7 +118,7 @@ color #358.1/t #B12F50
 color #358.1/f #B0C4DE
 # U2-Sm SNRPB
 color #358.1/m #D5F5E3
-# pre-mRNA
+# mRNA
 color #358.1/Z #303030
 # U5-Sm SNRPD3
 color #358.1/e #B0C4DE
@@ -114,8 +128,6 @@ color #358.1/l #D5F5E3
 color #358.1/A #BFC3E8
 # PRPF17
 color #358.1/8 #FFF7C9
-# SNRPA1
-color #358.1/W #58D68D
 # U5-Sm SNRPE
 color #358.1/c #B0C4DE
 # U2-Sm SNRPE
@@ -129,7 +141,7 @@ color #358.1/n #D5F5E3
 # RBM22
 color #358.1/P #DE9A52
 # U5 snRNA
-color #358.1/5 #0000CD
+color #358.1/5 #4F9FD3
 # SF3A1
 color #358.1/p #55947F
 # SF3A2
@@ -140,18 +152,6 @@ color #358.1/4 #9BCF91
 color #358.1/u #487957
 # SF3B2
 color #358.1/T #49926C
-# SF3B4
-color #358.1/w #77B088
-# U5-Sm SNRPG
-color #358.1/d #B0C4DE
-# U2-Sm SNRPG
-color #358.1/k #D5F5E3
-# AQR
-color #358.1/U #FFDAB9
-# SF3B5
-color #358.1/x #92BB8F
-# U6 snRNA
-color #358.1/6 #DC143C
 # Named selections for subcomplexes using original deposited chain IDs.
 # NTC/NTR related
 # selector_meta {"color":"#F4BF67","family":"Protein/RNP groups","group":"NTC/NTR groups","kind":"subcomplex"}

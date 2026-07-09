@@ -40,19 +40,13 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # U5 snRNA
-color #304.1/U #0000CD
-# U5-Sm SNRPD3
-color #304.1/d #B0C4DE
-# U5-Sm SNRPD1
-color #304.1/h #B0C4DE
-# U5-Sm SNRPD2
-color #304.1/j #B0C4DE
+color #304.1/U #4F9FD3
 # PRPF8
 color #304.1/A #BFC3E8
 # EFTUD2
 color #304.1/C #6495ED
 # U6 snRNA
-color #304.1/W #DC143C
+color #304.1/W #EF4444
 # U5-Sm SNRPB
 color #304.1/b #B0C4DE
 # U5-Sm SNRPE
@@ -61,6 +55,12 @@ color #304.1/e #B0C4DE
 color #304.1/f #B0C4DE
 # U5-Sm SNRPG
 color #304.1/g #B0C4DE
+# U5-Sm SNRPD3
+color #304.1/d #B0C4DE
+# U5-Sm SNRPD1
+color #304.1/h #B0C4DE
+# U5-Sm SNRPD2
+color #304.1/j #B0C4DE
 # Named selections for subcomplexes using original deposited chain IDs.
 # U5 Sm ring
 # selector_meta {"color":"#BFC3E8","family":"Protein/RNP groups","group":"U5 snRNP groups","kind":"subcomplex"}

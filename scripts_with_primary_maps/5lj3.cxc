@@ -41,7 +41,23 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # U5 snRNA
-color #310.1/U #0000CD
+color #310.1/U #4F9FD3
+# mRNA
+color #310.1/E #303030
+# INTRON
+color #310.1/I #303030
+# U2 snRNA
+color #310.1/Z #71C562
+# U6 snRNA
+color #310.1/V #EF4444
+# PRPF8
+color #310.1/A #BFC3E8
+# CCDC94
+color #310.1/D #CE4678
+# CCDC49
+color #310.1/F #2F4DB1
+# EFTUD2
+color #310.1/C #6495ED
 # ISY1
 color #310.1/G #FFEF8C
 # CWC22
@@ -60,8 +76,6 @@ color #310.1/N #DE9A52
 color #310.1/O #DAA520
 # CWC15
 color #310.1/P #FFDEAD
-# pre-mRNA
-color #310.1/E #303030
 # CRNKL1
 color #310.1/S #FFC388
 # SYF1
@@ -96,22 +110,8 @@ color #310.1/j #B0C4DE
 color #310.1/m #D5F5E3
 # SNRPA1
 color #310.1/W #58D68D
-# INTRON
-color #310.1/I #303030
 # SNRPB2
 color #310.1/Y #DAF7A6
-# U2 snRNA
-color #310.1/Z #006400
-# U6 snRNA
-color #310.1/V #DC143C
-# PRPF8
-color #310.1/A #BFC3E8
-# CCDC94
-color #310.1/D #CE4678
-# CCDC49
-color #310.1/F #2F4DB1
-# EFTUD2
-color #310.1/C #6495ED
 # Named selections for subcomplexes using original deposited chain IDs.
 # EJC/mRNP
 # selector_meta {"color":"#EAA439","family":"Protein/RNP groups","group":"EJC/mRNP groups","kind":"subcomplex"}
@@ -150,6 +150,12 @@ name C_5LJ3_5exon #310.1/E:-16--1
 # substrate RNA: residues -16--1; 1-10;54-76, component, medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name C_5LJ3_substrate #310.1/E:-16--1|#310.1/I:1-10,54-76
+# 5' splice site: residues 1-6, network-scored-motif, high confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name C_5LJ3_5SS #310.1/I:1-6
+# intron from 5' splice site: residues 1-10;54-76, five-ss-inference, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name C_5LJ3_intron #310.1/I:1-10,54-76
 # branch point region: residues 66-72, network-scored-motif, high confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"branch_point_region","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name C_5LJ3_branch_region #310.1/I:66-72
@@ -196,6 +202,8 @@ color #310.1/E:-16--1 #FF8C00
 select #310.1/E:-16--1
 nucleotides sel fill
 select clear
+# 5'SS: residues 1-6
+# intron: residues 1-10;54-76
 # BP region: residues 66-72
 # BP-A: residues 70
 # U2/U6 helix I: residues 26-30

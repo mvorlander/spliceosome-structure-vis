@@ -4,15 +4,15 @@
 # Original deposited chain identifiers are used.
 
 # Shared anchor frame: 8H6L
-# Structure group: #420; target model: #420.1; RNA labels: #420.2.
+# Structure group: #422; target model: #422.1; RNA labels: #422.2.
 
-open 8h6l id 420.9 name 8H6L_anchor
-open 9k1o id 420.1 name 9K1O
-rename #420 SF3B_U2_9k1o_structure
+open 8h6l id 422.9 name 8H6L_anchor
+open 9k1o id 422.1 name 9K1O
+rename #422 SF3B_U2_9k1o_structure
 
 # Align on SF3B1.
-matchmaker #420.1/C to #420.9/2G
-close #420.9
+matchmaker #422.1/C to #422.9/2G
+close #422.9
 
 # Remove implausibly long deposited covalent bonds before styling.
 # Fetch and run the implausible-bond pruning helper from GitHub.
@@ -40,28 +40,28 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # SF3B1
-color #420.1/C #487957
+color #422.1/C #487957
 # PHF5A
-color #420.1/D #375A40
+color #422.1/D #375A40
 # SF3B3
-color #420.1/A #6A9064
+color #422.1/A #6A9064
 # SF3B5
-color #420.1/B #92BB8F
-# pre-mRNA
-color #420.1/G #303030
-# pre-mRNA
-color #420.1/H #303030
+color #422.1/B #92BB8F
+# mRNA
+color #422.1/G #303030
+# mRNA
+color #422.1/H #303030
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
-name pdb_9K1O_RNA_substrate #420.1/G,H
+name pdb_9K1O_RNA_substrate #422.1/G,H
 # U2/SF3B
 # selector_meta {"color":"#6DBE70","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
-name pdb_9K1O_U2_SF3B #420.1/A,B,C,D
+name pdb_9K1O_U2_SF3B #422.1/A,B,C,D
 # Named selections for resolved substrate RNA features.
 # substrate RNA: residues 1-21; 11-23, component, medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
-name U2_snRNP_9K1O_substrate #420.1/G:11-23|#420.1/H:1-21
+name U2_snRNP_9K1O_substrate #422.1/G:11-23|#422.1/H:1-21
 # Searchable named selection browser.
 # In GUI ChimeraX this opens a small panel for selecting, zooming, and toggling RNA labels.
 # Fetch and open the self-contained named selection browser from GitHub.

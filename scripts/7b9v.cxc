@@ -40,7 +40,23 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # U2 snRNA
-color #359.1/2 #006400
+color #359.1/2 #71C562
+# U5 snRNA
+color #359.1/5 #4F9FD3
+# U6 snRNA
+color #359.1/6 #EF4444
+# PRPF8
+color #359.1/A #BFC3E8
+# SNRNP200
+color #359.1/B #AFEEEE
+# EFTUD2
+color #359.1/C #6495ED
+# CCDC94
+color #359.1/D #CE4678
+# mRNA
+color #359.1/E #303030
+# CCDC49
+color #359.1/F #2F4DB1
 # ISY1
 color #359.1/G #FFEF8C
 # CWC22
@@ -55,8 +71,6 @@ color #359.1/M #E6B566
 color #359.1/N #DE9A52
 # CWC15
 color #359.1/P #FFDEAD
-# U5 snRNA
-color #359.1/5 #0000CD
 # DDX38
 color #359.1/Q #5F2E8A
 # CRNKL1
@@ -67,8 +81,6 @@ color #359.1/T #FF957B
 color #359.1/b #B0C4DE
 # U2-Sm SNRPB
 color #359.1/k #D5F5E3
-# U6 snRNA
-color #359.1/6 #DC143C
 # SLU7
 color #359.1/c #5A338B
 # U5-Sm SNRPD3
@@ -105,20 +117,8 @@ color #359.1/u #FFFFAB
 color #359.1/v #FFFFAB
 # PRPF19
 color #359.1/w #FFFFAB
-# PRPF8
-color #359.1/A #BFC3E8
 # SYF2
 color #359.1/y #FF8C00
-# SNRNP200
-color #359.1/B #AFEEEE
-# EFTUD2
-color #359.1/C #6495ED
-# CCDC94
-color #359.1/D #CE4678
-# pre-mRNA
-color #359.1/E #303030
-# CCDC49
-color #359.1/F #2F4DB1
 # Named selections for subcomplexes using original deposited chain IDs.
 # EJC/mRNP
 # selector_meta {"color":"#EAA439","family":"Protein/RNP groups","group":"EJC/mRNP groups","kind":"subcomplex"}
@@ -163,6 +163,12 @@ name C_7B9V_substrate #359.1/E:-14--1|#359.1/I:1-17,55-92
 # 3' exon: residues 1-17;55-92, component-name, high confidence, validation not_applicable
 # selector_meta {"color":"#D97706","family":"RNA","feature":"exon_3","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name C_7B9V_3exon #359.1/I:1-17,55-92
+# 5' splice site: residues 1-6, network-scored-motif, high confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name C_7B9V_5SS #359.1/I:1-6
+# intron: residues 1-17;55-92, splice-site-inference, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name C_7B9V_intron #359.1/I:1-17,55-92
 # branch point region: residues 62-72, network-scored-motif, high confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"branch_point_region","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name C_7B9V_branch_region #359.1/I:62-72
@@ -214,6 +220,8 @@ color #359.1/I:1-17,55-92 #D97706
 select #359.1/I:1-17,55-92
 nucleotides sel fill
 select clear
+# 5'SS: residues 1-6
+# intron: residues 1-17;55-92
 # BP region: residues 62-72
 # BP-A: residues 70
 # U2/U6 helix I: residues 26-30

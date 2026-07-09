@@ -41,17 +41,11 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # U4 snRNA
-color #307.1/V #E6D900
-# PRPF3
-color #307.1/G #E1DD1B
-# NHP2L1
-color #307.1/K #A89264
-# SNRNP200
-color #307.1/B #AFEEEE
+color #307.1/V #F2D94E
 # U6 snRNA
-color #307.1/W #DC143C
+color #307.1/W #EF4444
 # U5 snRNA
-color #307.1/U #0000CD
+color #307.1/U #4F9FD3
 # PRPF8
 color #307.1/A #BFC3E8
 # PRPF4
@@ -62,6 +56,12 @@ color #307.1/J #CFA785
 color #307.1/D #C3BA7A
 # PRPF31
 color #307.1/F #DFD570
+# PRPF3
+color #307.1/G #E1DD1B
+# NHP2L1
+color #307.1/K #A89264
+# SNRNP200
+color #307.1/B #AFEEEE
 # Named selections for subcomplexes using original deposited chain IDs.
 # U4 snRNP
 # selector_meta {"color":"#D8C800","family":"Protein/RNP groups","group":"U4 snRNP groups","kind":"subcomplex"}

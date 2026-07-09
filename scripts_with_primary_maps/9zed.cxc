@@ -41,15 +41,7 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # U2 snRNA
-color #436.1/2 #006400
-# SF3B5
-color #436.1/B5 #92BB8F
-# SF3B6
-color #436.1/B6 #ADCEA0
-# PHF5A
-color #436.1/H #375A40
-# pre-mRNA
-color #436.1/R #303030
+color #436.1/2 #71C562
 # NAM8
 color #436.1/A #C7A6BE
 # SF3A1
@@ -66,6 +58,14 @@ color #436.1/B2 #49926C
 color #436.1/B3 #6A9064
 # SF3B4
 color #436.1/B4 #77B088
+# SF3B5
+color #436.1/B5 #92BB8F
+# SF3B6
+color #436.1/B6 #ADCEA0
+# PHF5A
+color #436.1/H #375A40
+# mRNA
+color #436.1/R #303030
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}

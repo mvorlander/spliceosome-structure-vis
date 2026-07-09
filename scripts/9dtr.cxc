@@ -40,7 +40,21 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # U2 snRNA
-color #418.1/2 #006400
+color #418.1/2 #71C562
+# U5 snRNA
+color #418.1/5 #4F9FD3
+# U6 snRNA
+color #418.1/6 #EF4444
+# PRPF8
+color #418.1/A #BFC3E8
+# EFTUD2
+color #418.1/C #6495ED
+# mRNA
+color #418.1/E #303030
+# ISY1
+color #418.1/G #FFEF8C
+# CWC22
+color #418.1/H #2C54DD
 # INTRON
 color #418.1/I #303030
 # PLRG1
@@ -59,8 +73,6 @@ color #418.1/O #DAA520
 color #418.1/P #FFDEAD
 # CRNKL1
 color #418.1/S #FFC388
-# U5 snRNA
-color #418.1/5 #0000CD
 # SYF1
 color #418.1/T #FF957B
 # DHX8
@@ -83,8 +95,6 @@ color #418.1/n #D5F5E3
 color #418.1/e #B0C4DE
 # U2-Sm SNRPE
 color #418.1/p #D5F5E3
-# U6 snRNA
-color #418.1/6 #DC143C
 # U5-Sm SNRPF
 color #418.1/f #B0C4DE
 # U2-Sm SNRPF
@@ -113,16 +123,6 @@ color #418.1/v #FFFFAB
 color #418.1/w #FFFFAB
 # SYF2
 color #418.1/y #FF8C00
-# PRPF8
-color #418.1/A #BFC3E8
-# EFTUD2
-color #418.1/C #6495ED
-# pre-mRNA
-color #418.1/E #303030
-# ISY1
-color #418.1/G #FFEF8C
-# CWC22
-color #418.1/H #2C54DD
 # Named selections for subcomplexes using original deposited chain IDs.
 # EJC/mRNP
 # selector_meta {"color":"#EAA439","family":"Protein/RNP groups","group":"EJC/mRNP groups","kind":"subcomplex"}
@@ -170,6 +170,9 @@ name P_9DTR_5exon #418.1/E:-14--1
 # 3' exon: residues 1-11;14-21, auth-residue-numbering, high confidence, validation not_applicable
 # selector_meta {"color":"#D97706","family":"RNA","feature":"exon_3","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_9DTR_3exon #418.1/E:1-11,14-21
+# 5' splice site: residues 1-6, network-scored-motif, medium confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name P_9DTR_5SS #418.1/I:1-6
 # intron: residues 1-16;56-77;86-95, component-name, high confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_9DTR_intron #418.1/I:1-16,56-77,86-95
@@ -235,6 +238,7 @@ color #418.1/E:1-11,14-21 #D97706
 select #418.1/E:1-11,14-21
 nucleotides sel fill
 select clear
+# 5'SS: residues 1-6
 # intron: residues 1-16;56-77;86-95
 # lariat: residues 1-16;56-77;86-95
 # BP region: residues 62-72

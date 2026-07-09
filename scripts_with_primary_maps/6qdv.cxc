@@ -41,10 +41,26 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # U2 snRNA
-color #346.1/2 #006400
+color #346.1/2 #71C562
+# U5 snRNA
+color #346.1/5 #4F9FD3
+# U6 snRNA
+color #346.1/6 #EF4444
+# EIF4A3
+color #346.1/7 #F1D8BC
+# RBM8A
+color #346.1/8 #EB6841
+# MAGOH2
+color #346.1/9 #EAA439
+# PRPF8
+color #346.1/A #BFC3E8
+# SNRNP200
+color #346.1/B #AFEEEE
+# EFTUD2
+color #346.1/C #6495ED
 # PRKRIP1
 color #346.1/D #B39C7B
-# pre-mRNA
+# mRNA
 color #346.1/E #303030
 # CACTIN
 color #346.1/F #E3C2CF
@@ -62,8 +78,6 @@ color #346.1/K #D49F96
 color #346.1/L #FFF584
 # RBM22
 color #346.1/M #DE9A52
-# U5 snRNA
-color #346.1/5 #0000CD
 # PRP8BP
 color #346.1/N #E2F3F4
 # CDC5L
@@ -84,8 +98,6 @@ color #346.1/V #900C3F
 color #346.1/W #58D68D
 # SNRPB2
 color #346.1/Y #DAF7A6
-# U6 snRNA
-color #346.1/6 #DC143C
 # NKAP
 color #346.1/Z #9370DB
 # U5-Sm SNRPB
@@ -120,8 +132,6 @@ color #346.1/i #EEE8AA
 color #346.1/j #B0C4DE
 # U2-Sm SNRPD2
 color #346.1/m #D5F5E3
-# EIF4A3
-color #346.1/7 #F1D8BC
 # PRPF17
 color #346.1/o #FFF7C9
 # BCAS2
@@ -138,16 +148,6 @@ color #346.1/w #FFFFAB
 color #346.1/y #FF8C00
 # SDE2
 color #346.1/z #FFFF00
-# RBM8A
-color #346.1/8 #EB6841
-# MAGOH2
-color #346.1/9 #EAA439
-# PRPF8
-color #346.1/A #BFC3E8
-# SNRNP200
-color #346.1/B #AFEEEE
-# EFTUD2
-color #346.1/C #6495ED
 # Named selections for subcomplexes using original deposited chain IDs.
 # EJC/mRNP
 # selector_meta {"color":"#EAA439","family":"Protein/RNP groups","group":"EJC/mRNP groups","kind":"subcomplex"}
@@ -198,6 +198,9 @@ name P_6QDV_substrate #346.1/E:-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2|#346.1
 # 3' exon: residues 1-2, auth-residue-numbering, high confidence, validation not_applicable
 # selector_meta {"color":"#D97706","family":"RNA","feature":"exon_3","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_6QDV_3exon #346.1/E:1-2
+# 5' splice site: residues 1-6, network-scored-motif, medium confidence, validation uncertain uncertain validation
+# selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name P_6QDV_5SS #346.1/I:1-6
 # intron: residues 1-20;83-101;111-113, component-name, high confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_6QDV_intron #346.1/I:1-20,83-101,111-113
@@ -269,6 +272,7 @@ color #346.1/E:1-2 #D97706
 select #346.1/E:1-2
 nucleotides sel fill
 select clear
+# 5'SS: residues 1-6
 # intron: residues 1-20;83-101;111-113
 # lariat: residues 1-20;83-101;111-113
 # BP region: residues 93-99

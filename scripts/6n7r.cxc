@@ -40,24 +40,6 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # SNRNP70
 color #345.1/A #8C3D78
-# U1-Sm SNRPB
-color #345.1/K #EAD7E8
-# U1-Sm SNRPD1
-color #345.1/L #EAD7E8
-# U1-Sm SNRPD2
-color #345.1/M #EAD7E8
-# U1-Sm SNRPD3
-color #345.1/N #EAD7E8
-# U1-Sm SNRPE
-color #345.1/O #EAD7E8
-# U1-Sm SNRPF
-color #345.1/P #EAD7E8
-# U1-Sm SNRPG
-color #345.1/Q #EAD7E8
-# U1 snRNA
-color #345.1/R #B66AAE
-# pre-mRNA
-color #345.1/r #303030
 # SNRPC
 color #345.1/B #D7A3CF
 # SNRPA
@@ -74,6 +56,24 @@ color #345.1/G #D65B96
 color #345.1/H #A95A9B
 # LUC7L
 color #345.1/I #B03372
+# U1-Sm SNRPB
+color #345.1/K #EAD7E8
+# U1-Sm SNRPD1
+color #345.1/L #EAD7E8
+# U1-Sm SNRPD2
+color #345.1/M #EAD7E8
+# U1-Sm SNRPD3
+color #345.1/N #EAD7E8
+# U1-Sm SNRPE
+color #345.1/O #EAD7E8
+# U1-Sm SNRPF
+color #345.1/P #EAD7E8
+# U1-Sm SNRPG
+color #345.1/Q #EAD7E8
+# U1 snRNA
+color #345.1/R #D46BB8
+# mRNA
+color #345.1/r #303030
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}

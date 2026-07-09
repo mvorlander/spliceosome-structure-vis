@@ -35,8 +35,36 @@ graphics silhouettes true
 cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
-# pre-mRNA
+# mRNA
 color #382.1/A #303030
+# U5 snRNA
+color #382.1/5A #4F9FD3
+# PRPF8
+color #382.1/5B #BFC3E8
+# EFTUD2
+color #382.1/5C #6495ED
+# SNRNP200
+color #382.1/5D #AFEEEE
+# PRP8BP
+color #382.1/5E #E2F3F4
+# U2-Sm SNRPB
+color #382.1/2a #D5F5E3
+# U4-Sm SNRPB
+color #382.1/4a #F7F0A6
+# U5-Sm SNRPB
+color #382.1/5a #B0C4DE
+# U2-Sm SNRPD1
+color #382.1/2b #D5F5E3
+# U4-Sm SNRPD1
+color #382.1/4b #F7F0A6
+# U5-Sm SNRPD1
+color #382.1/5b #B0C4DE
+# U2-Sm SNRPD2
+color #382.1/2c #D5F5E3
+# U4-Sm SNRPD2
+color #382.1/4c #F7F0A6
+# U5-Sm SNRPD2
+color #382.1/5c #B0C4DE
 # U2-Sm SNRPF
 color #382.1/2d #D5F5E3
 # U4-Sm SNRPF
@@ -62,7 +90,7 @@ color #382.1/4g #F7F0A6
 # U5-Sm SNRPD3
 color #382.1/5g #B0C4DE
 # U6 snRNA
-color #382.1/6A #DC143C
+color #382.1/6A #EF4444
 # LSM2
 color #382.1/6a #F4A3A8
 # LSM3
@@ -73,14 +101,12 @@ color #382.1/6c #F4A3A8
 color #382.1/6d #F4A3A8
 # LSM6
 color #382.1/6e #F4A3A8
-# U5 snRNA
-color #382.1/5A #0000CD
 # LSM7
 color #382.1/6f #F4A3A8
 # LSM8
 color #382.1/6g #F4A3A8
 # U4 snRNA
-color #382.1/4A #E6D900
+color #382.1/4A #F2D94E
 # PRPF3
 color #382.1/4B #E1DD1B
 # PRPF4
@@ -95,8 +121,6 @@ color #382.1/4F #C3BA7A
 color #382.1/4G #CFA785
 # CYP20
 color #382.1/4H #C9AC36
-# PRPF8
-color #382.1/5B #BFC3E8
 # FBP21
 color #382.1/4I #B03B66
 # SART1
@@ -104,7 +128,7 @@ color #382.1/4J #D6937B
 # SMU1
 color #382.1/4Z #E0A3D2
 # U2 snRNA
-color #382.1/2A #006400
+color #382.1/2A #71C562
 # SNRPA1
 color #382.1/2B #58D68D
 # SNRPB2
@@ -117,8 +141,6 @@ color #382.1/2E #75A074
 color #382.1/2F #9BCF91
 # SF3B1
 color #382.1/2G #487957
-# EFTUD2
-color #382.1/5C #6495ED
 # SF3B2
 color #382.1/2H #49926C
 # SF3B3
@@ -131,28 +153,6 @@ color #382.1/2K #ADCEA0
 color #382.1/2L #375A40
 # SF3B5
 color #382.1/2M #92BB8F
-# SNRNP200
-color #382.1/5D #AFEEEE
-# PRP8BP
-color #382.1/5E #E2F3F4
-# U2-Sm SNRPB
-color #382.1/2a #D5F5E3
-# U4-Sm SNRPB
-color #382.1/4a #F7F0A6
-# U5-Sm SNRPB
-color #382.1/5a #B0C4DE
-# U2-Sm SNRPD1
-color #382.1/2b #D5F5E3
-# U4-Sm SNRPD1
-color #382.1/4b #F7F0A6
-# U5-Sm SNRPD1
-color #382.1/5b #B0C4DE
-# U2-Sm SNRPD2
-color #382.1/2c #D5F5E3
-# U4-Sm SNRPD2
-color #382.1/4c #F7F0A6
-# U5-Sm SNRPD2
-color #382.1/5c #B0C4DE
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}

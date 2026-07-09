@@ -40,6 +40,22 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # SNRNP70
 color #344.1/A #8C3D78
+# SNRPC
+color #344.1/B #D7A3CF
+# SNRPA
+color #344.1/C #C07AB6
+# PRP42
+color #344.1/D #7F5BA6
+# PRPF39
+color #344.1/E #E1B8D9
+# NAM8
+color #344.1/F #C7A6BE
+# SNU56
+color #344.1/G #D65B96
+# SNU71
+color #344.1/H #A95A9B
+# LUC7L
+color #344.1/I #B03372
 # PRPF40A
 color #344.1/J #BA6FA8
 # U1-Sm SNRPB
@@ -57,29 +73,13 @@ color #344.1/P #EAD7E8
 # U1-Sm SNRPG
 color #344.1/Q #EAD7E8
 # U1 snRNA
-color #344.1/R #B66AAE
-# pre-mRNA
+color #344.1/R #D46BB8
+# mRNA
 color #344.1/r #303030
-# SNRPC
-color #344.1/B #D7A3CF
 # CBP80
 color #344.1/X #B29876
 # CBP20
 color #344.1/Y #547596
-# SNRPA
-color #344.1/C #C07AB6
-# PRP42
-color #344.1/D #7F5BA6
-# PRPF39
-color #344.1/E #E1B8D9
-# NAM8
-color #344.1/F #C7A6BE
-# SNU56
-color #344.1/G #D65B96
-# SNU71
-color #344.1/H #A95A9B
-# LUC7L
-color #344.1/I #B03372
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}

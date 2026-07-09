@@ -42,6 +42,20 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # PRPF8
 color #320.1/A #BFC3E8
+# U5 snRNA
+color #320.1/B #4F9FD3
+# EFTUD2
+color #320.1/C #6495ED
+# U6 snRNA
+color #320.1/D #EF4444
+# INTRON
+color #320.1/E #303030
+# U2 snRNA
+color #320.1/F #71C562
+# SYF1
+color #320.1/H #FF957B
+# CRNKL1
+color #320.1/I #FFC388
 # CDC5L
 color #320.1/J #DAA520
 # SYF2
@@ -62,8 +76,6 @@ color #320.1/Q #D49F96
 color #320.1/R #CE4678
 # PRPF17
 color #320.1/S #FFF7C9
-# U5 snRNA
-color #320.1/B #0000CD
 # TFIP11
 color #320.1/U #FF69B4
 # PAXBP1
@@ -94,8 +106,6 @@ color #320.1/l #D5F5E3
 color #320.1/f #B0C4DE
 # U2-Sm SNRPD1
 color #320.1/m #D5F5E3
-# EFTUD2
-color #320.1/C #6495ED
 # U5-Sm SNRPD2
 color #320.1/g #B0C4DE
 # U2-Sm SNRPD2
@@ -113,17 +123,7 @@ color #320.1/s #FFFFAB
 # PRPF19
 color #320.1/t #FFFFAB
 # U6 snRNA
-color #320.1/x #DC143C
-# U6 snRNA
-color #320.1/D #DC143C
-# INTRON
-color #320.1/E #303030
-# U2 snRNA
-color #320.1/F #006400
-# SYF1
-color #320.1/H #FF957B
-# CRNKL1
-color #320.1/I #FFC388
+color #320.1/x #EF4444
 # Named selections for subcomplexes using original deposited chain IDs.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
@@ -159,6 +159,9 @@ name pdb_5Y88_U6_snRNP #320.1/D,x
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_5Y88_other #320.1/G,T
 # Named selections for resolved substrate RNA features.
+# 5' splice site: residues 1-6, network-scored-motif, medium confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name ILS_disassembly_5Y88_5SS #320.1/E:1-6
 # intron: residues 1-15;492-504, component-name, high confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name ILS_disassembly_5Y88_intron #320.1/E:1-15,492-504
@@ -206,6 +209,7 @@ name ILS_disassembly_5Y88_U6_AGC_catalytic_triad #320.1/D:59-61
 select #320.1 & nucleic
 nucleotides sel atoms
 select clear
+# 5'SS: residues 1-6
 # intron: residues 1-15;492-504
 # lariat: residues 1-15;492-504
 # BP region: residues 495-503

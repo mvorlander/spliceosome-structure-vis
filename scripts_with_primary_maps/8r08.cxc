@@ -41,7 +41,23 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # U1 snRNA
-color #407.1/1 #B66AAE
+color #407.1/1 #D46BB8
+# EFTUD2
+color #407.1/C #6495ED
+# TXNL4A
+color #407.1/D #C3BA7A
+# PRP8BP
+color #407.1/E #E2F3F4
+# NHP2L1
+color #407.1/M #A89264
+# RBM42
+color #407.1/R #44A0A7
+# USP39
+color #407.1/U #B37E6A
+# SNRNP27
+color #407.1/X #F4E7D2
+# mRNA
+color #407.1/Z #303030
 # PRPF4
 color #407.1/K #E2C496
 # PRPF8
@@ -49,24 +65,22 @@ color #407.1/A #BFC3E8
 # SNRNP200
 color #407.1/B #AFEEEE
 # U2 snRNA
-color #407.1/2 #006400
+color #407.1/2 #71C562
 # U4 snRNA
-color #407.1/4 #E6D900
+color #407.1/4 #F2D94E
 # U5 snRNA
-color #407.1/5 #0000CD
+color #407.1/5 #4F9FD3
 # U6 snRNA
-color #407.1/6 #DC143C
+color #407.1/6 #EF4444
 # SF3A1
 color #407.1/7 #55947F
 # SF3A2
 color #407.1/8 #75A074
 # PRPF3
 color #407.1/J #E1DD1B
-# EFTUD2
-color #407.1/C #6495ED
 # PRPF31
 color #407.1/L #DFD570
-# pre-mRNA
+# mRNA
 color #407.1/Z1 #303030
 # U1-Sm SNRPD3
 color #407.1/13 #EAD7E8
@@ -126,8 +140,6 @@ color #407.1/42 #F7F0A6
 color #407.1/52 #B0C4DE
 # SNRNP70
 color #407.1/1K #8C3D78
-# TXNL4A
-color #407.1/D #C3BA7A
 # SART1
 color #407.1/S #D6937B
 # PRPF4
@@ -148,8 +160,6 @@ color #407.1/B5 #92BB8F
 color #407.1/B3 #6A9064
 # PHF5A
 color #407.1/BP #375A40
-# PRP8BP
-color #407.1/E #E2F3F4
 # SF3B1
 color #407.1/B1 #487957
 # SF3B6
@@ -170,18 +180,8 @@ color #407.1/63 #F4A3A8
 color #407.1/68 #F4A3A8
 # LSM4
 color #407.1/64 #F4A3A8
-# NHP2L1
-color #407.1/M #A89264
 # LSM5
 color #407.1/65 #F4A3A8
-# RBM42
-color #407.1/R #44A0A7
-# USP39
-color #407.1/U #B37E6A
-# SNRNP27
-color #407.1/X #F4E7D2
-# pre-mRNA
-color #407.1/Z #303030
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA-binding
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}

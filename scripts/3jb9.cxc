@@ -41,64 +41,10 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # PRPF8
 color #301.1/A #BFC3E8
-# U5-Sm SNRPG
-color #301.1/J #B0C4DE
-# U2-Sm SNRPG
-color #301.1/o #D5F5E3
-# DDX46
-color #301.1/K #5BAE8A
-# PRP8BP
-color #301.1/L #E2F3F4
-# SNW1
-color #301.1/M #D49F96
-# U6 snRNA
-color #301.1/N #DC143C
-# pre-mRNA
-color #301.1/O #303030
-# pre-mRNA
-color #301.1/Q #303030
-# U2 snRNA
-color #301.1/P #006400
-# PRPF19
-color #301.1/S #FFFFAB
-# PRPF19
-color #301.1/T #FFFFAB
-# PRPF19
-color #301.1/U #FFFFAB
-# PRPF19
-color #301.1/V #FFFFAB
-# CDC5L
-color #301.1/W #DAA520
 # EFTUD2
 color #301.1/B #6495ED
-# PRPF3
-color #301.1/Y #E1DD1B
-# RBM22
-color #301.1/a #DE9A52
-# CWF19L2
-color #301.1/c #8B008B
-# PPIL1
-color #301.1/d #EEE8AA
-# BUD31
-color #301.1/e #FFF584
-# PRPF17
-color #301.1/g #FFF7C9
-# CWC15
-color #301.1/h #FFDEAD
-# BCAS2
-color #301.1/i #FFDAB9
-# CRNKL1
-color #301.1/R #FFC388
-# SYF1
-color #301.1/r #FF957B
 # U5 snRNA
-color #301.1/C #0000CD
-# AQR
-color #301.1/X #FFDAB9
-# SNRPA1
-color #301.1/j #58D68D
-# SNRPB2
-color #301.1/k #DAF7A6
+color #301.1/C #4F9FD3
 # U5-Sm SNRPD3
 color #301.1/D #B0C4DE
 # U2-Sm SNRPD3
@@ -123,6 +69,60 @@ color #301.1/m #D5F5E3
 color #301.1/I #B0C4DE
 # U2-Sm SNRPF
 color #301.1/n #D5F5E3
+# U5-Sm SNRPG
+color #301.1/J #B0C4DE
+# U2-Sm SNRPG
+color #301.1/o #D5F5E3
+# DDX46
+color #301.1/K #5BAE8A
+# PRP8BP
+color #301.1/L #E2F3F4
+# SNW1
+color #301.1/M #D49F96
+# U6 snRNA
+color #301.1/N #EF4444
+# mRNA
+color #301.1/O #303030
+# mRNA
+color #301.1/Q #303030
+# U2 snRNA
+color #301.1/P #71C562
+# PRPF19
+color #301.1/S #FFFFAB
+# PRPF19
+color #301.1/T #FFFFAB
+# PRPF19
+color #301.1/U #FFFFAB
+# PRPF19
+color #301.1/V #FFFFAB
+# CDC5L
+color #301.1/W #DAA520
+# PRPF3
+color #301.1/Y #E1DD1B
+# RBM22
+color #301.1/a #DE9A52
+# CWF19L2
+color #301.1/c #8B008B
+# PPIL1
+color #301.1/d #EEE8AA
+# BUD31
+color #301.1/e #FFF584
+# PRPF17
+color #301.1/g #FFF7C9
+# CWC15
+color #301.1/h #FFDEAD
+# BCAS2
+color #301.1/i #FFDAB9
+# CRNKL1
+color #301.1/R #FFC388
+# SYF1
+color #301.1/r #FF957B
+# AQR
+color #301.1/X #FFDAB9
+# SNRPA1
+color #301.1/j #58D68D
+# SNRPB2
+color #301.1/k #DAF7A6
 # Named selections for subcomplexes using original deposited chain IDs.
 # NTC/NTR related
 # selector_meta {"color":"#F4BF67","family":"Protein/RNP groups","group":"NTC/NTR groups","kind":"subcomplex"}
@@ -158,6 +158,12 @@ name pdb_3JB9_U6_snRNP #301.1/N
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_3JB9_other #301.1/x
 # Named selections for resolved substrate RNA features.
+# 5' splice site: residues 100-105, network-scored-motif, medium confidence, validation uncertain uncertain validation
+# selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name ILS_disassembly_3JB9_5SS #301.1/O:100-105
+# intron from 5' splice site: residues 100-107, five-ss-inference, low confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name ILS_disassembly_3JB9_intron #301.1/O:100-107
 # substrate RNA: residues 100-107; 492-504, component, medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name ILS_disassembly_3JB9_substrate #301.1/O:100-107|#301.1/Q:492-504
@@ -184,6 +190,8 @@ name ILS_disassembly_3JB9_U6_ACAGAGA_box #301.1/N:35-41
 select #301.1 & nucleic
 nucleotides sel atoms
 select clear
+# 5'SS: residues 100-105
+# intron: residues 100-107
 # U2/U6 helix I: residues 26-30
 color #301.1/P:26-30 #047857
 select #301.1/P:26-30

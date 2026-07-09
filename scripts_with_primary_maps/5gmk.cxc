@@ -42,6 +42,20 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # PRPF8
 color #309.1/A #BFC3E8
+# EFTUD2
+color #309.1/C #6495ED
+# U5 snRNA
+color #309.1/D #4F9FD3
+# U6 snRNA
+color #309.1/E #EF4444
+# U2 snRNA
+color #309.1/L #71C562
+# INTRON
+color #309.1/M #303030
+# mRNA
+color #309.1/B #303030
+# mRNA
+color #309.1/N #303030
 # PLRG1
 color #309.1/O #F4A460
 # SNW1
@@ -62,8 +76,6 @@ color #309.1/c #DAA520
 color #309.1/d #FFC388
 # CCDC94
 color #309.1/F #CE4678
-# EFTUD2
-color #309.1/C #6495ED
 # CCDC49
 color #309.1/G #2F4DB1
 # ISY1
@@ -94,8 +106,6 @@ color #309.1/u #D5F5E3
 color #309.1/h #B0C4DE
 # U2-Sm SNRPF
 color #309.1/w #D5F5E3
-# U5 snRNA
-color #309.1/D #0000CD
 # U5-Sm SNRPG
 color #309.1/j #B0C4DE
 # U2-Sm SNRPG
@@ -116,16 +126,6 @@ color #309.1/g #B0C4DE
 color #309.1/a #DAF7A6
 # SNRPA1
 color #309.1/b #58D68D
-# U6 snRNA
-color #309.1/E #DC143C
-# U2 snRNA
-color #309.1/L #006400
-# INTRON
-color #309.1/M #303030
-# pre-mRNA
-color #309.1/B #303030
-# pre-mRNA
-color #309.1/N #303030
 # Named selections for subcomplexes using original deposited chain IDs.
 # EJC/mRNP
 # selector_meta {"color":"#EAA439","family":"Protein/RNP groups","group":"EJC/mRNP groups","kind":"subcomplex"}
@@ -167,18 +167,18 @@ name C_5GMK_5exon #309.1/B:87-99
 # substrate RNA: residues 100-114; 482-510; 87-99, component, medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name C_5GMK_substrate #309.1/B:87-99|#309.1/M:482-510|#309.1/N:100-114
-# intron: residues 482-510, component-name, high confidence, validation not_applicable
+# intron: residues 100-114; 482-510, component-name/five-ss-inference, high/low confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
-name C_5GMK_intron #309.1/M:482-510
+name C_5GMK_intron #309.1/M:482-510|#309.1/N:100-114
 # branch point region: residues 493-503, network-scored-motif, high confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"branch_point_region","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name C_5GMK_branch_region #309.1/M:493-503
 # branch point adenosine: residues 501, network-scored-motif, high confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"branch_point_adenosine","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name C_5GMK_branch_A #309.1/M:501
-# 5' splice site: residues 100-114, component-name, high confidence, validation validated
+# 5' splice site: residues 100-105; 100-114, component-name/network-scored-motif, high confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
-name C_5GMK_5SS #309.1/N:100-114
+name C_5GMK_5SS #309.1/N:100-114|#309.1/N:100-105
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
 # selector_meta {"color":"#047857","family":"RNA","feature":"U2_U6_helix_I_partner","group":"snRNA-snRNA interacting regions","group_key":"snRNA_snRNA_regions","kind":"rna_feature"}
@@ -222,10 +222,10 @@ color #309.1/B:87-99 #FF8C00
 select #309.1/B:87-99
 nucleotides sel fill
 select clear
-# intron: residues 482-510
+# intron: residues 100-114; 482-510
 # BP region: residues 493-503
 # BP-A: residues 501
-# 5'SS: residues 100-114
+# 5'SS: residues 100-105; 100-114
 # U2/U6 helix I: residues 26-30
 color #309.1/L:26-30 #047857
 select #309.1/L:26-30

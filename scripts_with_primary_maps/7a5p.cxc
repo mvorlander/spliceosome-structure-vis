@@ -41,7 +41,27 @@ cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # U2 snRNA
-color #353.1/2 #006400
+color #353.1/2 #71C562
+# U5 snRNA
+color #353.1/5 #4F9FD3
+# U6 snRNA
+color #353.1/6 #EF4444
+# PRPF8
+color #353.1/A #BFC3E8
+# SNW1
+color #353.1/C #D49F96
+# PRPF17
+color #353.1/E #FFF7C9
+# PRPF19
+color #353.1/G #FFFFAB
+# PRPF19
+color #353.1/H #FFFFAB
+# PRPF19
+color #353.1/I #FFFFAB
+# PRPF19
+color #353.1/J #FFFFAB
+# BCAS2
+color #353.1/K #FFDAB9
 # CDC5L
 color #353.1/L #DAA520
 # SYF1
@@ -62,9 +82,7 @@ color #353.1/U #FFDAB9
 color #353.1/W #58D68D
 # SNRPB2
 color #353.1/X #DAF7A6
-# U5 snRNA
-color #353.1/5 #0000CD
-# pre-mRNA
+# mRNA
 color #353.1/Y #303030
 # U5-Sm SNRPD3
 color #353.1/a #B0C4DE
@@ -98,8 +116,6 @@ color #353.1/k #D5F5E3
 color #353.1/o #FFFFE0
 # WDR70
 color #353.1/p #7363C5
-# U6 snRNA
-color #353.1/6 #DC143C
 # SNRNP200
 color #353.1/q #AFEEEE
 # DDX38
@@ -118,22 +134,6 @@ color #353.1/x #CDA470
 color #353.1/y #F1D8BC
 # PPWD1
 color #353.1/z #7352A2
-# PRPF8
-color #353.1/A #BFC3E8
-# SNW1
-color #353.1/C #D49F96
-# PRPF17
-color #353.1/E #FFF7C9
-# PRPF19
-color #353.1/G #FFFFAB
-# PRPF19
-color #353.1/H #FFFFAB
-# PRPF19
-color #353.1/I #FFFFAB
-# PRPF19
-color #353.1/J #FFFFAB
-# BCAS2
-color #353.1/K #FFDAB9
 # Named selections for subcomplexes using original deposited chain IDs.
 # EJC/mRNP
 # selector_meta {"color":"#EAA439","family":"Protein/RNP groups","group":"EJC/mRNP groups","kind":"subcomplex"}

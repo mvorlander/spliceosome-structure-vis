@@ -280,24 +280,6 @@
       "label_default_visible": "true"
     },
     {
-      "name": "P_5YLZ_PPT",
-      "label": "polypyrimidine tract",
-      "category": "substrate RNA feature",
-      "section": "Named selections for resolved substrate RNA features.",
-      "comment": "polypyrimidine tract: residues 304, sequence-motif, medium confidence, validation uncertain uncertain validation",
-      "atomspec": "#321.1/E:304",
-      "family": "RNA",
-      "group": "pre-mRNA features",
-      "group_key": "pre_mRNA_features",
-      "kind": "rna_feature",
-      "feature": "polypyrimidine_tract",
-      "color": "#303030",
-      "label_model_id": "321.2.1.7",
-      "label_category_model_id": "321.2.1",
-      "label_group_model_id": "321.2",
-      "label_default_visible": "true"
-    },
-    {
       "name": "P_5YLZ_3SS",
       "label": "3' splice site",
       "category": "substrate RNA feature",
@@ -310,7 +292,7 @@
       "kind": "rna_feature",
       "feature": "three_prime_splice_site",
       "color": "#303030",
-      "label_model_id": "321.2.1.8",
+      "label_model_id": "321.2.1.7",
       "label_category_model_id": "321.2.1",
       "label_group_model_id": "321.2",
       "label_default_visible": "true"
@@ -328,7 +310,7 @@
       "kind": "rna_feature",
       "feature": "exon_3",
       "color": "#D97706",
-      "label_model_id": "321.2.1.9",
+      "label_model_id": "321.2.1.8",
       "label_category_model_id": "321.2.1",
       "label_group_model_id": "321.2",
       "label_default_visible": "true"

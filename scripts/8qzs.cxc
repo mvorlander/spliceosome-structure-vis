@@ -41,6 +41,22 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # PRPF8
 color #406.1/A #BFC3E8
+# SNRNP200
+color #406.1/B #AFEEEE
+# U5 snRNA
+color #406.1/5 #4F9FD3
+# U2 snRNA
+color #406.1/2 #71C562
+# U6 snRNA
+color #406.1/6 #EF4444
+# U4 snRNA
+color #406.1/4 #F2D94E
+# EFTUD2
+color #406.1/C #6495ED
+# TXNL4A
+color #406.1/D #C3BA7A
+# PRP8BP
+color #406.1/E #E2F3F4
 # PRPF38A
 color #406.1/I #F88379
 # NHP2L1
@@ -51,7 +67,7 @@ color #406.1/U #B37E6A
 color #406.1/W #C9AC36
 # FBP21
 color #406.1/X #B03B66
-# pre-mRNA
+# mRNA
 color #406.1/Z #303030
 # SF3A1
 color #406.1/7 #55947F
@@ -61,8 +77,6 @@ color #406.1/r #FFB6C1
 color #406.1/B4 #77B088
 # SF3A2
 color #406.1/8 #75A074
-# SNRNP200
-color #406.1/B #AFEEEE
 # SF3A3
 color #406.1/9 #9BCF91
 # SF3B2
@@ -83,8 +97,6 @@ color #406.1/62 #F4A3A8
 color #406.1/63 #F4A3A8
 # LSM4
 color #406.1/64 #F4A3A8
-# U5 snRNA
-color #406.1/5 #0000CD
 # LSM5
 color #406.1/65 #F4A3A8
 # LSM6
@@ -129,8 +141,6 @@ color #406.1/2b #D5F5E3
 color #406.1/4b #F7F0A6
 # U5-Sm SNRPB
 color #406.1/5b #B0C4DE
-# U2 snRNA
-color #406.1/2 #006400
 # U2-Sm SNRPD1
 color #406.1/21 #D5F5E3
 # U4-Sm SNRPD1
@@ -151,30 +161,20 @@ color #406.1/v #E0A3D2
 color #406.1/w #E0A3D2
 # MFAP1
 color #406.1/K #CD5C5C
-# pre-mRNA
+# mRNA
 color #406.1/z1 #303030
-# pre-mRNA
+# mRNA
 color #406.1/z2 #303030
 # PRPF3
 color #406.1/J #E1DD1B
 # PRPF31
 color #406.1/L #DFD570
-# U6 snRNA
-color #406.1/6 #DC143C
 # PRPF4
 color #406.1/F #E2C496
 # PRPF6
 color #406.1/N #CFA785
 # SART1
 color #406.1/S #D6937B
-# U4 snRNA
-color #406.1/4 #E6D900
-# EFTUD2
-color #406.1/C #6495ED
-# TXNL4A
-color #406.1/D #C3BA7A
-# PRP8BP
-color #406.1/E #E2F3F4
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}

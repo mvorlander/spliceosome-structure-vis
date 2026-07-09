@@ -240,6 +240,24 @@
       "label_default_visible": "true"
     },
     {
+      "name": "P_6QDV_5SS",
+      "label": "5' splice site",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "5' splice site: residues 1-6, network-scored-motif, medium confidence, validation uncertain uncertain validation",
+      "atomspec": "#346.1/I:1-6",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "pre_mRNA_features",
+      "kind": "rna_feature",
+      "feature": "five_prime_splice_site",
+      "color": "#303030",
+      "label_model_id": "346.2.1.4",
+      "label_category_model_id": "346.2.1",
+      "label_group_model_id": "346.2",
+      "label_default_visible": "true"
+    },
+    {
       "name": "P_6QDV_intron",
       "label": "intron",
       "category": "substrate RNA feature",
@@ -252,7 +270,7 @@
       "kind": "rna_feature",
       "feature": "intron",
       "color": "#303030",
-      "label_model_id": "346.2.1.4",
+      "label_model_id": "346.2.1.5",
       "label_category_model_id": "346.2.1",
       "label_group_model_id": "346.2",
       "label_default_visible": "true"
@@ -270,7 +288,7 @@
       "kind": "rna_feature",
       "feature": "intron_lariat",
       "color": "#303030",
-      "label_model_id": "346.2.1.5",
+      "label_model_id": "346.2.1.6",
       "label_category_model_id": "346.2.1",
       "label_group_model_id": "346.2",
       "label_default_visible": "true"
@@ -288,7 +306,7 @@
       "kind": "rna_feature",
       "feature": "branch_point_region",
       "color": "#303030",
-      "label_model_id": "346.2.1.6",
+      "label_model_id": "346.2.1.7",
       "label_category_model_id": "346.2.1",
       "label_group_model_id": "346.2",
       "label_default_visible": "true"
@@ -306,7 +324,7 @@
       "kind": "rna_feature",
       "feature": "branch_point_adenosine",
       "color": "#303030",
-      "label_model_id": "346.2.1.7",
+      "label_model_id": "346.2.1.8",
       "label_category_model_id": "346.2.1",
       "label_group_model_id": "346.2",
       "label_default_visible": "true"
@@ -324,7 +342,7 @@
       "kind": "rna_feature",
       "feature": "three_prime_splice_site",
       "color": "#303030",
-      "label_model_id": "346.2.1.8",
+      "label_model_id": "346.2.1.9",
       "label_category_model_id": "346.2.1",
       "label_group_model_id": "346.2",
       "label_default_visible": "true"

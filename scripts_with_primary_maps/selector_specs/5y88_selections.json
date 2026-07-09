@@ -158,6 +158,24 @@
       "color": "#9CA3AF"
     },
     {
+      "name": "ILS_disassembly_5Y88_5SS",
+      "label": "5' splice site",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "5' splice site: residues 1-6, network-scored-motif, medium confidence, validation validated",
+      "atomspec": "#320.1/E:1-6",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "pre_mRNA_features",
+      "kind": "rna_feature",
+      "feature": "five_prime_splice_site",
+      "color": "#303030",
+      "label_model_id": "320.2.1.1",
+      "label_category_model_id": "320.2.1",
+      "label_group_model_id": "320.2",
+      "label_default_visible": "true"
+    },
+    {
       "name": "ILS_disassembly_5Y88_intron",
       "label": "intron",
       "category": "substrate RNA feature",
@@ -170,7 +188,7 @@
       "kind": "rna_feature",
       "feature": "intron",
       "color": "#303030",
-      "label_model_id": "320.2.1.1",
+      "label_model_id": "320.2.1.2",
       "label_category_model_id": "320.2.1",
       "label_group_model_id": "320.2",
       "label_default_visible": "true"
@@ -188,7 +206,7 @@
       "kind": "rna_feature",
       "feature": "intron_lariat",
       "color": "#303030",
-      "label_model_id": "320.2.1.2",
+      "label_model_id": "320.2.1.3",
       "label_category_model_id": "320.2.1",
       "label_group_model_id": "320.2",
       "label_default_visible": "true"
@@ -220,7 +238,7 @@
       "kind": "rna_feature",
       "feature": "branch_point_region",
       "color": "#303030",
-      "label_model_id": "320.2.1.3",
+      "label_model_id": "320.2.1.4",
       "label_category_model_id": "320.2.1",
       "label_group_model_id": "320.2",
       "label_default_visible": "true"
@@ -238,7 +256,7 @@
       "kind": "rna_feature",
       "feature": "branch_point_adenosine",
       "color": "#303030",
-      "label_model_id": "320.2.1.4",
+      "label_model_id": "320.2.1.5",
       "label_category_model_id": "320.2.1",
       "label_group_model_id": "320.2",
       "label_default_visible": "true"

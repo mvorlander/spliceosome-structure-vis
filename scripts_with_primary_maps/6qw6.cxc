@@ -42,6 +42,28 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # SNRNP27
 color #347.1/X #F4E7D2
+# U4 snRNA
+color #347.1/4 #F2D94E
+# U4-Sm SNRPD1
+color #347.1/41 #F7F0A6
+# U5-Sm SNRPD1
+color #347.1/51 #B0C4DE
+# U4-Sm SNRPD2
+color #347.1/42 #F7F0A6
+# U5-Sm SNRPD2
+color #347.1/52 #B0C4DE
+# U4-Sm SNRPD3
+color #347.1/43 #F7F0A6
+# U5-Sm SNRPD3
+color #347.1/53 #B0C4DE
+# PRPF3
+color #347.1/4A #E1DD1B
+# PRPF4
+color #347.1/4B #E2C496
+# PRPF31
+color #347.1/4C #DFD570
+# NHP2L1
+color #347.1/4D #A89264
 # U4-Sm SNRPB
 color #347.1/4b #F7F0A6
 # U5-Sm SNRPB
@@ -59,7 +81,7 @@ color #347.1/4g #F7F0A6
 # U5-Sm SNRPG
 color #347.1/5g #B0C4DE
 # U5 snRNA
-color #347.1/5 #0000CD
+color #347.1/5 #4F9FD3
 # PRPF8
 color #347.1/5A #BFC3E8
 # SNRNP200
@@ -70,14 +92,12 @@ color #347.1/5C #6495ED
 color #347.1/5D #C3BA7A
 # PRPF6
 color #347.1/5J #CFA785
-# U4 snRNA
-color #347.1/4 #E6D900
 # PRP8BP
 color #347.1/5O #E2F3F4
 # DDX23
 color #347.1/5X #CA9982
 # U6 snRNA
-color #347.1/6 #DC143C
+color #347.1/6 #EF4444
 # LSM2
 color #347.1/62 #F4A3A8
 # LSM3
@@ -92,32 +112,12 @@ color #347.1/66 #F4A3A8
 color #347.1/67 #F4A3A8
 # LSM8
 color #347.1/68 #F4A3A8
-# U4-Sm SNRPD1
-color #347.1/41 #F7F0A6
-# U5-Sm SNRPD1
-color #347.1/51 #B0C4DE
 # RBM42
 color #347.1/R #44A0A7
 # SART1
 color #347.1/S #D6937B
 # USP39
 color #347.1/U #B37E6A
-# U4-Sm SNRPD2
-color #347.1/42 #F7F0A6
-# U5-Sm SNRPD2
-color #347.1/52 #B0C4DE
-# U4-Sm SNRPD3
-color #347.1/43 #F7F0A6
-# U5-Sm SNRPD3
-color #347.1/53 #B0C4DE
-# PRPF3
-color #347.1/4A #E1DD1B
-# PRPF4
-color #347.1/4B #E2C496
-# PRPF31
-color #347.1/4C #DFD570
-# NHP2L1
-color #347.1/4D #A89264
 # Named selections for subcomplexes using original deposited chain IDs.
 # RNA-binding
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}

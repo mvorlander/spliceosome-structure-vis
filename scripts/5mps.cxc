@@ -39,8 +39,24 @@ graphics silhouettes true
 cartoon style arrowScale 1.5
 color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
-# pre-mRNA
+# INTRON
 color #313.1/I #303030
+# EXON
+color #313.1/E #303030
+# U2 snRNA
+color #313.1/2 #71C562
+# U6 snRNA
+color #313.1/6 #EF4444
+# U5 snRNA
+color #313.1/5 #4F9FD3
+# PRPF8
+color #313.1/A #BFC3E8
+# EFTUD2
+color #313.1/C #6495ED
+# CWC22
+color #313.1/H #2C54DD
+# PLRG1
+color #313.1/J #F4A460
 # SNW1
 color #313.1/K #D49F96
 # BUD31
@@ -57,8 +73,6 @@ color #313.1/P #FFDEAD
 color #313.1/S #FFC388
 # SYF1
 color #313.1/T #FF957B
-# pre-mRNA
-color #313.1/E #303030
 # SLU7
 color #313.1/c #5A338B
 # PRPF17
@@ -77,22 +91,8 @@ color #313.1/f #B0C4DE
 color #313.1/g #B0C4DE
 # U5-Sm SNRPD1
 color #313.1/h #B0C4DE
-# U2 snRNA
-color #313.1/2 #006400
 # U5-Sm SNRPD2
 color #313.1/j #B0C4DE
-# pre-mRNA
-color #313.1/6 #303030
-# U5 snRNA
-color #313.1/5 #0000CD
-# PRPF8
-color #313.1/A #BFC3E8
-# EFTUD2
-color #313.1/C #6495ED
-# CWC22
-color #313.1/H #2C54DD
-# PLRG1
-color #313.1/J #F4A460
 # Named selections for subcomplexes using original deposited chain IDs.
 # EJC/mRNP
 # selector_meta {"color":"#EAA439","family":"Protein/RNP groups","group":"EJC/mRNP groups","kind":"subcomplex"}
@@ -105,7 +105,7 @@ name pdb_5MPS_NTC_NTR_related #313.1/K,L,M,N,S,T,y
 name pdb_5MPS_NTC_PRP19 #313.1/J,O,P
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
-name pdb_5MPS_RNA_substrate #313.1/6,E,I
+name pdb_5MPS_RNA_substrate #313.1/E,I
 # Second step factors
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_5MPS_Second_step_factors #313.1/c,o
@@ -118,19 +118,25 @@ name pdb_5MPS_U5_Sm_ring #313.1/b,d,e,f,g,h,j
 # U5 snRNP
 # selector_meta {"color":"#0000CD","family":"Protein/RNP groups","group":"U5 snRNP groups","kind":"subcomplex"}
 name pdb_5MPS_U5_snRNP #313.1/5,A,C
+# U6 snRNP
+# selector_meta {"color":"#DC143C","family":"Protein/RNP groups","group":"U6 snRNP groups","kind":"subcomplex"}
+name pdb_5MPS_U6_snRNP #313.1/6
 # other
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_5MPS_other #313.1/R,X,a
 # Named selections for resolved substrate RNA features.
-# substrate RNA: residues -16--1; 1-10;16-104; 1-16;56-73, component, medium confidence, validation not_applicable
+# 5' exon: residues -16--1, manual-chain-override, high confidence, validation not_applicable
+# selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name Cstar_5MPS_5exon #313.1/E:-16--1
+# substrate RNA: residues -16--1; 1-16;56-73, component, medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
-name Cstar_5MPS_substrate #313.1/6:1-10,16-104|#313.1/E:-16--1|#313.1/I:1-16,56-73
-# 5' splice site: residues -16--12, network-scored-motif, medium confidence, validation uncertain uncertain validation
+name Cstar_5MPS_substrate #313.1/E:-16--1|#313.1/I:1-16,56-73
+# 5' splice site: residues 1-6, network-scored-motif, medium confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
-name Cstar_5MPS_5SS #313.1/E:-16--12
-# intron from 5' splice site: residues -16--1, five-ss-inference, low confidence, validation not_applicable
+name Cstar_5MPS_5SS #313.1/I:1-6
+# intron: residues 1-16;56-73, manual-chain-override, high confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
-name Cstar_5MPS_intron #313.1/E:-16--1
+name Cstar_5MPS_intron #313.1/I:1-16,56-73
 # branch point region: residues 62-72, network-scored-motif, high confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"branch_point_region","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name Cstar_5MPS_branch_region #313.1/I:62-72
@@ -150,12 +156,38 @@ name Cstar_5MPS_U2_stem_IIa #313.1/2:46-49
 # U5 snRNA loop I: residues 53, sequence-motif, medium confidence
 # selector_meta {"color":"#1B3CD0","family":"RNA","feature":"U5_loop_I","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
 name Cstar_5MPS_U5_loop_I #313.1/5:53
+# U6 snRNA 5' terminal stem-loop: residues 1-10;16-30, reference-alignment, high confidence
+# selector_meta {"color":"#DC143C","family":"RNA","feature":"U6_5prime_terminal_stem_loop","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
+name Cstar_5MPS_U6_5_terminal_stem_loop #313.1/6:1-10,16-30
+# U6 snRNA U2/U6 helix I partner: residues 41-66, motif-neighborhood, medium confidence
+# selector_meta {"color":"#D0183C","family":"RNA","feature":"U6_U2_helix_I_partner","group":"snRNA-snRNA interacting regions","group_key":"snRNA_snRNA_regions","kind":"rna_feature"}
+name Cstar_5MPS_U6_U2_helix_I_partner #313.1/6:41-66
+# U6 snRNA 5' splice-site upstream contact: residues 44-55, motif-neighborhood, medium confidence
+# selector_meta {"color":"#E01842","family":"RNA","feature":"U6_5SS_upstream_contact","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
+name Cstar_5MPS_U6_5SS_upstream_contact #313.1/6:44-55
+# U6 snRNA internal stem-loop: residues 46-73, motif-neighborhood, low confidence
+# selector_meta {"color":"#D61A3D","family":"RNA","feature":"U6_ISL","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
+name Cstar_5MPS_U6_ISL #313.1/6:46-73
+# U6 snRNA ACAGAGA box: residues 47-53, sequence-motif, high confidence
+# selector_meta {"color":"#DC143C","family":"RNA","feature":"U6_ACAGAGA_box","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
+name Cstar_5MPS_U6_ACAGAGA_box #313.1/6:47-53
+# U6 snRNA AGC catalytic triad: residues 59-61, sequence-motif, medium confidence
+# selector_meta {"color":"#C91236","family":"RNA","feature":"U6_AGC_catalytic_triad","group":"catalytic core regions","group_key":"catalytic_core_regions","kind":"rna_feature"}
+name Cstar_5MPS_U6_AGC_catalytic_triad #313.1/6:59-61
+# U6 snRNA LSm site: residues 103-104, terminal-region, low confidence
+# selector_meta {"color":"#E33A55","family":"RNA","feature":"U6_LSm_site","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
+name Cstar_5MPS_U6_LSm_site #313.1/6:103-104
 # RNA feature nucleotide display.
 select #313.1 & nucleic
 nucleotides sel atoms
 select clear
-# 5'SS: residues -16--12
-# intron: residues -16--1
+# 5' exon: residues -16--1
+color #313.1/E:-16--1 #FF8C00
+select #313.1/E:-16--1
+nucleotides sel fill
+select clear
+# 5'SS: residues 1-6
+# intron: residues 1-16;56-73
 # BP region: residues 62-72
 # BP-A: residues 70
 # U2/U6 helix I: residues 26-30
@@ -176,6 +208,36 @@ select clear
 # U5 loop I: residues 53
 color #313.1/5:53 #1B3CD0
 select #313.1/5:53
+nucleotides sel fill
+select clear
+# U6 5' terminal SL: residues 1-10;16-30
+color #313.1/6:1-10,16-30 #DC143C
+select #313.1/6:1-10,16-30
+nucleotides sel fill
+select clear
+# U2/U6 helix I: residues 41-66
+color #313.1/6:41-66 #D0183C
+select #313.1/6:41-66
+nucleotides sel fill
+select clear
+# U6 5'SS contact: residues 44-55
+color #313.1/6:44-55 #E01842
+select #313.1/6:44-55
+nucleotides sel fill
+select clear
+# U6 ISL: residues 46-73
+color #313.1/6:46-73 #D61A3D
+select #313.1/6:46-73
+nucleotides sel fill
+select clear
+# U6 ACAGAGA: residues 47-53
+color #313.1/6:47-53 #DC143C
+select #313.1/6:47-53
+nucleotides sel fill
+select clear
+# U6 AGC triad: residues 59-61
+color #313.1/6:59-61 #C91236
+select #313.1/6:59-61
 nucleotides sel fill
 select clear
 # RNA feature 3D residue labels.

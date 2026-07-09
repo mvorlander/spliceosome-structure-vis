@@ -41,6 +41,20 @@ color byhetero
 # Subunit colors from color_code/subunit_color_code.csv.
 # PRPF8
 color #321.1/A #BFC3E8
+# U5 snRNA
+color #321.1/B #4F9FD3
+# EFTUD2
+color #321.1/C #6495ED
+# U6 snRNA
+color #321.1/D #EF4444
+# INTRON
+color #321.1/E #303030
+# U2 snRNA
+color #321.1/F #71C562
+# SYF1
+color #321.1/H #FF957B
+# CRNKL1
+color #321.1/I #FFC388
 # CDC5L
 color #321.1/J #DAA520
 # SYF2
@@ -59,8 +73,6 @@ color #321.1/O #F4A460
 color #321.1/P #FFDEAD
 # SNW1
 color #321.1/Q #D49F96
-# U5 snRNA
-color #321.1/B #0000CD
 # CWC22
 color #321.1/S #2C54DD
 # SLU7
@@ -91,8 +103,6 @@ color #321.1/l #D5F5E3
 color #321.1/f #B0C4DE
 # U2-Sm SNRPD1
 color #321.1/m #D5F5E3
-# EFTUD2
-color #321.1/C #6495ED
 # U5-Sm SNRPD2
 color #321.1/g #B0C4DE
 # U2-Sm SNRPD2
@@ -109,16 +119,6 @@ color #321.1/r #FFFFAB
 color #321.1/s #FFFFAB
 # PRPF19
 color #321.1/t #FFFFAB
-# U6 snRNA
-color #321.1/D #DC143C
-# INTRON
-color #321.1/E #303030
-# U2 snRNA
-color #321.1/F #006400
-# SYF1
-color #321.1/H #FF957B
-# CRNKL1
-color #321.1/I #FFC388
 # Named selections for subcomplexes using original deposited chain IDs.
 # EJC/mRNP
 # selector_meta {"color":"#EAA439","family":"Protein/RNP groups","group":"EJC/mRNP groups","kind":"subcomplex"}
@@ -175,9 +175,6 @@ name P_5YLZ_branch_region #321.1/E:294-303
 # branch point adenosine: residues 301, network-scored-motif, high confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"branch_point_adenosine","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_5YLZ_branch_A #321.1/E:301
-# polypyrimidine tract: residues 304, sequence-motif, medium confidence, validation uncertain uncertain validation
-# selector_meta {"color":"#303030","family":"RNA","feature":"polypyrimidine_tract","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
-name P_5YLZ_PPT #321.1/E:304
 # 3' splice site: residues 348-350, network-scored-motif, medium confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"three_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name P_5YLZ_3SS #321.1/E:348-350
@@ -232,7 +229,6 @@ select clear
 # 5'SS: residues 1-6
 # BP region: residues 294-303
 # BP-A: residues 301
-# PPT: residues 304
 # 3'SS: residues 348-350
 # 3' exon: residues 351-355
 color #321.1/E:351-355 #D97706
