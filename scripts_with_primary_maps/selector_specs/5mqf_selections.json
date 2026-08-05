@@ -88,20 +88,6 @@
       "color": "#9CA3AF"
     },
     {
-      "name": "pdb_5MQF_Sm_ring",
-      "label": "Sm ring",
-      "category": "subcomplex",
-      "section": "Named selections for subcomplexes using original deposited chain IDs.",
-      "comment": "Sm ring",
-      "atomspec": "#315.1/a,b,c,d,e,f,g",
-      "family": "Protein/RNP groups",
-      "group": "other protein/RNP groups",
-      "group_key": "",
-      "kind": "subcomplex",
-      "feature": "",
-      "color": "#9CA3AF"
-    },
-    {
       "name": "pdb_5MQF_U2_Sm_ring",
       "label": "U2 Sm ring",
       "category": "subcomplex",
@@ -128,6 +114,20 @@
       "kind": "subcomplex",
       "feature": "",
       "color": "#2F8B4D"
+    },
+    {
+      "name": "pdb_5MQF_U5_Sm_ring",
+      "label": "U5 Sm ring",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "U5 Sm ring",
+      "atomspec": "#315.1/a,b,c,d,e,f,g",
+      "family": "Protein/RNP groups",
+      "group": "U5 snRNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#BFC3E8"
     },
     {
       "name": "pdb_5MQF_U5_snRNP",

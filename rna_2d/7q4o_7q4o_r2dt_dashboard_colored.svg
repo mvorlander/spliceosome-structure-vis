@@ -8,7 +8,7 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <text x="70" y="63" class="small">stage U2 snRNP; Human; 2.1 A; 2022</text>
 <text x="70" y="80" class="small">Per-chain R2DT/RNApuzzler layouts; dashed backbones mark unresolved sequence-record residues; inter-RNA base pairs are clustered from FR3D output.</text>
 <rect x="70.0" y="92.0" width="820.0" height="520.0" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
-<text x="88.0" y="120.0" class="label" style="font-size:16px;fill:#006400">U2 snRNA /2 -&gt; 2</text>
+<text x="88.0" y="120.0" class="label" style="font-size:16px;fill:#71C562">U2 snRNA /2 -&gt; 2</text>
 <polyline points="125.0,442.0 155.4,442.0 185.7,442.0 216.1,442.0 246.5,442.0 276.8,442.0 307.2,442.0 337.6,442.0 367.9,442.0 398.3,442.0 428.7,442.0 459.0,442.0 489.4,442.0 519.8,442.0 550.1,442.0 580.5,442.0 610.9,442.0 641.2,442.0 671.6,442.0 702.0,442.0 732.3,442.0 762.7,442.0 762.7,411.7 762.7,381.3 740.1,361.1 732.9,331.5 743.8,303.2 768.8,286.0 799.1,286.0 824.2,303.2 835.0,331.5 827.8,361.1 805.2,381.3 805.2,411.7 805.2,442.0" class="backbone"/>
 <path d="M88.0,442.0 L125.0,442.0" class="missing"><title>missing 5-prime /2 sequence residues 1-28 (28 nt)</title></path>
 <text x="88.0" y="434.0" text-anchor="start" class="small" fill="#64748b">missing 5-prime 28 nt</text>
@@ -52,45 +52,45 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <circle cx="805.2" cy="381.3" r="9.2" fill="#167a38" opacity="0.14"><title>stem IIa; confidence low</title></circle>
 <circle cx="805.2" cy="411.7" r="9.2" fill="#167a38" opacity="0.14"><title>stem IIa; confidence low</title></circle>
 <circle cx="805.2" cy="442.0" r="9.2" fill="#167a38" opacity="0.14"><title>stem IIa; confidence low</title></circle>
-<text x="125.0" y="442.0" class="base" fill="#006400"><title>/2 seq 29 auth 29</title>A</text>
-<text x="155.4" y="442.0" class="base" fill="#006400"><title>/2 seq 30 auth 30</title>A</text>
+<text x="125.0" y="442.0" class="base" fill="#71C562"><title>/2 seq 29 auth 29</title>A</text>
+<text x="155.4" y="442.0" class="base" fill="#71C562"><title>/2 seq 30 auth 30</title>A</text>
 <text x="165.4" y="430.0" class="small" fill="#94a3b8">30</text>
-<text x="185.7" y="442.0" class="base" fill="#006400"><title>/2 seq 31 auth 31</title>G</text>
-<text x="216.1" y="442.0" class="base" fill="#006400"><title>/2 seq 32 auth 32</title>U</text>
-<text x="246.5" y="442.0" class="base" fill="#006400"><title>/2 seq 33 auth 33</title>G</text>
-<text x="276.8" y="442.0" class="base" fill="#006400"><title>/2 seq 34 auth 34</title>U</text>
-<text x="307.2" y="442.0" class="base" fill="#006400"><title>/2 seq 35 auth 35</title>A</text>
-<text x="337.6" y="442.0" class="base" fill="#006400"><title>/2 seq 36 auth 36</title>G</text>
-<text x="367.9" y="442.0" class="base" fill="#006400"><title>/2 seq 37 auth 37</title>U</text>
-<text x="398.3" y="442.0" class="base" fill="#006400"><title>/2 seq 38 auth 38</title>A</text>
-<text x="428.7" y="442.0" class="base" fill="#006400"><title>/2 seq 39 auth 39</title>U</text>
-<text x="459.0" y="442.0" class="base" fill="#006400"><title>/2 seq 40 auth 40</title>C</text>
+<text x="185.7" y="442.0" class="base" fill="#71C562"><title>/2 seq 31 auth 31</title>G</text>
+<text x="216.1" y="442.0" class="base" fill="#71C562"><title>/2 seq 32 auth 32</title>U</text>
+<text x="246.5" y="442.0" class="base" fill="#71C562"><title>/2 seq 33 auth 33</title>G</text>
+<text x="276.8" y="442.0" class="base" fill="#71C562"><title>/2 seq 34 auth 34</title>U</text>
+<text x="307.2" y="442.0" class="base" fill="#71C562"><title>/2 seq 35 auth 35</title>A</text>
+<text x="337.6" y="442.0" class="base" fill="#71C562"><title>/2 seq 36 auth 36</title>G</text>
+<text x="367.9" y="442.0" class="base" fill="#71C562"><title>/2 seq 37 auth 37</title>U</text>
+<text x="398.3" y="442.0" class="base" fill="#71C562"><title>/2 seq 38 auth 38</title>A</text>
+<text x="428.7" y="442.0" class="base" fill="#71C562"><title>/2 seq 39 auth 39</title>U</text>
+<text x="459.0" y="442.0" class="base" fill="#71C562"><title>/2 seq 40 auth 40</title>C</text>
 <text x="469.0" y="430.0" class="small" fill="#94a3b8">40</text>
-<text x="489.4" y="442.0" class="base" fill="#006400"><title>/2 seq 41 auth 41</title>U</text>
-<text x="519.8" y="442.0" class="base" fill="#006400"><title>/2 seq 42 auth 42</title>G</text>
-<text x="550.1" y="442.0" class="base" fill="#006400"><title>/2 seq 43 auth 43</title>U</text>
-<text x="580.5" y="442.0" class="base" fill="#006400"><title>/2 seq 44 auth 44</title>U</text>
-<text x="610.9" y="442.0" class="base" fill="#006400"><title>/2 seq 45 auth 45</title>C</text>
-<text x="641.2" y="442.0" class="base" fill="#006400"><title>/2 seq 46 auth 46</title>U</text>
-<text x="671.6" y="442.0" class="base" fill="#006400"><title>/2 seq 47 auth 47</title>U</text>
-<text x="702.0" y="442.0" class="base" fill="#006400"><title>/2 seq 48 auth 48</title>A</text>
-<text x="732.3" y="442.0" class="base" fill="#006400"><title>/2 seq 49 auth 49</title>U</text>
-<text x="762.7" y="442.0" class="base" fill="#006400"><title>/2 seq 50 auth 50</title>C</text>
+<text x="489.4" y="442.0" class="base" fill="#71C562"><title>/2 seq 41 auth 41</title>U</text>
+<text x="519.8" y="442.0" class="base" fill="#71C562"><title>/2 seq 42 auth 42</title>G</text>
+<text x="550.1" y="442.0" class="base" fill="#71C562"><title>/2 seq 43 auth 43</title>U</text>
+<text x="580.5" y="442.0" class="base" fill="#71C562"><title>/2 seq 44 auth 44</title>U</text>
+<text x="610.9" y="442.0" class="base" fill="#71C562"><title>/2 seq 45 auth 45</title>C</text>
+<text x="641.2" y="442.0" class="base" fill="#71C562"><title>/2 seq 46 auth 46</title>U</text>
+<text x="671.6" y="442.0" class="base" fill="#71C562"><title>/2 seq 47 auth 47</title>U</text>
+<text x="702.0" y="442.0" class="base" fill="#71C562"><title>/2 seq 48 auth 48</title>A</text>
+<text x="732.3" y="442.0" class="base" fill="#71C562"><title>/2 seq 49 auth 49</title>U</text>
+<text x="762.7" y="442.0" class="base" fill="#71C562"><title>/2 seq 50 auth 50</title>C</text>
 <text x="772.7" y="430.0" class="small" fill="#94a3b8">50</text>
-<text x="762.7" y="411.7" class="base" fill="#006400"><title>/2 seq 51 auth 51</title>A</text>
-<text x="762.7" y="381.3" class="base" fill="#006400"><title>/2 seq 52 auth 52</title>G</text>
-<text x="740.1" y="361.1" class="base" fill="#006400"><title>/2 seq 53 auth 53</title>U</text>
-<text x="732.9" y="331.5" class="base" fill="#006400"><title>/2 seq 54 auth 54</title>U</text>
-<text x="743.8" y="303.2" class="base" fill="#006400"><title>/2 seq 55 auth 55</title>U</text>
-<text x="768.8" y="286.0" class="base" fill="#006400"><title>/2 seq 56 auth 56</title>A</text>
-<text x="799.1" y="286.0" class="base" fill="#006400"><title>/2 seq 57 auth 57</title>A</text>
-<text x="824.2" y="303.2" class="base" fill="#006400"><title>/2 seq 58 auth 58</title>U</text>
-<text x="835.0" y="331.5" class="base" fill="#006400"><title>/2 seq 59 auth 59</title>A</text>
-<text x="827.8" y="361.1" class="base" fill="#006400"><title>/2 seq 60 auth 60</title>U</text>
+<text x="762.7" y="411.7" class="base" fill="#71C562"><title>/2 seq 51 auth 51</title>A</text>
+<text x="762.7" y="381.3" class="base" fill="#71C562"><title>/2 seq 52 auth 52</title>G</text>
+<text x="740.1" y="361.1" class="base" fill="#71C562"><title>/2 seq 53 auth 53</title>U</text>
+<text x="732.9" y="331.5" class="base" fill="#71C562"><title>/2 seq 54 auth 54</title>U</text>
+<text x="743.8" y="303.2" class="base" fill="#71C562"><title>/2 seq 55 auth 55</title>U</text>
+<text x="768.8" y="286.0" class="base" fill="#71C562"><title>/2 seq 56 auth 56</title>A</text>
+<text x="799.1" y="286.0" class="base" fill="#71C562"><title>/2 seq 57 auth 57</title>A</text>
+<text x="824.2" y="303.2" class="base" fill="#71C562"><title>/2 seq 58 auth 58</title>U</text>
+<text x="835.0" y="331.5" class="base" fill="#71C562"><title>/2 seq 59 auth 59</title>A</text>
+<text x="827.8" y="361.1" class="base" fill="#71C562"><title>/2 seq 60 auth 60</title>U</text>
 <text x="837.8" y="349.1" class="small" fill="#94a3b8">60</text>
-<text x="805.2" y="381.3" class="base" fill="#006400"><title>/2 seq 61 auth 61</title>C</text>
-<text x="805.2" y="411.7" class="base" fill="#006400"><title>/2 seq 62 auth 62</title>U</text>
-<text x="805.2" y="442.0" class="base" fill="#006400"><title>/2 seq 63 auth 63</title>G</text>
+<text x="805.2" y="381.3" class="base" fill="#71C562"><title>/2 seq 61 auth 61</title>C</text>
+<text x="805.2" y="411.7" class="base" fill="#71C562"><title>/2 seq 62 auth 62</title>U</text>
+<text x="805.2" y="442.0" class="base" fill="#71C562"><title>/2 seq 63 auth 63</title>G</text>
 <path d="M140.2,442.0 L183.7,421.8" class="feature-callout" stroke="#047857" opacity="0.60"/>
 <text x="183.7" y="421.8" class="feature-label" text-anchor="start" fill="#047857">U2/U6 helix I nt 29-30</text>
 <path d="M352.8,442.0 L311.2,466.0" class="feature-callout" stroke="#0b6e2d" opacity="0.54"/>

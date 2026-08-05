@@ -8,7 +8,7 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <text x="70" y="63" class="small">stage U2 snRNP; Human; 3.1 A; 2021</text>
 <text x="70" y="80" class="small">Per-chain R2DT/RNApuzzler layouts; dashed backbones mark unresolved sequence-record residues; inter-RNA base pairs are clustered from FR3D output.</text>
 <rect x="70.0" y="92.0" width="820.0" height="520.0" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
-<text x="88.0" y="120.0" class="label" style="font-size:16px;fill:#006400">U2 snRNA /H -&gt; 2</text>
+<text x="88.0" y="120.0" class="label" style="font-size:16px;fill:#71C562">U2 snRNA /H -&gt; 2</text>
 <polyline points="125.0,514.3 168.3,514.3 211.7,514.3 255.0,514.3 298.4,514.3 341.7,514.3 385.1,514.3 428.4,514.3 471.7,514.3 515.1,514.3 558.4,514.3 601.8,514.3 645.1,514.3 688.5,514.3 731.8,514.3 712.8,475.4 731.8,436.4 731.8,393.1 731.8,349.8 699.5,320.9 689.3,278.7 704.8,238.2 740.5,213.7 783.8,213.7 819.5,238.2 835.0,278.7 824.8,320.9 792.5,349.8 792.5,393.1 792.5,436.4 811.5,475.4 792.5,514.3" class="backbone"/>
 <path d="M88.0,514.3 L125.0,514.3" class="missing"><title>missing 5-prime /H sequence residues 1-33 (33 nt)</title></path>
 <text x="88.0" y="506.3" text-anchor="start" class="small" fill="#64748b">missing 5-prime 33 nt</text>
@@ -50,41 +50,41 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <circle cx="792.5" cy="436.4" r="9.2" fill="#167a38" opacity="0.14"><title>stem IIa; confidence low</title></circle>
 <circle cx="811.5" cy="475.4" r="9.2" fill="#167a38" opacity="0.14"><title>stem IIa; confidence low</title></circle>
 <circle cx="792.5" cy="514.3" r="9.2" fill="#167a38" opacity="0.14"><title>stem IIa; confidence low</title></circle>
-<text x="125.0" y="514.3" class="base" fill="#006400"><title>/H seq 34 auth 34</title>U</text>
-<text x="168.3" y="514.3" class="base" fill="#006400"><title>/H seq 35 auth 35</title>A</text>
-<text x="211.7" y="514.3" class="base" fill="#006400"><title>/H seq 36 auth 36</title>G</text>
-<text x="255.0" y="514.3" class="base" fill="#006400"><title>/H seq 37 auth 37</title>U</text>
-<text x="298.4" y="514.3" class="base" fill="#006400"><title>/H seq 38 auth 38</title>A</text>
-<text x="341.7" y="514.3" class="base" fill="#006400"><title>/H seq 39 auth 39</title>U</text>
-<text x="385.1" y="514.3" class="base" fill="#006400"><title>/H seq 40 auth 40</title>C</text>
+<text x="125.0" y="514.3" class="base" fill="#71C562"><title>/H seq 34 auth 34</title>U</text>
+<text x="168.3" y="514.3" class="base" fill="#71C562"><title>/H seq 35 auth 35</title>A</text>
+<text x="211.7" y="514.3" class="base" fill="#71C562"><title>/H seq 36 auth 36</title>G</text>
+<text x="255.0" y="514.3" class="base" fill="#71C562"><title>/H seq 37 auth 37</title>U</text>
+<text x="298.4" y="514.3" class="base" fill="#71C562"><title>/H seq 38 auth 38</title>A</text>
+<text x="341.7" y="514.3" class="base" fill="#71C562"><title>/H seq 39 auth 39</title>U</text>
+<text x="385.1" y="514.3" class="base" fill="#71C562"><title>/H seq 40 auth 40</title>C</text>
 <text x="395.1" y="502.3" class="small" fill="#94a3b8">40</text>
-<text x="428.4" y="514.3" class="base" fill="#006400"><title>/H seq 41 auth 41</title>U</text>
-<text x="471.7" y="514.3" class="base" fill="#006400"><title>/H seq 42 auth 42</title>G</text>
-<text x="515.1" y="514.3" class="base" fill="#006400"><title>/H seq 43 auth 43</title>U</text>
-<text x="558.4" y="514.3" class="base" fill="#006400"><title>/H seq 44 auth 44</title>U</text>
-<text x="601.8" y="514.3" class="base" fill="#006400"><title>/H seq 45 auth 45</title>C</text>
-<text x="645.1" y="514.3" class="base" fill="#006400"><title>/H seq 46 auth 46</title>U</text>
-<text x="688.5" y="514.3" class="base" fill="#006400"><title>/H seq 47 auth 47</title>U</text>
-<text x="731.8" y="514.3" class="base" fill="#006400"><title>/H seq 48 auth 48</title>A</text>
-<text x="712.8" y="475.4" class="base" fill="#006400"><title>/H seq 49 auth 49</title>U</text>
-<text x="731.8" y="436.4" class="base" fill="#006400"><title>/H seq 50 auth 50</title>C</text>
+<text x="428.4" y="514.3" class="base" fill="#71C562"><title>/H seq 41 auth 41</title>U</text>
+<text x="471.7" y="514.3" class="base" fill="#71C562"><title>/H seq 42 auth 42</title>G</text>
+<text x="515.1" y="514.3" class="base" fill="#71C562"><title>/H seq 43 auth 43</title>U</text>
+<text x="558.4" y="514.3" class="base" fill="#71C562"><title>/H seq 44 auth 44</title>U</text>
+<text x="601.8" y="514.3" class="base" fill="#71C562"><title>/H seq 45 auth 45</title>C</text>
+<text x="645.1" y="514.3" class="base" fill="#71C562"><title>/H seq 46 auth 46</title>U</text>
+<text x="688.5" y="514.3" class="base" fill="#71C562"><title>/H seq 47 auth 47</title>U</text>
+<text x="731.8" y="514.3" class="base" fill="#71C562"><title>/H seq 48 auth 48</title>A</text>
+<text x="712.8" y="475.4" class="base" fill="#71C562"><title>/H seq 49 auth 49</title>U</text>
+<text x="731.8" y="436.4" class="base" fill="#71C562"><title>/H seq 50 auth 50</title>C</text>
 <text x="741.8" y="424.4" class="small" fill="#94a3b8">50</text>
-<text x="731.8" y="393.1" class="base" fill="#006400"><title>/H seq 51 auth 51</title>A</text>
-<text x="731.8" y="349.8" class="base" fill="#006400"><title>/H seq 52 auth 52</title>G</text>
-<text x="699.5" y="320.9" class="base" fill="#006400"><title>/H seq 53 auth 53</title>U</text>
-<text x="689.3" y="278.7" class="base" fill="#006400"><title>/H seq 54 auth 54</title>U</text>
-<text x="704.8" y="238.2" class="base" fill="#006400"><title>/H seq 55 auth 55</title>U</text>
-<text x="740.5" y="213.7" class="base" fill="#006400"><title>/H seq 56 auth 56</title>A</text>
-<text x="783.8" y="213.7" class="base" fill="#006400"><title>/H seq 57 auth 57</title>A</text>
-<text x="819.5" y="238.2" class="base" fill="#006400"><title>/H seq 58 auth 58</title>U</text>
-<text x="835.0" y="278.7" class="base" fill="#006400"><title>/H seq 59 auth 59</title>A</text>
-<text x="824.8" y="320.9" class="base" fill="#006400"><title>/H seq 60 auth 60</title>U</text>
+<text x="731.8" y="393.1" class="base" fill="#71C562"><title>/H seq 51 auth 51</title>A</text>
+<text x="731.8" y="349.8" class="base" fill="#71C562"><title>/H seq 52 auth 52</title>G</text>
+<text x="699.5" y="320.9" class="base" fill="#71C562"><title>/H seq 53 auth 53</title>U</text>
+<text x="689.3" y="278.7" class="base" fill="#71C562"><title>/H seq 54 auth 54</title>U</text>
+<text x="704.8" y="238.2" class="base" fill="#71C562"><title>/H seq 55 auth 55</title>U</text>
+<text x="740.5" y="213.7" class="base" fill="#71C562"><title>/H seq 56 auth 56</title>A</text>
+<text x="783.8" y="213.7" class="base" fill="#71C562"><title>/H seq 57 auth 57</title>A</text>
+<text x="819.5" y="238.2" class="base" fill="#71C562"><title>/H seq 58 auth 58</title>U</text>
+<text x="835.0" y="278.7" class="base" fill="#71C562"><title>/H seq 59 auth 59</title>A</text>
+<text x="824.8" y="320.9" class="base" fill="#71C562"><title>/H seq 60 auth 60</title>U</text>
 <text x="834.8" y="308.9" class="small" fill="#94a3b8">60</text>
-<text x="792.5" y="349.8" class="base" fill="#006400"><title>/H seq 61 auth 61</title>C</text>
-<text x="792.5" y="393.1" class="base" fill="#006400"><title>/H seq 62 auth 62</title>U</text>
-<text x="792.5" y="436.4" class="base" fill="#006400"><title>/H seq 63 auth 63</title>G</text>
-<text x="811.5" y="475.4" class="base" fill="#006400"><title>/H seq 64 auth 64</title>A</text>
-<text x="792.5" y="514.3" class="base" fill="#006400"><title>/H seq 65 auth 65</title>U</text>
+<text x="792.5" y="349.8" class="base" fill="#71C562"><title>/H seq 61 auth 61</title>C</text>
+<text x="792.5" y="393.1" class="base" fill="#71C562"><title>/H seq 62 auth 62</title>U</text>
+<text x="792.5" y="436.4" class="base" fill="#71C562"><title>/H seq 63 auth 63</title>G</text>
+<text x="811.5" y="475.4" class="base" fill="#71C562"><title>/H seq 64 auth 64</title>A</text>
+<text x="792.5" y="514.3" class="base" fill="#71C562"><title>/H seq 65 auth 65</title>U</text>
 <path d="M276.7,514.3 L235.1,490.3" class="feature-callout" stroke="#0b6e2d" opacity="0.54"/>
 <text x="235.1" y="490.3" class="feature-label" text-anchor="end" fill="#0b6e2d">BP pairing nt 34-41</text>
 <path d="M752.6,373.5 L711.0,349.5" class="feature-callout" stroke="#167a38" opacity="0.46"/>

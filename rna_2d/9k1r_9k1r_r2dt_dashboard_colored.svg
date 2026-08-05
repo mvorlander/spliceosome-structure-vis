@@ -8,7 +8,7 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <text x="70" y="63" class="small">stage U2 snRNP; Human; 3.8 A; 2025</text>
 <text x="70" y="80" class="small">Per-chain R2DT/RNApuzzler layouts; dashed backbones mark unresolved sequence-record residues; inter-RNA base pairs are clustered from FR3D output.</text>
 <rect x="70.0" y="92.0" width="820.0" height="520.0" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
-<text x="88.0" y="120.0" class="label" style="font-size:16px;fill:#006400">U2 snRNA /H -&gt; 2</text>
+<text x="88.0" y="120.0" class="label" style="font-size:16px;fill:#71C562">U2 snRNA /H -&gt; 2</text>
 <polyline points="125.0,363.0 175.7,363.0 226.4,363.0 277.1,363.0 327.9,363.0 378.6,363.0 429.3,363.0 480.0,363.0 530.7,363.0 581.4,363.0 632.1,363.0 682.9,363.0 733.6,363.0 784.3,363.0 835.0,363.0" class="backbone"/>
 <path d="M835.0,363.0 L868.0,363.0" class="missing"><title>missing 3-prime /H sequence residues 16-18 (3 nt)</title></path>
 <text x="868.0" y="355.0" text-anchor="end" class="small" fill="#64748b">missing 3-prime 3 nt</text>
@@ -22,22 +22,22 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <circle cx="530.7" cy="363.0" r="9.2" fill="#0b6e2d" opacity="0.22"><title>branchpoint pairing region; confidence medium</title></circle>
 <circle cx="581.4" cy="363.0" r="9.2" fill="#0b6e2d" opacity="0.22"><title>branchpoint pairing region; confidence medium</title></circle>
 <circle cx="632.1" cy="363.0" r="9.2" fill="#0b6e2d" opacity="0.22"><title>branchpoint pairing region; confidence medium</title></circle>
-<text x="125.0" y="363.0" class="base" fill="#006400"><title>/H seq 1 auth 1</title>G</text>
-<text x="175.7" y="363.0" class="base" fill="#006400"><title>/H seq 2 auth 2</title>U</text>
-<text x="226.4" y="363.0" class="base" fill="#006400"><title>/H seq 3 auth 3</title>G</text>
-<text x="277.1" y="363.0" class="base" fill="#006400"><title>/H seq 4 auth 4</title>U</text>
-<text x="327.9" y="363.0" class="base" fill="#006400"><title>/H seq 5 auth 5</title>A</text>
-<text x="378.6" y="363.0" class="base" fill="#006400"><title>/H seq 6 auth 6</title>G</text>
-<text x="429.3" y="363.0" class="base" fill="#006400"><title>/H seq 7 auth 7</title>U</text>
-<text x="480.0" y="363.0" class="base" fill="#006400"><title>/H seq 8 auth 8</title>A</text>
-<text x="530.7" y="363.0" class="base" fill="#006400"><title>/H seq 9 auth 9</title>U</text>
-<text x="581.4" y="363.0" class="base" fill="#006400"><title>/H seq 10 auth 10</title>C</text>
+<text x="125.0" y="363.0" class="base" fill="#71C562"><title>/H seq 1 auth 1</title>G</text>
+<text x="175.7" y="363.0" class="base" fill="#71C562"><title>/H seq 2 auth 2</title>U</text>
+<text x="226.4" y="363.0" class="base" fill="#71C562"><title>/H seq 3 auth 3</title>G</text>
+<text x="277.1" y="363.0" class="base" fill="#71C562"><title>/H seq 4 auth 4</title>U</text>
+<text x="327.9" y="363.0" class="base" fill="#71C562"><title>/H seq 5 auth 5</title>A</text>
+<text x="378.6" y="363.0" class="base" fill="#71C562"><title>/H seq 6 auth 6</title>G</text>
+<text x="429.3" y="363.0" class="base" fill="#71C562"><title>/H seq 7 auth 7</title>U</text>
+<text x="480.0" y="363.0" class="base" fill="#71C562"><title>/H seq 8 auth 8</title>A</text>
+<text x="530.7" y="363.0" class="base" fill="#71C562"><title>/H seq 9 auth 9</title>U</text>
+<text x="581.4" y="363.0" class="base" fill="#71C562"><title>/H seq 10 auth 10</title>C</text>
 <text x="591.4" y="351.0" class="small" fill="#94a3b8">10</text>
-<text x="632.1" y="363.0" class="base" fill="#006400"><title>/H seq 11 auth 11</title>U</text>
-<text x="682.9" y="363.0" class="base" fill="#006400"><title>/H seq 12 auth 12</title>G</text>
-<text x="733.6" y="363.0" class="base" fill="#006400"><title>/H seq 13 auth 13</title>U</text>
-<text x="784.3" y="363.0" class="base" fill="#006400"><title>/H seq 14 auth 14</title>U</text>
-<text x="835.0" y="363.0" class="base" fill="#006400"><title>/H seq 15 auth 15</title>C</text>
+<text x="632.1" y="363.0" class="base" fill="#71C562"><title>/H seq 11 auth 11</title>U</text>
+<text x="682.9" y="363.0" class="base" fill="#71C562"><title>/H seq 12 auth 12</title>G</text>
+<text x="733.6" y="363.0" class="base" fill="#71C562"><title>/H seq 13 auth 13</title>U</text>
+<text x="784.3" y="363.0" class="base" fill="#71C562"><title>/H seq 14 auth 14</title>U</text>
+<text x="835.0" y="363.0" class="base" fill="#71C562"><title>/H seq 15 auth 15</title>C</text>
 <path d="M403.9,363.0 L362.4,339.0" class="feature-callout" stroke="#0b6e2d" opacity="0.54"/>
 <text x="362.4" y="339.0" class="feature-label" text-anchor="end" fill="#0b6e2d">BP pairing nt 2-11</text>
 <rect x="960.0" y="92.0" width="820.0" height="520.0" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
@@ -82,9 +82,6 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <circle cx="1399.6" cy="363.4" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
 <circle cx="1429.2" cy="363.4" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
 <circle cx="1370.0" cy="363.4" r="9.2" fill="#303030" opacity="0.28"><title>branch point adenosine; confidence high</title></circle>
-<circle cx="1458.8" cy="363.4" r="9.2" fill="#303030" opacity="0.22"><title>3&#x27; splice site; confidence medium</title></circle>
-<circle cx="1488.3" cy="363.4" r="9.2" fill="#303030" opacity="0.22"><title>3&#x27; splice site; confidence medium</title></circle>
-<circle cx="1517.9" cy="363.4" r="9.2" fill="#303030" opacity="0.22"><title>3&#x27; splice site; confidence medium</title></circle>
 <text x="1015.0" y="363.4" class="base" fill="#303030"><title>/G seq 1 auth 24</title>G</text>
 <text x="1044.6" y="363.4" class="base" fill="#303030"><title>/G seq 2 auth 25</title>A</text>
 <text x="1074.2" y="363.4" class="base" fill="#303030"><title>/G seq 3 auth 26</title>A</text>
@@ -116,20 +113,15 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <text x="1324.8" y="343.1" class="feature-label" text-anchor="start" fill="#303030">BP region nt 28-38</text>
 <path d="M1370.0,363.4 L1413.5,383.7" class="feature-callout" stroke="#303030" opacity="0.60"/>
 <text x="1413.5" y="383.7" class="feature-label" text-anchor="start" fill="#303030">BP-A nt 36</text>
-<path d="M1488.3,363.4 L1531.8,343.1" class="feature-callout" stroke="#303030" opacity="0.54"/>
-<text x="1531.8" y="343.1" class="feature-label" text-anchor="start" fill="#303030">? 3&#x27;SS nt 39-41</text>
 <path d="M1241.1,363.4 Q849.7,318.0 458.3,363.0" class="inter" stroke-width="4.2"><title>G:1-16 to H:1-15; 14 FR3D interactions; cWW</title></path>
 <path d="M458.3,363.0 Q849.7,318.0 1241.1,363.4" class="inter" stroke-width="4.2"><title>H:1-15 to G:1-16; 14 FR3D interactions; cWW</title></path>
 <text x="70" y="739.0" class="label" style="font-size:15px">Feature overlays</text>
-<text x="70.0" y="765.0" class="small">? label prefix = uncertain RNA-feature assignment; inspect validation notes before interpretation.</text>
-<circle cx="77.0" cy="785.0" r="7" fill="#303030" opacity="0.28"/>
-<text x="90.0" y="789.0" class="small">substrate</text>
-<circle cx="287.0" cy="785.0" r="7" fill="#303030" opacity="0.28"/>
-<text x="300.0" y="789.0" class="small">branch point region</text>
-<circle cx="497.0" cy="785.0" r="7" fill="#303030" opacity="0.28"/>
-<text x="510.0" y="789.0" class="small">branch point adenosine</text>
-<circle cx="707.0" cy="785.0" r="7" fill="#303030" opacity="0.28"/>
-<text x="720.0" y="789.0" class="small">three prime splice site</text>
-<circle cx="917.0" cy="785.0" r="7" fill="#0b6e2d" opacity="0.28"/>
-<text x="930.0" y="789.0" class="small">U2 branchpoint pairing region</text>
+<circle cx="77.0" cy="761.0" r="7" fill="#303030" opacity="0.28"/>
+<text x="90.0" y="765.0" class="small">substrate</text>
+<circle cx="287.0" cy="761.0" r="7" fill="#303030" opacity="0.28"/>
+<text x="300.0" y="765.0" class="small">branch point region</text>
+<circle cx="497.0" cy="761.0" r="7" fill="#303030" opacity="0.28"/>
+<text x="510.0" y="765.0" class="small">branch point adenosine</text>
+<circle cx="707.0" cy="761.0" r="7" fill="#0b6e2d" opacity="0.28"/>
+<text x="720.0" y="765.0" class="small">U2 branchpoint pairing region</text>
 </svg>
