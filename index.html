@@ -78,6 +78,8 @@
     .detail-meta, .actions, .chips { display:flex; flex-wrap:wrap; gap:6px; }
     .actions { margin-top:12px; }
     .actions button, .actions a { display:inline-flex; min-height:30px; align-items:center; padding:5px 9px; border:1px solid var(--line); border-radius:6px; background:#fff; color:var(--ink); text-decoration:none; }
+    .actions a.report-link { border-color:#f0b8a8; color:#9f3a22; background:#fff7f4; font-weight:650; }
+    .actions a.report-link:hover { background:#ffece6; }
     .chip { border:1px solid var(--line); border-radius:6px; background:#fff; padding:4px 6px; font-size:12px; max-width:230px; }
     .kv { display:grid; grid-template-columns:135px minmax(0,1fr); gap:5px 8px; font-size:12px; }
     .kv div:nth-child(odd) { color:var(--muted); }
@@ -224,7 +226,7 @@
       <div id="documentationView" hidden>
         <section class="panel"><div class="panel-head"><h2>Dashboard Documentation</h2><span class="subtle">features, UI, and curation methodology</span></div><div class="panel-body"><div class="doc-grid">
           <div class="doc-section"><h3>Scope</h3><p>This lightweight dashboard lists deposited spliceosome and spliceosomal snRNP structures and provides ChimeraX scripts that download models directly from the PDB.</p><ul><li>No mmCIF files, local curated CIF entries, or large map binaries are bundled here.</li><li>Primary EMDB maps can be downloaded on demand by using the primary-map ChimeraX script variant.</li><li>The full internal resource adds shared coordinate files, renamed-chain mmCIFs, all-map support, and local curated structures.</li><li>Entries are organized by pathway state, species, publication, resolved components, RNA annotations, quality metrics, and color/homolog metadata.</li></ul></div>
-          <div class="doc-section"><h3>Structure UI</h3><p>The Structures tab is the main workspace for finding entries and copying ChimeraX scripts.</p><ul><li>Use the sidebar to filter by text, complex, species, PRPF8/SF3B1 content, RNA features, and sort order.</li><li>Click a state in the splicing-cycle cartoon to filter the structure table.</li><li>Select a row to open details with paper metadata, components, RNA annotations, quality metrics, curation audit summaries, and a script preview.</li><li>Use the Compare column to keep up to five structures in a temporary comparison panel.</li></ul></div>
+          <div class="doc-section"><h3>Structure UI</h3><p>The Structures tab is the main workspace for finding entries and copying ChimeraX scripts.</p><ul><li>Use the sidebar to filter by text, complex, species, PRPF8/SF3B1 content, RNA features, and sort order.</li><li>Click a state in the splicing-cycle cartoon to filter the structure table.</li><li>Select a row to open details with paper metadata, components, RNA annotations, quality metrics, curation audit summaries, external resources, issue reporting, and a script preview.</li><li>Use the Compare column to keep up to five structures in a temporary comparison panel.</li></ul></div>
           <div class="doc-section"><h3>RNA Features</h3><p>Resolved substrate and snRNA feature annotations are generated from deposited sequences and coordinates.</p><ul><li>The RNA feature text box narrows the feature drop-down; choosing a feature filters the structure table.</li><li>Common presets expose substrate annotations, snRNA annotations, 3' exon, ligated exons, branch A, and U6 ACAGAGA.</li><li>Named ChimeraX selectors follow `stage_PDB_feature`, for example `pre_Bact_7AAV_5exon`.</li><li>When multiple chains or segments represent one biological feature, the script creates a single named selection that unions the residue specs.</li></ul></div>
           <div class="doc-section"><h3>Protein Colors And Homologs</h3><p>The Protein Colors tab exposes the universal color table, common aliases, homolog mappings, and source/provenance metadata.</p><ul><li>Colors combine provided ChimeraX examples, curated palettes, and generated class/family palettes.</li><li>This public dashboard uses original deposited chain IDs; renamed-chain files and canonical-chain script variants are intentionally omitted.</li><li>Homolog mapping combines deposited names, curated aliases, SpliceosomeDB-style classes, OMA/BLAST-supported mappings, and manual corrections.</li></ul></div>
           <div class="doc-section"><h3>ChimeraX Scripts</h3><p>Public scripts use original chain IDs and `open PDBID` commands so ChimeraX retrieves models directly from the PDB.</p><ul><li>Scripts use unique model IDs so multiple structures can be opened in one ChimeraX session.</li><li>Structures are aligned to a shared anchor frame where PRPF8/SF3B1-compatible anchors are available.</li><li>Scripts apply the shared color code, RNA feature named selections, default display style, and nucleic-acid visibility.</li><li>GUI ChimeraX runs fetch a self-contained named-selection browser from GitHub; clicking an entry selects and zooms the corresponding RNA feature, and RNA-feature rows include checkboxes to toggle their 3D labels. No-GUI runs skip the browser automatically.</li><li>The model-only variant loads coordinates only; the primary-map variant also downloads the deposited primary EMDB map and brings it with the aligned model where ChimeraX can move the opened volume model.</li></ul></div>
@@ -857,6 +859,38 @@ ${await scriptFor(record,"no_maps")}
       }
       return links.length ? `<div class="actions external-links">${links.join("")}</div>` : '<div class="subtle">No external resources listed for this entry.</div>';
     }
+    function reportIssueUrl(r){
+      const title = `[curation] ${String(r.pdb_id || "").toUpperCase()} annotation/coloring issue`;
+      const body = [
+        "### Structure",
+        `- PDB: ${String(r.pdb_id || "").toUpperCase()}`,
+        `- Complex/state: ${r.state || "n/a"}`,
+        `- Species: ${r.species || "n/a"}`,
+        `- Title: ${r.title || "n/a"}`,
+        `- Dashboard URL: ${window.location.href.split("#")[0]}`,
+        "",
+        "### Issue type",
+        "- [ ] Protein coloring",
+        "- [ ] Protein identity / homolog assignment",
+        "- [ ] RNA identity",
+        "- [ ] RNA feature annotation",
+        "- [ ] Splicing-cycle state",
+        "- [ ] Other",
+        "",
+        "### Observed problem",
+        "Describe what looks wrong, including chain IDs, residue numbers, or feature names where possible.",
+        "",
+        "### Expected correction",
+        "Describe the correction you think should be made.",
+        "",
+        "### Evidence",
+        "Add paper, figure, PDB/mmCIF annotation, ChimeraX screenshot, or other supporting evidence."
+      ].join("\n");
+      return `https://github.com/mvorlander/spliceosome-structure-vis/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+    }
+    function reportIssueLink(r){
+      return `<a class="report-link" href="${attr(reportIssueUrl(r))}" target="_blank" rel="noreferrer" title="Open a prefilled GitHub issue for reporting annotation, homolog, RNA-feature, pathway, or coloring errors">Report annotation/coloring error</a>`;
+    }
     function renderDetail(r){
       if(!r){ els.detail.innerHTML='<div class="subtle">No structure selected.</div>'; return; }
       els.selectedId.textContent = r.pdb_id.toUpperCase();
@@ -866,7 +900,7 @@ ${await scriptFor(record,"no_maps")}
       const thumbnail = r.thumbnail && r.thumbnail.image ? `<h3>Thumbnail</h3><img class="thumbnail-img" src="${attr(r.thumbnail.image)}" alt="ChimeraX thumbnail" loading="lazy">` : "";
       const primaryMapButton = r.primary_map_script_path ? `<button onclick="copyStructureScript('${attr(r.pdb_id)}', this, 'primary_map')" title="Copy a script that downloads the model and primary EMDB map, then aligns the model and brings the map when possible.">Script with primary map</button>` : "";
       const abstractBlock = r.abstract ? `<details class="detail-section"><summary>Abstract</summary><div class="detail-section-body">${esc(r.abstract)}</div></details>` : "";
-      els.detail.innerHTML = `<p class="detail-title">${esc(r.title)}</p><div class="detail-meta"><span class="badge">${esc(r.state)}</span><span class="badge">${esc(r.species)}</span><span class="badge">${esc(r.resolution||"?")} A</span><span class="badge">${esc(r.year||"")}</span><span class="badge">${r.chain_count||0} chains</span>${curationBadges(r)}</div><div class="actions"><button onclick="copyStructureScript('${attr(r.pdb_id)}', this, 'no_maps')" title="Copy a model-only ChimeraX script that downloads the deposited PDB coordinates directly.">Script without maps</button>${primaryMapButton}</div>${detailSection("Overview", `${thumbnail}<h3>Paper</h3><div>${esc(r.paper_title||"")}</div><div class="subtle">${esc(r.authors_short||"")}${r.doi ? " - DOI " + esc(r.doi) : ""}</div>${abstractBlock}`, true)}${detailSection("Resources", externalLinks(r), true)}${detailSection("Curation And Quality", curationPanel(r) + qualityPanel(r.quality))}${detailSection("Components", `<h3>Proteins (${r.protein_count})</h3><div class="mini-list"><div class="chips">${proteins || '<span class="subtle">None listed</span>'}</div></div><h3>RNAs (${r.rna_count})</h3><div class="mini-list"><div class="chips">${rnas || '<span class="subtle">None listed</span>'}</div></div>`)}${detailSection("RNA Annotations", rna2dPanel(r.rna_2d||{}) + substratePanel(r.substrate_features||[]) + snrnaPanel(r.snrna_features||[]), Boolean((r.rna_2d&&r.rna_2d.png) || (r.substrate_features||[]).length || (r.snrna_features||[]).length))}${detailSection("Audits", unassignedPanel(r.unassigned_components||[]))}${detailSection("Compare Structures", comparisonPanel())}${detailSection("Script Preview", '<pre id="scriptPreview">Loading script...</pre>')}`;
+      els.detail.innerHTML = `<p class="detail-title">${esc(r.title)}</p><div class="detail-meta"><span class="badge">${esc(r.state)}</span><span class="badge">${esc(r.species)}</span><span class="badge">${esc(r.resolution||"?")} A</span><span class="badge">${esc(r.year||"")}</span><span class="badge">${r.chain_count||0} chains</span>${curationBadges(r)}</div><div class="actions"><button onclick="copyStructureScript('${attr(r.pdb_id)}', this, 'no_maps')" title="Copy a model-only ChimeraX script that downloads the deposited PDB coordinates directly.">Script without maps</button>${primaryMapButton}${reportIssueLink(r)}</div>${detailSection("Overview", `${thumbnail}<h3>Paper</h3><div>${esc(r.paper_title||"")}</div><div class="subtle">${esc(r.authors_short||"")}${r.doi ? " - DOI " + esc(r.doi) : ""}</div>${abstractBlock}`, true)}${detailSection("Resources", externalLinks(r), true)}${detailSection("Curation And Quality", curationPanel(r) + qualityPanel(r.quality))}${detailSection("Components", `<h3>Proteins (${r.protein_count})</h3><div class="mini-list"><div class="chips">${proteins || '<span class="subtle">None listed</span>'}</div></div><h3>RNAs (${r.rna_count})</h3><div class="mini-list"><div class="chips">${rnas || '<span class="subtle">None listed</span>'}</div></div>`)}${detailSection("RNA Annotations", rna2dPanel(r.rna_2d||{}) + substratePanel(r.substrate_features||[]) + snrnaPanel(r.snrna_features||[]), Boolean((r.rna_2d&&r.rna_2d.png) || (r.substrate_features||[]).length || (r.snrna_features||[]).length))}${detailSection("Audits", unassignedPanel(r.unassigned_components||[]))}${detailSection("Compare Structures", comparisonPanel())}${detailSection("Script Preview", '<pre id="scriptPreview">Loading script...</pre>')}`;
       scriptFor(r, "no_maps").then(text => {
         const preview = document.getElementById("scriptPreview");
         if (preview && state.selected === r.pdb_id) preview.textContent = text;
