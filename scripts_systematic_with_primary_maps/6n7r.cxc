@@ -1,0 +1,236 @@
+# Lightweight ChimeraX script for 6N7R
+# Models are downloaded directly by ChimeraX from the PDB.
+# Primary maps, when requested, are downloaded directly from EMDB.
+# Deposited chains are renamed in-session to systematic project IDs.
+
+# Shared anchor frame: 8H6L
+# Structure group: #345; target model: #345.1; RNA labels: #345.2.
+
+open 8h6l id 345.9 name 8H6L_anchor
+# Rename 8H6L_anchor chains to systematic project IDs.
+# Temporary safe-harbor IDs avoid collisions with deposited or target chain IDs.
+changechains #345.9 2A,2B,2C,2D,2E,2F,2G,2H,2I,2J,2K,2L,2M,2a,2b,2c,2d,2e,2f,2g,4A,4B,4C,4D,4E,4F,4G,4H,4I,4J,4Z,4a,4b,4c,4d,4e,4f,4g,5A,5B,5C,5D,5E,5a,5b,5c,5d,5e,5f,5g,6A,6a,6b,6c,6d,6e,6f,6g,A TMP001,TMP002,TMP003,TMP004,TMP005,TMP006,TMP007,TMP008,TMP009,TMP010,TMP011,TMP012,TMP013,TMP014,TMP015,TMP016,TMP017,TMP018,TMP019,TMP020,TMP021,TMP022,TMP023,TMP024,TMP025,TMP026,TMP027,TMP028,TMP029,TMP030,TMP031,TMP032,TMP033,TMP034,TMP035,TMP036,TMP037,TMP038,TMP039,TMP040,TMP041,TMP042,TMP043,TMP044,TMP045,TMP046,TMP047,TMP048,TMP049,TMP050,TMP051,TMP052,TMP053,TMP054,TMP055,TMP056,TMP057,TMP058,TMP059 log false
+changechains #345.9 TMP001,TMP002,TMP003,TMP004,TMP005,TMP006,TMP007,TMP008,TMP009,TMP010,TMP011,TMP012,TMP013,TMP014,TMP015,TMP016,TMP017,TMP018,TMP019,TMP020,TMP021,TMP022,TMP023,TMP024,TMP025,TMP026,TMP027,TMP028,TMP029,TMP030,TMP031,TMP032,TMP033,TMP034,TMP035,TMP036,TMP037,TMP038,TMP039,TMP040,TMP041,TMP042,TMP043,TMP044,TMP045,TMP046,TMP047,TMP048,TMP049,TMP050,TMP051,TMP052,TMP053,TMP054,TMP055,TMP056,TMP057,TMP058,TMP059 2,2K,2L,2H,2I,2J,2A,2B,2C,2D,2F,2G,2E,2SB,2S1,2S2,2SF,2SE,2SG,2S3,4,4A,4B,4C,4D,6B,5D,X5,XAE,5H,XBD,4SB,4S1,4S2,4SF,4SE,4SG,4S3,5,5A,5C,5B,5E,5SB,5S1,5S2,5SF,5SE,5SG,5S3,6,6L2,6L3,6L4,6L5,6L6,6L7,6L8,M log false
+open 6n7r id 345.1 name 6N7R
+# Rename 6N7R chains to systematic project IDs.
+# Temporary safe-harbor IDs avoid collisions with deposited or target chain IDs.
+changechains #345.1 A,B,C,D,E,F,G,H,I,K,L,M,N,O,P,Q,R,r TMP001,TMP002,TMP003,TMP004,TMP005,TMP006,TMP007,TMP008,TMP009,TMP010,TMP011,TMP012,TMP013,TMP014,TMP015,TMP016,TMP017,TMP018 log false
+changechains #345.1 TMP001,TMP002,TMP003,TMP004,TMP005,TMP006,TMP007,TMP008,TMP009,TMP010,TMP011,TMP012,TMP013,TMP014,TMP015,TMP016,TMP017,TMP018 1A,1C,1B,1J,1D,1H,1K,1I,1G,1SB,1S1,1S2,1S3,1SE,1SF,1SG,1,M log false
+open emdb:0361 id 345.3.1 name spliceosome_6n7r_EMD-0361_primary_map
+rename #345 spliceosome_6n7r_structure
+
+# No PRPF8 or SF3B1 chain was detected; anchor is closed without alignment.
+close #345.9
+
+# Remove implausibly long deposited covalent bonds before styling.
+# Fetch and run the implausible-bond pruning helper from GitHub.
+open https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts_systematic_with_primary_maps/prune_implausible_bonds.py
+
+hide atoms
+cartoon
+# Default display style.
+style (protein|nucleic|solvent) & @@draw_mode=0 stick
+cartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20
+cartoon style ~(nucleic|strand) x round
+cartoon style (nucleic|strand) x rect
+cartoon style nucleic x round width 4 thick 4
+lighting shadows false
+lighting simple
+camera ortho
+lighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1
+lighting soft
+
+# bg and model colors
+set bgColor white
+style nucleic stick
+graphics silhouettes true
+cartoon style arrowScale 1.5
+color byhetero
+# Subunit colors from color_code/subunit_color_code.csv.
+# U1 snRNP: SNRNP70
+color #345.1/1A #8C3D78
+# U1 snRNP: SNRPC
+color #345.1/1C #D7A3CF
+# U1 snRNP: SNRPA
+color #345.1/1B #C07AB6
+# U1 snRNP: PRP42
+color #345.1/1J #7F5BA6
+# U1 snRNP: PRPF39
+color #345.1/1D #E1B8D9
+# U1 snRNP: NAM8
+color #345.1/1H #C7A6BE
+# U1 snRNP: SNU56
+color #345.1/1K #D65B96
+# U1 snRNP: SNU71
+color #345.1/1I #A95A9B
+# U1 snRNP: LUC7L
+color #345.1/1G #B03372
+# U1 Sm ring: U1-Sm SNRPB
+color #345.1/1SB #EAD7E8
+# U1 Sm ring: U1-Sm SNRPD1
+color #345.1/1S1 #EAD7E8
+# U1 Sm ring: U1-Sm SNRPD2
+color #345.1/1S2 #EAD7E8
+# U1 Sm ring: U1-Sm SNRPD3
+color #345.1/1S3 #EAD7E8
+# U1 Sm ring: U1-Sm SNRPE
+color #345.1/1SE #EAD7E8
+# U1 Sm ring: U1-Sm SNRPF
+color #345.1/1SF #EAD7E8
+# U1 Sm ring: U1-Sm SNRPG
+color #345.1/1SG #EAD7E8
+# U1 snRNP: U1 snRNA
+color #345.1/1 #D46BB8
+# RNA/substrate: mRNA
+color #345.1/M #303030
+# Named selections for canonical-chain subcomplexes.
+# RNA/substrate
+# selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
+name pdb_6N7R_RNA_substrate #345.1/M
+# U1 Sm ring
+# selector_meta {"color":"#B66AAE","family":"Protein/RNP groups","group":"U1 snRNP groups","kind":"subcomplex"}
+name pdb_6N7R_U1_Sm_ring #345.1/1S1,1S2,1S3,1SB,1SE,1SF,1SG
+# U1 snRNP
+# selector_meta {"color":"#B66AAE","family":"Protein/RNP groups","group":"U1 snRNP groups","kind":"subcomplex"}
+name pdb_6N7R_U1_snRNP #345.1/1,1A,1B,1C,1D,1G,1H,1I,1J,1K
+
+# Model-independent named selections for all renamed canonical-chain models.
+# Disassembly factors
+# selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
+name spliceosome_Disassembly_factors /D1,D2,D5,D6
+# EJC/mRNP
+# selector_meta {"color":"#EAA439","family":"Protein/RNP groups","group":"EJC/mRNP groups","kind":"subcomplex"}
+name spliceosome_EJC_mRNP /J1,J2,J3,J4,J5
+# NTC/NTR related
+# selector_meta {"color":"#F4BF67","family":"Protein/RNP groups","group":"NTC/NTR groups","kind":"subcomplex"}
+name spliceosome_NTC_NTR_related /NA,NB,NC,NF,NI,NL,NM,NP,NQ,NR,NW,NY
+# NTC/PRP19
+# selector_meta {"color":"#F4BF67","family":"Protein/RNP groups","group":"NTC/NTR groups","kind":"subcomplex"}
+name spliceosome_NTC_PRP19 /N1A,N1B,N1C,N1D,N2,N3,N4,N5
+# RNA-binding
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
+name spliceosome_RNA_binding /RA,RC
+# RNA/substrate
+# selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
+name spliceosome_RNA_substrate /I,IA,IB,IC,M,MA,MB,MC,MD
+# SR proteins
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
+name spliceosome_SR_proteins /RB
+# Second step factors
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
+name spliceosome_Second_step_factors /C1,C2,C3
+# Sm ring
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
+name spliceosome_Sm_ring /SA,SAA,SAB,SAC,SB,SBA,SBB,SC,SCA,SCB,SD,SDA,SDB,SE,SEA,SEB,SEC,SF,SFA,SFB,SFC,SG,SGA,SGB
+# U1 Sm ring
+# selector_meta {"color":"#B66AAE","family":"Protein/RNP groups","group":"U1 snRNP groups","kind":"subcomplex"}
+name spliceosome_U1_Sm_ring /1S1,1S2,1S3,1SB,1SE,1SF,1SG
+# U1 snRNP
+# selector_meta {"color":"#B66AAE","family":"Protein/RNP groups","group":"U1 snRNP groups","kind":"subcomplex"}
+name spliceosome_U1_snRNP /1,1A,1B,1C,1D,1E,1G,1H,1I,1J,1K
+# U11/U12 snRNP
+# selector_meta {"color":"#B66AAE","family":"Protein/RNP groups","group":"U1 snRNP groups","kind":"subcomplex"}
+name spliceosome_U11_U12_snRNP /11,12
+# U2 Sm ring
+# selector_meta {"color":"#BFE6BF","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
+name spliceosome_U2_Sm_ring /2S1,2S2,2S3,2SB,2SE,2SF,2SG
+# U2 snRNP
+# selector_meta {"color":"#2F8B4D","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
+name spliceosome_U2_snRNP /2,2K,2KA,2KB,2L,2M,2N,2O,2P,2Q,2R
+# U2/SF3B
+# selector_meta {"color":"#6DBE70","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
+name spliceosome_U2_SF3B /2A,2B,2C,2D,2E,2F,2FA,2FB,2G,2H,2I,2IA,2IB,2J,2JA,2JB
+# U4 Sm ring
+# selector_meta {"color":"#F5E85A","family":"Protein/RNP groups","group":"U4 snRNP groups","kind":"subcomplex"}
+name spliceosome_U4_Sm_ring /4S1,4S2,4S3,4SB,4SE,4SF,4SG
+# U4 snRNP
+# selector_meta {"color":"#D8C800","family":"Protein/RNP groups","group":"U4 snRNP groups","kind":"subcomplex"}
+name spliceosome_U4_snRNP /4
+# U4/U6 snRNP
+# selector_meta {"color":"#C3BA7A","family":"Protein/RNP groups","group":"U4/U6 groups","kind":"subcomplex"}
+name spliceosome_U4_U6_snRNP /4A,4B,4BA,4BB,4C,4D,6A,6B,6C
+# U4atac/U6atac snRNP
+# selector_meta {"color":"#D8C800","family":"Protein/RNP groups","group":"U4/U6 groups","kind":"subcomplex"}
+name spliceosome_U4atac_U6atac_snRNP /4AT,6AT
+# U5 Sm ring
+# selector_meta {"color":"#BFC3E8","family":"Protein/RNP groups","group":"U5 snRNP groups","kind":"subcomplex"}
+name spliceosome_U5_Sm_ring /5S1,5S2,5S3,5SB,5SE,5SF,5SG
+# U5 snRNP
+# selector_meta {"color":"#0000CD","family":"Protein/RNP groups","group":"U5 snRNP groups","kind":"subcomplex"}
+name spliceosome_U5_snRNP /5,5A,5B,5C,5D,5E,5F,5G,5H,5I
+# U6 LSm
+# selector_meta {"color":"#FECACA","family":"Protein/RNP groups","group":"U6 snRNP groups","kind":"subcomplex"}
+name spliceosome_U6_LSm /6L2,6L3,6L4,6L5,6L6,6L7,6L8
+# U6 snRNP
+# selector_meta {"color":"#DC143C","family":"Protein/RNP groups","group":"U6 snRNP groups","kind":"subcomplex"}
+name spliceosome_U6_snRNP /6,6R1,6R2
+# other
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
+name spliceosome_other /X0,X1,X2,X3,X4,X5,X6,X7,X8,X9,XA,XA0,XA1,XA2,XA3,XA4,XA5,XA6,XA7,XA8,XA9,XAA,XAB,XAC,XAD,XAE,XAF,XAG,XAH,XAI,XAJ,XAK,XAL,XALA,XALB,XAM,XAN,XAO,XAP,XAQ,XAR,XAS,XAT,XAU,XAV,XAW,XAX,XAY,XAZ,XB,XB0A,XB0B,XB1,XB2,XB3,XB4,XB5,XB6,XB7,XB8,XB9,XBA,XBB,XBC,XBD,XBDA,XBDB,XBE,XBF,XBG,XBH,XBI,XBJ,XBK,XBL,XBM,XBN,XBO,XBP,XBQ,XBR,XBS,XBT,XBU,XBV,XBW,XBX,XBY,XBZ,XCA,XCB,XCC,XCD,XCE,XCF,XCG,XD,XEA,XEB,XF,XG,XH,XI,XJ,XK,XL,XM,XN,XO,XP,XQ,XR,XS,XT,XU,XV,XW,XX,XY,XZ
+# Named selections for resolved substrate RNA features.
+# 5' exon: residues -2--1, five-ss-inference, medium confidence, validation not_applicable
+# selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name E_complex_6N7R_5exon #345.1/M:-2--1
+# substrate RNA: residues -2,-1,1,2,3,4,5,6,7,8,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156, component, medium confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name E_complex_6N7R_substrate #345.1/M:-2,-1,1,2,3,4,5,6,7,8,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156
+# 5' splice site: residues 1-6, network-scored-motif, high confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name E_complex_6N7R_5SS #345.1/M:1-6
+# intron from 5' splice site: residues 1,2,3,4,5,6,7,8,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156, five-ss-inference, low confidence, validation not_applicable
+# selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name E_complex_6N7R_intron #345.1/M:1,2,3,4,5,6,7,8,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156
+# Named selections for resolved snRNA functional regions.
+# U1 snRNA 5' splice-site recognition region: residues 1-10, review-region, medium confidence
+# selector_meta {"color":"#B66AAE","family":"RNA","feature":"U1_5prime_5SS_recognition","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
+name E_complex_6N7R_U1_5_5SS_recognition #345.1/1:1-10
+# U1 snRNA stem-loop 1: residues 11-25;33-45, review-region, low confidence
+# selector_meta {"color":"#BF72B7","family":"RNA","feature":"U1_SL1","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
+name E_complex_6N7R_U1_SL1 #345.1/1:11-25,33-45
+# U1 snRNA stem-loop 2: residues 46-95, review-region, low confidence
+# selector_meta {"color":"#AD62A6","family":"RNA","feature":"U1_SL2","group":"internal stem loops","group_key":"internal_stem_loops","kind":"rna_feature"}
+name E_complex_6N7R_U1_SL2 #345.1/1:46-95
+# U1 snRNA Sm site: residues 224-230; 241-247; 553-559, sequence-motif, medium confidence
+# selector_meta {"color":"#C783BF","family":"RNA","feature":"U1_Sm_site","group":"other snRNA regions","group_key":"other_snRNA_regions","kind":"rna_feature"}
+name E_complex_6N7R_U1_Sm_site #345.1/1:224-230|#345.1/1:241-247|#345.1/1:553-559
+# RNA feature nucleotide display.
+select #345.1 & nucleic
+nucleotides sel atoms
+select clear
+# 5' exon: residues -2--1
+color #345.1/M:-2--1 #FF8C00
+select #345.1/M:-2--1
+nucleotides sel fill
+select clear
+# 5'SS: residues 1-6
+# intron: residues 1,2,3,4,5,6,7,8,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156
+# U1 5'SS recog.: residues 1-10
+color #345.1/1:1-10 #B66AAE
+select #345.1/1:1-10
+nucleotides sel fill
+select clear
+# U1 SL1: residues 11-25;33-45
+color #345.1/1:11-25,33-45 #BF72B7
+select #345.1/1:11-25,33-45
+nucleotides sel fill
+select clear
+# U1 SL2: residues 46-95
+color #345.1/1:46-95 #AD62A6
+select #345.1/1:46-95
+nucleotides sel fill
+select clear
+# U1 Sm site: residues 224-230; 241-247; 553-559
+color #345.1/1:224-230|#345.1/1:241-247|#345.1/1:553-559 #C783BF
+select #345.1/1:224-230|#345.1/1:241-247|#345.1/1:553-559
+nucleotides sel fill
+select clear
+# RNA feature 3D residue labels.
+# Labels are created as independent grouped models under #345.2.
+# Fetch and run the self-contained RNA label script from GitHub.
+open https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts_systematic_with_primary_maps/label_scripts/6n7r_rna_labels.py
+# Searchable named selection browser.
+# In GUI ChimeraX this opens a small panel for selecting, zooming, and toggling RNA labels.
+# Fetch and open the self-contained named selection browser from GitHub.
+open https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts_systematic_with_primary_maps/selection_browser_scripts/6n7r_selection_browser.py
+view
+show nucleic

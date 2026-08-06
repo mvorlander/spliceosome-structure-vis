@@ -5,11 +5,12 @@
 Lightweight static dashboard for copying ChimeraX scripts for spliceosome cryo-EM PDB entries.
 
 - 136 deposited PDB entries.
-- Original deposited chain identifiers only.
+- Original deposited chain identifiers by default, with optional in-session systematic chain renaming.
 - Thumbnail PNGs and RNA 2D preview panels are included.
 - No mmCIF files, local CIF models, or large map binaries are included.
 - ChimeraX scripts use `open <pdb_id>` so ChimeraX downloads structures directly from the PDB.
 - Primary-map script variants use `open emdb:<id>` so ChimeraX can download deposited primary EMDB maps on demand.
+- Systematic-chain script variants use model-scoped two-step `changechains` commands through temporary safe-harbor IDs; no renamed CIF files are bundled.
 - GUI ChimeraX scripts fetch a small named-selection browser from GitHub for search, select, zoom, and RNA-label toggle actions.
 
 Open `index.html` locally, or use the GitHub Pages dashboard:
