@@ -790,6 +790,14 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <circle cx="1694.1" cy="988.7" r="9.2" fill="#303030" opacity="0.22"><title>intron; confidence medium</title></circle>
 <circle cx="1709.6" cy="988.7" r="9.2" fill="#303030" opacity="0.22"><title>intron; confidence medium</title></circle>
 <circle cx="1725.0" cy="988.7" r="9.2" fill="#303030" opacity="0.22"><title>intron; confidence medium</title></circle>
+<circle cx="1601.5" cy="988.7" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1617.0" cy="988.7" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1632.4" cy="988.7" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1647.8" cy="988.7" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1663.3" cy="988.7" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1678.7" cy="988.7" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1694.1" cy="988.7" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1678.7" cy="988.7" r="9.2" fill="#303030" opacity="0.28"><title>branch point adenosine; confidence high</title></circle>
 <text x="1015.0" y="988.7" class="base" fill="#303030"><title>/Z seq 50 auth 50</title>C</text>
 <text x="1025.0" y="976.7" class="small" fill="#94a3b8">50</text>
 <text x="1030.4" y="988.7" class="base" fill="#303030"><title>/Z seq 51 auth 51</title>U</text>
@@ -845,6 +853,10 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <text x="1120.2" y="968.4" class="feature-label" text-anchor="start" fill="#FF8C00">5&#x27; exon nt 50-58</text>
 <path d="M1192.5,988.7 L1236.0,1009.0" class="feature-callout" stroke="#303030" opacity="0.60"/>
 <text x="1236.0" y="1009.0" class="feature-label" text-anchor="start" fill="#303030">5&#x27;SS nt 59-64</text>
+<path d="M1647.8,988.7 L1606.3,964.7" class="feature-callout" stroke="#303030" opacity="0.60"/>
+<text x="1606.3" y="964.7" class="feature-label" text-anchor="end" fill="#303030">BP region nt 150-156</text>
+<path d="M1678.7,988.7 L1637.1,1012.7" class="feature-callout" stroke="#303030" opacity="0.60"/>
+<text x="1637.1" y="1012.7" class="feature-label" text-anchor="end" fill="#303030">BP-A nt 155</text>
 <path d="M173.1,451.5 Q471.8,406.5 770.5,1046.8" class="inter" stroke-width="3.1"><title>2:3-12 to 6:86-95; 9 FR3D interactions; cWW</title></path>
 <path d="M308.0,451.5 Q974.0,406.5 1640.1,988.7" class="inter" stroke-width="1.5"><title>2:35-36 to Z:152-153; 2 FR3D interactions; cWW</title></path>
 <path d="M407.8,451.5 Q954.5,406.5 1501.2,988.7" class="inter" stroke-width="1.5"><title>2:44-45 to Z:143-144; 2 FR3D interactions; cWW</title></path>
@@ -868,24 +880,28 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <text x="510.0" y="1390.0" class="small">five prime splice site</text>
 <circle cx="707.0" cy="1386.0" r="7" fill="#303030" opacity="0.28"/>
 <text x="720.0" y="1390.0" class="small">intron</text>
-<circle cx="917.0" cy="1386.0" r="7" fill="#0b6e2d" opacity="0.28"/>
-<text x="930.0" y="1390.0" class="small">U2 branchpoint pairing region</text>
-<circle cx="1127.0" cy="1386.0" r="7" fill="#167a38" opacity="0.28"/>
-<text x="1140.0" y="1390.0" class="small">U2 stem IIa</text>
-<circle cx="1337.0" cy="1386.0" r="7" fill="#2f8b4d" opacity="0.28"/>
-<text x="1350.0" y="1390.0" class="small">U2 Sm site</text>
-<circle cx="1547.0" cy="1386.0" r="7" fill="#1b3cd0" opacity="0.28"/>
-<text x="1560.0" y="1390.0" class="small">U5 loop I</text>
-<circle cx="77.0" cy="1409.0" r="7" fill="#dc143c" opacity="0.28"/>
-<text x="90.0" y="1413.0" class="small">U6 5prime terminal stem loop</text>
-<circle cx="287.0" cy="1409.0" r="7" fill="#d0183c" opacity="0.28"/>
-<text x="300.0" y="1413.0" class="small">U6 U2 helix I partner</text>
-<circle cx="497.0" cy="1409.0" r="7" fill="#e01842" opacity="0.28"/>
-<text x="510.0" y="1413.0" class="small">U6 5SS upstream contact</text>
-<circle cx="707.0" cy="1409.0" r="7" fill="#dc143c" opacity="0.28"/>
-<text x="720.0" y="1413.0" class="small">U6 ACAGAGA box</text>
-<circle cx="917.0" cy="1409.0" r="7" fill="#d61a3d" opacity="0.28"/>
-<text x="930.0" y="1413.0" class="small">U6 ISL</text>
-<circle cx="1127.0" cy="1409.0" r="7" fill="#c91236" opacity="0.28"/>
-<text x="1140.0" y="1413.0" class="small">U6 AGC catalytic triad</text>
+<circle cx="917.0" cy="1386.0" r="7" fill="#303030" opacity="0.28"/>
+<text x="930.0" y="1390.0" class="small">branch point region</text>
+<circle cx="1127.0" cy="1386.0" r="7" fill="#303030" opacity="0.28"/>
+<text x="1140.0" y="1390.0" class="small">branch point adenosine</text>
+<circle cx="1337.0" cy="1386.0" r="7" fill="#0b6e2d" opacity="0.28"/>
+<text x="1350.0" y="1390.0" class="small">U2 branchpoint pairing region</text>
+<circle cx="1547.0" cy="1386.0" r="7" fill="#167a38" opacity="0.28"/>
+<text x="1560.0" y="1390.0" class="small">U2 stem IIa</text>
+<circle cx="77.0" cy="1409.0" r="7" fill="#2f8b4d" opacity="0.28"/>
+<text x="90.0" y="1413.0" class="small">U2 Sm site</text>
+<circle cx="287.0" cy="1409.0" r="7" fill="#1b3cd0" opacity="0.28"/>
+<text x="300.0" y="1413.0" class="small">U5 loop I</text>
+<circle cx="497.0" cy="1409.0" r="7" fill="#dc143c" opacity="0.28"/>
+<text x="510.0" y="1413.0" class="small">U6 5prime terminal stem loop</text>
+<circle cx="707.0" cy="1409.0" r="7" fill="#d0183c" opacity="0.28"/>
+<text x="720.0" y="1413.0" class="small">U6 U2 helix I partner</text>
+<circle cx="917.0" cy="1409.0" r="7" fill="#e01842" opacity="0.28"/>
+<text x="930.0" y="1413.0" class="small">U6 5SS upstream contact</text>
+<circle cx="1127.0" cy="1409.0" r="7" fill="#dc143c" opacity="0.28"/>
+<text x="1140.0" y="1413.0" class="small">U6 ACAGAGA box</text>
+<circle cx="1337.0" cy="1409.0" r="7" fill="#d61a3d" opacity="0.28"/>
+<text x="1350.0" y="1413.0" class="small">U6 ISL</text>
+<circle cx="1547.0" cy="1409.0" r="7" fill="#c91236" opacity="0.28"/>
+<text x="1560.0" y="1413.0" class="small">U6 AGC catalytic triad</text>
 </svg>
