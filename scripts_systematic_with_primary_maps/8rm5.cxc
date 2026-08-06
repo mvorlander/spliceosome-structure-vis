@@ -286,6 +286,9 @@ name pre_B_8RM5_substrate #357.1/MA:29-43|#357.1/MB:-3,-2,-1,1,2,3,4,5,6,7,8,9,1
 # intron: residues 1-15; 29-43, five-ss-inference/splice-site-inference, low/medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_B_8RM5_intron #357.1/MA:29-43|#357.1/MB:1-15
+# branch point region: residues 29-43, u2-branch-region-basepair, medium confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"branch_point_region","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name pre_B_8RM5_branch_region #357.1/MA:29-43
 # 5' exon: residues -3--1, five-ss-inference, medium confidence, validation not_applicable
 # selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name pre_B_8RM5_5exon #357.1/MB:-3--1
@@ -349,6 +352,7 @@ select #357.1 & nucleic
 nucleotides sel atoms
 select clear
 # intron: residues 1-15; 29-43
+# BP region: residues 29-43
 # 5' exon: residues -3--1
 color #357.1/MB:-3--1 #FF8C00
 select #357.1/MB:-3--1

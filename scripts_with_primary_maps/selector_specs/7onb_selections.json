@@ -60,24 +60,6 @@
       "color": "#9CA3AF"
     },
     {
-      "name": "U2_snRNP_7ONB_5exon",
-      "label": "5' exon",
-      "category": "substrate RNA feature",
-      "section": "Named selections for resolved substrate RNA features.",
-      "comment": "5' exon: residues 129-142, five-ss-inference, medium confidence, validation not_applicable",
-      "atomspec": "#305.1/G:129-142",
-      "family": "RNA",
-      "group": "pre-mRNA features",
-      "group_key": "pre_mRNA_features",
-      "kind": "rna_feature",
-      "feature": "exon_5",
-      "color": "#FF8C00",
-      "label_model_id": "305.2.1.1",
-      "label_category_model_id": "305.2.1",
-      "label_group_model_id": "305.2",
-      "label_default_visible": "true"
-    },
-    {
       "name": "U2_snRNP_7ONB_substrate",
       "label": "substrate RNA",
       "category": "substrate RNA feature",
@@ -90,6 +72,24 @@
       "kind": "rna_feature",
       "feature": "substrate",
       "color": "#303030"
+    },
+    {
+      "name": "U2_snRNP_7ONB_branch_region",
+      "label": "branch point region",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point region: residues 129-142, u2-branch-region-basepair, high confidence, validation validated",
+      "atomspec": "#305.1/G:129-142",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "pre_mRNA_features",
+      "kind": "rna_feature",
+      "feature": "branch_point_region",
+      "color": "#303030",
+      "label_model_id": "305.2.1.1",
+      "label_category_model_id": "305.2.1",
+      "label_group_model_id": "305.2",
+      "label_default_visible": "true"
     },
     {
       "name": "U2_snRNP_7ONB_U2_branchpoint_pairing_region",

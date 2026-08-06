@@ -492,6 +492,24 @@
       "label_default_visible": "true"
     },
     {
+      "name": "E_complex_7OQE_branch_region",
+      "label": "branch point region",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point region: residues 246-268; 260-267, network-scored-motif/u2-branch-region-basepair, high confidence, validation validated",
+      "atomspec": "#325.1/M:246-268|#325.1/M:260-267",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "pre_mRNA_features",
+      "kind": "rna_feature",
+      "feature": "branch_point_region",
+      "color": "#303030",
+      "label_model_id": "325.2.1.4",
+      "label_category_model_id": "325.2.1",
+      "label_group_model_id": "325.2",
+      "label_default_visible": "true"
+    },
+    {
       "name": "E_complex_7OQE_U1_5_5SS_recognition",
       "label": "U1 snRNA 5' splice-site recognition region",
       "category": "snRNA feature",

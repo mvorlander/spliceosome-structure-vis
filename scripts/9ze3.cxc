@@ -89,6 +89,9 @@ name pdb_9ZE3_other #320.1/C
 # substrate RNA: residues -18-25, component, medium confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"substrate","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name U2_snRNP_9ZE3_substrate #320.1/R:-18-25
+# branch point region: residues -7--3, u2-branch-region-basepair, medium confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"branch_point_region","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name U2_snRNP_9ZE3_branch_region #320.1/R:-7--3
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence
 # selector_meta {"color":"#0B6E2D","family":"RNA","feature":"U2_branchpoint_pairing_region","group":"snRNA-pre-mRNA regions","group_key":"snRNA_pre_mRNA_regions","kind":"rna_feature"}
@@ -97,6 +100,7 @@ name U2_snRNP_9ZE3_U2_branchpoint_pairing_region #320.1/2:32-41
 select #320.1 & nucleic
 nucleotides sel atoms
 select clear
+# BP region: residues -7--3
 # U2 BP pairing: residues 32-41
 color #320.1/2:32-41 #0B6E2D
 select #320.1/2:32-41

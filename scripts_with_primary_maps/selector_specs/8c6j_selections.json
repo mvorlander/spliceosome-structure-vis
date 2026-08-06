@@ -240,6 +240,24 @@
       "label_default_visible": "true"
     },
     {
+      "name": "Cstar_8C6J_branch_region",
+      "label": "branch point region",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point region: residues 147-151, network-scored-motif, high confidence, validation validated",
+      "atomspec": "#415.1/I:147-151",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "pre_mRNA_features",
+      "kind": "rna_feature",
+      "feature": "branch_point_region",
+      "color": "#303030",
+      "label_model_id": "415.2.1.4",
+      "label_category_model_id": "415.2.1",
+      "label_group_model_id": "415.2",
+      "label_default_visible": "true"
+    },
+    {
       "name": "Cstar_8C6J_U2_U6_helix_I_partner",
       "label": "U2 snRNA U2/U6 helix I partner",
       "category": "snRNA feature",

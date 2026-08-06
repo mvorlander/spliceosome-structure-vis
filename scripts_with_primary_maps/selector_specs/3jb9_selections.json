@@ -208,6 +208,24 @@
       "color": "#303030"
     },
     {
+      "name": "ILS_disassembly_3JB9_branch_region",
+      "label": "branch point region",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point region: residues 492-504; 496-502, network-scored-motif/u2-branch-region-basepair, high confidence, validation validated",
+      "atomspec": "#424.1/Q:492-504|#424.1/Q:496-502",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "pre_mRNA_features",
+      "kind": "rna_feature",
+      "feature": "branch_point_region",
+      "color": "#303030",
+      "label_model_id": "424.2.1.3",
+      "label_category_model_id": "424.2.1",
+      "label_group_model_id": "424.2",
+      "label_default_visible": "true"
+    },
+    {
       "name": "ILS_disassembly_3JB9_U2_U6_helix_I_partner",
       "label": "U2 snRNA U2/U6 helix I partner",
       "category": "snRNA feature",

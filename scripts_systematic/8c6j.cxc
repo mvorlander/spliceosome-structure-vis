@@ -297,6 +297,9 @@ name Cstar_8C6J_5SS #415.1/I:1-6
 # intron: residues 1-22;132-193, component-name, high confidence, validation not_applicable
 # selector_meta {"color":"#303030","family":"RNA","feature":"intron","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
 name Cstar_8C6J_intron #415.1/I:1-22,132-193
+# branch point region: residues 147-151, network-scored-motif, high confidence, validation validated
+# selector_meta {"color":"#303030","family":"RNA","feature":"branch_point_region","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
+name Cstar_8C6J_branch_region #415.1/I:147-151
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
 # selector_meta {"color":"#047857","family":"RNA","feature":"U2_U6_helix_I_partner","group":"snRNA-snRNA interacting regions","group_key":"snRNA_snRNA_regions","kind":"rna_feature"}
@@ -345,6 +348,7 @@ nucleotides sel fill
 select clear
 # 5'SS: residues 1-6
 # intron: residues 1-22;132-193
+# BP region: residues 147-151
 # U2/U6 helix I: residues 26-30
 color #415.1/2:26-30 #047857
 select #415.1/2:26-30

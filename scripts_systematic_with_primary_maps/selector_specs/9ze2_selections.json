@@ -410,6 +410,24 @@
       "color": "#303030"
     },
     {
+      "name": "U2_snRNP_9ZE2_branch_region",
+      "label": "branch point region",
+      "category": "substrate RNA feature",
+      "section": "Named selections for resolved substrate RNA features.",
+      "comment": "branch point region: residues -7--2, u2-branch-region-basepair, high confidence, validation validated",
+      "atomspec": "#319.1/M:-7--2",
+      "family": "RNA",
+      "group": "pre-mRNA features",
+      "group_key": "pre_mRNA_features",
+      "kind": "rna_feature",
+      "feature": "branch_point_region",
+      "color": "#303030",
+      "label_model_id": "319.2.1.1",
+      "label_category_model_id": "319.2.1",
+      "label_group_model_id": "319.2",
+      "label_default_visible": "true"
+    },
+    {
       "name": "U2_snRNP_9ZE2_U2_branchpoint_pairing_region",
       "label": "U2 snRNA branchpoint pairing region",
       "category": "snRNA feature",
@@ -422,8 +440,8 @@
       "kind": "rna_feature",
       "feature": "U2_branchpoint_pairing_region",
       "color": "#0B6E2D",
-      "label_model_id": "319.2.1.1",
-      "label_category_model_id": "319.2.1",
+      "label_model_id": "319.2.2.1",
+      "label_category_model_id": "319.2.2",
       "label_group_model_id": "319.2",
       "label_default_visible": "true"
     }
