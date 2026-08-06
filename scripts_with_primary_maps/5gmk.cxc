@@ -94,6 +94,8 @@ color #309.1/p #FFFFAB
 color #309.1/q #FFFFAB
 # PRPF19
 color #309.1/r #FFFFAB
+# BCAS2
+color #309.1/t #FFDAB9
 # U5-Sm SNRPB
 color #309.1/k #B0C4DE
 # U2-Sm SNRPB
@@ -135,7 +137,7 @@ name pdb_5GMK_EJC_mRNP #309.1/Z
 name pdb_5GMK_NTC_NTR_related #309.1/H,I,P,Q,R,T,d,v
 # NTC/PRP19
 # selector_meta {"color":"#F4BF67","family":"Protein/RNP groups","group":"NTC/NTR groups","kind":"subcomplex"}
-name pdb_5GMK_NTC_PRP19 #309.1/O,S,c,o,p,q,r
+name pdb_5GMK_NTC_PRP19 #309.1/O,S,c,o,p,q,r,t
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_5GMK_RNA_substrate #309.1/B,M,N
@@ -159,7 +161,7 @@ name pdb_5GMK_U5_snRNP #309.1/A,C,D
 name pdb_5GMK_U6_snRNP #309.1/E
 # other
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
-name pdb_5GMK_other #309.1/G,J,t
+name pdb_5GMK_other #309.1/G,J
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues 87-99, component-name, high confidence, validation not_applicable
 # selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}

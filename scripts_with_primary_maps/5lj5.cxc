@@ -124,6 +124,8 @@ color #311.1/u #FFFFAB
 color #311.1/v #FFFFAB
 # PRPF19
 color #311.1/w #FFFFAB
+# BCAS2
+color #311.1/s #FFDAB9
 # Named selections for subcomplexes using original deposited chain IDs.
 # EJC/mRNP
 # selector_meta {"color":"#EAA439","family":"Protein/RNP groups","group":"EJC/mRNP groups","kind":"subcomplex"}
@@ -133,7 +135,7 @@ name pdb_5LJ5_EJC_mRNP #311.1/H
 name pdb_5LJ5_NTC_NTR_related #311.1/G,K,L,M,N,S,T
 # NTC/PRP19
 # selector_meta {"color":"#F4BF67","family":"Protein/RNP groups","group":"NTC/NTR groups","kind":"subcomplex"}
-name pdb_5LJ5_NTC_PRP19 #311.1/J,O,P,t,u,v,w
+name pdb_5LJ5_NTC_PRP19 #311.1/J,O,P,s,t,u,v,w
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_5LJ5_RNA_substrate #311.1/E,I
@@ -154,7 +156,7 @@ name pdb_5LJ5_U5_snRNP #311.1/A,B,C,U
 name pdb_5LJ5_U6_snRNP #311.1/V
 # other
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
-name pdb_5LJ5_other #311.1/F,Q,R,s,x
+name pdb_5LJ5_other #311.1/F,Q,R,x
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -16--1, component-name, high confidence, validation not_applicable
 # selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}

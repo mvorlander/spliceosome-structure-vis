@@ -15,7 +15,7 @@ open 8q7n id 391.1 name 8Q7N
 # Rename 8Q7N chains to systematic project IDs.
 # Temporary safe-harbor IDs avoid collisions with deposited or target chain IDs.
 changechains #391.1 4,5,6,7,A,C,D,F,I,J,K,L,M,N,Q,S,T,X,Z,r,s TMP001,TMP002,TMP003,TMP004,TMP005,TMP006,TMP007,TMP008,TMP009,TMP010,TMP011,TMP012,TMP013,TMP014,TMP015,TMP016,TMP017,TMP018,TMP019,TMP020,TMP021 log false
-changechains #391.1 TMP001,TMP002,TMP003,TMP004,TMP005,TMP006,TMP007,TMP008,TMP009,TMP010,TMP011,TMP012,TMP013,TMP014,TMP015,TMP016,TMP017,TMP018,TMP019,TMP020,TMP021 4,5,6,2H,5A,5C,6B,4B,XA7,4A,XAO,4C,4D,5D,NB,5H,XP,XAE,M,XCG,XBO log false
+changechains #391.1 TMP001,TMP002,TMP003,TMP004,TMP005,TMP006,TMP007,TMP008,TMP009,TMP010,TMP011,TMP012,TMP013,TMP014,TMP015,TMP016,TMP017,TMP018,TMP019,TMP020,TMP021 4,5,6,2H,5A,5C,6B,4B,XA7,4A,XAO,4C,4D,5D,NB,5H,XP,XAE,M,XCE,XBN log false
 open emdb:18225 id 391.3.1 name B_8q7n_EMD-18225_primary_map
 rename #391 B_8q7n_structure
 
@@ -71,9 +71,9 @@ color #391.1/XAE #B03B66
 # RNA/substrate: mRNA
 color #391.1/M #303030
 # other: ZMAT2
-color #391.1/XCG #FFB6C1
+color #391.1/XCE #FFB6C1
 # other: UBL5
-color #391.1/XBO #DB7093
+color #391.1/XBN #DB7093
 # U4/U6 snRNP: PRPF31
 color #391.1/4C #DFD570
 # U4/U6 snRNP: PRPF4
@@ -114,7 +114,7 @@ name pdb_8Q7N_U5_snRNP #391.1/5,5A,5C,5D,5H
 name pdb_8Q7N_U6_snRNP #391.1/6
 # other
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
-name pdb_8Q7N_other #391.1/XA7,XAE,XAO,XBO,XCG,XP
+name pdb_8Q7N_other #391.1/XA7,XAE,XAO,XBN,XCE,XP
 
 # Model-independent named selections for all renamed canonical-chain models.
 # Disassembly factors
@@ -188,7 +188,7 @@ name spliceosome_U6_LSm /6L2,6L3,6L4,6L5,6L6,6L7,6L8
 name spliceosome_U6_snRNP /6,6R1,6R2
 # other
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
-name spliceosome_other /X0,X1,X2,X3,X4,X5,X6,X7,X8,X9,XA,XA0,XA1,XA2,XA3,XA4,XA5,XA6,XA7,XA8,XA9,XAA,XAB,XAC,XAD,XAE,XAF,XAG,XAH,XAI,XAJ,XAK,XAL,XALA,XALB,XAM,XAN,XAO,XAP,XAQ,XAR,XAS,XAT,XAU,XAV,XAW,XAX,XAY,XAZ,XB,XB0A,XB0B,XB1,XB2,XB3,XB4,XB5,XB6,XB7,XB8,XB9,XBA,XBB,XBC,XBD,XBDA,XBDB,XBE,XBF,XBG,XBH,XBI,XBJ,XBK,XBL,XBM,XBN,XBO,XBP,XBQ,XBR,XBS,XBT,XBU,XBV,XBW,XBX,XBY,XBZ,XCA,XCB,XCC,XCD,XCE,XCF,XCG,XD,XEA,XEB,XF,XG,XH,XI,XJ,XK,XL,XM,XN,XO,XP,XQ,XR,XS,XT,XU,XV,XW,XX,XY,XZ
+name spliceosome_other /X0,X1,X2,X3,X4,X5,X6,X7,X8,X9,XA,XA0,XA1,XA2,XA3,XA4,XA5,XA6,XA7,XA8,XA9,XAA,XAB,XAC,XAD,XAE,XAF,XAG,XAH,XAI,XAJ,XAK,XAL,XALA,XALB,XAM,XAN,XAO,XAP,XAQ,XAR,XAS,XAT,XAU,XAV,XAW,XAX,XAY,XAZ,XB,XB0,XB1,XB2,XB3,XB4,XB5,XB6,XB7,XB8,XB9,XBA,XBB,XBC,XBD,XBDA,XBDB,XBE,XBF,XBG,XBH,XBI,XBJ,XBK,XBL,XBM,XBN,XBO,XBP,XBQ,XBR,XBS,XBT,XBU,XBV,XBW,XBX,XBY,XBZA,XBZB,XCA,XCB,XCC,XCD,XCE,XD,XEA,XEB,XF,XG,XH,XI,XJ,XK,XL,XM,XN,XO,XP,XQ,XR,XS,XT,XU,XV,XW,XX,XY,XZ
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues 49-58, splice-site-inference, medium confidence, validation not_applicable
 # selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}

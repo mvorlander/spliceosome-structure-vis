@@ -81,6 +81,8 @@ color #343.1/v #FF957B
 color #343.1/a #DAF7A6
 # SNRPA1
 color #343.1/b #58D68D
+# BCAS2
+color #343.1/t #FFDAB9
 # U5-Sm SNRPE
 color #343.1/i #B0C4DE
 # U2-Sm SNRPE
@@ -128,7 +130,7 @@ name pdb_6J6Q_EJC_mRNP #343.1/Z
 name pdb_6J6Q_NTC_NTR_related #343.1/H,I,P,Q,R,T,d,v
 # NTC/PRP19
 # selector_meta {"color":"#F4BF67","family":"Protein/RNP groups","group":"NTC/NTR groups","kind":"subcomplex"}
-name pdb_6J6Q_NTC_PRP19 #343.1/O,S,c,o,p,q,r
+name pdb_6J6Q_NTC_PRP19 #343.1/O,S,c,o,p,q,r,t
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_6J6Q_RNA_substrate #343.1/B
@@ -152,7 +154,7 @@ name pdb_6J6Q_U5_snRNP #343.1/A,C,D
 name pdb_6J6Q_U6_snRNP #343.1/E
 # other
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
-name pdb_6J6Q_other #343.1/J,t
+name pdb_6J6Q_other #343.1/J
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -12-0, splice-site-inference, medium confidence, validation not_applicable
 # selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}

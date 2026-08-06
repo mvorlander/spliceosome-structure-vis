@@ -51,6 +51,8 @@ color #321.1/D #EF4444
 color #321.1/E #303030
 # U2 snRNA
 color #321.1/F #71C562
+# BCAS2
+color #321.1/G #FFDAB9
 # SYF1
 color #321.1/H #FF957B
 # CRNKL1
@@ -128,7 +130,7 @@ name pdb_5YLZ_EJC_mRNP #321.1/S
 name pdb_5YLZ_NTC_NTR_related #321.1/H,I,K,L,M,N,Q
 # NTC/PRP19
 # selector_meta {"color":"#F4BF67","family":"Protein/RNP groups","group":"NTC/NTR groups","kind":"subcomplex"}
-name pdb_5YLZ_NTC_PRP19 #321.1/J,O,P,q,r,s,t
+name pdb_5YLZ_NTC_PRP19 #321.1/G,J,O,P,q,r,s,t
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_5YLZ_RNA_substrate #321.1/E
@@ -152,7 +154,7 @@ name pdb_5YLZ_U5_snRNP #321.1/A,B,C
 name pdb_5YLZ_U6_snRNP #321.1/D
 # other
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
-name pdb_5YLZ_other #321.1/G,R,U
+name pdb_5YLZ_other #321.1/R,U
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -13--1, splice-site-inference, medium confidence, validation not_applicable
 # selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}

@@ -52,6 +52,8 @@ color #320.1/D #EF4444
 color #320.1/E #303030
 # U2 snRNA
 color #320.1/F #71C562
+# BCAS2
+color #320.1/G #FFDAB9
 # SYF1
 color #320.1/H #FF957B
 # CRNKL1
@@ -133,7 +135,7 @@ name pdb_5Y88_Disassembly_factors #320.1/U,V
 name pdb_5Y88_NTC_NTR_related #320.1/H,I,K,L,M,N,Q
 # NTC/PRP19
 # selector_meta {"color":"#F4BF67","family":"Protein/RNP groups","group":"NTC/NTR groups","kind":"subcomplex"}
-name pdb_5Y88_NTC_PRP19 #320.1/J,O,P,q,r,s,t
+name pdb_5Y88_NTC_PRP19 #320.1/G,J,O,P,q,r,s,t
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_5Y88_RNA_substrate #320.1/E
@@ -157,7 +159,7 @@ name pdb_5Y88_U5_snRNP #320.1/A,B,C
 name pdb_5Y88_U6_snRNP #320.1/D,x
 # other
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
-name pdb_5Y88_other #320.1/G,T
+name pdb_5Y88_other #320.1/T
 # Named selections for resolved substrate RNA features.
 # 5' splice site: residues 1-6, network-scored-motif, medium confidence, validation validated
 # selector_meta {"color":"#303030","family":"RNA","feature":"five_prime_splice_site","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}

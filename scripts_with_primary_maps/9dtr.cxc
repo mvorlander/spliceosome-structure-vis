@@ -114,6 +114,8 @@ color #418.1/j #B0C4DE
 color #418.1/m #D5F5E3
 # PRPF17
 color #418.1/o #FFF7C9
+# BCAS2
+color #418.1/s #FFDAB9
 # PRPF19
 color #418.1/t #FFFFAB
 # PRPF19
@@ -133,7 +135,7 @@ name pdb_9DTR_EJC_mRNP #418.1/H
 name pdb_9DTR_NTC_NTR_related #418.1/G,K,L,M,N,S,T,y
 # NTC/PRP19
 # selector_meta {"color":"#F4BF67","family":"Protein/RNP groups","group":"NTC/NTR groups","kind":"subcomplex"}
-name pdb_9DTR_NTC_PRP19 #418.1/J,O,P,t,u,v,w
+name pdb_9DTR_NTC_PRP19 #418.1/J,O,P,s,t,u,v,w
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_9DTR_RNA_substrate #418.1/E,I
@@ -157,7 +159,7 @@ name pdb_9DTR_U5_snRNP #418.1/5,A,C
 name pdb_9DTR_U6_snRNP #418.1/6
 # other
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
-name pdb_9DTR_other #418.1/D,R,Z,a,s
+name pdb_9DTR_other #418.1/D,R,Z,a
 # Named selections for resolved substrate RNA features.
 # ligated exons: residues -14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11;14-21, component-name, high confidence, validation not_applicable
 # selector_meta {"color":"#FF8C00","family":"RNA","feature":"ligated_exons","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}
