@@ -150,6 +150,8 @@
     .palette-row { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
     .palette-chip { display:inline-flex; align-items:center; gap:4px; border:1px solid var(--line); border-radius:999px; padding:3px 8px; background:#fff; font-size:12px; max-width:190px; }
     .palette-chip span:last-child { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .systematic-id-row { display:flex; align-items:baseline; gap:6px; margin:1px 0; }
+    .systematic-id-row code { min-width:34px; }
     @media (max-width:1100px) { .app, .workspace { grid-template-columns:1fr; } aside { position:static; height:auto; border-right:0; border-bottom:1px solid var(--line); } .stats { grid-template-columns:repeat(2,1fr); } .table-wrap { max-height:none; } .detail-grid { grid-template-columns:1fr; } .proximity-controls { grid-template-columns:repeat(2,minmax(180px,1fr)); } }
     @media (max-width:680px) { main { padding:12px; } .topbar { align-items:start; flex-direction:column; } th:nth-child(4),td:nth-child(4),th:nth-child(6),td:nth-child(6) { display:none; } }
     </style>
@@ -224,7 +226,7 @@
         <section class="panel"><div class="panel-head"><h2>Protein Complex Guide</h2><span class="subtle">when complexes join, leave, and remodel the spliceosome</span></div><div class="panel-body"><div class="doc-grid" id="proteinComplexGuide"></div></div></section>
       </div>
       <div id="proteinsView" hidden>
-        <section class="panel"><div class="panel-head"><h2>Protein Color And Homolog Lookup</h2><span class="subtle" id="proteinCount"></span></div><div class="panel-body"><p class="subtle">Protein class/family labels, aliases, and homolog annotations were cross-checked against <a href="https://spliceosomedb.ucsc.edu/" target="_blank" rel="noreferrer">SpliceosomeDB</a> and its associated database paper (Cvitkovic and Jurica, <em>Nucleic Acids Research</em> 2013, 41:D132-D141, doi:10.1093/nar/gks999; <a href="https://pubmed.ncbi.nlm.nih.gov/23118483/" target="_blank" rel="noreferrer">PubMed 23118483</a>).</p><div class="doc-section"><h3>Universal Systematic-Chain Coloring Script</h3><p class="subtle">Use this after opening structures with the systematic-chain-ID option, or after applying equivalent chain renaming. The script uses model-independent systematic chain selectors, so it colors all open renamed spliceosome models.</p><div class="actions"><button type="button" onclick="copyUniversalSystematicColoring(this)" title="Copy the universal ChimeraX color script for systematic chain IDs">Copy systematic-chain coloring CXC</button><a class="button secondary" href="scripts_systematic/universal_spliceosome_coloring.cxc" target="_blank" rel="noreferrer" title="Open the standalone universal systematic-chain coloring script">Open CXC file</a></div></div></div><div class="protein-controls"><div class="field"><label for="proteinComplexFilter">Complex Association</label><select id="proteinComplexFilter"></select></div><div class="subtle">Filter by class/family labels and curated subcomplex associations used for coloring.</div></div><div class="protein-table-wrap"><table><thead><tr><th>Protein</th><th>Class / Family</th><th>Aliases</th><th>Color</th><th>Systematic chain ID</th><th>Model-species homologs</th><th>Seen in</th></tr></thead><tbody id="proteinRows"></tbody></table></div></section>
+        <section class="panel"><div class="panel-head"><h2>Protein Color And Homolog Lookup</h2><span class="subtle" id="proteinCount"></span></div><div class="panel-body"><p class="subtle">Protein class/family labels, aliases, and homolog annotations were cross-checked against <a href="https://spliceosomedb.ucsc.edu/" target="_blank" rel="noreferrer">SpliceosomeDB</a> and its associated database paper (Cvitkovic and Jurica, <em>Nucleic Acids Research</em> 2013, 41:D132-D141, doi:10.1093/nar/gks999; <a href="https://pubmed.ncbi.nlm.nih.gov/23118483/" target="_blank" rel="noreferrer">PubMed 23118483</a>).</p><div class="doc-section"><h3>Universal Systematic-Chain Coloring Script</h3><p class="subtle">Use this after opening structures with the systematic-chain-ID option, or after applying equivalent chain renaming. The script uses model-independent systematic chain selectors, so it colors all open renamed spliceosome models. For multi-copy proteins such as Sm proteins, the table lists context-specific IDs, for example U1-, U2-, U4-, and U5-Sm copies.</p><div class="actions"><button type="button" onclick="copyUniversalSystematicColoring(this)" title="Copy the universal ChimeraX color script for systematic chain IDs">Copy systematic-chain coloring CXC</button><a class="button secondary" href="scripts_systematic/universal_spliceosome_coloring.cxc" target="_blank" rel="noreferrer" title="Open the standalone universal systematic-chain coloring script">Open CXC file</a></div></div></div><div class="protein-controls"><div class="field"><label for="proteinComplexFilter">Complex Association</label><select id="proteinComplexFilter"></select></div><div class="subtle">Filter by class/family labels and curated subcomplex associations used for coloring.</div></div><div class="protein-table-wrap"><table><thead><tr><th>Protein</th><th>Class / Family</th><th>Aliases</th><th>Color</th><th>Systematic chain ID</th><th>Model-species homologs</th><th>Seen in</th></tr></thead><tbody id="proteinRows"></tbody></table></div></section>
       </div>
       <div id="documentationView" hidden>
         <section class="panel"><div class="panel-head"><h2>Dashboard Documentation</h2><span class="subtle">features, UI, and curation methodology</span></div><div class="panel-body"><div class="doc-grid">
@@ -1040,15 +1042,29 @@ ${await scriptFor(record,"no_maps")}
     }
     function renderProteins(){
       const q = state.query;
-      const rows = proteinLookup.filter(p=>proteinComplexMatches(p) && (!q || [p.human_gene,p.protein_name,p.class_family,p.aliases?.join(" "),systematicChainIds(p).join(" "),homologItems(p).map(h=>`${h.species_code} ${h.gene}`).join(" ")].join(" ").toLowerCase().includes(q)));
+      const rows = proteinLookup.filter(p=>proteinComplexMatches(p) && (!q || [p.human_gene,p.protein_name,p.class_family,p.aliases?.join(" "),systematicChainText(p),homologItems(p).map(h=>`${h.species_code} ${h.gene}`).join(" ")].join(" ").toLowerCase().includes(q)));
       const resolved = rows.filter(p=>(p.seen_in_pdb_ids||[]).length);
       const referenceOnly = rows.filter(p=>!(p.seen_in_pdb_ids||[]).length);
       els.proteinCount.textContent = `${resolved.length} resolved; ${referenceOnly.length} reference-only`;
-      const rowHtml = p=>{ const color=p.color_hex||""; const homologs=homologItems(p).map(h=>`${esc(h.species_code)}: ${esc(h.gene)}`).join("<br>"); const sysIds=systematicChainIds(p).map(id=>`<code>${esc(id)}</code>`).join(" "); return `<tr><td><strong>${esc(p.human_gene||p.color_key||"")}</strong><br><span class="subtle">${esc(p.protein_name||"")}</span></td><td>${esc(p.class_family||"")}</td><td>${esc((p.aliases||[]).join("; "))}</td><td>${color?`<span class="swatch" style="background:${attr(color)}"></span>${esc(color)} <button class="copy-button" onclick="copyText('${attr(color)}', this)">Copy</button>`:""}</td><td>${sysIds || '<span class="subtle">n/a</span>'}</td><td>${homologs}</td><td>${esc((p.seen_in_pdb_ids||[]).slice(0,10).join("; "))}</td></tr>`; };
+      const rowHtml = p=>{ const color=p.color_hex||""; const homologs=homologItems(p).map(h=>`${esc(h.species_code)}: ${esc(h.gene)}`).join("<br>"); const sysIds=systematicChainHtml(p); return `<tr><td><strong>${esc(p.human_gene||p.color_key||"")}</strong><br><span class="subtle">${esc(p.protein_name||"")}</span></td><td>${esc(p.class_family||"")}</td><td>${esc((p.aliases||[]).join("; "))}</td><td>${color?`<span class="swatch" style="background:${attr(color)}"></span>${esc(color)} <button class="copy-button" onclick="copyText('${attr(color)}', this)">Copy</button>`:""}</td><td>${sysIds || '<span class="subtle">n/a</span>'}</td><td>${homologs}</td><td>${esc((p.seen_in_pdb_ids||[]).slice(0,10).join("; "))}</td></tr>`; };
       els.proteinRows.innerHTML = resolved.map(rowHtml).join("") + (referenceOnly.length ? `<tr><td colspan="7"><details><summary><strong>${referenceOnly.length} reference-only proteins</strong> <span class="subtle">listed in reference/color tables but not resolved in the current PDB set</span></summary><table class="mini-table"><tbody>${referenceOnly.map(rowHtml).join("")}</tbody></table></details></td></tr>` : "");
     }
     function systematicChainIds(p){
       return unique((p.canonical_chain_ids || []).map(c=>c.chain_id || c.canonical_base_id || c.canonical_chain_id));
+    }
+    function systematicChainText(p){
+      return (p.canonical_chain_ids || []).map(c=>`${c.identity || c.canonical_identity || ""} ${c.subcomplex || ""} ${c.chain_id || c.canonical_base_id || c.canonical_chain_id || ""}`).join(" ");
+    }
+    function systematicChainHtml(p){
+      const rows = p.canonical_chain_ids || [];
+      if(!rows.length) return "";
+      return rows.map(c=>{
+        const id = c.chain_id || c.canonical_base_id || c.canonical_chain_id || "";
+        const identity = c.identity || c.canonical_identity || "";
+        const context = c.subcomplex || "";
+        const label = identity && identity !== (p.color_key || p.human_gene || "") ? identity : context;
+        return `<div class="systematic-id-row"><code>${esc(id)}</code>${label?`<span class="subtle">${esc(label)}</span>`:""}</div>`;
+      }).join("");
     }
     function homologItems(p){
       const homologs = p.homologs || [];
