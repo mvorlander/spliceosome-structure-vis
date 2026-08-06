@@ -687,14 +687,14 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <text x="808.0" y="1041.3" class="base" fill="#EF4444"><title>/6 seq 94 auth 94</title>C</text>
 <text x="821.5" y="1041.3" class="base" fill="#EF4444"><title>/6 seq 95 auth 95</title>G</text>
 <text x="835.0" y="1041.3" class="base" fill="#EF4444"><title>/6 seq 96 auth 96</title>U</text>
-<path d="M170.1,1004.8 L213.6,1025.0" class="feature-callout" stroke="#dc143c" opacity="0.60"/>
-<text x="213.6" y="1025.0" class="feature-label" text-anchor="start" fill="#dc143c">5&#x27; terminal SL nt 1-28</text>
+<path d="M170.1,1004.8 L190.3,1048.3" class="feature-callout" stroke="#dc143c" opacity="0.60"/>
+<text x="190.3" y="1048.3" class="feature-label" text-anchor="start" fill="#dc143c">5&#x27; terminal SL nt 1-28</text>
 <path d="M448.4,1038.3 L468.7,1081.8" class="feature-callout" stroke="#d0183c" opacity="0.54"/>
 <text x="468.7" y="1081.8" class="feature-label" text-anchor="start" fill="#d0183c">U2/U6 helix I nt 36-60</text>
 <path d="M391.5,1041.3 L371.2,1084.8" class="feature-callout" stroke="#e01842" opacity="0.54"/>
 <text x="371.2" y="1084.8" class="feature-label" text-anchor="end" fill="#e01842">5&#x27;SS contact nt 38-49</text>
-<path d="M398.2,1041.3 L356.6,1065.3" class="feature-callout" stroke="#dc143c" opacity="0.60"/>
-<text x="356.6" y="1065.3" class="feature-label" text-anchor="end" fill="#dc143c">ACAGAGA nt 41-47</text>
+<path d="M398.2,1041.3 L356.6,1017.3" class="feature-callout" stroke="#dc143c" opacity="0.60"/>
+<text x="356.6" y="1017.3" class="feature-label" text-anchor="end" fill="#dc143c">ACAGAGA nt 41-47</text>
 <path d="M720.4,1041.3 L740.7,1084.8" class="feature-callout" stroke="#d61a3d" opacity="0.46"/>
 <text x="740.7" y="1084.8" class="feature-label" text-anchor="start" fill="#d61a3d">ISL nt 79-96</text>
 <path d="M794.6,1041.3 L753.0,1017.3" class="feature-callout" stroke="#c91236" opacity="0.54"/>
@@ -777,6 +777,29 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <circle cx="1679.2" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>intron; confidence medium</title></circle>
 <circle cx="1702.1" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>intron; confidence medium</title></circle>
 <circle cx="1725.0" cy="988.5" r="9.2" fill="#303030" opacity="0.22"><title>intron; confidence medium</title></circle>
+<circle cx="1221.1" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1244.0" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1266.9" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1289.8" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1312.7" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1335.6" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1358.5" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1381.5" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1404.4" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1427.3" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1450.2" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1473.1" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1496.0" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1518.9" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1541.8" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1564.7" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1587.6" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1610.5" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1633.4" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1656.3" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1679.2" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1702.1" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1725.0" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
 <circle cx="1564.7" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
 <circle cx="1587.6" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
 <circle cx="1610.5" cy="988.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
@@ -822,10 +845,12 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <text x="1725.0" y="988.5" class="base" fill="#303030"><title>/Y seq 157 auth 157</title>G</text>
 <path d="M1072.3,988.5 L1115.8,968.3" class="feature-callout" stroke="#303030" opacity="0.54"/>
 <text x="1115.8" y="968.3" class="feature-label" text-anchor="start" fill="#303030">? 5&#x27;SS nt 59-64</text>
-<path d="M1633.4,988.5 L1613.1,1032.0" class="feature-callout" stroke="#303030" opacity="0.60"/>
-<text x="1613.1" y="1032.0" class="feature-label" text-anchor="end" fill="#303030">BP region nt 150-156</text>
-<path d="M1679.2,988.5 L1637.6,964.5" class="feature-callout" stroke="#303030" opacity="0.60"/>
-<text x="1637.6" y="964.5" class="feature-label" text-anchor="end" fill="#303030">BP-A nt 155</text>
+<path d="M1473.1,988.5 L1516.6,968.3" class="feature-callout" stroke="#303030" opacity="0.60"/>
+<text x="1516.6" y="968.3" class="feature-label" text-anchor="start" fill="#303030">BP region nt 135-157</text>
+<path d="M1633.4,988.5 L1591.8,1012.5" class="feature-callout" stroke="#303030" opacity="0.60"/>
+<text x="1591.8" y="1012.5" class="feature-label" text-anchor="end" fill="#303030">BP region nt 150-156</text>
+<path d="M1679.2,988.5 L1658.9,1032.0" class="feature-callout" stroke="#303030" opacity="0.60"/>
+<text x="1658.9" y="1032.0" class="feature-label" text-anchor="end" fill="#303030">BP-A nt 155</text>
 <rect x="70.0" y="1342.0" width="820.0" height="520.0" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
 <text x="88.0" y="1370.0" class="label" style="font-size:16px;fill:#303030">INTRON /Z -&gt; IB</text>
 <polyline points="125.0,1612.7 189.5,1612.7 254.1,1612.7 318.6,1612.7 383.2,1612.7 447.7,1612.7 512.3,1612.7 576.8,1612.7 641.4,1612.7 705.9,1612.7 770.5,1612.7 835.0,1612.7" class="backbone"/>

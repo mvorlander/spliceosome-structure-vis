@@ -603,18 +603,18 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <text x="822.8" y="1054.8" class="base" fill="#EF4444"><title>/D seq 100 auth 100</title>U</text>
 <text x="832.8" y="1042.8" class="small" fill="#94a3b8">100</text>
 <text x="835.0" y="1054.8" class="base" fill="#EF4444"><title>/D seq 101 auth 101</title>U</text>
-<path d="M147.3,1000.0 L190.8,979.7" class="feature-callout" stroke="#dc143c" opacity="0.60"/>
-<text x="190.8" y="979.7" class="feature-label" text-anchor="start" fill="#dc143c">5&#x27; terminal SL nt 1-30</text>
+<path d="M147.3,1000.0 L167.6,1043.5" class="feature-callout" stroke="#dc143c" opacity="0.60"/>
+<text x="167.6" y="1043.5" class="feature-label" text-anchor="start" fill="#dc143c">5&#x27; terminal SL nt 1-30</text>
 <path d="M492.1,1052.3 L512.4,1095.8" class="feature-callout" stroke="#d0183c" opacity="0.54"/>
 <text x="512.4" y="1095.8" class="feature-label" text-anchor="start" fill="#d0183c">U2/U6 helix I nt 41-66</text>
 <path d="M446.6,1054.8 L426.3,1098.3" class="feature-callout" stroke="#e01842" opacity="0.54"/>
 <text x="426.3" y="1098.3" class="feature-label" text-anchor="end" fill="#e01842">5&#x27;SS contact nt 44-55</text>
 <path d="M538.1,1037.3 L496.6,1013.3" class="feature-callout" stroke="#d61a3d" opacity="0.46"/>
 <text x="496.6" y="1013.3" class="feature-label" text-anchor="end" fill="#d61a3d">ISL nt 46-73</text>
-<path d="M452.7,1054.8 L411.1,1030.8" class="feature-callout" stroke="#dc143c" opacity="0.60"/>
-<text x="411.1" y="1030.8" class="feature-label" text-anchor="end" fill="#dc143c">ACAGAGA nt 47-53</text>
-<path d="M574.4,1054.8 L594.7,1011.3" class="feature-callout" stroke="#c91236" opacity="0.54"/>
-<text x="594.7" y="1011.3" class="feature-label" text-anchor="start" fill="#c91236">AGC triad nt 59-61</text>
+<path d="M452.7,1054.8 L411.1,1078.8" class="feature-callout" stroke="#dc143c" opacity="0.60"/>
+<text x="411.1" y="1078.8" class="feature-label" text-anchor="end" fill="#dc143c">ACAGAGA nt 47-53</text>
+<path d="M574.4,1054.8 L532.9,1030.8" class="feature-callout" stroke="#c91236" opacity="0.54"/>
+<text x="532.9" y="1030.8" class="feature-label" text-anchor="end" fill="#c91236">AGC triad nt 59-61</text>
 <rect x="960.0" y="717.0" width="820.0" height="520.0" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
 <text x="978.0" y="745.0" class="label" style="font-size:16px;fill:#EF4444">U6 snRNA /x -&gt; 6R2</text>
 <polyline points="1015.0,987.2 1103.8,987.2 1192.5,987.2 1281.2,987.2 1370.0,987.2 1458.8,987.2 1547.5,987.2 1636.2,987.2 1725.0,987.2" class="backbone"/>
@@ -721,6 +721,19 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <circle cx="782.4" cy="1613.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
 <circle cx="808.7" cy="1613.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
 <circle cx="835.0" cy="1613.5" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
+<circle cx="519.4" cy="1613.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="545.7" cy="1613.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="572.0" cy="1613.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="598.3" cy="1613.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="624.6" cy="1613.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="650.9" cy="1613.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="677.2" cy="1613.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="703.5" cy="1613.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="729.8" cy="1613.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="756.1" cy="1613.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="782.4" cy="1613.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="808.7" cy="1613.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="835.0" cy="1613.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
 <circle cx="598.3" cy="1613.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
 <circle cx="624.6" cy="1613.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
 <circle cx="650.9" cy="1613.5" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
@@ -765,10 +778,12 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <text x="170.5" y="1570.0" class="feature-label" text-anchor="end" fill="#303030">5&#x27;SS nt 1-6</text>
 <path d="M480.0,1613.5 L459.7,1570.0" class="feature-callout" stroke="#f97316" opacity="0.60"/>
 <text x="459.7" y="1570.0" class="feature-label" text-anchor="end" fill="#f97316">lariat nt 1-15,492-504</text>
-<path d="M703.5,1613.5 L683.2,1570.0" class="feature-callout" stroke="#303030" opacity="0.60"/>
-<text x="683.2" y="1570.0" class="feature-label" text-anchor="end" fill="#303030">BP region nt 495-503</text>
-<path d="M756.1,1613.5 L776.4,1570.0" class="feature-callout" stroke="#303030" opacity="0.60"/>
-<text x="776.4" y="1570.0" class="feature-label" text-anchor="start" fill="#303030">BP-A nt 501</text>
+<path d="M677.2,1613.5 L656.9,1570.0" class="feature-callout" stroke="#303030" opacity="0.60"/>
+<text x="656.9" y="1570.0" class="feature-label" text-anchor="end" fill="#303030">BP region nt 492-504</text>
+<path d="M703.5,1613.5 L723.8,1570.0" class="feature-callout" stroke="#303030" opacity="0.60"/>
+<text x="723.8" y="1570.0" class="feature-label" text-anchor="start" fill="#303030">BP region nt 495-503</text>
+<path d="M756.1,1613.5 L776.4,1657.0" class="feature-callout" stroke="#303030" opacity="0.60"/>
+<text x="776.4" y="1657.0" class="feature-label" text-anchor="start" fill="#303030">BP-A nt 501</text>
 <path d="M416.2,1054.8 Q336.3,1009.8 256.5,1613.5" class="inter" stroke-width="2.2"><title>D:45-49 to E:4-8; 5 FR3D interactions; cWW</title></path>
 <path d="M531.8,1054.8 Q484.8,372.4 437.7,417.4" class="inter" stroke-width="2.0"><title>D:55-58 to F:26-29; 4 FR3D interactions; cWW</title></path>
 <path d="M574.4,1054.8 Q473.6,372.4 372.8,417.4" class="inter" stroke-width="1.8"><title>D:59-61 to F:21-23; 3 FR3D interactions; cWW</title></path>

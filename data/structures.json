@@ -506,11 +506,11 @@
         "contour_level": "0.0369"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "3",
         "r2dt_chain_count": "3",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/6g90_6g90_r2dt_dashboard_colored.png",
         "svg": "rna_2d/6g90_6g90_r2dt_dashboard_colored.svg"
       },
@@ -1310,11 +1310,11 @@
         "contour_level": "0.0258"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5nrl_5nrl_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5nrl_5nrl_r2dt_dashboard_colored.svg"
       },
@@ -1782,6 +1782,50 @@
           "u2_min_distance_a": "",
           "discontinuity_breaks": "",
           "changed_from_legacy": ""
+        },
+        {
+          "feature": "branch_point_region",
+          "label": "branch point region",
+          "entity_id": "39",
+          "molecule_name": "MINX pre-mRNA",
+          "original_chain_id": "Y",
+          "seq_start": "145",
+          "seq_end": "156",
+          "auth_residue_ranges": "145-156",
+          "feature_sequence": "UGUCAUACUUAU",
+          "method": "network-scored-motif; manual-review-correction",
+          "confidence": "high",
+          "network_support": "basepair",
+          "network_score": "11.0",
+          "expected_snrna_features": "",
+          "snrna_basepair_count": "",
+          "snrna_min_distance_a": "",
+          "u2_basepair_count": "1",
+          "u2_min_distance_a": "9.2",
+          "discontinuity_breaks": "0",
+          "changed_from_legacy": "False"
+        },
+        {
+          "feature": "branch_point_adenosine",
+          "label": "branch point adenosine",
+          "entity_id": "39",
+          "molecule_name": "MINX pre-mRNA",
+          "original_chain_id": "Y",
+          "seq_start": "155",
+          "seq_end": "155",
+          "auth_residue_ranges": "155",
+          "feature_sequence": "A",
+          "method": "network-scored-motif; manual-review-correction",
+          "confidence": "high",
+          "network_support": "basepair",
+          "network_score": "11.0",
+          "expected_snrna_features": "",
+          "snrna_basepair_count": "",
+          "snrna_min_distance_a": "",
+          "u2_basepair_count": "1",
+          "u2_min_distance_a": "9.2",
+          "discontinuity_breaks": "0",
+          "changed_from_legacy": "False"
         }
       ],
       "snrna_features": [
@@ -2021,11 +2065,11 @@
         "contour_level": "0.04"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5o9z_5o9z_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5o9z_5o9z_r2dt_dashboard_colored.svg"
       },
@@ -2752,11 +2796,11 @@
         "contour_level": "0.022"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5zwo_5zwo_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5zwo_5zwo_r2dt_dashboard_colored.svg"
       },
@@ -3623,11 +3667,11 @@
         "contour_level": "0.03"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/6ahd_6ahd_r2dt_dashboard_colored.png",
         "svg": "rna_2d/6ahd_6ahd_r2dt_dashboard_colored.svg"
       },
@@ -4457,11 +4501,11 @@
         "contour_level": "0.01"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8h6k_8h6k_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8h6k_8h6k_r2dt_dashboard_colored.svg"
       },
@@ -5263,11 +5307,11 @@
         "contour_level": "0.008"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8h6l_8h6l_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8h6l_8h6l_r2dt_dashboard_colored.svg"
       },
@@ -5736,11 +5780,11 @@
         "contour_level": "0.03"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8q7n_8q7n_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8q7n_8q7n_r2dt_dashboard_colored.svg"
       },
@@ -6611,11 +6655,11 @@
         "contour_level": "0.02"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8qo9_8qo9_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8qo9_8qo9_r2dt_dashboard_colored.svg"
       },
@@ -7509,11 +7553,11 @@
         "contour_level": "0.011"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "7",
         "r2dt_chain_count": "7",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8qzs_8qzs_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8qzs_8qzs_r2dt_dashboard_colored.svg"
       },
@@ -8061,11 +8105,11 @@
         "contour_level": "3.55"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/9esh_9esh_r2dt_dashboard_colored.png",
         "svg": "rna_2d/9esh_9esh_r2dt_dashboard_colored.svg"
       },
@@ -8665,11 +8709,11 @@
         "contour_level": "3.2"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/9esi_9esi_r2dt_dashboard_colored.png",
         "svg": "rna_2d/9esi_9esi_r2dt_dashboard_colored.svg"
       },
@@ -9305,11 +9349,11 @@
         "contour_level": "0.019"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/6j6g_6j6g_r2dt_dashboard_colored.png",
         "svg": "rna_2d/6j6g_6j6g_r2dt_dashboard_colored.svg"
       },
@@ -9947,11 +9991,11 @@
         "contour_level": "0.024"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/6j6h_6j6h_r2dt_dashboard_colored.png",
         "svg": "rna_2d/6j6h_6j6h_r2dt_dashboard_colored.svg"
       },
@@ -10589,11 +10633,11 @@
         "contour_level": "0.028"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/6j6n_6j6n_r2dt_dashboard_colored.png",
         "svg": "rna_2d/6j6n_6j6n_r2dt_dashboard_colored.svg"
       },
@@ -11238,11 +11282,11 @@
         "contour_level": "0.0116"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "partial",
         "rna_chain_count": "4",
         "r2dt_chain_count": "3",
-        "failed_chain_count": "2",
-        "notes": "B: missing existing R2DT SVG | ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "1",
+        "notes": "B: missing existing R2DT SVG",
         "png": "rna_2d/6j6q_6j6q_r2dt_dashboard_colored.png",
         "svg": "rna_2d/6j6q_6j6q_r2dt_dashboard_colored.svg"
       },
@@ -11752,11 +11796,11 @@
         "contour_level": "0.0035"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/9l5s_9l5s_r2dt_dashboard_colored.png",
         "svg": "rna_2d/9l5s_9l5s_r2dt_dashboard_colored.svg"
       },
@@ -12251,11 +12295,11 @@
         "contour_level": "0.005"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/9l5t_9l5t_r2dt_dashboard_colored.png",
         "svg": "rna_2d/9l5t_9l5t_r2dt_dashboard_colored.svg"
       },
@@ -12938,11 +12982,11 @@
         "contour_level": "0.0405"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5gm6_5gm6_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5gm6_5gm6_r2dt_dashboard_colored.svg"
       },
@@ -13547,11 +13591,11 @@
         "contour_level": "0.11"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5lqw_5lqw_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5lqw_5lqw_r2dt_dashboard_colored.svg"
       },
@@ -14300,11 +14344,11 @@
         "contour_level": "0.0374"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5z56_5z56_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5z56_5z56_r2dt_dashboard_colored.svg"
       },
@@ -15040,11 +15084,11 @@
         "contour_level": "0.0323"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5z57_5z57_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5z57_5z57_r2dt_dashboard_colored.svg"
       },
@@ -15723,11 +15767,11 @@
         "contour_level": "0.0346"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5z58_5z58_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5z58_5z58_r2dt_dashboard_colored.svg"
       },
@@ -16314,11 +16358,11 @@
         "contour_level": "0.04"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/6ff4_6ff4_r2dt_dashboard_colored.png",
         "svg": "rna_2d/6ff4_6ff4_r2dt_dashboard_colored.svg"
       },
@@ -17057,11 +17101,11 @@
         "contour_level": "0.013"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/6ff7_6ff7_r2dt_dashboard_colored.png",
         "svg": "rna_2d/6ff7_6ff7_r2dt_dashboard_colored.svg"
       },
@@ -17883,11 +17927,11 @@
         "contour_level": "0.015"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/7dco_7dco_r2dt_dashboard_colored.png",
         "svg": "rna_2d/7dco_7dco_r2dt_dashboard_colored.svg"
       },
@@ -18519,11 +18563,11 @@
         "contour_level": "0.014"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/7dvq_7dvq_r2dt_dashboard_colored.png",
         "svg": "rna_2d/7dvq_7dvq_r2dt_dashboard_colored.svg"
       },
@@ -19162,11 +19206,11 @@
         "contour_level": "0.033"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/7qtt_7qtt_r2dt_dashboard_colored.png",
         "svg": "rna_2d/7qtt_7qtt_r2dt_dashboard_colored.svg"
       },
@@ -19903,11 +19947,11 @@
         "contour_level": "0.008"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8ch6_8ch6_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8ch6_8ch6_r2dt_dashboard_colored.svg"
       },
@@ -20679,11 +20723,11 @@
         "contour_level": "0.24"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8i0r_8i0r_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8i0r_8i0r_r2dt_dashboard_colored.svg"
       },
@@ -21411,11 +21455,11 @@
         "contour_level": "0.23"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8i0s_8i0s_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8i0s_8i0s_r2dt_dashboard_colored.svg"
       },
@@ -22164,11 +22208,11 @@
         "contour_level": "0.22"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8i0t_8i0t_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8i0t_8i0t_r2dt_dashboard_colored.svg"
       },
@@ -22896,11 +22940,11 @@
         "contour_level": "0.24"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8i0u_8i0u_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8i0u_8i0u_r2dt_dashboard_colored.svg"
       },
@@ -23631,11 +23675,11 @@
         "contour_level": "0.0413"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "6",
         "r2dt_chain_count": "6",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5gmk_5gmk_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5gmk_5gmk_r2dt_dashboard_colored.svg"
       },
@@ -24282,11 +24326,11 @@
         "contour_level": "0.027"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5lj3_5lj3_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5lj3_5lj3_r2dt_dashboard_colored.svg"
       },
@@ -24970,11 +25014,11 @@
         "contour_level": "0.006"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5lj5_5lj5_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5lj5_5lj5_r2dt_dashboard_colored.svg"
       },
@@ -25725,11 +25769,11 @@
         "contour_level": "0.029"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5yzg_5yzg_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5yzg_5yzg_r2dt_dashboard_colored.svg"
       },
@@ -26272,11 +26316,11 @@
         "contour_level": "0.025"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/6zym_6zym_r2dt_dashboard_colored.png",
         "svg": "rna_2d/6zym_6zym_r2dt_dashboard_colored.svg"
       },
@@ -26734,11 +26778,11 @@
         "contour_level": "0.018"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/7a5p_7a5p_r2dt_dashboard_colored.png",
         "svg": "rna_2d/7a5p_7a5p_r2dt_dashboard_colored.svg"
       },
@@ -27509,11 +27553,11 @@
         "contour_level": "5.0"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/7b9v_7b9v_r2dt_dashboard_colored.png",
         "svg": "rna_2d/7b9v_7b9v_r2dt_dashboard_colored.svg"
       },
@@ -28227,11 +28271,11 @@
         "contour_level": "0.22"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8i0v_8i0v_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8i0v_8i0v_r2dt_dashboard_colored.svg"
       },
@@ -28978,11 +29022,11 @@
         "contour_level": "0.25"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8i0w_8i0w_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8i0w_8i0w_r2dt_dashboard_colored.svg"
       },
@@ -29643,11 +29687,11 @@
         "contour_level": "0.036"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5mps_5mps_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5mps_5mps_r2dt_dashboard_colored.svg"
       },
@@ -30402,11 +30446,11 @@
         "contour_level": "0.03"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "6",
         "r2dt_chain_count": "6",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5mq0_5mq0_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5mq0_5mq0_r2dt_dashboard_colored.svg"
       },
@@ -31077,11 +31121,11 @@
         "contour_level": "0.016"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5mqf_5mqf_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5mqf_5mqf_r2dt_dashboard_colored.svg"
       },
@@ -31908,11 +31952,11 @@
         "contour_level": "0.0297"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "7",
         "r2dt_chain_count": "7",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5wsg_5wsg_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5wsg_5wsg_r2dt_dashboard_colored.svg"
       },
@@ -32597,11 +32641,11 @@
         "contour_level": "0.05"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5xjc_5xjc_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5xjc_5xjc_r2dt_dashboard_colored.svg"
       },
@@ -33329,11 +33373,11 @@
         "contour_level": "0.38"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/7w59_7w59_r2dt_dashboard_colored.png",
         "svg": "rna_2d/7w59_7w59_r2dt_dashboard_colored.svg"
       },
@@ -34089,11 +34133,11 @@
         "contour_level": "0.39"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/7w5a_7w5a_r2dt_dashboard_colored.png",
         "svg": "rna_2d/7w5a_7w5a_r2dt_dashboard_colored.svg"
       },
@@ -34856,11 +34900,11 @@
         "contour_level": "0.37"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/7w5b_7w5b_r2dt_dashboard_colored.png",
         "svg": "rna_2d/7w5b_7w5b_r2dt_dashboard_colored.svg"
       },
@@ -35627,11 +35671,11 @@
         "contour_level": "0.115"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "partial",
         "rna_chain_count": "5",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "2",
-        "notes": "I: missing existing R2DT SVG | ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "1",
+        "notes": "I: missing existing R2DT SVG",
         "png": "rna_2d/8c6j_8c6j_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8c6j_8c6j_r2dt_dashboard_colored.svg"
       },
@@ -36044,11 +36088,11 @@
         "contour_level": "0.065"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "2",
         "r2dt_chain_count": "2",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/6n7p_6n7p_r2dt_dashboard_colored.png",
         "svg": "rna_2d/6n7p_6n7p_r2dt_dashboard_colored.svg"
       },
@@ -36441,11 +36485,11 @@
         "contour_level": "0.05"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "2",
         "r2dt_chain_count": "2",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/6n7r_6n7r_r2dt_dashboard_colored.png",
         "svg": "rna_2d/6n7r_6n7r_r2dt_dashboard_colored.svg"
       },
@@ -37007,11 +37051,11 @@
         "contour_level": "0.0125"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "3",
         "r2dt_chain_count": "3",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/7oqe_7oqe_r2dt_dashboard_colored.png",
         "svg": "rna_2d/7oqe_7oqe_r2dt_dashboard_colored.svg"
       },
@@ -37518,11 +37562,11 @@
         "contour_level": "0.25"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/7vpx_7vpx_r2dt_dashboard_colored.png",
         "svg": "rna_2d/7vpx_7vpx_r2dt_dashboard_colored.svg"
       },
@@ -38077,11 +38121,11 @@
         "contour_level": "0.0203"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/3jb9_3jb9_r2dt_dashboard_colored.png",
         "svg": "rna_2d/3jb9_3jb9_r2dt_dashboard_colored.svg"
       },
@@ -38710,11 +38754,11 @@
         "contour_level": "0.05"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5y88_5y88_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5y88_5y88_r2dt_dashboard_colored.svg"
       },
@@ -39342,11 +39386,11 @@
         "contour_level": "0.025"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/6id0_6id0_r2dt_dashboard_colored.png",
         "svg": "rna_2d/6id0_6id0_r2dt_dashboard_colored.svg"
       },
@@ -39981,11 +40025,11 @@
         "contour_level": "0.02"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/6id1_6id1_r2dt_dashboard_colored.png",
         "svg": "rna_2d/6id1_6id1_r2dt_dashboard_colored.svg"
       },
@@ -40489,11 +40533,11 @@
         "contour_level": "0.5"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "3",
         "r2dt_chain_count": "3",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8ro0_8ro0_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8ro0_8ro0_r2dt_dashboard_colored.svg"
       },
@@ -41069,11 +41113,11 @@
         "contour_level": "0.5"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8ro1_8ro1_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8ro1_8ro1_r2dt_dashboard_colored.svg"
       },
@@ -41613,11 +41657,11 @@
         "contour_level": "0.975"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8ro2_8ro2_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8ro2_8ro2_r2dt_dashboard_colored.svg"
       },
@@ -42154,11 +42198,11 @@
         "contour_level": "0.005"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/9l5r_9l5r_r2dt_dashboard_colored.png",
         "svg": "rna_2d/9l5r_9l5r_r2dt_dashboard_colored.svg"
       },
@@ -42907,11 +42951,11 @@
         "contour_level": "0.034"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5ylz_5ylz_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5ylz_5ylz_r2dt_dashboard_colored.svg"
       },
@@ -43592,11 +43636,11 @@
         "contour_level": "0.06"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/6bk8_6bk8_r2dt_dashboard_colored.png",
         "svg": "rna_2d/6bk8_6bk8_r2dt_dashboard_colored.svg"
       },
@@ -44379,11 +44423,11 @@
         "contour_level": "0.04"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/6exn_6exn_r2dt_dashboard_colored.png",
         "svg": "rna_2d/6exn_6exn_r2dt_dashboard_colored.svg"
       },
@@ -45052,11 +45096,11 @@
         "contour_level": "0.03"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/6icz_6icz_r2dt_dashboard_colored.png",
         "svg": "rna_2d/6icz_6icz_r2dt_dashboard_colored.svg"
       },
@@ -45890,11 +45934,11 @@
         "contour_level": "0.024"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/6qdv_6qdv_r2dt_dashboard_colored.png",
         "svg": "rna_2d/6qdv_6qdv_r2dt_dashboard_colored.svg"
       },
@@ -46692,11 +46736,11 @@
         "contour_level": "0.02"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/9dtr_9dtr_r2dt_dashboard_colored.png",
         "svg": "rna_2d/9dtr_9dtr_r2dt_dashboard_colored.svg"
       },
@@ -47549,11 +47593,11 @@
         "contour_level": "0.024"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/9fmd_9fmd_r2dt_dashboard_colored.png",
         "svg": "rna_2d/9fmd_9fmd_r2dt_dashboard_colored.svg"
       },
@@ -47866,11 +47910,11 @@
         "contour_level": "0.038"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "1",
         "r2dt_chain_count": "1",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/6y50_6y50_r2dt_dashboard_colored.png",
         "svg": "rna_2d/6y50_6y50_r2dt_dashboard_colored.svg"
       },
@@ -48127,11 +48171,11 @@
         "contour_level": "0.013"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "1",
         "r2dt_chain_count": "1",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/6y53_6y53_r2dt_dashboard_colored.png",
         "svg": "rna_2d/6y53_6y53_r2dt_dashboard_colored.svg"
       },
@@ -48437,11 +48481,11 @@
         "contour_level": "0.013"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "1",
         "r2dt_chain_count": "1",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/6y5q_6y5q_r2dt_dashboard_colored.png",
         "svg": "rna_2d/6y5q_6y5q_r2dt_dashboard_colored.svg"
       },
@@ -48859,11 +48903,11 @@
         "contour_level": "0.02"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "1",
         "r2dt_chain_count": "1",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/7evo_7evo_r2dt_dashboard_colored.png",
         "svg": "rna_2d/7evo_7evo_r2dt_dashboard_colored.svg"
       },
@@ -49115,11 +49159,11 @@
         "contour_level": "0.015"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "2",
         "r2dt_chain_count": "2",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/7onb_7onb_r2dt_dashboard_colored.png",
         "svg": "rna_2d/7onb_7onb_r2dt_dashboard_colored.svg"
       },
@@ -49479,11 +49523,11 @@
         "contour_level": "0.038"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "2",
         "r2dt_chain_count": "2",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/7oqb_7oqb_r2dt_dashboard_colored.png",
         "svg": "rna_2d/7oqb_7oqb_r2dt_dashboard_colored.svg"
       },
@@ -49681,11 +49725,11 @@
         "contour_level": "0.0062"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "1",
         "r2dt_chain_count": "1",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/7q3l_7q3l_r2dt_dashboard_colored.png",
         "svg": "rna_2d/7q3l_7q3l_r2dt_dashboard_colored.svg"
       },
@@ -49979,11 +50023,11 @@
         "contour_level": "0.00561"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "2",
         "r2dt_chain_count": "2",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/7q4o_7q4o_r2dt_dashboard_colored.png",
         "svg": "rna_2d/7q4o_7q4o_r2dt_dashboard_colored.svg"
       },
@@ -50174,11 +50218,11 @@
         "contour_level": "0.00711"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "1",
         "r2dt_chain_count": "1",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/7q4p_7q4p_r2dt_dashboard_colored.png",
         "svg": "rna_2d/7q4p_7q4p_r2dt_dashboard_colored.svg"
       },
@@ -50474,11 +50518,11 @@
         "contour_level": "0.22"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "1",
         "r2dt_chain_count": "1",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8hk1_8hk1_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8hk1_8hk1_r2dt_dashboard_colored.svg"
       },
@@ -50657,11 +50701,11 @@
         "contour_level": "0.01"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "2",
         "r2dt_chain_count": "2",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/9k1o_9k1o_r2dt_dashboard_colored.png",
         "svg": "rna_2d/9k1o_9k1o_r2dt_dashboard_colored.svg"
       },
@@ -50835,11 +50879,11 @@
         "contour_level": "0.008"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "2",
         "r2dt_chain_count": "2",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/9k1q_9k1q_r2dt_dashboard_colored.png",
         "svg": "rna_2d/9k1q_9k1q_r2dt_dashboard_colored.svg"
       },
@@ -51077,11 +51121,11 @@
         "contour_level": "0.009"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "2",
         "r2dt_chain_count": "2",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/9k1r_9k1r_r2dt_dashboard_colored.png",
         "svg": "rna_2d/9k1r_9k1r_r2dt_dashboard_colored.svg"
       },
@@ -51319,11 +51363,11 @@
         "contour_level": "0.03"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "2",
         "r2dt_chain_count": "2",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/9k1w_9k1w_r2dt_dashboard_colored.png",
         "svg": "rna_2d/9k1w_9k1w_r2dt_dashboard_colored.svg"
       },
@@ -51561,11 +51605,11 @@
         "contour_level": "0.007"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "2",
         "r2dt_chain_count": "2",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/9k1y_9k1y_r2dt_dashboard_colored.png",
         "svg": "rna_2d/9k1y_9k1y_r2dt_dashboard_colored.svg"
       },
@@ -51824,11 +51868,11 @@
         "contour_level": "0.45"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "2",
         "r2dt_chain_count": "2",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/9ze0_9ze0_r2dt_dashboard_colored.png",
         "svg": "rna_2d/9ze0_9ze0_r2dt_dashboard_colored.svg"
       },
@@ -52064,11 +52108,11 @@
         "contour_level": "0.72"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "2",
         "r2dt_chain_count": "2",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/9ze2_9ze2_r2dt_dashboard_colored.png",
         "svg": "rna_2d/9ze2_9ze2_r2dt_dashboard_colored.svg"
       },
@@ -52325,11 +52369,11 @@
         "contour_level": "0.45"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "2",
         "r2dt_chain_count": "2",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/9ze3_9ze3_r2dt_dashboard_colored.png",
         "svg": "rna_2d/9ze3_9ze3_r2dt_dashboard_colored.svg"
       },
@@ -52572,11 +52616,11 @@
         "contour_level": "0.43"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "2",
         "r2dt_chain_count": "2",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/9zec_9zec_r2dt_dashboard_colored.png",
         "svg": "rna_2d/9zec_9zec_r2dt_dashboard_colored.svg"
       },
@@ -52821,11 +52865,11 @@
         "contour_level": "0.4"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "2",
         "r2dt_chain_count": "2",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/9zed_9zed_r2dt_dashboard_colored.png",
         "svg": "rna_2d/9zed_9zed_r2dt_dashboard_colored.svg"
       },
@@ -53254,11 +53298,11 @@
         "contour_level": "0.2"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "1",
         "r2dt_chain_count": "1",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8q7q_8q7q_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8q7q_8q7q_r2dt_dashboard_colored.svg"
       },
@@ -53471,11 +53515,11 @@
         "contour_level": "0.19"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "1",
         "r2dt_chain_count": "1",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8q7v_8q7v_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8q7v_8q7v_r2dt_dashboard_colored.svg"
       },
@@ -53690,11 +53734,11 @@
         "contour_level": "0.26"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "1",
         "r2dt_chain_count": "1",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8q7w_8q7w_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8q7w_8q7w_r2dt_dashboard_colored.svg"
       },
@@ -53909,11 +53953,11 @@
         "contour_level": "0.14"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "1",
         "r2dt_chain_count": "1",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8q7x_8q7x_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8q7x_8q7x_r2dt_dashboard_colored.svg"
       },
@@ -54470,11 +54514,11 @@
         "contour_level": "0.0147"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/3jcm_3jcm_r2dt_dashboard_colored.png",
         "svg": "rna_2d/3jcm_3jcm_r2dt_dashboard_colored.svg"
       },
@@ -54913,11 +54957,11 @@
         "contour_level": "0.13"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "3",
         "r2dt_chain_count": "3",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/3jcr_3jcr_r2dt_dashboard_colored.png",
         "svg": "rna_2d/3jcr_3jcr_r2dt_dashboard_colored.svg"
       },
@@ -55120,11 +55164,11 @@
         "contour_level": "0.012"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "2",
         "r2dt_chain_count": "2",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5gam_5gam_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5gam_5gam_r2dt_dashboard_colored.svg"
       },
@@ -55621,11 +55665,11 @@
         "contour_level": "0.036"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "3",
         "r2dt_chain_count": "3",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5gan_5gan_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5gan_5gan_r2dt_dashboard_colored.svg"
       },
@@ -55820,11 +55864,11 @@
         "contour_level": "0.02"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "1",
         "r2dt_chain_count": "1",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5gao_5gao_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5gao_5gao_r2dt_dashboard_colored.svg"
       },
@@ -56138,11 +56182,11 @@
         "contour_level": "0.02"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "3",
         "r2dt_chain_count": "3",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5gap_5gap_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5gap_5gap_r2dt_dashboard_colored.svg"
       },
@@ -56599,11 +56643,11 @@
         "contour_level": "0.02"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "3",
         "r2dt_chain_count": "3",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/6qw6_6qw6_r2dt_dashboard_colored.png",
         "svg": "rna_2d/6qw6_6qw6_r2dt_dashboard_colored.svg"
       },
@@ -56808,11 +56852,11 @@
         "contour_level": "0.12"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "1",
         "r2dt_chain_count": "1",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8q91_8q91_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8q91_8q91_r2dt_dashboard_colored.svg"
       },
@@ -57024,11 +57068,11 @@
         "contour_level": "0.1"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "1",
         "r2dt_chain_count": "1",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8rc0_8rc0_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8rc0_8rc0_r2dt_dashboard_colored.svg"
       },
@@ -57714,11 +57758,11 @@
         "contour_level": "0.023"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5zwm_5zwm_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5zwm_5zwm_r2dt_dashboard_colored.svg"
       },
@@ -58134,11 +58178,11 @@
         "contour_level": "0.045"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "2",
         "r2dt_chain_count": "2",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/5zwn_5zwn_r2dt_dashboard_colored.png",
         "svg": "rna_2d/5zwn_5zwn_r2dt_dashboard_colored.svg"
       },
@@ -58920,11 +58964,11 @@
         "contour_level": "0.015"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/6ah0_6ah0_r2dt_dashboard_colored.png",
         "svg": "rna_2d/6ah0_6ah0_r2dt_dashboard_colored.svg"
       },
@@ -59789,11 +59833,11 @@
         "contour_level": "0.01"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "6",
         "r2dt_chain_count": "6",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/6qx9_6qx9_r2dt_dashboard_colored.png",
         "svg": "rna_2d/6qx9_6qx9_r2dt_dashboard_colored.svg"
       },
@@ -60608,11 +60652,11 @@
         "contour_level": "0.25"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8h6e_8h6e_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8h6e_8h6e_r2dt_dashboard_colored.svg"
       },
@@ -61384,11 +61428,11 @@
         "contour_level": "0.25"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8h6j_8h6j_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8h6j_8h6j_r2dt_dashboard_colored.svg"
       },
@@ -61815,11 +61859,11 @@
         "contour_level": "0.032"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8qoz_8qoz_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8qoz_8qoz_r2dt_dashboard_colored.svg"
       },
@@ -62143,11 +62187,11 @@
         "contour_level": "0.075"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "3",
         "r2dt_chain_count": "3",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8qp8_8qp8_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8qp8_8qp8_r2dt_dashboard_colored.svg"
       },
@@ -62478,11 +62522,11 @@
         "contour_level": "0.043"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "3",
         "r2dt_chain_count": "3",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8qp9_8qp9_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8qp9_8qp9_r2dt_dashboard_colored.svg"
       },
@@ -62909,11 +62953,11 @@
         "contour_level": "0.031"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8qpa_8qpa_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8qpa_8qpa_r2dt_dashboard_colored.svg"
       },
@@ -63340,11 +63384,11 @@
         "contour_level": "0.027"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8qpb_8qpb_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8qpb_8qpb_r2dt_dashboard_colored.svg"
       },
@@ -63814,11 +63858,11 @@
         "contour_level": "0.085"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8qpe_8qpe_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8qpe_8qpe_r2dt_dashboard_colored.svg"
       },
@@ -64238,11 +64282,11 @@
         "contour_level": "0.0165"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8qpk_8qpk_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8qpk_8qpk_r2dt_dashboard_colored.svg"
       },
@@ -65007,11 +65051,11 @@
         "contour_level": "0.0125"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8qxd_8qxd_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8qxd_8qxd_r2dt_dashboard_colored.svg"
       },
@@ -65833,11 +65877,11 @@
         "contour_level": "0.0078"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "7",
         "r2dt_chain_count": "7",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8r08_8r08_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8r08_8r08_r2dt_dashboard_colored.svg"
       },
@@ -66689,11 +66733,11 @@
         "contour_level": "0.0068"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "6",
         "r2dt_chain_count": "6",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8r09_8r09_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8r09_8r09_r2dt_dashboard_colored.svg"
       },
@@ -67559,11 +67603,11 @@
         "contour_level": "0.007"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "6",
         "r2dt_chain_count": "6",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8r0a_8r0a_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8r0a_8r0a_r2dt_dashboard_colored.svg"
       },
@@ -68415,11 +68459,11 @@
         "contour_level": "0.015"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "6",
         "r2dt_chain_count": "6",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8r0b_8r0b_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8r0b_8r0b_r2dt_dashboard_colored.svg"
       },
@@ -69229,11 +69273,11 @@
         "contour_level": "0.0075"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "6",
         "r2dt_chain_count": "6",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8rm5_8rm5_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8rm5_8rm5_r2dt_dashboard_colored.svg"
       },
@@ -69794,11 +69838,11 @@
         "contour_level": "0.25"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "5",
         "r2dt_chain_count": "5",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8y6o_8y6o_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8y6o_8y6o_r2dt_dashboard_colored.svg"
       },
@@ -70127,11 +70171,11 @@
         "contour_level": "0.004"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "2",
         "r2dt_chain_count": "2",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8y7e_8y7e_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8y7e_8y7e_r2dt_dashboard_colored.svg"
       },
@@ -70518,11 +70562,11 @@
         "contour_level": "0.051"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/7aav_7aav_r2dt_dashboard_colored.png",
         "svg": "rna_2d/7aav_7aav_r2dt_dashboard_colored.svg"
       },
@@ -70879,11 +70923,11 @@
         "contour_level": "0.034"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "3",
         "r2dt_chain_count": "3",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/7abf_7abf_r2dt_dashboard_colored.png",
         "svg": "rna_2d/7abf_7abf_r2dt_dashboard_colored.svg"
       },
@@ -71565,11 +71609,11 @@
         "contour_level": "0.0095"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/7abg_7abg_r2dt_dashboard_colored.png",
         "svg": "rna_2d/7abg_7abg_r2dt_dashboard_colored.svg"
       },
@@ -71906,11 +71950,11 @@
         "contour_level": "0.047"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "2",
         "r2dt_chain_count": "2",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/7abh_7abh_r2dt_dashboard_colored.png",
         "svg": "rna_2d/7abh_7abh_r2dt_dashboard_colored.svg"
       },
@@ -72658,11 +72702,11 @@
         "contour_level": "0.013"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/7abi_7abi_r2dt_dashboard_colored.png",
         "svg": "rna_2d/7abi_7abi_r2dt_dashboard_colored.svg"
       },
@@ -73406,11 +73450,11 @@
         "contour_level": "0.19"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "4",
         "r2dt_chain_count": "4",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/8i0p_8i0p_r2dt_dashboard_colored.png",
         "svg": "rna_2d/8i0p_8i0p_r2dt_dashboard_colored.svg"
       },
@@ -73781,11 +73825,11 @@
         "contour_level": "0.055"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "complete",
         "rna_chain_count": "3",
         "r2dt_chain_count": "3",
-        "failed_chain_count": "1",
-        "notes": "ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "0",
+        "notes": "",
         "png": "rna_2d/9r3d_9r3d_r2dt_dashboard_colored.png",
         "svg": "rna_2d/9r3d_9r3d_r2dt_dashboard_colored.svg"
       },
@@ -74515,11 +74559,11 @@
         "contour_level": "0.0021"
       },
       "rna_2d": {
-        "status": "failed",
+        "status": "partial",
         "rna_chain_count": "4",
         "r2dt_chain_count": "3",
-        "failed_chain_count": "2",
-        "notes": "2: missing existing R2DT SVG | ModuleNotFoundError: No module named 'Bio'",
+        "failed_chain_count": "1",
+        "notes": "2: missing existing R2DT SVG",
         "png": "rna_2d/9r8v_9r8v_r2dt_dashboard_colored.png",
         "svg": "rna_2d/9r8v_9r8v_r2dt_dashboard_colored.svg"
       },
@@ -74545,7 +74589,7 @@
     "5mq0": "# Lightweight ChimeraX script for 5MQ0\n# Models are downloaded directly by ChimeraX from the PDB.\n# Primary maps, when requested, are downloaded directly from EMDB.\n# Original deposited chain identifiers are used.\n\n# Shared anchor frame: 8H6L\n# Structure group: #408; target model: #408.1; RNA labels: #408.2.\n\nopen 8h6l id 408.9 name 8H6L_anchor\nopen 5mq0 id 408.1 name 5MQ0\nopen emdb:3541 id 408.3.1 name Cstar_5mq0_EMD-3541_primary_map\nrename #408 Cstar_5mq0_structure\n\n# Align on PRPF8.\nmatchmaker #408.1/A to #408.9/5B bring #408.3.1\nclose #408.9\n\n# Remove implausibly long deposited covalent bonds before styling.\n# Fetch and run the implausible-bond pruning helper from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/prune_implausible_bonds.py\n\nhide atoms\ncartoon\n# Default display style.\nstyle (protein|nucleic|solvent) & @@draw_mode=0 stick\ncartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20\ncartoon style ~(nucleic|strand) x round\ncartoon style (nucleic|strand) x rect\ncartoon style nucleic x round width 4 thick 4\nlighting shadows false\nlighting simple\ncamera ortho\nlighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1\nlighting soft\n\n# bg and model colors\nset bgColor white\nstyle nucleic stick\ngraphics silhouettes true\ncartoon style arrowScale 1.5\ncolor byhetero\n# Subunit colors from color_code/subunit_color_code.csv.\n# INTRON\ncolor #408.1/I #303030\n# EXON\ncolor #408.1/E #303030\n# U2 snRNA\ncolor #408.1/2 #71C562\n# U6 snRNA\ncolor #408.1/6 #EF4444\n# U5 snRNA\ncolor #408.1/5 #4F9FD3\n# PRPF8\ncolor #408.1/A #BFC3E8\n# EFTUD2\ncolor #408.1/C #6495ED\n# CWC22\ncolor #408.1/H #2C54DD\n# PLRG1\ncolor #408.1/J #F4A460\n# SNW1\ncolor #408.1/K #D49F96\n# BUD31\ncolor #408.1/L #FFF584\n# CWC2\ncolor #408.1/M #E6B566\n# RBM22\ncolor #408.1/N #DE9A52\n# CDC5L\ncolor #408.1/O #DAA520\n# CWC15\ncolor #408.1/P #FFDEAD\n# CRNKL1\ncolor #408.1/S #FFC388\n# SYF1\ncolor #408.1/T #FF957B\n# SLU7\ncolor #408.1/c #5A338B\n# PRPF17\ncolor #408.1/o #FFF7C9\n# SYF2\ncolor #408.1/y #FF8C00\n# SNRPB\ncolor #408.1/b #B0C4DE\n# SNRPB\ncolor #408.1/k #B0C4DE\n# SNRPD3\ncolor #408.1/d #B0C4DE\n# SNRPD3\ncolor #408.1/n #B0C4DE\n# SNRPE\ncolor #408.1/e #B0C4DE\n# SNRPE\ncolor #408.1/p #B0C4DE\n# SNRPF\ncolor #408.1/f #B0C4DE\n# SNRPF\ncolor #408.1/q #B0C4DE\n# SNRPG\ncolor #408.1/g #B0C4DE\n# SNRPG\ncolor #408.1/r #B0C4DE\n# SNRPD1\ncolor #408.1/h #B0C4DE\n# SNRPD1\ncolor #408.1/l #B0C4DE\n# SNRPD2\ncolor #408.1/j #B0C4DE\n# SNRPD2\ncolor #408.1/m #B0C4DE\n# DHX8\ncolor #408.1/V #900C3F\n# SNRPA1\ncolor #408.1/W #58D68D\n# SNRPB2\ncolor #408.1/Y #DAF7A6\n# EXON\ncolor #408.1/3 #303030\n# BCAS2\ncolor #408.1/s #FFDAB9\n# PRPF19\ncolor #408.1/t #FFFFAB\n# PRPF19\ncolor #408.1/u #FFFFAB\n# PRPF19\ncolor #408.1/v #FFFFAB\n# PRPF19\ncolor #408.1/w #FFFFAB\n# Named selections for subcomplexes using original deposited chain IDs.\n# EJC/mRNP\n# selector_meta {\"color\":\"#EAA439\",\"family\":\"Protein/RNP groups\",\"group\":\"EJC/mRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5MQ0_EJC_mRNP #408.1/H\n# NTC/NTR related\n# selector_meta {\"color\":\"#F4BF67\",\"family\":\"Protein/RNP groups\",\"group\":\"NTC/NTR groups\",\"kind\":\"subcomplex\"}\nname pdb_5MQ0_NTC_NTR_related #408.1/K,L,M,N,S,T,y\n# NTC/PRP19\n# selector_meta {\"color\":\"#F4BF67\",\"family\":\"Protein/RNP groups\",\"group\":\"NTC/NTR groups\",\"kind\":\"subcomplex\"}\nname pdb_5MQ0_NTC_PRP19 #408.1/J,O,P,s,t,u,v,w\n# RNA/substrate\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"group\":\"pre-mRNA features\",\"kind\":\"subcomplex\"}\nname pdb_5MQ0_RNA_substrate #408.1/3,E,I\n# Second step factors\n# selector_meta {\"color\":\"#9CA3AF\",\"family\":\"Protein/RNP groups\",\"group\":\"other protein/RNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5MQ0_Second_step_factors #408.1/V,c,o\n# Sm ring\n# selector_meta {\"color\":\"#9CA3AF\",\"family\":\"Protein/RNP groups\",\"group\":\"other protein/RNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5MQ0_Sm_ring #408.1/b,d,e,f,g,h,j,k,l,m,n,p,q,r\n# U2 snRNP\n# selector_meta {\"color\":\"#2F8B4D\",\"family\":\"Protein/RNP groups\",\"group\":\"U2/SF3B groups\",\"kind\":\"subcomplex\"}\nname pdb_5MQ0_U2_snRNP #408.1/2,W,Y\n# U5 snRNP\n# selector_meta {\"color\":\"#0000CD\",\"family\":\"Protein/RNP groups\",\"group\":\"U5 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5MQ0_U5_snRNP #408.1/5,A,C\n# U6 snRNP\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"Protein/RNP groups\",\"group\":\"U6 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5MQ0_U6_snRNP #408.1/6\n# other\n# selector_meta {\"color\":\"#9CA3AF\",\"family\":\"Protein/RNP groups\",\"group\":\"other protein/RNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5MQ0_other #408.1/R,X,a\n# Named selections for resolved substrate RNA features.\n# 3' exon: residues 1-3, component-name, high confidence, validation not_applicable\n# selector_meta {\"color\":\"#D97706\",\"family\":\"RNA\",\"feature\":\"exon_3\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5MQ0_3exon #408.1/3:1-3\n# substrate RNA: residues -16--1; 1-16;56-73; 1-3, component, medium confidence, validation not_applicable\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"substrate\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5MQ0_substrate #408.1/3:1-3|#408.1/E:-16--1|#408.1/I:1-16,56-73\n# 5' exon: residues -16--1, component-name, high confidence, validation not_applicable\n# selector_meta {\"color\":\"#FF8C00\",\"family\":\"RNA\",\"feature\":\"exon_5\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5MQ0_5exon #408.1/E:-16--1\n# 5' splice site: residues 1-6, network-scored-motif, medium confidence, validation validated\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"five_prime_splice_site\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5MQ0_5SS #408.1/I:1-6\n# intron: residues 1-16;56-73, manual-chain-override, high confidence, validation not_applicable\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"intron\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5MQ0_intron #408.1/I:1-16,56-73\n# branch point region: residues 56-73; 62-72, network-scored-motif/u2-branch-region-basepair, high confidence, validation validated\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"branch_point_region\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5MQ0_branch_region #408.1/I:56-73|#408.1/I:62-72\n# branch point adenosine: residues 70, network-scored-motif, high confidence, validation validated\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"branch_point_adenosine\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5MQ0_branch_A #408.1/I:70\n# Named selections for resolved snRNA functional regions.\n# U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence\n# selector_meta {\"color\":\"#047857\",\"family\":\"RNA\",\"feature\":\"U2_U6_helix_I_partner\",\"group\":\"snRNA-snRNA interacting regions\",\"group_key\":\"snRNA_snRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5MQ0_U2_U6_helix_I_partner #408.1/2:26-30\n# U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#0B6E2D\",\"family\":\"RNA\",\"feature\":\"U2_branchpoint_pairing_region\",\"group\":\"snRNA-pre-mRNA regions\",\"group_key\":\"snRNA_pre_mRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5MQ0_U2_branchpoint_pairing_region #408.1/2:33-42\n# U2 snRNA stem IIa: residues 46-49;55-73;78-79, review-region, low confidence\n# selector_meta {\"color\":\"#167A38\",\"family\":\"RNA\",\"feature\":\"U2_stem_IIa\",\"group\":\"internal stem loops\",\"group_key\":\"internal_stem_loops\",\"kind\":\"rna_feature\"}\nname Cstar_5MQ0_U2_stem_IIa #408.1/2:46-49,55-73,78-79\n# U5 snRNA loop I: residues 53, sequence-motif, medium confidence\n# selector_meta {\"color\":\"#1B3CD0\",\"family\":\"RNA\",\"feature\":\"U5_loop_I\",\"group\":\"snRNA-pre-mRNA regions\",\"group_key\":\"snRNA_pre_mRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5MQ0_U5_loop_I #408.1/5:53\n# U6 snRNA 5' terminal stem-loop: residues 1-10;16-30, reference-alignment, high confidence\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"RNA\",\"feature\":\"U6_5prime_terminal_stem_loop\",\"group\":\"internal stem loops\",\"group_key\":\"internal_stem_loops\",\"kind\":\"rna_feature\"}\nname Cstar_5MQ0_U6_5_terminal_stem_loop #408.1/6:1-10,16-30\n# U6 snRNA U2/U6 helix I partner: residues 41-66, motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#D0183C\",\"family\":\"RNA\",\"feature\":\"U6_U2_helix_I_partner\",\"group\":\"snRNA-snRNA interacting regions\",\"group_key\":\"snRNA_snRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5MQ0_U6_U2_helix_I_partner #408.1/6:41-66\n# U6 snRNA 5' splice-site upstream contact: residues 44-55, motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#E01842\",\"family\":\"RNA\",\"feature\":\"U6_5SS_upstream_contact\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5MQ0_U6_5SS_upstream_contact #408.1/6:44-55\n# U6 snRNA internal stem-loop: residues 46-73, motif-neighborhood, low confidence\n# selector_meta {\"color\":\"#D61A3D\",\"family\":\"RNA\",\"feature\":\"U6_ISL\",\"group\":\"internal stem loops\",\"group_key\":\"internal_stem_loops\",\"kind\":\"rna_feature\"}\nname Cstar_5MQ0_U6_ISL #408.1/6:46-73\n# U6 snRNA ACAGAGA box: residues 47-53, sequence-motif, high confidence\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"RNA\",\"feature\":\"U6_ACAGAGA_box\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5MQ0_U6_ACAGAGA_box #408.1/6:47-53\n# U6 snRNA AGC catalytic triad: residues 59-61, sequence-motif, medium confidence\n# selector_meta {\"color\":\"#C91236\",\"family\":\"RNA\",\"feature\":\"U6_AGC_catalytic_triad\",\"group\":\"catalytic core regions\",\"group_key\":\"catalytic_core_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5MQ0_U6_AGC_catalytic_triad #408.1/6:59-61\n# U6 snRNA LSm site: residues 103-104, terminal-region, low confidence\n# selector_meta {\"color\":\"#E33A55\",\"family\":\"RNA\",\"feature\":\"U6_LSm_site\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5MQ0_U6_LSm_site #408.1/6:103-104\n# RNA feature nucleotide display.\nselect #408.1 & nucleic\nnucleotides sel atoms\nselect clear\n# 3' exon: residues 1-3\ncolor #408.1/3:1-3 #D97706\nselect #408.1/3:1-3\nnucleotides sel fill\nselect clear\n# 5' exon: residues -16--1\ncolor #408.1/E:-16--1 #FF8C00\nselect #408.1/E:-16--1\nnucleotides sel fill\nselect clear\n# 5'SS: residues 1-6\n# intron: residues 1-16;56-73\n# BP region: residues 56-73; 62-72\n# BP-A: residues 70\n# U2/U6 helix I: residues 26-30\ncolor #408.1/2:26-30 #047857\nselect #408.1/2:26-30\nnucleotides sel fill\nselect clear\n# U2 BP pairing: residues 33-42\ncolor #408.1/2:33-42 #0B6E2D\nselect #408.1/2:33-42\nnucleotides sel fill\nselect clear\n# U2 stem IIa: residues 46-49;55-73;78-79\ncolor #408.1/2:46-49,55-73,78-79 #167A38\nselect #408.1/2:46-49,55-73,78-79\nnucleotides sel fill\nselect clear\n# U5 loop I: residues 53\ncolor #408.1/5:53 #1B3CD0\nselect #408.1/5:53\nnucleotides sel fill\nselect clear\n# U6 5' terminal SL: residues 1-10;16-30\ncolor #408.1/6:1-10,16-30 #DC143C\nselect #408.1/6:1-10,16-30\nnucleotides sel fill\nselect clear\n# U2/U6 helix I: residues 41-66\ncolor #408.1/6:41-66 #D0183C\nselect #408.1/6:41-66\nnucleotides sel fill\nselect clear\n# U6 5'SS contact: residues 44-55\ncolor #408.1/6:44-55 #E01842\nselect #408.1/6:44-55\nnucleotides sel fill\nselect clear\n# U6 ISL: residues 46-73\ncolor #408.1/6:46-73 #D61A3D\nselect #408.1/6:46-73\nnucleotides sel fill\nselect clear\n# U6 ACAGAGA: residues 47-53\ncolor #408.1/6:47-53 #DC143C\nselect #408.1/6:47-53\nnucleotides sel fill\nselect clear\n# U6 AGC triad: residues 59-61\ncolor #408.1/6:59-61 #C91236\nselect #408.1/6:59-61\nnucleotides sel fill\nselect clear\n# RNA feature 3D residue labels.\n# Labels are created as independent grouped models under #408.2.\n# Fetch and run the self-contained RNA label script from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/label_scripts/5mq0_rna_labels.py\n# Searchable named selection browser.\n# In GUI ChimeraX this opens a small panel for selecting, zooming, and toggling RNA labels.\n# Fetch and open the self-contained named selection browser from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/selection_browser_scripts/5mq0_selection_browser.py\nview\nshow nucleic\n",
     "5mqf": "# Lightweight ChimeraX script for 5MQF\n# Models are downloaded directly by ChimeraX from the PDB.\n# Primary maps, when requested, are downloaded directly from EMDB.\n# Original deposited chain identifiers are used.\n\n# Shared anchor frame: 8H6L\n# Structure group: #410; target model: #410.1; RNA labels: #410.2.\n\nopen 8h6l id 410.9 name 8H6L_anchor\nopen 5mqf id 410.1 name 5MQF\nopen emdb:3545 id 410.3.1 name Cstar_5mqf_EMD-3545_primary_map\nrename #410 Cstar_5mqf_structure\n\n# Align on PRPF8.\nmatchmaker #410.1/A to #410.9/5B bring #410.3.1\nclose #410.9\n\n# Remove implausibly long deposited covalent bonds before styling.\n# Fetch and run the implausible-bond pruning helper from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/prune_implausible_bonds.py\n\nhide atoms\ncartoon\n# Default display style.\nstyle (protein|nucleic|solvent) & @@draw_mode=0 stick\ncartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20\ncartoon style ~(nucleic|strand) x round\ncartoon style (nucleic|strand) x rect\ncartoon style nucleic x round width 4 thick 4\nlighting shadows false\nlighting simple\ncamera ortho\nlighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1\nlighting soft\n\n# bg and model colors\nset bgColor white\nstyle nucleic stick\ngraphics silhouettes true\ncartoon style arrowScale 1.5\ncolor byhetero\n# Subunit colors from color_code/subunit_color_code.csv.\n# PRPF8\ncolor #410.1/A #BFC3E8\n# EFTUD2\ncolor #410.1/B #6495ED\n# SNW1\ncolor #410.1/C #D49F96\n# PLRG1\ncolor #410.1/D #F4A460\n# PRPF17\ncolor #410.1/E #FFF7C9\n# PRP8BP\ncolor #410.1/F #E2F3F4\n# PRPF19\ncolor #410.1/G #FFFFAB\n# PRPF19\ncolor #410.1/H #FFFFAB\n# PRPF19\ncolor #410.1/I #FFFFAB\n# PRPF19\ncolor #410.1/J #FFFFAB\n# BCAS2\ncolor #410.1/K #FFDAB9\n# CDC5L\ncolor #410.1/L #DAA520\n# SYF1\ncolor #410.1/M #FF957B\n# SYF2\ncolor #410.1/N #FF8C00\n# CRNKL1\ncolor #410.1/O #FFC388\n# RBM22\ncolor #410.1/P #DE9A52\n# BUD31\ncolor #410.1/Q #FFF584\n# CWC15\ncolor #410.1/R #FFDEAD\n# SRRM2\ncolor #410.1/S #BDD6F0\n# CWC22\ncolor #410.1/T #2C54DD\n# AQR\ncolor #410.1/U #FFDAB9\n# PPIL1\ncolor #410.1/V #EEE8AA\n# SNRPA1\ncolor #410.1/W #58D68D\n# SNRPB2\ncolor #410.1/X #DAF7A6\n# U5-Sm SNRPD2\ncolor #410.1/a #B0C4DE\n# U2-Sm SNRPD2\ncolor #410.1/h #D5F5E3\n# U5-Sm SNRPF\ncolor #410.1/b #B0C4DE\n# U2-Sm SNRPF\ncolor #410.1/i #D5F5E3\n# U5-Sm SNRPE\ncolor #410.1/c #B0C4DE\n# U2-Sm SNRPE\ncolor #410.1/j #D5F5E3\n# U5-Sm SNRPG\ncolor #410.1/d #B0C4DE\n# U2-Sm SNRPG\ncolor #410.1/k #D5F5E3\n# U5-Sm SNRPD3\ncolor #410.1/e #B0C4DE\n# U2-Sm SNRPD3\ncolor #410.1/l #D5F5E3\n# U5-Sm SNRPB\ncolor #410.1/f #B0C4DE\n# U2-Sm SNRPB\ncolor #410.1/m #D5F5E3\n# U5-Sm SNRPD1\ncolor #410.1/g #B0C4DE\n# U2-Sm SNRPD1\ncolor #410.1/n #D5F5E3\n# PPIE\ncolor #410.1/o #FFFFE0\n# EIF4A3\ncolor #410.1/p #F1D8BC\n# DHX8\ncolor #410.1/q #900C3F\n# INTRON\ncolor #410.1/Y #303030\n# INTRON\ncolor #410.1/Z #303030\n# U2 snRNA\ncolor #410.1/2 #71C562\n# U5 snRNA\ncolor #410.1/5 #4F9FD3\n# U6 snRNA\ncolor #410.1/6 #EF4444\n# Named selections for subcomplexes using original deposited chain IDs.\n# EJC/mRNP\n# selector_meta {\"color\":\"#EAA439\",\"family\":\"Protein/RNP groups\",\"group\":\"EJC/mRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5MQF_EJC_mRNP #410.1/T,p\n# NTC/NTR related\n# selector_meta {\"color\":\"#F4BF67\",\"family\":\"Protein/RNP groups\",\"group\":\"NTC/NTR groups\",\"kind\":\"subcomplex\"}\nname pdb_5MQF_NTC_NTR_related #410.1/C,M,N,O,P,Q,U,V,o\n# NTC/PRP19\n# selector_meta {\"color\":\"#F4BF67\",\"family\":\"Protein/RNP groups\",\"group\":\"NTC/NTR groups\",\"kind\":\"subcomplex\"}\nname pdb_5MQF_NTC_PRP19 #410.1/D,G,H,I,J,K,L,R\n# RNA/substrate\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"group\":\"pre-mRNA features\",\"kind\":\"subcomplex\"}\nname pdb_5MQF_RNA_substrate #410.1/Y,Z\n# SR proteins\n# selector_meta {\"color\":\"#9CA3AF\",\"family\":\"Protein/RNP groups\",\"group\":\"other protein/RNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5MQF_SR_proteins #410.1/S\n# Second step factors\n# selector_meta {\"color\":\"#9CA3AF\",\"family\":\"Protein/RNP groups\",\"group\":\"other protein/RNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5MQF_Second_step_factors #410.1/E,q\n# U2 Sm ring\n# selector_meta {\"color\":\"#BFE6BF\",\"family\":\"Protein/RNP groups\",\"group\":\"U2/SF3B groups\",\"kind\":\"subcomplex\"}\nname pdb_5MQF_U2_Sm_ring #410.1/h,i,j,k,l,m,n\n# U2 snRNP\n# selector_meta {\"color\":\"#2F8B4D\",\"family\":\"Protein/RNP groups\",\"group\":\"U2/SF3B groups\",\"kind\":\"subcomplex\"}\nname pdb_5MQF_U2_snRNP #410.1/2,W,X\n# U5 Sm ring\n# selector_meta {\"color\":\"#BFC3E8\",\"family\":\"Protein/RNP groups\",\"group\":\"U5 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5MQF_U5_Sm_ring #410.1/a,b,c,d,e,f,g\n# U5 snRNP\n# selector_meta {\"color\":\"#0000CD\",\"family\":\"Protein/RNP groups\",\"group\":\"U5 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5MQF_U5_snRNP #410.1/5,A,B,F\n# U6 snRNP\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"Protein/RNP groups\",\"group\":\"U6 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5MQF_U6_snRNP #410.1/6\n# Named selections for resolved substrate RNA features.\n# substrate RNA: residues 47-58; 59-67;135-157, component, medium confidence, validation not_applicable\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"substrate\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5MQF_substrate #410.1/Y:59-67,135-157|#410.1/Z:47-58\n# 5' splice site: residues 59-64, network-scored-motif, medium confidence, validation uncertain uncertain validation\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"five_prime_splice_site\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5MQF_5SS #410.1/Y:59-64\n# intron: residues 59-67;135-157, splice-site-inference, medium confidence, validation not_applicable\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"intron\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5MQF_intron #410.1/Y:59-67,135-157\n# branch point region: residues 135-157; 150-156, network-scored-motif/u2-branch-region-basepair, high confidence, validation validated\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"branch_point_region\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5MQF_branch_region #410.1/Y:135-157|#410.1/Y:150-156\n# branch point adenosine: residues 155, network-scored-motif, high confidence, validation validated\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"branch_point_adenosine\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5MQF_branch_A #410.1/Y:155\n# 5' exon: residues 47-58, splice-site-inference, medium confidence, validation not_applicable\n# selector_meta {\"color\":\"#FF8C00\",\"family\":\"RNA\",\"feature\":\"exon_5\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5MQF_5exon #410.1/Z:47-58\n# Named selections for resolved snRNA functional regions.\n# U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence\n# selector_meta {\"color\":\"#047857\",\"family\":\"RNA\",\"feature\":\"U2_U6_helix_I_partner\",\"group\":\"snRNA-snRNA interacting regions\",\"group_key\":\"snRNA_snRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5MQF_U2_U6_helix_I_partner #410.1/2:26-30\n# U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#0B6E2D\",\"family\":\"RNA\",\"feature\":\"U2_branchpoint_pairing_region\",\"group\":\"snRNA-pre-mRNA regions\",\"group_key\":\"snRNA_pre_mRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5MQF_U2_branchpoint_pairing_region #410.1/2:32-41\n# U2 snRNA stem IIa: residues 46-60, review-region, low confidence\n# selector_meta {\"color\":\"#167A38\",\"family\":\"RNA\",\"feature\":\"U2_stem_IIa\",\"group\":\"internal stem loops\",\"group_key\":\"internal_stem_loops\",\"kind\":\"rna_feature\"}\nname Cstar_5MQF_U2_stem_IIa #410.1/2:46-60\n# U2 snRNA Sm site: residues 99-105, sequence-motif, medium confidence\n# selector_meta {\"color\":\"#2F8B4D\",\"family\":\"RNA\",\"feature\":\"U2_Sm_site\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5MQF_U2_Sm_site #410.1/2:99-105\n# U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence\n# selector_meta {\"color\":\"#1B3CD0\",\"family\":\"RNA\",\"feature\":\"U5_loop_I\",\"group\":\"snRNA-pre-mRNA regions\",\"group_key\":\"snRNA_pre_mRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5MQF_U5_loop_I #410.1/5:38-42\n# U6 snRNA 5' terminal stem-loop: residues 1-28, reference-alignment, high confidence\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"RNA\",\"feature\":\"U6_5prime_terminal_stem_loop\",\"group\":\"internal stem loops\",\"group_key\":\"internal_stem_loops\",\"kind\":\"rna_feature\"}\nname Cstar_5MQF_U6_5_terminal_stem_loop #410.1/6:1-28\n# U6 snRNA U2/U6 helix I partner: residues 36-60, motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#D0183C\",\"family\":\"RNA\",\"feature\":\"U6_U2_helix_I_partner\",\"group\":\"snRNA-snRNA interacting regions\",\"group_key\":\"snRNA_snRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5MQF_U6_U2_helix_I_partner #410.1/6:36-60\n# U6 snRNA 5' splice-site upstream contact: residues 38-49, motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#E01842\",\"family\":\"RNA\",\"feature\":\"U6_5SS_upstream_contact\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5MQF_U6_5SS_upstream_contact #410.1/6:38-49\n# U6 snRNA ACAGAGA box: residues 41-47, sequence-motif, high confidence\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"RNA\",\"feature\":\"U6_ACAGAGA_box\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5MQF_U6_ACAGAGA_box #410.1/6:41-47\n# U6 snRNA internal stem-loop: residues 79-96, motif-neighborhood, low confidence\n# selector_meta {\"color\":\"#D61A3D\",\"family\":\"RNA\",\"feature\":\"U6_ISL\",\"group\":\"internal stem loops\",\"group_key\":\"internal_stem_loops\",\"kind\":\"rna_feature\"}\nname Cstar_5MQF_U6_ISL #410.1/6:79-96\n# U6 snRNA AGC catalytic triad: residues 92-94, sequence-motif, medium confidence\n# selector_meta {\"color\":\"#C91236\",\"family\":\"RNA\",\"feature\":\"U6_AGC_catalytic_triad\",\"group\":\"catalytic core regions\",\"group_key\":\"catalytic_core_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5MQF_U6_AGC_catalytic_triad #410.1/6:92-94\n# RNA feature nucleotide display.\nselect #410.1 & nucleic\nnucleotides sel atoms\nselect clear\n# 5'SS: residues 59-64\n# intron: residues 59-67;135-157\n# BP region: residues 135-157; 150-156\n# BP-A: residues 155\n# 5' exon: residues 47-58\ncolor #410.1/Z:47-58 #FF8C00\nselect #410.1/Z:47-58\nnucleotides sel fill\nselect clear\n# U2/U6 helix I: residues 26-30\ncolor #410.1/2:26-30 #047857\nselect #410.1/2:26-30\nnucleotides sel fill\nselect clear\n# U2 BP pairing: residues 32-41\ncolor #410.1/2:32-41 #0B6E2D\nselect #410.1/2:32-41\nnucleotides sel fill\nselect clear\n# U2 stem IIa: residues 46-60\ncolor #410.1/2:46-60 #167A38\nselect #410.1/2:46-60\nnucleotides sel fill\nselect clear\n# U5 loop I: residues 38-42\ncolor #410.1/5:38-42 #1B3CD0\nselect #410.1/5:38-42\nnucleotides sel fill\nselect clear\n# U6 5' terminal SL: residues 1-28\ncolor #410.1/6:1-28 #DC143C\nselect #410.1/6:1-28\nnucleotides sel fill\nselect clear\n# U2/U6 helix I: residues 36-60\ncolor #410.1/6:36-60 #D0183C\nselect #410.1/6:36-60\nnucleotides sel fill\nselect clear\n# U6 5'SS contact: residues 38-49\ncolor #410.1/6:38-49 #E01842\nselect #410.1/6:38-49\nnucleotides sel fill\nselect clear\n# U6 ACAGAGA: residues 41-47\ncolor #410.1/6:41-47 #DC143C\nselect #410.1/6:41-47\nnucleotides sel fill\nselect clear\n# U6 ISL: residues 79-96\ncolor #410.1/6:79-96 #D61A3D\nselect #410.1/6:79-96\nnucleotides sel fill\nselect clear\n# U6 AGC triad: residues 92-94\ncolor #410.1/6:92-94 #C91236\nselect #410.1/6:92-94\nnucleotides sel fill\nselect clear\n# RNA feature 3D residue labels.\n# Labels are created as independent grouped models under #410.2.\n# Fetch and run the self-contained RNA label script from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/label_scripts/5mqf_rna_labels.py\n# Searchable named selection browser.\n# In GUI ChimeraX this opens a small panel for selecting, zooming, and toggling RNA labels.\n# Fetch and open the self-contained named selection browser from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/selection_browser_scripts/5mqf_selection_browser.py\nview\nshow nucleic\n",
     "5nrl": "# Lightweight ChimeraX script for 5NRL\n# Models are downloaded directly by ChimeraX from the PDB.\n# Primary maps, when requested, are downloaded directly from EMDB.\n# Original deposited chain identifiers are used.\n\n# Shared anchor frame: 8H6L\n# Structure group: #358; target model: #358.1; RNA labels: #358.2.\n\nopen 8h6l id 358.9 name 8H6L_anchor\nopen 5nrl id 358.1 name 5NRL\nopen emdb:3683 id 358.3.1 name B_5nrl_EMD-3683_primary_map\nrename #358 B_5nrl_structure\n\n# Align on PRPF8.\nmatchmaker #358.1/A to #358.9/5B bring #358.3.1\nclose #358.9\n\n# Remove implausibly long deposited covalent bonds before styling.\n# Fetch and run the implausible-bond pruning helper from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/prune_implausible_bonds.py\n\nhide atoms\ncartoon\n# Default display style.\nstyle (protein|nucleic|solvent) & @@draw_mode=0 stick\ncartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20\ncartoon style ~(nucleic|strand) x round\ncartoon style (nucleic|strand) x rect\ncartoon style nucleic x round width 4 thick 4\nlighting shadows false\nlighting simple\ncamera ortho\nlighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1\nlighting soft\n\n# bg and model colors\nset bgColor white\nstyle nucleic stick\ngraphics silhouettes true\ncartoon style arrowScale 1.5\ncolor byhetero\n# Subunit colors from color_code/subunit_color_code.csv.\n# U2 snRNA\ncolor #358.1/2 #71C562\n# LSM3\ncolor #358.1/3 #F4A3A8\n# U4 snRNA\ncolor #358.1/4 #F2D94E\n# U5 snRNA\ncolor #358.1/5 #4F9FD3\n# U6 snRNA\ncolor #358.1/6 #EF4444\n# LSM7\ncolor #358.1/7 #F4A3A8\n# LSM8\ncolor #358.1/8 #F4A3A8\n# PRPF8\ncolor #358.1/A #BFC3E8\n# SNRNP200\ncolor #358.1/B #AFEEEE\n# EFTUD2\ncolor #358.1/C #6495ED\n# TXNL4A\ncolor #358.1/D #C3BA7A\n# SART1\ncolor #358.1/E #D6937B\n# PRPF31\ncolor #358.1/F #DFD570\n# PRPF3\ncolor #358.1/G #E1DD1B\n# PRPF4\ncolor #358.1/H #E2C496\n# mRNA\ncolor #358.1/I #303030\n# PRPF6\ncolor #358.1/J #CFA785\n# NHP2L1\ncolor #358.1/K #A89264\n# SNRNP27\ncolor #358.1/L #F4E7D2\n# SF3B1\ncolor #358.1/O #487957\n# SF3B3\ncolor #358.1/P #6A9064\n# SF3B2\ncolor #358.1/Q #49926C\n# SF3B4\ncolor #358.1/R #77B088\n# PHF5A\ncolor #358.1/S #375A40\n# SF3A3\ncolor #358.1/T #9BCF91\n# SF3A2\ncolor #358.1/U #75A074\n# SF3A1\ncolor #358.1/V #55947F\n# SNRPA1\ncolor #358.1/W #58D68D\n# SNRPB2\ncolor #358.1/Y #DAF7A6\n# SF3B5\ncolor #358.1/Z #92BB8F\n# LSM2\ncolor #358.1/a #F4A3A8\n# U5-Sm SNRPB\ncolor #358.1/b #B0C4DE\n# U4-Sm SNRPB\ncolor #358.1/k #F7F0A6\n# U2-Sm SNRPB\ncolor #358.1/s #D5F5E3\n# U5-Sm SNRPD3\ncolor #358.1/d #B0C4DE\n# U4-Sm SNRPD3\ncolor #358.1/n #F7F0A6\n# U2-Sm SNRPD3\ncolor #358.1/v #D5F5E3\n# U5-Sm SNRPE\ncolor #358.1/e #B0C4DE\n# U4-Sm SNRPE\ncolor #358.1/p #F7F0A6\n# U2-Sm SNRPE\ncolor #358.1/w #D5F5E3\n# U5-Sm SNRPF\ncolor #358.1/f #B0C4DE\n# U4-Sm SNRPF\ncolor #358.1/q #F7F0A6\n# U2-Sm SNRPF\ncolor #358.1/x #D5F5E3\n# U5-Sm SNRPG\ncolor #358.1/g #B0C4DE\n# U4-Sm SNRPG\ncolor #358.1/r #F7F0A6\n# U2-Sm SNRPG\ncolor #358.1/y #D5F5E3\n# U5-Sm SNRPD1\ncolor #358.1/h #B0C4DE\n# U4-Sm SNRPD1\ncolor #358.1/l #F7F0A6\n# U2-Sm SNRPD1\ncolor #358.1/t #D5F5E3\n# U5-Sm SNRPD2\ncolor #358.1/i #B0C4DE\n# U4-Sm SNRPD2\ncolor #358.1/m #F7F0A6\n# U2-Sm SNRPD2\ncolor #358.1/u #D5F5E3\n# LSM4\ncolor #358.1/j #F4A3A8\n# LSM5\ncolor #358.1/o #F4A3A8\n# LSM6\ncolor #358.1/z #F4A3A8\n# Named selections for subcomplexes using original deposited chain IDs.\n# RNA/substrate\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"group\":\"pre-mRNA features\",\"kind\":\"subcomplex\"}\nname pdb_5NRL_RNA_substrate #358.1/I\n# U2 Sm ring\n# selector_meta {\"color\":\"#BFE6BF\",\"family\":\"Protein/RNP groups\",\"group\":\"U2/SF3B groups\",\"kind\":\"subcomplex\"}\nname pdb_5NRL_U2_Sm_ring #358.1/s,t,u,v,w,x,y\n# U2 snRNP\n# selector_meta {\"color\":\"#2F8B4D\",\"family\":\"Protein/RNP groups\",\"group\":\"U2/SF3B groups\",\"kind\":\"subcomplex\"}\nname pdb_5NRL_U2_snRNP #358.1/2,W,Y\n# U2/SF3B\n# selector_meta {\"color\":\"#6DBE70\",\"family\":\"Protein/RNP groups\",\"group\":\"U2/SF3B groups\",\"kind\":\"subcomplex\"}\nname pdb_5NRL_U2_SF3B #358.1/O,P,Q,R,S,T,U,V,Z\n# U4 Sm ring\n# selector_meta {\"color\":\"#F5E85A\",\"family\":\"Protein/RNP groups\",\"group\":\"U4 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5NRL_U4_Sm_ring #358.1/k,l,m,n,p,q,r\n# U4 snRNP\n# selector_meta {\"color\":\"#D8C800\",\"family\":\"Protein/RNP groups\",\"group\":\"U4 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5NRL_U4_snRNP #358.1/4\n# U4/U6 snRNP\n# selector_meta {\"color\":\"#C3BA7A\",\"family\":\"Protein/RNP groups\",\"group\":\"U4/U6 groups\",\"kind\":\"subcomplex\"}\nname pdb_5NRL_U4_U6_snRNP #358.1/D,F,G,H,K\n# U5 Sm ring\n# selector_meta {\"color\":\"#BFC3E8\",\"family\":\"Protein/RNP groups\",\"group\":\"U5 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5NRL_U5_Sm_ring #358.1/b,d,e,f,g,h,i\n# U5 snRNP\n# selector_meta {\"color\":\"#0000CD\",\"family\":\"Protein/RNP groups\",\"group\":\"U5 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5NRL_U5_snRNP #358.1/5,A,B,C,E,J,L\n# U6 LSm\n# selector_meta {\"color\":\"#FECACA\",\"family\":\"Protein/RNP groups\",\"group\":\"U6 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5NRL_U6_LSm #358.1/3,7,8,a,j,o,z\n# U6 snRNP\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"Protein/RNP groups\",\"group\":\"U6 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5NRL_U6_snRNP #358.1/6\n# other\n# selector_meta {\"color\":\"#9CA3AF\",\"family\":\"Protein/RNP groups\",\"group\":\"other protein/RNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5NRL_other #358.1/M,N,X\n# Named selections for resolved substrate RNA features.\n# 5' splice site: residues 6, network-scored-motif, medium confidence, validation validated\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"five_prime_splice_site\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname B_5NRL_5SS #358.1/I:6\n# intron: residues 6-8;51-53;57-79, splice-site-inference, medium confidence, validation not_applicable\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"intron\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname B_5NRL_intron #358.1/I:6-8,51-53,57-79\n# substrate RNA: residues 6-8;51-53;57-79, component, medium confidence, validation not_applicable\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"substrate\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname B_5NRL_substrate #358.1/I:6-8,51-53,57-79\n# branch point region: residues 57-79; 62-72, network-scored-motif/u2-branch-region-basepair, high confidence, validation validated\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"branch_point_region\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname B_5NRL_branch_region #358.1/I:57-79|#358.1/I:62-72\n# branch point adenosine: residues 70, network-scored-motif, high confidence, validation validated\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"branch_point_adenosine\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname B_5NRL_branch_A #358.1/I:70\n# Named selections for resolved snRNA functional regions.\n# U2 snRNA U2/U6 helix I partner: residues 30, review-region, high confidence\n# selector_meta {\"color\":\"#047857\",\"family\":\"RNA\",\"feature\":\"U2_U6_helix_I_partner\",\"group\":\"snRNA-snRNA interacting regions\",\"group_key\":\"snRNA_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5NRL_U2_U6_helix_I_partner #358.1/2:30\n# U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#0B6E2D\",\"family\":\"RNA\",\"feature\":\"U2_branchpoint_pairing_region\",\"group\":\"snRNA-pre-mRNA regions\",\"group_key\":\"snRNA_pre_mRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5NRL_U2_branchpoint_pairing_region #358.1/2:33-42\n# U2 snRNA stem IIa: residues 46-73;79-80, review-region, low confidence\n# selector_meta {\"color\":\"#167A38\",\"family\":\"RNA\",\"feature\":\"U2_stem_IIa\",\"group\":\"internal stem loops\",\"group_key\":\"internal_stem_loops\",\"kind\":\"rna_feature\"}\nname B_5NRL_U2_stem_IIa #358.1/2:46-73,79-80\n# U4 snRNA U4/U6 stem I partner: residues 1-18, reference-alignment, high confidence\n# selector_meta {\"color\":\"#D8C800\",\"family\":\"RNA\",\"feature\":\"U4_U6_stem_I_partner\",\"group\":\"snRNA-snRNA interacting regions\",\"group_key\":\"snRNA_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5NRL_U4_U6_stem_I_partner #358.1/4:1-18\n# U4 snRNA U4/U6 stem II partner: residues 57-64, reference-alignment, high confidence\n# selector_meta {\"color\":\"#E0CF1A\",\"family\":\"RNA\",\"feature\":\"U4_U6_stem_II_partner\",\"group\":\"snRNA-snRNA interacting regions\",\"group_key\":\"snRNA_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5NRL_U4_U6_stem_II_partner #358.1/4:57-64\n# U4 snRNA Brr2 loading region: residues 60-68;71-79;90-95, review-region, low confidence\n# selector_meta {\"color\":\"#F0DF2E\",\"family\":\"RNA\",\"feature\":\"U4_Brr2_loading_region\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5NRL_U4_Brr2_loading_region #358.1/4:60-68,71-79,90-95\n# U4 snRNA Sm site: residues 144-150, sequence-motif, medium confidence\n# selector_meta {\"color\":\"#F5E85A\",\"family\":\"RNA\",\"feature\":\"U4_Sm_site\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5NRL_U4_Sm_site #358.1/4:144-150\n# U5 snRNA loop I: residues 53, sequence-motif, medium confidence\n# selector_meta {\"color\":\"#1B3CD0\",\"family\":\"RNA\",\"feature\":\"U5_loop_I\",\"group\":\"snRNA-pre-mRNA regions\",\"group_key\":\"snRNA_pre_mRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5NRL_U5_loop_I #358.1/5:53\n# U6 snRNA 5' terminal stem-loop: residues 1-9;16-30, reference-alignment, high confidence\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"RNA\",\"feature\":\"U6_5prime_terminal_stem_loop\",\"group\":\"internal stem loops\",\"group_key\":\"internal_stem_loops\",\"kind\":\"rna_feature\"}\nname B_5NRL_U6_5_terminal_stem_loop #358.1/6:1-9,16-30\n# U6 snRNA U2/U6 helix I partner: residues 41-51;55-66, motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#D0183C\",\"family\":\"RNA\",\"feature\":\"U6_U2_helix_I_partner\",\"group\":\"snRNA-snRNA interacting regions\",\"group_key\":\"snRNA_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5NRL_U6_U2_helix_I_partner #358.1/6:41-51,55-66\n# U6 snRNA 5' splice-site upstream contact: residues 44-51;55, motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#E01842\",\"family\":\"RNA\",\"feature\":\"U6_5SS_upstream_contact\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5NRL_U6_5SS_upstream_contact #358.1/6:44-51,55\n# U6 snRNA internal stem-loop: residues 46-51;55-73, motif-neighborhood, low confidence\n# selector_meta {\"color\":\"#D61A3D\",\"family\":\"RNA\",\"feature\":\"U6_ISL\",\"group\":\"internal stem loops\",\"group_key\":\"internal_stem_loops\",\"kind\":\"rna_feature\"}\nname B_5NRL_U6_ISL #358.1/6:46-51,55-73\n# U6 snRNA ACAGAGA box: residues 47-51, sequence-motif, high confidence\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"RNA\",\"feature\":\"U6_ACAGAGA_box\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5NRL_U6_ACAGAGA_box #358.1/6:47-51\n# U6 snRNA U4/U6 stem II partner: residues 55-68, reference-alignment, high confidence\n# selector_meta {\"color\":\"#E01842\",\"family\":\"RNA\",\"feature\":\"U6_U4_stem_II_partner\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5NRL_U6_U4_stem_II_partner #358.1/6:55-68\n# U6 snRNA AGC catalytic triad: residues 59-61, sequence-motif, medium confidence\n# selector_meta {\"color\":\"#C91236\",\"family\":\"RNA\",\"feature\":\"U6_AGC_catalytic_triad\",\"group\":\"catalytic core regions\",\"group_key\":\"catalytic_core_regions\",\"kind\":\"rna_feature\"}\nname B_5NRL_U6_AGC_catalytic_triad #358.1/6:59-61\n# U6 snRNA U4/U6 stem I partner: residues 70-80, reference-alignment, high confidence\n# selector_meta {\"color\":\"#D9183E\",\"family\":\"RNA\",\"feature\":\"U6_U4_stem_I_partner\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5NRL_U6_U4_stem_I_partner #358.1/6:70-80\n# U6 snRNA LSm site: residues 108-112, terminal-region, low confidence\n# selector_meta {\"color\":\"#E33A55\",\"family\":\"RNA\",\"feature\":\"U6_LSm_site\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5NRL_U6_LSm_site #358.1/6:108-112\n# RNA feature nucleotide display.\nselect #358.1 & nucleic\nnucleotides sel atoms\nselect clear\n# 5'SS: residues 6\n# intron: residues 6-8;51-53;57-79\n# BP region: residues 57-79; 62-72\n# BP-A: residues 70\n# U2/U6 helix I: residues 30\ncolor #358.1/2:30 #047857\nselect #358.1/2:30\nnucleotides sel fill\nselect clear\n# U2 BP pairing: residues 33-42\ncolor #358.1/2:33-42 #0B6E2D\nselect #358.1/2:33-42\nnucleotides sel fill\nselect clear\n# U2 stem IIa: residues 46-73;79-80\ncolor #358.1/2:46-73,79-80 #167A38\nselect #358.1/2:46-73,79-80\nnucleotides sel fill\nselect clear\n# U4/U6 stem I: residues 1-18\ncolor #358.1/4:1-18 #D8C800\nselect #358.1/4:1-18\nnucleotides sel fill\nselect clear\n# U4/U6 stem II: residues 57-64\ncolor #358.1/4:57-64 #E0CF1A\nselect #358.1/4:57-64\nnucleotides sel fill\nselect clear\n# U4 Brr2 region: residues 60-68;71-79;90-95\ncolor #358.1/4:60-68,71-79,90-95 #F0DF2E\nselect #358.1/4:60-68,71-79,90-95\nnucleotides sel fill\nselect clear\n# U5 loop I: residues 53\ncolor #358.1/5:53 #1B3CD0\nselect #358.1/5:53\nnucleotides sel fill\nselect clear\n# U6 5' terminal SL: residues 1-9;16-30\ncolor #358.1/6:1-9,16-30 #DC143C\nselect #358.1/6:1-9,16-30\nnucleotides sel fill\nselect clear\n# U2/U6 helix I: residues 41-51;55-66\ncolor #358.1/6:41-51,55-66 #D0183C\nselect #358.1/6:41-51,55-66\nnucleotides sel fill\nselect clear\n# U6 5'SS contact: residues 44-51;55\ncolor #358.1/6:44-51,55 #E01842\nselect #358.1/6:44-51,55\nnucleotides sel fill\nselect clear\n# U6 ISL: residues 46-51;55-73\ncolor #358.1/6:46-51,55-73 #D61A3D\nselect #358.1/6:46-51,55-73\nnucleotides sel fill\nselect clear\n# U6 ACAGAGA: residues 47-51\ncolor #358.1/6:47-51 #DC143C\nselect #358.1/6:47-51\nnucleotides sel fill\nselect clear\n# U4/U6 stem II: residues 55-68\ncolor #358.1/6:55-68 #E01842\nselect #358.1/6:55-68\nnucleotides sel fill\nselect clear\n# U6 AGC triad: residues 59-61\ncolor #358.1/6:59-61 #C91236\nselect #358.1/6:59-61\nnucleotides sel fill\nselect clear\n# U4/U6 stem I: residues 70-80\ncolor #358.1/6:70-80 #D9183E\nselect #358.1/6:70-80\nnucleotides sel fill\nselect clear\n# RNA feature 3D residue labels.\n# Labels are created as independent grouped models under #358.2.\n# Fetch and run the self-contained RNA label script from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/label_scripts/5nrl_rna_labels.py\n# Searchable named selection browser.\n# In GUI ChimeraX this opens a small panel for selecting, zooming, and toggling RNA labels.\n# Fetch and open the self-contained named selection browser from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/selection_browser_scripts/5nrl_selection_browser.py\nview\nshow nucleic\n",
-    "5o9z": "# Lightweight ChimeraX script for 5O9Z\n# Models are downloaded directly by ChimeraX from the PDB.\n# Primary maps, when requested, are downloaded directly from EMDB.\n# Original deposited chain identifiers are used.\n\n# Shared anchor frame: 8H6L\n# Structure group: #359; target model: #359.1; RNA labels: #359.2.\n\nopen 8h6l id 359.9 name 8H6L_anchor\nopen 5o9z id 359.1 name 5O9Z\nopen emdb:3766 id 359.3.1 name B_5o9z_EMD-3766_primary_map\nrename #359 B_5o9z_structure\n\n# Align on PRPF8.\nmatchmaker #359.1/A to #359.9/5B bring #359.3.1\nclose #359.9\n\n# Remove implausibly long deposited covalent bonds before styling.\n# Fetch and run the implausible-bond pruning helper from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/prune_implausible_bonds.py\n\nhide atoms\ncartoon\n# Default display style.\nstyle (protein|nucleic|solvent) & @@draw_mode=0 stick\ncartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20\ncartoon style ~(nucleic|strand) x round\ncartoon style (nucleic|strand) x rect\ncartoon style nucleic x round width 4 thick 4\nlighting shadows false\nlighting simple\ncamera ortho\nlighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1\nlighting soft\n\n# bg and model colors\nset bgColor white\nstyle nucleic stick\ngraphics silhouettes true\ncartoon style arrowScale 1.5\ncolor byhetero\n# Subunit colors from color_code/subunit_color_code.csv.\n# PRPF8\ncolor #359.1/A #BFC3E8\n# EFTUD2\ncolor #359.1/B #6495ED\n# SNRNP200\ncolor #359.1/C #AFEEEE\n# PRP8BP\ncolor #359.1/D #E2F3F4\n# PRPF3\ncolor #359.1/E #E1DD1B\n# PRPF4\ncolor #359.1/F #E2C496\n# PRPF6\ncolor #359.1/G #CFA785\n# PRPF31\ncolor #359.1/H #DFD570\n# PRPF38A\ncolor #359.1/I #F88379\n# TXNL4A\ncolor #359.1/J #C3BA7A\n# MFAP1\ncolor #359.1/K #CD5C5C\n# SMU1\ncolor #359.1/L #E0A3D2\n# CYP20\ncolor #359.1/M #C9AC36\n# ZMAT2\ncolor #359.1/N #FFB6C1\n# NHP2L1\ncolor #359.1/O #A89264\n# SART1\ncolor #359.1/P #D6937B\n# FBP21\ncolor #359.1/Q #B03B66\n# IK\ncolor #359.1/R #C75769\n# U2-Sm SNRPD2\ncolor #359.1/S #D5F5E3\n# U5-Sm SNRPD2\ncolor #359.1/a #B0C4DE\n# U4-Sm SNRPD2\ncolor #359.1/h #F7F0A6\n# U2-Sm SNRPF\ncolor #359.1/T #D5F5E3\n# U5-Sm SNRPF\ncolor #359.1/b #B0C4DE\n# U4-Sm SNRPF\ncolor #359.1/i #F7F0A6\n# U2-Sm SNRPE\ncolor #359.1/U #D5F5E3\n# U5-Sm SNRPE\ncolor #359.1/c #B0C4DE\n# U4-Sm SNRPE\ncolor #359.1/j #F7F0A6\n# U2-Sm SNRPG\ncolor #359.1/V #D5F5E3\n# U5-Sm SNRPG\ncolor #359.1/d #B0C4DE\n# U4-Sm SNRPG\ncolor #359.1/k #F7F0A6\n# U2-Sm SNRPD3\ncolor #359.1/W #D5F5E3\n# U5-Sm SNRPD3\ncolor #359.1/e #B0C4DE\n# U4-Sm SNRPD3\ncolor #359.1/l #F7F0A6\n# U2-Sm SNRPB\ncolor #359.1/X #D5F5E3\n# U5-Sm SNRPB\ncolor #359.1/f #B0C4DE\n# U4-Sm SNRPB\ncolor #359.1/m #F7F0A6\n# U2-Sm SNRPD1\ncolor #359.1/Z #D5F5E3\n# U5-Sm SNRPD1\ncolor #359.1/g #B0C4DE\n# U4-Sm SNRPD1\ncolor #359.1/n #F7F0A6\n# LSM2\ncolor #359.1/o #F4A3A8\n# LSM3\ncolor #359.1/p #F4A3A8\n# LSM4\ncolor #359.1/q #F4A3A8\n# LSM5\ncolor #359.1/r #F4A3A8\n# LSM6\ncolor #359.1/s #F4A3A8\n# LSM7\ncolor #359.1/t #F4A3A8\n# LSM8\ncolor #359.1/u #F4A3A8\n# SF3B1\ncolor #359.1/v #487957\n# SF3B3\ncolor #359.1/w #6A9064\n# SF3B5\ncolor #359.1/x #92BB8F\n# PHF5A\ncolor #359.1/y #375A40\n# SNRPA1\ncolor #359.1/z #58D68D\n# SNRPB2\ncolor #359.1/1 #DAF7A6\n# mRNA\ncolor #359.1/Y #303030\n# U2 snRNA\ncolor #359.1/2 #71C562\n# U4 snRNA\ncolor #359.1/4 #F2D94E\n# U5 snRNA\ncolor #359.1/5 #4F9FD3\n# U6 snRNA\ncolor #359.1/6 #EF4444\n# Named selections for subcomplexes using original deposited chain IDs.\n# RNA/substrate\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"group\":\"pre-mRNA features\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_RNA_substrate #359.1/Y\n# U2 Sm ring\n# selector_meta {\"color\":\"#BFE6BF\",\"family\":\"Protein/RNP groups\",\"group\":\"U2/SF3B groups\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_U2_Sm_ring #359.1/S,T,U,V,W,X,Z\n# U2 snRNP\n# selector_meta {\"color\":\"#2F8B4D\",\"family\":\"Protein/RNP groups\",\"group\":\"U2/SF3B groups\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_U2_snRNP #359.1/1,2,z\n# U2/SF3B\n# selector_meta {\"color\":\"#6DBE70\",\"family\":\"Protein/RNP groups\",\"group\":\"U2/SF3B groups\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_U2_SF3B #359.1/v,w,x,y\n# U4 Sm ring\n# selector_meta {\"color\":\"#F5E85A\",\"family\":\"Protein/RNP groups\",\"group\":\"U4 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_U4_Sm_ring #359.1/h,i,j,k,l,m,n\n# U4 snRNP\n# selector_meta {\"color\":\"#D8C800\",\"family\":\"Protein/RNP groups\",\"group\":\"U4 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_U4_snRNP #359.1/4\n# U4/U6 snRNP\n# selector_meta {\"color\":\"#C3BA7A\",\"family\":\"Protein/RNP groups\",\"group\":\"U4/U6 groups\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_U4_U6_snRNP #359.1/E,F,H,J,O\n# U5 Sm ring\n# selector_meta {\"color\":\"#BFC3E8\",\"family\":\"Protein/RNP groups\",\"group\":\"U5 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_U5_Sm_ring #359.1/a,b,c,d,e,f,g\n# U5 snRNP\n# selector_meta {\"color\":\"#0000CD\",\"family\":\"Protein/RNP groups\",\"group\":\"U5 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_U5_snRNP #359.1/5,A,B,C,D,G,P\n# U6 LSm\n# selector_meta {\"color\":\"#FECACA\",\"family\":\"Protein/RNP groups\",\"group\":\"U6 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_U6_LSm #359.1/o,p,q,r,s,t,u\n# U6 snRNP\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"Protein/RNP groups\",\"group\":\"U6 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_U6_snRNP #359.1/6\n# other\n# selector_meta {\"color\":\"#9CA3AF\",\"family\":\"Protein/RNP groups\",\"group\":\"other protein/RNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_other #359.1/I,K,L,M,N,Q,R\n# Named selections for resolved substrate RNA features.\n# 5' exon: residues 49-58, splice-site-inference, medium confidence, validation not_applicable\n# selector_meta {\"color\":\"#FF8C00\",\"family\":\"RNA\",\"feature\":\"exon_5\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname B_5O9Z_5exon #359.1/Y:49-58\n# substrate RNA: residues 49-75;142-160, component, medium confidence, validation not_applicable\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"substrate\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname B_5O9Z_substrate #359.1/Y:49-75,142-160\n# 5' splice site: residues 59-64, network-scored-motif, high confidence, validation validated\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"five_prime_splice_site\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname B_5O9Z_5SS #359.1/Y:59-64\n# intron: residues 59-75;142-160, splice-site-inference, medium confidence, validation not_applicable\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"intron\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname B_5O9Z_intron #359.1/Y:59-75,142-160\n# Named selections for resolved snRNA functional regions.\n# U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#0B6E2D\",\"family\":\"RNA\",\"feature\":\"U2_branchpoint_pairing_region\",\"group\":\"snRNA-pre-mRNA regions\",\"group_key\":\"snRNA_pre_mRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U2_branchpoint_pairing_region #359.1/2:32-41\n# U2 snRNA stem IIa: residues 46, review-region, low confidence\n# selector_meta {\"color\":\"#167A38\",\"family\":\"RNA\",\"feature\":\"U2_stem_IIa\",\"group\":\"internal stem loops\",\"group_key\":\"internal_stem_loops\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U2_stem_IIa #359.1/2:46\n# U2 snRNA Sm site: residues 99-105, sequence-motif, medium confidence\n# selector_meta {\"color\":\"#2F8B4D\",\"family\":\"RNA\",\"feature\":\"U2_Sm_site\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U2_Sm_site #359.1/2:99-105\n# U4 snRNA U4/U6 stem I partner: residues 1-18, reference-alignment, high confidence\n# selector_meta {\"color\":\"#D8C800\",\"family\":\"RNA\",\"feature\":\"U4_U6_stem_I_partner\",\"group\":\"snRNA-snRNA interacting regions\",\"group_key\":\"snRNA_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U4_U6_stem_I_partner #359.1/4:1-18\n# U4 snRNA U4/U6 stem II partner: residues 56-63, reference-alignment, high confidence\n# selector_meta {\"color\":\"#E0CF1A\",\"family\":\"RNA\",\"feature\":\"U4_U6_stem_II_partner\",\"group\":\"snRNA-snRNA interacting regions\",\"group_key\":\"snRNA_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U4_U6_stem_II_partner #359.1/4:56-63\n# U4 snRNA Brr2 loading region: residues 60-63;68-95, review-region, low confidence\n# selector_meta {\"color\":\"#F0DF2E\",\"family\":\"RNA\",\"feature\":\"U4_Brr2_loading_region\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U4_Brr2_loading_region #359.1/4:60-63,68-95\n# U4 snRNA Sm site: residues 119-125, sequence-motif, medium confidence\n# selector_meta {\"color\":\"#F5E85A\",\"family\":\"RNA\",\"feature\":\"U4_Sm_site\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U4_Sm_site #359.1/4:119-125\n# U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence\n# selector_meta {\"color\":\"#1B3CD0\",\"family\":\"RNA\",\"feature\":\"U5_loop_I\",\"group\":\"snRNA-pre-mRNA regions\",\"group_key\":\"snRNA_pre_mRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U5_loop_I #359.1/5:38-42\n# U6 snRNA 5' terminal stem-loop: residues 1-30, reference-alignment, high confidence\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"RNA\",\"feature\":\"U6_5prime_terminal_stem_loop\",\"group\":\"internal stem loops\",\"group_key\":\"internal_stem_loops\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U6_5_terminal_stem_loop #359.1/6:1-30\n# U6 snRNA U2/U6 helix I partner: residues 35-60, motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#D0183C\",\"family\":\"RNA\",\"feature\":\"U6_U2_helix_I_partner\",\"group\":\"snRNA-snRNA interacting regions\",\"group_key\":\"snRNA_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U6_U2_helix_I_partner #359.1/6:35-60\n# U6 snRNA 5' splice-site upstream contact: residues 38-49, motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#E01842\",\"family\":\"RNA\",\"feature\":\"U6_5SS_upstream_contact\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U6_5SS_upstream_contact #359.1/6:38-49\n# U6 snRNA ACAGAGA box: residues 41-47, sequence-motif, high confidence\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"RNA\",\"feature\":\"U6_ACAGAGA_box\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U6_ACAGAGA_box #359.1/6:41-47\n# U6 snRNA U4/U6 stem II partner: residues 52-61, reference-alignment, high confidence\n# selector_meta {\"color\":\"#E01842\",\"family\":\"RNA\",\"feature\":\"U6_U4_stem_II_partner\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U6_U4_stem_II_partner #359.1/6:52-61\n# U6 snRNA U4/U6 stem I partner: residues 63-74, reference-alignment, high confidence\n# selector_meta {\"color\":\"#D9183E\",\"family\":\"RNA\",\"feature\":\"U6_U4_stem_I_partner\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U6_U4_stem_I_partner #359.1/6:63-74\n# U6 snRNA internal stem-loop: residues 85-96, motif-neighborhood, low confidence\n# selector_meta {\"color\":\"#D61A3D\",\"family\":\"RNA\",\"feature\":\"U6_ISL\",\"group\":\"internal stem loops\",\"group_key\":\"internal_stem_loops\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U6_ISL #359.1/6:85-96\n# U6 snRNA AGC catalytic triad: residues 92-94, sequence-motif, medium confidence\n# selector_meta {\"color\":\"#C91236\",\"family\":\"RNA\",\"feature\":\"U6_AGC_catalytic_triad\",\"group\":\"catalytic core regions\",\"group_key\":\"catalytic_core_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U6_AGC_catalytic_triad #359.1/6:92-94\n# RNA feature nucleotide display.\nselect #359.1 & nucleic\nnucleotides sel atoms\nselect clear\n# 5' exon: residues 49-58\ncolor #359.1/Y:49-58 #FF8C00\nselect #359.1/Y:49-58\nnucleotides sel fill\nselect clear\n# 5'SS: residues 59-64\n# intron: residues 59-75;142-160\n# U2 BP pairing: residues 32-41\ncolor #359.1/2:32-41 #0B6E2D\nselect #359.1/2:32-41\nnucleotides sel fill\nselect clear\n# U2 stem IIa: residues 46\ncolor #359.1/2:46 #167A38\nselect #359.1/2:46\nnucleotides sel fill\nselect clear\n# U4/U6 stem I: residues 1-18\ncolor #359.1/4:1-18 #D8C800\nselect #359.1/4:1-18\nnucleotides sel fill\nselect clear\n# U4/U6 stem II: residues 56-63\ncolor #359.1/4:56-63 #E0CF1A\nselect #359.1/4:56-63\nnucleotides sel fill\nselect clear\n# U4 Brr2 region: residues 60-63;68-95\ncolor #359.1/4:60-63,68-95 #F0DF2E\nselect #359.1/4:60-63,68-95\nnucleotides sel fill\nselect clear\n# U5 loop I: residues 38-42\ncolor #359.1/5:38-42 #1B3CD0\nselect #359.1/5:38-42\nnucleotides sel fill\nselect clear\n# U6 5' terminal SL: residues 1-30\ncolor #359.1/6:1-30 #DC143C\nselect #359.1/6:1-30\nnucleotides sel fill\nselect clear\n# U2/U6 helix I: residues 35-60\ncolor #359.1/6:35-60 #D0183C\nselect #359.1/6:35-60\nnucleotides sel fill\nselect clear\n# U6 5'SS contact: residues 38-49\ncolor #359.1/6:38-49 #E01842\nselect #359.1/6:38-49\nnucleotides sel fill\nselect clear\n# U6 ACAGAGA: residues 41-47\ncolor #359.1/6:41-47 #DC143C\nselect #359.1/6:41-47\nnucleotides sel fill\nselect clear\n# U4/U6 stem II: residues 52-61\ncolor #359.1/6:52-61 #E01842\nselect #359.1/6:52-61\nnucleotides sel fill\nselect clear\n# U4/U6 stem I: residues 63-74\ncolor #359.1/6:63-74 #D9183E\nselect #359.1/6:63-74\nnucleotides sel fill\nselect clear\n# U6 ISL: residues 85-96\ncolor #359.1/6:85-96 #D61A3D\nselect #359.1/6:85-96\nnucleotides sel fill\nselect clear\n# U6 AGC triad: residues 92-94\ncolor #359.1/6:92-94 #C91236\nselect #359.1/6:92-94\nnucleotides sel fill\nselect clear\n# RNA feature 3D residue labels.\n# Labels are created as independent grouped models under #359.2.\n# Fetch and run the self-contained RNA label script from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/label_scripts/5o9z_rna_labels.py\n# Searchable named selection browser.\n# In GUI ChimeraX this opens a small panel for selecting, zooming, and toggling RNA labels.\n# Fetch and open the self-contained named selection browser from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/selection_browser_scripts/5o9z_selection_browser.py\nview\nshow nucleic\n",
+    "5o9z": "# Lightweight ChimeraX script for 5O9Z\n# Models are downloaded directly by ChimeraX from the PDB.\n# Primary maps, when requested, are downloaded directly from EMDB.\n# Original deposited chain identifiers are used.\n\n# Shared anchor frame: 8H6L\n# Structure group: #359; target model: #359.1; RNA labels: #359.2.\n\nopen 8h6l id 359.9 name 8H6L_anchor\nopen 5o9z id 359.1 name 5O9Z\nopen emdb:3766 id 359.3.1 name B_5o9z_EMD-3766_primary_map\nrename #359 B_5o9z_structure\n\n# Align on PRPF8.\nmatchmaker #359.1/A to #359.9/5B bring #359.3.1\nclose #359.9\n\n# Remove implausibly long deposited covalent bonds before styling.\n# Fetch and run the implausible-bond pruning helper from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/prune_implausible_bonds.py\n\nhide atoms\ncartoon\n# Default display style.\nstyle (protein|nucleic|solvent) & @@draw_mode=0 stick\ncartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20\ncartoon style ~(nucleic|strand) x round\ncartoon style (nucleic|strand) x rect\ncartoon style nucleic x round width 4 thick 4\nlighting shadows false\nlighting simple\ncamera ortho\nlighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1\nlighting soft\n\n# bg and model colors\nset bgColor white\nstyle nucleic stick\ngraphics silhouettes true\ncartoon style arrowScale 1.5\ncolor byhetero\n# Subunit colors from color_code/subunit_color_code.csv.\n# PRPF8\ncolor #359.1/A #BFC3E8\n# EFTUD2\ncolor #359.1/B #6495ED\n# SNRNP200\ncolor #359.1/C #AFEEEE\n# PRP8BP\ncolor #359.1/D #E2F3F4\n# PRPF3\ncolor #359.1/E #E1DD1B\n# PRPF4\ncolor #359.1/F #E2C496\n# PRPF6\ncolor #359.1/G #CFA785\n# PRPF31\ncolor #359.1/H #DFD570\n# PRPF38A\ncolor #359.1/I #F88379\n# TXNL4A\ncolor #359.1/J #C3BA7A\n# MFAP1\ncolor #359.1/K #CD5C5C\n# SMU1\ncolor #359.1/L #E0A3D2\n# CYP20\ncolor #359.1/M #C9AC36\n# ZMAT2\ncolor #359.1/N #FFB6C1\n# NHP2L1\ncolor #359.1/O #A89264\n# SART1\ncolor #359.1/P #D6937B\n# FBP21\ncolor #359.1/Q #B03B66\n# IK\ncolor #359.1/R #C75769\n# U2-Sm SNRPD2\ncolor #359.1/S #D5F5E3\n# U5-Sm SNRPD2\ncolor #359.1/a #B0C4DE\n# U4-Sm SNRPD2\ncolor #359.1/h #F7F0A6\n# U2-Sm SNRPF\ncolor #359.1/T #D5F5E3\n# U5-Sm SNRPF\ncolor #359.1/b #B0C4DE\n# U4-Sm SNRPF\ncolor #359.1/i #F7F0A6\n# U2-Sm SNRPE\ncolor #359.1/U #D5F5E3\n# U5-Sm SNRPE\ncolor #359.1/c #B0C4DE\n# U4-Sm SNRPE\ncolor #359.1/j #F7F0A6\n# U2-Sm SNRPG\ncolor #359.1/V #D5F5E3\n# U5-Sm SNRPG\ncolor #359.1/d #B0C4DE\n# U4-Sm SNRPG\ncolor #359.1/k #F7F0A6\n# U2-Sm SNRPD3\ncolor #359.1/W #D5F5E3\n# U5-Sm SNRPD3\ncolor #359.1/e #B0C4DE\n# U4-Sm SNRPD3\ncolor #359.1/l #F7F0A6\n# U2-Sm SNRPB\ncolor #359.1/X #D5F5E3\n# U5-Sm SNRPB\ncolor #359.1/f #B0C4DE\n# U4-Sm SNRPB\ncolor #359.1/m #F7F0A6\n# U2-Sm SNRPD1\ncolor #359.1/Z #D5F5E3\n# U5-Sm SNRPD1\ncolor #359.1/g #B0C4DE\n# U4-Sm SNRPD1\ncolor #359.1/n #F7F0A6\n# LSM2\ncolor #359.1/o #F4A3A8\n# LSM3\ncolor #359.1/p #F4A3A8\n# LSM4\ncolor #359.1/q #F4A3A8\n# LSM5\ncolor #359.1/r #F4A3A8\n# LSM6\ncolor #359.1/s #F4A3A8\n# LSM7\ncolor #359.1/t #F4A3A8\n# LSM8\ncolor #359.1/u #F4A3A8\n# SF3B1\ncolor #359.1/v #487957\n# SF3B3\ncolor #359.1/w #6A9064\n# SF3B5\ncolor #359.1/x #92BB8F\n# PHF5A\ncolor #359.1/y #375A40\n# SNRPA1\ncolor #359.1/z #58D68D\n# SNRPB2\ncolor #359.1/1 #DAF7A6\n# mRNA\ncolor #359.1/Y #303030\n# U2 snRNA\ncolor #359.1/2 #71C562\n# U4 snRNA\ncolor #359.1/4 #F2D94E\n# U5 snRNA\ncolor #359.1/5 #4F9FD3\n# U6 snRNA\ncolor #359.1/6 #EF4444\n# Named selections for subcomplexes using original deposited chain IDs.\n# RNA/substrate\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"group\":\"pre-mRNA features\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_RNA_substrate #359.1/Y\n# U2 Sm ring\n# selector_meta {\"color\":\"#BFE6BF\",\"family\":\"Protein/RNP groups\",\"group\":\"U2/SF3B groups\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_U2_Sm_ring #359.1/S,T,U,V,W,X,Z\n# U2 snRNP\n# selector_meta {\"color\":\"#2F8B4D\",\"family\":\"Protein/RNP groups\",\"group\":\"U2/SF3B groups\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_U2_snRNP #359.1/1,2,z\n# U2/SF3B\n# selector_meta {\"color\":\"#6DBE70\",\"family\":\"Protein/RNP groups\",\"group\":\"U2/SF3B groups\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_U2_SF3B #359.1/v,w,x,y\n# U4 Sm ring\n# selector_meta {\"color\":\"#F5E85A\",\"family\":\"Protein/RNP groups\",\"group\":\"U4 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_U4_Sm_ring #359.1/h,i,j,k,l,m,n\n# U4 snRNP\n# selector_meta {\"color\":\"#D8C800\",\"family\":\"Protein/RNP groups\",\"group\":\"U4 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_U4_snRNP #359.1/4\n# U4/U6 snRNP\n# selector_meta {\"color\":\"#C3BA7A\",\"family\":\"Protein/RNP groups\",\"group\":\"U4/U6 groups\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_U4_U6_snRNP #359.1/E,F,H,J,O\n# U5 Sm ring\n# selector_meta {\"color\":\"#BFC3E8\",\"family\":\"Protein/RNP groups\",\"group\":\"U5 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_U5_Sm_ring #359.1/a,b,c,d,e,f,g\n# U5 snRNP\n# selector_meta {\"color\":\"#0000CD\",\"family\":\"Protein/RNP groups\",\"group\":\"U5 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_U5_snRNP #359.1/5,A,B,C,D,G,P\n# U6 LSm\n# selector_meta {\"color\":\"#FECACA\",\"family\":\"Protein/RNP groups\",\"group\":\"U6 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_U6_LSm #359.1/o,p,q,r,s,t,u\n# U6 snRNP\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"Protein/RNP groups\",\"group\":\"U6 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_U6_snRNP #359.1/6\n# other\n# selector_meta {\"color\":\"#9CA3AF\",\"family\":\"Protein/RNP groups\",\"group\":\"other protein/RNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5O9Z_other #359.1/I,K,L,M,N,Q,R\n# Named selections for resolved substrate RNA features.\n# 5' exon: residues 49-58, splice-site-inference, medium confidence, validation not_applicable\n# selector_meta {\"color\":\"#FF8C00\",\"family\":\"RNA\",\"feature\":\"exon_5\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname B_5O9Z_5exon #359.1/Y:49-58\n# substrate RNA: residues 49-75;142-160, component, medium confidence, validation not_applicable\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"substrate\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname B_5O9Z_substrate #359.1/Y:49-75,142-160\n# 5' splice site: residues 59-64, network-scored-motif, high confidence, validation validated\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"five_prime_splice_site\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname B_5O9Z_5SS #359.1/Y:59-64\n# intron: residues 59-75;142-160, splice-site-inference, medium confidence, validation not_applicable\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"intron\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname B_5O9Z_intron #359.1/Y:59-75,142-160\n# branch point region: residues 145-156, network-scored-motif; manual-review-correction, high confidence, validation validated\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"branch_point_region\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname B_5O9Z_branch_region #359.1/Y:145-156\n# branch point adenosine: residues 155, network-scored-motif; manual-review-correction, high confidence, validation validated\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"branch_point_adenosine\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname B_5O9Z_branch_A #359.1/Y:155\n# Named selections for resolved snRNA functional regions.\n# U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#0B6E2D\",\"family\":\"RNA\",\"feature\":\"U2_branchpoint_pairing_region\",\"group\":\"snRNA-pre-mRNA regions\",\"group_key\":\"snRNA_pre_mRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U2_branchpoint_pairing_region #359.1/2:32-41\n# U2 snRNA stem IIa: residues 46, review-region, low confidence\n# selector_meta {\"color\":\"#167A38\",\"family\":\"RNA\",\"feature\":\"U2_stem_IIa\",\"group\":\"internal stem loops\",\"group_key\":\"internal_stem_loops\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U2_stem_IIa #359.1/2:46\n# U2 snRNA Sm site: residues 99-105, sequence-motif, medium confidence\n# selector_meta {\"color\":\"#2F8B4D\",\"family\":\"RNA\",\"feature\":\"U2_Sm_site\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U2_Sm_site #359.1/2:99-105\n# U4 snRNA U4/U6 stem I partner: residues 1-18, reference-alignment, high confidence\n# selector_meta {\"color\":\"#D8C800\",\"family\":\"RNA\",\"feature\":\"U4_U6_stem_I_partner\",\"group\":\"snRNA-snRNA interacting regions\",\"group_key\":\"snRNA_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U4_U6_stem_I_partner #359.1/4:1-18\n# U4 snRNA U4/U6 stem II partner: residues 56-63, reference-alignment, high confidence\n# selector_meta {\"color\":\"#E0CF1A\",\"family\":\"RNA\",\"feature\":\"U4_U6_stem_II_partner\",\"group\":\"snRNA-snRNA interacting regions\",\"group_key\":\"snRNA_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U4_U6_stem_II_partner #359.1/4:56-63\n# U4 snRNA Brr2 loading region: residues 60-63;68-95, review-region, low confidence\n# selector_meta {\"color\":\"#F0DF2E\",\"family\":\"RNA\",\"feature\":\"U4_Brr2_loading_region\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U4_Brr2_loading_region #359.1/4:60-63,68-95\n# U4 snRNA Sm site: residues 119-125, sequence-motif, medium confidence\n# selector_meta {\"color\":\"#F5E85A\",\"family\":\"RNA\",\"feature\":\"U4_Sm_site\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U4_Sm_site #359.1/4:119-125\n# U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence\n# selector_meta {\"color\":\"#1B3CD0\",\"family\":\"RNA\",\"feature\":\"U5_loop_I\",\"group\":\"snRNA-pre-mRNA regions\",\"group_key\":\"snRNA_pre_mRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U5_loop_I #359.1/5:38-42\n# U6 snRNA 5' terminal stem-loop: residues 1-30, reference-alignment, high confidence\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"RNA\",\"feature\":\"U6_5prime_terminal_stem_loop\",\"group\":\"internal stem loops\",\"group_key\":\"internal_stem_loops\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U6_5_terminal_stem_loop #359.1/6:1-30\n# U6 snRNA U2/U6 helix I partner: residues 35-60, motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#D0183C\",\"family\":\"RNA\",\"feature\":\"U6_U2_helix_I_partner\",\"group\":\"snRNA-snRNA interacting regions\",\"group_key\":\"snRNA_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U6_U2_helix_I_partner #359.1/6:35-60\n# U6 snRNA 5' splice-site upstream contact: residues 38-49, motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#E01842\",\"family\":\"RNA\",\"feature\":\"U6_5SS_upstream_contact\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U6_5SS_upstream_contact #359.1/6:38-49\n# U6 snRNA ACAGAGA box: residues 41-47, sequence-motif, high confidence\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"RNA\",\"feature\":\"U6_ACAGAGA_box\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U6_ACAGAGA_box #359.1/6:41-47\n# U6 snRNA U4/U6 stem II partner: residues 52-61, reference-alignment, high confidence\n# selector_meta {\"color\":\"#E01842\",\"family\":\"RNA\",\"feature\":\"U6_U4_stem_II_partner\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U6_U4_stem_II_partner #359.1/6:52-61\n# U6 snRNA U4/U6 stem I partner: residues 63-74, reference-alignment, high confidence\n# selector_meta {\"color\":\"#D9183E\",\"family\":\"RNA\",\"feature\":\"U6_U4_stem_I_partner\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U6_U4_stem_I_partner #359.1/6:63-74\n# U6 snRNA internal stem-loop: residues 85-96, motif-neighborhood, low confidence\n# selector_meta {\"color\":\"#D61A3D\",\"family\":\"RNA\",\"feature\":\"U6_ISL\",\"group\":\"internal stem loops\",\"group_key\":\"internal_stem_loops\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U6_ISL #359.1/6:85-96\n# U6 snRNA AGC catalytic triad: residues 92-94, sequence-motif, medium confidence\n# selector_meta {\"color\":\"#C91236\",\"family\":\"RNA\",\"feature\":\"U6_AGC_catalytic_triad\",\"group\":\"catalytic core regions\",\"group_key\":\"catalytic_core_regions\",\"kind\":\"rna_feature\"}\nname B_5O9Z_U6_AGC_catalytic_triad #359.1/6:92-94\n# RNA feature nucleotide display.\nselect #359.1 & nucleic\nnucleotides sel atoms\nselect clear\n# 5' exon: residues 49-58\ncolor #359.1/Y:49-58 #FF8C00\nselect #359.1/Y:49-58\nnucleotides sel fill\nselect clear\n# 5'SS: residues 59-64\n# intron: residues 59-75;142-160\n# BP region: residues 145-156\n# BP-A: residues 155\n# U2 BP pairing: residues 32-41\ncolor #359.1/2:32-41 #0B6E2D\nselect #359.1/2:32-41\nnucleotides sel fill\nselect clear\n# U2 stem IIa: residues 46\ncolor #359.1/2:46 #167A38\nselect #359.1/2:46\nnucleotides sel fill\nselect clear\n# U4/U6 stem I: residues 1-18\ncolor #359.1/4:1-18 #D8C800\nselect #359.1/4:1-18\nnucleotides sel fill\nselect clear\n# U4/U6 stem II: residues 56-63\ncolor #359.1/4:56-63 #E0CF1A\nselect #359.1/4:56-63\nnucleotides sel fill\nselect clear\n# U4 Brr2 region: residues 60-63;68-95\ncolor #359.1/4:60-63,68-95 #F0DF2E\nselect #359.1/4:60-63,68-95\nnucleotides sel fill\nselect clear\n# U5 loop I: residues 38-42\ncolor #359.1/5:38-42 #1B3CD0\nselect #359.1/5:38-42\nnucleotides sel fill\nselect clear\n# U6 5' terminal SL: residues 1-30\ncolor #359.1/6:1-30 #DC143C\nselect #359.1/6:1-30\nnucleotides sel fill\nselect clear\n# U2/U6 helix I: residues 35-60\ncolor #359.1/6:35-60 #D0183C\nselect #359.1/6:35-60\nnucleotides sel fill\nselect clear\n# U6 5'SS contact: residues 38-49\ncolor #359.1/6:38-49 #E01842\nselect #359.1/6:38-49\nnucleotides sel fill\nselect clear\n# U6 ACAGAGA: residues 41-47\ncolor #359.1/6:41-47 #DC143C\nselect #359.1/6:41-47\nnucleotides sel fill\nselect clear\n# U4/U6 stem II: residues 52-61\ncolor #359.1/6:52-61 #E01842\nselect #359.1/6:52-61\nnucleotides sel fill\nselect clear\n# U4/U6 stem I: residues 63-74\ncolor #359.1/6:63-74 #D9183E\nselect #359.1/6:63-74\nnucleotides sel fill\nselect clear\n# U6 ISL: residues 85-96\ncolor #359.1/6:85-96 #D61A3D\nselect #359.1/6:85-96\nnucleotides sel fill\nselect clear\n# U6 AGC triad: residues 92-94\ncolor #359.1/6:92-94 #C91236\nselect #359.1/6:92-94\nnucleotides sel fill\nselect clear\n# RNA feature 3D residue labels.\n# Labels are created as independent grouped models under #359.2.\n# Fetch and run the self-contained RNA label script from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/label_scripts/5o9z_rna_labels.py\n# Searchable named selection browser.\n# In GUI ChimeraX this opens a small panel for selecting, zooming, and toggling RNA labels.\n# Fetch and open the self-contained named selection browser from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/selection_browser_scripts/5o9z_selection_browser.py\nview\nshow nucleic\n",
     "5wsg": "# Lightweight ChimeraX script for 5WSG\n# Models are downloaded directly by ChimeraX from the PDB.\n# Primary maps, when requested, are downloaded directly from EMDB.\n# Original deposited chain identifiers are used.\n\n# Shared anchor frame: 8H6L\n# Structure group: #409; target model: #409.1; RNA labels: #409.2.\n\nopen 8h6l id 409.9 name 8H6L_anchor\nopen 5wsg id 409.1 name 5WSG\nopen emdb:6684 id 409.3.1 name Cstar_5wsg_EMD-6684_primary_map\nrename #409 Cstar_5wsg_structure\n\n# Align on PRPF8.\nmatchmaker #409.1/A to #409.9/5B bring #409.3.1\nclose #409.9\n\n# Remove implausibly long deposited covalent bonds before styling.\n# Fetch and run the implausible-bond pruning helper from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/prune_implausible_bonds.py\n\nhide atoms\ncartoon\n# Default display style.\nstyle (protein|nucleic|solvent) & @@draw_mode=0 stick\ncartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20\ncartoon style ~(nucleic|strand) x round\ncartoon style (nucleic|strand) x rect\ncartoon style nucleic x round width 4 thick 4\nlighting shadows false\nlighting simple\ncamera ortho\nlighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1\nlighting soft\n\n# bg and model colors\nset bgColor white\nstyle nucleic stick\ngraphics silhouettes true\ncartoon style arrowScale 1.5\ncolor byhetero\n# Subunit colors from color_code/subunit_color_code.csv.\n# PRPF8\ncolor #409.1/A #BFC3E8\n# EFTUD2\ncolor #409.1/C #6495ED\n# PLRG1\ncolor #409.1/O #F4A460\n# SNW1\ncolor #409.1/P #D49F96\n# RBM22\ncolor #409.1/Q #DE9A52\n# CWC2\ncolor #409.1/R #E6B566\n# CWC15\ncolor #409.1/S #FFDEAD\n# BUD31\ncolor #409.1/T #FFF584\n# CWC22\ncolor #409.1/Z #2C54DD\n# mRNA\ncolor #409.1/B #303030\n# INTRON\ncolor #409.1/N #303030\n# U5 snRNA\ncolor #409.1/D #4F9FD3\n# U6 snRNA\ncolor #409.1/E #EF4444\n# U2 snRNA\ncolor #409.1/L #71C562\n# INTRON\ncolor #409.1/M #303030\n# CDC5L\ncolor #409.1/c #DAA520\n# CRNKL1\ncolor #409.1/d #FFC388\n# SYF2\ncolor #409.1/I #FF8C00\n# SYF1\ncolor #409.1/v #FF957B\n# PRPF17\ncolor #409.1/n #FFF7C9\n# PRPF19\ncolor #409.1/o #FFFFAB\n# PRPF19\ncolor #409.1/p #FFFFAB\n# PRPF19\ncolor #409.1/q #FFFFAB\n# PRPF19\ncolor #409.1/r #FFFFAB\n# BCAS2\ncolor #409.1/t #FFDAB9\n# SNRPB\ncolor #409.1/F #B0C4DE\n# U5-Sm SNRPB\ncolor #409.1/k #B0C4DE\n# SNRPE\ncolor #409.1/G #B0C4DE\n# U5-Sm SNRPE\ncolor #409.1/i #B0C4DE\n# SNRPF\ncolor #409.1/H #B0C4DE\n# U5-Sm SNRPF\ncolor #409.1/h #B0C4DE\n# SNRPG\ncolor #409.1/K #B0C4DE\n# U5-Sm SNRPG\ncolor #409.1/j #B0C4DE\n# SNRPD3\ncolor #409.1/U #B0C4DE\n# U5-Sm SNRPD3\ncolor #409.1/l #B0C4DE\n# SNRPD1\ncolor #409.1/V #B0C4DE\n# U5-Sm SNRPD1\ncolor #409.1/m #B0C4DE\n# SNRPD2\ncolor #409.1/W #B0C4DE\n# U5-Sm SNRPD2\ncolor #409.1/g #B0C4DE\n# SNRPB2\ncolor #409.1/X #DAF7A6\n# SNRPA1\ncolor #409.1/Y #58D68D\n# INTRON\ncolor #409.1/b #303030\n# DDX38\ncolor #409.1/e #5F2E8A\n# Named selections for subcomplexes using original deposited chain IDs.\n# EJC/mRNP\n# selector_meta {\"color\":\"#EAA439\",\"family\":\"Protein/RNP groups\",\"group\":\"EJC/mRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5WSG_EJC_mRNP #409.1/Z\n# NTC/NTR related\n# selector_meta {\"color\":\"#F4BF67\",\"family\":\"Protein/RNP groups\",\"group\":\"NTC/NTR groups\",\"kind\":\"subcomplex\"}\nname pdb_5WSG_NTC_NTR_related #409.1/I,P,Q,R,T,d,v\n# NTC/PRP19\n# selector_meta {\"color\":\"#F4BF67\",\"family\":\"Protein/RNP groups\",\"group\":\"NTC/NTR groups\",\"kind\":\"subcomplex\"}\nname pdb_5WSG_NTC_PRP19 #409.1/O,S,c,o,p,q,r,t\n# RNA/substrate\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"group\":\"pre-mRNA features\",\"kind\":\"subcomplex\"}\nname pdb_5WSG_RNA_substrate #409.1/B,M,N,b\n# Second step factors\n# selector_meta {\"color\":\"#9CA3AF\",\"family\":\"Protein/RNP groups\",\"group\":\"other protein/RNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5WSG_Second_step_factors #409.1/n\n# Sm ring\n# selector_meta {\"color\":\"#9CA3AF\",\"family\":\"Protein/RNP groups\",\"group\":\"other protein/RNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5WSG_Sm_ring #409.1/F,G,H,K,U,V,W\n# U2 snRNP\n# selector_meta {\"color\":\"#2F8B4D\",\"family\":\"Protein/RNP groups\",\"group\":\"U2/SF3B groups\",\"kind\":\"subcomplex\"}\nname pdb_5WSG_U2_snRNP #409.1/L,X,Y\n# U5 Sm ring\n# selector_meta {\"color\":\"#BFC3E8\",\"family\":\"Protein/RNP groups\",\"group\":\"U5 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5WSG_U5_Sm_ring #409.1/g,h,i,j,k,l,m\n# U5 snRNP\n# selector_meta {\"color\":\"#0000CD\",\"family\":\"Protein/RNP groups\",\"group\":\"U5 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5WSG_U5_snRNP #409.1/A,C,D\n# U6 snRNP\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"Protein/RNP groups\",\"group\":\"U6 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5WSG_U6_snRNP #409.1/E\n# other\n# selector_meta {\"color\":\"#9CA3AF\",\"family\":\"Protein/RNP groups\",\"group\":\"other protein/RNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5WSG_other #409.1/J,e,f\n# Named selections for resolved substrate RNA features.\n# 5' exon: residues 87-99, component-name, high confidence, validation not_applicable\n# selector_meta {\"color\":\"#FF8C00\",\"family\":\"RNA\",\"feature\":\"exon_5\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5WSG_5exon #409.1/B:87-99\n# substrate RNA: residues -5-8; 100-114; 482-504; 87-99, component, medium confidence, validation not_applicable\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"substrate\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5WSG_substrate #409.1/B:87-99|#409.1/M:482-504|#409.1/N:100-114|#409.1/b:-5-8\n# branch point region: residues 482-504; 495-503, network-scored-motif/u2-branch-region-basepair, high confidence, validation validated\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"branch_point_region\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5WSG_branch_region #409.1/M:482-504|#409.1/M:495-503\n# intron: residues 100-114; 482-504, component-name, high confidence, validation not_applicable\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"intron\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5WSG_intron #409.1/M:482-504|#409.1/N:100-114\n# intron lariat: residues 100-114; 482-504, component-name, high confidence, validation not_applicable\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"intron_lariat\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5WSG_intron_lariat #409.1/M:482-504|#409.1/N:100-114\n# branch point adenosine: residues 501, network-scored-motif, high confidence, validation validated\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"branch_point_adenosine\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5WSG_branch_A #409.1/M:501\n# 5' splice site: residues 100-105, network-scored-motif, medium confidence, validation validated\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"five_prime_splice_site\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5WSG_5SS #409.1/N:100-105\n# 3' exon: residues -5-8, component-name, high confidence, validation not_applicable\n# selector_meta {\"color\":\"#D97706\",\"family\":\"RNA\",\"feature\":\"exon_3\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5WSG_3exon #409.1/b:-5-8\n# Named selections for resolved snRNA functional regions.\n# U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence\n# selector_meta {\"color\":\"#047857\",\"family\":\"RNA\",\"feature\":\"U2_U6_helix_I_partner\",\"group\":\"snRNA-snRNA interacting regions\",\"group_key\":\"snRNA_snRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5WSG_U2_U6_helix_I_partner #409.1/L:26-30\n# U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#0B6E2D\",\"family\":\"RNA\",\"feature\":\"U2_branchpoint_pairing_region\",\"group\":\"snRNA-pre-mRNA regions\",\"group_key\":\"snRNA_pre_mRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5WSG_U2_branchpoint_pairing_region #409.1/L:33-42\n# U2 snRNA stem IIa: residues 46-52, review-region, low confidence\n# selector_meta {\"color\":\"#167A38\",\"family\":\"RNA\",\"feature\":\"U2_stem_IIa\",\"group\":\"internal stem loops\",\"group_key\":\"internal_stem_loops\",\"kind\":\"rna_feature\"}\nname Cstar_5WSG_U2_stem_IIa #409.1/L:46-52\n# U5 snRNA loop I: residues 53-55, sequence-motif, medium confidence\n# selector_meta {\"color\":\"#1B3CD0\",\"family\":\"RNA\",\"feature\":\"U5_loop_I\",\"group\":\"snRNA-pre-mRNA regions\",\"group_key\":\"snRNA_pre_mRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5WSG_U5_loop_I #409.1/D:53-55\n# U6 snRNA 5' terminal stem-loop: residues 1-30, reference-alignment, high confidence\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"RNA\",\"feature\":\"U6_5prime_terminal_stem_loop\",\"group\":\"internal stem loops\",\"group_key\":\"internal_stem_loops\",\"kind\":\"rna_feature\"}\nname Cstar_5WSG_U6_5_terminal_stem_loop #409.1/E:1-30\n# U6 snRNA U2/U6 helix I partner: residues 41-66, motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#D0183C\",\"family\":\"RNA\",\"feature\":\"U6_U2_helix_I_partner\",\"group\":\"snRNA-snRNA interacting regions\",\"group_key\":\"snRNA_snRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5WSG_U6_U2_helix_I_partner #409.1/E:41-66\n# U6 snRNA 5' splice-site upstream contact: residues 44-55, motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#E01842\",\"family\":\"RNA\",\"feature\":\"U6_5SS_upstream_contact\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5WSG_U6_5SS_upstream_contact #409.1/E:44-55\n# U6 snRNA internal stem-loop: residues 46-73, motif-neighborhood, low confidence\n# selector_meta {\"color\":\"#D61A3D\",\"family\":\"RNA\",\"feature\":\"U6_ISL\",\"group\":\"internal stem loops\",\"group_key\":\"internal_stem_loops\",\"kind\":\"rna_feature\"}\nname Cstar_5WSG_U6_ISL #409.1/E:46-73\n# U6 snRNA ACAGAGA box: residues 47-53, sequence-motif, high confidence\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"RNA\",\"feature\":\"U6_ACAGAGA_box\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5WSG_U6_ACAGAGA_box #409.1/E:47-53\n# U6 snRNA AGC catalytic triad: residues 59-61, sequence-motif, medium confidence\n# selector_meta {\"color\":\"#C91236\",\"family\":\"RNA\",\"feature\":\"U6_AGC_catalytic_triad\",\"group\":\"catalytic core regions\",\"group_key\":\"catalytic_core_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5WSG_U6_AGC_catalytic_triad #409.1/E:59-61\n# U6 snRNA LSm site: residues 103, terminal-region, low confidence\n# selector_meta {\"color\":\"#E33A55\",\"family\":\"RNA\",\"feature\":\"U6_LSm_site\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5WSG_U6_LSm_site #409.1/E:103\n# RNA feature nucleotide display.\nselect #409.1 & nucleic\nnucleotides sel atoms\nselect clear\n# 5' exon: residues 87-99\ncolor #409.1/B:87-99 #FF8C00\nselect #409.1/B:87-99\nnucleotides sel fill\nselect clear\n# BP region: residues 482-504; 495-503\n# intron: residues 100-114; 482-504\n# lariat: residues 100-114; 482-504\n# BP-A: residues 501\n# 5'SS: residues 100-105\n# 3' exon: residues -5-8\ncolor #409.1/b:-5-8 #D97706\nselect #409.1/b:-5-8\nnucleotides sel fill\nselect clear\n# U2/U6 helix I: residues 26-30\ncolor #409.1/L:26-30 #047857\nselect #409.1/L:26-30\nnucleotides sel fill\nselect clear\n# U2 BP pairing: residues 33-42\ncolor #409.1/L:33-42 #0B6E2D\nselect #409.1/L:33-42\nnucleotides sel fill\nselect clear\n# U2 stem IIa: residues 46-52\ncolor #409.1/L:46-52 #167A38\nselect #409.1/L:46-52\nnucleotides sel fill\nselect clear\n# U5 loop I: residues 53-55\ncolor #409.1/D:53-55 #1B3CD0\nselect #409.1/D:53-55\nnucleotides sel fill\nselect clear\n# U6 5' terminal SL: residues 1-30\ncolor #409.1/E:1-30 #DC143C\nselect #409.1/E:1-30\nnucleotides sel fill\nselect clear\n# U2/U6 helix I: residues 41-66\ncolor #409.1/E:41-66 #D0183C\nselect #409.1/E:41-66\nnucleotides sel fill\nselect clear\n# U6 5'SS contact: residues 44-55\ncolor #409.1/E:44-55 #E01842\nselect #409.1/E:44-55\nnucleotides sel fill\nselect clear\n# U6 ISL: residues 46-73\ncolor #409.1/E:46-73 #D61A3D\nselect #409.1/E:46-73\nnucleotides sel fill\nselect clear\n# U6 ACAGAGA: residues 47-53\ncolor #409.1/E:47-53 #DC143C\nselect #409.1/E:47-53\nnucleotides sel fill\nselect clear\n# U6 AGC triad: residues 59-61\ncolor #409.1/E:59-61 #C91236\nselect #409.1/E:59-61\nnucleotides sel fill\nselect clear\n# RNA feature 3D residue labels.\n# Labels are created as independent grouped models under #409.2.\n# Fetch and run the self-contained RNA label script from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/label_scripts/5wsg_rna_labels.py\n# Searchable named selection browser.\n# In GUI ChimeraX this opens a small panel for selecting, zooming, and toggling RNA labels.\n# Fetch and open the self-contained named selection browser from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/selection_browser_scripts/5wsg_selection_browser.py\nview\nshow nucleic\n",
     "5xjc": "# Lightweight ChimeraX script for 5XJC\n# Models are downloaded directly by ChimeraX from the PDB.\n# Primary maps, when requested, are downloaded directly from EMDB.\n# Original deposited chain identifiers are used.\n\n# Shared anchor frame: 8H6L\n# Structure group: #411; target model: #411.1; RNA labels: #411.2.\n\nopen 8h6l id 411.9 name 8H6L_anchor\nopen 5xjc id 411.1 name 5XJC\nopen emdb:6721 id 411.3.1 name Cstar_5xjc_EMD-6721_primary_map\nrename #411 Cstar_5xjc_structure\n\n# Align on PRPF8.\nmatchmaker #411.1/A to #411.9/5B bring #411.3.1\nclose #411.9\n\n# Remove implausibly long deposited covalent bonds before styling.\n# Fetch and run the implausible-bond pruning helper from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/prune_implausible_bonds.py\n\nhide atoms\ncartoon\n# Default display style.\nstyle (protein|nucleic|solvent) & @@draw_mode=0 stick\ncartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20\ncartoon style ~(nucleic|strand) x round\ncartoon style (nucleic|strand) x rect\ncartoon style nucleic x round width 4 thick 4\nlighting shadows false\nlighting simple\ncamera ortho\nlighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1\nlighting soft\n\n# bg and model colors\nset bgColor white\nstyle nucleic stick\ngraphics silhouettes true\ncartoon style arrowScale 1.5\ncolor byhetero\n# Subunit colors from color_code/subunit_color_code.csv.\n# PRPF8\ncolor #411.1/A #BFC3E8\n# U5 snRNA\ncolor #411.1/B #4F9FD3\n# EFTUD2\ncolor #411.1/C #6495ED\n# SNRNP200\ncolor #411.1/D #AFEEEE\n# PRP8BP\ncolor #411.1/E #E2F3F4\n# U6 snRNA\ncolor #411.1/F #EF4444\n# mRNA\ncolor #411.1/G #303030\n# U2 snRNA\ncolor #411.1/H #71C562\n# SYF1\ncolor #411.1/I #FF957B\n# CRNKL1\ncolor #411.1/J #FFC388\n# BCAS2\ncolor #411.1/K #FFDAB9\n# CDC5L\ncolor #411.1/L #DAA520\n# SYF2\ncolor #411.1/M #FF8C00\n# BUD31\ncolor #411.1/N #FFF584\n# RBM22\ncolor #411.1/O #DE9A52\n# CWC15\ncolor #411.1/P #FFDEAD\n# AQR\ncolor #411.1/Q #FFDAB9\n# SNW1\ncolor #411.1/R #D49F96\n# PPIL1\ncolor #411.1/S #EEE8AA\n# PLRG1\ncolor #411.1/T #F4A460\n# SRRM2\ncolor #411.1/U #BDD6F0\n# CWC22\ncolor #411.1/V #2C54DD\n# PRPF17\ncolor #411.1/W #FFF7C9\n# PRKRIP1\ncolor #411.1/X #B39C7B\n# DHX8\ncolor #411.1/Y #900C3F\n# SLU7\ncolor #411.1/Z #5A338B\n# U5-Sm SNRPD3\ncolor #411.1/a #B0C4DE\n# U2-Sm SNRPD3\ncolor #411.1/h #D5F5E3\n# U5-Sm SNRPB\ncolor #411.1/b #B0C4DE\n# U2-Sm SNRPB\ncolor #411.1/i #D5F5E3\n# U5-Sm SNRPD1\ncolor #411.1/c #B0C4DE\n# U2-Sm SNRPD1\ncolor #411.1/j #D5F5E3\n# U5-Sm SNRPD2\ncolor #411.1/d #B0C4DE\n# U2-Sm SNRPD2\ncolor #411.1/k #D5F5E3\n# U5-Sm SNRPF\ncolor #411.1/f #B0C4DE\n# U2-Sm SNRPF\ncolor #411.1/m #D5F5E3\n# U5-Sm SNRPE\ncolor #411.1/e #B0C4DE\n# U2-Sm SNRPE\ncolor #411.1/l #D5F5E3\n# U5-Sm SNRPG\ncolor #411.1/g #B0C4DE\n# U2-Sm SNRPG\ncolor #411.1/n #D5F5E3\n# SNRPA1\ncolor #411.1/o #58D68D\n# SNRPB2\ncolor #411.1/p #DAF7A6\n# PRPF19\ncolor #411.1/q #FFFFAB\n# PRPF19\ncolor #411.1/r #FFFFAB\n# PRPF19\ncolor #411.1/s #FFFFAB\n# PRPF19\ncolor #411.1/t #FFFFAB\n# EIF4A3\ncolor #411.1/u #F1D8BC\n# MAGOH2\ncolor #411.1/v #EAA439\n# RBM8A\ncolor #411.1/w #EB6841\n# CASC3\ncolor #411.1/x #CB8548\n# Named selections for subcomplexes using original deposited chain IDs.\n# EJC/mRNP\n# selector_meta {\"color\":\"#EAA439\",\"family\":\"Protein/RNP groups\",\"group\":\"EJC/mRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5XJC_EJC_mRNP #411.1/V,u,v,w,x\n# NTC/NTR related\n# selector_meta {\"color\":\"#F4BF67\",\"family\":\"Protein/RNP groups\",\"group\":\"NTC/NTR groups\",\"kind\":\"subcomplex\"}\nname pdb_5XJC_NTC_NTR_related #411.1/I,J,M,N,O,Q,R,S\n# NTC/PRP19\n# selector_meta {\"color\":\"#F4BF67\",\"family\":\"Protein/RNP groups\",\"group\":\"NTC/NTR groups\",\"kind\":\"subcomplex\"}\nname pdb_5XJC_NTC_PRP19 #411.1/K,L,P,T,q,r,s,t\n# RNA/substrate\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"group\":\"pre-mRNA features\",\"kind\":\"subcomplex\"}\nname pdb_5XJC_RNA_substrate #411.1/G\n# SR proteins\n# selector_meta {\"color\":\"#9CA3AF\",\"family\":\"Protein/RNP groups\",\"group\":\"other protein/RNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5XJC_SR_proteins #411.1/U\n# Second step factors\n# selector_meta {\"color\":\"#9CA3AF\",\"family\":\"Protein/RNP groups\",\"group\":\"other protein/RNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5XJC_Second_step_factors #411.1/W,Y,Z\n# U2 Sm ring\n# selector_meta {\"color\":\"#BFE6BF\",\"family\":\"Protein/RNP groups\",\"group\":\"U2/SF3B groups\",\"kind\":\"subcomplex\"}\nname pdb_5XJC_U2_Sm_ring #411.1/h,i,j,k,l,m,n\n# U2 snRNP\n# selector_meta {\"color\":\"#2F8B4D\",\"family\":\"Protein/RNP groups\",\"group\":\"U2/SF3B groups\",\"kind\":\"subcomplex\"}\nname pdb_5XJC_U2_snRNP #411.1/H,X,o,p\n# U5 Sm ring\n# selector_meta {\"color\":\"#BFC3E8\",\"family\":\"Protein/RNP groups\",\"group\":\"U5 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5XJC_U5_Sm_ring #411.1/a,b,c,d,e,f,g\n# U5 snRNP\n# selector_meta {\"color\":\"#0000CD\",\"family\":\"Protein/RNP groups\",\"group\":\"U5 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5XJC_U5_snRNP #411.1/A,B,C,D,E\n# U6 snRNP\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"Protein/RNP groups\",\"group\":\"U6 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5XJC_U6_snRNP #411.1/F\n# Named selections for resolved substrate RNA features.\n# 5' exon: residues -23--18;-12--1, splice-site-inference, medium confidence, validation not_applicable\n# selector_meta {\"color\":\"#FF8C00\",\"family\":\"RNA\",\"feature\":\"exon_5\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5XJC_5exon #411.1/G:-23--18,-12--1\n# substrate RNA: residues -23--18;-12--1;1-31;116-150, component, medium confidence, validation not_applicable\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"substrate\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5XJC_substrate #411.1/G:-23--18,-12--1,1-31,116-150\n# 5' splice site: residues 1-6, network-scored-motif, medium confidence, validation uncertain uncertain validation\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"five_prime_splice_site\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5XJC_5SS #411.1/G:1-6\n# intron: residues 1-31;116-150, splice-site-inference, medium confidence, validation not_applicable\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"intron\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5XJC_intron #411.1/G:1-31,116-150\n# branch point region: residues 140-146, network-scored-motif, high confidence, validation validated\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"branch_point_region\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5XJC_branch_region #411.1/G:140-146\n# branch point adenosine: residues 144, network-scored-motif, high confidence, validation validated\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"branch_point_adenosine\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5XJC_branch_A #411.1/G:144\n# polypyrimidine tract: residues 150, sequence-motif, medium confidence, validation validated\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"polypyrimidine_tract\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname Cstar_5XJC_PPT #411.1/G:150\n# Named selections for resolved snRNA functional regions.\n# U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence\n# selector_meta {\"color\":\"#047857\",\"family\":\"RNA\",\"feature\":\"U2_U6_helix_I_partner\",\"group\":\"snRNA-snRNA interacting regions\",\"group_key\":\"snRNA_snRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5XJC_U2_U6_helix_I_partner #411.1/H:26-30\n# U2 snRNA branchpoint pairing region: residues 32-41, sequence-motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#0B6E2D\",\"family\":\"RNA\",\"feature\":\"U2_branchpoint_pairing_region\",\"group\":\"snRNA-pre-mRNA regions\",\"group_key\":\"snRNA_pre_mRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5XJC_U2_branchpoint_pairing_region #411.1/H:32-41\n# U2 snRNA stem IIa: residues 46-47;54-60;67-75;77-80, review-region, low confidence\n# selector_meta {\"color\":\"#167A38\",\"family\":\"RNA\",\"feature\":\"U2_stem_IIa\",\"group\":\"internal stem loops\",\"group_key\":\"internal_stem_loops\",\"kind\":\"rna_feature\"}\nname Cstar_5XJC_U2_stem_IIa #411.1/H:46-47,54-60,67-75,77-80\n# U2 snRNA Sm site: residues 99-105, sequence-motif, medium confidence\n# selector_meta {\"color\":\"#2F8B4D\",\"family\":\"RNA\",\"feature\":\"U2_Sm_site\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5XJC_U2_Sm_site #411.1/H:99-105\n# U5 snRNA loop I: residues 38-42, sequence-motif, medium confidence\n# selector_meta {\"color\":\"#1B3CD0\",\"family\":\"RNA\",\"feature\":\"U5_loop_I\",\"group\":\"snRNA-pre-mRNA regions\",\"group_key\":\"snRNA_pre_mRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5XJC_U5_loop_I #411.1/B:38-42\n# U6 snRNA 5' terminal stem-loop: residues 1-30, reference-alignment, high confidence\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"RNA\",\"feature\":\"U6_5prime_terminal_stem_loop\",\"group\":\"internal stem loops\",\"group_key\":\"internal_stem_loops\",\"kind\":\"rna_feature\"}\nname Cstar_5XJC_U6_5_terminal_stem_loop #411.1/F:1-30\n# U6 snRNA U2/U6 helix I partner: residues 35-60, motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#D0183C\",\"family\":\"RNA\",\"feature\":\"U6_U2_helix_I_partner\",\"group\":\"snRNA-snRNA interacting regions\",\"group_key\":\"snRNA_snRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5XJC_U6_U2_helix_I_partner #411.1/F:35-60\n# U6 snRNA 5' splice-site upstream contact: residues 38-49, motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#E01842\",\"family\":\"RNA\",\"feature\":\"U6_5SS_upstream_contact\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5XJC_U6_5SS_upstream_contact #411.1/F:38-49\n# U6 snRNA ACAGAGA box: residues 41-47, sequence-motif, high confidence\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"RNA\",\"feature\":\"U6_ACAGAGA_box\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5XJC_U6_ACAGAGA_box #411.1/F:41-47\n# U6 snRNA internal stem-loop: residues 79-97, motif-neighborhood, low confidence\n# selector_meta {\"color\":\"#D61A3D\",\"family\":\"RNA\",\"feature\":\"U6_ISL\",\"group\":\"internal stem loops\",\"group_key\":\"internal_stem_loops\",\"kind\":\"rna_feature\"}\nname Cstar_5XJC_U6_ISL #411.1/F:79-97\n# U6 snRNA AGC catalytic triad: residues 92-94, sequence-motif, medium confidence\n# selector_meta {\"color\":\"#C91236\",\"family\":\"RNA\",\"feature\":\"U6_AGC_catalytic_triad\",\"group\":\"catalytic core regions\",\"group_key\":\"catalytic_core_regions\",\"kind\":\"rna_feature\"}\nname Cstar_5XJC_U6_AGC_catalytic_triad #411.1/F:92-94\n# RNA feature nucleotide display.\nselect #411.1 & nucleic\nnucleotides sel atoms\nselect clear\n# 5' exon: residues -23--18;-12--1\ncolor #411.1/G:-23--18,-12--1 #FF8C00\nselect #411.1/G:-23--18,-12--1\nnucleotides sel fill\nselect clear\n# 5'SS: residues 1-6\n# intron: residues 1-31;116-150\n# BP region: residues 140-146\n# BP-A: residues 144\n# PPT: residues 150\n# U2/U6 helix I: residues 26-30\ncolor #411.1/H:26-30 #047857\nselect #411.1/H:26-30\nnucleotides sel fill\nselect clear\n# U2 BP pairing: residues 32-41\ncolor #411.1/H:32-41 #0B6E2D\nselect #411.1/H:32-41\nnucleotides sel fill\nselect clear\n# U2 stem IIa: residues 46-47;54-60;67-75;77-80\ncolor #411.1/H:46-47,54-60,67-75,77-80 #167A38\nselect #411.1/H:46-47,54-60,67-75,77-80\nnucleotides sel fill\nselect clear\n# U5 loop I: residues 38-42\ncolor #411.1/B:38-42 #1B3CD0\nselect #411.1/B:38-42\nnucleotides sel fill\nselect clear\n# U6 5' terminal SL: residues 1-30\ncolor #411.1/F:1-30 #DC143C\nselect #411.1/F:1-30\nnucleotides sel fill\nselect clear\n# U2/U6 helix I: residues 35-60\ncolor #411.1/F:35-60 #D0183C\nselect #411.1/F:35-60\nnucleotides sel fill\nselect clear\n# U6 5'SS contact: residues 38-49\ncolor #411.1/F:38-49 #E01842\nselect #411.1/F:38-49\nnucleotides sel fill\nselect clear\n# U6 ACAGAGA: residues 41-47\ncolor #411.1/F:41-47 #DC143C\nselect #411.1/F:41-47\nnucleotides sel fill\nselect clear\n# U6 ISL: residues 79-97\ncolor #411.1/F:79-97 #D61A3D\nselect #411.1/F:79-97\nnucleotides sel fill\nselect clear\n# U6 AGC triad: residues 92-94\ncolor #411.1/F:92-94 #C91236\nselect #411.1/F:92-94\nnucleotides sel fill\nselect clear\n# RNA feature 3D residue labels.\n# Labels are created as independent grouped models under #411.2.\n# Fetch and run the self-contained RNA label script from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/label_scripts/5xjc_rna_labels.py\n# Searchable named selection browser.\n# In GUI ChimeraX this opens a small panel for selecting, zooming, and toggling RNA labels.\n# Fetch and open the self-contained named selection browser from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/selection_browser_scripts/5xjc_selection_browser.py\nview\nshow nucleic\n",
     "5y88": "# Lightweight ChimeraX script for 5Y88\n# Models are downloaded directly by ChimeraX from the PDB.\n# Primary maps, when requested, are downloaded directly from EMDB.\n# Original deposited chain identifiers are used.\n\n# Shared anchor frame: 8H6L\n# Structure group: #425; target model: #425.1; RNA labels: #425.2.\n\nopen 8h6l id 425.9 name 8H6L_anchor\nopen 5y88 id 425.1 name 5Y88\nopen emdb:6817 id 425.3.1 name ILS_5y88_EMD-6817_primary_map\nrename #425 ILS_5y88_structure\n\n# Align on PRPF8.\nmatchmaker #425.1/A to #425.9/5B bring #425.3.1\nclose #425.9\n\n# Remove implausibly long deposited covalent bonds before styling.\n# Fetch and run the implausible-bond pruning helper from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/prune_implausible_bonds.py\n\nhide atoms\ncartoon\n# Default display style.\nstyle (protein|nucleic|solvent) & @@draw_mode=0 stick\ncartoon style modeh def arrows t arrowshelix f arrowscale 3 wid 4 thick 3 sides 12 div 20\ncartoon style ~(nucleic|strand) x round\ncartoon style (nucleic|strand) x rect\ncartoon style nucleic x round width 4 thick 4\nlighting shadows false\nlighting simple\ncamera ortho\nlighting soft intensity 0.2 fillIntensity 0.5 ambientIntensity 1\nlighting soft\n\n# bg and model colors\nset bgColor white\nstyle nucleic stick\ngraphics silhouettes true\ncartoon style arrowScale 1.5\ncolor byhetero\n# Subunit colors from color_code/subunit_color_code.csv.\n# PRPF8\ncolor #425.1/A #BFC3E8\n# U5 snRNA\ncolor #425.1/B #4F9FD3\n# EFTUD2\ncolor #425.1/C #6495ED\n# U6 snRNA\ncolor #425.1/D #EF4444\n# INTRON\ncolor #425.1/E #303030\n# U2 snRNA\ncolor #425.1/F #71C562\n# BCAS2\ncolor #425.1/G #FFDAB9\n# SYF1\ncolor #425.1/H #FF957B\n# CRNKL1\ncolor #425.1/I #FFC388\n# CDC5L\ncolor #425.1/J #DAA520\n# SYF2\ncolor #425.1/K #FF8C00\n# BUD31\ncolor #425.1/L #FFF584\n# RBM22\ncolor #425.1/M #DE9A52\n# CWC2\ncolor #425.1/N #E6B566\n# PLRG1\ncolor #425.1/O #F4A460\n# CWC15\ncolor #425.1/P #FFDEAD\n# SNW1\ncolor #425.1/Q #D49F96\n# CCDC94\ncolor #425.1/R #CE4678\n# PRPF17\ncolor #425.1/S #FFF7C9\n# TFIP11\ncolor #425.1/U #FF69B4\n# PAXBP1\ncolor #425.1/V #FFC0CB\n# DHX15\ncolor #425.1/W #663399\n# U5-Sm SNRPB\ncolor #425.1/a #B0C4DE\n# U2-Sm SNRPB\ncolor #425.1/h #D5F5E3\n# U5-Sm SNRPE\ncolor #425.1/b #B0C4DE\n# U2-Sm SNRPE\ncolor #425.1/i #D5F5E3\n# U5-Sm SNRPF\ncolor #425.1/c #B0C4DE\n# U2-Sm SNRPF\ncolor #425.1/j #D5F5E3\n# U5-Sm SNRPG\ncolor #425.1/d #B0C4DE\n# U2-Sm SNRPG\ncolor #425.1/k #D5F5E3\n# U5-Sm SNRPD3\ncolor #425.1/e #B0C4DE\n# U2-Sm SNRPD3\ncolor #425.1/l #D5F5E3\n# U5-Sm SNRPD1\ncolor #425.1/f #B0C4DE\n# U2-Sm SNRPD1\ncolor #425.1/m #D5F5E3\n# U5-Sm SNRPD2\ncolor #425.1/g #B0C4DE\n# U2-Sm SNRPD2\ncolor #425.1/n #D5F5E3\n# SNRPA1\ncolor #425.1/o #58D68D\n# SNRPB2\ncolor #425.1/p #DAF7A6\n# PRPF19\ncolor #425.1/q #FFFFAB\n# PRPF19\ncolor #425.1/r #FFFFAB\n# PRPF19\ncolor #425.1/s #FFFFAB\n# PRPF19\ncolor #425.1/t #FFFFAB\n# U6 snRNA\ncolor #425.1/x #EF4444\n# Named selections for subcomplexes using original deposited chain IDs.\n# Disassembly factors\n# selector_meta {\"color\":\"#FF69B4\",\"family\":\"Protein/RNP groups\",\"group\":\"disassembly factors\",\"kind\":\"subcomplex\"}\nname pdb_5Y88_Disassembly_factors #425.1/U,V\n# NTC/NTR related\n# selector_meta {\"color\":\"#F4BF67\",\"family\":\"Protein/RNP groups\",\"group\":\"NTC/NTR groups\",\"kind\":\"subcomplex\"}\nname pdb_5Y88_NTC_NTR_related #425.1/H,I,K,L,M,N,Q\n# NTC/PRP19\n# selector_meta {\"color\":\"#F4BF67\",\"family\":\"Protein/RNP groups\",\"group\":\"NTC/NTR groups\",\"kind\":\"subcomplex\"}\nname pdb_5Y88_NTC_PRP19 #425.1/G,J,O,P,q,r,s,t\n# RNA/substrate\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"group\":\"pre-mRNA features\",\"kind\":\"subcomplex\"}\nname pdb_5Y88_RNA_substrate #425.1/E\n# Second step factors\n# selector_meta {\"color\":\"#9CA3AF\",\"family\":\"Protein/RNP groups\",\"group\":\"other protein/RNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5Y88_Second_step_factors #425.1/S\n# U2 Sm ring\n# selector_meta {\"color\":\"#BFE6BF\",\"family\":\"Protein/RNP groups\",\"group\":\"U2/SF3B groups\",\"kind\":\"subcomplex\"}\nname pdb_5Y88_U2_Sm_ring #425.1/h,i,j,k,l,m,n\n# U2 snRNP\n# selector_meta {\"color\":\"#2F8B4D\",\"family\":\"Protein/RNP groups\",\"group\":\"U2/SF3B groups\",\"kind\":\"subcomplex\"}\nname pdb_5Y88_U2_snRNP #425.1/F,R,W,o,p\n# U5 Sm ring\n# selector_meta {\"color\":\"#BFC3E8\",\"family\":\"Protein/RNP groups\",\"group\":\"U5 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5Y88_U5_Sm_ring #425.1/a,b,c,d,e,f,g\n# U5 snRNP\n# selector_meta {\"color\":\"#0000CD\",\"family\":\"Protein/RNP groups\",\"group\":\"U5 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5Y88_U5_snRNP #425.1/A,B,C\n# U6 snRNP\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"Protein/RNP groups\",\"group\":\"U6 snRNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5Y88_U6_snRNP #425.1/D,x\n# other\n# selector_meta {\"color\":\"#9CA3AF\",\"family\":\"Protein/RNP groups\",\"group\":\"other protein/RNP groups\",\"kind\":\"subcomplex\"}\nname pdb_5Y88_other #425.1/T\n# Named selections for resolved substrate RNA features.\n# 5' splice site: residues 1-6, network-scored-motif, medium confidence, validation validated\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"five_prime_splice_site\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname ILS_disassembly_5Y88_5SS #425.1/E:1-6\n# intron: residues 1-15;492-504, component-name, high confidence, validation not_applicable\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"intron\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname ILS_disassembly_5Y88_intron #425.1/E:1-15,492-504\n# intron lariat: residues 1-15;492-504, component-name, high confidence, validation not_applicable\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"intron_lariat\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname ILS_disassembly_5Y88_intron_lariat #425.1/E:1-15,492-504\n# substrate RNA: residues 1-15;492-504, component, medium confidence, validation not_applicable\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"substrate\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname ILS_disassembly_5Y88_substrate #425.1/E:1-15,492-504\n# branch point region: residues 492-504; 495-503, network-scored-motif/u2-branch-region-basepair, high confidence, validation validated\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"branch_point_region\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname ILS_disassembly_5Y88_branch_region #425.1/E:492-504|#425.1/E:495-503\n# branch point adenosine: residues 501, network-scored-motif, high confidence, validation validated\n# selector_meta {\"color\":\"#303030\",\"family\":\"RNA\",\"feature\":\"branch_point_adenosine\",\"group\":\"pre-mRNA features\",\"group_key\":\"pre_mRNA_features\",\"kind\":\"rna_feature\"}\nname ILS_disassembly_5Y88_branch_A #425.1/E:501\n# Named selections for resolved snRNA functional regions.\n# U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence\n# selector_meta {\"color\":\"#047857\",\"family\":\"RNA\",\"feature\":\"U2_U6_helix_I_partner\",\"group\":\"snRNA-snRNA interacting regions\",\"group_key\":\"snRNA_snRNA_regions\",\"kind\":\"rna_feature\"}\nname ILS_disassembly_5Y88_U2_U6_helix_I_partner #425.1/F:26-30\n# U2 snRNA branchpoint pairing region: residues 33-42, sequence-motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#0B6E2D\",\"family\":\"RNA\",\"feature\":\"U2_branchpoint_pairing_region\",\"group\":\"snRNA-pre-mRNA regions\",\"group_key\":\"snRNA_pre_mRNA_regions\",\"kind\":\"rna_feature\"}\nname ILS_disassembly_5Y88_U2_branchpoint_pairing_region #425.1/F:33-42\n# U5 snRNA loop I: residues 53-55, sequence-motif, medium confidence\n# selector_meta {\"color\":\"#1B3CD0\",\"family\":\"RNA\",\"feature\":\"U5_loop_I\",\"group\":\"snRNA-pre-mRNA regions\",\"group_key\":\"snRNA_pre_mRNA_regions\",\"kind\":\"rna_feature\"}\nname ILS_disassembly_5Y88_U5_loop_I #425.1/B:53-55\n# U6 snRNA 5' terminal stem-loop: residues 1-30, reference-alignment, high confidence\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"RNA\",\"feature\":\"U6_5prime_terminal_stem_loop\",\"group\":\"internal stem loops\",\"group_key\":\"internal_stem_loops\",\"kind\":\"rna_feature\"}\nname ILS_disassembly_5Y88_U6_5_terminal_stem_loop #425.1/D:1-30\n# U6 snRNA U2/U6 helix I partner: residues 41-66, motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#D0183C\",\"family\":\"RNA\",\"feature\":\"U6_U2_helix_I_partner\",\"group\":\"snRNA-snRNA interacting regions\",\"group_key\":\"snRNA_snRNA_regions\",\"kind\":\"rna_feature\"}\nname ILS_disassembly_5Y88_U6_U2_helix_I_partner #425.1/D:41-66\n# U6 snRNA 5' splice-site upstream contact: residues 44-55, motif-neighborhood, medium confidence\n# selector_meta {\"color\":\"#E01842\",\"family\":\"RNA\",\"feature\":\"U6_5SS_upstream_contact\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname ILS_disassembly_5Y88_U6_5SS_upstream_contact #425.1/D:44-55\n# U6 snRNA internal stem-loop: residues 46-73, motif-neighborhood, low confidence\n# selector_meta {\"color\":\"#D61A3D\",\"family\":\"RNA\",\"feature\":\"U6_ISL\",\"group\":\"internal stem loops\",\"group_key\":\"internal_stem_loops\",\"kind\":\"rna_feature\"}\nname ILS_disassembly_5Y88_U6_ISL #425.1/D:46-73\n# U6 snRNA ACAGAGA box: residues 47-53, sequence-motif, high confidence\n# selector_meta {\"color\":\"#DC143C\",\"family\":\"RNA\",\"feature\":\"U6_ACAGAGA_box\",\"group\":\"other snRNA regions\",\"group_key\":\"other_snRNA_regions\",\"kind\":\"rna_feature\"}\nname ILS_disassembly_5Y88_U6_ACAGAGA_box #425.1/D:47-53\n# U6 snRNA AGC catalytic triad: residues 59-61, sequence-motif, medium confidence\n# selector_meta {\"color\":\"#C91236\",\"family\":\"RNA\",\"feature\":\"U6_AGC_catalytic_triad\",\"group\":\"catalytic core regions\",\"group_key\":\"catalytic_core_regions\",\"kind\":\"rna_feature\"}\nname ILS_disassembly_5Y88_U6_AGC_catalytic_triad #425.1/D:59-61\n# RNA feature nucleotide display.\nselect #425.1 & nucleic\nnucleotides sel atoms\nselect clear\n# 5'SS: residues 1-6\n# intron: residues 1-15;492-504\n# lariat: residues 1-15;492-504\n# BP region: residues 492-504; 495-503\n# BP-A: residues 501\n# U2/U6 helix I: residues 26-30\ncolor #425.1/F:26-30 #047857\nselect #425.1/F:26-30\nnucleotides sel fill\nselect clear\n# U2 BP pairing: residues 33-42\ncolor #425.1/F:33-42 #0B6E2D\nselect #425.1/F:33-42\nnucleotides sel fill\nselect clear\n# U5 loop I: residues 53-55\ncolor #425.1/B:53-55 #1B3CD0\nselect #425.1/B:53-55\nnucleotides sel fill\nselect clear\n# U6 5' terminal SL: residues 1-30\ncolor #425.1/D:1-30 #DC143C\nselect #425.1/D:1-30\nnucleotides sel fill\nselect clear\n# U2/U6 helix I: residues 41-66\ncolor #425.1/D:41-66 #D0183C\nselect #425.1/D:41-66\nnucleotides sel fill\nselect clear\n# U6 5'SS contact: residues 44-55\ncolor #425.1/D:44-55 #E01842\nselect #425.1/D:44-55\nnucleotides sel fill\nselect clear\n# U6 ISL: residues 46-73\ncolor #425.1/D:46-73 #D61A3D\nselect #425.1/D:46-73\nnucleotides sel fill\nselect clear\n# U6 ACAGAGA: residues 47-53\ncolor #425.1/D:47-53 #DC143C\nselect #425.1/D:47-53\nnucleotides sel fill\nselect clear\n# U6 AGC triad: residues 59-61\ncolor #425.1/D:59-61 #C91236\nselect #425.1/D:59-61\nnucleotides sel fill\nselect clear\n# RNA feature 3D residue labels.\n# Labels are created as independent grouped models under #425.2.\n# Fetch and run the self-contained RNA label script from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/label_scripts/5y88_rna_labels.py\n# Searchable named selection browser.\n# In GUI ChimeraX this opens a small panel for selecting, zooming, and toggling RNA labels.\n# Fetch and open the self-contained named selection browser from GitHub.\nopen https://raw.githubusercontent.com/mvorlander/spliceosome-structure-vis/main/scripts/selection_browser_scripts/5y88_selection_browser.py\nview\nshow nucleic\n",
@@ -87882,12 +87926,12 @@
       "expected_seq_end": "156",
       "expected_sequence": "UACUUAU",
       "status": "inconsistent",
-      "observed_count": "1",
+      "observed_count": "0",
       "missing_count": "2",
-      "conflict_count": "1",
-      "observed_members": "5o9z:Y",
+      "conflict_count": "2",
+      "observed_members": "",
       "missing_members": "6zym:Z; 7a5p:Y",
-      "conflicting_members": "6zym:Y=141-160:AUGAUGUCAUACUUAUCCUG|145-156:UGUCAUACUUAU"
+      "conflicting_members": "5o9z:Y=145-156:UGUCAUACUUAU; 6zym:Y=141-160:AUGAUGUCAUACUUAUCCUG|145-156:UGUCAUACUUAU"
     },
     {
       "family_key": "0e46d1997c7a",

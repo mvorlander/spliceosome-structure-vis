@@ -955,6 +955,17 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <circle cx="796.6" cy="988.6" r="9.2" fill="#303030" opacity="0.22"><title>intron from 5&#x27; splice site; confidence medium</title></circle>
 <circle cx="815.8" cy="988.6" r="9.2" fill="#303030" opacity="0.22"><title>intron from 5&#x27; splice site; confidence medium</title></circle>
 <circle cx="835.0" cy="988.6" r="9.2" fill="#303030" opacity="0.22"><title>intron from 5&#x27; splice site; confidence medium</title></circle>
+<circle cx="508.8" cy="988.6" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="528.0" cy="988.6" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="547.2" cy="988.6" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="566.4" cy="988.6" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="585.5" cy="988.6" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="604.7" cy="988.6" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="623.9" cy="988.6" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="643.1" cy="988.6" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="662.3" cy="988.6" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="681.5" cy="988.6" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="700.7" cy="988.6" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
 <text x="125.0" y="988.6" class="base" fill="#303030"><title>/I seq 1 auth -1</title>A</text>
 <text x="144.2" y="988.6" class="base" fill="#303030"><title>/I seq 2 auth 0</title>G</text>
 <text x="163.4" y="988.6" class="base" fill="#303030"><title>/I seq 3 auth 1</title>G</text>
@@ -1000,6 +1011,8 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <text x="178.1" y="968.3" class="feature-label" text-anchor="start" fill="#FF8C00">5&#x27; exon nt -1-0</text>
 <path d="M211.4,988.6 L254.9,1008.9" class="feature-callout" stroke="#303030" opacity="0.60"/>
 <text x="254.9" y="1008.9" class="feature-label" text-anchor="start" fill="#303030">5&#x27;SS nt 1-6</text>
+<path d="M604.7,988.6 L563.2,964.6" class="feature-callout" stroke="#303030" opacity="0.60"/>
+<text x="563.2" y="964.6" class="feature-label" text-anchor="end" fill="#303030">BP region nt 62-72</text>
 <path d="M333.2,562.2 Q271.7,517.2 210.3,988.6" class="inter" stroke-width="3.1"><title>1:1-10 to I:1-10; 9 FR3D interactions; cWW</title></path>
 <path d="M1174.2,564.0 Q902.2,519.0 630.3,988.6" class="inter" stroke-width="2.4"><title>2:4-10 to I:24-31; 6 FR3D interactions; cWW</title></path>
 <path d="M1250.9,564.0 Q879.8,519.0 508.8,988.6" class="inter" stroke-width="1.3"><title>2:13-13 to I:21-21; 1 FR3D interactions; cWW</title></path>
@@ -1015,14 +1028,16 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <text x="510.0" y="1390.0" class="small">five prime splice site</text>
 <circle cx="707.0" cy="1386.0" r="7" fill="#303030" opacity="0.28"/>
 <text x="720.0" y="1390.0" class="small">intron</text>
-<circle cx="917.0" cy="1386.0" r="7" fill="#b66aae" opacity="0.28"/>
-<text x="930.0" y="1390.0" class="small">U1 5prime 5SS recognition</text>
-<circle cx="1127.0" cy="1386.0" r="7" fill="#bf72b7" opacity="0.28"/>
-<text x="1140.0" y="1390.0" class="small">U1 SL1</text>
-<circle cx="1337.0" cy="1386.0" r="7" fill="#ad62a6" opacity="0.28"/>
-<text x="1350.0" y="1390.0" class="small">U1 SL2</text>
-<circle cx="1547.0" cy="1386.0" r="7" fill="#c783bf" opacity="0.28"/>
-<text x="1560.0" y="1390.0" class="small">U1 Sm site</text>
-<circle cx="77.0" cy="1409.0" r="7" fill="#0b6e2d" opacity="0.28"/>
-<text x="90.0" y="1413.0" class="small">U2 branchpoint pairing region</text>
+<circle cx="917.0" cy="1386.0" r="7" fill="#303030" opacity="0.28"/>
+<text x="930.0" y="1390.0" class="small">branch point region</text>
+<circle cx="1127.0" cy="1386.0" r="7" fill="#b66aae" opacity="0.28"/>
+<text x="1140.0" y="1390.0" class="small">U1 5prime 5SS recognition</text>
+<circle cx="1337.0" cy="1386.0" r="7" fill="#bf72b7" opacity="0.28"/>
+<text x="1350.0" y="1390.0" class="small">U1 SL1</text>
+<circle cx="1547.0" cy="1386.0" r="7" fill="#ad62a6" opacity="0.28"/>
+<text x="1560.0" y="1390.0" class="small">U1 SL2</text>
+<circle cx="77.0" cy="1409.0" r="7" fill="#c783bf" opacity="0.28"/>
+<text x="90.0" y="1413.0" class="small">U1 Sm site</text>
+<circle cx="287.0" cy="1409.0" r="7" fill="#0b6e2d" opacity="0.28"/>
+<text x="300.0" y="1413.0" class="small">U2 branchpoint pairing region</text>
 </svg>

@@ -189,8 +189,8 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <text x="330.8" y="453.0" class="feature-label" text-anchor="end" fill="#0b6e2d">BP pairing nt 32-41</text>
 <path d="M506.7,477.0 L465.1,453.0" class="feature-callout" stroke="#167a38" opacity="0.46"/>
 <text x="465.1" y="453.0" class="feature-label" text-anchor="end" fill="#167a38">stem IIa nt 46</text>
-<path d="M591.5,477.0 L611.8,520.5" class="feature-callout" stroke="#2f8b4d" opacity="0.54"/>
-<text x="611.8" y="520.5" class="feature-label" text-anchor="start" fill="#2f8b4d">Sm site nt 99-105</text>
+<path d="M591.5,477.0 L549.9,501.0" class="feature-callout" stroke="#2f8b4d" opacity="0.54"/>
+<text x="549.9" y="501.0" class="feature-label" text-anchor="end" fill="#2f8b4d">Sm site nt 99-105</text>
 <rect x="960.0" y="92.0" width="820.0" height="520.0" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
 <text x="978.0" y="120.0" class="label" style="font-size:16px;fill:#F2D94E">U4 snRNA /4 -&gt; 4</text>
 <polyline points="1015.0,437.1 1025.9,437.1 1036.8,437.1 1047.7,437.1 1058.6,437.1 1069.4,437.1 1080.3,437.1 1091.2,437.1 1102.1,437.1 1113.0,437.1 1123.9,437.1 1134.8,437.1 1145.7,437.1 1156.6,437.1 1167.5,437.1 1178.3,437.1 1189.2,437.1 1200.1,437.1 1211.0,437.1 1221.9,437.1 1221.9,426.2 1221.9,415.3 1221.9,404.5 1215.8,395.5 1217.9,384.8 1227.1,378.9 1231.3,368.8 1235.5,358.8 1230.0,349.4 1230.0,338.5 1235.5,329.1 1245.0,323.8 1255.9,324.1 1265.2,329.8 1275.3,325.8 1282.0,317.2 1292.8,316.4 1300.6,324.0 1300.1,334.9 1291.7,341.7 1280.9,340.0 1270.8,344.0 1267.9,354.5 1260.1,362.1 1249.6,364.7 1245.3,374.7 1241.1,384.8 1243.3,395.5 1237.1,404.5 1237.1,415.3 1237.1,426.2 1237.1,437.1 1248.0,437.1 1258.9,437.1 1269.8,437.1 1280.7,437.1 1291.6,437.1 1302.5,437.1 1313.4,437.1 1324.3,437.1 1335.2,437.1 1346.0,437.1 1356.9,437.1 1367.8,437.1 1378.7,437.1 1389.6,437.1 1400.5,437.1 1411.4,437.1 1422.3,437.1 1433.2,437.1 1444.0,437.1 1454.9,437.1 1465.8,437.1 1476.7,437.1 1487.6,437.1 1498.5,437.1 1509.4,437.1 1520.3,437.1 1531.2,437.1 1542.1,437.1 1552.9,437.1 1552.9,426.2 1552.9,415.3 1546.8,406.3 1549.0,395.7 1544.7,385.6 1536.5,378.5 1537.2,367.6 1532.9,357.6 1528.7,347.5 1524.5,337.5 1520.2,327.5 1509.9,323.9 1503.5,315.2 1503.1,304.3 1509.0,295.1 1519.0,290.9 1529.7,293.1 1537.2,300.9 1539.0,311.7 1534.3,321.5 1538.5,331.6 1542.7,341.6 1547.0,351.6 1551.2,361.7 1559.4,368.8 1558.8,379.7 1563.0,389.8 1572.2,395.7 1574.3,406.3 1568.2,415.3 1568.2,426.2 1568.2,437.1 1579.1,437.1 1590.0,437.1 1600.9,437.1 1611.7,437.1 1622.6,437.1 1633.5,437.1 1644.4,437.1 1655.3,437.1 1666.2,437.1 1677.1,437.1 1688.0,437.1 1688.0,426.2 1688.0,415.3 1688.0,404.5 1684.0,394.3 1690.2,385.3 1701.0,385.3 1707.2,394.3 1703.2,404.5 1703.2,415.3 1703.2,426.2 1703.2,437.1 1714.1,437.1 1725.0,437.1" class="backbone"/>
@@ -1019,6 +1019,14 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <circle cx="803.4" cy="1613.7" r="9.2" fill="#303030" opacity="0.22"><title>intron; confidence medium</title></circle>
 <circle cx="819.2" cy="1613.7" r="9.2" fill="#303030" opacity="0.22"><title>intron; confidence medium</title></circle>
 <circle cx="835.0" cy="1613.7" r="9.2" fill="#303030" opacity="0.22"><title>intron; confidence medium</title></circle>
+<circle cx="677.2" cy="1613.7" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="693.0" cy="1613.7" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="708.8" cy="1613.7" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="724.6" cy="1613.7" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="740.3" cy="1613.7" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="756.1" cy="1613.7" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="771.9" cy="1613.7" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="756.1" cy="1613.7" r="9.2" fill="#303030" opacity="0.28"><title>branch point adenosine; confidence high</title></circle>
 <text x="125.0" y="1613.7" class="base" fill="#303030"><title>/Y seq 49 auth 49</title>C</text>
 <text x="140.8" y="1613.7" class="base" fill="#303030"><title>/Y seq 50 auth 50</title>C</text>
 <text x="150.8" y="1601.7" class="small" fill="#94a3b8">50</text>
@@ -1074,6 +1082,10 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <text x="216.3" y="1570.2" class="feature-label" text-anchor="start" fill="#FF8C00">5&#x27; exon nt 49-58</text>
 <path d="M322.2,1613.7 L342.5,1570.2" class="feature-callout" stroke="#303030" opacity="0.60"/>
 <text x="342.5" y="1570.2" class="feature-label" text-anchor="start" fill="#303030">5&#x27;SS nt 59-64</text>
+<path d="M724.6,1613.7 L704.3,1570.2" class="feature-callout" stroke="#303030" opacity="0.60"/>
+<text x="704.3" y="1570.2" class="feature-label" text-anchor="end" fill="#303030">BP region nt 145-156</text>
+<path d="M756.1,1613.7 L776.4,1570.2" class="feature-callout" stroke="#303030" opacity="0.60"/>
+<text x="776.4" y="1570.2" class="feature-label" text-anchor="start" fill="#303030">BP-A nt 155</text>
 <path d="M187.8,477.0 Q930.0,432.0 1672.2,1026.6" class="inter" stroke-width="3.1"><title>2:3-13 to 6:85-95; 9 FR3D interactions; cWW</title></path>
 <path d="M322.9,477.0 Q555.3,432.0 787.7,1613.7" class="inter" stroke-width="1.3"><title>2:33-33 to Y:157-157; 1 FR3D interactions; cWW</title></path>
 <path d="M351.2,477.0 Q545.8,432.0 740.3,1613.7" class="inter" stroke-width="1.3"><title>2:35-35 to Y:154-154; 1 FR3D interactions; cWW</title></path>
@@ -1105,36 +1117,40 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <text x="510.0" y="2015.0" class="small">five prime splice site</text>
 <circle cx="707.0" cy="2011.0" r="7" fill="#303030" opacity="0.28"/>
 <text x="720.0" y="2015.0" class="small">intron</text>
-<circle cx="917.0" cy="2011.0" r="7" fill="#0b6e2d" opacity="0.28"/>
-<text x="930.0" y="2015.0" class="small">U2 branchpoint pairing region</text>
-<circle cx="1127.0" cy="2011.0" r="7" fill="#167a38" opacity="0.28"/>
-<text x="1140.0" y="2015.0" class="small">U2 stem IIa</text>
-<circle cx="1337.0" cy="2011.0" r="7" fill="#2f8b4d" opacity="0.28"/>
-<text x="1350.0" y="2015.0" class="small">U2 Sm site</text>
-<circle cx="1547.0" cy="2011.0" r="7" fill="#d8c800" opacity="0.28"/>
-<text x="1560.0" y="2015.0" class="small">U4 U6 stem I partner</text>
-<circle cx="77.0" cy="2034.0" r="7" fill="#e0cf1a" opacity="0.28"/>
-<text x="90.0" y="2038.0" class="small">U4 U6 stem II partner</text>
-<circle cx="287.0" cy="2034.0" r="7" fill="#f0df2e" opacity="0.28"/>
-<text x="300.0" y="2038.0" class="small">U4 Brr2 loading region</text>
-<circle cx="497.0" cy="2034.0" r="7" fill="#f5e85a" opacity="0.28"/>
-<text x="510.0" y="2038.0" class="small">U4 Sm site</text>
-<circle cx="707.0" cy="2034.0" r="7" fill="#1b3cd0" opacity="0.28"/>
-<text x="720.0" y="2038.0" class="small">U5 loop I</text>
-<circle cx="917.0" cy="2034.0" r="7" fill="#dc143c" opacity="0.28"/>
-<text x="930.0" y="2038.0" class="small">U6 5prime terminal stem loop</text>
-<circle cx="1127.0" cy="2034.0" r="7" fill="#d0183c" opacity="0.28"/>
-<text x="1140.0" y="2038.0" class="small">U6 U2 helix I partner</text>
-<circle cx="1337.0" cy="2034.0" r="7" fill="#e01842" opacity="0.28"/>
-<text x="1350.0" y="2038.0" class="small">U6 5SS upstream contact</text>
-<circle cx="1547.0" cy="2034.0" r="7" fill="#dc143c" opacity="0.28"/>
-<text x="1560.0" y="2038.0" class="small">U6 ACAGAGA box</text>
+<circle cx="917.0" cy="2011.0" r="7" fill="#303030" opacity="0.28"/>
+<text x="930.0" y="2015.0" class="small">branch point region</text>
+<circle cx="1127.0" cy="2011.0" r="7" fill="#303030" opacity="0.28"/>
+<text x="1140.0" y="2015.0" class="small">branch point adenosine</text>
+<circle cx="1337.0" cy="2011.0" r="7" fill="#0b6e2d" opacity="0.28"/>
+<text x="1350.0" y="2015.0" class="small">U2 branchpoint pairing region</text>
+<circle cx="1547.0" cy="2011.0" r="7" fill="#167a38" opacity="0.28"/>
+<text x="1560.0" y="2015.0" class="small">U2 stem IIa</text>
+<circle cx="77.0" cy="2034.0" r="7" fill="#2f8b4d" opacity="0.28"/>
+<text x="90.0" y="2038.0" class="small">U2 Sm site</text>
+<circle cx="287.0" cy="2034.0" r="7" fill="#d8c800" opacity="0.28"/>
+<text x="300.0" y="2038.0" class="small">U4 U6 stem I partner</text>
+<circle cx="497.0" cy="2034.0" r="7" fill="#e0cf1a" opacity="0.28"/>
+<text x="510.0" y="2038.0" class="small">U4 U6 stem II partner</text>
+<circle cx="707.0" cy="2034.0" r="7" fill="#f0df2e" opacity="0.28"/>
+<text x="720.0" y="2038.0" class="small">U4 Brr2 loading region</text>
+<circle cx="917.0" cy="2034.0" r="7" fill="#f5e85a" opacity="0.28"/>
+<text x="930.0" y="2038.0" class="small">U4 Sm site</text>
+<circle cx="1127.0" cy="2034.0" r="7" fill="#1b3cd0" opacity="0.28"/>
+<text x="1140.0" y="2038.0" class="small">U5 loop I</text>
+<circle cx="1337.0" cy="2034.0" r="7" fill="#dc143c" opacity="0.28"/>
+<text x="1350.0" y="2038.0" class="small">U6 5prime terminal stem loop</text>
+<circle cx="1547.0" cy="2034.0" r="7" fill="#d0183c" opacity="0.28"/>
+<text x="1560.0" y="2038.0" class="small">U6 U2 helix I partner</text>
 <circle cx="77.0" cy="2057.0" r="7" fill="#e01842" opacity="0.28"/>
-<text x="90.0" y="2061.0" class="small">U6 U4 stem II partner</text>
-<circle cx="287.0" cy="2057.0" r="7" fill="#d9183e" opacity="0.28"/>
-<text x="300.0" y="2061.0" class="small">U6 U4 stem I partner</text>
-<circle cx="497.0" cy="2057.0" r="7" fill="#d61a3d" opacity="0.28"/>
-<text x="510.0" y="2061.0" class="small">U6 ISL</text>
-<circle cx="707.0" cy="2057.0" r="7" fill="#c91236" opacity="0.28"/>
-<text x="720.0" y="2061.0" class="small">U6 AGC catalytic triad</text>
+<text x="90.0" y="2061.0" class="small">U6 5SS upstream contact</text>
+<circle cx="287.0" cy="2057.0" r="7" fill="#dc143c" opacity="0.28"/>
+<text x="300.0" y="2061.0" class="small">U6 ACAGAGA box</text>
+<circle cx="497.0" cy="2057.0" r="7" fill="#e01842" opacity="0.28"/>
+<text x="510.0" y="2061.0" class="small">U6 U4 stem II partner</text>
+<circle cx="707.0" cy="2057.0" r="7" fill="#d9183e" opacity="0.28"/>
+<text x="720.0" y="2061.0" class="small">U6 U4 stem I partner</text>
+<circle cx="917.0" cy="2057.0" r="7" fill="#d61a3d" opacity="0.28"/>
+<text x="930.0" y="2061.0" class="small">U6 ISL</text>
+<circle cx="1127.0" cy="2057.0" r="7" fill="#c91236" opacity="0.28"/>
+<text x="1140.0" y="2061.0" class="small">U6 AGC catalytic triad</text>
 </svg>

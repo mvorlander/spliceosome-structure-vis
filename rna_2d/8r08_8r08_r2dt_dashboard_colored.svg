@@ -551,8 +551,8 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <text x="1335.8" y="502.1" class="feature-label" text-anchor="start" fill="#0b6e2d">BP pairing nt 32-41</text>
 <path d="M1485.4,442.8 L1528.9,422.5" class="feature-callout" stroke="#167a38" opacity="0.46"/>
 <text x="1528.9" y="422.5" class="feature-label" text-anchor="start" fill="#167a38">stem IIa nt 46-65</text>
-<path d="M1605.6,481.8 L1564.1,457.8" class="feature-callout" stroke="#2f8b4d" opacity="0.54"/>
-<text x="1564.1" y="457.8" class="feature-label" text-anchor="end" fill="#2f8b4d">Sm site nt 99-105</text>
+<path d="M1605.6,481.8 L1625.9,525.3" class="feature-callout" stroke="#2f8b4d" opacity="0.54"/>
+<text x="1625.9" y="525.3" class="feature-label" text-anchor="start" fill="#2f8b4d">Sm site nt 99-105</text>
 <rect x="70.0" y="717.0" width="820.0" height="520.0" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
 <text x="88.0" y="745.0" class="label" style="font-size:16px;fill:#F2D94E">U4 snRNA /4 -&gt; 4</text>
 <polyline points="125.0,1058.8 137.1,1058.8 149.2,1058.8 161.4,1058.8 173.5,1058.8 185.6,1058.8 197.7,1058.8 209.9,1058.8 222.0,1058.8 234.1,1058.8 246.2,1058.8 258.4,1058.8 270.5,1058.8 282.6,1058.8 294.7,1058.8 306.9,1058.8 319.0,1058.8 331.1,1058.8 343.2,1058.8 355.3,1058.8 355.3,1046.7 355.3,1034.5 355.3,1022.4 348.5,1012.4 350.9,1000.5 361.1,993.9 365.8,982.8 370.5,971.6 363.4,961.7 361.4,949.8 364.8,938.2 373.0,929.2 384.2,924.7 396.3,925.7 406.8,931.8 413.0,921.4 424.9,919.2 434.5,926.6 435.4,938.7 426.9,947.4 414.8,946.8 414.1,958.9 408.1,969.5 398.1,976.4 386.2,978.2 381.4,989.3 376.7,1000.5 379.1,1012.4 372.3,1022.4 372.3,1034.5 372.3,1046.7 372.3,1058.8 384.4,1058.8 396.6,1058.8 408.7,1058.8 420.8,1058.8 432.9,1058.8 445.1,1058.8 457.2,1058.8 469.3,1058.8 481.4,1058.8 493.6,1058.8 505.7,1058.8 517.8,1058.8 529.9,1058.8 542.0,1058.8 554.2,1058.8 566.3,1058.8 578.4,1058.8 590.5,1058.8 602.7,1058.8 614.8,1058.8 626.9,1058.8 639.0,1058.8 651.2,1058.8 663.3,1058.8 675.4,1058.8 675.4,1046.7 675.4,1034.5 666.7,1026.1 664.8,1014.1 670.4,1003.3 658.5,1000.9 666.6,991.8 662.8,980.3 659.0,968.8 651.3,959.5 654.6,947.8 666.1,944.0 675.8,951.4 675.1,963.5 678.9,975.0 690.8,977.5 682.7,986.5 686.5,998.0 697.4,1003.3 703.0,1014.1 701.1,1026.1 692.4,1034.5 692.4,1046.7 692.4,1058.8 704.5,1058.8 716.6,1058.8 728.7,1058.8 740.9,1058.8 753.0,1058.8 765.1,1058.8 777.2,1058.8 789.4,1058.8 801.5,1058.8 813.6,1058.8 813.6,1046.7 813.6,1034.5 813.6,1022.4 813.6,1010.3 809.2,999.0 816.0,989.0 828.2,989.0 835.0,999.0 830.6,1010.3 830.6,1022.4 830.6,1034.5 830.6,1046.7 830.6,1058.8" class="backbone"/>
@@ -1147,6 +1147,21 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <rect x="960.0" y="1342.0" width="820.0" height="520.0" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
 <text x="978.0" y="1370.0" class="label" style="font-size:16px;fill:#303030">mRNA /Z -&gt; MA</text>
 <polyline points="1015.0,1613.0 1065.7,1613.0 1116.4,1613.0 1167.1,1613.0 1217.9,1613.0 1268.6,1613.0 1319.3,1613.0 1370.0,1613.0 1420.7,1613.0 1471.4,1613.0 1522.1,1613.0 1572.9,1613.0 1623.6,1613.0 1674.3,1613.0 1725.0,1613.0" class="backbone"/>
+<circle cx="1015.0" cy="1613.0" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1065.7" cy="1613.0" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1116.4" cy="1613.0" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1167.1" cy="1613.0" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1217.9" cy="1613.0" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1268.6" cy="1613.0" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1319.3" cy="1613.0" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1370.0" cy="1613.0" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1420.7" cy="1613.0" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1471.4" cy="1613.0" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1522.1" cy="1613.0" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1572.9" cy="1613.0" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1623.6" cy="1613.0" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1674.3" cy="1613.0" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
+<circle cx="1725.0" cy="1613.0" r="9.2" fill="#303030" opacity="0.28"><title>branch point region; confidence high</title></circle>
 <circle cx="1015.0" cy="1613.0" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
 <circle cx="1065.7" cy="1613.0" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
 <circle cx="1116.4" cy="1613.0" r="9.2" fill="#303030" opacity="0.22"><title>substrate RNA; confidence medium</title></circle>
@@ -1187,6 +1202,8 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <text x="1623.6" y="1613.0" class="base" fill="#303030"><title>/Z seq 13 auth 41</title>A</text>
 <text x="1674.3" y="1613.0" class="base" fill="#303030"><title>/Z seq 14 auth 42</title>U</text>
 <text x="1725.0" y="1613.0" class="base" fill="#303030"><title>/Z seq 15 auth 43</title>C</text>
+<path d="M1370.0,1613.0 L1349.7,1569.5" class="feature-callout" stroke="#303030" opacity="0.60"/>
+<text x="1349.7" y="1569.5" class="feature-label" text-anchor="end" fill="#303030">BP region nt 29-43</text>
 <path d="M1547.5,1613.0 L1527.2,1569.5" class="feature-callout" stroke="#303030" opacity="0.60"/>
 <text x="1527.2" y="1569.5" class="feature-label" text-anchor="end" fill="#303030">BP region nt 36-43</text>
 <path d="M1623.6,1613.0 L1643.9,1569.5" class="feature-callout" stroke="#303030" opacity="0.60"/>
@@ -1226,9 +1243,9 @@ text{font-family:Arial,Helvetica,sans-serif} .base{font-size:12px;font-weight:70
 <path d="M1699.6,1613.0 Q1466.0,436.8 1232.4,481.8" class="inter" stroke-width="1.5"><title>Z:14-15 to 2:32-33; 2 FR3D interactions; cWW</title></path>
 <text x="70" y="2614.0" class="label" style="font-size:15px">Feature overlays</text>
 <circle cx="77.0" cy="2636.0" r="7" fill="#303030" opacity="0.28"/>
-<text x="90.0" y="2640.0" class="small">substrate</text>
+<text x="90.0" y="2640.0" class="small">branch point region</text>
 <circle cx="287.0" cy="2636.0" r="7" fill="#303030" opacity="0.28"/>
-<text x="300.0" y="2640.0" class="small">branch point region</text>
+<text x="300.0" y="2640.0" class="small">substrate</text>
 <circle cx="497.0" cy="2636.0" r="7" fill="#303030" opacity="0.28"/>
 <text x="510.0" y="2640.0" class="small">branch point adenosine</text>
 <circle cx="707.0" cy="2636.0" r="7" fill="#bf72b7" opacity="0.28"/>
