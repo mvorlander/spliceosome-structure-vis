@@ -169,7 +169,7 @@
       <div class="field"><label for="rnaFeatureFilter">RNA Features</label><select id="rnaFeatureFilter"></select></div>
       <div class="field"><label for="sortBy">Sort</label><select id="sortBy"><option value="pathway">Splicing pathway</option><option value="resolution">Resolution</option><option value="year">Year</option><option value="pdb">PDB</option><option value="chains">Chain count</option><option value="proteins">Protein count</option></select></div>
       <div class="field"><label for="helperSource">ChimeraX helper scripts</label><select id="helperSource"><option value="github">Load helpers from GitHub</option><option value="local">Use local cloned repo</option></select></div>
-      <div class="field"><label for="localRepoPath">Local repo path</label><input id="localRepoPath" type="text" placeholder="/path/to/spliceosome-structure-vis"><div class="field-help">Clone once, then paste the resulting folder path here when using local helpers.<code>git clone https://github.com/mvorlander/spliceosome-structure-vis.git</code></div></div>
+      <div class="field"><label for="localRepoPath">Local repo path</label><input id="localRepoPath" type="text" placeholder="/path/to/spliceosome-structure-vis"><div class="field-help">Clone once, then paste the resulting folder path here when using local helpers. For full model-only offline use, run the setup command in the Local Copy tab.<code>git clone https://github.com/mvorlander/spliceosome-structure-vis.git</code></div></div>
       <button class="button" id="reset" type="button">Reset</button>
     </aside>
     <main>
@@ -239,11 +239,14 @@
         </div></div></section>
       </div>
       <div id="localCopyView" hidden>
-        <section class="panel"><div class="panel-head"><h2>Local Copy</h2><span class="subtle">avoid repeated helper downloads in ChimeraX</span></div><div class="panel-body"><div class="doc-grid">
-          <div class="doc-section"><h3>Clone</h3><p>Clone the public repository once, then set the sidebar field <strong>ChimeraX helper scripts</strong> to <strong>Use local cloned repo</strong> and enter the clone path.</p><pre>git clone https://github.com/mvorlander/spliceosome-structure-vis.git
-cd spliceosome-structure-vis</pre></div>
-          <div class="doc-section"><h3>What Changes</h3><p>Copied CXC scripts still download deposited PDB models directly through ChimeraX, but helper Python scripts and label/selection browser scripts are opened from the cloned repository instead of raw GitHub URLs. This avoids repeated files such as <code>prune_implausible_bonds(24).py</code> accumulating in Downloads.</p></div>
-          <div class="doc-section"><h3>Helper Path</h3><p>Use an absolute local path for robust ChimeraX behavior, for example <code>/Users/you/src/spliceosome-structure-vis</code>. If the path is left empty, copied local-helper scripts use relative paths and expect ChimeraX to run from the repository root.</p></div>
+        <section class="panel"><div class="panel-head"><h2>Local Copy</h2><span class="subtle">offline coordinates; maps optional</span></div><div class="panel-body"><div class="doc-grid">
+          <div class="doc-section"><h3>Model-Only Offline Install</h3><p>Clone the public repository, then create a local dashboard folder with all public dashboard assets, helper scripts, thumbnails, RNA panels, and uncompressed coordinate mmCIF files. EM maps are not downloaded by default.</p><pre>git clone https://github.com/mvorlander/spliceosome-structure-vis.git
+cd spliceosome-structure-vis
+python3 tools/setup_offline.py --dest ~/Documents/SpliceVis</pre></div>
+          <div class="doc-section"><h3>Open Offline</h3><p>The offline folder includes a small local-server launcher so the dashboard can load JSON and CXC files reliably in the browser.</p><pre>cd ~/Documents/SpliceVis
+./open_dashboard.command</pre></div>
+          <div class="doc-section"><h3>Optional Maps</h3><p>Primary EMDB maps are large and are treated as an add-on. Re-run the installer with the map flag only when local map support is needed.</p><pre>python3 tools/setup_offline.py --dest ~/Documents/SpliceVis --with-primary-maps</pre></div>
+          <div class="doc-section"><h3>Helper-Only Mode</h3><p>For a smaller setup, clone the repository once, set <strong>ChimeraX helper scripts</strong> to <strong>Use local cloned repo</strong>, and enter the clone path. This avoids repeated helper downloads while still letting ChimeraX fetch PDB coordinates online.</p></div>
         </div></div></section>
       </div>
       <div id="helpView" hidden>
@@ -511,7 +514,7 @@ cd spliceosome-structure-vis</pre></div>
         return;
       }
       if(state.activeTab === "localCopy") {
-        els.resultSubtitle.textContent = "Clone the repository and use local helper scripts";
+        els.resultSubtitle.textContent = "Create a model-only offline copy, with optional primary-map add-on";
         return;
       }
       const rows = filtered();
