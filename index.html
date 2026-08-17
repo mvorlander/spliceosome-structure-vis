@@ -922,8 +922,8 @@ ${await scriptFor(record,"no_maps")}
       if(!r){ els.detail.innerHTML='<div class="subtle">No structure selected.</div>'; return; }
       els.selectedId.textContent = r.pdb_id.toUpperCase();
       const componentSwatch = item => item.color_hex ? `<span class="component-swatch" style="background:${attr(item.color_hex)}" title="${attr(item.color_hex)}"></span>` : "";
-      const proteins = r.proteins.map(p=>`<span class="chip">${componentSwatch(p)}<strong>${esc(p.gene||p.name)}</strong><br><span class="subtle">${esc(p.chains)}</span></span>`).join("");
-      const rnas = r.rnas.map(x=>`<span class="chip">${componentSwatch(x)}<strong>${esc(x.name)}</strong><br><span class="subtle">${esc(x.chains)}</span></span>`).join("");
+      const proteins = r.proteins.map(p=>`<span class="chip" title="${attr([p.name,p.gene].filter(Boolean).join("; "))}">${componentSwatch(p)}<strong>${esc(p.display_name||p.gene||p.name)}</strong><br><span class="subtle">${esc(p.chains)}</span></span>`).join("");
+      const rnas = r.rnas.map(x=>`<span class="chip" title="${attr([x.name,x.gene].filter(Boolean).join("; "))}">${componentSwatch(x)}<strong>${esc(x.display_name||x.name)}</strong><br><span class="subtle">${esc(x.chains)}</span></span>`).join("");
       const thumbnail = r.thumbnail && r.thumbnail.image ? `<h3>Thumbnail</h3><img class="thumbnail-img" src="${attr(r.thumbnail.image)}" alt="ChimeraX thumbnail" loading="lazy">` : "";
       const systematicAvailable = Boolean(r.script_systematic_path);
       const selectedScriptMode = state.chainMode === "systematic" && systematicAvailable ? "systematic" : "original";
