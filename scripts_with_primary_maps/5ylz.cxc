@@ -76,6 +76,8 @@ color #419.1/O #F4A460
 color #419.1/P #FFDEAD
 # SNW1
 color #419.1/Q #D49F96
+# SRRM2
+color #419.1/R #BDD6F0
 # CWC22
 color #419.1/S #2C54DD
 # SLU7
@@ -135,6 +137,9 @@ name pdb_5YLZ_NTC_PRP19 #419.1/G,J,O,P,q,r,s,t
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_5YLZ_RNA_substrate #419.1/E
+# SR proteins
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
+name pdb_5YLZ_SR_proteins #419.1/R
 # Second step factors
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_5YLZ_Second_step_factors #419.1/T,V,W
@@ -155,7 +160,7 @@ name pdb_5YLZ_U5_snRNP #419.1/A,B,C
 name pdb_5YLZ_U6_snRNP #419.1/D
 # other
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
-name pdb_5YLZ_other #419.1/R,U
+name pdb_5YLZ_other #419.1/U
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -13--1, splice-site-inference, medium confidence, validation not_applicable
 # selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}

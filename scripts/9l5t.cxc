@@ -8,7 +8,7 @@
 
 open 8h6l id 397.9 name 8H6L_anchor
 open 9l5t id 397.1 name 9L5T
-rename #397 Bstar_9l5t_structure
+rename #397 BstarD_9l5t_structure
 
 # Align on PRPF8.
 matchmaker #397.1/A to #397.9/5B
@@ -109,6 +109,8 @@ color #397.1/u #B0C4DE
 color #397.1/1 #E52B75
 # DHX35
 color #397.1/z #78184A
+# SRRM2
+color #397.1/V #BDD6F0
 # CWC22
 color #397.1/Z #2C54DD
 # PAXBP1
@@ -135,6 +137,9 @@ name pdb_9L5T_NTC_PRP19 #397.1/K,L,P,T,q,r,s,t
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_9L5T_RNA_substrate #397.1/8
+# SR proteins
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
+name pdb_9L5T_SR_proteins #397.1/V
 # Second step factors
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_9L5T_Second_step_factors #397.1/W
@@ -152,7 +157,7 @@ name pdb_9L5T_U5_snRNP #397.1/5,A,C,E
 name pdb_9L5T_U6_snRNP #397.1/6
 # other
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
-name pdb_9L5T_other #397.1/CY,D,F,V
+name pdb_9L5T_other #397.1/CY,D,F
 # Named selections for resolved snRNA functional regions.
 # U2 snRNA U2/U6 helix I partner: residues 26-30, review-region, high confidence
 # selector_meta {"color":"#047857","family":"RNA","feature":"U2_U6_helix_I_partner","group":"snRNA-snRNA interacting regions","group_key":"snRNA_snRNA_regions","kind":"rna_feature"}

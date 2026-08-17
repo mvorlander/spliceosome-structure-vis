@@ -162,10 +162,9 @@
       <h1>Spliceosome Structure Vis</h1>
       <div class="subtle">Public lightweight dashboard. Scripts download PDB models directly in ChimeraX.</div>
       <div class="field"><label for="search">Search</label><input id="search" type="search" placeholder="PDB, title, protein, RNA, paper, author"></div>
-      <div class="field"><label for="searchMode">Search In</label><select id="searchMode"><option value="all">All fields</option><option value="component">Proteins, RNAs, genes</option><option value="structure">PDB, title, complex</option><option value="paper">Paper, DOI, PubMed, authors</option><option value="author">Authors</option></select></div>
-      <div class="field"><label for="family">Complex</label><select id="family"></select></div>
+      <div class="field"><label for="searchMode">Search In</label><select id="searchMode"><option value="all">All fields</option><option value="component">Proteins, RNAs, genes</option><option value="structure">PDB, title, state</option><option value="paper">Paper, DOI, PubMed, authors</option><option value="author">Authors</option></select></div>
+      <div class="field"><label for="family">State</label><select id="family"></select></div>
       <div class="field"><label for="species">Species</label><select id="species"></select></div>
-      <div class="field"><label>Components</label><div class="segmented" id="componentFilter"><button type="button" data-value="all" class="active">All</button><button type="button" data-value="both">PRPF8 + SF3B1</button><button type="button" data-value="prpf8">PRPF8</button><button type="button" data-value="sf3b1">SF3B1</button></div></div>
       <div class="field"><label for="rnaFeatureFilter">RNA Features</label><select id="rnaFeatureFilter"></select></div>
       <div class="field"><label for="sortBy">Sort</label><select id="sortBy"><option value="pathway">Splicing pathway</option><option value="resolution">Resolution</option><option value="year">Year</option><option value="pdb">PDB</option><option value="chains">Chain count</option><option value="proteins">Protein count</option></select></div>
       <div class="field"><label for="helperSource">ChimeraX helper scripts</label><select id="helperSource"><option value="github">Load helpers from GitHub</option><option value="local">Use local cloned repo</option></select></div>
@@ -192,7 +191,7 @@
           <button type="button" class="quick-filter" data-rna-feature="feature:U6_ACAGAGA_box">U6 ACAGAGA</button>
         </div><div class="filter-chips" id="activeFilterChips"></div></div></section>
         <section class="workspace">
-          <div class="panel"><div class="panel-head"><h2>Structure Set</h2><span class="subtle" id="tableCount"></span></div><div class="table-wrap"><table><thead><tr><th data-sort="pdb">PDB</th><th>Preview</th><th data-sort="species">Species</th><th data-sort="title">Title</th><th data-sort="state">Complex</th><th data-sort="resolution">Resolution</th><th data-sort="year">Year</th><th data-sort="chains">Chain count</th><th data-sort="proteins">Chains</th><th>RNA</th><th>Curation</th><th>Compare</th></tr></thead><tbody id="rows"></tbody></table></div></div>
+          <div class="panel"><div class="panel-head"><h2>Structure Set</h2><span class="subtle" id="tableCount"></span></div><div class="table-wrap"><table><thead><tr><th data-sort="pdb">PDB</th><th>Preview</th><th data-sort="species">Species</th><th data-sort="title">Title</th><th data-sort="state">State</th><th data-sort="resolution">Resolution</th><th data-sort="year">Year</th><th data-sort="chains">Chain count</th><th data-sort="proteins">Chains</th><th>RNA</th><th>Curation</th><th>Compare</th></tr></thead><tbody id="rows"></tbody></table></div></div>
           <div class="panel"><div class="panel-head"><h2>Selected Structure</h2><span class="subtle" id="selectedId"></span></div><div class="panel-body" id="detail"></div></div>
         </section>
       </div>
@@ -270,10 +269,10 @@ python3 tools/setup_offline.py --dest ~/Documents/SpliceVis</pre></div>
     let proteinLookup = [];
     let rnaFeatureDefinitions = [];
     let rnaFeatureConsistency = [];
-    const state = { activeTab:"structures", query:"", mode:"all", family:"all", species:"all", components:"all", rnaFeature:"all", rnaFeatureSearch:"", cyclePdbIds:[], cyclePdbLabel:"", rnaDefinitionQuery:"", proteinComplex:"all", helperSource:"github", localRepoPath:"", proximityResults:[], proximityQuerySummary:"", sortBy:"pathway", sortDir:"asc", chainMode:"original", selected: records[0]?.pdb_id || "", compareIds: [] };
+    const state = { activeTab:"structures", query:"", mode:"all", family:"all", species:"all", rnaFeature:"all", rnaFeatureSearch:"", cyclePdbIds:[], cyclePdbLabel:"", rnaDefinitionQuery:"", proteinComplex:"all", helperSource:"github", localRepoPath:"", proximityResults:[], proximityQuerySummary:"", sortBy:"pathway", sortDir:"asc", chainMode:"original", selected: records[0]?.pdb_id || "", compareIds: [] };
     const els = {};
-    for (const id of ["search","searchMode","family","species","componentFilter","rnaFeatureFilter","rnaFeatureQuickSearch","rnaFeatureQuickResults","rnaQuickFilters","activeFilterChips","rnaDefinitionSearch","rnaDefinitionRows","cycleStateGuide","rnaElementGuide","proteinComplexGuide","proteinComplexFilter","helperSource","localRepoPath","proximityView","proximityProtein","proximityProteinOptions","proximityStart","proximityEnd","proximityDistance","proximitySpecies","runProximitySearch","downloadProximityCsv","copyProximityCxc","proximityDeduplicate","proximityCoverage","proximityStatus","proximityRows","localCopyView","sortBy","reset","tabs","structuresView","rnaFeaturesView","cycleStatesView","rnaElementsView","complexesView","proteinsView","documentationView","helpView","stats","cycle","rows","detail","tableCount","resultSubtitle","selectedId","proteinRows","proteinCount"]) els[id] = document.getElementById(id);
-    const STAGES = ["U2 snRNP","E complex","A complex","U5/tri-snRNP","pre-B","B","pre-Bact","Bact","B*","C","C*","P","ILS/disassembly","DIS","U5 recycling"];
+    for (const id of ["search","searchMode","family","species","rnaFeatureFilter","rnaFeatureQuickSearch","rnaFeatureQuickResults","rnaQuickFilters","activeFilterChips","rnaDefinitionSearch","rnaDefinitionRows","cycleStateGuide","rnaElementGuide","proteinComplexGuide","proteinComplexFilter","helperSource","localRepoPath","proximityView","proximityProtein","proximityProteinOptions","proximityStart","proximityEnd","proximityDistance","proximitySpecies","runProximitySearch","downloadProximityCsv","copyProximityCxc","proximityDeduplicate","proximityCoverage","proximityStatus","proximityRows","localCopyView","sortBy","reset","tabs","structuresView","rnaFeaturesView","cycleStatesView","rnaElementsView","complexesView","proteinsView","documentationView","helpView","stats","cycle","rows","detail","tableCount","resultSubtitle","selectedId","proteinRows","proteinCount"]) els[id] = document.getElementById(id);
+    const STAGES = ["U2 snRNP","E complex","A complex","U5/tri-snRNP","pre-B","B","pre-Bact","Bact","B*","B*D complex","C","C*","P","ILS/disassembly","DIS","U5 recycling"];
     const ORDER = Object.fromEntries(STAGES.map((s,i)=>[s,i]));
     const NODE_POS = [[280,100],[130,250],[205,410],[400,292],[365,535],[540,535],[705,515],[850,465],[990,390],[1110,295],[1190,190],[1150,92],[880,100],[735,100],[590,100]];
     const U = {u1:"#d8a3cf", u2:"#78c96b", u4:"#f2dc4e", u5:"#5da8d7", u6:"#ee5960", ntc:"#f2bd5c", mrna:"#22272d"};
@@ -296,7 +295,7 @@ python3 tools/setup_offline.py --dest ~/Documents/SpliceVis</pre></div>
       records = DATA.records;
       proteinLookup = DATA.protein_lookup;
       state.selected = records[0]?.pdb_id || "";
-      els.family.innerHTML = '<option value="all">All complexes</option>' + STAGES.map(s=>`<option value="${attr(s)}">${esc(s)}</option>`).join("");
+      els.family.innerHTML = '<option value="all">All states</option>' + STAGES.map(s=>`<option value="${attr(s)}">${esc(s)}</option>`).join("");
       els.species.innerHTML = '<option value="all">All species</option>' + unique(records.map(r=>r.species)).map(s=>`<option>${esc(s)}</option>`).join("");
       els.rnaFeatureFilter.innerHTML = rnaFeatureOptionData().map(x=>`<option value="${attr(x.value)}">${esc(x.label)}</option>`).join("");
       populateProteinComplexFilter();
@@ -342,7 +341,6 @@ python3 tools/setup_offline.py --dest ~/Documents/SpliceVis</pre></div>
       els.helperSource.addEventListener("change",()=>{state.helperSource=els.helperSource.value; render();});
       els.localRepoPath.addEventListener("input",()=>{state.localRepoPath=els.localRepoPath.value.trim(); render();});
       els.sortBy.addEventListener("change",()=>{state.sortBy=els.sortBy.value; state.sortDir = ["year","chains","proteins","resolution"].includes(state.sortBy) ? "desc" : "asc"; render();});
-      els.componentFilter.addEventListener("click",event=>{const b=event.target.closest("button"); if(!b)return; state.components=b.dataset.value; for(const x of els.componentFilter.querySelectorAll("button")) x.classList.toggle("active",x===b); render();});
       els.tabs.addEventListener("click",event=>{const b=event.target.closest("button"); if(!b)return; state.activeTab=b.dataset.tab; for(const x of els.tabs.querySelectorAll("button")) x.classList.toggle("active",x===b); render();});
       document.addEventListener("click", event=>{const th=event.target.closest("th[data-sort]"); if(!th)return; const key=th.dataset.sort; if(state.sortBy===key) state.sortDir=state.sortDir==="asc"?"desc":"asc"; else { state.sortBy=key; state.sortDir=["year","chains","proteins","resolution"].includes(key)?"desc":"asc"; } els.sortBy.value = ["state","title","species"].includes(key) ? "pathway" : key; render();});
       els.runProximitySearch.addEventListener("click", runProximitySearch);
@@ -352,7 +350,7 @@ python3 tools/setup_offline.py --dest ~/Documents/SpliceVis</pre></div>
       els.proximitySpecies.addEventListener("change", updateProximityResultPresentation);
       for(const input of [els.proximityProtein, els.proximityStart, els.proximityEnd, els.proximityDistance]) input.addEventListener("keydown", event=>{if(event.key==="Enter"){event.preventDefault(); runProximitySearch();}});
       els.proximityRows.addEventListener("click", event=>{const b=event.target.closest("button[data-proximity-pdb]"); if(!b)return; state.selected=b.dataset.proximityPdb; state.activeTab="structures"; for(const x of els.tabs.querySelectorAll("button")) x.classList.toggle("active",x.dataset.tab==="structures"); render();});
-      els.reset.addEventListener("click",()=>{state.query=""; state.mode="all"; state.family="all"; state.species="all"; state.components="all"; state.rnaFeature="all"; state.rnaFeatureSearch=""; state.cyclePdbIds=[]; state.cyclePdbLabel=""; state.rnaDefinitionQuery=""; state.proteinComplex="all"; state.sortBy="pathway"; state.sortDir="asc"; els.search.value=""; els.searchMode.value="all"; els.family.value="all"; els.species.value="all"; els.rnaFeatureFilter.value="all"; els.rnaFeatureQuickSearch.value=""; renderRnaFeatureQuickSelect(); els.rnaDefinitionSearch.value=""; els.proteinComplexFilter.value="all"; els.sortBy.value="pathway"; for(const x of els.componentFilter.querySelectorAll("button")) x.classList.toggle("active",x.dataset.value==="all"); render();});
+      els.reset.addEventListener("click",()=>{state.query=""; state.mode="all"; state.family="all"; state.species="all"; state.rnaFeature="all"; state.rnaFeatureSearch=""; state.cyclePdbIds=[]; state.cyclePdbLabel=""; state.rnaDefinitionQuery=""; state.proteinComplex="all"; state.sortBy="pathway"; state.sortDir="asc"; els.search.value=""; els.searchMode.value="all"; els.family.value="all"; els.species.value="all"; els.rnaFeatureFilter.value="all"; els.rnaFeatureQuickSearch.value=""; renderRnaFeatureQuickSelect(); els.rnaDefinitionSearch.value=""; els.proteinComplexFilter.value="all"; els.sortBy.value="pathway"; render();});
     }
     function fieldsFor(r){
       return {
@@ -387,11 +385,17 @@ python3 tools/setup_offline.py --dest ~/Documents/SpliceVis</pre></div>
       ];
       const labels=new Map();
       for(const row of rnaFeatureDefinitions) if(row.feature) labels.set(row.feature, row.label||row.feature);
-      for(const record of records) for(const item of [...(record.substrate_features||[]),...(record.snrna_features||[])]) if(item.feature && !labels.has(item.feature)) labels.set(item.feature, item.label||item.feature);
+      for(const record of records) for(const item of [...(record.substrate_features||[]),...(record.snrna_features||[])]) if(item.feature && !labels.has(item.feature)) labels.set(item.feature, fallbackRnaFeatureLabel(item));
       const features=[...labels.entries()].map(([feature,label])=>({value:`feature:${feature}`, label, search:`${feature} ${label}`})).sort((a,b)=>a.label.localeCompare(b.label)||a.value.localeCompare(b.value));
       const options=[...general,...features];
       const needle=(query||"").trim().toLowerCase();
       return needle ? options.filter(x=>`${x.label} ${x.value} ${x.search}`.toLowerCase().includes(needle)) : options;
+    }
+    function fallbackRnaFeatureLabel(item){
+      const label = item.label || item.feature || "";
+      const snrna = String(item.snrna || "").replace(/\s+snRNA$/i, "");
+      if(snrna && /^(Sm site|LSm site|stem-loop 1|stem-loop 2|internal stem-loop)$/i.test(label)) return `${snrna} ${label}`;
+      return label;
     }
     function renderRnaFeatureQuickSelect(){
       let options=rnaFeatureOptionData(state.rnaFeatureSearch);
@@ -417,7 +421,6 @@ python3 tools/setup_offline.py --dest ~/Documents/SpliceVis</pre></div>
       else if(name==="family"){ state.family="all"; els.family.value="all"; }
       else if(name==="cyclePdb"){ state.cyclePdbIds=[]; state.cyclePdbLabel=""; }
       else if(name==="species"){ state.species="all"; els.species.value="all"; }
-      else if(name==="components"){ state.components="all"; for(const x of els.componentFilter.querySelectorAll("button")) x.classList.toggle("active",x.dataset.value==="all"); }
       else if(name==="rnaFeature"){ state.rnaFeature="all"; state.rnaFeatureSearch=""; els.rnaFeatureFilter.value="all"; els.rnaFeatureQuickSearch.value=""; renderRnaFeatureQuickSelect(); }
       render();
     }
@@ -438,10 +441,9 @@ python3 tools/setup_offline.py --dest ~/Documents/SpliceVis</pre></div>
     function renderActiveFilterChips(){
       const chips = [];
       if(state.query) chips.push(["query", `Search: ${state.query}`]);
-      if(state.family!=="all") chips.push(["family", `Complex: ${state.family}`]);
+      if(state.family!=="all") chips.push(["family", `State: ${state.family}`]);
       if(state.cyclePdbIds.length) chips.push(["cyclePdb", `Cycle: ${state.cyclePdbLabel || state.cyclePdbIds.map(id=>id.toUpperCase()).join(", ")}`]);
       if(state.species!=="all") chips.push(["species", `Species: ${state.species}`]);
-      if(state.components!=="all") chips.push(["components", `Chains: ${state.components}`]);
       if(state.rnaFeature!=="all") chips.push(["rnaFeature", `RNA: ${rnaFeatureLabel(state.rnaFeature)}`]);
       els.activeFilterChips.innerHTML = chips.length ? chips.map(([key,label])=>`<button type="button" class="filter-chip" data-clear-filter="${attr(key)}" title="Clear this filter">${esc(label)} x</button>`).join("") : '<span class="subtle">No active filters.</span>';
       for(const button of els.rnaQuickFilters.querySelectorAll("button[data-rna-feature]")) button.classList.toggle("active", button.dataset.rnaFeature===state.rnaFeature);
@@ -450,10 +452,9 @@ python3 tools/setup_offline.py --dest ~/Documents/SpliceVis</pre></div>
       return records.filter(r=>{
         const parts = fieldsFor(r)[state.mode] || fieldsFor(r).all;
         const hay = parts.join(" ").toLowerCase();
-        const componentOk = state.components==="all" || (state.components==="both" && r.has_prpf8 && r.has_sf3b1) || (state.components==="prpf8" && r.has_prpf8) || (state.components==="sf3b1" && r.has_sf3b1);
         const familyOk = options.ignoreFamily || state.family==="all" || r.state===state.family;
         const cycleOk = options.ignoreCyclePdb || !state.cyclePdbIds.length || state.cyclePdbIds.includes(String(r.pdb_id || "").toLowerCase());
-        return (!state.query || hay.includes(state.query)) && familyOk && cycleOk && (state.species==="all" || r.species===state.species) && componentOk && rnaFeatureOk(r);
+        return (!state.query || hay.includes(state.query)) && familyOk && cycleOk && (state.species==="all" || r.species===state.species) && rnaFeatureOk(r);
       }).sort((a,b)=>{
         let value = 0;
         if(state.sortBy==="resolution") value = (parseFloat(a.resolution)||99)-(parseFloat(b.resolution)||99);
@@ -551,7 +552,7 @@ python3 tools/setup_offline.py --dest ~/Documents/SpliceVis</pre></div>
         {stage:"pre-Bact", label:"pre-Bact", x:33.5, y:70.5, w:14.0, h:12.0},
         {stage:"Bact", label:"Bact", x:38.5, y:75.2, w:18.0, h:14.5},
         {stage:"B*", label:"B*", x:57.6, y:70.3, w:16.0, h:13.0},
-        {label:"B*D quality control", pdbs:["9l5s","9l5t","9esh","9esi"], x:50.7, y:48.6, w:15.5, h:17.0},
+        {label:"B*D quality control", pdbs:["9l5s","9l5t","9esh","9esi","9s2g"], x:50.7, y:48.6, w:15.5, h:17.0},
         {stage:"C", label:"C", x:72.2, y:58.2, w:16.0, h:15.8},
         {stage:"C*", label:"C*", x:74.2, y:40.8, w:15.6, h:14.8},
         {stage:"P", label:"P", x:75.0, y:22.2, w:15.0, h:14.8},
@@ -888,7 +889,7 @@ ${await scriptFor(record,"no_maps")}
       const body = [
         "### Structure",
         `- PDB: ${String(r.pdb_id || "").toUpperCase()}`,
-        `- Complex/state: ${r.state || "n/a"}`,
+        `- State: ${r.state || "n/a"}`,
         `- Species: ${r.species || "n/a"}`,
         `- Title: ${r.title || "n/a"}`,
         `- Dashboard URL: ${window.location.href.split("#")[0]}`,
@@ -981,7 +982,7 @@ ${await scriptFor(record,"no_maps")}
     function comparisonPanel(){
       if(!state.compareIds.length) return `<h3>Compare Structures</h3><div class="subtle">Use the Compare column to add up to five structures.</div>`;
       const selected=state.compareIds.map(id=>records.find(r=>r.pdb_id===id)).filter(Boolean);
-      return `<h3>Compare Structures (${selected.length})</h3><div class="mini-list"><div class="kv"><div>PDBs</div><div>${selected.map(r=>`<span class="badge">${esc(r.pdb_id.toUpperCase())}</span>`).join(" ")}</div><div>Complexes</div><div>${selected.map(r=>`${esc(r.pdb_id.toUpperCase())}: ${esc(r.state)}`).join("<br>")}</div><div>Species</div><div>${selected.map(r=>`${esc(r.pdb_id.toUpperCase())}: ${esc(r.species)}`).join("<br>")}</div><div>Proteins/RNAs</div><div>${selected.map(r=>`${esc(r.pdb_id.toUpperCase())}: ${r.protein_count}/${r.rna_count}`).join("<br>")}</div><div>Flags</div><div>${selected.map(r=>`${esc(r.pdb_id.toUpperCase())}: ${(r.curation?.flags||[]).join("; ")||"none"}`).join("<br>")}</div></div></div>`;
+      return `<h3>Compare Structures (${selected.length})</h3><div class="mini-list"><div class="kv"><div>PDBs</div><div>${selected.map(r=>`<span class="badge">${esc(r.pdb_id.toUpperCase())}</span>`).join(" ")}</div><div>States</div><div>${selected.map(r=>`${esc(r.pdb_id.toUpperCase())}: ${esc(r.state)}`).join("<br>")}</div><div>Species</div><div>${selected.map(r=>`${esc(r.pdb_id.toUpperCase())}: ${esc(r.species)}`).join("<br>")}</div><div>Proteins/RNAs</div><div>${selected.map(r=>`${esc(r.pdb_id.toUpperCase())}: ${r.protein_count}/${r.rna_count}`).join("<br>")}</div><div>Flags</div><div>${selected.map(r=>`${esc(r.pdb_id.toUpperCase())}: ${(r.curation?.flags||[]).join("; ")||"none"}`).join("<br>")}</div></div></div>`;
     }
     function fmtMetric(value, suffix="", digits=2){
       if(value === null || value === undefined || value === "") return "n/a";

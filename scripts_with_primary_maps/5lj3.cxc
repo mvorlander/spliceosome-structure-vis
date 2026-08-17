@@ -76,6 +76,8 @@ color #399.1/N #DE9A52
 color #399.1/O #DAA520
 # CWC15
 color #399.1/P #FFDEAD
+# SRRM2
+color #399.1/R #BDD6F0
 # CRNKL1
 color #399.1/S #FFC388
 # SYF1
@@ -125,6 +127,9 @@ name pdb_5LJ3_NTC_PRP19 #399.1/J,O,P
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_5LJ3_RNA_substrate #399.1/E,I
+# SR proteins
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
+name pdb_5LJ3_SR_proteins #399.1/R
 # U2 Sm ring
 # selector_meta {"color":"#BFE6BF","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_5LJ3_U2_Sm_ring #399.1/k,l,m,n,p,q,r
@@ -142,7 +147,7 @@ name pdb_5LJ3_U5_snRNP #399.1/A,C,U
 name pdb_5LJ3_U6_snRNP #399.1/V
 # other
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
-name pdb_5LJ3_other #399.1/F,R,x
+name pdb_5LJ3_other #399.1/F,x
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -16--1, component-name, high confidence, validation not_applicable
 # selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}

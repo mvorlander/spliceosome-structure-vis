@@ -69,6 +69,8 @@ color #408.1/N #DE9A52
 color #408.1/O #DAA520
 # CWC15
 color #408.1/P #FFDEAD
+# SRRM2
+color #408.1/R #BDD6F0
 # CRNKL1
 color #408.1/S #FFC388
 # SYF1
@@ -106,6 +108,9 @@ name pdb_5MPS_NTC_PRP19 #408.1/J,O,P
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_5MPS_RNA_substrate #408.1/E,I
+# SR proteins
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
+name pdb_5MPS_SR_proteins #408.1/R
 # Second step factors
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_5MPS_Second_step_factors #408.1/c,o
@@ -123,7 +128,7 @@ name pdb_5MPS_U5_snRNP #408.1/5,A,C
 name pdb_5MPS_U6_snRNP #408.1/6
 # other
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
-name pdb_5MPS_other #408.1/R,X,a
+name pdb_5MPS_other #408.1/X,a
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -16--1, manual-chain-override, high confidence, validation not_applicable
 # selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}

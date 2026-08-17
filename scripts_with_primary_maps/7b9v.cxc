@@ -74,6 +74,8 @@ color #405.1/N #DE9A52
 color #405.1/P #FFDEAD
 # DDX38
 color #405.1/Q #5F2E8A
+# SRRM2
+color #405.1/R #BDD6F0
 # CRNKL1
 color #405.1/S #FFC388
 # SYF1
@@ -135,6 +137,9 @@ name pdb_7B9V_NTC_PRP19 #405.1/P,s,t,u,v,w
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_7B9V_RNA_substrate #405.1/E,I
+# SR proteins
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
+name pdb_7B9V_SR_proteins #405.1/R
 # Second step factors
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_7B9V_Second_step_factors #405.1/c,o
@@ -155,7 +160,7 @@ name pdb_7B9V_U5_snRNP #405.1/5,A,B,C
 name pdb_7B9V_U6_snRNP #405.1/6
 # other
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
-name pdb_7B9V_other #405.1/F,J,K,O,Q,R,W,X,Y,Z,a
+name pdb_7B9V_other #405.1/F,J,K,O,Q,W,X,Y,Z,a
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -14--1, component-name, high confidence, validation not_applicable
 # selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}

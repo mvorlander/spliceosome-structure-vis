@@ -8,7 +8,7 @@
 
 open 8h6l id 398.9 name 8H6L_anchor
 open 9s2g id 398.1 name 9S2G
-rename #398 Bstar_9s2g_structure
+rename #398 BstarD_9s2g_structure
 
 # Align on PRPF8.
 matchmaker #398.1/A to #398.9/5B
@@ -85,6 +85,8 @@ color #398.1/Q #FFDAB9
 color #398.1/R #D49F96
 # PPIL1
 color #398.1/S #EEE8AA
+# SRRM2
+color #398.1/SR #BDD6F0
 # DDX46
 color #398.1/T #5BAE8A
 # TFIP11
@@ -133,6 +135,9 @@ name pdb_9S2G_NTC_PRP19 #398.1/K,L,P,q,r,s,t
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_9S2G_RNA_substrate #398.1/1
+# SR proteins
+# selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
+name pdb_9S2G_SR_proteins #398.1/SR
 # Second step factors
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_9S2G_Second_step_factors #398.1/W
@@ -156,7 +161,7 @@ name pdb_9S2G_U5_snRNP #398.1/5,A,C,E
 name pdb_9S2G_U6_snRNP #398.1/6
 # other
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
-name pdb_9S2G_other #398.1/3,35,LG,SR,Z
+name pdb_9S2G_other #398.1/3,35,LG,Z
 # Named selections for resolved substrate RNA features.
 # 5' exon: residues -15-0, five-ss-inference, medium confidence, validation not_applicable
 # selector_meta {"color":"#FF8C00","family":"RNA","feature":"exon_5","group":"pre-mRNA features","group_key":"pre_mRNA_features","kind":"rna_feature"}

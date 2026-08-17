@@ -60,6 +60,20 @@
       "color": "#303030"
     },
     {
+      "name": "pdb_6BK8_SR_proteins",
+      "label": "SR proteins",
+      "category": "subcomplex",
+      "section": "Named selections for canonical-chain subcomplexes.",
+      "comment": "SR proteins",
+      "atomspec": "#418.1/RB",
+      "family": "Protein/RNP groups",
+      "group": "other protein/RNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#9CA3AF"
+    },
+    {
       "name": "pdb_6BK8_Second_step_factors",
       "label": "Second step factors",
       "category": "subcomplex",
@@ -149,7 +163,7 @@
       "category": "subcomplex",
       "section": "Named selections for canonical-chain subcomplexes.",
       "comment": "other",
-      "atomspec": "#418.1/XB3,XB5,XBXA,XBXB",
+      "atomspec": "#418.1/XB4,XBXA,XBXB",
       "family": "Protein/RNP groups",
       "group": "other protein/RNP groups",
       "group_key": "",
@@ -485,7 +499,7 @@
       "category": "universal subcomplex",
       "section": "Model-independent named selections for all renamed canonical-chain models.",
       "comment": "other",
-      "atomspec": "/X0,X1,X2,X3,X4,X5,X6,X7,X8,X9,XA,XA0,XA1,XA2,XA3,XA4,XA5,XA6,XA7,XA8,XA9,XAA,XAB,XAC,XAD,XAE,XAF,XAG,XAH,XAI,XAJ,XAK,XAL,XALA,XALB,XAM,XAN,XAO,XAP,XAQ,XAR,XAS,XAT,XAU,XAV,XAW,XAX,XAY,XAZ,XB,XB0,XB1,XB2,XB3,XB4,XB5,XB6,XB7,XB8,XB9,XBA,XBB,XBBA,XBBB,XBC,XBD,XBE,XBF,XBG,XBH,XBI,XBJ,XBK,XBL,XBM,XBN,XBO,XBP,XBQ,XBR,XBS,XBT,XBU,XBV,XBW,XBXA,XBXB,XBY,XBZ,XCA,XCB,XD,XEA,XEB,XF,XG,XH,XI,XJ,XK,XL,XM,XN,XO,XP,XQ,XR,XS,XT,XU,XV,XW,XX,XY,XZ",
+      "atomspec": "/X0,X1,X2,X3,X4,X5,X6,X7,X8,X9,XA,XA0,XA1,XA2,XA3,XA4,XA5,XA6,XA7,XA8,XA9,XAA,XAB,XAC,XAD,XAE,XAF,XAG,XAH,XAI,XAJ,XAK,XAKA,XAKB,XAL,XAM,XAN,XAO,XAP,XAQ,XAR,XAS,XAT,XAU,XAV,XAW,XAX,XAY,XAZ,XB,XB0,XB1,XB2,XB3,XB4,XB5,XB6,XB7,XB8,XB9,XBA,XBB,XBC,XBCA,XBCB,XBD,XBE,XBF,XBG,XBH,XBI,XBJ,XBK,XBL,XBM,XBN,XBO,XBP,XBQ,XBR,XBS,XBT,XBU,XBV,XBW,XBXA,XBXB,XBY,XBZ,XCA,XCB,XD,XEA,XEB,XF,XG,XH,XI,XJ,XK,XL,XM,XN,XO,XP,XQ,XR,XS,XT,XU,XV,XW,XX,XY,XZ",
       "family": "Protein/RNP groups",
       "group": "other protein/RNP groups",
       "group_key": "",

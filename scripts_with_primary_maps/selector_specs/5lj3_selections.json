@@ -60,6 +60,20 @@
       "color": "#303030"
     },
     {
+      "name": "pdb_5LJ3_SR_proteins",
+      "label": "SR proteins",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "SR proteins",
+      "atomspec": "#399.1/R",
+      "family": "Protein/RNP groups",
+      "group": "other protein/RNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#9CA3AF"
+    },
+    {
       "name": "pdb_5LJ3_U2_Sm_ring",
       "label": "U2 Sm ring",
       "category": "subcomplex",
@@ -135,7 +149,7 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "other",
-      "atomspec": "#399.1/F,R,x",
+      "atomspec": "#399.1/F,x",
       "family": "Protein/RNP groups",
       "group": "other protein/RNP groups",
       "group_key": "",

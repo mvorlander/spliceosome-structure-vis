@@ -60,6 +60,20 @@
       "color": "#303030"
     },
     {
+      "name": "pdb_6BK8_SR_proteins",
+      "label": "SR proteins",
+      "category": "subcomplex",
+      "section": "Named selections for subcomplexes using original deposited chain IDs.",
+      "comment": "SR proteins",
+      "atomspec": "#418.1/K",
+      "family": "Protein/RNP groups",
+      "group": "other protein/RNP groups",
+      "group_key": "",
+      "kind": "subcomplex",
+      "feature": "",
+      "color": "#9CA3AF"
+    },
+    {
       "name": "pdb_6BK8_Second_step_factors",
       "label": "Second step factors",
       "category": "subcomplex",
@@ -149,7 +163,7 @@
       "category": "subcomplex",
       "section": "Named selections for subcomplexes using original deposited chain IDs.",
       "comment": "other",
-      "atomspec": "#418.1/K,N,X,Y",
+      "atomspec": "#418.1/N,X,Y",
       "family": "Protein/RNP groups",
       "group": "other protein/RNP groups",
       "group_key": "",
