@@ -77,7 +77,7 @@ color #438.1/5SE #B0C4DE
 color #438.1/5SF #B0C4DE
 # U5 Sm ring: U5-Sm SNRPG
 color #438.1/5SG #B0C4DE
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # U5 Sm ring
 # selector_meta {"color":"#BFC3E8","family":"Protein/RNP groups","group":"U5 snRNP groups","kind":"subcomplex"}
 name pdb_8Q7V_U5_Sm_ring #438.1/5S1,5S2,5S3,5SB,5SE,5SF,5SG
@@ -85,7 +85,7 @@ name pdb_8Q7V_U5_Sm_ring #438.1/5S1,5S2,5S3,5SB,5SE,5SF,5SG
 # selector_meta {"color":"#0000CD","family":"Protein/RNP groups","group":"U5 snRNP groups","kind":"subcomplex"}
 name pdb_8Q7V_U5_snRNP #438.1/5,5A,5B,5C,5D,5E,5F,5G
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

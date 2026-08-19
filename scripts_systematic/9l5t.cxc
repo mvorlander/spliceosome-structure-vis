@@ -129,7 +129,7 @@ color #397.1/D1 #FF69B4
 color #397.1/M #303030
 # U2 snRNP: DHX15
 color #397.1/2R #663399
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name pdb_9L5T_Disassembly_factors #397.1/D1,D2,D5,D6
@@ -167,7 +167,7 @@ name pdb_9L5T_U6_snRNP #397.1/6
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_9L5T_other #397.1/X0,XA9,XT
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

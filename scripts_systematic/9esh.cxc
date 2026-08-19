@@ -117,7 +117,7 @@ color #394.1/J5 #2C54DD
 color #394.1/NP #EEE8AA
 # Disassembly factors: TFIP11
 color #394.1/D1 #FF69B4
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name pdb_9ESH_Disassembly_factors #394.1/D1
@@ -161,7 +161,7 @@ name pdb_9ESH_U6_snRNP #394.1/6
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_9ESH_other #394.1/XBF,XBG,XBO,XBP
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

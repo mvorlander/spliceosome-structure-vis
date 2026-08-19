@@ -166,7 +166,7 @@ color #378.1/X1 #806ED8
 color #378.1/X5 #E3B296
 # NTC/NTR related: PPIE
 color #378.1/NC #FFFFE0
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # EJC/mRNP
 # selector_meta {"color":"#EAA439","family":"Protein/RNP groups","group":"EJC/mRNP groups","kind":"subcomplex"}
 name pdb_5Z56_EJC_mRNP #378.1/J5
@@ -207,7 +207,7 @@ name pdb_5Z56_U6_snRNP #378.1/6
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_5Z56_other #378.1/X1,X5,XA7,XBD,XI,XW
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

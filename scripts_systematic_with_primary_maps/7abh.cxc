@@ -80,7 +80,7 @@ color #369.1/XBI #6E96C4
 color #369.1/2 #71C562
 # other: BTCD
 color #369.1/XH #BBA681
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # NTC/PRP19
 # selector_meta {"color":"#F4BF67","family":"Protein/RNP groups","group":"NTC/NTR groups","kind":"subcomplex"}
 name pdb_7ABH_NTC_PRP19 #369.1/N2
@@ -97,7 +97,7 @@ name pdb_7ABH_U2_SF3B #369.1/2A,2B,2C,2D,2E,2F,2G,2I,2J
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_7ABH_other #369.1/XBD,XBI,XH,XW
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

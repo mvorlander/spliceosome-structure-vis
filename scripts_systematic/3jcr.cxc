@@ -119,7 +119,7 @@ color #333.1/4 #F2D94E
 color #333.1/6 #EF4444
 # U5 snRNP: U5 snRNA
 color #333.1/5 #4F9FD3
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # U4 Sm ring
 # selector_meta {"color":"#F5E85A","family":"Protein/RNP groups","group":"U4 snRNP groups","kind":"subcomplex"}
 name pdb_3JCR_U4_Sm_ring #333.1/4S1,4S2,4S3,4SB,4SE,4SF,4SG
@@ -142,7 +142,7 @@ name pdb_3JCR_U6_LSm #333.1/6L2,6L3,6L4,6L5,6L6,6L7,6L8
 # selector_meta {"color":"#DC143C","family":"Protein/RNP groups","group":"U6 snRNP groups","kind":"subcomplex"}
 name pdb_3JCR_U6_snRNP #333.1/6
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

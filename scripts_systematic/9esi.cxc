@@ -119,7 +119,7 @@ color #395.1/D1 #FF69B4
 color #395.1/6 #EF4444
 # RNA/substrate: mRNA
 color #395.1/M #303030
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name pdb_9ESI_Disassembly_factors #395.1/D1
@@ -163,7 +163,7 @@ name pdb_9ESI_U6_snRNP #395.1/6
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_9ESI_other #395.1/XBE,XBF,XBG,XBH,XBO,XBP,XBQ
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

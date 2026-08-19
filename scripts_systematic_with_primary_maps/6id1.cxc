@@ -134,7 +134,7 @@ color #428.1/2K #58D68D
 color #428.1/2L #DAF7A6
 # U2 snRNP: DHX15
 color #428.1/2R #663399
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # NTC/NTR related
 # selector_meta {"color":"#F4BF67","family":"Protein/RNP groups","group":"NTC/NTR groups","kind":"subcomplex"}
 name pdb_6ID1_NTC_NTR_related #428.1/NA,NB,NC,NF,NL,NM,NP,NR,NW,NY
@@ -163,7 +163,7 @@ name pdb_6ID1_U5_snRNP #428.1/5,5A,5C,5E
 # selector_meta {"color":"#DC143C","family":"Protein/RNP groups","group":"U6 snRNP groups","kind":"subcomplex"}
 name pdb_6ID1_U6_snRNP #428.1/6
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

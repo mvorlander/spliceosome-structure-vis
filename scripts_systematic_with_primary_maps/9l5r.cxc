@@ -142,7 +142,7 @@ color #432.1/2R #663399
 color #432.1/M #303030
 # NTC/NTR related: PPIE
 color #432.1/NC #FFFFE0
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name pdb_9L5R_Disassembly_factors #432.1/D1
@@ -177,7 +177,7 @@ name pdb_9L5R_U6_snRNP #432.1/6
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_9L5R_other #432.1/X0,XA9,XBW,XT
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

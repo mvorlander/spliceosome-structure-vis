@@ -135,7 +135,7 @@ color #409.1/N1B #FFFFAB
 color #409.1/N1C #FFFFAB
 # NTC/PRP19: PRPF19
 color #409.1/N1D #FFFFAB
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # EJC/mRNP
 # selector_meta {"color":"#EAA439","family":"Protein/RNP groups","group":"EJC/mRNP groups","kind":"subcomplex"}
 name pdb_5MQ0_EJC_mRNP #409.1/J5
@@ -170,7 +170,7 @@ name pdb_5MQ0_U6_snRNP #409.1/6
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_5MQ0_other #409.1/XB4,XBW
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

@@ -165,7 +165,7 @@ color #385.1/C2 #FFF7C9
 color #385.1/NA #FFDAB9
 # NTC/NTR related: SYF1
 color #385.1/NY #FF957B
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # EJC/mRNP
 # selector_meta {"color":"#EAA439","family":"Protein/RNP groups","group":"EJC/mRNP groups","kind":"subcomplex"}
 name pdb_8CH6_EJC_mRNP #385.1/J5
@@ -206,7 +206,7 @@ name pdb_8CH6_U6_snRNP #385.1/6
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_8CH6_other #385.1/X5,XA7,XAF,XAX,XAZ,XI
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

@@ -122,7 +122,7 @@ color #325.1/2S1 #D5F5E3
 color #325.1/1S2 #EAD7E8
 # U2 Sm ring: U2-Sm SNRPD2
 color #325.1/2S2 #D5F5E3
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_6G90_RNA_substrate #325.1/M
@@ -145,7 +145,7 @@ name pdb_6G90_U2_SF3B #325.1/2A,2B,2C,2D,2E,2G,2H,2I,2J
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_6G90_other #325.1/XBS
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

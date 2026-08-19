@@ -162,7 +162,7 @@ color #339.1/6A #CA9982
 color #339.1/5A #BFC3E8
 # U5 snRNP: EFTUD2
 color #339.1/5C #6495ED
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_6AH0_RNA_substrate #339.1/M
@@ -197,7 +197,7 @@ name pdb_6AH0_U6_LSm #339.1/6L2,6L3,6L4,6L5,6L6,6L7,6L8
 # selector_meta {"color":"#DC143C","family":"Protein/RNP groups","group":"U6 snRNP groups","kind":"subcomplex"}
 name pdb_6AH0_U6_snRNP #339.1/6
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

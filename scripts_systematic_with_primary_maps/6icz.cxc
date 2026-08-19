@@ -150,7 +150,7 @@ color #421.1/N1C #FFFFAB
 color #421.1/N1D #FFFFAB
 # U5 snRNP: SNRNP200
 color #421.1/5B #AFEEEE
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # EJC/mRNP
 # selector_meta {"color":"#EAA439","family":"Protein/RNP groups","group":"EJC/mRNP groups","kind":"subcomplex"}
 name pdb_6ICZ_EJC_mRNP #421.1/J1,J2,J3,J4,J5
@@ -185,7 +185,7 @@ name pdb_6ICZ_U5_snRNP #421.1/5,5A,5B,5C,5E
 # selector_meta {"color":"#DC143C","family":"Protein/RNP groups","group":"U6 snRNP groups","kind":"subcomplex"}
 name pdb_6ICZ_U6_snRNP #421.1/6
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

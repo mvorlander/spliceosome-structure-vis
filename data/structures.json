@@ -9436,33 +9436,24 @@
       },
       "curation": {
         "stage_evidence": "stage inferred by dashboard rules/manual metadata",
-        "curation_summary": "stage inferred by dashboard rules/manual metadata; default opens all listed maps; 26/27 proteins colored",
+        "curation_summary": "stage inferred by dashboard rules/manual metadata; default opens all listed maps; 27/27 proteins colored",
         "stage_confidence": "medium",
         "homolog_confidence": "medium",
-        "color_confidence": "medium",
+        "color_confidence": "high",
         "rna_identity_confidence": "high",
-        "overall_confidence": "review",
+        "overall_confidence": "high",
         "badges": [
           "publication",
           "quality",
           "primary map",
-          "needs review"
+          "all proteins colored"
         ],
         "flags": [],
-        "colored_proteins": "26",
+        "colored_proteins": "27",
         "protein_count": "27",
-        "unassigned_components": "1"
+        "unassigned_components": "0"
       },
-      "unassigned_components": [
-        {
-          "entity_id": "3",
-          "component_type": "protein",
-          "gene_name": "CWC21; YDR482C",
-          "molecule_name": "pre-mRNA-splicing factor CWC21",
-          "chains": "J",
-          "issue": "missing color assignment"
-        }
-      ],
+      "unassigned_components": [],
       "substrate_features": [
         {
           "feature": "exon_5",
@@ -10099,35 +10090,26 @@
       },
       "curation": {
         "stage_evidence": "stage inferred by dashboard rules/manual metadata",
-        "curation_summary": "stage inferred by dashboard rules/manual metadata; default opens all listed maps; 26/27 proteins colored",
+        "curation_summary": "stage inferred by dashboard rules/manual metadata; default opens all listed maps; 27/27 proteins colored",
         "stage_confidence": "medium",
         "homolog_confidence": "medium",
-        "color_confidence": "medium",
+        "color_confidence": "high",
         "rna_identity_confidence": "high",
-        "overall_confidence": "review",
+        "overall_confidence": "high",
         "badges": [
           "publication",
           "quality",
           "primary map",
-          "needs review"
+          "all proteins colored"
         ],
         "flags": [
           "high RNA suite outliers"
         ],
-        "colored_proteins": "26",
+        "colored_proteins": "27",
         "protein_count": "27",
-        "unassigned_components": "1"
+        "unassigned_components": "0"
       },
-      "unassigned_components": [
-        {
-          "entity_id": "3",
-          "component_type": "protein",
-          "gene_name": "CWC21; YDR482C",
-          "molecule_name": "pre-mRNA-splicing factor CWC21",
-          "chains": "J",
-          "issue": "missing color assignment"
-        }
-      ],
+      "unassigned_components": [],
       "substrate_features": [
         {
           "feature": "exon_5",
@@ -10764,35 +10746,26 @@
       },
       "curation": {
         "stage_evidence": "stage inferred by dashboard rules/manual metadata",
-        "curation_summary": "stage inferred by dashboard rules/manual metadata; default opens all listed maps; 26/27 proteins colored",
+        "curation_summary": "stage inferred by dashboard rules/manual metadata; default opens all listed maps; 27/27 proteins colored",
         "stage_confidence": "medium",
         "homolog_confidence": "medium",
-        "color_confidence": "medium",
+        "color_confidence": "high",
         "rna_identity_confidence": "high",
-        "overall_confidence": "review",
+        "overall_confidence": "high",
         "badges": [
           "publication",
           "quality",
           "primary map",
-          "needs review"
+          "all proteins colored"
         ],
         "flags": [
           "high RNA suite outliers"
         ],
-        "colored_proteins": "26",
+        "colored_proteins": "27",
         "protein_count": "27",
-        "unassigned_components": "1"
+        "unassigned_components": "0"
       },
-      "unassigned_components": [
-        {
-          "entity_id": "3",
-          "component_type": "protein",
-          "gene_name": "CWC21; YDR482C",
-          "molecule_name": "pre-mRNA-splicing factor CWC21",
-          "chains": "J",
-          "issue": "missing color assignment"
-        }
-      ],
+      "unassigned_components": [],
       "substrate_features": [
         {
           "feature": "exon_5",
@@ -11437,35 +11410,26 @@
       },
       "curation": {
         "stage_evidence": "stage inferred by dashboard rules/manual metadata",
-        "curation_summary": "stage inferred by dashboard rules/manual metadata; default opens all listed maps; 27/28 proteins colored",
+        "curation_summary": "stage inferred by dashboard rules/manual metadata; default opens all listed maps; 28/28 proteins colored",
         "stage_confidence": "medium",
         "homolog_confidence": "medium",
-        "color_confidence": "medium",
+        "color_confidence": "high",
         "rna_identity_confidence": "high",
-        "overall_confidence": "review",
+        "overall_confidence": "high",
         "badges": [
           "publication",
           "quality",
           "primary map",
-          "needs review"
+          "all proteins colored"
         ],
         "flags": [
           "high RNA suite outliers"
         ],
-        "colored_proteins": "27",
+        "colored_proteins": "28",
         "protein_count": "28",
-        "unassigned_components": "1"
+        "unassigned_components": "0"
       },
-      "unassigned_components": [
-        {
-          "entity_id": "3",
-          "component_type": "protein",
-          "gene_name": "CWC21; YDR482C",
-          "molecule_name": "pre-mRNA-splicing factor CWC21",
-          "chains": "J",
-          "issue": "missing color assignment"
-        }
-      ],
+      "unassigned_components": [],
       "substrate_features": [
         {
           "feature": "exon_5",
@@ -12142,7 +12106,7 @@
       },
       "curation": {
         "stage_evidence": "title contains B-state/Bd",
-        "curation_summary": "title contains B-state/Bd; additional linked/focused maps available; 27/32 proteins colored",
+        "curation_summary": "title contains B-state/Bd; additional linked/focused maps available; 28/32 proteins colored",
         "stage_confidence": "high",
         "homolog_confidence": "medium",
         "color_confidence": "medium",
@@ -12158,19 +12122,11 @@
         "flags": [
           "high RNA suite outliers"
         ],
-        "colored_proteins": "27",
+        "colored_proteins": "28",
         "protein_count": "32",
-        "unassigned_components": "5"
+        "unassigned_components": "4"
       },
       "unassigned_components": [
-        {
-          "entity_id": "29",
-          "component_type": "protein",
-          "gene_name": "CWF21; SPAC4A8.09C",
-          "molecule_name": "pre-mRNA-splicing factor cwf21",
-          "chains": "b",
-          "issue": "missing color assignment"
-        },
         {
           "entity_id": "32",
           "component_type": "protein",
@@ -12762,7 +12718,7 @@
       },
       "curation": {
         "stage_evidence": "title contains B-state/Bd",
-        "curation_summary": "title contains B-state/Bd; additional linked/focused maps available; 28/36 proteins colored",
+        "curation_summary": "title contains B-state/Bd; additional linked/focused maps available; 29/36 proteins colored",
         "stage_confidence": "high",
         "homolog_confidence": "medium",
         "color_confidence": "medium",
@@ -12778,9 +12734,9 @@
         "flags": [
           "high RNA suite outliers"
         ],
-        "colored_proteins": "28",
+        "colored_proteins": "29",
         "protein_count": "36",
-        "unassigned_components": "8"
+        "unassigned_components": "7"
       },
       "unassigned_components": [
         {
@@ -12789,14 +12745,6 @@
           "gene_name": "BIS1; SPCC364.02C",
           "molecule_name": "Stress response protein bis1",
           "chains": "e",
-          "issue": "missing color assignment"
-        },
-        {
-          "entity_id": "29",
-          "component_type": "protein",
-          "gene_name": "CWF21; SPAC4A8.09C",
-          "molecule_name": "pre-mRNA-splicing factor cwf21",
-          "chains": "b",
           "issue": "missing color assignment"
         },
         {
@@ -13390,7 +13338,7 @@
       },
       "curation": {
         "stage_evidence": "stage inferred by dashboard rules/manual metadata",
-        "curation_summary": "stage inferred by dashboard rules/manual metadata; additional linked/focused maps available; 31/34 proteins colored",
+        "curation_summary": "stage inferred by dashboard rules/manual metadata; additional linked/focused maps available; 32/34 proteins colored",
         "stage_confidence": "medium",
         "homolog_confidence": "medium",
         "color_confidence": "medium",
@@ -13403,19 +13351,11 @@
           "needs review"
         ],
         "flags": [],
-        "colored_proteins": "31",
+        "colored_proteins": "32",
         "protein_count": "34",
-        "unassigned_components": "3"
+        "unassigned_components": "2"
       },
       "unassigned_components": [
-        {
-          "entity_id": "32",
-          "component_type": "protein",
-          "gene_name": "CTHT_0022970",
-          "molecule_name": "CWF21 domain-containing protein",
-          "chains": "V",
-          "issue": "missing color assignment"
-        },
         {
           "entity_id": "34",
           "component_type": "protein",
@@ -13950,7 +13890,7 @@
       },
       "curation": {
         "stage_evidence": "stage inferred by dashboard rules/manual metadata",
-        "curation_summary": "stage inferred by dashboard rules/manual metadata; additional linked/focused maps available; 33/35 proteins colored",
+        "curation_summary": "stage inferred by dashboard rules/manual metadata; additional linked/focused maps available; 34/35 proteins colored",
         "stage_confidence": "medium",
         "homolog_confidence": "medium",
         "color_confidence": "medium",
@@ -13963,19 +13903,11 @@
           "needs review"
         ],
         "flags": [],
-        "colored_proteins": "33",
+        "colored_proteins": "34",
         "protein_count": "35",
-        "unassigned_components": "2"
+        "unassigned_components": "1"
       },
       "unassigned_components": [
-        {
-          "entity_id": "33",
-          "component_type": "protein",
-          "gene_name": "CTHT_0022970",
-          "molecule_name": "CWF21 domain-containing protein",
-          "chains": "V",
-          "issue": "missing color assignment"
-        },
         {
           "entity_id": "35",
           "component_type": "protein",
@@ -14488,7 +14420,7 @@
       },
       "curation": {
         "stage_evidence": "stage inferred by dashboard rules/manual metadata",
-        "curation_summary": "stage inferred by dashboard rules/manual metadata; additional linked/focused maps available; 32/35 proteins colored",
+        "curation_summary": "stage inferred by dashboard rules/manual metadata; additional linked/focused maps available; 33/35 proteins colored",
         "stage_confidence": "medium",
         "homolog_confidence": "medium",
         "color_confidence": "medium",
@@ -14502,9 +14434,9 @@
           "needs review"
         ],
         "flags": [],
-        "colored_proteins": "32",
+        "colored_proteins": "33",
         "protein_count": "35",
-        "unassigned_components": "3"
+        "unassigned_components": "2"
       },
       "unassigned_components": [
         {
@@ -14521,14 +14453,6 @@
           "gene_name": "SPAC20H4.09",
           "molecule_name": "Putative pre-mRNA-splicing factor ATP-dependent RNA helicase C20H4.09",
           "chains": "35",
-          "issue": "missing color assignment"
-        },
-        {
-          "entity_id": "26",
-          "component_type": "protein",
-          "gene_name": "CWF21; SPAC4A8.09C",
-          "molecule_name": "pre-mRNA-splicing factor cwf21",
-          "chains": "SR",
           "issue": "missing color assignment"
         }
       ],
@@ -15114,7 +15038,7 @@
       },
       "curation": {
         "stage_evidence": "title contains Bact",
-        "curation_summary": "title contains Bact; additional linked/focused maps available; 36/38 proteins colored",
+        "curation_summary": "title contains Bact; additional linked/focused maps available; 37/38 proteins colored",
         "stage_confidence": "high",
         "homolog_confidence": "medium",
         "color_confidence": "medium",
@@ -15128,9 +15052,9 @@
           "needs review"
         ],
         "flags": [],
-        "colored_proteins": "36",
+        "colored_proteins": "37",
         "protein_count": "38",
-        "unassigned_components": "2"
+        "unassigned_components": "1"
       },
       "unassigned_components": [
         {
@@ -15139,14 +15063,6 @@
           "gene_name": "CWC24; L8543.3; YLR323C",
           "molecule_name": "pre-mRNA-splicing factor CWC24",
           "chains": "a",
-          "issue": "missing color assignment"
-        },
-        {
-          "entity_id": "30",
-          "component_type": "protein",
-          "gene_name": "CWC21; YDR482C",
-          "molecule_name": "pre-mRNA-splicing factor CWC21",
-          "chains": "X",
           "issue": "missing color assignment"
         }
       ],
@@ -20231,7 +20147,7 @@
       },
       "curation": {
         "stage_evidence": "title contains Bact",
-        "curation_summary": "title contains Bact; default opens all listed maps; 30/43 proteins colored",
+        "curation_summary": "title contains Bact; default opens all listed maps; 31/43 proteins colored",
         "stage_confidence": "high",
         "homolog_confidence": "medium",
         "color_confidence": "medium",
@@ -20244,9 +20160,9 @@
           "needs review"
         ],
         "flags": [],
-        "colored_proteins": "30",
+        "colored_proteins": "31",
         "protein_count": "43",
-        "unassigned_components": "13"
+        "unassigned_components": "12"
       },
       "unassigned_components": [
         {
@@ -20327,14 +20243,6 @@
           "gene_name": "",
           "molecule_name": "pre-mRNA-splicing factor CWC26",
           "chains": "Z",
-          "issue": "missing color assignment"
-        },
-        {
-          "entity_id": "40",
-          "component_type": "protein",
-          "gene_name": "",
-          "molecule_name": "pre-mRNA-splicing factor CWC21",
-          "chains": "U",
           "issue": "missing color assignment"
         },
         {
@@ -26321,34 +26229,25 @@
       },
       "curation": {
         "stage_evidence": "title contains C complex",
-        "curation_summary": "title contains C complex; additional linked/focused maps available; 28/29 proteins colored",
+        "curation_summary": "title contains C complex; additional linked/focused maps available; 29/29 proteins colored",
         "stage_confidence": "medium",
         "homolog_confidence": "medium",
-        "color_confidence": "medium",
+        "color_confidence": "high",
         "rna_identity_confidence": "high",
-        "overall_confidence": "review",
+        "overall_confidence": "high",
         "badges": [
           "publication",
           "quality",
           "primary map",
           "linked maps",
-          "needs review"
+          "all proteins colored"
         ],
         "flags": [],
-        "colored_proteins": "28",
+        "colored_proteins": "29",
         "protein_count": "29",
-        "unassigned_components": "1"
+        "unassigned_components": "0"
       },
-      "unassigned_components": [
-        {
-          "entity_id": "9",
-          "component_type": "protein",
-          "gene_name": "CWC21; YDR482C",
-          "molecule_name": "pre-mRNA-splicing factor CWC21",
-          "chains": "J",
-          "issue": "missing color assignment"
-        }
-      ],
+      "unassigned_components": [],
       "substrate_features": [
         {
           "feature": "exon_5",
@@ -27051,7 +26950,7 @@
       },
       "curation": {
         "stage_evidence": "stage inferred by dashboard rules/manual metadata",
-        "curation_summary": "stage inferred by dashboard rules/manual metadata; default opens all listed maps; 24/26 proteins colored",
+        "curation_summary": "stage inferred by dashboard rules/manual metadata; default opens all listed maps; 25/26 proteins colored",
         "stage_confidence": "medium",
         "homolog_confidence": "medium",
         "color_confidence": "medium",
@@ -27067,19 +26966,11 @@
           "weak validation geometry",
           "high RNA suite outliers"
         ],
-        "colored_proteins": "24",
+        "colored_proteins": "25",
         "protein_count": "26",
-        "unassigned_components": "2"
+        "unassigned_components": "1"
       },
       "unassigned_components": [
-        {
-          "entity_id": "19",
-          "component_type": "protein",
-          "gene_name": "CWC21; YDR482C",
-          "molecule_name": "pre-mRNA-splicing factor CWC21",
-          "chains": "R",
-          "issue": "missing color assignment"
-        },
         {
           "entity_id": "31",
           "component_type": "protein",
@@ -27765,7 +27656,7 @@
       },
       "curation": {
         "stage_evidence": "stage inferred by dashboard rules/manual metadata",
-        "curation_summary": "stage inferred by dashboard rules/manual metadata; default opens all listed maps; 28/30 proteins colored",
+        "curation_summary": "stage inferred by dashboard rules/manual metadata; default opens all listed maps; 29/30 proteins colored",
         "stage_confidence": "medium",
         "homolog_confidence": "medium",
         "color_confidence": "medium",
@@ -27782,19 +27673,11 @@
           "weak validation geometry",
           "high RNA suite outliers"
         ],
-        "colored_proteins": "28",
+        "colored_proteins": "29",
         "protein_count": "30",
-        "unassigned_components": "2"
+        "unassigned_components": "1"
       },
       "unassigned_components": [
-        {
-          "entity_id": "20",
-          "component_type": "protein",
-          "gene_name": "CWC21; YDR482C",
-          "molecule_name": "pre-mRNA-splicing factor CWC21",
-          "chains": "R",
-          "issue": "missing color assignment"
-        },
         {
           "entity_id": "35",
           "component_type": "protein",
@@ -30392,7 +30275,7 @@
       },
       "curation": {
         "stage_evidence": "title contains C complex",
-        "curation_summary": "title contains C complex; default opens all listed maps; 26/35 proteins colored",
+        "curation_summary": "title contains C complex; default opens all listed maps; 27/35 proteins colored",
         "stage_confidence": "medium",
         "homolog_confidence": "medium",
         "color_confidence": "medium",
@@ -30405,9 +30288,9 @@
           "needs review"
         ],
         "flags": [],
-        "colored_proteins": "26",
+        "colored_proteins": "27",
         "protein_count": "35",
-        "unassigned_components": "9"
+        "unassigned_components": "8"
       },
       "unassigned_components": [
         {
@@ -30432,14 +30315,6 @@
           "gene_name": "",
           "molecule_name": "Y55_G0042700.mRNA.1.CDS.1",
           "chains": "O",
-          "issue": "missing color assignment"
-        },
-        {
-          "entity_id": "21",
-          "component_type": "protein",
-          "gene_name": "",
-          "molecule_name": "pre-mRNA-splicing factor CWC21",
-          "chains": "R",
           "issue": "missing color assignment"
         },
         {
@@ -32677,7 +32552,7 @@
       },
       "curation": {
         "stage_evidence": "stage inferred by dashboard rules/manual metadata",
-        "curation_summary": "stage inferred by dashboard rules/manual metadata; default opens all listed maps; 22/25 proteins colored",
+        "curation_summary": "stage inferred by dashboard rules/manual metadata; default opens all listed maps; 23/25 proteins colored",
         "stage_confidence": "medium",
         "homolog_confidence": "medium",
         "color_confidence": "medium",
@@ -32692,19 +32567,11 @@
         "flags": [
           "high RNA suite outliers"
         ],
-        "colored_proteins": "22",
+        "colored_proteins": "23",
         "protein_count": "25",
-        "unassigned_components": "3"
+        "unassigned_components": "2"
       },
       "unassigned_components": [
-        {
-          "entity_id": "16",
-          "component_type": "protein",
-          "gene_name": "CWC21; YDR482C",
-          "molecule_name": "pre-mRNA-splicing factor CWC21",
-          "chains": "R",
-          "issue": "missing color assignment"
-        },
         {
           "entity_id": "19",
           "component_type": "protein",
@@ -33420,7 +33287,7 @@
       },
       "curation": {
         "stage_evidence": "stage inferred by dashboard rules/manual metadata",
-        "curation_summary": "stage inferred by dashboard rules/manual metadata; default opens all listed maps; 27/30 proteins colored",
+        "curation_summary": "stage inferred by dashboard rules/manual metadata; default opens all listed maps; 28/30 proteins colored",
         "stage_confidence": "medium",
         "homolog_confidence": "medium",
         "color_confidence": "medium",
@@ -33435,19 +33302,11 @@
         "flags": [
           "high RNA suite outliers"
         ],
-        "colored_proteins": "27",
+        "colored_proteins": "28",
         "protein_count": "30",
-        "unassigned_components": "3"
+        "unassigned_components": "2"
       },
       "unassigned_components": [
-        {
-          "entity_id": "16",
-          "component_type": "protein",
-          "gene_name": "CWC21; YDR482C",
-          "molecule_name": "pre-mRNA-splicing factor CWC21",
-          "chains": "R",
-          "issue": "missing color assignment"
-        },
         {
           "entity_id": "19",
           "component_type": "protein",
@@ -34909,7 +34768,7 @@
       },
       "curation": {
         "stage_evidence": "title contains C*",
-        "curation_summary": "title contains C*; additional linked/focused maps available; 26/28 proteins colored",
+        "curation_summary": "title contains C*; additional linked/focused maps available; 27/28 proteins colored",
         "stage_confidence": "high",
         "homolog_confidence": "medium",
         "color_confidence": "medium",
@@ -34923,19 +34782,11 @@
           "needs review"
         ],
         "flags": [],
-        "colored_proteins": "26",
+        "colored_proteins": "27",
         "protein_count": "28",
-        "unassigned_components": "2"
+        "unassigned_components": "1"
       },
       "unassigned_components": [
-        {
-          "entity_id": "3",
-          "component_type": "protein",
-          "gene_name": "CWC21; YDR482C",
-          "molecule_name": "pre-mRNA-splicing factor CWC21",
-          "chains": "J",
-          "issue": "missing color assignment"
-        },
         {
           "entity_id": "35",
           "component_type": "protein",
@@ -39697,10 +39548,10 @@
         "q_score_source": ""
       },
       "curation": {
-        "stage_evidence": "title contains U2 snRNP/SF3B",
-        "curation_summary": "title contains U2 snRNP/SF3B; additional linked/focused maps available; 31/31 proteins colored",
-        "stage_confidence": "high",
-        "homolog_confidence": "high",
+        "stage_evidence": "stage inferred by dashboard rules/manual metadata",
+        "curation_summary": "stage inferred by dashboard rules/manual metadata; additional linked/focused maps available; 31/31 proteins colored",
+        "stage_confidence": "medium",
+        "homolog_confidence": "medium",
         "color_confidence": "high",
         "rna_identity_confidence": "high",
         "overall_confidence": "high",
@@ -45955,10 +45806,10 @@
         "q_score_source": ""
       },
       "curation": {
-        "stage_evidence": "title contains U2 snRNP/SF3B",
-        "curation_summary": "title contains U2 snRNP/SF3B; additional linked/focused maps available; 35/35 proteins colored",
+        "stage_evidence": "title contains ILS/intron lariat",
+        "curation_summary": "title contains ILS/intron lariat; additional linked/focused maps available; 35/35 proteins colored",
         "stage_confidence": "high",
-        "homolog_confidence": "high",
+        "homolog_confidence": "medium",
         "color_confidence": "high",
         "rna_identity_confidence": "high",
         "overall_confidence": "high",
@@ -46527,7 +46378,7 @@
       },
       "curation": {
         "stage_evidence": "title contains post-catalytic/P complex",
-        "curation_summary": "title contains post-catalytic/P complex; additional linked/focused maps available; 27/29 proteins colored",
+        "curation_summary": "title contains post-catalytic/P complex; additional linked/focused maps available; 28/29 proteins colored",
         "stage_confidence": "high",
         "homolog_confidence": "medium",
         "color_confidence": "medium",
@@ -46543,19 +46394,11 @@
         "flags": [
           "Ramachandran outliers"
         ],
-        "colored_proteins": "27",
+        "colored_proteins": "28",
         "protein_count": "29",
-        "unassigned_components": "2"
+        "unassigned_components": "1"
       },
       "unassigned_components": [
-        {
-          "entity_id": "19",
-          "component_type": "protein",
-          "gene_name": "CWC21; YDR482C",
-          "molecule_name": "pre-mRNA-splicing factor CWC21",
-          "chains": "R",
-          "issue": "missing color assignment"
-        },
         {
           "entity_id": "21",
           "component_type": "protein",
@@ -47329,7 +47172,7 @@
       },
       "curation": {
         "stage_evidence": "title contains post-catalytic/P complex",
-        "curation_summary": "title contains post-catalytic/P complex; default opens all listed maps; 27/31 proteins colored",
+        "curation_summary": "title contains post-catalytic/P complex; default opens all listed maps; 28/31 proteins colored",
         "stage_confidence": "high",
         "homolog_confidence": "medium",
         "color_confidence": "medium",
@@ -47342,19 +47185,11 @@
           "needs review"
         ],
         "flags": [],
-        "colored_proteins": "27",
+        "colored_proteins": "28",
         "protein_count": "31",
-        "unassigned_components": "4"
+        "unassigned_components": "3"
       },
       "unassigned_components": [
-        {
-          "entity_id": "14",
-          "component_type": "protein",
-          "gene_name": "CWC21; YDR482C",
-          "molecule_name": "pre-mRNA-splicing factor CWC21",
-          "chains": "K",
-          "issue": "missing color assignment"
-        },
         {
           "entity_id": "17",
           "component_type": "protein",
@@ -48042,7 +47877,7 @@
       },
       "curation": {
         "stage_evidence": "title contains post-catalytic/P complex",
-        "curation_summary": "title contains post-catalytic/P complex; default opens all listed maps; 28/31 proteins colored",
+        "curation_summary": "title contains post-catalytic/P complex; default opens all listed maps; 29/31 proteins colored",
         "stage_confidence": "high",
         "homolog_confidence": "medium",
         "color_confidence": "medium",
@@ -48055,19 +47890,11 @@
           "needs review"
         ],
         "flags": [],
-        "colored_proteins": "28",
+        "colored_proteins": "29",
         "protein_count": "31",
-        "unassigned_components": "3"
+        "unassigned_components": "2"
       },
       "unassigned_components": [
-        {
-          "entity_id": "17",
-          "component_type": "protein",
-          "gene_name": "CWC21; YDR482C",
-          "molecule_name": "pre-mRNA-splicing factor CWC21",
-          "chains": "R",
-          "issue": "missing color assignment"
-        },
         {
           "entity_id": "22",
           "component_type": "protein",
@@ -50505,7 +50332,7 @@
       },
       "curation": {
         "stage_evidence": "title contains post-catalytic/P complex",
-        "curation_summary": "title contains post-catalytic/P complex; additional linked/focused maps available; 28/32 proteins colored",
+        "curation_summary": "title contains post-catalytic/P complex; additional linked/focused maps available; 29/32 proteins colored",
         "stage_confidence": "high",
         "homolog_confidence": "medium",
         "color_confidence": "medium",
@@ -50518,9 +50345,9 @@
           "needs review"
         ],
         "flags": [],
-        "colored_proteins": "28",
+        "colored_proteins": "29",
         "protein_count": "32",
-        "unassigned_components": "4"
+        "unassigned_components": "3"
       },
       "unassigned_components": [
         {
@@ -50529,14 +50356,6 @@
           "gene_name": "FYV6; N1215; N1850; YNL133C",
           "molecule_name": "Protein FYV6",
           "chains": "D",
-          "issue": "missing color assignment"
-        },
-        {
-          "entity_id": "18",
-          "component_type": "protein",
-          "gene_name": "CWC21; YDR482C",
-          "molecule_name": "pre-mRNA-splicing factor CWC21",
-          "chains": "R",
           "issue": "missing color assignment"
         },
         {
@@ -96297,7 +96116,7 @@
       "conflicting_members": ""
     }
   ],
-  "universal_systematic_coloring_script": "# Universal spliceosome coloring for renamed canonical-chain CIFs.\n# Generated by generate_universal_spliceosome_coloring.py.\n# Load renamed CIFs first, then open or run this script.\n# All selectors and colors below omit model IDs, so they apply to all open renamed models.\n\ncolor byhetero\n\n# Named selections by subcomplex.\n# Disassembly factors\nname spliceosome_Disassembly_factors /D1,D2,D5,D6\n# EJC/mRNP\nname spliceosome_EJC_mRNP /J1,J2,J3,J4,J5\n# NTC/NTR related\nname spliceosome_NTC_NTR_related /NA,NB,NC,NF,NI,NL,NM,NP,NQ,NR,NW,NY\n# NTC/PRP19\nname spliceosome_NTC_PRP19 /N1A,N1B,N1C,N1D,N2,N3,N4,N5\n# RNA-binding\nname spliceosome_RNA_binding /RA,RC\n# RNA/substrate\nname spliceosome_RNA_substrate /I,IA,IB,IC,M,MA,MB,MC,MD\n# SR proteins\nname spliceosome_SR_proteins /RB\n# Second step factors\nname spliceosome_Second_step_factors /C1,C2,C3\n# Sm ring\nname spliceosome_Sm_ring /SA,SAA,SAB,SAC,SB,SBA,SBB,SC,SCA,SCB,SD,SDA,SDB,SE,SEA,SEB,SEC,SF,SFA,SFB,SFC,SG,SGA,SGB\n# U1 Sm ring\nname spliceosome_U1_Sm_ring /1S1,1S2,1S3,1SB,1SE,1SF,1SG\n# U1 snRNP\nname spliceosome_U1_snRNP /1,1A,1B,1C,1D,1E,1G,1H,1I,1J,1K\n# U11/U12 snRNP\nname spliceosome_U11_U12_snRNP /11,12\n# U2 Sm ring\nname spliceosome_U2_Sm_ring /2S1,2S2,2S3,2SB,2SE,2SF,2SG\n# U2 snRNP\nname spliceosome_U2_snRNP /2,2K,2KA,2KB,2L,2M,2N,2O,2P,2Q,2R\n# U2/SF3B\nname spliceosome_U2_SF3B /2A,2B,2C,2D,2E,2F,2FA,2FB,2G,2H,2I,2IA,2IB,2J,2JA,2JB\n# U4 Sm ring\nname spliceosome_U4_Sm_ring /4S1,4S2,4S3,4SB,4SE,4SF,4SG\n# U4 snRNP\nname spliceosome_U4_snRNP /4\n# U4/U6 snRNP\nname spliceosome_U4_U6_snRNP /4A,4B,4BA,4BB,4C,4D,6A,6B,6C\n# U4atac/U6atac snRNP\nname spliceosome_U4atac_U6atac_snRNP /4AT,6AT\n# U5 Sm ring\nname spliceosome_U5_Sm_ring /5S1,5S2,5S3,5SB,5SE,5SF,5SG\n# U5 snRNP\nname spliceosome_U5_snRNP /5,5A,5B,5C,5D,5E,5F,5G,5H,5I\n# U6 LSm\nname spliceosome_U6_LSm /6L2,6L3,6L4,6L5,6L6,6L7,6L8\n# U6 snRNP\nname spliceosome_U6_snRNP /6,6R1,6R2\n# other\nname spliceosome_other /X0,X1,X2,X3,X4,X5,X6,X7,X8,X9,XA,XA0,XA1,XA2,XA3,XA4,XA5,XA6,XA7,XA8,XA9,XAA,XAB,XAC,XAD,XAE,XAF,XAG,XAH,XAI,XAJ,XAK,XAL,XALA,XALB,XAM,XAN,XAO,XAP,XAQ,XAR,XAS,XAT,XAU,XAV,XAW,XAX,XAY,XAZ,XB,XB0,XB1,XB2,XB3,XB4,XB5,XB6,XB7,XB8,XB9,XBA,XBB,XBC,XBD,XBDA,XBDB,XBE,XBF,XBG,XBH,XBI,XBJ,XBK,XBL,XBM,XBN,XBO,XBP,XBQ,XBR,XBS,XBT,XBU,XBV,XBW,XBX,XBY,XBZA,XBZB,XCA,XCB,XCC,XCD,XCE,XD,XEA,XEB,XF,XG,XH,XI,XJ,XK,XL,XM,XN,XO,XP,XQ,XR,XS,XT,XU,XV,XW,XX,XY,XZ\n\n# Canonical-chain colors.\n# Disassembly factors\n# TFIP11 (D1)\ncolor /D1 #FF69B4\n# PAXBP1 (D2)\ncolor /D2 #FFC0CB\n# DHX35 (D5)\ncolor /D5 #78184A\n# GPATCH1 (D6)\ncolor /D6 #E52B75\n# EJC/mRNP\n# EIF4A3 (J1)\ncolor /J1 #F1D8BC\n# MAGOH (J2)\ncolor /J2 #EAA439\n# RBM8A (J3)\ncolor /J3 #EB6841\n# CASC3 (J4)\ncolor /J4 #CB8548\n# CWC22 (J5)\ncolor /J5 #2C54DD\n# NTC/NTR related\n# AQR (NA)\ncolor /NA #FFDAB9\n# BUD31 (NB)\ncolor /NB #FFF584\n# PPIE (NC)\ncolor /NC #FFFFE0\n# SYF2 (NF)\ncolor /NF #FF8C00\n# ISY1 (NI)\ncolor /NI #FFEF8C\n# CWF19L2 (NL)\ncolor /NL #8B008B\n# RBM22 (NM)\ncolor /NM #DE9A52\n# PPIL1 (NP)\ncolor /NP #EEE8AA\n# CWC2 (NQ)\ncolor /NQ #E6B566\n# CRNKL1 (NR)\ncolor /NR #FFC388\n# SNW1 (NW)\ncolor /NW #D49F96\n# SYF1 (NY)\ncolor /NY #FF957B\n# NTC/PRP19\n# PRPF19 (N1A)\ncolor /N1A #FFFFAB\n# PRPF19 (N1B)\ncolor /N1B #FFFFAB\n# PRPF19 (N1C)\ncolor /N1C #FFFFAB\n# PRPF19 (N1D)\ncolor /N1D #FFFFAB\n# CDC5L (N2)\ncolor /N2 #DAA520\n# PLRG1 (N3)\ncolor /N3 #F4A460\n# BCAS2 (N4)\ncolor /N4 #FFDAB9\n# CWC15 (N5)\ncolor /N5 #FFDEAD\n# RNA-binding\n# RBM42 (RA)\ncolor /RA #44A0A7\n# ZMAT5 (RC)\ncolor /RC #67A6C1\n# RNA/substrate\n# INTRON (I)\ncolor /I #303030\n# INTRON (IA)\ncolor /IA #303030\n# INTRON (IB)\ncolor /IB #303030\n# INTRON (IC)\ncolor /IC #303030\n# mRNA (M)\ncolor /M #303030\n# mRNA (MA)\ncolor /MA #303030\n# mRNA (MB)\ncolor /MB #303030\n# mRNA (MC)\ncolor /MC #303030\n# mRNA (MD)\ncolor /MD #303030\n# SR proteins\n# SRRM2 (RB)\ncolor /RB #BDD6F0\n# Second step factors\n# SLU7 (C1)\ncolor /C1 #5A338B\n# PRPF17 (C2)\ncolor /C2 #FFF7C9\n# DHX8 (C3)\ncolor /C3 #900C3F\n# Sm ring\n# SNRPB (SA)\ncolor /SA #B0C4DE\n# SNRPB (SAA)\ncolor /SAA #B0C4DE\n# SNRPB (SAB)\ncolor /SAB #B0C4DE\n# SNRPB (SAC)\ncolor /SAC #B0C4DE\n# SNRPD1 (SB)\ncolor /SB #B0C4DE\n# SNRPD1 (SBA)\ncolor /SBA #B0C4DE\n# SNRPD1 (SBB)\ncolor /SBB #B0C4DE\n# SNRPD2 (SC)\ncolor /SC #B0C4DE\n# SNRPD2 (SCA)\ncolor /SCA #B0C4DE\n# SNRPD2 (SCB)\ncolor /SCB #B0C4DE\n# SNRPD3 (SD)\ncolor /SD #B0C4DE\n# SNRPD3 (SDA)\ncolor /SDA #B0C4DE\n# SNRPD3 (SDB)\ncolor /SDB #B0C4DE\n# SNRPE (SE)\ncolor /SE #B0C4DE\n# SNRPE (SEA)\ncolor /SEA #B0C4DE\n# SNRPE (SEB)\ncolor /SEB #B0C4DE\n# SNRPE (SEC)\ncolor /SEC #B0C4DE\n# SNRPF (SF)\ncolor /SF #B0C4DE\n# SNRPF (SFA)\ncolor /SFA #B0C4DE\n# SNRPF (SFB)\ncolor /SFB #B0C4DE\n# SNRPF (SFC)\ncolor /SFC #B0C4DE\n# SNRPG (SG)\ncolor /SG #B0C4DE\n# SNRPG (SGA)\ncolor /SGA #B0C4DE\n# SNRPG (SGB)\ncolor /SGB #B0C4DE\n# U1 Sm ring\n# U1:SNRPD1 (1S1)\ncolor /1S1 #EAD7E8\n# U1:SNRPD2 (1S2)\ncolor /1S2 #EAD7E8\n# U1:SNRPD3 (1S3)\ncolor /1S3 #EAD7E8\n# U1:SNRPB (1SB)\ncolor /1SB #EAD7E8\n# U1:SNRPE (1SE)\ncolor /1SE #EAD7E8\n# U1:SNRPF (1SF)\ncolor /1SF #EAD7E8\n# U1:SNRPG (1SG)\ncolor /1SG #EAD7E8\n# U1 snRNP\n# U1 snRNA (1)\ncolor /1 #D46BB8\n# SNRNP70 (1A)\ncolor /1A #8C3D78\n# SNRPA (1B)\ncolor /1B #C07AB6\n# SNRPC (1C)\ncolor /1C #D7A3CF\n# PRPF39 (1D)\ncolor /1D #E1B8D9\n# PRPF40A (1E)\ncolor /1E #BA6FA8\n# LUC7L (1G)\ncolor /1G #B03372\n# NAM8 (1H)\ncolor /1H #C7A6BE\n# SNU71 (1I)\ncolor /1I #A95A9B\n# PRP42 (1J)\ncolor /1J #7F5BA6\n# SNU56 (1K)\ncolor /1K #D65B96\n# U11/U12 snRNP\n# U11 snRNA (11)\ncolor /11 #D46BB8\n# U12 snRNA (12)\ncolor /12 #71C562\n# U2 Sm ring\n# U2:SNRPD1 (2S1)\ncolor /2S1 #D5F5E3\n# U2:SNRPD2 (2S2)\ncolor /2S2 #D5F5E3\n# U2:SNRPD3 (2S3)\ncolor /2S3 #D5F5E3\n# U2:SNRPB (2SB)\ncolor /2SB #D5F5E3\n# U2:SNRPE (2SE)\ncolor /2SE #D5F5E3\n# U2:SNRPF (2SF)\ncolor /2SF #D5F5E3\n# U2:SNRPG (2SG)\ncolor /2SG #D5F5E3\n# U2 snRNP\n# U2 snRNA (2)\ncolor /2 #71C562\n# SNRPA1 (2K)\ncolor /2K #58D68D\n# SNRPA1 (2KA)\ncolor /2KA #58D68D\n# SNRPA1 (2KB)\ncolor /2KB #58D68D\n# SNRPB2 (2L)\ncolor /2L #DAF7A6\n# DDX46 (2M)\ncolor /2M #5BAE8A\n# HTATSF1 (2N)\ncolor /2N #7DBF82\n# PRKRIP1 (2O)\ncolor /2O #B39C7B\n# CCDC94 (2P)\ncolor /2P #CE4678\n# DDX42 (2Q)\ncolor /2Q #479061\n# DHX15 (2R)\ncolor /2R #663399\n# U2/SF3B\n# SF3B1 (2A)\ncolor /2A #487957\n# SF3B2 (2B)\ncolor /2B #49926C\n# SF3B3 (2C)\ncolor /2C #6A9064\n# SF3B4 (2D)\ncolor /2D #77B088\n# SF3B5 (2E)\ncolor /2E #92BB8F\n# SF3B6 (2F)\ncolor /2F #ADCEA0\n# SF3B6 (2FA)\ncolor /2FA #ADCEA0\n# SF3B6 (2FB)\ncolor /2FB #ADCEA0\n# PHF5A (2G)\ncolor /2G #375A40\n# SF3A1 (2H)\ncolor /2H #55947F\n# SF3A2 (2I)\ncolor /2I #75A074\n# SF3A2 (2IA)\ncolor /2IA #75A074\n# SF3A2 (2IB)\ncolor /2IB #75A074\n# SF3A3 (2J)\ncolor /2J #9BCF91\n# SF3A3 (2JA)\ncolor /2JA #9BCF91\n# SF3A3 (2JB)\ncolor /2JB #9BCF91\n# U4 Sm ring\n# U4:SNRPD1 (4S1)\ncolor /4S1 #F7F0A6\n# U4:SNRPD2 (4S2)\ncolor /4S2 #F7F0A6\n# U4:SNRPD3 (4S3)\ncolor /4S3 #F7F0A6\n# U4:SNRPB (4SB)\ncolor /4SB #F7F0A6\n# U4:SNRPE (4SE)\ncolor /4SE #F7F0A6\n# U4:SNRPF (4SF)\ncolor /4SF #F7F0A6\n# U4:SNRPG (4SG)\ncolor /4SG #F7F0A6\n# U4 snRNP\n# U4 snRNA (4)\ncolor /4 #F2D94E\n# U4/U6 snRNP\n# PRPF3 (4A)\ncolor /4A #E1DD1B\n# PRPF4 (4B)\ncolor /4B #E2C496\n# PRPF4 (4BA)\ncolor /4BA #E2C496\n# PRPF4 (4BB)\ncolor /4BB #E2C496\n# PRPF31 (4C)\ncolor /4C #DFD570\n# NHP2L1 (4D)\ncolor /4D #A89264\n# DDX23 (6A)\ncolor /6A #CA9982\n# TXNL4A (6B)\ncolor /6B #C3BA7A\n# USP39 (6C)\ncolor /6C #B37E6A\n# U4atac/U6atac snRNP\n# U4atac snRNA (4AT)\ncolor /4AT #F2D94E\n# U6atac snRNA (6AT)\ncolor /6AT #EF4444\n# U5 Sm ring\n# U5:SNRPD1 (5S1)\ncolor /5S1 #B0C4DE\n# U5:SNRPD2 (5S2)\ncolor /5S2 #B0C4DE\n# U5:SNRPD3 (5S3)\ncolor /5S3 #B0C4DE\n# U5:SNRPB (5SB)\ncolor /5SB #B0C4DE\n# U5:SNRPE (5SE)\ncolor /5SE #B0C4DE\n# U5:SNRPF (5SF)\ncolor /5SF #B0C4DE\n# U5:SNRPG (5SG)\ncolor /5SG #B0C4DE\n# U5 snRNP\n# U5 snRNA (5)\ncolor /5 #4F9FD3\n# PRPF8 (5A)\ncolor /5A #BFC3E8\n# SNRNP200 (5B)\ncolor /5B #AFEEEE\n# EFTUD2 (5C)\ncolor /5C #6495ED\n# PRPF6 (5D)\ncolor /5D #CFA785\n# PRP8BP (5E)\ncolor /5E #E2F3F4\n# CD2BP2 (5F)\ncolor /5F #FF4500\n# TSSC4 (5G)\ncolor /5G #800000\n# SART1 (5H)\ncolor /5H #D6937B\n# SNRNP27 (5I)\ncolor /5I #F4E7D2\n# U6 LSm\n# LSM2 (6L2)\ncolor /6L2 #F4A3A8\n# LSM3 (6L3)\ncolor /6L3 #F4A3A8\n# LSM4 (6L4)\ncolor /6L4 #F4A3A8\n# LSM5 (6L5)\ncolor /6L5 #F4A3A8\n# LSM6 (6L6)\ncolor /6L6 #F4A3A8\n# LSM7 (6L7)\ncolor /6L7 #F4A3A8\n# LSM8 (6L8)\ncolor /6L8 #F4A3A8\n# U6 snRNP\n# U6 snRNA (6)\ncolor /6 #EF4444\n# U6 snRNA (6R1)\ncolor /6R1 #EF4444\n# U6 snRNA (6R2)\ncolor /6R2 #EF4444\n# other\n# CWC27 (X2)\ncolor /X2 #806ED8\n# CWF19L1 (X3)\ncolor /X3 #DDA0DD\n# CXORF56 (X4)\ncolor /X4 #E6E6FA\n# CYP20 (X5)\ncolor /X5 #C9AC36\n# DBP2 (X6)\ncolor /X6 #E3B296\n# DDX38 (X7)\ncolor /X7 #5F2E8A\n# DDX41 (X8)\ncolor /X8 #EE82EE\n# DIM2 (X9)\ncolor /X9 #6A90A0\n# ARMC7 (XA)\ncolor /XA #546383\n# PPWD1 (XA0)\ncolor /XA0 #7352A2\n# PRPF38A (XA7)\ncolor /XA7 #F88379\n# RNF113 (XA8)\ncolor /XA8 #6C46CE\n# SCNM1 (XA9)\ncolor /XA9 #547083\n# DNAJC8 (XAA)\ncolor /XAA #6E86A6\n# ESS2 (XAB)\ncolor /XAB #6669B0\n# FAM32A (XAC)\ncolor /XAC #F2CCFF\n# FAM50A (XAD)\ncolor /XAD #CCCCFF\n# FBP21 (XAE)\ncolor /XAE #B03B66\n# FRG1 (XAF)\ncolor /XAF #CDA470\n# GPATC5 (XAG)\ncolor /XAG #BFC4EE\n# HM1 (XAK)\ncolor /XAK #BFA1D9\n# IK (XAL)\ncolor /XAL #C75769\n# IK (XALA)\ncolor /XALA #C75769\n# IK (XALB)\ncolor /XALB #C75769\n# KIAA0332 (XAN)\ncolor /XAN #9FD0B7\n# MFAP1 (XAO)\ncolor /XAO #CD5C5C\n# NKAP (XAR)\ncolor /XAR #9370DB\n# NOSIP (XAS)\ncolor /XAS #6987A9\n# NPWBP (XAT)\ncolor /XAT #D8944F\n# PDCD7 (XAV)\ncolor /XAV #A8ABC7\n# PPIG (XAW)\ncolor /XAW #4C79BC\n# PPIL2 (XAX)\ncolor /XAX #B12F50\n# PPIL3 (XAY)\ncolor /XAY #57389F\n# PPIL4 (XAZ)\ncolor /XAZ #CFC7DB\n# ASF (XB)\ncolor /XB #CC3E8E\n# WDR70 (XB0)\ncolor /XB0 #7363C5\n# WDR83 (XB1)\ncolor /XB1 #ED6983\n# YJU2B (XB9)\ncolor /XB9 #DA70D6\n# SDE2 (XBA)\ncolor /XBA #FFFF00\n# SF1 (XBC)\ncolor /XBC #BA4F9A\n# SMU1 (XBD)\ncolor /XBD #E0A3D2\n# SMU1 (XBDA)\ncolor /XBDA #E0A3D2\n# SMU1 (XBDB)\ncolor /XBDB #E0A3D2\n# SNIP1 (XBE)\ncolor /XBE #89BFC8\n# SRM160 (XBK)\ncolor /XBK #6E96C4\n# UBL5 (XBN)\ncolor /XBN #DB7093\n# ZCCHC10 (XCD)\ncolor /XCD #42C4EB\n# ZMAT2 (XCE)\ncolor /XCE #FFB6C1\n# BTCD (XH)\ncolor /XH #BBA681\n# BUD13 (XI)\ncolor /XI #459285\n# C16ORF33 (XJ)\ncolor /XJ #A458BB\n# C16ORF94 (XK)\ncolor /XK #736AA0\n# C20ORF33 (XL)\ncolor /XL #C99A2C\n# C6ORF151 (XM)\ncolor /XM #CA7DCA\n# C7ORF64 (XN)\ncolor /XN #89ACB3\n# C9ORF78 (XO)\ncolor /XO #D9CCFF\n# CA150 (XP)\ncolor /XP #A2B8CD\n# CACTIN (XQ)\ncolor /XQ #E3C2CF\n# CBP20 (XR)\ncolor /XR #547596\n# CBP80 (XS)\ncolor /XS #B29876\n# CCDC12 (XT)\ncolor /XT #FAEBD7\n# CCDC49 (XU)\ncolor /XU #2F4DB1\n# CCDC84 (XV)\ncolor /XV #C7B8A8\n# CGI-79 (XW)\ncolor /XW #5FB491\n# CIR (XX)\ncolor /XX #C7CBDB\n# CRIPT (XY)\ncolor /XY #615483\nshow nucleic\n",
+  "universal_systematic_coloring_script": "# Universal spliceosome coloring for renamed systematic-chain CIFs.\n# Generated by generate_universal_spliceosome_coloring.py.\n# Load renamed CIFs first, then open or run this script.\n# All selectors and colors below omit model IDs, so they apply to all open renamed models.\n\ncolor byhetero\n\n# Named selections by subcomplex.\n# Disassembly factors\nname spliceosome_Disassembly_factors /D1,D2,D5,D6\n# EJC/mRNP\nname spliceosome_EJC_mRNP /J1,J2,J3,J4,J5\n# NTC/NTR related\nname spliceosome_NTC_NTR_related /NA,NB,NC,NF,NI,NL,NM,NP,NQ,NR,NW,NY\n# NTC/PRP19\nname spliceosome_NTC_PRP19 /N1A,N1B,N1C,N1D,N2,N3,N4,N5\n# RNA-binding\nname spliceosome_RNA_binding /RA,RC\n# RNA/substrate\nname spliceosome_RNA_substrate /I,IA,IB,IC,M,MA,MB,MC,MD\n# SR proteins\nname spliceosome_SR_proteins /RB\n# Second step factors\nname spliceosome_Second_step_factors /C1,C2,C3\n# Sm ring\nname spliceosome_Sm_ring /SA,SAA,SAB,SAC,SB,SBA,SBB,SC,SCA,SCB,SD,SDA,SDB,SE,SEA,SEB,SEC,SF,SFA,SFB,SFC,SG,SGA,SGB\n# U1 Sm ring\nname spliceosome_U1_Sm_ring /1S1,1S2,1S3,1SB,1SE,1SF,1SG\n# U1 snRNP\nname spliceosome_U1_snRNP /1,1A,1B,1C,1D,1E,1G,1H,1I,1J,1K\n# U11/U12 snRNP\nname spliceosome_U11_U12_snRNP /11,12\n# U2 Sm ring\nname spliceosome_U2_Sm_ring /2S1,2S2,2S3,2SB,2SE,2SF,2SG\n# U2 snRNP\nname spliceosome_U2_snRNP /2,2K,2KA,2KB,2L,2M,2N,2O,2P,2Q,2R\n# U2/SF3B\nname spliceosome_U2_SF3B /2A,2B,2C,2D,2E,2F,2FA,2FB,2G,2H,2I,2IA,2IB,2J,2JA,2JB\n# U4 Sm ring\nname spliceosome_U4_Sm_ring /4S1,4S2,4S3,4SB,4SE,4SF,4SG\n# U4 snRNP\nname spliceosome_U4_snRNP /4\n# U4/U6 snRNP\nname spliceosome_U4_U6_snRNP /4A,4B,4BA,4BB,4C,4D,6A,6B,6C\n# U4atac/U6atac snRNP\nname spliceosome_U4atac_U6atac_snRNP /4AT,6AT\n# U5 Sm ring\nname spliceosome_U5_Sm_ring /5S1,5S2,5S3,5SB,5SE,5SF,5SG\n# U5 snRNP\nname spliceosome_U5_snRNP /5,5A,5B,5C,5D,5E,5F,5G,5H,5I\n# U6 LSm\nname spliceosome_U6_LSm /6L2,6L3,6L4,6L5,6L6,6L7,6L8\n# U6 snRNP\nname spliceosome_U6_snRNP /6,6R1,6R2\n# other\nname spliceosome_other /X0,X1,X2,X3,X4,X5,X6,X7,X8,X9,XA,XA0,XA1,XA2,XA3,XA4,XA5,XA6,XA7,XA8,XA9,XAA,XAB,XAC,XAD,XAE,XAF,XAG,XAH,XAI,XAJ,XAK,XAKA,XAKB,XAL,XAM,XAN,XAO,XAP,XAQ,XAR,XAS,XAT,XAU,XAV,XAW,XAX,XAY,XAZ,XB,XB0,XB1,XB2,XB3,XB4,XB5,XB6,XB7,XB8,XB9,XBA,XBB,XBC,XBCA,XBCB,XBD,XBE,XBF,XBG,XBH,XBI,XBJ,XBK,XBL,XBM,XBN,XBO,XBP,XBQ,XBR,XBS,XBT,XBU,XBV,XBW,XBXA,XBXB,XBY,XBZ,XCA,XCB,XD,XEA,XEB,XF,XG,XH,XI,XJ,XK,XL,XM,XN,XO,XP,XQ,XR,XS,XT,XU,XV,XW,XX,XY,XZ\n\n# Systematic-chain colors.\n# Disassembly factors\n# TFIP11 (D1)\ncolor /D1 #FF69B4\n# PAXBP1 (D2)\ncolor /D2 #FFC0CB\n# DHX35 (D5)\ncolor /D5 #78184A\n# GPATCH1 (D6)\ncolor /D6 #E52B75\n# EJC/mRNP\n# EIF4A3 (J1)\ncolor /J1 #F1D8BC\n# MAGOH (J2)\ncolor /J2 #EAA439\n# RBM8A (J3)\ncolor /J3 #EB6841\n# CASC3 (J4)\ncolor /J4 #CB8548\n# CWC22 (J5)\ncolor /J5 #2C54DD\n# NTC/NTR related\n# AQR (NA)\ncolor /NA #FFDAB9\n# BUD31 (NB)\ncolor /NB #FFF584\n# PPIE (NC)\ncolor /NC #FFFFE0\n# SYF2 (NF)\ncolor /NF #FF8C00\n# ISY1 (NI)\ncolor /NI #FFEF8C\n# CWF19L2 (NL)\ncolor /NL #8B008B\n# RBM22 (NM)\ncolor /NM #DE9A52\n# PPIL1 (NP)\ncolor /NP #EEE8AA\n# CWC2 (NQ)\ncolor /NQ #E6B566\n# CRNKL1 (NR)\ncolor /NR #FFC388\n# SNW1 (NW)\ncolor /NW #D49F96\n# SYF1 (NY)\ncolor /NY #FF957B\n# NTC/PRP19\n# PRPF19 (N1A)\ncolor /N1A #FFFFAB\n# PRPF19 (N1B)\ncolor /N1B #FFFFAB\n# PRPF19 (N1C)\ncolor /N1C #FFFFAB\n# PRPF19 (N1D)\ncolor /N1D #FFFFAB\n# CDC5L (N2)\ncolor /N2 #DAA520\n# PLRG1 (N3)\ncolor /N3 #F4A460\n# BCAS2 (N4)\ncolor /N4 #FFDAB9\n# CWC15 (N5)\ncolor /N5 #FFDEAD\n# RNA-binding\n# RBM42 (RA)\ncolor /RA #44A0A7\n# ZMAT5 (RC)\ncolor /RC #67A6C1\n# RNA/substrate\n# INTRON (I)\ncolor /I #303030\n# INTRON (IA)\ncolor /IA #303030\n# INTRON (IB)\ncolor /IB #303030\n# INTRON (IC)\ncolor /IC #303030\n# mRNA (M)\ncolor /M #303030\n# mRNA (MA)\ncolor /MA #303030\n# mRNA (MB)\ncolor /MB #303030\n# mRNA (MC)\ncolor /MC #303030\n# mRNA (MD)\ncolor /MD #303030\n# SR proteins\n# SRRM2 (RB)\ncolor /RB #BDD6F0\n# Second step factors\n# SLU7 (C1)\ncolor /C1 #5A338B\n# PRPF17 (C2)\ncolor /C2 #FFF7C9\n# DHX8 (C3)\ncolor /C3 #900C3F\n# Sm ring\n# SNRPB (SA)\ncolor /SA #B0C4DE\n# SNRPB (SAA)\ncolor /SAA #B0C4DE\n# SNRPB (SAB)\ncolor /SAB #B0C4DE\n# SNRPB (SAC)\ncolor /SAC #B0C4DE\n# SNRPD1 (SB)\ncolor /SB #B0C4DE\n# SNRPD1 (SBA)\ncolor /SBA #B0C4DE\n# SNRPD1 (SBB)\ncolor /SBB #B0C4DE\n# SNRPD2 (SC)\ncolor /SC #B0C4DE\n# SNRPD2 (SCA)\ncolor /SCA #B0C4DE\n# SNRPD2 (SCB)\ncolor /SCB #B0C4DE\n# SNRPD3 (SD)\ncolor /SD #B0C4DE\n# SNRPD3 (SDA)\ncolor /SDA #B0C4DE\n# SNRPD3 (SDB)\ncolor /SDB #B0C4DE\n# SNRPE (SE)\ncolor /SE #B0C4DE\n# SNRPE (SEA)\ncolor /SEA #B0C4DE\n# SNRPE (SEB)\ncolor /SEB #B0C4DE\n# SNRPE (SEC)\ncolor /SEC #B0C4DE\n# SNRPF (SF)\ncolor /SF #B0C4DE\n# SNRPF (SFA)\ncolor /SFA #B0C4DE\n# SNRPF (SFB)\ncolor /SFB #B0C4DE\n# SNRPF (SFC)\ncolor /SFC #B0C4DE\n# SNRPG (SG)\ncolor /SG #B0C4DE\n# SNRPG (SGA)\ncolor /SGA #B0C4DE\n# SNRPG (SGB)\ncolor /SGB #B0C4DE\n# U1 Sm ring\n# U1:SNRPD1 (1S1)\ncolor /1S1 #EAD7E8\n# U1:SNRPD2 (1S2)\ncolor /1S2 #EAD7E8\n# U1:SNRPD3 (1S3)\ncolor /1S3 #EAD7E8\n# U1:SNRPB (1SB)\ncolor /1SB #EAD7E8\n# U1:SNRPE (1SE)\ncolor /1SE #EAD7E8\n# U1:SNRPF (1SF)\ncolor /1SF #EAD7E8\n# U1:SNRPG (1SG)\ncolor /1SG #EAD7E8\n# U1 snRNP\n# U1 snRNA (1)\ncolor /1 #D46BB8\n# SNRNP70 (1A)\ncolor /1A #8C3D78\n# SNRPA (1B)\ncolor /1B #C07AB6\n# SNRPC (1C)\ncolor /1C #D7A3CF\n# PRPF39 (1D)\ncolor /1D #E1B8D9\n# PRPF40A (1E)\ncolor /1E #BA6FA8\n# LUC7L (1G)\ncolor /1G #B03372\n# NAM8 (1H)\ncolor /1H #C7A6BE\n# SNU71 (1I)\ncolor /1I #A95A9B\n# PRP42 (1J)\ncolor /1J #7F5BA6\n# SNU56 (1K)\ncolor /1K #D65B96\n# U11/U12 snRNP\n# U11 snRNA (11)\ncolor /11 #D46BB8\n# U12 snRNA (12)\ncolor /12 #71C562\n# U2 Sm ring\n# U2:SNRPD1 (2S1)\ncolor /2S1 #D5F5E3\n# U2:SNRPD2 (2S2)\ncolor /2S2 #D5F5E3\n# U2:SNRPD3 (2S3)\ncolor /2S3 #D5F5E3\n# U2:SNRPB (2SB)\ncolor /2SB #D5F5E3\n# U2:SNRPE (2SE)\ncolor /2SE #D5F5E3\n# U2:SNRPF (2SF)\ncolor /2SF #D5F5E3\n# U2:SNRPG (2SG)\ncolor /2SG #D5F5E3\n# U2 snRNP\n# U2 snRNA (2)\ncolor /2 #71C562\n# SNRPA1 (2K)\ncolor /2K #58D68D\n# SNRPA1 (2KA)\ncolor /2KA #58D68D\n# SNRPA1 (2KB)\ncolor /2KB #58D68D\n# SNRPB2 (2L)\ncolor /2L #DAF7A6\n# DDX46 (2M)\ncolor /2M #5BAE8A\n# HTATSF1 (2N)\ncolor /2N #7DBF82\n# PRKRIP1 (2O)\ncolor /2O #B39C7B\n# CCDC94 (2P)\ncolor /2P #CE4678\n# DDX42 (2Q)\ncolor /2Q #479061\n# DHX15 (2R)\ncolor /2R #663399\n# U2/SF3B\n# SF3B1 (2A)\ncolor /2A #487957\n# SF3B2 (2B)\ncolor /2B #49926C\n# SF3B3 (2C)\ncolor /2C #6A9064\n# SF3B4 (2D)\ncolor /2D #77B088\n# SF3B5 (2E)\ncolor /2E #92BB8F\n# SF3B6 (2F)\ncolor /2F #ADCEA0\n# SF3B6 (2FA)\ncolor /2FA #ADCEA0\n# SF3B6 (2FB)\ncolor /2FB #ADCEA0\n# PHF5A (2G)\ncolor /2G #375A40\n# SF3A1 (2H)\ncolor /2H #55947F\n# SF3A2 (2I)\ncolor /2I #75A074\n# SF3A2 (2IA)\ncolor /2IA #75A074\n# SF3A2 (2IB)\ncolor /2IB #75A074\n# SF3A3 (2J)\ncolor /2J #9BCF91\n# SF3A3 (2JA)\ncolor /2JA #9BCF91\n# SF3A3 (2JB)\ncolor /2JB #9BCF91\n# U4 Sm ring\n# U4:SNRPD1 (4S1)\ncolor /4S1 #F7F0A6\n# U4:SNRPD2 (4S2)\ncolor /4S2 #F7F0A6\n# U4:SNRPD3 (4S3)\ncolor /4S3 #F7F0A6\n# U4:SNRPB (4SB)\ncolor /4SB #F7F0A6\n# U4:SNRPE (4SE)\ncolor /4SE #F7F0A6\n# U4:SNRPF (4SF)\ncolor /4SF #F7F0A6\n# U4:SNRPG (4SG)\ncolor /4SG #F7F0A6\n# U4 snRNP\n# U4 snRNA (4)\ncolor /4 #F2D94E\n# U4/U6 snRNP\n# PRPF3 (4A)\ncolor /4A #E1DD1B\n# PRPF4 (4B)\ncolor /4B #E2C496\n# PRPF4 (4BA)\ncolor /4BA #E2C496\n# PRPF4 (4BB)\ncolor /4BB #E2C496\n# PRPF31 (4C)\ncolor /4C #DFD570\n# NHP2L1 (4D)\ncolor /4D #A89264\n# DDX23 (6A)\ncolor /6A #CA9982\n# TXNL4A (6B)\ncolor /6B #C3BA7A\n# USP39 (6C)\ncolor /6C #B37E6A\n# U4atac/U6atac snRNP\n# U4atac snRNA (4AT)\ncolor /4AT #F2D94E\n# U6atac snRNA (6AT)\ncolor /6AT #EF4444\n# U5 Sm ring\n# U5:SNRPD1 (5S1)\ncolor /5S1 #B0C4DE\n# U5:SNRPD2 (5S2)\ncolor /5S2 #B0C4DE\n# U5:SNRPD3 (5S3)\ncolor /5S3 #B0C4DE\n# U5:SNRPB (5SB)\ncolor /5SB #B0C4DE\n# U5:SNRPE (5SE)\ncolor /5SE #B0C4DE\n# U5:SNRPF (5SF)\ncolor /5SF #B0C4DE\n# U5:SNRPG (5SG)\ncolor /5SG #B0C4DE\n# U5 snRNP\n# U5 snRNA (5)\ncolor /5 #4F9FD3\n# PRPF8 (5A)\ncolor /5A #BFC3E8\n# SNRNP200 (5B)\ncolor /5B #AFEEEE\n# EFTUD2 (5C)\ncolor /5C #6495ED\n# PRPF6 (5D)\ncolor /5D #CFA785\n# PRP8BP (5E)\ncolor /5E #E2F3F4\n# CD2BP2 (5F)\ncolor /5F #FF4500\n# TSSC4 (5G)\ncolor /5G #800000\n# SART1 (5H)\ncolor /5H #D6937B\n# SNRNP27 (5I)\ncolor /5I #F4E7D2\n# U6 LSm\n# LSM2 (6L2)\ncolor /6L2 #F4A3A8\n# LSM3 (6L3)\ncolor /6L3 #F4A3A8\n# LSM4 (6L4)\ncolor /6L4 #F4A3A8\n# LSM5 (6L5)\ncolor /6L5 #F4A3A8\n# LSM6 (6L6)\ncolor /6L6 #F4A3A8\n# LSM7 (6L7)\ncolor /6L7 #F4A3A8\n# LSM8 (6L8)\ncolor /6L8 #F4A3A8\n# U6 snRNP\n# U6 snRNA (6)\ncolor /6 #EF4444\n# U6 snRNA (6R1)\ncolor /6R1 #EF4444\n# U6 snRNA (6R2)\ncolor /6R2 #EF4444\n# other\n# CWC27 (X1)\ncolor /X1 #806ED8\n# CWF19L1 (X2)\ncolor /X2 #DDA0DD\n# CXORF56 (X3)\ncolor /X3 #E6E6FA\n# CYP20 (X4)\ncolor /X4 #C9AC36\n# DBP2 (X5)\ncolor /X5 #E3B296\n# DDX38 (X6)\ncolor /X6 #5F2E8A\n# DDX41 (X7)\ncolor /X7 #EE82EE\n# DIM2 (X8)\ncolor /X8 #6A90A0\n# DNAJC8 (X9)\ncolor /X9 #6E86A6\n# ARMC7 (XA)\ncolor /XA #546383\n# PPWD1 (XA0)\ncolor /XA0 #7352A2\n# PRPF38A (XA6)\ncolor /XA6 #F88379\n# RNF113 (XA7)\ncolor /XA7 #6C46CE\n# SCNM1 (XA8)\ncolor /XA8 #547083\n# SDE2 (XA9)\ncolor /XA9 #FFFF00\n# ESS2 (XAA)\ncolor /XAA #6669B0\n# FAM32A (XAB)\ncolor /XAB #F2CCFF\n# FAM50A (XAC)\ncolor /XAC #CCCCFF\n# FBP21 (XAD)\ncolor /XAD #B03B66\n# FRG1 (XAE)\ncolor /XAE #CDA470\n# GPATC5 (XAF)\ncolor /XAF #BFC4EE\n# HM1 (XAJ)\ncolor /XAJ #BFA1D9\n# IK (XAK)\ncolor /XAK #C75769\n# IK (XAKA)\ncolor /XAKA #C75769\n# IK (XAKB)\ncolor /XAKB #C75769\n# KIAA0332 (XAM)\ncolor /XAM #9FD0B7\n# LENG1 (XAN)\ncolor /XAN #9966CC\n# MFAP1 (XAO)\ncolor /XAO #CD5C5C\n# NKAP (XAR)\ncolor /XAR #9370DB\n# NOSIP (XAS)\ncolor /XAS #6987A9\n# NPWBP (XAT)\ncolor /XAT #D8944F\n# PDCD7 (XAV)\ncolor /XAV #A8ABC7\n# PPIG (XAW)\ncolor /XAW #4C79BC\n# PPIL2 (XAX)\ncolor /XAX #B12F50\n# PPIL3 (XAY)\ncolor /XAY #57389F\n# PPIL4 (XAZ)\ncolor /XAZ #CFC7DB\n# ASF (XB)\ncolor /XB #CC3E8E\n# YJU2B (XB6)\ncolor /XB6 #DA70D6\n# SF1 (XBB)\ncolor /XBB #BA4F9A\n# SMU1 (XBC)\ncolor /XBC #E0A3D2\n# SMU1 (XBCA)\ncolor /XBCA #E0A3D2\n# SMU1 (XBCB)\ncolor /XBCB #E0A3D2\n# SNIP1 (XBD)\ncolor /XBD #89BFC8\n# SRM160 (XBI)\ncolor /XBI #6E96C4\n# UBL5 (XBL)\ncolor /XBL #DB7093\n# WDR70 (XBY)\ncolor /XBY #7363C5\n# WDR83 (XBZ)\ncolor /XBZ #ED6983\n# BJ4_G0014900.MRNA.1.CDS.1 (XCA)\ncolor /XCA #42C4EB\n# ZMAT2 (XCB)\ncolor /XCB #FFB6C1\n# BTCD (XH)\ncolor /XH #BBA681\n# BUD13 (XI)\ncolor /XI #459285\n# C16ORF33 (XJ)\ncolor /XJ #A458BB\n# C16ORF94 (XK)\ncolor /XK #736AA0\n# C20ORF33 (XL)\ncolor /XL #C99A2C\n# C6ORF151 (XM)\ncolor /XM #CA7DCA\n# C7ORF64 (XN)\ncolor /XN #89ACB3\n# C9ORF78 (XO)\ncolor /XO #D9CCFF\n# CA150 (XP)\ncolor /XP #A2B8CD\n# CACTIN (XQ)\ncolor /XQ #E3C2CF\n# CBP20 (XR)\ncolor /XR #547596\n# CBP80 (XS)\ncolor /XS #B29876\n# CCDC12 (XT)\ncolor /XT #FAEBD7\n# CCDC49 (XU)\ncolor /XU #2F4DB1\n# CCDC84 (XV)\ncolor /XV #C7B8A8\n# CGI-79 (XW)\ncolor /XW #5FB491\n# CIR (XX)\ncolor /XX #C7CBDB\n# CRIPT (XY)\ncolor /XY #615483\nshow nucleic\n",
   "proximity": {
     "payload_schema": [
       "source_chain",

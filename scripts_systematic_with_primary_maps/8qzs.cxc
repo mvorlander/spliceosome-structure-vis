@@ -184,7 +184,7 @@ color #366.1/4B #E2C496
 color #366.1/5D #CFA785
 # U5 snRNP: SART1
 color #366.1/5H #D6937B
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_8QZS_RNA_substrate #366.1/MA,MB,MC
@@ -222,7 +222,7 @@ name pdb_8QZS_U6_snRNP #366.1/6
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_8QZS_other #366.1/X4,XA6,XAD,XAKA,XAKB,XAO,XBCA,XBCB,XCB
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

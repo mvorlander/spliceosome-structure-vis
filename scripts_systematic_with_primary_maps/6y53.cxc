@@ -86,7 +86,7 @@ color #302.1/2B #49926C
 color #302.1/2A #487957
 # U2 snRNP: U2 snRNA
 color #302.1/2 #71C562
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # U2 Sm ring
 # selector_meta {"color":"#BFE6BF","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_6Y53_U2_Sm_ring #302.1/2S1,2S2,2S3,2SB,2SE,2SF,2SG
@@ -97,7 +97,7 @@ name pdb_6Y53_U2_snRNP #302.1/2,2K,2L,2M,2N
 # selector_meta {"color":"#6DBE70","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_6Y53_U2_SF3B #302.1/2A,2B,2D,2F,2H,2I,2J
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

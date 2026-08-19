@@ -161,7 +161,7 @@ color #337.1/2J #9BCF91
 color #337.1/2H #55947F
 # U2/SF3B: SF3A2
 color #337.1/2I #75A074
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_5ZWM_RNA_substrate #337.1/M
@@ -199,7 +199,7 @@ name pdb_5ZWM_U6_snRNP #337.1/6
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_5ZWM_other #337.1/XBD,XI,XW
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

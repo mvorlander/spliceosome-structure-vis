@@ -122,7 +122,7 @@ color #434.1/NI #FFEF8C
 color #434.1/I #303030
 # U6 snRNP: U6 snRNA
 color #434.1/6 #EF4444
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name pdb_9S2F_Disassembly_factors #434.1/D5,D6
@@ -151,7 +151,7 @@ name pdb_9S2F_U6_snRNP #434.1/6
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_9S2F_other #434.1/XBZ,XT
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

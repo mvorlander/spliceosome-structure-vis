@@ -90,7 +90,7 @@ color #312.1/2S3 #D5F5E3
 color #312.1/2SB #D5F5E3
 # U2 Sm ring: U2-Sm SNRPD1
 color #312.1/2S1 #D5F5E3
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # U2 Sm ring
 # selector_meta {"color":"#BFE6BF","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_7EVO_U2_Sm_ring #312.1/2S1,2S2,2S3,2SB,2SE,2SF,2SG
@@ -101,7 +101,7 @@ name pdb_7EVO_U2_snRNP #312.1/2,2K,2L,2M,2N
 # selector_meta {"color":"#6DBE70","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_7EVO_U2_SF3B #312.1/2A,2B,2C,2D,2E,2G,2H,2I,2J
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

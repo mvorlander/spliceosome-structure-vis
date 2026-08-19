@@ -82,7 +82,7 @@ color #373.1/NM #DE9A52
 color #373.1/XAX #B12F50
 # NTC/NTR related: SNW1
 color #373.1/NW #D49F96
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # NTC/NTR related
 # selector_meta {"color":"#F4BF67","family":"Protein/RNP groups","group":"NTC/NTR groups","kind":"subcomplex"}
 name pdb_9R3D_NTC_NTR_related #373.1/NB,NM,NW
@@ -102,7 +102,7 @@ name pdb_9R3D_U6_snRNP #373.1/6
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_9R3D_other #373.1/XA6,XAO,XAT,XAX,XBL,XCB,XP
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

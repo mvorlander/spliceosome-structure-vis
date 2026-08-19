@@ -88,7 +88,7 @@ color #323.1/M #303030
 color #323.1/XS #B29876
 # other: CBP20
 color #323.1/XR #547596
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_6N7P_RNA_substrate #323.1/M
@@ -102,7 +102,7 @@ name pdb_6N7P_U1_snRNP #323.1/1,1A,1B,1C,1D,1E,1G,1H,1I,1J,1K
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_6N7P_other #323.1/XR,XS
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

@@ -72,7 +72,7 @@ color #319.1/2F #ADCEA0
 color #319.1/2I #75A074
 # U2/SF3B: SF3A3
 color #319.1/2J #9BCF91
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # RNA/substrate
 # selector_meta {"color":"#303030","family":"RNA","group":"pre-mRNA features","kind":"subcomplex"}
 name pdb_9ZE2_RNA_substrate #319.1/M
@@ -86,7 +86,7 @@ name pdb_9ZE2_U2_snRNP #319.1/2
 # selector_meta {"color":"#6DBE70","family":"Protein/RNP groups","group":"U2/SF3B groups","kind":"subcomplex"}
 name pdb_9ZE2_U2_SF3B #319.1/2A,2B,2C,2D,2E,2F,2G,2I,2J
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

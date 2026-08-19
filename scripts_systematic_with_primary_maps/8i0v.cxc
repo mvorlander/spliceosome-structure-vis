@@ -150,7 +150,7 @@ color #406.1/2E #92BB8F
 color #406.1/2L #DAF7A6
 # U2 snRNP: SNRPA1
 color #406.1/2K #58D68D
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # EJC/mRNP
 # selector_meta {"color":"#EAA439","family":"Protein/RNP groups","group":"EJC/mRNP groups","kind":"subcomplex"}
 name pdb_8I0V_EJC_mRNP #406.1/J5
@@ -191,7 +191,7 @@ name pdb_8I0V_U6_snRNP #406.1/6
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_8I0V_other #406.1/X5,XAZ
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

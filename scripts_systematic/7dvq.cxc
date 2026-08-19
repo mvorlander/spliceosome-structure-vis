@@ -145,7 +145,7 @@ color #383.1/XY #615483
 color #383.1/XN #89ACB3
 # other: ARMC7
 color #383.1/XA #546383
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # EJC/mRNP
 # selector_meta {"color":"#EAA439","family":"Protein/RNP groups","group":"EJC/mRNP groups","kind":"subcomplex"}
 name pdb_7DVQ_EJC_mRNP #383.1/J5
@@ -183,7 +183,7 @@ name pdb_7DVQ_U5_snRNP #383.1/5,5A,5B,5C,5E
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_7DVQ_other #383.1/X1,X5,XA,XA7,XA8,XAF,XAX,XBD,XBI,XI,XN,XW,XY
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

@@ -70,7 +70,7 @@ color #330.1/4A #E1DD1B
 color #330.1/4D #A89264
 # U5 snRNP: SNRNP200
 color #330.1/5B #AFEEEE
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # U4 snRNP
 # selector_meta {"color":"#D8C800","family":"Protein/RNP groups","group":"U4 snRNP groups","kind":"subcomplex"}
 name pdb_5GAP_U4_snRNP #330.1/4
@@ -87,7 +87,7 @@ name pdb_5GAP_U6_snRNP #330.1/6
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_5GAP_other #330.1/XBW
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6

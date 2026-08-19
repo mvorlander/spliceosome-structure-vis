@@ -79,7 +79,7 @@ color #351.1/5D #CFA785
 color #351.1/5B #AFEEEE
 # U2/SF3B: SF3A1
 color #351.1/2H #55947F
-# Named selections for canonical-chain subcomplexes.
+# Named selections for systematic-chain subcomplexes.
 # RNA-binding
 # selector_meta {"color":"#9CA3AF","family":"Protein/RNP groups","group":"other protein/RNP groups","kind":"subcomplex"}
 name pdb_8QPK_RNA_binding #351.1/RA
@@ -102,7 +102,7 @@ name pdb_8QPK_U5_snRNP #351.1/5,5A,5B,5C,5D,5H,5I
 # selector_meta {"color":"#DC143C","family":"Protein/RNP groups","group":"U6 snRNP groups","kind":"subcomplex"}
 name pdb_8QPK_U6_snRNP #351.1/6
 
-# Model-independent named selections for all renamed canonical-chain models.
+# Model-independent named selections for all renamed systematic-chain models.
 # Disassembly factors
 # selector_meta {"color":"#FF69B4","family":"Protein/RNP groups","group":"disassembly factors","kind":"subcomplex"}
 name spliceosome_Disassembly_factors /D1,D2,D5,D6
